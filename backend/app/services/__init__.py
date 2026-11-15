@@ -5,14 +5,14 @@ Ce package contient les règles de fonctionnement du projet. Les services
 font le lien entre les controllers, qui reçoivent les requêtes, et les
 models, qui accèdent aux données.
 
-Chaque service est dédié à un domaine fonctionnel et prend en charge :
+Les données reçues sont déjà validées dans leur format par les schémas.
+Chaque service se concentre sur :
 
-- la vérification des données et des règles métier ;
+- les règles métier (état d'un compte, validité d'un jeton, droits) ;
 - l'enchaînement des opérations d'un parcours ;
 - l'appel aux interfaces des models et aux utilitaires ;
 - le déclenchement des erreurs métier, traitées ensuite par les
   gestionnaires d'exceptions.
 
-Les services ne manipulent ni les requêtes HTTP ni le SQL : ils restent
-indépendants de l'API et de la base de données.
+Les services ne manipulent ni les requêtes HTTP ni le SQL.
 """

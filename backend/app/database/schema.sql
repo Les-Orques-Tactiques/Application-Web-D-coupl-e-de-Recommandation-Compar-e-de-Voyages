@@ -189,7 +189,9 @@ CREATE TABLE IF NOT EXISTS vols (
     devise              CHAR(3) NOT NULL DEFAULT 'USD',
     statut_prix         VARCHAR(30),
     classe              classe_cabine NOT NULL DEFAULT 'economy',
+
     auto_transfert      BOOLEAN NOT NULL DEFAULT FALSE,
+    transporteurs_mixtes BOOLEAN,                      -- has_mixed_carriers (Ignav)
 
     compagnie_aller     VARCHAR(120) NOT NULL,
     duree_aller_min     INTEGER NOT NULL CHECK (duree_aller_min > 0),
@@ -198,11 +200,12 @@ CREATE TABLE IF NOT EXISTS vols (
     duree_retour_min    INTEGER CHECK (duree_retour_min > 0),
     escales_retour      SMALLINT CHECK (escales_retour >= 0),
 
-    bagage_inclus       BOOLEAN,                       -- NULL tant que la donnée est inconnue
+    bagage_inclus       BOOLEAN,                      -- TRUE si au moins un bagage en soute est inclus (bags.checked >= 1) ; NULL si inconnu
     simulee             BOOLEAN NOT NULL DEFAULT FALSE,-- vol généré hors catalogue (US35)
-    observe_le          TIMESTAMPTZ NOT NULL,          -- date de relevé du prix
-
-    embedding           vector(5),                     -- approche A : prix, durée, escales, compagnie, bagage (0 à 1)
+    observe_le          TIMESTAMPTZ NOT NULL,          -- date de relevé du prix 
+    liens_reservation   JSONB,                         -- réponse d'Ignav, remplie au clic « Réserver »
+    liens_obtenus_le    TIMESTAMPTZ,
+    embedding           vector(4),                     -- approche A : prix, durée, escales, compagnie, bagage
 
     cree_le             TIMESTAMPTZ NOT NULL DEFAULT NOW(),
     modifie_le          TIMESTAMPTZ NOT NULL DEFAULT NOW(),
@@ -299,7 +302,7 @@ CREATE INDEX IF NOT EXISTS idx_email_envoye_cree ON email_envoye (cree_le DESC);
 -- connexion suivante (US23).
 CREATE TABLE IF NOT EXISTS profils_utilisateur (
     utilisateur_id        UUID PRIMARY KEY REFERENCES utilisateurs(id) ON DELETE CASCADE,
-    embedding             vector(5),
+    embedding             vector(4),
     nb_interactions       INTEGER NOT NULL DEFAULT 0 CHECK (nb_interactions >= 0),
     mis_a_jour_le         TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
@@ -438,6 +441,7 @@ SELECT
     v.prix, v.devise, v.compagnie_aller, v.duree_aller_min, v.escales_aller,
     v.compagnie_retour, v.duree_retour_min, v.escales_retour,
     v.bagage_inclus, v.simulee, v.observe_le, v.ignav_id,
+    v.auto_transfert, v.transporteurs_mixtes,
     (SELECT MIN(s.depart_local) FROM segments_vol s
         WHERE s.vol_id = v.id AND s.sens = 'aller')   AS depart_aller_local,
     (SELECT MAX(s.arrivee_locale) FROM segments_vol s
