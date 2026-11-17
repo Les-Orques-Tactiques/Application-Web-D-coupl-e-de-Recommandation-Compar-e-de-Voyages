@@ -1,0 +1,23 @@
+@import "@fontsource-variable/inter";
+@import "tailwindcss";
+
+/* Couleurs de la maquette : un seul endroit à modifier pour changer le thème */
+@theme {
+  --font-sans: "Inter Variable", system-ui, sans-serif;
+
+  --color-encre: #102f3a;          /* texte principal et titres */
+  --color-attenue: #62767c;        /* texte secondaire */
+  --color-fond: #f3f7f6;           /* fond des pages */
+  --color-trait: #dce6e4;          /* bordures */
+  --color-profond: #083f4a;        /* panneaux sombres */
+  --color-principal: #087f82;      /* boutons, liens, accents */
+  --color-principal-fonce: #066a6c; /* boutons au survol */
+  --color-citron: #d9f28b;         /* badges et icônes sur fond sombre */
+  --color-menthe: #e0efef;         /* encarts d'information */
+  --color-erreur-fond: #fff0ef;    /* fond des messages d'erreur */
+  --color-erreur: #b42318;         /* texte et icônes d'erreur (couleur estimée) */
+}
+
+body {
+  @apply bg-fond font-sans text-encre antialiased;
+}
