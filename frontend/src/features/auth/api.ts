@@ -1,9 +1,6 @@
 import { ErreurApi, appelerApi } from "@/lib/clientApi";
-import type { DonneesConnexion, DonneesInscription } from "./types";
+import type { DonneesConnexion, DonneesInscription, ReponseConnexion, Utilisateur } from "./types";
 
-// Mode simulé : quand VITE_MOCK_API=true dans .env, les fonctions ci-dessous ne contactent
-// pas le serveur et répondent elles-mêmes. Pratique pour tester l'interface sans backend.
-const MODE_SIMULE = import.meta.env.VITE_MOCK_API === "true";
 
 /**
  * Fait une pause (simule le temps de réponse d'un serveur).
@@ -17,25 +14,18 @@ const attendre = (millisecondes = 600) => new Promise((resolu) => setTimeout(res
  * (par exemple statut 409 si l'e-mail existe déjà).
  */
 export async function creerCompte(donnees: DonneesInscription): Promise<void> {
-  if (MODE_SIMULE) {
-    await attendre();
-    return; // "return" ici termine la fonction : on ne contacte pas le serveur
-  }
-  // Les clés envoyées au backend restent en anglais (c'est le contrat d'API convenu avec Flask) :
-  // cette fonction fait donc la traduction de nos noms français vers ceux du serveur.
-  await appelerApi("/api/auth/register", {
+  await appelerApi("/api/utilisateurs/inscription", {
     methode: "POST",
-    corps: {
-      first_name: donnees.prenom,
-      last_name: donnees.nom,
+    corps: JSON.stringify({
+      prenom: donnees.prenom,
+      nom: donnees.nom,
       email: donnees.email,
-      password: donnees.motDePasse,
-      consents: {
-        terms: donnees.consentements.conditions,
-        personalization: donnees.consentements.personnalisation,
-        geolocation: donnees.consentements.geolocalisation,
-      },
-    },
+      mot_de_passe: donnees.motDePasse,
+      consentement_politique: donnees.consentements.conditions,
+      consentement_personnalisation: donnees.consentements.personnalisation,
+      consentement_localisation: donnees.consentements.geolocalisation,
+    }),
+
   });
 }
 
@@ -43,17 +33,19 @@ export async function creerCompte(donnees: DonneesInscription): Promise<void> {
  * Connecte la personne. Lance une ErreurApi si les identifiants sont faux (401)
  * ou si le compte n'est pas encore activé (403).
  */
-export async function seConnecter(donnees: DonneesConnexion): Promise<void> {
-  if (MODE_SIMULE) {
-    await attendre();
-    // Simulation : tout mot de passe d'au moins 12 caractères est accepté, les autres refusés
-    if (donnees.motDePasse.length < 12) throw new ErreurApi(401, "Identifiants incorrects.");
-    return;
-  }
-  await appelerApi("/api/auth/login", {
-    methode: "POST",
-    corps: { email: donnees.email, password: donnees.motDePasse },
-  });
+export async function seConnecter(donnees: DonneesConnexion,): Promise<Utilisateur> {
+  const reponse = await appelerApi<ReponseConnexion>(
+    "/api/auth/connexion",
+    {
+      methode: "POST",
+      corps: {
+        email: donnees.email,
+        mot_de_passe: donnees.motDePasse,
+      },
+    },
+  );
+
+  return reponse.utilisateur;
 }
 
 /**
@@ -61,21 +53,13 @@ export async function seConnecter(donnees: DonneesConnexion): Promise<void> {
  * Réponses attendues du serveur : 200 = activé, 410 = lien expiré, 400 = lien invalide.
  */
 export async function activerCompte(jeton: string): Promise<void> {
-  if (MODE_SIMULE) {
-    await attendre();
-    // Simulation : "expire" donne un lien expiré, "ok" un succès, tout le reste est invalide
-    if (jeton === "expire") throw new ErreurApi(410, "Lien expiré.");
-    if (jeton !== "ok") throw new ErreurApi(400, "Lien invalide.");
-    return;
-  }
-  await appelerApi("/api/auth/activate", { methode: "POST", corps: { token: jeton } });
+  await appelerApi("/api/utilisateurs/activation", { methode: "POST", corps: { jeton } });
 }
 
 /** Demande au serveur d'envoyer un nouvel e-mail d'activation (le lien dure 24 h). */
 export async function renvoyerEmailActivation(email: string): Promise<void> {
-  if (MODE_SIMULE) {
-    await attendre();
-    return;
-  }
-  await appelerApi("/api/auth/resend-activation", { methode: "POST", corps: { email } });
+  await appelerApi("/api/utilisateurs/activation/renvoyer", { methode: "POST", corps: { email } });
 }
+
+export const lireMonProfil = () => appelerApi<Utilisateur>("/api/auth/moi");
+export const seDeconnecter = () => appelerApi("/api/auth/deconnexion", { methode: "POST" });

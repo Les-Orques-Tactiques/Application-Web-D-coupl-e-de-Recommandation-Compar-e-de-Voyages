@@ -14,6 +14,6 @@ export default defineConfig({
   server: {
     // Pendant le développement, toute requête commençant par /api est envoyée au backend Flask.
     // Le navigateur croit parler au même serveur : pas de problème de CORS.
-    proxy: { "/api": "http://localhost:5000" },
+    proxy: { "/api": "http://localhost:8000" },
   },
 });

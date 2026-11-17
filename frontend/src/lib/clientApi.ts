@@ -1,57 +1,53 @@
-// Adresse de base du backend, lue dans le fichier .env (variable VITE_API_URL).
-// "??" signifie : si la variable n'existe pas, utiliser une chaîne vide.
-// Vide = on appelle le même serveur que le site, ce qui marche avec le proxy de Vite.
-const URL_DE_BASE = import.meta.env.VITE_API_URL ?? "";
-
-/**
- * Erreur spéciale renvoyée quand le serveur répond avec un code d'échec (400, 401, 409…).
- * Elle "étend" l'erreur standard de JavaScript en y ajoutant le code HTTP (statut),
- * ce qui permet au reste du code de réagir selon le cas (ex. 409 = e-mail déjà utilisé).
- */
 export class ErreurApi extends Error {
-  constructor(
-    public statut: number, // "public" crée automatiquement l'attribut : this.statut
-    message: string,
-    public code?: string, // "?" = facultatif : le serveur peut ne pas envoyer de code
-  ) {
-    super(message); // appelle le constructeur d'Error pour enregistrer le message
+  constructor(public statut: number, message: string, public details?: unknown) {
+    super(message);
   }
 }
 
-// Options acceptées par appelerApi (type TypeScript : décrit la forme de l'objet attendu)
-type OptionsAppel = { methode?: "GET" | "POST" | "PUT" | "DELETE"; corps?: unknown };
+const METHODES_ECRITURE = ["POST", "PUT", "PATCH", "DELETE"];
 
-/**
- * Envoie une requête HTTP au backend Flask et renvoie sa réponse décodée.
- * C'est le SEUL endroit du frontend qui parle au réseau : si l'adresse du serveur ou
- * la gestion des erreurs change, on ne modifie que cette fonction.
- *
- * @param chemin  Route du backend, par exemple "/api/auth/login"
- * @param options methode (GET par défaut) et corps (les données à envoyer)
- * @returns       La réponse du serveur (déjà convertie du JSON en objet)
- * @throws        ErreurApi si le serveur répond avec un code d'échec
- *
- * <Reponse> est un "type générique" : l'appelant indique la forme attendue de la réponse.
- */
-export async function appelerApi<Reponse = void>(
-  chemin: string,
-  { methode = "GET", corps }: OptionsAppel = {}, // déstructuration + valeurs par défaut
-): Promise<Reponse> {
-  // "await" attend la réponse du serveur sans bloquer la page
-  const reponse = await fetch(`${URL_DE_BASE}${chemin}`, {
-    method: methode,
-    headers: { "Content-Type": "application/json" }, // on envoie du JSON
-    body: corps === undefined ? undefined : JSON.stringify(corps), // objet -> texte JSON
-    credentials: "include", // envoie et reçoit les cookies de session
-  });
+function lireCookie(nom: string): string {
+  const trouve = document.cookie.split("; ").find((c) => c.startsWith(`${nom}=`));
+  return trouve ? decodeURIComponent(trouve.split("=")[1]) : "";
+}
 
-  // On lit le JSON de la réponse. Si elle est vide ou invalide, ".catch" renvoie null
-  // au lieu de planter.
-  const donnees = await reponse.json().catch(() => null);
+// Le back renvoie { detail: "texte" } ou { detail: {champ: [messages]} } ou, pour Pydantic (422), une liste.
+function extraireMessage(detail: unknown): string {
+  if (typeof detail === "string") return detail;
+  if (Array.isArray(detail)) return detail.map((d) => d?.msg ?? "").join(" ");
+  if (detail && typeof detail === "object") return Object.values(detail).flat().join(" ");
+  return "Erreur inconnue.";
+}
 
-  // reponse.ok vaut false pour les codes 400 à 599 : on transforme alors en erreur
-  if (!reponse.ok) {
-    throw new ErreurApi(reponse.status, donnees?.message ?? "Une erreur est survenue.", donnees?.code);
+interface Options { methode?: string; corps?: unknown }
+
+async function requete(chemin: string, { methode = "GET", corps }: Options) {
+  const headers: Record<string, string> = {};
+  if (corps !== undefined) headers["Content-Type"] = "application/json";
+  if (METHODES_ECRITURE.includes(methode)) {
+    const csrf = lireCookie("csrf_token");
+    if (csrf) headers["X-CSRF-Token"] = csrf;
   }
-  return donnees as Reponse;
+  return fetch(chemin, {
+    method: methode,
+    headers,
+    credentials: "include",
+    body: corps !== undefined ? JSON.stringify(corps) : undefined,
+  });
+}
+
+export async function appelerApi<T = unknown>(chemin: string, options: Options = {}): Promise<T> {
+  let reponse = await requete(chemin, options);
+
+  // Access token expiré (30 min) : on tente un refresh silencieux, puis on rejoue la requête une fois.
+  if (reponse.status === 401 && !chemin.startsWith("/api/auth/")) {
+    const refresh = await requete("/api/auth/rafraichir", { methode: "POST" });
+    if (refresh.ok) reponse = await requete(chemin, options);
+  }
+
+  const donnees = await reponse.json().catch(() => null);
+  if (!reponse.ok) {
+    throw new ErreurApi(reponse.status, extraireMessage(donnees?.detail), donnees?.detail);
+  }
+  return donnees as T;
 }

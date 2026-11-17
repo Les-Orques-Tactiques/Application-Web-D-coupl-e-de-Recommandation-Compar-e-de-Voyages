@@ -8,6 +8,26 @@ export interface Consentements {
   geolocalisation: boolean; // facultatif
 }
 
+/** Utilisateur public renvoyé par le backend, sans mot de passe ni JWT. */
+export interface Utilisateur {
+  id: string;
+  email: string;
+  nom: string;
+  prenom: string;
+  role: "utilisateur" | "evaluateur";
+  actif: boolean;
+  onboarding_termine: boolean;
+  derniere_connexion: string | null;
+  cree_le: string | null;
+}
+
+/** Réponse des routes de connexion et de rafraîchissement de session. */
+export interface ReponseConnexion {
+  utilisateur: Utilisateur;
+  csrf_token: string;
+}
+
+
 /** Tout ce qu'on envoie au serveur pour créer un compte. */
 export interface DonneesInscription {
   prenom: string;

@@ -6,6 +6,7 @@ import { Bouton } from "@/components/ui/Bouton";
 import { Champ } from "@/components/ui/Champ";
 import { ErreurApi } from "@/lib/clientApi";
 import { creerCompte } from "../api";
+import { messagePourErreur } from "../erreurs";
 import { emailEnAttente } from "../stockage";
 import type { Consentements } from "../types";
 import { CasesConsentements } from "./CasesConsentements";
@@ -16,7 +17,7 @@ type ValeursFormulaire = { prenom: string; nom: string; email: string; motDePass
 // champs en erreur sont présents). "keyof" liste les noms des champs.
 type ErreursFormulaire = Partial<Record<keyof ValeursFormulaire | "conditions", string>>;
 
-const LONGUEUR_MINIMALE_MOT_DE_PASSE = 12;
+const LONGUEUR_MINIMALE_MOT_DE_PASSE = 8;
 
 /**
  * Vérifie le formulaire avant l'envoi au serveur.
@@ -27,13 +28,37 @@ const LONGUEUR_MINIMALE_MOT_DE_PASSE = 12;
  */
 function verifierFormulaire(valeurs: ValeursFormulaire, consentements: Consentements): ErreursFormulaire {
   const erreurs: ErreursFormulaire = {};
+  const motDePasse = valeurs.motDePasse;
+
+  // Compte les points de code Unicode, comme len() en Python.
+  const longueurMotDePasse = Array.from(motDePasse).length;
+  
   // trim() retire les espaces au début et à la fin : "   " compte comme vide
   if (!valeurs.prenom.trim()) erreurs.prenom = "Indiquez votre prénom.";
   if (!valeurs.nom.trim()) erreurs.nom = "Indiquez votre nom.";
   // Expression régulière : du texte sans espace, un @, du texte, un point, du texte
-  if (!/^\S+@\S+\.\S+$/.test(valeurs.email)) erreurs.email = "Saisissez une adresse e-mail valide.";
-  if (valeurs.motDePasse.length < LONGUEUR_MINIMALE_MOT_DE_PASSE) {
-    erreurs.motDePasse = `Le mot de passe doit contenir au moins ${LONGUEUR_MINIMALE_MOT_DE_PASSE} caractères.`;
+  if (!/^\S+@\S+\.\S+$/.test(valeurs.email.trim())) erreurs.email = "Saisissez une adresse e-mail valide.";
+  
+  // Mêmes règles que le backend (schéma Inscription) : 8 à 128 caractères, une majuscule,
+  // un chiffre, un caractère spécial, et 72 octets UTF-8 maximum
+  if (longueurMotDePasse < LONGUEUR_MINIMALE_MOT_DE_PASSE) {
+    erreurs.motDePasse =
+      `Le mot de passe doit contenir au moins ${LONGUEUR_MINIMALE_MOT_DE_PASSE} caractères.`;
+  } else if (longueurMotDePasse > 128) {
+    erreurs.motDePasse =
+      "Le mot de passe doit contenir au maximum 128 caractères.";
+  } else if (!/[A-Z]/.test(motDePasse)) {
+    erreurs.motDePasse =
+      "Le mot de passe doit contenir au moins une majuscule.";
+  } else if (!/[0-9]/.test(motDePasse)) {
+    erreurs.motDePasse =
+      "Le mot de passe doit contenir au moins un chiffre.";
+  } else if (!/[!@#$%^&*()\-_=+{};:,.<>?\/\\|`~"']/.test(motDePasse)) {
+    erreurs.motDePasse =
+      "Le mot de passe doit contenir au moins un caractère spécial.";
+  } else if (new TextEncoder().encode(motDePasse).length > 72) {
+    erreurs.motDePasse =
+      "Le mot de passe est trop long (72 octets maximum).";
   }
   if (!consentements.conditions) erreurs.conditions = "Vous devez accepter les conditions pour créer un compte.";
   return erreurs;
@@ -91,12 +116,13 @@ export function FormulaireInscription() {
       emailEnAttente.ecrire(emailNettoye); // pour retrouver l'adresse si la page est rechargée
       naviguerVers("/activation", { state: { email: emailNettoye } }); // passe l'adresse à la page suivante
     } catch (erreur) {
-      // 409 = un compte existe déjà avec cet e-mail ; tout autre problème = message générique
-      setErreurGenerale(
-        erreur instanceof ErreurApi && erreur.statut === 409
-          ? "Un compte existe déjà avec cette adresse e-mail."
-          : "Impossible de créer le compte pour le moment. Réessayez dans un instant.",
-      );
+        if (erreur instanceof ErreurApi && erreur.statut === 409) {
+          // Email déjà utilisé : l'erreur s'affiche sous le champ concerné
+          setErreurs({ email: "Un compte existe déjà avec cette adresse e-mail." });
+        } else {
+          // 429, 400/422, 500, réseau… : messages communs définis dans erreurs.ts
+          setErreurGenerale(messagePourErreur(erreur, "inscription"));
+        }
     } finally {
       // "finally" s'exécute toujours, succès ou échec : on réactive le bouton
       setEnvoiEnCours(false);
@@ -111,7 +137,7 @@ export function FormulaireInscription() {
         <Champ libelle="Nom" required autoComplete="family-name" placeholder="Martin" value={valeurs.nom} onChange={modifierChamp("nom")} erreur={erreurs.nom} />
       </div>
       <Champ libelle="Adresse e-mail" required type="email" icone={Mail} autoComplete="email" placeholder="camille.martin@example.fr" value={valeurs.email} onChange={modifierChamp("email")} erreur={erreurs.email} />
-      <Champ libelle="Mot de passe" required type="password" icone={Lock} autoComplete="new-password" value={valeurs.motDePasse} onChange={modifierChamp("motDePasse")} erreur={erreurs.motDePasse} aide="12 caractères minimum. Utilisez un mot de passe unique." />
+      <Champ libelle="Mot de passe" required type="password" icone={Lock} autoComplete="new-password" value={valeurs.motDePasse} onChange={modifierChamp("motDePasse")} erreur={erreurs.motDePasse} aide={`${LONGUEUR_MINIMALE_MOT_DE_PASSE} caractères minimum, avec une majuscule, un chiffre et un caractère spécial.`} />
 
       <CasesConsentements valeur={consentements} auChangement={setConsentements} erreurConditions={erreurs.conditions} />
 
