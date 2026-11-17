@@ -4,6 +4,8 @@ import { MiseEnPagePublique } from "@/layouts/MiseEnPagePublique";
 import PageActivation from "@/pages/PageActivation";
 import PageConnexion from "@/pages/PageConnexion";
 import PageInscription from "@/pages/PageInscription";
+import PageMotDePasseOublie from "@/pages/PageMotDePasseOublie";
+import PageReinitialisation from "@/pages/PageReinitialisation";
 
 /**
  * Table de routage : associe une adresse (URL) à la page à afficher.
@@ -19,9 +21,8 @@ export const routeur = createBrowserRouter([
       { path: "/inscription", element: <PageInscription /> },
       { path: "/connexion", element: <PageConnexion /> },
       { path: "/activation", element: <PageActivation /> },
-      // À activer quand les pages existeront :
-      // { path: "/mot-de-passe-oublie", element: <PageMotDePasseOublie /> },
-      // { path: "/reinitialisation", element: <PageReinitialisation /> },
+      { path: "/mot-de-passe-oublie", element: <PageMotDePasseOublie /> },
+      { path: "/reinitialisation", element: <PageReinitialisation /> },
 
       // ----- Pages réservées aux personnes connectées -----
       // Pas de "path" : RouteProtegee sert seulement de garde.

@@ -6,6 +6,7 @@ import { Bouton } from "@/components/ui/Bouton";
 import { Champ } from "@/components/ui/Champ";
 import { ErreurApi } from "@/lib/clientApi";
 import { creerCompte } from "../api";
+import { AIDE_MOT_DE_PASSE, verifierEmail, verifierMotDePasse } from "../validation";
 import { messagePourErreur } from "../erreurs";
 import { emailEnAttente } from "../stockage";
 import type { Consentements } from "../types";
@@ -17,7 +18,6 @@ type ValeursFormulaire = { prenom: string; nom: string; email: string; motDePass
 // champs en erreur sont présents). "keyof" liste les noms des champs.
 type ErreursFormulaire = Partial<Record<keyof ValeursFormulaire | "conditions", string>>;
 
-const LONGUEUR_MINIMALE_MOT_DE_PASSE = 8;
 
 /**
  * Vérifie le formulaire avant l'envoi au serveur.
@@ -28,41 +28,18 @@ const LONGUEUR_MINIMALE_MOT_DE_PASSE = 8;
  */
 function verifierFormulaire(valeurs: ValeursFormulaire, consentements: Consentements): ErreursFormulaire {
   const erreurs: ErreursFormulaire = {};
-  const motDePasse = valeurs.motDePasse;
-
-  // Compte les points de code Unicode, comme len() en Python.
-  const longueurMotDePasse = Array.from(motDePasse).length;
   
-  // trim() retire les espaces au début et à la fin : "   " compte comme vide
   if (!valeurs.prenom.trim()) erreurs.prenom = "Indiquez votre prénom.";
   if (!valeurs.nom.trim()) erreurs.nom = "Indiquez votre nom.";
-  // Expression régulière : du texte sans espace, un @, du texte, un point, du texte
-  if (!/^\S+@\S+\.\S+$/.test(valeurs.email.trim())) erreurs.email = "Saisissez une adresse e-mail valide.";
   
-  // Mêmes règles que le backend (schéma Inscription) : 8 à 128 caractères, une majuscule,
-  // un chiffre, un caractère spécial, et 72 octets UTF-8 maximum
-  if (longueurMotDePasse < LONGUEUR_MINIMALE_MOT_DE_PASSE) {
-    erreurs.motDePasse =
-      `Le mot de passe doit contenir au moins ${LONGUEUR_MINIMALE_MOT_DE_PASSE} caractères.`;
-  } else if (longueurMotDePasse > 128) {
-    erreurs.motDePasse =
-      "Le mot de passe doit contenir au maximum 128 caractères.";
-  } else if (!/[A-Z]/.test(motDePasse)) {
-    erreurs.motDePasse =
-      "Le mot de passe doit contenir au moins une majuscule.";
-  } else if (!/[0-9]/.test(motDePasse)) {
-    erreurs.motDePasse =
-      "Le mot de passe doit contenir au moins un chiffre.";
-  } else if (!/[!@#$%^&*()\-_=+{};:,.<>?\/\\|`~"']/.test(motDePasse)) {
-    erreurs.motDePasse =
-      "Le mot de passe doit contenir au moins un caractère spécial.";
-  } else if (new TextEncoder().encode(motDePasse).length > 72) {
-    erreurs.motDePasse =
-      "Le mot de passe est trop long (72 octets maximum).";
-  }
+  const erreurEmail = verifierEmail(valeurs.email);
+  if (erreurEmail) erreurs.email = erreurEmail;
+  
+  const erreurMotDePasse = verifierMotDePasse(valeurs.motDePasse);
+  if (erreurMotDePasse) erreurs.motDePasse = erreurMotDePasse;
   if (!consentements.conditions) erreurs.conditions = "Vous devez accepter les conditions pour créer un compte.";
   return erreurs;
-}
+ }
 
 /**
  * Formulaire d'inscription complet : champs, validation, envoi au serveur, puis redirection
@@ -137,7 +114,7 @@ export function FormulaireInscription() {
         <Champ libelle="Nom" required autoComplete="family-name" placeholder="Martin" value={valeurs.nom} onChange={modifierChamp("nom")} erreur={erreurs.nom} />
       </div>
       <Champ libelle="Adresse e-mail" required type="email" icone={Mail} autoComplete="email" placeholder="camille.martin@example.fr" value={valeurs.email} onChange={modifierChamp("email")} erreur={erreurs.email} />
-      <Champ libelle="Mot de passe" required type="password" icone={Lock} autoComplete="new-password" value={valeurs.motDePasse} onChange={modifierChamp("motDePasse")} erreur={erreurs.motDePasse} aide={`${LONGUEUR_MINIMALE_MOT_DE_PASSE} caractères minimum, avec une majuscule, un chiffre et un caractère spécial.`} />
+      <Champ libelle="Mot de passe" required type="password" icone={Lock} autoComplete="new-password" value={valeurs.motDePasse} onChange={modifierChamp("motDePasse")} erreur={erreurs.motDePasse} aide={AIDE_MOT_DE_PASSE} />
 
       <CasesConsentements valeur={consentements} auChangement={setConsentements} erreurConditions={erreurs.conditions} />
 

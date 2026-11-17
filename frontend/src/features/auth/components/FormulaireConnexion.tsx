@@ -15,7 +15,9 @@ export function FormulaireConnexion() {
   const { connecter } = useAuth();
   // ← NOUVEAU : page demandée avant la redirection faite par RouteProtegee (si elle existe)
   const emplacement = useLocation();
-  const depuis = (emplacement.state as { depuis?: string } | null)?.depuis;
+  const etatNavigation = emplacement.state as { depuis?: string; message?: string } | null;
+  const depuis = etatNavigation?.depuis;
+  const messageSucces = etatNavigation?.message;
 
   const [email, setEmail] = useState("");
   const [motDePasse, setMotDePasse] = useState("");
@@ -47,6 +49,9 @@ export function FormulaireConnexion() {
 
   return (
     <form onSubmit={soumettre} className="mt-6 space-y-5">
+      {messageSucces && !messageErreur && (
+        <Bandeau ton="succes">{messageSucces}</Bandeau>
+      )}
       <Champ libelle="Adresse e-mail" type="email" icone={Mail} autoComplete="email" placeholder="camille.martin@example.fr" required value={email} onChange={(evenement) => setEmail(evenement.target.value)} />
       <Champ libelle="Mot de passe" type="password" icone={Lock} autoComplete="current-password" required value={motDePasse} onChange={(evenement) => setMotDePasse(evenement.target.value)} />
 
