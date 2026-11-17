@@ -1,33 +1,42 @@
-import { useState, type FormEvent } from "react";
+import { useState, type SubmitEvent } from "react";
 import { ArrowRight, Lock, Mail } from "lucide-react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom"; // ← MODIFIÉ : + useLocation
 import { Bandeau } from "@/components/ui/Bandeau";
 import { Bouton } from "@/components/ui/Bouton";
 import { Champ } from "@/components/ui/Champ";
 import { ErreurApi } from "@/lib/clientApi";
-import { seConnecter } from "../api";
+import { useAuth } from "../contexte/useAuth"; // ← NOUVEAU (remplace l'import de seConnecter)
 import { messagePourErreur } from "../erreurs";
 
 /** Formulaire de connexion : e-mail + mot de passe, avec un bandeau d'erreur si la connexion échoue. */
 export function FormulaireConnexion() {
   const naviguerVers = useNavigate();
+  // ← NOUVEAU : "connecter" appelle seConnecter ET range l'utilisateur dans le contexte
+  const { connecter } = useAuth();
+  // ← NOUVEAU : page demandée avant la redirection faite par RouteProtegee (si elle existe)
+  const emplacement = useLocation();
+  const depuis = (emplacement.state as { depuis?: string } | null)?.depuis;
+
   const [email, setEmail] = useState("");
   const [motDePasse, setMotDePasse] = useState("");
   const [messageErreur, setMessageErreur] = useState("");
-  // Vrai après un 401 : on propose alors de renvoyer l'email d'activation,
-  // car le backend répond 401 aussi bien pour un mauvais mot de passe que pour un compte non activé
+  // Vrai après un 401 : on propose de renvoyer l'email d'activation
   const [proposerRenvoi, setProposerRenvoi] = useState(false);
   const [envoiEnCours, setEnvoiEnCours] = useState(false);
 
-  async function soumettre(evenement: FormEvent) {
+  async function soumettre(evenement: SubmitEvent<HTMLFormElement>) {
     evenement.preventDefault(); // évite le rechargement de la page
     setMessageErreur("");
     setProposerRenvoi(false);
     setEnvoiEnCours(true);
     try {
-      const utilisateur = await seConnecter({ email: email.trim(), motDePasse });
-      // Première connexion : on envoie vers le choix des préférences
-      naviguerVers(utilisateur.onboarding_termine ? "/explorer" : "/bienvenue");
+      // ← MODIFIÉ : connecter() au lieu de seConnecter()
+      const utilisateur = await connecter({ email: email.trim(), motDePasse });
+      if (!utilisateur.onboarding_termine) {
+        naviguerVers("/bienvenue", { replace: true }); // première connexion : préférences
+      } else {
+        naviguerVers(depuis ?? "/explorer", { replace: true }); // retour à la page demandée
+      }
     } catch (erreur) {
       setMessageErreur(messagePourErreur(erreur, "connexion"));
       setProposerRenvoi(erreur instanceof ErreurApi && erreur.statut === 401);

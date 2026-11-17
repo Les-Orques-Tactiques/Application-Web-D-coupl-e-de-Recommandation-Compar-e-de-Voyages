@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 import { RouterProvider } from "react-router-dom";
 import { routeur } from "@/app/routeur";
 import "./index.css";
+import { FournisseurAuth } from "./features/auth/contexte/FournisseurAuth";
 
 /*
  * Point d'entrée de l'application : c'est le premier fichier exécuté par le navigateur.
@@ -15,6 +16,9 @@ import "./index.css";
  */
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <RouterProvider router={routeur} />
+    <FournisseurAuth>
+      <RouterProvider router={routeur} />
+    </FournisseurAuth>
   </StrictMode>,
 );
+

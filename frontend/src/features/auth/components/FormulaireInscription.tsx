@@ -1,4 +1,4 @@
-import { useState, type ChangeEvent, type FormEvent } from "react";
+import { useState, type ChangeEvent, type SubmitEvent } from "react";
 import { ArrowRight, Lock, Mail } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 import { Bandeau } from "@/components/ui/Bandeau";
@@ -100,7 +100,7 @@ export function FormulaireInscription() {
    * 3. sinon envoie la demande au serveur ; 4. en cas de succès, passe à la page d'activation.
    * "async" permet d'utiliser "await" pour attendre la réponse du serveur.
    */
-  async function soumettre(evenement: FormEvent) {
+  async function soumettre(evenement: SubmitEvent<HTMLFormElement>) {
     evenement.preventDefault(); // empêche le rechargement de la page, comportement par défaut d'un formulaire
     const erreursTrouvees = verifierFormulaire(valeurs, consentements);
     setErreurs(erreursTrouvees);
