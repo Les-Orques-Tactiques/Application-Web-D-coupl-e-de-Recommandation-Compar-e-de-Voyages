@@ -8,12 +8,12 @@ import PageInscription from "@/features/auth/pages/PageInscription";
 import PageMotDePasseOublie from "@/features/auth/pages/PageMotDePasseOublie";
 import PageReinitialisation from "@/features/auth/pages/PageReinitialisation";
 import PageBienvenue from "@/features/preferences/pages/PageBienvenue";
+import PageExplorer from "@/features/auth/pages/PageExplorer";
 
 /**
  * Table de routage : associe une adresse (URL) à la page à afficher.
  *
- * Les pages listées dans "children" sont affichées à l'intérieur de MiseEnPagePublique
- * (à l'endroit de son <Outlet />), donc elles partagent le même en-tête et pied de page.
+ * Les pages publiques partagent MiseEnPagePublique. L'espace Explorer garde son propre en-tête.
  */
 export const routeur = createBrowserRouter([
   {
@@ -26,7 +26,7 @@ export const routeur = createBrowserRouter([
       { path: "/activation", element: <PageActivation /> },
       { path: "/mot-de-passe-oublie", element: <PageMotDePasseOublie /> },
       { path: "/reinitialisation", element: <PageReinitialisation /> },
-      
+
       // ----- Pages réservées aux personnes connectées -----
       // Pas de "path" : RouteProtegee sert seulement de garde.
       // Si /moi a répondu 401, elle redirige vers /connexion. Sinon, son <Outlet />
@@ -34,8 +34,6 @@ export const routeur = createBrowserRouter([
       {
         element: <RouteProtegee />,
         children: [
-          // Provisoire : l'espace connecté aura plus tard sa propre mise en page
-          { path: "/explorer", element: <p className="p-16">Connecté ✔ (page Explorer à venir)</p> },
           // FormulaireConnexion redirige ici si l'onboarding n'est pas terminé
           { path: "/bienvenue", element: <PageBienvenue /> },
         ],
@@ -46,4 +44,10 @@ export const routeur = createBrowserRouter([
       { path: "*", element: <Navigate to="/" replace /> },
     ],
   },
+  {
+    element: <RouteProtegee />,
+    children: [{ path: "/explorer", element: <PageExplorer /> }],
+  },
+  // "*" attrape toute adresse inconnue et renvoie vers la connexion.
+  { path: "*", element: <Navigate to="/connexion" replace /> },
 ]);

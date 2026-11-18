@@ -9,8 +9,10 @@ from app.models.utilisateur.UtilisateurDAO import UtilisateurDAO
 from app.models.jeton.JetonDAO import JetonDAO
 from app.models.token_revoque.TokenRevoqueDAO import TokenRevoqueDAO
 from app.models.email.EmailServiceDAO import EmailEnvoyeDAO
+from app.models.exploration.ExplorationDAO import ExplorationDAO
 from app.services.UtilisateurService import UtilisateurService
 from app.services.AuthentificationService import AuthService
+from app.services.ExplorationService import ExplorationService
 
 # ----------------------------------------------------------------------------
 # DAO : une instance chacun, sans état (chaque appel passe par le pool de
@@ -21,6 +23,7 @@ utilisateur_dao = UtilisateurDAO()
 jeton_dao = JetonDAO()
 token_revoque_dao = TokenRevoqueDAO()
 email_dao = EmailEnvoyeDAO()
+exploration_dao = ExplorationDAO()
 
 # ----------------------------------------------------------------------------
 # Services :
@@ -32,3 +35,4 @@ email_dao = EmailEnvoyeDAO()
 # ----------------------------------------------------------------------------
 utilisateur_service = UtilisateurService(utilisateur_dao=utilisateur_dao, jeton_dao=jeton_dao)
 auth_service = AuthService(utilisateur_dao=utilisateur_dao, token_revoque_dao=token_revoque_dao)
+exploration_service = ExplorationService(exploration_dao=exploration_dao)

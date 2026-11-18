@@ -6,11 +6,11 @@ React 19 + Vite + TypeScript + Tailwind CSS v4 + React Router. Code écrit avec 
 
 ```bash
 npm install
-cp .env.example .env     # VITE_MOCK_API=true : fonctionne sans backend
+cp .env.example .env
 npm run dev              # http://localhost:5173
 ```
 
-Pages : `/inscription`, `/connexion`, `/activation`.
+Pages : `/inscription`, `/connexion`, `/activation` et `/explorer` (réservée aux personnes connectées).
 
 ## Tester sans backend (VITE_MOCK_API=true)
 
@@ -18,19 +18,18 @@ Pages : `/inscription`, `/connexion`, `/activation`.
 - Connexion : un mot de passe d’au moins 12 caractères réussit, sinon le bandeau d’erreur s’affiche.
 - Activation : `/activation?jeton=ok` (succès), `?jeton=expire` (lien expiré), tout autre jeton (invalide).
 
-## Passer au vrai backend Flask
+## Connexion au backend FastAPI
 
-Mettre `VITE_MOCK_API=false`. Le proxy Vite redirige `/api` vers `http://localhost:5000`.
-Les clés JSON échangées avec le backend restent en anglais (contrat d’API).
+Le proxy Vite redirige `/api` vers `http://localhost:8000`. Configurez et démarrez la base PostgreSQL et le backend à partir des fichiers `.env.example` et `docker-compose.yml` à la racine du projet. Les appels API du frontend utilisent les cookies de session et le jeton CSRF.
 
 | Méthode | Route | Corps | Réponses |
 | --- | --- | --- | --- |
-| POST | `/api/auth/register` | `first_name, last_name, email, password, consents{terms, personalization, geolocation}` | 201 ; 409 e-mail déjà utilisé |
-| POST | `/api/auth/login` | `email, password` | 200 ; 401 identifiants ; 403 compte non activé |
-| POST | `/api/auth/activate` | `token` | 200 ; 410 expiré ; 400 invalide |
-| POST | `/api/auth/resend-activation` | `email` | 200 |
+| POST | `/api/exploration/recherches` | critères du trajet | Vols du catalogue et enregistrement de l’historique |
+| GET | `/api/exploration/favoris` | — | Favoris du compte |
+| POST / DELETE | `/api/exploration/favoris/{vol_id}` | — | Ajout / retrait d’un favori |
+| GET | `/api/exploration/historique` | — | Recherches enregistrées du compte |
 
-Erreurs : `{ "message": "...", "code": "..." }`. Le lien envoyé par e-mail doit pointer vers `/activation?jeton=XXXX`.
+Les résultats proviennent des tables `vols`, `aeroports`, `recherches` et `favoris`. Les données de vols doivent être présentes dans le catalogue pour qu’une recherche retourne des offres.
 
 ## Glossaire des noms
 
