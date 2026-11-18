@@ -2,6 +2,8 @@ import { Navigate, createBrowserRouter } from "react-router-dom";
 import { RouteProtegee } from "@/features/auth/components/RouteProtegee";
 import { MiseEnPagePublique } from "@/layouts/MiseEnPagePublique";
 import { MiseEnPagePrivee } from "@/layouts/MiseEnPagePrivee";
+import { RouteOnboarding } from "@/features/auth/components/RouteOnboarding";
+import { RouteDejaOnboarde } from "@/features/auth/components/RouteDejaOnboarde";
 import PageAccueil from "@/features/accueil/pages/PageAccueil";
 import PageActivation from "@/features/auth/pages/PageActivation";
 import PageConnexion from "@/features/auth/pages/PageConnexion";
@@ -11,8 +13,7 @@ import PageReinitialisation from "@/features/auth/pages/PageReinitialisation";
 import PageExplorer from "@/features/explorer/pages/PageExplorer";
 import PageComparateur  from "@/features/comparateur/pages/PageComparateur";
 import PageOnboarding from "@/features/preferences/pages/PageOnboarding";
-import { RouteOnboarding } from "@/features/auth/components/RouteOnboarding";
-import { RouteDejaOnboarde } from "@/features/auth/components/RouteDejaOnboarde";
+
 
 
 /**
