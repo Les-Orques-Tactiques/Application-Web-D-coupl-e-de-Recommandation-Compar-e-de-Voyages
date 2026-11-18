@@ -13,7 +13,7 @@ import PageReinitialisation from "@/features/auth/pages/PageReinitialisation";
 import PageExplorer from "@/features/explorer/pages/PageExplorer";
 import PageComparateur  from "@/features/comparateur/pages/PageComparateur";
 import PageOnboarding from "@/features/preferences/pages/PageOnboarding";
-import PageResultats from "@/features/auth/pages/resultatVols";
+import PageResultats  from "@/features/rechercheVols/pages/PageResultats";
 
 /**
  * Table de routage : associe une adresse (URL) à la page à afficher.
