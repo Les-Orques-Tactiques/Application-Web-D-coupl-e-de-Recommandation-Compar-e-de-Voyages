@@ -35,7 +35,7 @@ export function FormulaireConnexion() {
       // ← MODIFIÉ : connecter() au lieu de seConnecter()
       const utilisateur = await connecter({ email: email.trim(), motDePasse });
       if (!utilisateur.onboarding_termine) {
-        naviguerVers("/bienvenue", { replace: true }); // première connexion : préférences
+        naviguerVers("/explorer", { replace: true }); // première connexion : préférences
       } else {
         naviguerVers(depuis ?? "/explorer", { replace: true }); // retour à la page demandée
       }
