@@ -86,3 +86,28 @@ class OnboardingDejaTermineError(ConflitError):
     """Onboarding déjà effectué : il ne se fait qu'une fois. (409)"""
     def __init__(self, message: str = "L'onboarding est déjà terminé."):
         super().__init__(message)
+
+# ----------------------------------------------------------------------------
+# Domaine : référentiel et recherche
+# ----------------------------------------------------------------------------
+class PaysIntrouvableError(RessourceIntrouvableError):
+    """Code pays absent du référentiel. (404)"""
+    def __init__(self, message: str = "Pays introuvable."):
+        super().__init__(message)
+
+
+class AeroportIntrouvableError(RessourceIntrouvableError):
+    """Code IATA absent de la table aeroports. (404)"""
+    def __init__(self, message: str = "Aéroport introuvable."):
+        super().__init__(message)
+
+
+class VolIntrouvableError(RessourceIntrouvableError):
+    """Vol inconnu (fiche d'un vol, US20). (404)"""
+    def __init__(self, message: str = "Vol introuvable."):
+        super().__init__(message)
+
+class RechercheIntrouvableError(RessourceIntrouvableError):
+    """Recherche inconnue ou appartenant à un autre utilisateur. (404)"""
+    def __init__(self, message: str = "Recherche introuvable."):
+        super().__init__(message)
