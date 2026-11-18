@@ -12,7 +12,7 @@ export default defineConfig({
     alias: { "@": fileURLToPath(new URL("./src", import.meta.url)) },
   },
   server: {
-    // Pendant le développement, toute requête commençant par /api est envoyée au backend Flask.
+    // Pendant le développement, les appels /api sont envoyés au backend FastAPI.
     // Le navigateur croit parler au même serveur : pas de problème de CORS.
     proxy: { "/api": "http://localhost:8000" },
   },
