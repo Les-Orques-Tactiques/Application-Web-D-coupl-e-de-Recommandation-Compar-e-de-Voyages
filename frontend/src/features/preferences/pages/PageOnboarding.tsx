@@ -4,7 +4,7 @@ import { SurTitre } from "@/components/ui/SurTitre";
 import { useAuth } from "@/features/auth/contexte/useAuth";
 import { FormulairePreferences } from "@/features/preferences";
 
-export default function PageBienvenue() {
+export default function PageOnboarding() {
   const { utilisateur } = useAuth();
 
   return (

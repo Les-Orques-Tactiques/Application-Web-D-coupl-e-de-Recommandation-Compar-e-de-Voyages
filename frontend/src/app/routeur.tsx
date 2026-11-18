@@ -9,7 +9,9 @@ import PageInscription from "@/features/auth/pages/PageInscription";
 import PageMotDePasseOublie from "@/features/auth/pages/PageMotDePasseOublie";
 import PageReinitialisation from "@/features/auth/pages/PageReinitialisation";
 import PageExplorer from "@/features/explorer/pages/PageExplorer";
-import PageBienvenue from "@/features/preferences/pages/PageBienvenue";
+import PageOnboarding from "@/features/preferences/pages/PageOnboarding";
+import { RouteOnboarding } from "@/features/auth/components/RouteOnboarding";
+import { RouteDejaOnboarde } from "@/features/auth/components/RouteDejaOnboarde";
 
 
 /**
@@ -40,8 +42,10 @@ export const routeur = createBrowserRouter([
       {
         element: <RouteProtegee />,
         children: [
-          // FormulaireConnexion redirige ici si l'onboarding n'est pas terminé
-          { path: "/bienvenue", element: <PageBienvenue /> },
+          {
+            element: <RouteDejaOnboarde />,
+            children: [{ path: "/onboarding", element: <PageOnboarding /> }]
+          }
         ],
       },
 
@@ -59,10 +63,15 @@ export const routeur = createBrowserRouter([
     element: <RouteProtegee />,
     children: [
       {
-        element: <MiseEnPagePrivee />,
+        element: <RouteOnboarding />,
         children: [
-          // Les onglets passent par l'URL : /explorer?onglet=favoris, ?onglet=historique…
-          { path: "/explorer", element: <PageExplorer /> },
+          {
+            element: <MiseEnPagePrivee />,
+            children: [
+              { path: "/explorer", element: <PageExplorer /> },
+              // Les futures pages privées viendront ici (ex. /profil, /comparateur)
+            ],
+          },
           // Les futures pages privées viendront ici (ex. /profil, /comparateur)
         ],
       },
