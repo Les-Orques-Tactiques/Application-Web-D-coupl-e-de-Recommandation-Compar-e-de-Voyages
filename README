@@ -1,1 +1,123 @@
- lien github: https://github.com/Les-Orques-Tactiques/Application-Web-D-coupl-e-de-Recommandation-Compar-e-de-Voyages.git
+# Orca Flight
+
+Application web découplée (API + front) de **recommandation comparée de vols**, développée dans le cadre de la SAÉ BUT3 5.Real.01 (IUT de Villetaneuse, Université Sorbonne Paris Nord, 2026-2027).
+
+Dépôt : https://github.com/Les-Orques-Tactiques/Application-Web-D-coupl-e-de-Recommandation-Compar-e-de-Voyages
+
+## Présentation
+
+Après la création de son compte, l'utilisateur renseigne (ou passe) ses préférences : aéroport de départ habituel, budget, nombre d'escales, compagnies privilégiées. La plateforme génère un classement personnalisé des vols, qui évolue avec ses interactions (consultations, favoris, avis, clics sur « Réserver »).
+
+L'application ne vend pas de billets : elle redirige vers le site de la compagnie ou de l'agence, sans gérer de paiement. Le périmètre reste strictement centré sur le transport aérien.
+
+### Les deux approches comparées
+
+- **Approche A, basée sur le contenu** : chaque itinéraire est représenté par un embedding (prix, durée, escales, compagnie) ; le classement repose sur la similarité cosinus avec le profil de l'utilisateur.
+- **Approche B, filtrage collaboratif** : kNN appliqué à l'historique global des interactions.
+- Les deux sont combinées dans un score unique, dont la part de B augmente avec le nombre d'interactions.
+
+Un tableau de bord compare les approches (temps de réponse, complexité, ressources, Precision@K, NDCG).
+
+## Fonctionnalités par lot
+
+| Lot | Contenu |
+|---|---|
+| **Lot 1 (MVP)** | Comptes (inscription, activation par e-mail, connexion, mot de passe oublié), préférences, recherche, résultats avec filtres et tri, fiche vol, redirection de réservation, ingestion des données (OurAirports, Ignav), approche A, politique de confidentialité, mentions légales, CGU |
+| **Lot 2** | Favoris, historique de recherche, géolocalisation, explication des recommandations, consentements avancés, portabilité et suppression de compte, simulation de données (démarrage à froid) |
+| **Lot 3** | Approche B, score combiné, comparaison A/B côte à côte, tableau de bord de performances |
+
+## Stack technique
+
+| Couche | Technologies |
+|---|---|
+| Front | React, Vite, TypeScript, Tailwind CSS |
+| Back | FastAPI, psycopg2 (SQL brut), architecture DAO / Service / Controller |
+| Base de données | PostgreSQL + pgvector |
+| Sources de données | API Ignav (tarifs et liens de réservation), OurAirports (pays et aéroports) |
+| Infra | Docker et Docker Compose |
+| Outils | Git/GitHub, Figma, VS Code |
+
+## Lancer le projet
+
+### Récupérer le code
+```bash
+git clone https://github.com/Les-Orques-Tactiques/Application-Web-D-coupl-e-de-Recommandation-Compar-e-de-Voyages.git
+cd Application-Web-D-coupl-e-de-Recommandation-Compar-e-de-Voyages
+git checkout develop
+```
+
+### Prérequis
+Docker, Docker Compose, Node.js `<version>`.
+
+### Back + base de données
+```bash
+cp .env.example .env     # puis renseigner les variables
+docker compose build
+docker compose up db backend
+```
+API : http://localhost:8000 (Swagger : `/docs`)
+
+### Front
+```bash
+cd frontend
+npm install
+npm run dev
+```
+Front : http://localhost:5173
+
+## Variables d'environnement
+
+| Variable | Rôle |
+|---|---|
+| `POSTGRES_*` | connexion PostgreSQL |
+| `JWT_SECRET` | signature des tokens |
+| `IGNAV_API_KEY` | collecte des vols (quota de 1 000 requêtes gratuites) |
+| `SMTP_*` | envoi des e-mails d'activation et de réinitialisation |
+| `VITE_API_URL` | adresse de l'API côté front |
+
+(Ajuste les noms selon ton `.env.example`.)
+
+## Base de données
+
+Le modèle compte 16 entités et 20 tables, regroupées en six domaines : comptes et accès, référentiel géographique, trafic aérien, préférences et profils, historique et interactions, recommandation et métriques. Le schéma est dans `backend/app/database/schema.sql`.
+
+Les tables `pays` et `aeroports` doivent être peuplées (script d'ingestion OurAirports) pour que les préférences soient acceptées. Les données de vols sont collectées avec `collecte_ignav_2.py` (JSON bruts conservés, puis normalisés en base). Les données simulées sont signalées comme telles.
+
+## Routes principales
+
+| Méthode | Route | Description |
+|---|---|---|
+| POST | `/api/utilisateurs/inscription` | création de compte |
+| POST | `/api/utilisateurs/activation` | activation par e-mail |
+| POST | `/api/auth/connexion` | connexion |
+| GET | `/api/auth/moi` | utilisateur courant |
+| POST | `/api/utilisateurs/moi/preferences/onboarding` | première saisie des préférences |
+| PATCH | `/api/utilisateurs/moi/preferences` | modification partielle |
+| PUT / DELETE | `/api/utilisateurs/moi/preferences/lieu-depart` | position de départ (avec consentement) |
+
+## Sécurité et données personnelles
+
+- Authentification par JWT, routes protégées, mots de passe hachés
+- Requêtes SQL paramétrées (pas d'injection SQL)
+- RGPD : consentements explicites (dont la localisation, utilisée uniquement après accord), consultation, copie et suppression des données
+
+## Organisation Git
+
+- `main` : version stable
+- `develop` : intégration
+- `feat/<sujet>` : une branche par fonctionnalité
+- Commits au format Conventional Commits (`feat(...)`, `fix(...)`)
+
+## Équipe
+
+**Les Orques tactiques** : 
+
+- Roula Hani
+- Atanase Gabin Ateba
+- Vakisan Mathignanasingam
+- Clément Sène
+- Fousseynou Sidibe
+- Mathieu Fifen Njoya
+
+
+Encadrant : G. Guibon
