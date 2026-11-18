@@ -1,13 +1,16 @@
-import { useId, type InputHTMLAttributes } from "react";
+import { useId, type InputHTMLAttributes, type ReactNode } from "react"; // NOUVEAU : ReactNode
 import type { LucideIcon } from "lucide-react";
 
 // Un champ accepte toutes les propriétés d'un <input> HTML, plus les nôtres :
-// libelle (texte au-dessus), icone (à gauche), aide (texte sous le champ), erreur (message rouge)
-interface PropsChamp extends InputHTMLAttributes<HTMLInputElement> {
+// libelle (texte au-dessus), icone (à gauche), aide (texte sous le champ), erreur (message rouge),
+// suffixe (élément cliquable à droite, ex. bouton « afficher le mot de passe »)
+// NOUVEAU : "export" pour que ChampMotDePasse puisse réutiliser ce type
+export interface PropsChamp extends InputHTMLAttributes<HTMLInputElement> {
   libelle: string;
   icone?: LucideIcon;
   aide?: string;
   erreur?: string;
+  suffixe?: ReactNode; // NOUVEAU
 }
 
 /**
@@ -25,15 +28,14 @@ export function Champ({
   icone: Icone,
   aide,
   erreur,
+  suffixe, // NOUVEAU : retiré de autresProps pour ne pas finir sur l'<input>
   className = "",
   id,
   required: obligatoire,
   ...autresProps
 }: PropsChamp) {
-  // useId fabrique un identifiant unique, utilisé pour relier <label> et <input>
   const identifiantAutomatique = useId();
   const identifiantChamp = id ?? identifiantAutomatique;
-  // Identifiant du message affiché sous le champ (erreur en priorité sur l'aide)
   const identifiantMessage = erreur ? `${identifiantChamp}-erreur` : aide ? `${identifiantChamp}-aide` : undefined;
 
   return (
@@ -43,7 +45,6 @@ export function Champ({
         {obligatoire && " *"}
       </label>
       <div className="relative">
-        {/* L'icône n'est affichée que si elle est fournie (&& : "si vrai, alors afficher") */}
         {Icone && (
           <Icone
             aria-hidden="true"
@@ -53,15 +54,17 @@ export function Champ({
         <input
           id={identifiantChamp}
           aria-required={obligatoire}
-          aria-invalid={erreur ? true : undefined} // signale l'erreur aux lecteurs d'écran
-          aria-describedby={identifiantMessage} // relie le champ à son message
-          className={`h-12 w-full rounded-xl border bg-white pr-4 text-[15px] placeholder:text-[#9aa8ab] focus:border-principal focus:outline-2 focus:outline-principal/25 ${
-            Icone ? "pl-11" : "pl-4" // plus d'espace à gauche quand il y a une icône
-          } ${erreur ? "border-erreur" : "border-trait"}`}
+          aria-invalid={erreur ? true : undefined}
+          aria-describedby={identifiantMessage}
+          className={`h-12 w-full rounded-xl border bg-white text-[15px] placeholder:text-[#9aa8ab] focus:border-principal focus:outline-2 focus:outline-principal/25 ${Icone ? "pl-11" : "pl-4"
+            } ${suffixe ? "pr-12" : "pr-4" // NOUVEAU : place pour le bouton à droite, le texte ne passe pas dessous
+            } ${erreur ? "border-erreur" : "border-trait"}`}
           {...autresProps}
         />
+        {/* NOUVEAU : élément à droite, centré verticalement comme l'icône de gauche.
+            Pas de pointer-events-none ici : il doit rester cliquable. */}
+        {suffixe && <div className="absolute right-3 top-1/2 flex -translate-y-1/2">{suffixe}</div>}
       </div>
-      {/* Message sous le champ : l'erreur remplace l'aide quand elle existe */}
       {erreur ? (
         <p id={`${identifiantChamp}-erreur`} className="mt-1.5 text-xs text-erreur">
           {erreur}

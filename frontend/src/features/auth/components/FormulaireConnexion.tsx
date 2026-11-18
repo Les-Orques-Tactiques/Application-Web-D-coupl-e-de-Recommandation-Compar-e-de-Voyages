@@ -1,19 +1,20 @@
 import { useState, type SubmitEvent } from "react";
-import { ArrowRight, Lock, Mail } from "lucide-react";
-import { Link, useLocation, useNavigate } from "react-router-dom"; // ← MODIFIÉ : + useLocation
+import { ArrowRight, Mail } from "lucide-react"; // ← MODIFIÉ : Lock retiré (ChampMotDePasse l'ajoute lui-même)
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { Bandeau } from "@/components/ui/Bandeau";
 import { Bouton } from "@/components/ui/Bouton";
 import { Champ } from "@/components/ui/Champ";
+import { ChampMotDePasse } from "@/components/ui/ChampMotDePasse"; // ← MODIFIÉ : nouvel import
 import { ErreurApi } from "@/lib/clientApi";
-import { useAuth } from "../contexte/useAuth"; // ← NOUVEAU (remplace l'import de seConnecter)
+import { useAuth } from "../contexte/useAuth";
 import { messagePourErreur } from "../utils/erreurs";
 
 /** Formulaire de connexion : e-mail + mot de passe, avec un bandeau d'erreur si la connexion échoue. */
 export function FormulaireConnexion() {
   const naviguerVers = useNavigate();
-  // ← NOUVEAU : "connecter" appelle seConnecter ET range l'utilisateur dans le contexte
+  // "connecter" appelle seConnecter ET range l'utilisateur dans le contexte
   const { connecter } = useAuth();
-  // ← NOUVEAU : page demandée avant la redirection faite par RouteProtegee (si elle existe)
+  // Page demandée avant la redirection faite par RouteProtegee (si elle existe)
   const emplacement = useLocation();
   const etatNavigation = emplacement.state as { depuis?: string; message?: string } | null;
   const depuis = etatNavigation?.depuis;
@@ -32,7 +33,6 @@ export function FormulaireConnexion() {
     setProposerRenvoi(false);
     setEnvoiEnCours(true);
     try {
-      // ← MODIFIÉ : connecter() au lieu de seConnecter()
       const utilisateur = await connecter({ email: email.trim(), motDePasse });
       if (!utilisateur.onboarding_termine) {
         naviguerVers("/explorer", { replace: true }); // première connexion : préférences
@@ -53,7 +53,8 @@ export function FormulaireConnexion() {
         <Bandeau ton="succes">{messageSucces}</Bandeau>
       )}
       <Champ libelle="Adresse e-mail" type="email" icone={Mail} autoComplete="email" placeholder="camille.martin@example.fr" required value={email} onChange={(evenement) => setEmail(evenement.target.value)} />
-      <Champ libelle="Mot de passe" type="password" icone={Lock} autoComplete="current-password" required value={motDePasse} onChange={(evenement) => setMotDePasse(evenement.target.value)} />
+      {/* ← MODIFIÉ : ChampMotDePasse gère lui-même type="password"/"text", l'icône Lock et le bouton œil */}
+      <ChampMotDePasse libelle="Mot de passe" autoComplete="current-password" required value={motDePasse} onChange={(evenement) => setMotDePasse(evenement.target.value)} />
 
       <div className="text-right">
         <Link to="/mot-de-passe-oublie" className="text-[13px] font-semibold text-principal">
