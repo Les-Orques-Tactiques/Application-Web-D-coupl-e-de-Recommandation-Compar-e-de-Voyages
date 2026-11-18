@@ -13,8 +13,7 @@ import PageReinitialisation from "@/features/auth/pages/PageReinitialisation";
 import PageExplorer from "@/features/explorer/pages/PageExplorer";
 import PageComparateur  from "@/features/comparateur/pages/PageComparateur";
 import PageOnboarding from "@/features/preferences/pages/PageOnboarding";
-
-
+import PageResultats from "@/features/auth/pages/resultatVols";
 
 /**
  * Table de routage : associe une adresse (URL) à la page à afficher.
@@ -73,12 +72,15 @@ export const routeur = createBrowserRouter([
             children: [
               { path: "/explorer", element: <PageExplorer /> },
               // Les futures pages privées viendront ici (ex. /profil, /comparateur)
+              { path: "/comparateur", element: <PageComparateur /> },
+              { path: "/resultats", element: <PageResultats /> },
             ],
           },
-          // Les futures pages privées viendront ici (ex. /profil, /comparateur)
-          { path: "/comparateur", element: <PageComparateur /> },
         ],
       },
     ],
   },
+  
+  // "*" attrape toute adresse inconnue et renvoie vers la connexion.
+  { path: "*", element: <Navigate to="/connexion" replace /> },
 ]);

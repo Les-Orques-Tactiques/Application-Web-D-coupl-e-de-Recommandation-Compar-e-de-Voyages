@@ -77,5 +77,13 @@ export async function reinitialiserMotDePasse(jeton: string, nouveauMotDePasse: 
 /** Renvoie la personne connectée (lance une ErreurApi 401 si personne ne l'est). */
 export const lireMonProfil = () => appelerApi<Utilisateur>("/api/auth/moi");
 
+/** Met à jour le prénom et le nom du profil connecté. */
+export function modifierProfil(donnees: Pick<Utilisateur, "prenom" | "nom">): Promise<Utilisateur> {
+  return appelerApi<Utilisateur>("/api/utilisateurs/moi", {
+    methode: "PATCH",
+    corps: donnees,
+  });
+}
+
 /** Déconnecte la personne : le back révoque les jetons et supprime les cookies. */
 export const seDeconnecter = () => appelerApi("/api/auth/deconnexion", { methode: "POST" });
