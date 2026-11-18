@@ -9,6 +9,8 @@ import PageInscription from "@/features/auth/pages/PageInscription";
 import PageMotDePasseOublie from "@/features/auth/pages/PageMotDePasseOublie";
 import PageReinitialisation from "@/features/auth/pages/PageReinitialisation";
 import PageExplorer from "@/features/explorer/pages/PageExplorer";
+import PageBienvenue from "@/features/preferences/pages/PageBienvenue";
+
 
 /**
  * Table de routage : associe une adresse (URL) à la page à afficher.
@@ -38,8 +40,8 @@ export const routeur = createBrowserRouter([
       {
         element: <RouteProtegee />,
         children: [
-          // Provisoire : FormulaireConnexion redirige ici si l'onboarding n'est pas terminé
-          { path: "/bienvenue", element: <p className="p-16">Bienvenue ! (choix des préférences à venir)</p> },
+          // FormulaireConnexion redirige ici si l'onboarding n'est pas terminé
+          { path: "/bienvenue", element: <PageBienvenue /> },
         ],
       },
 
