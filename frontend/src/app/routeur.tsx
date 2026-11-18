@@ -1,6 +1,7 @@
 import { Navigate, createBrowserRouter } from "react-router-dom";
 import { RouteProtegee } from "@/features/auth/components/RouteProtegee";
 import { MiseEnPagePublique } from "@/layouts/MiseEnPagePublique";
+import PageAccueil from "@/features/accueil/pages/PageAccueil";
 import PageActivation from "@/features/auth/pages/PageActivation";
 import PageConnexion from "@/features/auth/pages/PageConnexion";
 import PageInscription from "@/features/auth/pages/PageInscription";
@@ -18,6 +19,7 @@ export const routeur = createBrowserRouter([
     element: <MiseEnPagePublique />,
     children: [
       // ----- Pages publiques -----
+      { path: "/", element: <PageAccueil /> },
       { path: "/inscription", element: <PageInscription /> },
       { path: "/connexion", element: <PageConnexion /> },
       { path: "/activation", element: <PageActivation /> },
@@ -40,7 +42,7 @@ export const routeur = createBrowserRouter([
 
       // "*" attrape toute adresse inconnue et renvoie vers la connexion.
       // "replace" remplace l'entrée de l'historique : le bouton Retour ne boucle pas.
-      { path: "*", element: <Navigate to="/connexion" replace /> },
+      { path: "*", element: <Navigate to="/" replace /> },
     ],
   },
 ]);
