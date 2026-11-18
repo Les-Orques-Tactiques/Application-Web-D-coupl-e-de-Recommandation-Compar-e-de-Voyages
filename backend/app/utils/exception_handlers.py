@@ -10,6 +10,7 @@ from app.utils.exceptions import (
     RessourceIntrouvableError,
     ValidationError,
     JetonExpireError,
+    OnboardingDejaTermineError,
 )
 
 
@@ -45,9 +46,5 @@ def enregistrer_handlers(app: FastAPI) -> None:
     async def _jeton_expire(request: Request, exc: JetonExpireError):
         # La page « lien expiré » (maquette 08) propose d'en demander un nouveau
         return JSONResponse(status_code=410, content={"detail": str(exc)})
-        app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)
 
-    @app.exception_handler(JetonExpireError)
-    async def _jeton_expire(request: Request, exc: JetonExpireError):
-        # La page « lien expiré » (maquette 08) propose d'en demander un nouveau
-        return JSONResponse(status_code=410, content={"detail": str(exc)})
+    app.add_exception_handler(RateLimitExceeded, _rate_limit_exceeded_handler)

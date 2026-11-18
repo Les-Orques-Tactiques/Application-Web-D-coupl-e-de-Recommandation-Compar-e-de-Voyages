@@ -1,0 +1,1692 @@
+{
+  "origin": "CDG",
+  "destination": "BKK",
+  "departure_date": "2027-01-27",
+  "return_date": "2027-02-03",
+  "itineraries": [
+    {
+      "price": {
+        "amount": 723.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Austrian",
+        "duration_minutes": 1405,
+        "segments": [
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "362",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "CDG",
+            "departure_time_local": "2027-01-27T10:05:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2027-01-27T09:05:00Z",
+            "arrival_airport": "VIE",
+            "arrival_time_local": "2027-01-27T12:00:00",
+            "arrival_timezone": "Europe/Vienna",
+            "arrival_time_utc": "2027-01-27T11:00:00Z",
+            "duration_minutes": 115,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "7",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "VIE",
+            "departure_time_local": "2027-01-27T23:25:00",
+            "departure_timezone": "Europe/Vienna",
+            "departure_time_utc": "2027-01-27T22:25:00Z",
+            "arrival_airport": "BKK",
+            "arrival_time_local": "2027-01-28T15:30:00",
+            "arrival_timezone": "Asia/Bangkok",
+            "arrival_time_utc": "2027-01-28T08:30:00Z",
+            "duration_minutes": 605,
+            "aircraft": "Boeing 777"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "ITA",
+        "duration_minutes": 1045,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "759",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "BKK",
+            "departure_time_local": "2027-02-03T12:15:00",
+            "departure_timezone": "Asia/Bangkok",
+            "departure_time_utc": "2027-02-03T05:15:00Z",
+            "arrival_airport": "FCO",
+            "arrival_time_local": "2027-02-03T18:55:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2027-02-03T17:55:00Z",
+            "duration_minutes": 760,
+            "aircraft": "Airbus A330-900neo"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "332",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "FCO",
+            "departure_time_local": "2027-02-03T21:25:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2027-02-03T20:25:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2027-02-03T23:40:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2027-02-03T22:40:00Z",
+            "duration_minutes": 135,
+            "aircraft": "Airbus A320neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "e75f9e6eec09455b89dde801386e1465"
+    },
+    {
+      "price": {
+        "amount": 736.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Austrian",
+        "duration_minutes": 800,
+        "segments": [
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "368",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "CDG",
+            "departure_time_local": "2027-01-27T20:10:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2027-01-27T19:10:00Z",
+            "arrival_airport": "VIE",
+            "arrival_time_local": "2027-01-27T22:05:00",
+            "arrival_timezone": "Europe/Vienna",
+            "arrival_time_utc": "2027-01-27T21:05:00Z",
+            "duration_minutes": 115,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "7",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "VIE",
+            "departure_time_local": "2027-01-27T23:25:00",
+            "departure_timezone": "Europe/Vienna",
+            "departure_time_utc": "2027-01-27T22:25:00Z",
+            "arrival_airport": "BKK",
+            "arrival_time_local": "2027-01-28T15:30:00",
+            "arrival_timezone": "Asia/Bangkok",
+            "arrival_time_utc": "2027-01-28T08:30:00Z",
+            "duration_minutes": 605,
+            "aircraft": "Boeing 777"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Austrian",
+        "duration_minutes": 870,
+        "segments": [
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "6",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "BKK",
+            "departure_time_local": "2027-02-03T14:00:00",
+            "departure_timezone": "Asia/Bangkok",
+            "departure_time_utc": "2027-02-03T07:00:00Z",
+            "arrival_airport": "VIE",
+            "arrival_time_local": "2027-02-03T19:35:00",
+            "arrival_timezone": "Europe/Vienna",
+            "arrival_time_utc": "2027-02-03T18:35:00Z",
+            "duration_minutes": 695,
+            "aircraft": "Boeing 777"
+          },
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "369",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "VIE",
+            "departure_time_local": "2027-02-03T20:25:00",
+            "departure_timezone": "Europe/Vienna",
+            "departure_time_utc": "2027-02-03T19:25:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2027-02-03T22:30:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2027-02-03T21:30:00Z",
+            "duration_minutes": 125,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "5ef63a83222f4c99a5424d2774862704"
+    },
+    {
+      "price": {
+        "amount": 736.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Austrian",
+        "duration_minutes": 1405,
+        "segments": [
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "362",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "CDG",
+            "departure_time_local": "2027-01-27T10:05:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2027-01-27T09:05:00Z",
+            "arrival_airport": "VIE",
+            "arrival_time_local": "2027-01-27T12:00:00",
+            "arrival_timezone": "Europe/Vienna",
+            "arrival_time_utc": "2027-01-27T11:00:00Z",
+            "duration_minutes": 115,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "7",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "VIE",
+            "departure_time_local": "2027-01-27T23:25:00",
+            "departure_timezone": "Europe/Vienna",
+            "departure_time_utc": "2027-01-27T22:25:00Z",
+            "arrival_airport": "BKK",
+            "arrival_time_local": "2027-01-28T15:30:00",
+            "arrival_timezone": "Asia/Bangkok",
+            "arrival_time_utc": "2027-01-28T08:30:00Z",
+            "duration_minutes": 605,
+            "aircraft": "Boeing 777"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Austrian",
+        "duration_minutes": 870,
+        "segments": [
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "6",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "BKK",
+            "departure_time_local": "2027-02-03T14:00:00",
+            "departure_timezone": "Asia/Bangkok",
+            "departure_time_utc": "2027-02-03T07:00:00Z",
+            "arrival_airport": "VIE",
+            "arrival_time_local": "2027-02-03T19:35:00",
+            "arrival_timezone": "Europe/Vienna",
+            "arrival_time_utc": "2027-02-03T18:35:00Z",
+            "duration_minutes": 695,
+            "aircraft": "Boeing 777"
+          },
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "369",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "VIE",
+            "departure_time_local": "2027-02-03T20:25:00",
+            "departure_timezone": "Europe/Vienna",
+            "departure_time_utc": "2027-02-03T19:25:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2027-02-03T22:30:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2027-02-03T21:30:00Z",
+            "duration_minutes": 125,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "8d209aba8bca4661b830321dd2a3e114"
+    },
+    {
+      "price": {
+        "amount": 738.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "SWISS",
+        "duration_minutes": 825,
+        "segments": [
+          {
+            "marketing_carrier_code": "LX",
+            "flight_number": "639",
+            "operating_carrier_name": "SWISS",
+            "departure_airport": "CDG",
+            "departure_time_local": "2027-01-27T15:00:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2027-01-27T14:00:00Z",
+            "arrival_airport": "ZRH",
+            "arrival_time_local": "2027-01-27T16:15:00",
+            "arrival_timezone": "Europe/Zurich",
+            "arrival_time_utc": "2027-01-27T15:15:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Airbus A320neo"
+          },
+          {
+            "marketing_carrier_code": "LX",
+            "flight_number": "180",
+            "operating_carrier_name": "SWISS",
+            "departure_airport": "ZRH",
+            "departure_time_local": "2027-01-27T18:00:00",
+            "departure_timezone": "Europe/Zurich",
+            "departure_time_utc": "2027-01-27T17:00:00Z",
+            "arrival_airport": "BKK",
+            "arrival_time_local": "2027-01-28T10:45:00",
+            "arrival_timezone": "Asia/Bangkok",
+            "arrival_time_utc": "2027-01-28T03:45:00Z",
+            "duration_minutes": 645,
+            "aircraft": "Boeing 777"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Austrian",
+        "duration_minutes": 870,
+        "segments": [
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "6",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "BKK",
+            "departure_time_local": "2027-02-03T14:00:00",
+            "departure_timezone": "Asia/Bangkok",
+            "departure_time_utc": "2027-02-03T07:00:00Z",
+            "arrival_airport": "VIE",
+            "arrival_time_local": "2027-02-03T19:35:00",
+            "arrival_timezone": "Europe/Vienna",
+            "arrival_time_utc": "2027-02-03T18:35:00Z",
+            "duration_minutes": 695,
+            "aircraft": "Boeing 777"
+          },
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "369",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "VIE",
+            "departure_time_local": "2027-02-03T20:25:00",
+            "departure_timezone": "Europe/Vienna",
+            "departure_time_utc": "2027-02-03T19:25:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2027-02-03T22:30:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2027-02-03T21:30:00Z",
+            "duration_minutes": 125,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "434f32e2a28d4e95833553102fc139d6"
+    },
+    {
+      "price": {
+        "amount": 746.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Etihad",
+        "duration_minutes": 870,
+        "segments": [
+          {
+            "marketing_carrier_code": "EY",
+            "flight_number": "34",
+            "operating_carrier_name": "Etihad",
+            "departure_airport": "CDG",
+            "departure_time_local": "2027-01-27T21:15:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2027-01-27T20:15:00Z",
+            "arrival_airport": "AUH",
+            "arrival_time_local": "2027-01-28T06:45:00",
+            "arrival_timezone": "Asia/Dubai",
+            "arrival_time_utc": "2027-01-28T02:45:00Z",
+            "duration_minutes": 390,
+            "aircraft": "Airbus A350"
+          },
+          {
+            "marketing_carrier_code": "EY",
+            "flight_number": "406",
+            "operating_carrier_name": "Etihad",
+            "departure_airport": "AUH",
+            "departure_time_local": "2027-01-28T08:30:00",
+            "departure_timezone": "Asia/Dubai",
+            "departure_time_utc": "2027-01-28T04:30:00Z",
+            "arrival_airport": "BKK",
+            "arrival_time_local": "2027-01-28T17:45:00",
+            "arrival_timezone": "Asia/Bangkok",
+            "arrival_time_utc": "2027-01-28T10:45:00Z",
+            "duration_minutes": 375,
+            "aircraft": "Airbus A350"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Etihad",
+        "duration_minutes": 1300,
+        "segments": [
+          {
+            "marketing_carrier_code": "EY",
+            "flight_number": "401",
+            "operating_carrier_name": "Etihad",
+            "departure_airport": "BKK",
+            "departure_time_local": "2027-02-03T02:55:00",
+            "departure_timezone": "Asia/Bangkok",
+            "departure_time_utc": "2027-02-02T19:55:00Z",
+            "arrival_airport": "AUH",
+            "arrival_time_local": "2027-02-03T06:45:00",
+            "arrival_timezone": "Asia/Dubai",
+            "arrival_time_utc": "2027-02-03T02:45:00Z",
+            "duration_minutes": 410,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "EY",
+            "flight_number": "33",
+            "operating_carrier_name": "Etihad",
+            "departure_airport": "AUH",
+            "departure_time_local": "2027-02-03T14:05:00",
+            "departure_timezone": "Asia/Dubai",
+            "departure_time_utc": "2027-02-03T10:05:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2027-02-03T18:35:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2027-02-03T17:35:00Z",
+            "duration_minutes": 450,
+            "aircraft": "Airbus A350"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "5084d7e09c3d46dcaea22bed1963a447"
+    },
+    {
+      "price": {
+        "amount": 746.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Etihad",
+        "duration_minutes": 870,
+        "segments": [
+          {
+            "marketing_carrier_code": "EY",
+            "flight_number": "34",
+            "operating_carrier_name": "Etihad",
+            "departure_airport": "CDG",
+            "departure_time_local": "2027-01-27T21:15:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2027-01-27T20:15:00Z",
+            "arrival_airport": "AUH",
+            "arrival_time_local": "2027-01-28T06:45:00",
+            "arrival_timezone": "Asia/Dubai",
+            "arrival_time_utc": "2027-01-28T02:45:00Z",
+            "duration_minutes": 390,
+            "aircraft": "Airbus A350"
+          },
+          {
+            "marketing_carrier_code": "EY",
+            "flight_number": "406",
+            "operating_carrier_name": "Etihad",
+            "departure_airport": "AUH",
+            "departure_time_local": "2027-01-28T08:30:00",
+            "departure_timezone": "Asia/Dubai",
+            "departure_time_utc": "2027-01-28T04:30:00Z",
+            "arrival_airport": "BKK",
+            "arrival_time_local": "2027-01-28T17:45:00",
+            "arrival_timezone": "Asia/Bangkok",
+            "arrival_time_utc": "2027-01-28T10:45:00Z",
+            "duration_minutes": 375,
+            "aircraft": "Airbus A350"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Etihad",
+        "duration_minutes": 1665,
+        "segments": [
+          {
+            "marketing_carrier_code": "EY",
+            "flight_number": "405",
+            "operating_carrier_name": "Etihad",
+            "departure_airport": "BKK",
+            "departure_time_local": "2027-02-03T14:40:00",
+            "departure_timezone": "Asia/Bangkok",
+            "departure_time_utc": "2027-02-03T07:40:00Z",
+            "arrival_airport": "AUH",
+            "arrival_time_local": "2027-02-03T19:05:00",
+            "arrival_timezone": "Asia/Dubai",
+            "arrival_time_utc": "2027-02-03T15:05:00Z",
+            "duration_minutes": 445,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "EY",
+            "flight_number": "35",
+            "operating_carrier_name": "Etihad",
+            "departure_airport": "AUH",
+            "departure_time_local": "2027-02-04T08:00:00",
+            "departure_timezone": "Asia/Dubai",
+            "departure_time_utc": "2027-02-04T04:00:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2027-02-04T12:25:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2027-02-04T11:25:00Z",
+            "duration_minutes": 445,
+            "aircraft": "Boeing 787"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "72e8659a14694386be206cf742b2481c"
+    },
+    {
+      "price": {
+        "amount": 755.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Austrian",
+        "duration_minutes": 800,
+        "segments": [
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "368",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "CDG",
+            "departure_time_local": "2027-01-27T20:10:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2027-01-27T19:10:00Z",
+            "arrival_airport": "VIE",
+            "arrival_time_local": "2027-01-27T22:05:00",
+            "arrival_timezone": "Europe/Vienna",
+            "arrival_time_utc": "2027-01-27T21:05:00Z",
+            "duration_minutes": 115,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "7",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "VIE",
+            "departure_time_local": "2027-01-27T23:25:00",
+            "departure_timezone": "Europe/Vienna",
+            "departure_time_utc": "2027-01-27T22:25:00Z",
+            "arrival_airport": "BKK",
+            "arrival_time_local": "2027-01-28T15:30:00",
+            "arrival_timezone": "Asia/Bangkok",
+            "arrival_time_utc": "2027-01-28T08:30:00Z",
+            "duration_minutes": 605,
+            "aircraft": "Boeing 777"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "SWISS",
+        "duration_minutes": 900,
+        "segments": [
+          {
+            "marketing_carrier_code": "LX",
+            "flight_number": "181",
+            "operating_carrier_name": "SWISS",
+            "departure_airport": "BKK",
+            "departure_time_local": "2027-02-03T13:15:00",
+            "departure_timezone": "Asia/Bangkok",
+            "departure_time_utc": "2027-02-03T06:15:00Z",
+            "arrival_airport": "ZRH",
+            "arrival_time_local": "2027-02-03T19:25:00",
+            "arrival_timezone": "Europe/Zurich",
+            "arrival_time_utc": "2027-02-03T18:25:00Z",
+            "duration_minutes": 730,
+            "aircraft": "Boeing 777"
+          },
+          {
+            "marketing_carrier_code": "LX",
+            "flight_number": "646",
+            "operating_carrier_name": "SWISS",
+            "departure_airport": "ZRH",
+            "departure_time_local": "2027-02-03T20:55:00",
+            "departure_timezone": "Europe/Zurich",
+            "departure_time_utc": "2027-02-03T19:55:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2027-02-03T22:15:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2027-02-03T21:15:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Airbus A321neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "23f2653e850a47449dd971327fe7b7a4"
+    },
+    {
+      "price": {
+        "amount": 755.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Austrian",
+        "duration_minutes": 1405,
+        "segments": [
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "362",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "CDG",
+            "departure_time_local": "2027-01-27T10:05:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2027-01-27T09:05:00Z",
+            "arrival_airport": "VIE",
+            "arrival_time_local": "2027-01-27T12:00:00",
+            "arrival_timezone": "Europe/Vienna",
+            "arrival_time_utc": "2027-01-27T11:00:00Z",
+            "duration_minutes": 115,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "7",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "VIE",
+            "departure_time_local": "2027-01-27T23:25:00",
+            "departure_timezone": "Europe/Vienna",
+            "departure_time_utc": "2027-01-27T22:25:00Z",
+            "arrival_airport": "BKK",
+            "arrival_time_local": "2027-01-28T15:30:00",
+            "arrival_timezone": "Asia/Bangkok",
+            "arrival_time_utc": "2027-01-28T08:30:00Z",
+            "duration_minutes": 605,
+            "aircraft": "Boeing 777"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "SWISS",
+        "duration_minutes": 900,
+        "segments": [
+          {
+            "marketing_carrier_code": "LX",
+            "flight_number": "181",
+            "operating_carrier_name": "SWISS",
+            "departure_airport": "BKK",
+            "departure_time_local": "2027-02-03T13:15:00",
+            "departure_timezone": "Asia/Bangkok",
+            "departure_time_utc": "2027-02-03T06:15:00Z",
+            "arrival_airport": "ZRH",
+            "arrival_time_local": "2027-02-03T19:25:00",
+            "arrival_timezone": "Europe/Zurich",
+            "arrival_time_utc": "2027-02-03T18:25:00Z",
+            "duration_minutes": 730,
+            "aircraft": "Boeing 777"
+          },
+          {
+            "marketing_carrier_code": "LX",
+            "flight_number": "646",
+            "operating_carrier_name": "SWISS",
+            "departure_airport": "ZRH",
+            "departure_time_local": "2027-02-03T20:55:00",
+            "departure_timezone": "Europe/Zurich",
+            "departure_time_utc": "2027-02-03T19:55:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2027-02-03T22:15:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2027-02-03T21:15:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Airbus A321neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "8c7896ac7efc4bbba7686f6774290616"
+    },
+    {
+      "price": {
+        "amount": 757.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "SWISS",
+        "duration_minutes": 825,
+        "segments": [
+          {
+            "marketing_carrier_code": "LX",
+            "flight_number": "639",
+            "operating_carrier_name": "SWISS",
+            "departure_airport": "CDG",
+            "departure_time_local": "2027-01-27T15:00:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2027-01-27T14:00:00Z",
+            "arrival_airport": "ZRH",
+            "arrival_time_local": "2027-01-27T16:15:00",
+            "arrival_timezone": "Europe/Zurich",
+            "arrival_time_utc": "2027-01-27T15:15:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Airbus A320neo"
+          },
+          {
+            "marketing_carrier_code": "LX",
+            "flight_number": "180",
+            "operating_carrier_name": "SWISS",
+            "departure_airport": "ZRH",
+            "departure_time_local": "2027-01-27T18:00:00",
+            "departure_timezone": "Europe/Zurich",
+            "departure_time_utc": "2027-01-27T17:00:00Z",
+            "arrival_airport": "BKK",
+            "arrival_time_local": "2027-01-28T10:45:00",
+            "arrival_timezone": "Asia/Bangkok",
+            "arrival_time_utc": "2027-01-28T03:45:00Z",
+            "duration_minutes": 645,
+            "aircraft": "Boeing 777"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "SWISS",
+        "duration_minutes": 900,
+        "segments": [
+          {
+            "marketing_carrier_code": "LX",
+            "flight_number": "181",
+            "operating_carrier_name": "SWISS",
+            "departure_airport": "BKK",
+            "departure_time_local": "2027-02-03T13:15:00",
+            "departure_timezone": "Asia/Bangkok",
+            "departure_time_utc": "2027-02-03T06:15:00Z",
+            "arrival_airport": "ZRH",
+            "arrival_time_local": "2027-02-03T19:25:00",
+            "arrival_timezone": "Europe/Zurich",
+            "arrival_time_utc": "2027-02-03T18:25:00Z",
+            "duration_minutes": 730,
+            "aircraft": "Boeing 777"
+          },
+          {
+            "marketing_carrier_code": "LX",
+            "flight_number": "646",
+            "operating_carrier_name": "SWISS",
+            "departure_airport": "ZRH",
+            "departure_time_local": "2027-02-03T20:55:00",
+            "departure_timezone": "Europe/Zurich",
+            "departure_time_utc": "2027-02-03T19:55:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2027-02-03T22:15:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2027-02-03T21:15:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Airbus A321neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "11498073822a475dbbae4cc4b65377f1"
+    },
+    {
+      "price": {
+        "amount": 758.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Austrian",
+        "duration_minutes": 800,
+        "segments": [
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "368",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "CDG",
+            "departure_time_local": "2027-01-27T20:10:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2027-01-27T19:10:00Z",
+            "arrival_airport": "VIE",
+            "arrival_time_local": "2027-01-27T22:05:00",
+            "arrival_timezone": "Europe/Vienna",
+            "arrival_time_utc": "2027-01-27T21:05:00Z",
+            "duration_minutes": 115,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "7",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "VIE",
+            "departure_time_local": "2027-01-27T23:25:00",
+            "departure_timezone": "Europe/Vienna",
+            "departure_time_utc": "2027-01-27T22:25:00Z",
+            "arrival_airport": "BKK",
+            "arrival_time_local": "2027-01-28T15:30:00",
+            "arrival_timezone": "Asia/Bangkok",
+            "arrival_time_utc": "2027-01-28T08:30:00Z",
+            "duration_minutes": 605,
+            "aircraft": "Boeing 777"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "ITA",
+        "duration_minutes": 1045,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "759",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "BKK",
+            "departure_time_local": "2027-02-03T12:15:00",
+            "departure_timezone": "Asia/Bangkok",
+            "departure_time_utc": "2027-02-03T05:15:00Z",
+            "arrival_airport": "FCO",
+            "arrival_time_local": "2027-02-03T18:55:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2027-02-03T17:55:00Z",
+            "duration_minutes": 760,
+            "aircraft": "Airbus A330-900neo"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "332",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "FCO",
+            "departure_time_local": "2027-02-03T21:25:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2027-02-03T20:25:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2027-02-03T23:40:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2027-02-03T22:40:00Z",
+            "duration_minutes": 135,
+            "aircraft": "Airbus A320neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "2f2fe8a9c1ba4bbcbbb6407cd3f4084b"
+    },
+    {
+      "price": {
+        "amount": 847.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "SWISS",
+        "duration_minutes": 825,
+        "segments": [
+          {
+            "marketing_carrier_code": "LX",
+            "flight_number": "639",
+            "operating_carrier_name": "SWISS",
+            "departure_airport": "CDG",
+            "departure_time_local": "2027-01-27T15:00:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2027-01-27T14:00:00Z",
+            "arrival_airport": "ZRH",
+            "arrival_time_local": "2027-01-27T16:15:00",
+            "arrival_timezone": "Europe/Zurich",
+            "arrival_time_utc": "2027-01-27T15:15:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Airbus A320neo"
+          },
+          {
+            "marketing_carrier_code": "LX",
+            "flight_number": "180",
+            "operating_carrier_name": "SWISS",
+            "departure_airport": "ZRH",
+            "departure_time_local": "2027-01-27T18:00:00",
+            "departure_timezone": "Europe/Zurich",
+            "departure_time_utc": "2027-01-27T17:00:00Z",
+            "arrival_airport": "BKK",
+            "arrival_time_local": "2027-01-28T10:45:00",
+            "arrival_timezone": "Asia/Bangkok",
+            "arrival_time_utc": "2027-01-28T03:45:00Z",
+            "duration_minutes": 645,
+            "aircraft": "Boeing 777"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Austrian",
+        "duration_minutes": 925,
+        "segments": [
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "8",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "BKK",
+            "departure_time_local": "2027-02-03T23:50:00",
+            "departure_timezone": "Asia/Bangkok",
+            "departure_time_utc": "2027-02-03T16:50:00Z",
+            "arrival_airport": "VIE",
+            "arrival_time_local": "2027-02-04T05:25:00",
+            "arrival_timezone": "Europe/Vienna",
+            "arrival_time_utc": "2027-02-04T04:25:00Z",
+            "duration_minutes": 695,
+            "aircraft": "Boeing 777"
+          },
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "361",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "VIE",
+            "departure_time_local": "2027-02-04T07:10:00",
+            "departure_timezone": "Europe/Vienna",
+            "departure_time_utc": "2027-02-04T06:10:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2027-02-04T09:15:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2027-02-04T08:15:00Z",
+            "duration_minutes": 125,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "904e891595904bf09553389b0ac691a7"
+    },
+    {
+      "price": {
+        "amount": 935.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Etihad",
+        "duration_minutes": 870,
+        "segments": [
+          {
+            "marketing_carrier_code": "EY",
+            "flight_number": "34",
+            "operating_carrier_name": "Etihad",
+            "departure_airport": "CDG",
+            "departure_time_local": "2027-01-27T21:15:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2027-01-27T20:15:00Z",
+            "arrival_airport": "AUH",
+            "arrival_time_local": "2027-01-28T06:45:00",
+            "arrival_timezone": "Asia/Dubai",
+            "arrival_time_utc": "2027-01-28T02:45:00Z",
+            "duration_minutes": 390,
+            "aircraft": "Airbus A350"
+          },
+          {
+            "marketing_carrier_code": "EY",
+            "flight_number": "406",
+            "operating_carrier_name": "Etihad",
+            "departure_airport": "AUH",
+            "departure_time_local": "2027-01-28T08:30:00",
+            "departure_timezone": "Asia/Dubai",
+            "departure_time_utc": "2027-01-28T04:30:00Z",
+            "arrival_airport": "BKK",
+            "arrival_time_local": "2027-01-28T17:45:00",
+            "arrival_timezone": "Asia/Bangkok",
+            "arrival_time_utc": "2027-01-28T10:45:00Z",
+            "duration_minutes": 375,
+            "aircraft": "Airbus A350"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Etihad",
+        "duration_minutes": 965,
+        "segments": [
+          {
+            "marketing_carrier_code": "EY",
+            "flight_number": "403",
+            "operating_carrier_name": "Etihad",
+            "departure_airport": "BKK",
+            "departure_time_local": "2027-02-03T08:30:00",
+            "departure_timezone": "Asia/Bangkok",
+            "departure_time_utc": "2027-02-03T01:30:00Z",
+            "arrival_airport": "AUH",
+            "arrival_time_local": "2027-02-03T12:20:00",
+            "arrival_timezone": "Asia/Dubai",
+            "arrival_time_utc": "2027-02-03T08:20:00Z",
+            "duration_minutes": 410,
+            "aircraft": "Airbus A380"
+          },
+          {
+            "marketing_carrier_code": "EY",
+            "flight_number": "33",
+            "operating_carrier_name": "Etihad",
+            "departure_airport": "AUH",
+            "departure_time_local": "2027-02-03T14:05:00",
+            "departure_timezone": "Asia/Dubai",
+            "departure_time_utc": "2027-02-03T10:05:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2027-02-03T18:35:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2027-02-03T17:35:00Z",
+            "duration_minutes": 450,
+            "aircraft": "Airbus A350"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "d7f013be4e9e4188a13304192cf68ed8"
+    },
+    {
+      "price": {
+        "amount": 995.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Aircalin",
+        "duration_minutes": 695,
+        "segments": [
+          {
+            "marketing_carrier_code": "SB",
+            "flight_number": "501",
+            "operating_carrier_name": "Aircalin",
+            "departure_airport": "CDG",
+            "departure_time_local": "2027-01-27T20:30:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2027-01-27T19:30:00Z",
+            "arrival_airport": "BKK",
+            "arrival_time_local": "2027-01-28T14:05:00",
+            "arrival_timezone": "Asia/Bangkok",
+            "arrival_time_utc": "2027-01-28T07:05:00Z",
+            "duration_minutes": 695,
+            "aircraft": "Airbus A330-900neo"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Aircalin",
+        "duration_minutes": 795,
+        "segments": [
+          {
+            "marketing_carrier_code": "SB",
+            "flight_number": "500",
+            "operating_carrier_name": "Aircalin",
+            "departure_airport": "BKK",
+            "departure_time_local": "2027-02-03T09:55:00",
+            "departure_timezone": "Asia/Bangkok",
+            "departure_time_utc": "2027-02-03T02:55:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2027-02-03T17:10:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2027-02-03T16:10:00Z",
+            "duration_minutes": 795,
+            "aircraft": "Airbus A330-900neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "1d16e7167e5b492baca15b521e2c3a85"
+    },
+    {
+      "price": {
+        "amount": 998.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "THAI",
+        "duration_minutes": 670,
+        "segments": [
+          {
+            "marketing_carrier_code": "TG",
+            "flight_number": "931",
+            "operating_carrier_name": "THAI",
+            "departure_airport": "CDG",
+            "departure_time_local": "2027-01-27T12:30:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2027-01-27T11:30:00Z",
+            "arrival_airport": "BKK",
+            "arrival_time_local": "2027-01-28T05:40:00",
+            "arrival_timezone": "Asia/Bangkok",
+            "arrival_time_utc": "2027-01-27T22:40:00Z",
+            "duration_minutes": 670,
+            "aircraft": "Boeing 777"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "THAI",
+        "duration_minutes": 765,
+        "segments": [
+          {
+            "marketing_carrier_code": "TG",
+            "flight_number": "930",
+            "operating_carrier_name": "THAI",
+            "departure_airport": "BKK",
+            "departure_time_local": "2027-02-03T00:05:00",
+            "departure_timezone": "Asia/Bangkok",
+            "departure_time_utc": "2027-02-02T17:05:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2027-02-03T06:50:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2027-02-03T05:50:00Z",
+            "duration_minutes": 765,
+            "aircraft": "Boeing 777"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "f8f49786bf354ee4988aaad0b847e1b0"
+    },
+    {
+      "price": {
+        "amount": 998.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "THAI",
+        "duration_minutes": 670,
+        "segments": [
+          {
+            "marketing_carrier_code": "TG",
+            "flight_number": "931",
+            "operating_carrier_name": "THAI",
+            "departure_airport": "CDG",
+            "departure_time_local": "2027-01-27T12:30:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2027-01-27T11:30:00Z",
+            "arrival_airport": "BKK",
+            "arrival_time_local": "2027-01-28T05:40:00",
+            "arrival_timezone": "Asia/Bangkok",
+            "arrival_time_utc": "2027-01-27T22:40:00Z",
+            "duration_minutes": 670,
+            "aircraft": "Boeing 777"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "THAI",
+        "duration_minutes": 765,
+        "segments": [
+          {
+            "marketing_carrier_code": "TG",
+            "flight_number": "932",
+            "operating_carrier_name": "THAI",
+            "departure_airport": "BKK",
+            "departure_time_local": "2027-02-03T12:15:00",
+            "departure_timezone": "Asia/Bangkok",
+            "departure_time_utc": "2027-02-03T05:15:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2027-02-03T19:00:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2027-02-03T18:00:00Z",
+            "duration_minutes": 765,
+            "aircraft": "Boeing 787"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "80f4d945359d4e1db599b20b47bd5229"
+    },
+    {
+      "price": {
+        "amount": 1026.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 680,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "134",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2027-01-27T14:15:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2027-01-27T13:15:00Z",
+            "arrival_airport": "BKK",
+            "arrival_time_local": "2027-01-28T07:35:00",
+            "arrival_timezone": "Asia/Bangkok",
+            "arrival_time_utc": "2027-01-28T00:35:00Z",
+            "duration_minutes": 680,
+            "aircraft": "Airbus A350"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Air France",
+        "duration_minutes": 785,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "133",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "BKK",
+            "departure_time_local": "2027-02-03T09:35:00",
+            "departure_timezone": "Asia/Bangkok",
+            "departure_time_utc": "2027-02-03T02:35:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2027-02-03T16:40:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2027-02-03T15:40:00Z",
+            "duration_minutes": 785,
+            "aircraft": "Boeing 777"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "2592e10efda04c198775e8c435f96710"
+    },
+    {
+      "price": {
+        "amount": 1026.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 680,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "198",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2027-01-27T16:10:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2027-01-27T15:10:00Z",
+            "arrival_airport": "BKK",
+            "arrival_time_local": "2027-01-28T09:30:00",
+            "arrival_timezone": "Asia/Bangkok",
+            "arrival_time_utc": "2027-01-28T02:30:00Z",
+            "duration_minutes": 680,
+            "aircraft": "Airbus A350"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Air France",
+        "duration_minutes": 785,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "133",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "BKK",
+            "departure_time_local": "2027-02-03T09:35:00",
+            "departure_timezone": "Asia/Bangkok",
+            "departure_time_utc": "2027-02-03T02:35:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2027-02-03T16:40:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2027-02-03T15:40:00Z",
+            "duration_minutes": 785,
+            "aircraft": "Boeing 777"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "3adedbd529e645b2a62ce2064fdf5e85"
+    },
+    {
+      "price": {
+        "amount": 1083.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 680,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "134",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2027-01-27T14:15:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2027-01-27T13:15:00Z",
+            "arrival_airport": "BKK",
+            "arrival_time_local": "2027-01-28T07:35:00",
+            "arrival_timezone": "Asia/Bangkok",
+            "arrival_time_utc": "2027-01-28T00:35:00Z",
+            "duration_minutes": 680,
+            "aircraft": "Airbus A350"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "KLM",
+        "duration_minutes": 950,
+        "segments": [
+          {
+            "marketing_carrier_code": "KL",
+            "flight_number": "844",
+            "operating_carrier_name": "KLM",
+            "departure_airport": "BKK",
+            "departure_time_local": "2027-02-03T12:05:00",
+            "departure_timezone": "Asia/Bangkok",
+            "departure_time_utc": "2027-02-03T05:05:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2027-02-03T18:30:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2027-02-03T17:30:00Z",
+            "duration_minutes": 745,
+            "aircraft": "Boeing 777"
+          },
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "1441",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "AMS",
+            "departure_time_local": "2027-02-03T20:35:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2027-02-03T19:35:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2027-02-03T21:55:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2027-02-03T20:55:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Airbus A220-300 Passenger"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": true,
+      "ignav_id": "943dd301d84d4fff83f3b8fff4cc7e15"
+    },
+    {
+      "price": {
+        "amount": 1083.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 680,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "198",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2027-01-27T16:10:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2027-01-27T15:10:00Z",
+            "arrival_airport": "BKK",
+            "arrival_time_local": "2027-01-28T09:30:00",
+            "arrival_timezone": "Asia/Bangkok",
+            "arrival_time_utc": "2027-01-28T02:30:00Z",
+            "duration_minutes": 680,
+            "aircraft": "Airbus A350"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "KLM",
+        "duration_minutes": 950,
+        "segments": [
+          {
+            "marketing_carrier_code": "KL",
+            "flight_number": "844",
+            "operating_carrier_name": "KLM",
+            "departure_airport": "BKK",
+            "departure_time_local": "2027-02-03T12:05:00",
+            "departure_timezone": "Asia/Bangkok",
+            "departure_time_utc": "2027-02-03T05:05:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2027-02-03T18:30:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2027-02-03T17:30:00Z",
+            "duration_minutes": 745,
+            "aircraft": "Boeing 777"
+          },
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "1441",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "AMS",
+            "departure_time_local": "2027-02-03T20:35:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2027-02-03T19:35:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2027-02-03T21:55:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2027-02-03T20:55:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Airbus A220-300 Passenger"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": true,
+      "ignav_id": "97d7488b5489442ba72df49d49288982"
+    },
+    {
+      "price": {
+        "amount": 1101.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 680,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "134",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2027-01-27T14:15:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2027-01-27T13:15:00Z",
+            "arrival_airport": "BKK",
+            "arrival_time_local": "2027-01-28T07:35:00",
+            "arrival_timezone": "Asia/Bangkok",
+            "arrival_time_utc": "2027-01-28T00:35:00Z",
+            "duration_minutes": 680,
+            "aircraft": "Airbus A350"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Air France",
+        "duration_minutes": 790,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "199",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "BKK",
+            "departure_time_local": "2027-02-03T11:30:00",
+            "departure_timezone": "Asia/Bangkok",
+            "departure_time_utc": "2027-02-03T04:30:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2027-02-03T18:40:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2027-02-03T17:40:00Z",
+            "duration_minutes": 790,
+            "aircraft": "Airbus A350"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "55d9a33341ef4bf986a2eb3d9e019e1c"
+    },
+    {
+      "price": {
+        "amount": 1101.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 680,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "198",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2027-01-27T16:10:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2027-01-27T15:10:00Z",
+            "arrival_airport": "BKK",
+            "arrival_time_local": "2027-01-28T09:30:00",
+            "arrival_timezone": "Asia/Bangkok",
+            "arrival_time_utc": "2027-01-28T02:30:00Z",
+            "duration_minutes": 680,
+            "aircraft": "Airbus A350"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Air France",
+        "duration_minutes": 790,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "199",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "BKK",
+            "departure_time_local": "2027-02-03T11:30:00",
+            "departure_timezone": "Asia/Bangkok",
+            "departure_time_utc": "2027-02-03T04:30:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2027-02-03T18:40:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2027-02-03T17:40:00Z",
+            "duration_minutes": 790,
+            "aircraft": "Airbus A350"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "677c5742802b40409df73aaed5604699"
+    },
+    {
+      "price": {
+        "amount": 1123.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 680,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "134",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2027-01-27T14:15:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2027-01-27T13:15:00Z",
+            "arrival_airport": "BKK",
+            "arrival_time_local": "2027-01-28T07:35:00",
+            "arrival_timezone": "Asia/Bangkok",
+            "arrival_time_utc": "2027-01-28T00:35:00Z",
+            "duration_minutes": 680,
+            "aircraft": "Airbus A350"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "KLM",
+        "duration_minutes": 875,
+        "segments": [
+          {
+            "marketing_carrier_code": "KL",
+            "flight_number": "842",
+            "operating_carrier_name": "KLM",
+            "departure_airport": "BKK",
+            "departure_time_local": "2027-02-03T09:15:00",
+            "departure_timezone": "Asia/Bangkok",
+            "departure_time_utc": "2027-02-03T02:15:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2027-02-03T15:45:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2027-02-03T14:45:00Z",
+            "duration_minutes": 750,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "KL",
+            "flight_number": "1409",
+            "operating_carrier_name": "KLM",
+            "departure_airport": "AMS",
+            "departure_time_local": "2027-02-03T16:35:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2027-02-03T15:35:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2027-02-03T17:50:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2027-02-03T16:50:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer 195 E2"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "813b6b7ec85e48d596f8dc86ae6f8a35"
+    },
+    {
+      "price": {
+        "amount": 1123.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 680,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "198",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2027-01-27T16:10:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2027-01-27T15:10:00Z",
+            "arrival_airport": "BKK",
+            "arrival_time_local": "2027-01-28T09:30:00",
+            "arrival_timezone": "Asia/Bangkok",
+            "arrival_time_utc": "2027-01-28T02:30:00Z",
+            "duration_minutes": 680,
+            "aircraft": "Airbus A350"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "KLM",
+        "duration_minutes": 875,
+        "segments": [
+          {
+            "marketing_carrier_code": "KL",
+            "flight_number": "842",
+            "operating_carrier_name": "KLM",
+            "departure_airport": "BKK",
+            "departure_time_local": "2027-02-03T09:15:00",
+            "departure_timezone": "Asia/Bangkok",
+            "departure_time_utc": "2027-02-03T02:15:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2027-02-03T15:45:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2027-02-03T14:45:00Z",
+            "duration_minutes": 750,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "KL",
+            "flight_number": "1409",
+            "operating_carrier_name": "KLM",
+            "departure_airport": "AMS",
+            "departure_time_local": "2027-02-03T16:35:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2027-02-03T15:35:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2027-02-03T17:50:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2027-02-03T16:50:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer 195 E2"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "6d0912314f0945afb95cce8e1a1fcf0c"
+    },
+    {
+      "price": {
+        "amount": 1169.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "THAI",
+        "duration_minutes": 670,
+        "segments": [
+          {
+            "marketing_carrier_code": "TG",
+            "flight_number": "931",
+            "operating_carrier_name": "THAI",
+            "departure_airport": "CDG",
+            "departure_time_local": "2027-01-27T12:30:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2027-01-27T11:30:00Z",
+            "arrival_airport": "BKK",
+            "arrival_time_local": "2027-01-28T05:40:00",
+            "arrival_timezone": "Asia/Bangkok",
+            "arrival_time_utc": "2027-01-27T22:40:00Z",
+            "duration_minutes": 670,
+            "aircraft": "Boeing 777"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "THAI",
+        "duration_minutes": 945,
+        "segments": [
+          {
+            "marketing_carrier_code": "TG",
+            "flight_number": "920",
+            "operating_carrier_name": "THAI",
+            "departure_airport": "BKK",
+            "departure_time_local": "2027-02-03T23:40:00",
+            "departure_timezone": "Asia/Bangkok",
+            "departure_time_utc": "2027-02-03T16:40:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2027-02-04T05:55:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2027-02-04T04:55:00Z",
+            "duration_minutes": 735,
+            "aircraft": "Boeing 777"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "1042",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2027-02-04T08:10:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2027-02-04T07:10:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2027-02-04T09:25:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2027-02-04T08:25:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Airbus A319"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": true,
+      "ignav_id": "c90f4d94430c4735b522b27e92f5d95f"
+    }
+  ],
+  "observed_at": "2026-10-29T03:37:16.732899Z"
+}

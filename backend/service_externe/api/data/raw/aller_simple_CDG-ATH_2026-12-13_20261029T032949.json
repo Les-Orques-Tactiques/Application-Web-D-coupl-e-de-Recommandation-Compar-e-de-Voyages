@@ -1,0 +1,608 @@
+{
+  "origin": "CDG",
+  "destination": "ATH",
+  "departure_date": "2026-12-13",
+  "itineraries": [
+    {
+      "price": {
+        "amount": 117.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 760,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "1640",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T11:40:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T10:40:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2026-12-13T13:10:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2026-12-13T12:10:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A220-300 Passenger"
+          },
+          {
+            "marketing_carrier_code": "KL",
+            "flight_number": "1957",
+            "operating_carrier_name": "KLM",
+            "departure_airport": "AMS",
+            "departure_time_local": "2026-12-13T21:10:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2026-12-13T20:10:00Z",
+            "arrival_airport": "ATH",
+            "arrival_time_local": "2026-12-14T01:20:00",
+            "arrival_timezone": "Europe/Athens",
+            "arrival_time_utc": "2026-12-13T23:20:00Z",
+            "duration_minutes": 190,
+            "aircraft": "Airbus A321neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": true,
+      "ignav_id": "62efba6012954bd88f267d7026225f2b"
+    },
+    {
+      "price": {
+        "amount": 119.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air Serbia",
+        "duration_minutes": 1055,
+        "segments": [
+          {
+            "marketing_carrier_code": "JU",
+            "flight_number": "243",
+            "operating_carrier_name": "Air Serbia",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T20:30:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T19:30:00Z",
+            "arrival_airport": "BEG",
+            "arrival_time_local": "2026-12-13T22:55:00",
+            "arrival_timezone": "Europe/Belgrade",
+            "arrival_time_utc": "2026-12-13T21:55:00Z",
+            "duration_minutes": 145,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "JU",
+            "flight_number": "532",
+            "operating_carrier_name": "Air Serbia",
+            "departure_airport": "BEG",
+            "departure_time_local": "2026-12-14T12:30:00",
+            "departure_timezone": "Europe/Belgrade",
+            "departure_time_utc": "2026-12-14T11:30:00Z",
+            "arrival_airport": "ATH",
+            "arrival_time_local": "2026-12-14T15:05:00",
+            "arrival_timezone": "Europe/Athens",
+            "arrival_time_utc": "2026-12-14T13:05:00Z",
+            "duration_minutes": 95,
+            "aircraft": "Airbus A319"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "79dffd075ef64c74b180b80d3c05089f"
+    },
+    {
+      "price": {
+        "amount": 127.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Vueling",
+        "duration_minutes": 605,
+        "segments": [
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "8061",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T09:55:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T08:55:00Z",
+            "arrival_airport": "BCN",
+            "arrival_time_local": "2026-12-13T11:50:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-13T10:50:00Z",
+            "duration_minutes": 115,
+            "aircraft": "Airbus A321"
+          },
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "1068",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "BCN",
+            "departure_time_local": "2026-12-13T17:10:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-13T16:10:00Z",
+            "arrival_airport": "ATH",
+            "arrival_time_local": "2026-12-13T21:00:00",
+            "arrival_timezone": "Europe/Athens",
+            "arrival_time_utc": "2026-12-13T19:00:00Z",
+            "duration_minutes": 170,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "b66f5c52a9214de2af02ab628ba45ceb"
+    },
+    {
+      "price": {
+        "amount": 169.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air Serbia",
+        "duration_minutes": 355,
+        "segments": [
+          {
+            "marketing_carrier_code": "JU",
+            "flight_number": "243",
+            "operating_carrier_name": "Air Serbia",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T20:30:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T19:30:00Z",
+            "arrival_airport": "BEG",
+            "arrival_time_local": "2026-12-13T22:55:00",
+            "arrival_timezone": "Europe/Belgrade",
+            "arrival_time_utc": "2026-12-13T21:55:00Z",
+            "duration_minutes": 145,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "JU",
+            "flight_number": "536",
+            "operating_carrier_name": "Air Serbia",
+            "departure_airport": "BEG",
+            "departure_time_local": "2026-12-14T00:50:00",
+            "departure_timezone": "Europe/Belgrade",
+            "departure_time_utc": "2026-12-13T23:50:00Z",
+            "arrival_airport": "ATH",
+            "arrival_time_local": "2026-12-14T03:25:00",
+            "arrival_timezone": "Europe/Athens",
+            "arrival_time_utc": "2026-12-14T01:25:00Z",
+            "duration_minutes": 95,
+            "aircraft": "Embraer 190"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "7f6825ac2f7d461abfc04d7a3093aed4"
+    },
+    {
+      "price": {
+        "amount": 173.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "KLM",
+        "duration_minutes": 340,
+        "segments": [
+          {
+            "marketing_carrier_code": "KL",
+            "flight_number": "1410",
+            "operating_carrier_name": "KLM",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T18:40:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T17:40:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2026-12-13T20:00:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2026-12-13T19:00:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Embraer 195 E2"
+          },
+          {
+            "marketing_carrier_code": "KL",
+            "flight_number": "1957",
+            "operating_carrier_name": "KLM",
+            "departure_airport": "AMS",
+            "departure_time_local": "2026-12-13T21:10:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2026-12-13T20:10:00Z",
+            "arrival_airport": "ATH",
+            "arrival_time_local": "2026-12-14T01:20:00",
+            "arrival_timezone": "Europe/Athens",
+            "arrival_time_utc": "2026-12-13T23:20:00Z",
+            "duration_minutes": 190,
+            "aircraft": "Airbus A321neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "82e84eb5eda94ab79811ba1b12fe6983"
+    },
+    {
+      "price": {
+        "amount": 188.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "ITA",
+        "duration_minutes": 355,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "319",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T11:40:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T10:40:00Z",
+            "arrival_airport": "FCO",
+            "arrival_time_local": "2026-12-13T13:45:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-13T12:45:00Z",
+            "duration_minutes": 125,
+            "aircraft": "Airbus A321neo"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "718",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "FCO",
+            "departure_time_local": "2026-12-13T15:35:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-13T14:35:00Z",
+            "arrival_airport": "ATH",
+            "arrival_time_local": "2026-12-13T18:35:00",
+            "arrival_timezone": "Europe/Athens",
+            "arrival_time_utc": "2026-12-13T16:35:00Z",
+            "duration_minutes": 120,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "b3421c0ade6b48b0b0ab81b2d9fbecc4"
+    },
+    {
+      "price": {
+        "amount": 198.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Austrian",
+        "duration_minutes": 270,
+        "segments": [
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "370",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T07:10:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T06:10:00Z",
+            "arrival_airport": "VIE",
+            "arrival_time_local": "2026-12-13T09:05:00",
+            "arrival_timezone": "Europe/Vienna",
+            "arrival_time_utc": "2026-12-13T08:05:00Z",
+            "duration_minutes": 115,
+            "aircraft": "Airbus A320neo"
+          },
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "801",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "VIE",
+            "departure_time_local": "2026-12-13T09:30:00",
+            "departure_timezone": "Europe/Vienna",
+            "departure_time_utc": "2026-12-13T08:30:00Z",
+            "arrival_airport": "ATH",
+            "arrival_time_local": "2026-12-13T12:40:00",
+            "arrival_timezone": "Europe/Athens",
+            "arrival_time_utc": "2026-12-13T10:40:00Z",
+            "duration_minutes": 130,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "3971def70d6948cd8548bfb942ca6620"
+    },
+    {
+      "price": {
+        "amount": 204.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Aegean",
+        "duration_minutes": 190,
+        "segments": [
+          {
+            "marketing_carrier_code": "A3",
+            "flight_number": "611",
+            "operating_carrier_name": "Aegean",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T11:40:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T10:40:00Z",
+            "arrival_airport": "ATH",
+            "arrival_time_local": "2026-12-13T15:50:00",
+            "arrival_timezone": "Europe/Athens",
+            "arrival_time_utc": "2026-12-13T13:50:00Z",
+            "duration_minutes": 190,
+            "aircraft": "Airbus A321neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "5a974b1442bb4cce9af3447c8e25b1ae"
+    },
+    {
+      "price": {
+        "amount": 226.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "SWISS",
+        "duration_minutes": 280,
+        "segments": [
+          {
+            "marketing_carrier_code": "LX",
+            "flight_number": "647",
+            "operating_carrier_name": "SWISS",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T07:15:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T06:15:00Z",
+            "arrival_airport": "ZRH",
+            "arrival_time_local": "2026-12-13T08:35:00",
+            "arrival_timezone": "Europe/Zurich",
+            "arrival_time_utc": "2026-12-13T07:35:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Airbus A320neo"
+          },
+          {
+            "marketing_carrier_code": "LX",
+            "flight_number": "1830",
+            "operating_carrier_name": "SWISS",
+            "departure_airport": "ZRH",
+            "departure_time_local": "2026-12-13T09:15:00",
+            "departure_timezone": "Europe/Zurich",
+            "departure_time_utc": "2026-12-13T08:15:00Z",
+            "arrival_airport": "ATH",
+            "arrival_time_local": "2026-12-13T12:55:00",
+            "arrival_timezone": "Europe/Athens",
+            "arrival_time_utc": "2026-12-13T10:55:00Z",
+            "duration_minutes": 160,
+            "aircraft": "Airbus A321 (Sharklets)"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "21c992b30bbc4403ac14c396a67df2c9"
+    },
+    {
+      "price": {
+        "amount": 261.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "ITA",
+        "duration_minutes": 335,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "325",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T18:15:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T17:15:00Z",
+            "arrival_airport": "FCO",
+            "arrival_time_local": "2026-12-13T20:20:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-13T19:20:00Z",
+            "duration_minutes": 125,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "722",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "FCO",
+            "departure_time_local": "2026-12-13T21:50:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-13T20:50:00Z",
+            "arrival_airport": "ATH",
+            "arrival_time_local": "2026-12-14T00:50:00",
+            "arrival_timezone": "Europe/Athens",
+            "arrival_time_utc": "2026-12-13T22:50:00Z",
+            "duration_minutes": 120,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "a82737d4fd2c4356a7174b60bee597c0"
+    },
+    {
+      "price": {
+        "amount": 320.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "SKY express",
+        "duration_minutes": 190,
+        "segments": [
+          {
+            "marketing_carrier_code": "GQ",
+            "flight_number": "905",
+            "operating_carrier_name": "SKY express",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T22:35:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T21:35:00Z",
+            "arrival_airport": "ATH",
+            "arrival_time_local": "2026-12-14T02:45:00",
+            "arrival_timezone": "Europe/Athens",
+            "arrival_time_utc": "2026-12-14T00:45:00Z",
+            "duration_minutes": 190,
+            "aircraft": "Airbus A320neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "76600779ead144cfa9b033edcf16eca7"
+    },
+    {
+      "price": {
+        "amount": 332.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Aegean",
+        "duration_minutes": 185,
+        "segments": [
+          {
+            "marketing_carrier_code": "A3",
+            "flight_number": "615",
+            "operating_carrier_name": "Aegean",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T20:35:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T19:35:00Z",
+            "arrival_airport": "ATH",
+            "arrival_time_local": "2026-12-14T00:40:00",
+            "arrival_timezone": "Europe/Athens",
+            "arrival_time_utc": "2026-12-13T22:40:00Z",
+            "duration_minutes": 185,
+            "aircraft": "Airbus A321neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "e8df11984e4b4142a6e4a8825c11305d"
+    },
+    {
+      "price": {
+        "amount": 349.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 200,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "1532",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T09:20:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T08:20:00Z",
+            "arrival_airport": "ATH",
+            "arrival_time_local": "2026-12-13T13:40:00",
+            "arrival_timezone": "Europe/Athens",
+            "arrival_time_utc": "2026-12-13T11:40:00Z",
+            "duration_minutes": 200,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "d39a280907704d559caed020e5e7c85a"
+    },
+    {
+      "price": {
+        "amount": 371.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "SKY express",
+        "duration_minutes": 190,
+        "segments": [
+          {
+            "marketing_carrier_code": "GQ",
+            "flight_number": "901",
+            "operating_carrier_name": "SKY express",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T14:05:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T13:05:00Z",
+            "arrival_airport": "ATH",
+            "arrival_time_local": "2026-12-13T18:15:00",
+            "arrival_timezone": "Europe/Athens",
+            "arrival_time_utc": "2026-12-13T16:15:00Z",
+            "duration_minutes": 190,
+            "aircraft": "Airbus A321neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "0b17cde3d85f416d898224e6bc2a01fa"
+    },
+    {
+      "price": {
+        "amount": 446.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Aegean",
+        "duration_minutes": 190,
+        "segments": [
+          {
+            "marketing_carrier_code": "A3",
+            "flight_number": "613",
+            "operating_carrier_name": "Aegean",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T16:50:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T15:50:00Z",
+            "arrival_airport": "ATH",
+            "arrival_time_local": "2026-12-13T21:00:00",
+            "arrival_timezone": "Europe/Athens",
+            "arrival_time_utc": "2026-12-13T19:00:00Z",
+            "duration_minutes": 190,
+            "aircraft": "Airbus A320neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "2815525b66bd4954b76f3570961fd2c4"
+    }
+  ],
+  "observed_at": "2026-10-29T03:29:49.317045Z"
+}

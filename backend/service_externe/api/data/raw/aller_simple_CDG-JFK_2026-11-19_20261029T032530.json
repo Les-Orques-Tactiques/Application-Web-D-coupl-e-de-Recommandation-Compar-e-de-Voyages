@@ -1,0 +1,517 @@
+{
+  "origin": "CDG",
+  "destination": "JFK",
+  "departure_date": "2026-11-19",
+  "itineraries": [
+    {
+      "price": {
+        "amount": 402.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Vueling",
+        "duration_minutes": 1090,
+        "segments": [
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "8061",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-11-19T09:50:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-11-19T08:50:00Z",
+            "arrival_airport": "BCN",
+            "arrival_time_local": "2026-11-19T11:45:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-11-19T10:45:00Z",
+            "duration_minutes": 115,
+            "aircraft": ""
+          },
+          {
+            "marketing_carrier_code": "LL",
+            "flight_number": "2627",
+            "operating_carrier_name": "LEVEL",
+            "departure_airport": "BCN",
+            "departure_time_local": "2026-11-19T18:45:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-11-19T17:45:00Z",
+            "arrival_airport": "JFK",
+            "arrival_time_local": "2026-11-19T22:00:00",
+            "arrival_timezone": "America/New_York",
+            "arrival_time_utc": "2026-11-20T03:00:00Z",
+            "duration_minutes": 555,
+            "aircraft": ""
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": true,
+      "ignav_id": "d69b71dbc8064ffebd6fb09f66179db3"
+    },
+    {
+      "price": {
+        "amount": 510.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "JetBlue",
+        "duration_minutes": 530,
+        "segments": [
+          {
+            "marketing_carrier_code": "B6",
+            "flight_number": "1408",
+            "operating_carrier_name": "JetBlue",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-11-19T11:20:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-11-19T10:20:00Z",
+            "arrival_airport": "JFK",
+            "arrival_time_local": "2026-11-19T14:10:00",
+            "arrival_timezone": "America/New_York",
+            "arrival_time_utc": "2026-11-19T19:10:00Z",
+            "duration_minutes": 530,
+            "aircraft": "Airbus A321neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "cc506404d97349b5aadb18333c12b1ee"
+    },
+    {
+      "price": {
+        "amount": 515.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "JetBlue",
+        "duration_minutes": 829,
+        "segments": [
+          {
+            "marketing_carrier_code": "B6",
+            "flight_number": "34",
+            "operating_carrier_name": "JetBlue",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-11-19T13:35:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-11-19T12:35:00Z",
+            "arrival_airport": "BOS",
+            "arrival_time_local": "2026-11-19T15:57:00",
+            "arrival_timezone": "America/New_York",
+            "arrival_time_utc": "2026-11-19T20:57:00Z",
+            "duration_minutes": 502,
+            "aircraft": "Airbus A321neo"
+          },
+          {
+            "marketing_carrier_code": "B6",
+            "flight_number": "1017",
+            "operating_carrier_name": "JetBlue",
+            "departure_airport": "BOS",
+            "departure_time_local": "2026-11-19T20:05:00",
+            "departure_timezone": "America/New_York",
+            "departure_time_utc": "2026-11-20T01:05:00Z",
+            "arrival_airport": "JFK",
+            "arrival_time_local": "2026-11-19T21:24:00",
+            "arrival_timezone": "America/New_York",
+            "arrival_time_utc": "2026-11-20T02:24:00Z",
+            "duration_minutes": 79,
+            "aircraft": "Airbus A220-300 Passenger"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "09f5413b88c043e9a8d65abe2927fb38"
+    },
+    {
+      "price": {
+        "amount": 619.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Turkish Airlines",
+        "duration_minutes": 985,
+        "segments": [
+          {
+            "marketing_carrier_code": "TK",
+            "flight_number": "1832",
+            "operating_carrier_name": "Turkish Airlines",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-11-19T12:00:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-11-19T11:00:00Z",
+            "arrival_airport": "IST",
+            "arrival_time_local": "2026-11-19T17:40:00",
+            "arrival_timezone": "Europe/Istanbul",
+            "arrival_time_utc": "2026-11-19T14:40:00Z",
+            "duration_minutes": 220,
+            "aircraft": "Airbus A321neo"
+          },
+          {
+            "marketing_carrier_code": "TK",
+            "flight_number": "11",
+            "operating_carrier_name": "Turkish Airlines",
+            "departure_airport": "IST",
+            "departure_time_local": "2026-11-19T19:30:00",
+            "departure_timezone": "Europe/Istanbul",
+            "departure_time_utc": "2026-11-19T16:30:00Z",
+            "arrival_airport": "JFK",
+            "arrival_time_local": "2026-11-19T22:25:00",
+            "arrival_timezone": "America/New_York",
+            "arrival_time_utc": "2026-11-20T03:25:00Z",
+            "duration_minutes": 655,
+            "aircraft": "Boeing 777"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "5ad84c8903224ed4813fb0e07bd3fdfd"
+    },
+    {
+      "price": {
+        "amount": 747.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Condor",
+        "duration_minutes": 755,
+        "segments": [
+          {
+            "marketing_carrier_code": "DE",
+            "flight_number": "4301",
+            "operating_carrier_name": "Condor",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-11-19T07:30:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-11-19T06:30:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-11-19T08:50:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-11-19T07:50:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "DE",
+            "flight_number": "2016",
+            "operating_carrier_name": "Condor",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-11-19T11:15:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-11-19T10:15:00Z",
+            "arrival_airport": "JFK",
+            "arrival_time_local": "2026-11-19T14:05:00",
+            "arrival_timezone": "America/New_York",
+            "arrival_time_utc": "2026-11-19T19:05:00Z",
+            "duration_minutes": 530,
+            "aircraft": "Airbus A330-900neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "f266497497dc4a2abf100ef703ad8158"
+    },
+    {
+      "price": {
+        "amount": 750.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "JetBlue",
+        "duration_minutes": 715,
+        "segments": [
+          {
+            "marketing_carrier_code": "B6",
+            "flight_number": "34",
+            "operating_carrier_name": "JetBlue",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-11-19T13:35:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-11-19T12:35:00Z",
+            "arrival_airport": "BOS",
+            "arrival_time_local": "2026-11-19T15:57:00",
+            "arrival_timezone": "America/New_York",
+            "arrival_time_utc": "2026-11-19T20:57:00Z",
+            "duration_minutes": 502,
+            "aircraft": "Airbus A321neo"
+          },
+          {
+            "marketing_carrier_code": "B6",
+            "flight_number": "717",
+            "operating_carrier_name": "JetBlue",
+            "departure_airport": "BOS",
+            "departure_time_local": "2026-11-19T18:10:00",
+            "departure_timezone": "America/New_York",
+            "departure_time_utc": "2026-11-19T23:10:00Z",
+            "arrival_airport": "JFK",
+            "arrival_time_local": "2026-11-19T19:30:00",
+            "arrival_timezone": "America/New_York",
+            "arrival_time_utc": "2026-11-20T00:30:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Airbus A220-300 Passenger"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "f0a7774533df451b9f7464377797dba7"
+    },
+    {
+      "price": {
+        "amount": 1019.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "American",
+        "duration_minutes": 500,
+        "segments": [
+          {
+            "marketing_carrier_code": "AA",
+            "flight_number": "43",
+            "operating_carrier_name": "American",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-11-19T11:25:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-11-19T10:25:00Z",
+            "arrival_airport": "JFK",
+            "arrival_time_local": "2026-11-19T13:45:00",
+            "arrival_timezone": "America/New_York",
+            "arrival_time_utc": "2026-11-19T18:45:00Z",
+            "duration_minutes": 500,
+            "aircraft": "Boeing 787"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "d86d9db0e5a2492696ea4f6bfba5cc25"
+    },
+    {
+      "price": {
+        "amount": 1070.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Delta",
+        "duration_minutes": 515,
+        "segments": [
+          {
+            "marketing_carrier_code": "DL",
+            "flight_number": "267",
+            "operating_carrier_name": "Delta",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-11-19T14:40:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-11-19T13:40:00Z",
+            "arrival_airport": "JFK",
+            "arrival_time_local": "2026-11-19T17:15:00",
+            "arrival_timezone": "America/New_York",
+            "arrival_time_utc": "2026-11-19T22:15:00Z",
+            "duration_minutes": 515,
+            "aircraft": "Airbus A330"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "81dc927709434326980e53d426d0f82b"
+    },
+    {
+      "price": {
+        "amount": 1070.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Delta",
+        "duration_minutes": 520,
+        "segments": [
+          {
+            "marketing_carrier_code": "DL",
+            "flight_number": "263",
+            "operating_carrier_name": "Delta",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-11-19T12:30:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-11-19T11:30:00Z",
+            "arrival_airport": "JFK",
+            "arrival_time_local": "2026-11-19T15:10:00",
+            "arrival_timezone": "America/New_York",
+            "arrival_time_utc": "2026-11-19T20:10:00Z",
+            "duration_minutes": 520,
+            "aircraft": "Airbus A330"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "6d160a14ef594526a40195e8cd2bc09b"
+    },
+    {
+      "price": {
+        "amount": 1071.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 495,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "12",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-11-19T20:30:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-11-19T19:30:00Z",
+            "arrival_airport": "JFK",
+            "arrival_time_local": "2026-11-19T22:45:00",
+            "arrival_timezone": "America/New_York",
+            "arrival_time_utc": "2026-11-20T03:45:00Z",
+            "duration_minutes": 495,
+            "aircraft": "Airbus A350"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "ff50b1577c394ccf83c4801790435d4b"
+    },
+    {
+      "price": {
+        "amount": 1071.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 505,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "2",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-11-19T08:30:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-11-19T07:30:00Z",
+            "arrival_airport": "JFK",
+            "arrival_time_local": "2026-11-19T10:55:00",
+            "arrival_timezone": "America/New_York",
+            "arrival_time_utc": "2026-11-19T15:55:00Z",
+            "duration_minutes": 505,
+            "aircraft": "Boeing 777"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "ea9f5b239ab24efc93d9d4ec6f9a1456"
+    },
+    {
+      "price": {
+        "amount": 1071.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 505,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "4",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-11-19T10:30:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-11-19T09:30:00Z",
+            "arrival_airport": "JFK",
+            "arrival_time_local": "2026-11-19T12:55:00",
+            "arrival_timezone": "America/New_York",
+            "arrival_time_utc": "2026-11-19T17:55:00Z",
+            "duration_minutes": 505,
+            "aircraft": "Boeing 777"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "212390c45f404d688e1a4370b4081f69"
+    },
+    {
+      "price": {
+        "amount": 1071.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 510,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "6",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-11-19T13:30:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-11-19T12:30:00Z",
+            "arrival_airport": "JFK",
+            "arrival_time_local": "2026-11-19T16:00:00",
+            "arrival_timezone": "America/New_York",
+            "arrival_time_utc": "2026-11-19T21:00:00Z",
+            "duration_minutes": 510,
+            "aircraft": "Boeing 777"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "d932461cab9e4ca296ac4a600f15e783"
+    },
+    {
+      "price": {
+        "amount": 1071.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 515,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "8",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-11-19T16:30:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-11-19T15:30:00Z",
+            "arrival_airport": "JFK",
+            "arrival_time_local": "2026-11-19T19:05:00",
+            "arrival_timezone": "America/New_York",
+            "arrival_time_utc": "2026-11-20T00:05:00Z",
+            "duration_minutes": 515,
+            "aircraft": "Boeing 777"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "4295983f09754300955e36a4c59c047c"
+    }
+  ],
+  "observed_at": "2026-10-29T03:25:30.578115Z"
+}

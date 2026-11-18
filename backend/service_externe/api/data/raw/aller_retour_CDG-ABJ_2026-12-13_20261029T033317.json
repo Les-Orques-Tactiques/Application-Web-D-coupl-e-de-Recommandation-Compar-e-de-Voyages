@@ -1,0 +1,1685 @@
+{
+  "origin": "CDG",
+  "destination": "ABJ",
+  "departure_date": "2026-12-13",
+  "return_date": "2026-12-20",
+  "itineraries": [
+    {
+      "price": {
+        "amount": 887.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Turkish Airlines",
+        "duration_minutes": 985,
+        "segments": [
+          {
+            "marketing_carrier_code": "TK",
+            "flight_number": "1830",
+            "operating_carrier_name": "Turkish Airlines",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T06:45:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T05:45:00Z",
+            "arrival_airport": "IST",
+            "arrival_time_local": "2026-12-13T12:30:00",
+            "arrival_timezone": "Europe/Istanbul",
+            "arrival_time_utc": "2026-12-13T09:30:00Z",
+            "duration_minutes": 225,
+            "aircraft": "Airbus A321neo"
+          },
+          {
+            "marketing_carrier_code": "TK",
+            "flight_number": "555",
+            "operating_carrier_name": "Turkish Airlines",
+            "departure_airport": "IST",
+            "departure_time_local": "2026-12-13T17:25:00",
+            "departure_timezone": "Europe/Istanbul",
+            "departure_time_utc": "2026-12-13T14:25:00Z",
+            "arrival_airport": "ABJ",
+            "arrival_time_local": "2026-12-13T22:10:00",
+            "arrival_timezone": "Africa/Abidjan",
+            "arrival_time_utc": "2026-12-13T22:10:00Z",
+            "duration_minutes": 465,
+            "aircraft": "Airbus A330"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Turkish Airlines",
+        "duration_minutes": 815,
+        "segments": [
+          {
+            "marketing_carrier_code": "TK",
+            "flight_number": "556",
+            "operating_carrier_name": "Turkish Airlines",
+            "departure_airport": "ABJ",
+            "departure_time_local": "2026-12-20T23:55:00",
+            "departure_timezone": "Africa/Abidjan",
+            "departure_time_utc": "2026-12-20T23:55:00Z",
+            "arrival_airport": "IST",
+            "arrival_time_local": "2026-12-21T09:55:00",
+            "arrival_timezone": "Europe/Istanbul",
+            "arrival_time_utc": "2026-12-21T06:55:00Z",
+            "duration_minutes": 420,
+            "aircraft": "Airbus A330"
+          },
+          {
+            "marketing_carrier_code": "TK",
+            "flight_number": "1825",
+            "operating_carrier_name": "Turkish Airlines",
+            "departure_airport": "IST",
+            "departure_time_local": "2026-12-21T12:45:00",
+            "departure_timezone": "Europe/Istanbul",
+            "departure_time_utc": "2026-12-21T09:45:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-21T14:30:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-21T13:30:00Z",
+            "duration_minutes": 225,
+            "aircraft": "Airbus A321neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "02f9cf36938c439798a98c328c1a907c"
+    },
+    {
+      "price": {
+        "amount": 898.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Royal Air Maroc",
+        "duration_minutes": 700,
+        "segments": [
+          {
+            "marketing_carrier_code": "AT",
+            "flight_number": "703",
+            "operating_carrier_name": "Royal Air Maroc",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T07:00:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T06:00:00Z",
+            "arrival_airport": "CMN",
+            "arrival_time_local": "2026-12-13T09:10:00",
+            "arrival_timezone": "Africa/Casablanca",
+            "arrival_time_utc": "2026-12-13T09:10:00Z",
+            "duration_minutes": 190,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          },
+          {
+            "marketing_carrier_code": "AT",
+            "flight_number": "535",
+            "operating_carrier_name": "Royal Air Maroc",
+            "departure_airport": "CMN",
+            "departure_time_local": "2026-12-13T13:10:00",
+            "departure_timezone": "Africa/Casablanca",
+            "departure_time_utc": "2026-12-13T13:10:00Z",
+            "arrival_airport": "ABJ",
+            "arrival_time_local": "2026-12-13T17:40:00",
+            "arrival_timezone": "Africa/Abidjan",
+            "arrival_time_utc": "2026-12-13T17:40:00Z",
+            "duration_minutes": 270,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Royal Air Maroc",
+        "duration_minutes": 1245,
+        "segments": [
+          {
+            "marketing_carrier_code": "AT",
+            "flight_number": "534",
+            "operating_carrier_name": "Royal Air Maroc",
+            "departure_airport": "ABJ",
+            "departure_time_local": "2026-12-20T18:40:00",
+            "departure_timezone": "Africa/Abidjan",
+            "departure_time_utc": "2026-12-20T18:40:00Z",
+            "arrival_airport": "CMN",
+            "arrival_time_local": "2026-12-20T23:05:00",
+            "arrival_timezone": "Africa/Casablanca",
+            "arrival_time_utc": "2026-12-20T23:05:00Z",
+            "duration_minutes": 265,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          },
+          {
+            "marketing_carrier_code": "AT",
+            "flight_number": "788",
+            "operating_carrier_name": "Royal Air Maroc",
+            "departure_airport": "CMN",
+            "departure_time_local": "2026-12-21T12:20:00",
+            "departure_timezone": "Africa/Casablanca",
+            "departure_time_utc": "2026-12-21T12:20:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-21T16:25:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-21T15:25:00Z",
+            "duration_minutes": 185,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "59175e53334545029883b81248100d6b"
+    },
+    {
+      "price": {
+        "amount": 898.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Royal Air Maroc",
+        "duration_minutes": 795,
+        "segments": [
+          {
+            "marketing_carrier_code": "AT",
+            "flight_number": "779",
+            "operating_carrier_name": "Royal Air Maroc",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T12:15:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T11:15:00Z",
+            "arrival_airport": "CMN",
+            "arrival_time_local": "2026-12-13T14:25:00",
+            "arrival_timezone": "Africa/Casablanca",
+            "arrival_time_utc": "2026-12-13T14:25:00Z",
+            "duration_minutes": 190,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          },
+          {
+            "marketing_carrier_code": "AT",
+            "flight_number": "531",
+            "operating_carrier_name": "Royal Air Maroc",
+            "departure_airport": "CMN",
+            "departure_time_local": "2026-12-13T20:00:00",
+            "departure_timezone": "Africa/Casablanca",
+            "departure_time_utc": "2026-12-13T20:00:00Z",
+            "arrival_airport": "ABJ",
+            "arrival_time_local": "2026-12-14T00:30:00",
+            "arrival_timezone": "Africa/Abidjan",
+            "arrival_time_utc": "2026-12-14T00:30:00Z",
+            "duration_minutes": 270,
+            "aircraft": "Boeing 737"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Royal Air Maroc",
+        "duration_minutes": 1245,
+        "segments": [
+          {
+            "marketing_carrier_code": "AT",
+            "flight_number": "534",
+            "operating_carrier_name": "Royal Air Maroc",
+            "departure_airport": "ABJ",
+            "departure_time_local": "2026-12-20T18:40:00",
+            "departure_timezone": "Africa/Abidjan",
+            "departure_time_utc": "2026-12-20T18:40:00Z",
+            "arrival_airport": "CMN",
+            "arrival_time_local": "2026-12-20T23:05:00",
+            "arrival_timezone": "Africa/Casablanca",
+            "arrival_time_utc": "2026-12-20T23:05:00Z",
+            "duration_minutes": 265,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          },
+          {
+            "marketing_carrier_code": "AT",
+            "flight_number": "788",
+            "operating_carrier_name": "Royal Air Maroc",
+            "departure_airport": "CMN",
+            "departure_time_local": "2026-12-21T12:20:00",
+            "departure_timezone": "Africa/Casablanca",
+            "departure_time_utc": "2026-12-21T12:20:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-21T16:25:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-21T15:25:00Z",
+            "duration_minutes": 185,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "35b5da41ba3943a08b5244d8fd2aac01"
+    },
+    {
+      "price": {
+        "amount": 951.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Royal Air Maroc",
+        "duration_minutes": 700,
+        "segments": [
+          {
+            "marketing_carrier_code": "AT",
+            "flight_number": "703",
+            "operating_carrier_name": "Royal Air Maroc",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T07:00:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T06:00:00Z",
+            "arrival_airport": "CMN",
+            "arrival_time_local": "2026-12-13T09:10:00",
+            "arrival_timezone": "Africa/Casablanca",
+            "arrival_time_utc": "2026-12-13T09:10:00Z",
+            "duration_minutes": 190,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          },
+          {
+            "marketing_carrier_code": "AT",
+            "flight_number": "535",
+            "operating_carrier_name": "Royal Air Maroc",
+            "departure_airport": "CMN",
+            "departure_time_local": "2026-12-13T13:10:00",
+            "departure_timezone": "Africa/Casablanca",
+            "departure_time_utc": "2026-12-13T13:10:00Z",
+            "arrival_airport": "ABJ",
+            "arrival_time_local": "2026-12-13T17:40:00",
+            "arrival_timezone": "Africa/Abidjan",
+            "arrival_time_utc": "2026-12-13T17:40:00Z",
+            "duration_minutes": 270,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Royal Air Maroc",
+        "duration_minutes": 605,
+        "segments": [
+          {
+            "marketing_carrier_code": "AT",
+            "flight_number": "534",
+            "operating_carrier_name": "Royal Air Maroc",
+            "departure_airport": "ABJ",
+            "departure_time_local": "2026-12-20T18:40:00",
+            "departure_timezone": "Africa/Abidjan",
+            "departure_time_utc": "2026-12-20T18:40:00Z",
+            "arrival_airport": "CMN",
+            "arrival_time_local": "2026-12-20T23:05:00",
+            "arrival_timezone": "Africa/Casablanca",
+            "arrival_time_utc": "2026-12-20T23:05:00Z",
+            "duration_minutes": 265,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          },
+          {
+            "marketing_carrier_code": "AT",
+            "flight_number": "702",
+            "operating_carrier_name": "Royal Air Maroc",
+            "departure_airport": "CMN",
+            "departure_time_local": "2026-12-21T01:40:00",
+            "departure_timezone": "Africa/Casablanca",
+            "departure_time_utc": "2026-12-21T01:40:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-21T05:45:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-21T04:45:00Z",
+            "duration_minutes": 185,
+            "aircraft": "Boeing 737"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "ba398014af5f4cfba0f5980d0232557d"
+    },
+    {
+      "price": {
+        "amount": 951.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Royal Air Maroc",
+        "duration_minutes": 795,
+        "segments": [
+          {
+            "marketing_carrier_code": "AT",
+            "flight_number": "779",
+            "operating_carrier_name": "Royal Air Maroc",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T12:15:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T11:15:00Z",
+            "arrival_airport": "CMN",
+            "arrival_time_local": "2026-12-13T14:25:00",
+            "arrival_timezone": "Africa/Casablanca",
+            "arrival_time_utc": "2026-12-13T14:25:00Z",
+            "duration_minutes": 190,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          },
+          {
+            "marketing_carrier_code": "AT",
+            "flight_number": "531",
+            "operating_carrier_name": "Royal Air Maroc",
+            "departure_airport": "CMN",
+            "departure_time_local": "2026-12-13T20:00:00",
+            "departure_timezone": "Africa/Casablanca",
+            "departure_time_utc": "2026-12-13T20:00:00Z",
+            "arrival_airport": "ABJ",
+            "arrival_time_local": "2026-12-14T00:30:00",
+            "arrival_timezone": "Africa/Abidjan",
+            "arrival_time_utc": "2026-12-14T00:30:00Z",
+            "duration_minutes": 270,
+            "aircraft": "Boeing 737"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Royal Air Maroc",
+        "duration_minutes": 605,
+        "segments": [
+          {
+            "marketing_carrier_code": "AT",
+            "flight_number": "534",
+            "operating_carrier_name": "Royal Air Maroc",
+            "departure_airport": "ABJ",
+            "departure_time_local": "2026-12-20T18:40:00",
+            "departure_timezone": "Africa/Abidjan",
+            "departure_time_utc": "2026-12-20T18:40:00Z",
+            "arrival_airport": "CMN",
+            "arrival_time_local": "2026-12-20T23:05:00",
+            "arrival_timezone": "Africa/Casablanca",
+            "arrival_time_utc": "2026-12-20T23:05:00Z",
+            "duration_minutes": 265,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          },
+          {
+            "marketing_carrier_code": "AT",
+            "flight_number": "702",
+            "operating_carrier_name": "Royal Air Maroc",
+            "departure_airport": "CMN",
+            "departure_time_local": "2026-12-21T01:40:00",
+            "departure_timezone": "Africa/Casablanca",
+            "departure_time_utc": "2026-12-21T01:40:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-21T05:45:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-21T04:45:00Z",
+            "duration_minutes": 185,
+            "aircraft": "Boeing 737"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "daced7d8071549c29f4006b82216429b"
+    },
+    {
+      "price": {
+        "amount": 997.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Royal Air Maroc",
+        "duration_minutes": 700,
+        "segments": [
+          {
+            "marketing_carrier_code": "AT",
+            "flight_number": "703",
+            "operating_carrier_name": "Royal Air Maroc",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T07:00:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T06:00:00Z",
+            "arrival_airport": "CMN",
+            "arrival_time_local": "2026-12-13T09:10:00",
+            "arrival_timezone": "Africa/Casablanca",
+            "arrival_time_utc": "2026-12-13T09:10:00Z",
+            "duration_minutes": 190,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          },
+          {
+            "marketing_carrier_code": "AT",
+            "flight_number": "535",
+            "operating_carrier_name": "Royal Air Maroc",
+            "departure_airport": "CMN",
+            "departure_time_local": "2026-12-13T13:10:00",
+            "departure_timezone": "Africa/Casablanca",
+            "departure_time_utc": "2026-12-13T13:10:00Z",
+            "arrival_airport": "ABJ",
+            "arrival_time_local": "2026-12-13T17:40:00",
+            "arrival_timezone": "Africa/Abidjan",
+            "arrival_time_utc": "2026-12-13T17:40:00Z",
+            "duration_minutes": 270,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Royal Air Maroc",
+        "duration_minutes": 525,
+        "segments": [
+          {
+            "marketing_carrier_code": "AT",
+            "flight_number": "530",
+            "operating_carrier_name": "Royal Air Maroc",
+            "departure_airport": "ABJ",
+            "departure_time_local": "2026-12-20T01:30:00",
+            "departure_timezone": "Africa/Abidjan",
+            "departure_time_utc": "2026-12-20T01:30:00Z",
+            "arrival_airport": "CMN",
+            "arrival_time_local": "2026-12-20T05:55:00",
+            "arrival_timezone": "Africa/Casablanca",
+            "arrival_time_utc": "2026-12-20T05:55:00Z",
+            "duration_minutes": 265,
+            "aircraft": "Boeing 737"
+          },
+          {
+            "marketing_carrier_code": "AT",
+            "flight_number": "778",
+            "operating_carrier_name": "Royal Air Maroc",
+            "departure_airport": "CMN",
+            "departure_time_local": "2026-12-20T07:10:00",
+            "departure_timezone": "Africa/Casablanca",
+            "departure_time_utc": "2026-12-20T07:10:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-20T11:15:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-20T10:15:00Z",
+            "duration_minutes": 185,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "c9be9c01448940ff98b6267b1f6f29c7"
+    },
+    {
+      "price": {
+        "amount": 997.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Royal Air Maroc",
+        "duration_minutes": 795,
+        "segments": [
+          {
+            "marketing_carrier_code": "AT",
+            "flight_number": "779",
+            "operating_carrier_name": "Royal Air Maroc",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T12:15:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T11:15:00Z",
+            "arrival_airport": "CMN",
+            "arrival_time_local": "2026-12-13T14:25:00",
+            "arrival_timezone": "Africa/Casablanca",
+            "arrival_time_utc": "2026-12-13T14:25:00Z",
+            "duration_minutes": 190,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          },
+          {
+            "marketing_carrier_code": "AT",
+            "flight_number": "531",
+            "operating_carrier_name": "Royal Air Maroc",
+            "departure_airport": "CMN",
+            "departure_time_local": "2026-12-13T20:00:00",
+            "departure_timezone": "Africa/Casablanca",
+            "departure_time_utc": "2026-12-13T20:00:00Z",
+            "arrival_airport": "ABJ",
+            "arrival_time_local": "2026-12-14T00:30:00",
+            "arrival_timezone": "Africa/Abidjan",
+            "arrival_time_utc": "2026-12-14T00:30:00Z",
+            "duration_minutes": 270,
+            "aircraft": "Boeing 737"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Royal Air Maroc",
+        "duration_minutes": 525,
+        "segments": [
+          {
+            "marketing_carrier_code": "AT",
+            "flight_number": "530",
+            "operating_carrier_name": "Royal Air Maroc",
+            "departure_airport": "ABJ",
+            "departure_time_local": "2026-12-20T01:30:00",
+            "departure_timezone": "Africa/Abidjan",
+            "departure_time_utc": "2026-12-20T01:30:00Z",
+            "arrival_airport": "CMN",
+            "arrival_time_local": "2026-12-20T05:55:00",
+            "arrival_timezone": "Africa/Casablanca",
+            "arrival_time_utc": "2026-12-20T05:55:00Z",
+            "duration_minutes": 265,
+            "aircraft": "Boeing 737"
+          },
+          {
+            "marketing_carrier_code": "AT",
+            "flight_number": "778",
+            "operating_carrier_name": "Royal Air Maroc",
+            "departure_airport": "CMN",
+            "departure_time_local": "2026-12-20T07:10:00",
+            "departure_timezone": "Africa/Casablanca",
+            "departure_time_utc": "2026-12-20T07:10:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-20T11:15:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-20T10:15:00Z",
+            "duration_minutes": 185,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "3969f7ffaef44a72a71a52cc260abfcb"
+    },
+    {
+      "price": {
+        "amount": 1007.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Royal Air Maroc",
+        "duration_minutes": 735,
+        "segments": [
+          {
+            "marketing_carrier_code": "AT",
+            "flight_number": "789",
+            "operating_carrier_name": "Royal Air Maroc",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T17:35:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T16:35:00Z",
+            "arrival_airport": "CMN",
+            "arrival_time_local": "2026-12-13T19:45:00",
+            "arrival_timezone": "Africa/Casablanca",
+            "arrival_time_utc": "2026-12-13T19:45:00Z",
+            "duration_minutes": 190,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          },
+          {
+            "marketing_carrier_code": "AT",
+            "flight_number": "533",
+            "operating_carrier_name": "Royal Air Maroc",
+            "departure_airport": "CMN",
+            "departure_time_local": "2026-12-14T00:20:00",
+            "departure_timezone": "Africa/Casablanca",
+            "departure_time_utc": "2026-12-14T00:20:00Z",
+            "arrival_airport": "ABJ",
+            "arrival_time_local": "2026-12-14T04:50:00",
+            "arrival_timezone": "Africa/Abidjan",
+            "arrival_time_utc": "2026-12-14T04:50:00Z",
+            "duration_minutes": 270,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Royal Air Maroc",
+        "duration_minutes": 605,
+        "segments": [
+          {
+            "marketing_carrier_code": "AT",
+            "flight_number": "534",
+            "operating_carrier_name": "Royal Air Maroc",
+            "departure_airport": "ABJ",
+            "departure_time_local": "2026-12-20T18:40:00",
+            "departure_timezone": "Africa/Abidjan",
+            "departure_time_utc": "2026-12-20T18:40:00Z",
+            "arrival_airport": "CMN",
+            "arrival_time_local": "2026-12-20T23:05:00",
+            "arrival_timezone": "Africa/Casablanca",
+            "arrival_time_utc": "2026-12-20T23:05:00Z",
+            "duration_minutes": 265,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          },
+          {
+            "marketing_carrier_code": "AT",
+            "flight_number": "702",
+            "operating_carrier_name": "Royal Air Maroc",
+            "departure_airport": "CMN",
+            "departure_time_local": "2026-12-21T01:40:00",
+            "departure_timezone": "Africa/Casablanca",
+            "departure_time_utc": "2026-12-21T01:40:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-21T05:45:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-21T04:45:00Z",
+            "duration_minutes": 185,
+            "aircraft": "Boeing 737"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "a615f48781d54d65b5a976f31354c01d"
+    },
+    {
+      "price": {
+        "amount": 1044.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 390,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "706",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T17:20:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T16:20:00Z",
+            "arrival_airport": "ABJ",
+            "arrival_time_local": "2026-12-13T22:50:00",
+            "arrival_timezone": "Africa/Abidjan",
+            "arrival_time_utc": "2026-12-13T22:50:00Z",
+            "duration_minutes": 390,
+            "aircraft": "Airbus A350"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Air France",
+        "duration_minutes": 390,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "705",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "ABJ",
+            "departure_time_local": "2026-12-20T01:20:00",
+            "departure_timezone": "Africa/Abidjan",
+            "departure_time_utc": "2026-12-20T01:20:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-20T08:50:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-20T07:50:00Z",
+            "duration_minutes": 390,
+            "aircraft": "Airbus A350"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "c34c1e5b2e2449f0bc8e8c73050955ce"
+    },
+    {
+      "price": {
+        "amount": 1044.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 395,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "702",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T14:00:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T13:00:00Z",
+            "arrival_airport": "ABJ",
+            "arrival_time_local": "2026-12-13T19:35:00",
+            "arrival_timezone": "Africa/Abidjan",
+            "arrival_time_utc": "2026-12-13T19:35:00Z",
+            "duration_minutes": 395,
+            "aircraft": "Boeing 777"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Air France",
+        "duration_minutes": 390,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "705",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "ABJ",
+            "departure_time_local": "2026-12-20T01:20:00",
+            "departure_timezone": "Africa/Abidjan",
+            "departure_time_utc": "2026-12-20T01:20:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-20T08:50:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-20T07:50:00Z",
+            "duration_minutes": 390,
+            "aircraft": "Airbus A350"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "377e6bb500d047db9463abe4ab1be245"
+    },
+    {
+      "price": {
+        "amount": 1044.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 390,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "706",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T17:20:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T16:20:00Z",
+            "arrival_airport": "ABJ",
+            "arrival_time_local": "2026-12-13T22:50:00",
+            "arrival_timezone": "Africa/Abidjan",
+            "arrival_time_utc": "2026-12-13T22:50:00Z",
+            "duration_minutes": 390,
+            "aircraft": "Airbus A350"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Air France",
+        "duration_minutes": 395,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "703",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "ABJ",
+            "departure_time_local": "2026-12-20T22:10:00",
+            "departure_timezone": "Africa/Abidjan",
+            "departure_time_utc": "2026-12-20T22:10:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-21T05:45:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-21T04:45:00Z",
+            "duration_minutes": 395,
+            "aircraft": "Boeing 777"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "e54500853160469aa89465785006d743"
+    },
+    {
+      "price": {
+        "amount": 1044.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 395,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "702",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T14:00:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T13:00:00Z",
+            "arrival_airport": "ABJ",
+            "arrival_time_local": "2026-12-13T19:35:00",
+            "arrival_timezone": "Africa/Abidjan",
+            "arrival_time_utc": "2026-12-13T19:35:00Z",
+            "duration_minutes": 395,
+            "aircraft": "Boeing 777"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Air France",
+        "duration_minutes": 395,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "703",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "ABJ",
+            "departure_time_local": "2026-12-20T22:10:00",
+            "departure_timezone": "Africa/Abidjan",
+            "departure_time_utc": "2026-12-20T22:10:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-21T05:45:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-21T04:45:00Z",
+            "duration_minutes": 395,
+            "aircraft": "Boeing 777"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "a7acf3fc45c44c368a20c86ec969b9d4"
+    },
+    {
+      "price": {
+        "amount": 1050.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 390,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "706",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T17:20:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T16:20:00Z",
+            "arrival_airport": "ABJ",
+            "arrival_time_local": "2026-12-13T22:50:00",
+            "arrival_timezone": "Africa/Abidjan",
+            "arrival_time_utc": "2026-12-13T22:50:00Z",
+            "duration_minutes": 390,
+            "aircraft": "Airbus A350"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Air Cote D'Ivoire",
+        "duration_minutes": 400,
+        "segments": [
+          {
+            "marketing_carrier_code": "HF",
+            "flight_number": "178",
+            "operating_carrier_name": "Air Cote D'Ivoire",
+            "departure_airport": "ABJ",
+            "departure_time_local": "2026-12-20T23:15:00",
+            "departure_timezone": "Africa/Abidjan",
+            "departure_time_utc": "2026-12-20T23:15:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-21T06:55:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-21T05:55:00Z",
+            "duration_minutes": 400,
+            "aircraft": "Airbus A330-900neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "10002979fc1c4a9aabbdb3b0f80bc609"
+    },
+    {
+      "price": {
+        "amount": 1050.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 395,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "702",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T14:00:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T13:00:00Z",
+            "arrival_airport": "ABJ",
+            "arrival_time_local": "2026-12-13T19:35:00",
+            "arrival_timezone": "Africa/Abidjan",
+            "arrival_time_utc": "2026-12-13T19:35:00Z",
+            "duration_minutes": 395,
+            "aircraft": "Boeing 777"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Air Cote D'Ivoire",
+        "duration_minutes": 400,
+        "segments": [
+          {
+            "marketing_carrier_code": "HF",
+            "flight_number": "178",
+            "operating_carrier_name": "Air Cote D'Ivoire",
+            "departure_airport": "ABJ",
+            "departure_time_local": "2026-12-20T23:15:00",
+            "departure_timezone": "Africa/Abidjan",
+            "departure_time_utc": "2026-12-20T23:15:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-21T06:55:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-21T05:55:00Z",
+            "duration_minutes": 400,
+            "aircraft": "Airbus A330-900neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "3435712e58374a44a21232a259cc3981"
+    },
+    {
+      "price": {
+        "amount": 1054.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Royal Air Maroc",
+        "duration_minutes": 735,
+        "segments": [
+          {
+            "marketing_carrier_code": "AT",
+            "flight_number": "789",
+            "operating_carrier_name": "Royal Air Maroc",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T17:35:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T16:35:00Z",
+            "arrival_airport": "CMN",
+            "arrival_time_local": "2026-12-13T19:45:00",
+            "arrival_timezone": "Africa/Casablanca",
+            "arrival_time_utc": "2026-12-13T19:45:00Z",
+            "duration_minutes": 190,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          },
+          {
+            "marketing_carrier_code": "AT",
+            "flight_number": "533",
+            "operating_carrier_name": "Royal Air Maroc",
+            "departure_airport": "CMN",
+            "departure_time_local": "2026-12-14T00:20:00",
+            "departure_timezone": "Africa/Casablanca",
+            "departure_time_utc": "2026-12-14T00:20:00Z",
+            "arrival_airport": "ABJ",
+            "arrival_time_local": "2026-12-14T04:50:00",
+            "arrival_timezone": "Africa/Abidjan",
+            "arrival_time_utc": "2026-12-14T04:50:00Z",
+            "duration_minutes": 270,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Royal Air Maroc",
+        "duration_minutes": 525,
+        "segments": [
+          {
+            "marketing_carrier_code": "AT",
+            "flight_number": "530",
+            "operating_carrier_name": "Royal Air Maroc",
+            "departure_airport": "ABJ",
+            "departure_time_local": "2026-12-20T01:30:00",
+            "departure_timezone": "Africa/Abidjan",
+            "departure_time_utc": "2026-12-20T01:30:00Z",
+            "arrival_airport": "CMN",
+            "arrival_time_local": "2026-12-20T05:55:00",
+            "arrival_timezone": "Africa/Casablanca",
+            "arrival_time_utc": "2026-12-20T05:55:00Z",
+            "duration_minutes": 265,
+            "aircraft": "Boeing 737"
+          },
+          {
+            "marketing_carrier_code": "AT",
+            "flight_number": "778",
+            "operating_carrier_name": "Royal Air Maroc",
+            "departure_airport": "CMN",
+            "departure_time_local": "2026-12-20T07:10:00",
+            "departure_timezone": "Africa/Casablanca",
+            "departure_time_utc": "2026-12-20T07:10:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-20T11:15:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-20T10:15:00Z",
+            "duration_minutes": 185,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "27d96dca553b457f9b5de4e7be039866"
+    },
+    {
+      "price": {
+        "amount": 1148.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Brussels Airlines",
+        "duration_minutes": 665,
+        "segments": [
+          {
+            "marketing_carrier_code": "SN",
+            "flight_number": "3632",
+            "operating_carrier_name": "Brussels Airlines",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T08:25:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T07:25:00Z",
+            "arrival_airport": "BRU",
+            "arrival_time_local": "2026-12-13T09:25:00",
+            "arrival_timezone": "Europe/Brussels",
+            "arrival_time_utc": "2026-12-13T08:25:00Z",
+            "duration_minutes": 60,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "SN",
+            "flight_number": "263",
+            "operating_carrier_name": "Brussels Airlines",
+            "departure_airport": "BRU",
+            "departure_time_local": "2026-12-13T11:05:00",
+            "departure_timezone": "Europe/Brussels",
+            "departure_time_utc": "2026-12-13T10:05:00Z",
+            "arrival_airport": "OUA",
+            "arrival_time_local": "2026-12-13T16:05:00",
+            "arrival_timezone": "Africa/Ouagadougou",
+            "arrival_time_utc": "2026-12-13T16:05:00Z",
+            "duration_minutes": 360,
+            "aircraft": "Airbus A330"
+          },
+          {
+            "marketing_carrier_code": "SN",
+            "flight_number": "263",
+            "operating_carrier_name": "Brussels Airlines",
+            "departure_airport": "OUA",
+            "departure_time_local": "2026-12-13T17:00:00",
+            "departure_timezone": "Africa/Ouagadougou",
+            "departure_time_utc": "2026-12-13T17:00:00Z",
+            "arrival_airport": "ABJ",
+            "arrival_time_local": "2026-12-13T18:30:00",
+            "arrival_timezone": "Africa/Abidjan",
+            "arrival_time_utc": "2026-12-13T18:30:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A330"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Brussels Airlines",
+        "duration_minutes": 745,
+        "segments": [
+          {
+            "marketing_carrier_code": "SN",
+            "flight_number": "264",
+            "operating_carrier_name": "Brussels Airlines",
+            "departure_airport": "ABJ",
+            "departure_time_local": "2026-12-20T19:50:00",
+            "departure_timezone": "Africa/Abidjan",
+            "departure_time_utc": "2026-12-20T19:50:00Z",
+            "arrival_airport": "OUA",
+            "arrival_time_local": "2026-12-20T21:25:00",
+            "arrival_timezone": "Africa/Ouagadougou",
+            "arrival_time_utc": "2026-12-20T21:25:00Z",
+            "duration_minutes": 95,
+            "aircraft": "Airbus A330"
+          },
+          {
+            "marketing_carrier_code": "SN",
+            "flight_number": "264",
+            "operating_carrier_name": "Brussels Airlines",
+            "departure_airport": "OUA",
+            "departure_time_local": "2026-12-20T22:20:00",
+            "departure_timezone": "Africa/Ouagadougou",
+            "departure_time_utc": "2026-12-20T22:20:00Z",
+            "arrival_airport": "BRU",
+            "arrival_time_local": "2026-12-21T05:15:00",
+            "arrival_timezone": "Europe/Brussels",
+            "arrival_time_utc": "2026-12-21T04:15:00Z",
+            "duration_minutes": 355,
+            "aircraft": "Airbus A330"
+          },
+          {
+            "marketing_carrier_code": "SN",
+            "flight_number": "3633",
+            "operating_carrier_name": "Brussels Airlines",
+            "departure_airport": "BRU",
+            "departure_time_local": "2026-12-21T08:15:00",
+            "departure_timezone": "Europe/Brussels",
+            "departure_time_utc": "2026-12-21T07:15:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-21T09:15:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-21T08:15:00Z",
+            "duration_minutes": 60,
+            "aircraft": "Airbus A320neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "b443d47f820e49aabf26ef3dcaa733d7"
+    },
+    {
+      "price": {
+        "amount": 1149.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Brussels Airlines",
+        "duration_minutes": 665,
+        "segments": [
+          {
+            "marketing_carrier_code": "SN",
+            "flight_number": "3632",
+            "operating_carrier_name": "Brussels Airlines",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T08:25:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T07:25:00Z",
+            "arrival_airport": "BRU",
+            "arrival_time_local": "2026-12-13T09:25:00",
+            "arrival_timezone": "Europe/Brussels",
+            "arrival_time_utc": "2026-12-13T08:25:00Z",
+            "duration_minutes": 60,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "SN",
+            "flight_number": "263",
+            "operating_carrier_name": "Brussels Airlines",
+            "departure_airport": "BRU",
+            "departure_time_local": "2026-12-13T11:05:00",
+            "departure_timezone": "Europe/Brussels",
+            "departure_time_utc": "2026-12-13T10:05:00Z",
+            "arrival_airport": "OUA",
+            "arrival_time_local": "2026-12-13T16:05:00",
+            "arrival_timezone": "Africa/Ouagadougou",
+            "arrival_time_utc": "2026-12-13T16:05:00Z",
+            "duration_minutes": 360,
+            "aircraft": "Airbus A330"
+          },
+          {
+            "marketing_carrier_code": "SN",
+            "flight_number": "263",
+            "operating_carrier_name": "Brussels Airlines",
+            "departure_airport": "OUA",
+            "departure_time_local": "2026-12-13T17:00:00",
+            "departure_timezone": "Africa/Ouagadougou",
+            "departure_time_utc": "2026-12-13T17:00:00Z",
+            "arrival_airport": "ABJ",
+            "arrival_time_local": "2026-12-13T18:30:00",
+            "arrival_timezone": "Africa/Abidjan",
+            "arrival_time_utc": "2026-12-13T18:30:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A330"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Brussels Airlines",
+        "duration_minutes": 640,
+        "segments": [
+          {
+            "marketing_carrier_code": "SN",
+            "flight_number": "264",
+            "operating_carrier_name": "Brussels Airlines",
+            "departure_airport": "ABJ",
+            "departure_time_local": "2026-12-20T19:50:00",
+            "departure_timezone": "Africa/Abidjan",
+            "departure_time_utc": "2026-12-20T19:50:00Z",
+            "arrival_airport": "OUA",
+            "arrival_time_local": "2026-12-20T21:25:00",
+            "arrival_timezone": "Africa/Ouagadougou",
+            "arrival_time_utc": "2026-12-20T21:25:00Z",
+            "duration_minutes": 95,
+            "aircraft": "Airbus A330"
+          },
+          {
+            "marketing_carrier_code": "SN",
+            "flight_number": "264",
+            "operating_carrier_name": "Brussels Airlines",
+            "departure_airport": "OUA",
+            "departure_time_local": "2026-12-20T22:20:00",
+            "departure_timezone": "Africa/Ouagadougou",
+            "departure_time_utc": "2026-12-20T22:20:00Z",
+            "arrival_airport": "BRU",
+            "arrival_time_local": "2026-12-21T05:15:00",
+            "arrival_timezone": "Europe/Brussels",
+            "arrival_time_utc": "2026-12-21T04:15:00Z",
+            "duration_minutes": 355,
+            "aircraft": "Airbus A330"
+          },
+          {
+            "marketing_carrier_code": "SN",
+            "flight_number": "3631",
+            "operating_carrier_name": "Brussels Airlines",
+            "departure_airport": "BRU",
+            "departure_time_local": "2026-12-21T06:30:00",
+            "departure_timezone": "Europe/Brussels",
+            "departure_time_utc": "2026-12-21T05:30:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-21T07:30:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-21T06:30:00Z",
+            "duration_minutes": 60,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "f668eeadb4214212bed88fa3272b3246"
+    },
+    {
+      "price": {
+        "amount": 1164.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air Cote D'Ivoire",
+        "duration_minutes": 400,
+        "segments": [
+          {
+            "marketing_carrier_code": "HF",
+            "flight_number": "179",
+            "operating_carrier_name": "Air Cote D'Ivoire",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T11:55:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T10:55:00Z",
+            "arrival_airport": "ABJ",
+            "arrival_time_local": "2026-12-13T17:35:00",
+            "arrival_timezone": "Africa/Abidjan",
+            "arrival_time_utc": "2026-12-13T17:35:00Z",
+            "duration_minutes": 400,
+            "aircraft": "Airbus A330-900neo"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Air France",
+        "duration_minutes": 390,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "705",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "ABJ",
+            "departure_time_local": "2026-12-20T01:20:00",
+            "departure_timezone": "Africa/Abidjan",
+            "departure_time_utc": "2026-12-20T01:20:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-20T08:50:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-20T07:50:00Z",
+            "duration_minutes": 390,
+            "aircraft": "Airbus A350"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "71df2a7a10df464382e73583054eea3a"
+    },
+    {
+      "price": {
+        "amount": 1164.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air Cote D'Ivoire",
+        "duration_minutes": 400,
+        "segments": [
+          {
+            "marketing_carrier_code": "HF",
+            "flight_number": "179",
+            "operating_carrier_name": "Air Cote D'Ivoire",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T11:55:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T10:55:00Z",
+            "arrival_airport": "ABJ",
+            "arrival_time_local": "2026-12-13T17:35:00",
+            "arrival_timezone": "Africa/Abidjan",
+            "arrival_time_utc": "2026-12-13T17:35:00Z",
+            "duration_minutes": 400,
+            "aircraft": "Airbus A330-900neo"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Air France",
+        "duration_minutes": 395,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "703",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "ABJ",
+            "departure_time_local": "2026-12-20T22:10:00",
+            "departure_timezone": "Africa/Abidjan",
+            "departure_time_utc": "2026-12-20T22:10:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-21T05:45:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-21T04:45:00Z",
+            "duration_minutes": 395,
+            "aircraft": "Boeing 777"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "f90febc8988448a0bb852c0d4cb3a451"
+    },
+    {
+      "price": {
+        "amount": 1254.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air Cote D'Ivoire",
+        "duration_minutes": 400,
+        "segments": [
+          {
+            "marketing_carrier_code": "HF",
+            "flight_number": "179",
+            "operating_carrier_name": "Air Cote D'Ivoire",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T11:55:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T10:55:00Z",
+            "arrival_airport": "ABJ",
+            "arrival_time_local": "2026-12-13T17:35:00",
+            "arrival_timezone": "Africa/Abidjan",
+            "arrival_time_utc": "2026-12-13T17:35:00Z",
+            "duration_minutes": 400,
+            "aircraft": "Airbus A330-900neo"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Air Cote D'Ivoire",
+        "duration_minutes": 400,
+        "segments": [
+          {
+            "marketing_carrier_code": "HF",
+            "flight_number": "178",
+            "operating_carrier_name": "Air Cote D'Ivoire",
+            "departure_airport": "ABJ",
+            "departure_time_local": "2026-12-20T23:15:00",
+            "departure_timezone": "Africa/Abidjan",
+            "departure_time_utc": "2026-12-20T23:15:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-21T06:55:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-21T05:55:00Z",
+            "duration_minutes": 400,
+            "aircraft": "Airbus A330-900neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "98ac47bea0f0470ebc6ffd0add2f47a3"
+    },
+    {
+      "price": {
+        "amount": 1292.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Royal Air Maroc",
+        "duration_minutes": 735,
+        "segments": [
+          {
+            "marketing_carrier_code": "AT",
+            "flight_number": "789",
+            "operating_carrier_name": "Royal Air Maroc",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T17:35:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T16:35:00Z",
+            "arrival_airport": "CMN",
+            "arrival_time_local": "2026-12-13T19:45:00",
+            "arrival_timezone": "Africa/Casablanca",
+            "arrival_time_utc": "2026-12-13T19:45:00Z",
+            "duration_minutes": 190,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          },
+          {
+            "marketing_carrier_code": "AT",
+            "flight_number": "533",
+            "operating_carrier_name": "Royal Air Maroc",
+            "departure_airport": "CMN",
+            "departure_time_local": "2026-12-14T00:20:00",
+            "departure_timezone": "Africa/Casablanca",
+            "departure_time_utc": "2026-12-14T00:20:00Z",
+            "arrival_airport": "ABJ",
+            "arrival_time_local": "2026-12-14T04:50:00",
+            "arrival_timezone": "Africa/Abidjan",
+            "arrival_time_utc": "2026-12-14T04:50:00Z",
+            "duration_minutes": 270,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Royal Air Maroc",
+        "duration_minutes": 575,
+        "segments": [
+          {
+            "marketing_carrier_code": "AT",
+            "flight_number": "532",
+            "operating_carrier_name": "Royal Air Maroc",
+            "departure_airport": "ABJ",
+            "departure_time_local": "2026-12-20T05:50:00",
+            "departure_timezone": "Africa/Abidjan",
+            "departure_time_utc": "2026-12-20T05:50:00Z",
+            "arrival_airport": "CMN",
+            "arrival_time_local": "2026-12-20T10:15:00",
+            "arrival_timezone": "Africa/Casablanca",
+            "arrival_time_utc": "2026-12-20T10:15:00Z",
+            "duration_minutes": 265,
+            "aircraft": "Boeing 737"
+          },
+          {
+            "marketing_carrier_code": "AT",
+            "flight_number": "788",
+            "operating_carrier_name": "Royal Air Maroc",
+            "departure_airport": "CMN",
+            "departure_time_local": "2026-12-20T12:20:00",
+            "departure_timezone": "Africa/Casablanca",
+            "departure_time_utc": "2026-12-20T12:20:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-20T16:25:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-20T15:25:00Z",
+            "duration_minutes": 185,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "db1ef5e467734ca9bddc254edf6a0e40"
+    },
+    {
+      "price": {
+        "amount": 1353.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Turkish Airlines",
+        "duration_minutes": 985,
+        "segments": [
+          {
+            "marketing_carrier_code": "TK",
+            "flight_number": "1830",
+            "operating_carrier_name": "Turkish Airlines",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T06:45:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T05:45:00Z",
+            "arrival_airport": "IST",
+            "arrival_time_local": "2026-12-13T12:30:00",
+            "arrival_timezone": "Europe/Istanbul",
+            "arrival_time_utc": "2026-12-13T09:30:00Z",
+            "duration_minutes": 225,
+            "aircraft": "Airbus A321neo"
+          },
+          {
+            "marketing_carrier_code": "TK",
+            "flight_number": "555",
+            "operating_carrier_name": "Turkish Airlines",
+            "departure_airport": "IST",
+            "departure_time_local": "2026-12-13T17:25:00",
+            "departure_timezone": "Europe/Istanbul",
+            "departure_time_utc": "2026-12-13T14:25:00Z",
+            "arrival_airport": "ABJ",
+            "arrival_time_local": "2026-12-13T22:10:00",
+            "arrival_timezone": "Africa/Abidjan",
+            "arrival_time_utc": "2026-12-13T22:10:00Z",
+            "duration_minutes": 465,
+            "aircraft": "Airbus A330"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Turkish Airlines",
+        "duration_minutes": 840,
+        "segments": [
+          {
+            "marketing_carrier_code": "TK",
+            "flight_number": "559",
+            "operating_carrier_name": "Turkish Airlines",
+            "departure_airport": "ABJ",
+            "departure_time_local": "2026-12-20T01:10:00",
+            "departure_timezone": "Africa/Abidjan",
+            "departure_time_utc": "2026-12-20T01:10:00Z",
+            "arrival_airport": "IST",
+            "arrival_time_local": "2026-12-20T11:30:00",
+            "arrival_timezone": "Europe/Istanbul",
+            "arrival_time_utc": "2026-12-20T08:30:00Z",
+            "duration_minutes": 440,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          },
+          {
+            "marketing_carrier_code": "TK",
+            "flight_number": "1833",
+            "operating_carrier_name": "Turkish Airlines",
+            "departure_airport": "IST",
+            "departure_time_local": "2026-12-20T14:30:00",
+            "departure_timezone": "Europe/Istanbul",
+            "departure_time_utc": "2026-12-20T11:30:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-20T16:10:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-20T15:10:00Z",
+            "duration_minutes": 220,
+            "aircraft": "Airbus A330"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "6b291e202c22412fa2dffca64beb1a95"
+    },
+    {
+      "price": {
+        "amount": 1514.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Turkish Airlines",
+        "duration_minutes": 985,
+        "segments": [
+          {
+            "marketing_carrier_code": "TK",
+            "flight_number": "1830",
+            "operating_carrier_name": "Turkish Airlines",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T06:45:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T05:45:00Z",
+            "arrival_airport": "IST",
+            "arrival_time_local": "2026-12-13T12:30:00",
+            "arrival_timezone": "Europe/Istanbul",
+            "arrival_time_utc": "2026-12-13T09:30:00Z",
+            "duration_minutes": 225,
+            "aircraft": "Airbus A321neo"
+          },
+          {
+            "marketing_carrier_code": "TK",
+            "flight_number": "555",
+            "operating_carrier_name": "Turkish Airlines",
+            "departure_airport": "IST",
+            "departure_time_local": "2026-12-13T17:25:00",
+            "departure_timezone": "Europe/Istanbul",
+            "departure_time_utc": "2026-12-13T14:25:00Z",
+            "arrival_airport": "ABJ",
+            "arrival_time_local": "2026-12-13T22:10:00",
+            "arrival_timezone": "Africa/Abidjan",
+            "arrival_time_utc": "2026-12-13T22:10:00Z",
+            "duration_minutes": 465,
+            "aircraft": "Airbus A330"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Turkish Airlines",
+        "duration_minutes": 740,
+        "segments": [
+          {
+            "marketing_carrier_code": "TK",
+            "flight_number": "559",
+            "operating_carrier_name": "Turkish Airlines",
+            "departure_airport": "ABJ",
+            "departure_time_local": "2026-12-20T01:10:00",
+            "departure_timezone": "Africa/Abidjan",
+            "departure_time_utc": "2026-12-20T01:10:00Z",
+            "arrival_airport": "IST",
+            "arrival_time_local": "2026-12-20T11:30:00",
+            "arrival_timezone": "Europe/Istanbul",
+            "arrival_time_utc": "2026-12-20T08:30:00Z",
+            "duration_minutes": 440,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          },
+          {
+            "marketing_carrier_code": "TK",
+            "flight_number": "1825",
+            "operating_carrier_name": "Turkish Airlines",
+            "departure_airport": "IST",
+            "departure_time_local": "2026-12-20T12:45:00",
+            "departure_timezone": "Europe/Istanbul",
+            "departure_time_utc": "2026-12-20T09:45:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-20T14:30:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-20T13:30:00Z",
+            "duration_minutes": 225,
+            "aircraft": "Airbus A321neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "73a3801d7b774d6ab6ed4beb16196b07"
+    }
+  ],
+  "observed_at": "2026-10-29T03:33:17.512471Z"
+}

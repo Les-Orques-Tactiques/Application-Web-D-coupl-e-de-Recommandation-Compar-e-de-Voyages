@@ -1,0 +1,408 @@
+{
+  "origin": "CDG",
+  "destination": "YUL",
+  "departure_date": "2026-11-19",
+  "itineraries": [
+    {
+      "price": {
+        "amount": 367.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air Transat",
+        "duration_minutes": 470,
+        "segments": [
+          {
+            "marketing_carrier_code": "TS",
+            "flight_number": "111",
+            "operating_carrier_name": "Air Transat",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-11-19T10:50:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-11-19T09:50:00Z",
+            "arrival_airport": "YUL",
+            "arrival_time_local": "2026-11-19T12:40:00",
+            "arrival_timezone": "America/Toronto",
+            "arrival_time_utc": "2026-11-19T17:40:00Z",
+            "duration_minutes": 470,
+            "aircraft": "Airbus A321neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "8b66ae02844342d29f69f9900ded4a38"
+    },
+    {
+      "price": {
+        "amount": 525.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 3475,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "1194",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-11-19T15:50:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-11-19T14:50:00Z",
+            "arrival_airport": "LIS",
+            "arrival_time_local": "2026-11-19T17:30:00",
+            "arrival_timezone": "Europe/Lisbon",
+            "arrival_time_utc": "2026-11-19T17:30:00Z",
+            "duration_minutes": 160,
+            "aircraft": "Airbus A220-300 Passenger"
+          },
+          {
+            "marketing_carrier_code": "S4",
+            "flight_number": "129",
+            "operating_carrier_name": "Azores Airlines",
+            "departure_airport": "LIS",
+            "departure_time_local": "2026-11-20T21:40:00",
+            "departure_timezone": "Europe/Lisbon",
+            "departure_time_utc": "2026-11-20T21:40:00Z",
+            "arrival_airport": "PDL",
+            "arrival_time_local": "2026-11-20T23:10:00",
+            "arrival_timezone": "Atlantic/Azores",
+            "arrival_time_utc": "2026-11-21T00:10:00Z",
+            "duration_minutes": 150,
+            "aircraft": "Airbus A321neo"
+          },
+          {
+            "marketing_carrier_code": "S4",
+            "flight_number": "327",
+            "operating_carrier_name": "Azores Airlines",
+            "departure_airport": "PDL",
+            "departure_time_local": "2026-11-21T17:40:00",
+            "departure_timezone": "Atlantic/Azores",
+            "departure_time_utc": "2026-11-21T18:40:00Z",
+            "arrival_airport": "YUL",
+            "arrival_time_local": "2026-11-21T19:45:00",
+            "arrival_timezone": "America/Toronto",
+            "arrival_time_utc": "2026-11-22T00:45:00Z",
+            "duration_minutes": 365,
+            "aircraft": "Airbus A321neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": true,
+      "ignav_id": "99188b4ee94d427697a68643e2ce66f7"
+    },
+    {
+      "price": {
+        "amount": 759.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Turkish Airlines",
+        "duration_minutes": 1035,
+        "segments": [
+          {
+            "marketing_carrier_code": "TK",
+            "flight_number": "1830",
+            "operating_carrier_name": "Turkish Airlines",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-11-19T06:45:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-11-19T05:45:00Z",
+            "arrival_airport": "IST",
+            "arrival_time_local": "2026-11-19T12:30:00",
+            "arrival_timezone": "Europe/Istanbul",
+            "arrival_time_utc": "2026-11-19T09:30:00Z",
+            "duration_minutes": 225,
+            "aircraft": "Airbus A321neo"
+          },
+          {
+            "marketing_carrier_code": "TK",
+            "flight_number": "35",
+            "operating_carrier_name": "Turkish Airlines",
+            "departure_airport": "IST",
+            "departure_time_local": "2026-11-19T15:45:00",
+            "departure_timezone": "Europe/Istanbul",
+            "departure_time_utc": "2026-11-19T12:45:00Z",
+            "arrival_airport": "YUL",
+            "arrival_time_local": "2026-11-19T18:00:00",
+            "arrival_timezone": "America/Toronto",
+            "arrival_time_utc": "2026-11-19T23:00:00Z",
+            "duration_minutes": 615,
+            "aircraft": "Boeing 787"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "79576069da554b51b49d3dddf7f7bf01"
+    },
+    {
+      "price": {
+        "amount": 759.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Turkish Airlines",
+        "duration_minutes": 1745,
+        "segments": [
+          {
+            "marketing_carrier_code": "TK",
+            "flight_number": "1828",
+            "operating_carrier_name": "Turkish Airlines",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-11-19T18:55:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-11-19T17:55:00Z",
+            "arrival_airport": "IST",
+            "arrival_time_local": "2026-11-20T00:30:00",
+            "arrival_timezone": "Europe/Istanbul",
+            "arrival_time_utc": "2026-11-19T21:30:00Z",
+            "duration_minutes": 215,
+            "aircraft": "Airbus A321neo"
+          },
+          {
+            "marketing_carrier_code": "TK",
+            "flight_number": "35",
+            "operating_carrier_name": "Turkish Airlines",
+            "departure_airport": "IST",
+            "departure_time_local": "2026-11-20T15:45:00",
+            "departure_timezone": "Europe/Istanbul",
+            "departure_time_utc": "2026-11-20T12:45:00Z",
+            "arrival_airport": "YUL",
+            "arrival_time_local": "2026-11-20T18:00:00",
+            "arrival_timezone": "America/Toronto",
+            "arrival_time_utc": "2026-11-20T23:00:00Z",
+            "duration_minutes": 615,
+            "aircraft": "Boeing 787"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "6fd8f04800f24d82a67a246efaab80d6"
+    },
+    {
+      "price": {
+        "amount": 979.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "British Airways",
+        "duration_minutes": 645,
+        "segments": [
+          {
+            "marketing_carrier_code": "BA",
+            "flight_number": "309",
+            "operating_carrier_name": "British Airways",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-11-19T14:30:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-11-19T13:30:00Z",
+            "arrival_airport": "LHR",
+            "arrival_time_local": "2026-11-19T14:55:00",
+            "arrival_timezone": "Europe/London",
+            "arrival_time_utc": "2026-11-19T14:55:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A321neo"
+          },
+          {
+            "marketing_carrier_code": "BA",
+            "flight_number": "95",
+            "operating_carrier_name": "British Airways",
+            "departure_airport": "LHR",
+            "departure_time_local": "2026-11-19T16:45:00",
+            "departure_timezone": "Europe/London",
+            "departure_time_utc": "2026-11-19T16:45:00Z",
+            "arrival_airport": "YUL",
+            "arrival_time_local": "2026-11-19T19:15:00",
+            "arrival_timezone": "America/Toronto",
+            "arrival_time_utc": "2026-11-20T00:15:00Z",
+            "duration_minutes": 450,
+            "aircraft": "Boeing 787"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "f755ed3f2507412dbaa6c0bce4e98104"
+    },
+    {
+      "price": {
+        "amount": 1015.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "American",
+        "duration_minutes": 766,
+        "segments": [
+          {
+            "marketing_carrier_code": "AA",
+            "flight_number": "755",
+            "operating_carrier_name": "American",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-11-19T14:40:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-11-19T13:40:00Z",
+            "arrival_airport": "PHL",
+            "arrival_time_local": "2026-11-19T17:05:00",
+            "arrival_timezone": "America/New_York",
+            "arrival_time_utc": "2026-11-19T22:05:00Z",
+            "duration_minutes": 505,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "AA",
+            "flight_number": "6027",
+            "operating_carrier_name": "American",
+            "departure_airport": "PHL",
+            "departure_time_local": "2026-11-19T19:35:00",
+            "departure_timezone": "America/New_York",
+            "departure_time_utc": "2026-11-20T00:35:00Z",
+            "arrival_airport": "YUL",
+            "arrival_time_local": "2026-11-19T21:26:00",
+            "arrival_timezone": "America/Toronto",
+            "arrival_time_utc": "2026-11-20T02:26:00Z",
+            "duration_minutes": 111,
+            "aircraft": "Embraer ERJ-145"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "722c36fe55b143dd98505bde0179ef47"
+    },
+    {
+      "price": {
+        "amount": 1451.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 465,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "342",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-11-19T10:30:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-11-19T09:30:00Z",
+            "arrival_airport": "YUL",
+            "arrival_time_local": "2026-11-19T12:15:00",
+            "arrival_timezone": "America/Toronto",
+            "arrival_time_utc": "2026-11-19T17:15:00Z",
+            "duration_minutes": 465,
+            "aircraft": "Boeing 787"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "324b142f04964bebb385f930ea713812"
+    },
+    {
+      "price": {
+        "amount": 1451.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 470,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "344",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-11-19T13:30:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-11-19T12:30:00Z",
+            "arrival_airport": "YUL",
+            "arrival_time_local": "2026-11-19T15:20:00",
+            "arrival_timezone": "America/Toronto",
+            "arrival_time_utc": "2026-11-19T20:20:00Z",
+            "duration_minutes": 470,
+            "aircraft": "Boeing 777"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "167b81a76da74f119ffd3f9fba18913f"
+    },
+    {
+      "price": {
+        "amount": 1676.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air Canada",
+        "duration_minutes": 460,
+        "segments": [
+          {
+            "marketing_carrier_code": "AC",
+            "flight_number": "871",
+            "operating_carrier_name": "Air Canada",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-11-19T14:00:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-11-19T13:00:00Z",
+            "arrival_airport": "YUL",
+            "arrival_time_local": "2026-11-19T15:40:00",
+            "arrival_timezone": "America/Toronto",
+            "arrival_time_utc": "2026-11-19T20:40:00Z",
+            "duration_minutes": 460,
+            "aircraft": "Boeing 777"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "ba70d5ee17ba472488ef683eba27c533"
+    },
+    {
+      "price": {
+        "amount": 1676.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air Canada",
+        "duration_minutes": 480,
+        "segments": [
+          {
+            "marketing_carrier_code": "AC",
+            "flight_number": "875",
+            "operating_carrier_name": "Air Canada",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-11-19T09:25:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-11-19T08:25:00Z",
+            "arrival_airport": "YUL",
+            "arrival_time_local": "2026-11-19T11:25:00",
+            "arrival_timezone": "America/Toronto",
+            "arrival_time_utc": "2026-11-19T16:25:00Z",
+            "duration_minutes": 480,
+            "aircraft": "Airbus A330"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "031ac584e05c4b5dbe24740f504d9448"
+    }
+  ],
+  "observed_at": "2026-10-29T03:25:42.443867Z"
+}
