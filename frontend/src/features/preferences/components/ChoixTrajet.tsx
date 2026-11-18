@@ -7,7 +7,7 @@ interface PropsChoixTrajet {
   onChange: (trajet: Trajet) => void;
 }
 
-const options: Trajet[] = ["direct", "une_escale", "indifferent"];
+const options: Trajet[] = ["direct", "une escale", "indifferent"];
 
 export function ChoixTrajet({ valeur, onChange }: PropsChoixTrajet) {
   return (

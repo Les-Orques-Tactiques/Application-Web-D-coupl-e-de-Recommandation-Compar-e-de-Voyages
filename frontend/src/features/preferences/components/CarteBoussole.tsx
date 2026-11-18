@@ -1,9 +1,9 @@
 import { Compass } from "lucide-react";
-import type { Preferences } from "../utils/types";
+import type { ChoixPreferences } from "../utils/types";
 import { libellesTrajet } from "../utils/libelles";
 
 interface PropsCarteBoussole {
-  preferences: Preferences;
+  preferences: ChoixPreferences;
 }
 
 export function CarteBoussole({ preferences }: PropsCarteBoussole) {

@@ -98,7 +98,7 @@ export function MiseEnPagePublique() {
       <footer className="border-t border-trait bg-white text-[11px] text-attenue">
         <div className={`${conteneur} flex flex-col gap-2 py-5 md:flex-row md:items-center md:justify-between`}>
           <p>Les Orques tactiques · SAÉ BUT3 5.Real.01 · v0.1.0</p>
-          <p>Offres et montants fictifs de démonstration · Aucune réservation sur Orca Flight</p>
+          <p>Aucune réservation sur Orca Flight</p>
           <p className="flex gap-3 font-medium text-principal">
             <Link to="/confidentialite">Confidentialité</Link>
             <span aria-hidden="true" className="text-attenue">·</span>
