@@ -6,6 +6,7 @@ import PageConnexion from "@/features/auth/pages/PageConnexion";
 import PageInscription from "@/features/auth/pages/PageInscription";
 import PageMotDePasseOublie from "@/features/auth/pages/PageMotDePasseOublie";
 import PageReinitialisation from "@/features/auth/pages/PageReinitialisation";
+import PageBienvenue from "@/features/preferences/pages/PageBienvenue";
 
 /**
  * Table de routage : associe une adresse (URL) à la page à afficher.
@@ -23,7 +24,7 @@ export const routeur = createBrowserRouter([
       { path: "/activation", element: <PageActivation /> },
       { path: "/mot-de-passe-oublie", element: <PageMotDePasseOublie /> },
       { path: "/reinitialisation", element: <PageReinitialisation /> },
-
+      
       // ----- Pages réservées aux personnes connectées -----
       // Pas de "path" : RouteProtegee sert seulement de garde.
       // Si /moi a répondu 401, elle redirige vers /connexion. Sinon, son <Outlet />
@@ -33,8 +34,8 @@ export const routeur = createBrowserRouter([
         children: [
           // Provisoire : l'espace connecté aura plus tard sa propre mise en page
           { path: "/explorer", element: <p className="p-16">Connecté ✔ (page Explorer à venir)</p> },
-          // Provisoire aussi : FormulaireConnexion redirige ici si l'onboarding n'est pas terminé
-          { path: "/bienvenue", element: <p className="p-16">Bienvenue ! (choix des préférences à venir)</p> },
+          // FormulaireConnexion redirige ici si l'onboarding n'est pas terminé
+          { path: "/bienvenue", element: <PageBienvenue /> },
         ],
       },
 
