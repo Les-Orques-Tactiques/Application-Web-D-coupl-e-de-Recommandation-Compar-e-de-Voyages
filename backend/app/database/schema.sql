@@ -122,6 +122,11 @@ CREATE INDEX IF NOT EXISTS idx_tokens_revoques_expire ON tokens_revoques (expire
 CREATE TABLE IF NOT EXISTS pays (
     code_pays   CHAR(2) PRIMARY KEY,           -- ISO 3166-1 alpha-2
     nom         VARCHAR(150) NOT NULL,
+<<<<<<< Updated upstream
+=======
+    lien_wikipedia TEXT,
+    image_url TEXT,
+>>>>>>> Stashed changes
     cree_le     TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 
@@ -129,9 +134,12 @@ CREATE TABLE IF NOT EXISTS aeroports (
     code_iata   CHAR(3) PRIMARY KEY,
     nom         VARCHAR(200) NOT NULL,
     ville       VARCHAR(120),
+<<<<<<< Updated upstream
     image_url TEXT,
     image_credit TEXT,
     lien_wikipedia TEXT,
+=======
+>>>>>>> Stashed changes
     code_pays   CHAR(2) REFERENCES pays(code_pays),
     latitude    DOUBLE PRECISION,
     longitude   DOUBLE PRECISION,
@@ -445,14 +453,21 @@ SELECT
     v.compagnie_retour, v.duree_retour_min, v.escales_retour,
     v.bagage_inclus, v.simulee, v.observe_le, v.ignav_id,
     v.auto_transfert, v.transporteurs_mixtes,
+<<<<<<< Updated upstream
     a.ville      AS ville_destination,
     a.image_url  AS image_destination,
+=======
+>>>>>>> Stashed changes
     (SELECT MIN(s.depart_local) FROM segments_vol s
         WHERE s.vol_id = v.id AND s.sens = 'aller')   AS depart_aller_local,
     (SELECT MAX(s.arrivee_locale) FROM segments_vol s
         WHERE s.vol_id = v.id AND s.sens = 'aller')   AS arrivee_aller_locale
+<<<<<<< Updated upstream
 FROM vols v
 JOIN aeroports a ON a.code_iata = v.destination;
+=======
+FROM vols v;
+>>>>>>> Stashed changes
 
 -- Tableau de bord évaluateur : temps min, max, moyen et ressources (US30).
 CREATE OR REPLACE VIEW v_stats_approches AS
