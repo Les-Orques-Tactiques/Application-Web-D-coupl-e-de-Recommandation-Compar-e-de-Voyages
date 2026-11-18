@@ -13,7 +13,7 @@ class Settings(BaseSettings):
     ENV: str = "development"  # "production" sur Render : active le flag secure des cookies
 
     # Application
-    name: str = "Orce Flight"
+    name: str = "Orca Flight"
     # Sécurité : sans valeur par défaut, l'appli refuse de démarrer si elles manquent
     JWT_SECRET: str
     totp_encryption_key: str
