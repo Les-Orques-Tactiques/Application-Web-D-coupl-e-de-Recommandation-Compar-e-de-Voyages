@@ -6,12 +6,12 @@ import PageConnexion from "@/features/auth/pages/PageConnexion";
 import PageInscription from "@/features/auth/pages/PageInscription";
 import PageMotDePasseOublie from "@/features/auth/pages/PageMotDePasseOublie";
 import PageReinitialisation from "@/features/auth/pages/PageReinitialisation";
+import PageExplorer from "@/features/auth/pages/PageExplorer";
 
 /**
  * Table de routage : associe une adresse (URL) à la page à afficher.
  *
- * Les pages listées dans "children" sont affichées à l'intérieur de MiseEnPagePublique
- * (à l'endroit de son <Outlet />), donc elles partagent le même en-tête et pied de page.
+ * Les pages publiques partagent MiseEnPagePublique. L'espace Explorer garde son propre en-tête.
  */
 export const routeur = createBrowserRouter([
   {
@@ -31,16 +31,17 @@ export const routeur = createBrowserRouter([
       {
         element: <RouteProtegee />,
         children: [
-          // Provisoire : l'espace connecté aura plus tard sa propre mise en page
-          { path: "/explorer", element: <p className="p-16">Connecté ✔ (page Explorer à venir)</p> },
           // Provisoire aussi : FormulaireConnexion redirige ici si l'onboarding n'est pas terminé
           { path: "/bienvenue", element: <p className="p-16">Bienvenue ! (choix des préférences à venir)</p> },
         ],
       },
 
-      // "*" attrape toute adresse inconnue et renvoie vers la connexion.
-      // "replace" remplace l'entrée de l'historique : le bouton Retour ne boucle pas.
-      { path: "*", element: <Navigate to="/connexion" replace /> },
     ],
   },
+  {
+    element: <RouteProtegee />,
+    children: [{ path: "/explorer", element: <PageExplorer /> }],
+  },
+  // "*" attrape toute adresse inconnue et renvoie vers la connexion.
+  { path: "*", element: <Navigate to="/connexion" replace /> },
 ]);
