@@ -7,6 +7,7 @@ import PageInscription from "@/features/auth/pages/PageInscription";
 import PageMotDePasseOublie from "@/features/auth/pages/PageMotDePasseOublie";
 import PageReinitialisation from "@/features/auth/pages/PageReinitialisation";
 import PageExplorer from "@/features/auth/pages/PageExplorer";
+import PageResultats from "@/features/auth/pages/resultatVols";
 
 /**
  * Table de routage : associe une adresse (URL) à la page à afficher.
@@ -42,6 +43,7 @@ export const routeur = createBrowserRouter([
     element: <RouteProtegee />,
     children: [{ path: "/explorer", element: <PageExplorer /> }],
   },
+  { path: "/resultats", element: <PageResultats /> },
   // "*" attrape toute adresse inconnue et renvoie vers la connexion.
   { path: "*", element: <Navigate to="/connexion" replace /> },
 ]);
