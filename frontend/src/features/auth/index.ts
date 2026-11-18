@@ -6,3 +6,4 @@ export { CarteActivation } from "./components/CarteActivation";
 export { useActivation } from "./hooks/useActivation";
 export { emailEnAttente } from "./utils/stockage";
 export { useAuth } from "./contexte/useAuth";
+export { BoutonDeconnexion } from "./components/BoutonDeconnexion";
