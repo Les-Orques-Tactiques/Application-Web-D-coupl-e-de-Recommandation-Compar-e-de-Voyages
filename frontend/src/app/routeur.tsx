@@ -10,7 +10,7 @@ import PageMotDePasseOublie from "@/features/auth/pages/PageMotDePasseOublie";
 import PageReinitialisation from "@/features/auth/pages/PageReinitialisation";
 import PageExplorer from "@/features/explorer/pages/PageExplorer";
 import PageBienvenue from "@/features/preferences/pages/PageBienvenue";
-import { PageComparateur } from "@/features/comparateur/PageComparateur";
+import PageComparateur  from "@/features/comparateur/pages/PageComparateur";
 
 
 /**
@@ -35,7 +35,7 @@ export const routeur = createBrowserRouter([
       { path: "/activation", element: <PageActivation /> },
       { path: "/mot-de-passe-oublie", element: <PageMotDePasseOublie /> },
       { path: "/reinitialisation", element: <PageReinitialisation /> },
-      { path: "/comparateur", element: <PageComparateur /> },
+      
 
       // ----- Page protégée, mais avec l'en-tête public -----
       // /bienvenue (onboarding) n'a pas besoin des onglets Explorer / Favoris…
@@ -66,6 +66,7 @@ export const routeur = createBrowserRouter([
           // Les onglets passent par l'URL : /explorer?onglet=favoris, ?onglet=historique…
           { path: "/explorer", element: <PageExplorer /> },
           // Les futures pages privées viendront ici (ex. /profil, /comparateur)
+          { path: "/comparateur", element: <PageComparateur /> },
         ],
       },
     ],
