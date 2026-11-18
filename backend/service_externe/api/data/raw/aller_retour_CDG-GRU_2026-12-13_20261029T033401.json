@@ -1,0 +1,3049 @@
+{
+  "origin": "CDG",
+  "destination": "GRU",
+  "departure_date": "2026-12-13",
+  "return_date": "2026-12-20",
+  "itineraries": [
+    {
+      "price": {
+        "amount": 1289.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Lufthansa",
+        "duration_minutes": 1455,
+        "segments": [
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "1043",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T10:10:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T09:10:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-13T11:25:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-13T10:25:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "236",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-13T15:55:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-13T14:55:00Z",
+            "arrival_airport": "FCO",
+            "arrival_time_local": "2026-12-13T17:45:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-13T16:45:00Z",
+            "duration_minutes": 110,
+            "aircraft": "Airbus A321"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "674",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "FCO",
+            "departure_time_local": "2026-12-13T21:50:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-13T20:50:00Z",
+            "arrival_airport": "GRU",
+            "arrival_time_local": "2026-12-14T06:25:00",
+            "arrival_timezone": "America/Sao_Paulo",
+            "arrival_time_utc": "2026-12-14T09:25:00Z",
+            "duration_minutes": 755,
+            "aircraft": "Airbus A330-900neo"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "ITA",
+        "duration_minutes": 1015,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "679",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "GRU",
+            "departure_time_local": "2026-12-20T20:40:00",
+            "departure_timezone": "America/Sao_Paulo",
+            "departure_time_utc": "2026-12-20T23:40:00Z",
+            "arrival_airport": "FCO",
+            "arrival_time_local": "2026-12-21T11:35:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-21T10:35:00Z",
+            "duration_minutes": 655,
+            "aircraft": "Airbus A350"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "1867",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FCO",
+            "departure_time_local": "2026-12-21T12:40:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-21T11:40:00Z",
+            "arrival_airport": "MUC",
+            "arrival_time_local": "2026-12-21T14:10:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-21T13:10:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "2232",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "MUC",
+            "departure_time_local": "2026-12-21T15:55:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-21T14:55:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-21T17:35:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-21T16:35:00Z",
+            "duration_minutes": 100,
+            "aircraft": "Airbus A320neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": true,
+      "ignav_id": "0ec2301916fd44058a664aad1c66ad50"
+    },
+    {
+      "price": {
+        "amount": 1289.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Lufthansa",
+        "duration_minutes": 1455,
+        "segments": [
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "1043",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T10:10:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T09:10:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-13T11:25:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-13T10:25:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "236",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-13T15:55:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-13T14:55:00Z",
+            "arrival_airport": "FCO",
+            "arrival_time_local": "2026-12-13T17:45:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-13T16:45:00Z",
+            "duration_minutes": 110,
+            "aircraft": "Airbus A321"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "674",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "FCO",
+            "departure_time_local": "2026-12-13T21:50:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-13T20:50:00Z",
+            "arrival_airport": "GRU",
+            "arrival_time_local": "2026-12-14T06:25:00",
+            "arrival_timezone": "America/Sao_Paulo",
+            "arrival_time_utc": "2026-12-14T09:25:00Z",
+            "duration_minutes": 755,
+            "aircraft": "Airbus A330-900neo"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Lufthansa",
+        "duration_minutes": 1180,
+        "segments": [
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "507",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "GRU",
+            "departure_time_local": "2026-12-20T18:45:00",
+            "departure_timezone": "America/Sao_Paulo",
+            "departure_time_utc": "2026-12-20T21:45:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-21T10:15:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-21T09:15:00Z",
+            "duration_minutes": 690,
+            "aircraft": "Boeing 747"
+          },
+          {
+            "marketing_carrier_code": "VL",
+            "flight_number": "1048",
+            "operating_carrier_name": "Lufthansa City Airlines",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-21T17:10:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-21T16:10:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-21T18:25:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-21T17:25:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Airbus A320neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": true,
+      "ignav_id": "e62f3924a24446e0b86b8bdac87f3570"
+    },
+    {
+      "price": {
+        "amount": 1295.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 955,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "1240",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T06:55:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T05:55:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2026-12-13T08:20:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2026-12-13T07:20:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A321"
+          },
+          {
+            "marketing_carrier_code": "KL",
+            "flight_number": "791",
+            "operating_carrier_name": "KLM",
+            "departure_airport": "AMS",
+            "departure_time_local": "2026-12-13T10:55:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2026-12-13T09:55:00Z",
+            "arrival_airport": "GRU",
+            "arrival_time_local": "2026-12-13T18:50:00",
+            "arrival_timezone": "America/Sao_Paulo",
+            "arrival_time_utc": "2026-12-13T21:50:00Z",
+            "duration_minutes": 715,
+            "aircraft": "Boeing 777"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Gol",
+        "duration_minutes": 1015,
+        "segments": [
+          {
+            "marketing_carrier_code": "G3",
+            "flight_number": "1556",
+            "operating_carrier_name": "Gol",
+            "departure_airport": "GRU",
+            "departure_time_local": "2026-12-20T13:35:00",
+            "departure_timezone": "America/Sao_Paulo",
+            "departure_time_utc": "2026-12-20T16:35:00Z",
+            "arrival_airport": "FOR",
+            "arrival_time_local": "2026-12-20T16:55:00",
+            "arrival_timezone": "America/Fortaleza",
+            "arrival_time_utc": "2026-12-20T19:55:00Z",
+            "duration_minutes": 200,
+            "aircraft": "Boeing 737"
+          },
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "489",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "FOR",
+            "departure_time_local": "2026-12-20T21:50:00",
+            "departure_timezone": "America/Fortaleza",
+            "departure_time_utc": "2026-12-21T00:50:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-21T10:30:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-21T09:30:00Z",
+            "duration_minutes": 520,
+            "aircraft": "Airbus A350"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": true,
+      "ignav_id": "604b102ed64e4d91b604cf512d12262b"
+    },
+    {
+      "price": {
+        "amount": 1343.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 955,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "1240",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T06:55:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T05:55:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2026-12-13T08:20:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2026-12-13T07:20:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A321"
+          },
+          {
+            "marketing_carrier_code": "KL",
+            "flight_number": "791",
+            "operating_carrier_name": "KLM",
+            "departure_airport": "AMS",
+            "departure_time_local": "2026-12-13T10:55:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2026-12-13T09:55:00Z",
+            "arrival_airport": "GRU",
+            "arrival_time_local": "2026-12-13T18:50:00",
+            "arrival_timezone": "America/Sao_Paulo",
+            "arrival_time_utc": "2026-12-13T21:50:00Z",
+            "duration_minutes": 715,
+            "aircraft": "Boeing 777"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Air France",
+        "duration_minutes": 685,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "453",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "GRU",
+            "departure_time_local": "2026-12-20T14:40:00",
+            "departure_timezone": "America/Sao_Paulo",
+            "departure_time_utc": "2026-12-20T17:40:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-21T06:05:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-21T05:05:00Z",
+            "duration_minutes": 685,
+            "aircraft": "Boeing 777"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": true,
+      "ignav_id": "d6fc27ba1a544c5b949d7416419ce84b"
+    },
+    {
+      "price": {
+        "amount": 1344.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "ITA",
+        "duration_minutes": 990,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "317",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T06:10:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T05:10:00Z",
+            "arrival_airport": "FCO",
+            "arrival_time_local": "2026-12-13T08:15:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-13T07:15:00Z",
+            "duration_minutes": 125,
+            "aircraft": "Airbus A320neo"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "678",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "FCO",
+            "departure_time_local": "2026-12-13T10:35:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-13T09:35:00Z",
+            "arrival_airport": "GRU",
+            "arrival_time_local": "2026-12-13T18:40:00",
+            "arrival_timezone": "America/Sao_Paulo",
+            "arrival_time_utc": "2026-12-13T21:40:00Z",
+            "duration_minutes": 725,
+            "aircraft": "Airbus A350"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "ITA",
+        "duration_minutes": 1005,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "679",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "GRU",
+            "departure_time_local": "2026-12-20T20:40:00",
+            "departure_timezone": "America/Sao_Paulo",
+            "departure_time_utc": "2026-12-20T23:40:00Z",
+            "arrival_airport": "FCO",
+            "arrival_time_local": "2026-12-21T11:35:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-21T10:35:00Z",
+            "duration_minutes": 655,
+            "aircraft": "Airbus A350"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "324",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "FCO",
+            "departure_time_local": "2026-12-21T15:10:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-21T14:10:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-21T17:25:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-21T16:25:00Z",
+            "duration_minutes": 135,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "5703875f3266402dae86e02dec7f69f2"
+    },
+    {
+      "price": {
+        "amount": 1367.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Lufthansa",
+        "duration_minutes": 1455,
+        "segments": [
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "1043",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T10:10:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T09:10:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-13T11:25:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-13T10:25:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "236",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-13T15:55:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-13T14:55:00Z",
+            "arrival_airport": "FCO",
+            "arrival_time_local": "2026-12-13T17:45:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-13T16:45:00Z",
+            "duration_minutes": 110,
+            "aircraft": "Airbus A321"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "674",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "FCO",
+            "departure_time_local": "2026-12-13T21:50:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-13T20:50:00Z",
+            "arrival_airport": "GRU",
+            "arrival_time_local": "2026-12-14T06:25:00",
+            "arrival_timezone": "America/Sao_Paulo",
+            "arrival_time_utc": "2026-12-14T09:25:00Z",
+            "duration_minutes": 755,
+            "aircraft": "Airbus A330-900neo"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Lufthansa",
+        "duration_minutes": 975,
+        "segments": [
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "505",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "GRU",
+            "departure_time_local": "2026-12-20T21:20:00",
+            "departure_timezone": "America/Sao_Paulo",
+            "departure_time_utc": "2026-12-21T00:20:00Z",
+            "arrival_airport": "MUC",
+            "arrival_time_local": "2026-12-21T12:45:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-21T11:45:00Z",
+            "duration_minutes": 685,
+            "aircraft": "Airbus A350"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "2232",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "MUC",
+            "departure_time_local": "2026-12-21T15:55:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-21T14:55:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-21T17:35:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-21T16:35:00Z",
+            "duration_minutes": 100,
+            "aircraft": "Airbus A320neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": true,
+      "ignav_id": "4e3fbf4999f84421bd0a4a3531431064"
+    },
+    {
+      "price": {
+        "amount": 1370.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Lufthansa",
+        "duration_minutes": 1455,
+        "segments": [
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "1043",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T10:10:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T09:10:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-13T11:25:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-13T10:25:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "236",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-13T15:55:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-13T14:55:00Z",
+            "arrival_airport": "FCO",
+            "arrival_time_local": "2026-12-13T17:45:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-13T16:45:00Z",
+            "duration_minutes": 110,
+            "aircraft": "Airbus A321"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "674",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "FCO",
+            "departure_time_local": "2026-12-13T21:50:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-13T20:50:00Z",
+            "arrival_airport": "GRU",
+            "arrival_time_local": "2026-12-14T06:25:00",
+            "arrival_timezone": "America/Sao_Paulo",
+            "arrival_time_utc": "2026-12-14T09:25:00Z",
+            "duration_minutes": 755,
+            "aircraft": "Airbus A330-900neo"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "SWISS",
+        "duration_minutes": 1170,
+        "segments": [
+          {
+            "marketing_carrier_code": "LX",
+            "flight_number": "93",
+            "operating_carrier_name": "SWISS",
+            "departure_airport": "GRU",
+            "departure_time_local": "2026-12-20T19:25:00",
+            "departure_timezone": "America/Sao_Paulo",
+            "departure_time_utc": "2026-12-20T22:25:00Z",
+            "arrival_airport": "ZRH",
+            "arrival_time_local": "2026-12-21T10:40:00",
+            "arrival_timezone": "Europe/Zurich",
+            "arrival_time_utc": "2026-12-21T09:40:00Z",
+            "duration_minutes": 675,
+            "aircraft": "Boeing 777"
+          },
+          {
+            "marketing_carrier_code": "LX",
+            "flight_number": "644",
+            "operating_carrier_name": "SWISS",
+            "departure_airport": "ZRH",
+            "departure_time_local": "2026-12-21T17:40:00",
+            "departure_timezone": "Europe/Zurich",
+            "departure_time_utc": "2026-12-21T16:40:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-21T18:55:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-21T17:55:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Airbus A320neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": true,
+      "ignav_id": "e347fd245bdd436b909f86af0076bc0f"
+    },
+    {
+      "price": {
+        "amount": 1378.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Lufthansa",
+        "duration_minutes": 1455,
+        "segments": [
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "1043",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T10:10:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T09:10:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-13T11:25:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-13T10:25:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "236",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-13T15:55:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-13T14:55:00Z",
+            "arrival_airport": "FCO",
+            "arrival_time_local": "2026-12-13T17:45:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-13T16:45:00Z",
+            "duration_minutes": 110,
+            "aircraft": "Airbus A321"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "674",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "FCO",
+            "departure_time_local": "2026-12-13T21:50:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-13T20:50:00Z",
+            "arrival_airport": "GRU",
+            "arrival_time_local": "2026-12-14T06:25:00",
+            "arrival_timezone": "America/Sao_Paulo",
+            "arrival_time_utc": "2026-12-14T09:25:00Z",
+            "duration_minutes": 755,
+            "aircraft": "Airbus A330-900neo"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Lufthansa",
+        "duration_minutes": 895,
+        "segments": [
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "507",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "GRU",
+            "departure_time_local": "2026-12-20T18:45:00",
+            "departure_timezone": "America/Sao_Paulo",
+            "departure_time_utc": "2026-12-20T21:45:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-21T10:15:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-21T09:15:00Z",
+            "duration_minutes": 690,
+            "aircraft": "Boeing 747"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "1046",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-21T12:25:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-21T11:25:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-21T13:40:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-21T12:40:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Airbus A321"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": true,
+      "ignav_id": "e174123c22644b4391e1fbca355142c8"
+    },
+    {
+      "price": {
+        "amount": 1411.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 890,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "1340",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T08:00:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T07:00:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2026-12-13T09:25:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2026-12-13T08:25:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A220-300 Passenger"
+          },
+          {
+            "marketing_carrier_code": "KL",
+            "flight_number": "791",
+            "operating_carrier_name": "KLM",
+            "departure_airport": "AMS",
+            "departure_time_local": "2026-12-13T10:55:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2026-12-13T09:55:00Z",
+            "arrival_airport": "GRU",
+            "arrival_time_local": "2026-12-13T18:50:00",
+            "arrival_timezone": "America/Sao_Paulo",
+            "arrival_time_utc": "2026-12-13T21:50:00Z",
+            "duration_minutes": 715,
+            "aircraft": "Boeing 777"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Air France",
+        "duration_minutes": 685,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "453",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "GRU",
+            "departure_time_local": "2026-12-20T14:40:00",
+            "departure_timezone": "America/Sao_Paulo",
+            "departure_time_utc": "2026-12-20T17:40:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-21T06:05:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-21T05:05:00Z",
+            "duration_minutes": 685,
+            "aircraft": "Boeing 777"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": true,
+      "ignav_id": "02142f232a7b4307a754ad51176c6e8d"
+    },
+    {
+      "price": {
+        "amount": 1417.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "ITA",
+        "duration_minutes": 990,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "317",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T06:10:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T05:10:00Z",
+            "arrival_airport": "FCO",
+            "arrival_time_local": "2026-12-13T08:15:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-13T07:15:00Z",
+            "duration_minutes": 125,
+            "aircraft": "Airbus A320neo"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "678",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "FCO",
+            "departure_time_local": "2026-12-13T10:35:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-13T09:35:00Z",
+            "arrival_airport": "GRU",
+            "arrival_time_local": "2026-12-13T18:40:00",
+            "arrival_timezone": "America/Sao_Paulo",
+            "arrival_time_utc": "2026-12-13T21:40:00Z",
+            "duration_minutes": 725,
+            "aircraft": "Airbus A350"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "ITA",
+        "duration_minutes": 1015,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "679",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "GRU",
+            "departure_time_local": "2026-12-20T20:40:00",
+            "departure_timezone": "America/Sao_Paulo",
+            "departure_time_utc": "2026-12-20T23:40:00Z",
+            "arrival_airport": "FCO",
+            "arrival_time_local": "2026-12-21T11:35:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-21T10:35:00Z",
+            "duration_minutes": 655,
+            "aircraft": "Airbus A350"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "1867",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FCO",
+            "departure_time_local": "2026-12-21T12:40:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-21T11:40:00Z",
+            "arrival_airport": "MUC",
+            "arrival_time_local": "2026-12-21T14:10:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-21T13:10:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "2232",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "MUC",
+            "departure_time_local": "2026-12-21T15:55:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-21T14:55:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-21T17:35:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-21T16:35:00Z",
+            "duration_minutes": 100,
+            "aircraft": "Airbus A320neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": true,
+      "ignav_id": "d6a34be7b1df4ccea395cba5679f344e"
+    },
+    {
+      "price": {
+        "amount": 1452.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Iberia",
+        "duration_minutes": 875,
+        "segments": [
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "590",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T18:45:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T17:45:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-13T20:55:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-13T19:55:00Z",
+            "duration_minutes": 130,
+            "aircraft": "Airbus A321"
+          },
+          {
+            "marketing_carrier_code": "LA",
+            "flight_number": "8065",
+            "operating_carrier_name": "LATAM",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-13T22:45:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-13T21:45:00Z",
+            "arrival_airport": "GRU",
+            "arrival_time_local": "2026-12-14T05:20:00",
+            "arrival_timezone": "America/Sao_Paulo",
+            "arrival_time_utc": "2026-12-14T08:20:00Z",
+            "duration_minutes": 635,
+            "aircraft": "Boeing 787"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "LATAM",
+        "duration_minutes": 685,
+        "segments": [
+          {
+            "marketing_carrier_code": "LA",
+            "flight_number": "8132",
+            "operating_carrier_name": "LATAM",
+            "departure_airport": "GRU",
+            "departure_time_local": "2026-12-20T18:20:00",
+            "departure_timezone": "America/Sao_Paulo",
+            "departure_time_utc": "2026-12-20T21:20:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-21T09:45:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-21T08:45:00Z",
+            "duration_minutes": 685,
+            "aircraft": "Boeing 787"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": true,
+      "ignav_id": "68456e00302d4b1386a7993000209dd4"
+    },
+    {
+      "price": {
+        "amount": 1460.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Iberia",
+        "duration_minutes": 970,
+        "segments": [
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "592",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T06:50:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T05:50:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-13T09:05:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-13T08:05:00Z",
+            "duration_minutes": 135,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "271",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-13T11:50:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-13T10:50:00Z",
+            "arrival_airport": "GRU",
+            "arrival_time_local": "2026-12-13T19:00:00",
+            "arrival_timezone": "America/Sao_Paulo",
+            "arrival_time_utc": "2026-12-13T22:00:00Z",
+            "duration_minutes": 670,
+            "aircraft": "Airbus A330"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "LATAM",
+        "duration_minutes": 685,
+        "segments": [
+          {
+            "marketing_carrier_code": "LA",
+            "flight_number": "8132",
+            "operating_carrier_name": "LATAM",
+            "departure_airport": "GRU",
+            "departure_time_local": "2026-12-20T18:20:00",
+            "departure_timezone": "America/Sao_Paulo",
+            "departure_time_utc": "2026-12-20T21:20:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-21T09:45:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-21T08:45:00Z",
+            "duration_minutes": 685,
+            "aircraft": "Boeing 787"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "80accf74aefe42c1b70b19900838ae80"
+    },
+    {
+      "price": {
+        "amount": 1469.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 955,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "1240",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T06:55:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T05:55:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2026-12-13T08:20:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2026-12-13T07:20:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A321"
+          },
+          {
+            "marketing_carrier_code": "KL",
+            "flight_number": "791",
+            "operating_carrier_name": "KLM",
+            "departure_airport": "AMS",
+            "departure_time_local": "2026-12-13T10:55:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2026-12-13T09:55:00Z",
+            "arrival_airport": "GRU",
+            "arrival_time_local": "2026-12-13T18:50:00",
+            "arrival_timezone": "America/Sao_Paulo",
+            "arrival_time_utc": "2026-12-13T21:50:00Z",
+            "duration_minutes": 715,
+            "aircraft": "Boeing 777"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "LATAM",
+        "duration_minutes": 785,
+        "segments": [
+          {
+            "marketing_carrier_code": "LA",
+            "flight_number": "3360",
+            "operating_carrier_name": "LATAM",
+            "departure_airport": "GRU",
+            "departure_time_local": "2026-12-20T17:25:00",
+            "departure_timezone": "America/Sao_Paulo",
+            "departure_time_utc": "2026-12-20T20:25:00Z",
+            "arrival_airport": "FOR",
+            "arrival_time_local": "2026-12-20T20:45:00",
+            "arrival_timezone": "America/Fortaleza",
+            "arrival_time_utc": "2026-12-20T23:45:00Z",
+            "duration_minutes": 200,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "489",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "FOR",
+            "departure_time_local": "2026-12-20T21:50:00",
+            "departure_timezone": "America/Fortaleza",
+            "departure_time_utc": "2026-12-21T00:50:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-21T10:30:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-21T09:30:00Z",
+            "duration_minutes": 520,
+            "aircraft": "Airbus A350"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": true,
+      "ignav_id": "a38b2d57c82c4e999166bc4a9c8bc62f"
+    },
+    {
+      "price": {
+        "amount": 1471.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Lufthansa",
+        "duration_minutes": 1455,
+        "segments": [
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "1043",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T10:10:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T09:10:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-13T11:25:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-13T10:25:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "236",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-13T15:55:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-13T14:55:00Z",
+            "arrival_airport": "FCO",
+            "arrival_time_local": "2026-12-13T17:45:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-13T16:45:00Z",
+            "duration_minutes": 110,
+            "aircraft": "Airbus A321"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "674",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "FCO",
+            "departure_time_local": "2026-12-13T21:50:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-13T20:50:00Z",
+            "arrival_airport": "GRU",
+            "arrival_time_local": "2026-12-14T06:25:00",
+            "arrival_timezone": "America/Sao_Paulo",
+            "arrival_time_utc": "2026-12-14T09:25:00Z",
+            "duration_minutes": 755,
+            "aircraft": "Airbus A330-900neo"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "SWISS",
+        "duration_minutes": 885,
+        "segments": [
+          {
+            "marketing_carrier_code": "LX",
+            "flight_number": "93",
+            "operating_carrier_name": "SWISS",
+            "departure_airport": "GRU",
+            "departure_time_local": "2026-12-20T19:25:00",
+            "departure_timezone": "America/Sao_Paulo",
+            "departure_time_utc": "2026-12-20T22:25:00Z",
+            "arrival_airport": "ZRH",
+            "arrival_time_local": "2026-12-21T10:40:00",
+            "arrival_timezone": "Europe/Zurich",
+            "arrival_time_utc": "2026-12-21T09:40:00Z",
+            "duration_minutes": 675,
+            "aircraft": "Boeing 777"
+          },
+          {
+            "marketing_carrier_code": "LX",
+            "flight_number": "638",
+            "operating_carrier_name": "SWISS",
+            "departure_airport": "ZRH",
+            "departure_time_local": "2026-12-21T12:50:00",
+            "departure_timezone": "Europe/Zurich",
+            "departure_time_utc": "2026-12-21T11:50:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-21T14:10:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-21T13:10:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Airbus A320neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": true,
+      "ignav_id": "a101fdba3a494f088ce13f8c52e46cdc"
+    },
+    {
+      "price": {
+        "amount": 1473.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "LATAM",
+        "duration_minutes": 715,
+        "segments": [
+          {
+            "marketing_carrier_code": "LA",
+            "flight_number": "8133",
+            "operating_carrier_name": "LATAM",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T12:05:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T11:05:00Z",
+            "arrival_airport": "GRU",
+            "arrival_time_local": "2026-12-13T20:00:00",
+            "arrival_timezone": "America/Sao_Paulo",
+            "arrival_time_utc": "2026-12-13T23:00:00Z",
+            "duration_minutes": 715,
+            "aircraft": "Boeing 787"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "LATAM",
+        "duration_minutes": 685,
+        "segments": [
+          {
+            "marketing_carrier_code": "LA",
+            "flight_number": "8132",
+            "operating_carrier_name": "LATAM",
+            "departure_airport": "GRU",
+            "departure_time_local": "2026-12-20T18:20:00",
+            "departure_timezone": "America/Sao_Paulo",
+            "departure_time_utc": "2026-12-20T21:20:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-21T09:45:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-21T08:45:00Z",
+            "duration_minutes": 685,
+            "aircraft": "Boeing 787"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "2b495d85371247668d55807585d029cc"
+    },
+    {
+      "price": {
+        "amount": 1477.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 955,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "1240",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T06:55:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T05:55:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2026-12-13T08:20:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2026-12-13T07:20:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A321"
+          },
+          {
+            "marketing_carrier_code": "KL",
+            "flight_number": "791",
+            "operating_carrier_name": "KLM",
+            "departure_airport": "AMS",
+            "departure_time_local": "2026-12-13T10:55:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2026-12-13T09:55:00Z",
+            "arrival_airport": "GRU",
+            "arrival_time_local": "2026-12-13T18:50:00",
+            "arrival_timezone": "America/Sao_Paulo",
+            "arrival_time_utc": "2026-12-13T21:50:00Z",
+            "duration_minutes": 715,
+            "aircraft": "Boeing 777"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Air France",
+        "duration_minutes": 670,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "459",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "GRU",
+            "departure_time_local": "2026-12-20T20:40:00",
+            "departure_timezone": "America/Sao_Paulo",
+            "departure_time_utc": "2026-12-20T23:40:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-21T11:50:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-21T10:50:00Z",
+            "duration_minutes": 670,
+            "aircraft": "Airbus A350"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": true,
+      "ignav_id": "942be8b182a44f7ca102050c076e16aa"
+    },
+    {
+      "price": {
+        "amount": 1492.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "KLM",
+        "duration_minutes": 855,
+        "segments": [
+          {
+            "marketing_carrier_code": "KL",
+            "flight_number": "1410",
+            "operating_carrier_name": "KLM",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T18:40:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T17:40:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2026-12-13T20:00:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2026-12-13T19:00:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Embraer 195 E2"
+          },
+          {
+            "marketing_carrier_code": "KL",
+            "flight_number": "793",
+            "operating_carrier_name": "KLM",
+            "departure_airport": "AMS",
+            "departure_time_local": "2026-12-13T20:55:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2026-12-13T19:55:00Z",
+            "arrival_airport": "GRU",
+            "arrival_time_local": "2026-12-14T04:55:00",
+            "arrival_timezone": "America/Sao_Paulo",
+            "arrival_time_utc": "2026-12-14T07:55:00Z",
+            "duration_minutes": 720,
+            "aircraft": "Boeing 787"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Air France",
+        "duration_minutes": 685,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "453",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "GRU",
+            "departure_time_local": "2026-12-20T14:40:00",
+            "departure_timezone": "America/Sao_Paulo",
+            "departure_time_utc": "2026-12-20T17:40:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-21T06:05:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-21T05:05:00Z",
+            "duration_minutes": 685,
+            "aircraft": "Boeing 777"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "6b4c12f0f70642bdbab45f4aac6ff272"
+    },
+    {
+      "price": {
+        "amount": 1492.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Lufthansa",
+        "duration_minutes": 1455,
+        "segments": [
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "1043",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T10:10:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T09:10:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-13T11:25:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-13T10:25:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "236",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-13T15:55:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-13T14:55:00Z",
+            "arrival_airport": "FCO",
+            "arrival_time_local": "2026-12-13T17:45:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-13T16:45:00Z",
+            "duration_minutes": 110,
+            "aircraft": "Airbus A321"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "674",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "FCO",
+            "departure_time_local": "2026-12-13T21:50:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-13T20:50:00Z",
+            "arrival_airport": "GRU",
+            "arrival_time_local": "2026-12-14T06:25:00",
+            "arrival_timezone": "America/Sao_Paulo",
+            "arrival_time_utc": "2026-12-14T09:25:00Z",
+            "duration_minutes": 755,
+            "aircraft": "Airbus A330-900neo"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "ITA",
+        "duration_minutes": 1005,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "679",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "GRU",
+            "departure_time_local": "2026-12-20T20:40:00",
+            "departure_timezone": "America/Sao_Paulo",
+            "departure_time_utc": "2026-12-20T23:40:00Z",
+            "arrival_airport": "FCO",
+            "arrival_time_local": "2026-12-21T11:35:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-21T10:35:00Z",
+            "duration_minutes": 655,
+            "aircraft": "Airbus A350"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "324",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "FCO",
+            "departure_time_local": "2026-12-21T15:10:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-21T14:10:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-21T17:25:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-21T16:25:00Z",
+            "duration_minutes": 135,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": true,
+      "ignav_id": "a8adc18461134b8cb879c26b3c115b2d"
+    },
+    {
+      "price": {
+        "amount": 1495.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "ITA",
+        "duration_minutes": 990,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "317",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T06:10:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T05:10:00Z",
+            "arrival_airport": "FCO",
+            "arrival_time_local": "2026-12-13T08:15:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-13T07:15:00Z",
+            "duration_minutes": 125,
+            "aircraft": "Airbus A320neo"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "678",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "FCO",
+            "departure_time_local": "2026-12-13T10:35:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-13T09:35:00Z",
+            "arrival_airport": "GRU",
+            "arrival_time_local": "2026-12-13T18:40:00",
+            "arrival_timezone": "America/Sao_Paulo",
+            "arrival_time_utc": "2026-12-13T21:40:00Z",
+            "duration_minutes": 725,
+            "aircraft": "Airbus A350"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Lufthansa",
+        "duration_minutes": 975,
+        "segments": [
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "505",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "GRU",
+            "departure_time_local": "2026-12-20T21:20:00",
+            "departure_timezone": "America/Sao_Paulo",
+            "departure_time_utc": "2026-12-21T00:20:00Z",
+            "arrival_airport": "MUC",
+            "arrival_time_local": "2026-12-21T12:45:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-21T11:45:00Z",
+            "duration_minutes": 685,
+            "aircraft": "Airbus A350"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "2232",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "MUC",
+            "departure_time_local": "2026-12-21T15:55:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-21T14:55:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-21T17:35:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-21T16:35:00Z",
+            "duration_minutes": 100,
+            "aircraft": "Airbus A320neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "e9aee835504844429507f8d1b4b3e698"
+    },
+    {
+      "price": {
+        "amount": 1498.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 720,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "454",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T23:20:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T22:20:00Z",
+            "arrival_airport": "GRU",
+            "arrival_time_local": "2026-12-14T07:20:00",
+            "arrival_timezone": "America/Sao_Paulo",
+            "arrival_time_utc": "2026-12-14T10:20:00Z",
+            "duration_minutes": 720,
+            "aircraft": "Boeing 777"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Air France",
+        "duration_minutes": 685,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "453",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "GRU",
+            "departure_time_local": "2026-12-20T14:40:00",
+            "departure_timezone": "America/Sao_Paulo",
+            "departure_time_utc": "2026-12-20T17:40:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-21T06:05:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-21T05:05:00Z",
+            "duration_minutes": 685,
+            "aircraft": "Boeing 777"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "6b2de360beeb41a8899f65cf2b824202"
+    },
+    {
+      "price": {
+        "amount": 1501.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 720,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "460",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T10:25:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T09:25:00Z",
+            "arrival_airport": "GRU",
+            "arrival_time_local": "2026-12-13T18:25:00",
+            "arrival_timezone": "America/Sao_Paulo",
+            "arrival_time_utc": "2026-12-13T21:25:00Z",
+            "duration_minutes": 720,
+            "aircraft": "Airbus A350"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Gol",
+        "duration_minutes": 1015,
+        "segments": [
+          {
+            "marketing_carrier_code": "G3",
+            "flight_number": "1556",
+            "operating_carrier_name": "Gol",
+            "departure_airport": "GRU",
+            "departure_time_local": "2026-12-20T13:35:00",
+            "departure_timezone": "America/Sao_Paulo",
+            "departure_time_utc": "2026-12-20T16:35:00Z",
+            "arrival_airport": "FOR",
+            "arrival_time_local": "2026-12-20T16:55:00",
+            "arrival_timezone": "America/Fortaleza",
+            "arrival_time_utc": "2026-12-20T19:55:00Z",
+            "duration_minutes": 200,
+            "aircraft": "Boeing 737"
+          },
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "489",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "FOR",
+            "departure_time_local": "2026-12-20T21:50:00",
+            "departure_timezone": "America/Fortaleza",
+            "departure_time_utc": "2026-12-21T00:50:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-21T10:30:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-21T09:30:00Z",
+            "duration_minutes": 520,
+            "aircraft": "Airbus A350"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": true,
+      "ignav_id": "babab41b8dbb46a58a4ddebdc004e7ff"
+    },
+    {
+      "price": {
+        "amount": 1505.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "ITA",
+        "duration_minutes": 990,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "317",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T06:10:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T05:10:00Z",
+            "arrival_airport": "FCO",
+            "arrival_time_local": "2026-12-13T08:15:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-13T07:15:00Z",
+            "duration_minutes": 125,
+            "aircraft": "Airbus A320neo"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "678",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "FCO",
+            "departure_time_local": "2026-12-13T10:35:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-13T09:35:00Z",
+            "arrival_airport": "GRU",
+            "arrival_time_local": "2026-12-13T18:40:00",
+            "arrival_timezone": "America/Sao_Paulo",
+            "arrival_time_utc": "2026-12-13T21:40:00Z",
+            "duration_minutes": 725,
+            "aircraft": "Airbus A350"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "ITA",
+        "duration_minutes": 905,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "675",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "GRU",
+            "departure_time_local": "2026-12-20T15:45:00",
+            "departure_timezone": "America/Sao_Paulo",
+            "departure_time_utc": "2026-12-20T18:45:00Z",
+            "arrival_airport": "FCO",
+            "arrival_time_local": "2026-12-21T06:40:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-21T05:40:00Z",
+            "duration_minutes": 655,
+            "aircraft": "Airbus A350"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "316",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "FCO",
+            "departure_time_local": "2026-12-21T08:40:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-21T07:40:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-21T10:50:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-21T09:50:00Z",
+            "duration_minutes": 130,
+            "aircraft": "Airbus A321neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "bb89472bd36b482e9dbfb72e9e8fc3a0"
+    },
+    {
+      "price": {
+        "amount": 1506.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "ITA",
+        "duration_minutes": 990,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "317",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T06:10:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T05:10:00Z",
+            "arrival_airport": "FCO",
+            "arrival_time_local": "2026-12-13T08:15:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-13T07:15:00Z",
+            "duration_minutes": 125,
+            "aircraft": "Airbus A320neo"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "678",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "FCO",
+            "departure_time_local": "2026-12-13T10:35:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-13T09:35:00Z",
+            "arrival_airport": "GRU",
+            "arrival_time_local": "2026-12-13T18:40:00",
+            "arrival_timezone": "America/Sao_Paulo",
+            "arrival_time_utc": "2026-12-13T21:40:00Z",
+            "duration_minutes": 725,
+            "aircraft": "Airbus A350"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Lufthansa",
+        "duration_minutes": 895,
+        "segments": [
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "507",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "GRU",
+            "departure_time_local": "2026-12-20T18:45:00",
+            "departure_timezone": "America/Sao_Paulo",
+            "departure_time_utc": "2026-12-20T21:45:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-21T10:15:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-21T09:15:00Z",
+            "duration_minutes": 690,
+            "aircraft": "Boeing 747"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "1046",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-21T12:25:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-21T11:25:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-21T13:40:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-21T12:40:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Airbus A321"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "f4a70589784b430d996a8175218b2d9f"
+    },
+    {
+      "price": {
+        "amount": 1523.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 720,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "454",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T23:20:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T22:20:00Z",
+            "arrival_airport": "GRU",
+            "arrival_time_local": "2026-12-14T07:20:00",
+            "arrival_timezone": "America/Sao_Paulo",
+            "arrival_time_utc": "2026-12-14T10:20:00Z",
+            "duration_minutes": 720,
+            "aircraft": "Boeing 777"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Gol",
+        "duration_minutes": 1015,
+        "segments": [
+          {
+            "marketing_carrier_code": "G3",
+            "flight_number": "1556",
+            "operating_carrier_name": "Gol",
+            "departure_airport": "GRU",
+            "departure_time_local": "2026-12-20T13:35:00",
+            "departure_timezone": "America/Sao_Paulo",
+            "departure_time_utc": "2026-12-20T16:35:00Z",
+            "arrival_airport": "FOR",
+            "arrival_time_local": "2026-12-20T16:55:00",
+            "arrival_timezone": "America/Fortaleza",
+            "arrival_time_utc": "2026-12-20T19:55:00Z",
+            "duration_minutes": 200,
+            "aircraft": "Boeing 737"
+          },
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "489",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "FOR",
+            "departure_time_local": "2026-12-20T21:50:00",
+            "departure_timezone": "America/Fortaleza",
+            "departure_time_utc": "2026-12-21T00:50:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-21T10:30:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-21T09:30:00Z",
+            "duration_minutes": 520,
+            "aircraft": "Airbus A350"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": true,
+      "ignav_id": "bdf2ab43408c4312a20fc837552d1d16"
+    },
+    {
+      "price": {
+        "amount": 1535.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 955,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "1240",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T06:55:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T05:55:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2026-12-13T08:20:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2026-12-13T07:20:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A321"
+          },
+          {
+            "marketing_carrier_code": "KL",
+            "flight_number": "791",
+            "operating_carrier_name": "KLM",
+            "departure_airport": "AMS",
+            "departure_time_local": "2026-12-13T10:55:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2026-12-13T09:55:00Z",
+            "arrival_airport": "GRU",
+            "arrival_time_local": "2026-12-13T18:50:00",
+            "arrival_timezone": "America/Sao_Paulo",
+            "arrival_time_utc": "2026-12-13T21:50:00Z",
+            "duration_minutes": 715,
+            "aircraft": "Boeing 777"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "KLM",
+        "duration_minutes": 871,
+        "segments": [
+          {
+            "marketing_carrier_code": "KL",
+            "flight_number": "792",
+            "operating_carrier_name": "KLM",
+            "departure_airport": "GRU",
+            "departure_time_local": "2026-12-20T20:59:00",
+            "departure_timezone": "America/Sao_Paulo",
+            "departure_time_utc": "2026-12-20T23:59:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2026-12-21T12:20:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2026-12-21T11:20:00Z",
+            "duration_minutes": 681,
+            "aircraft": "Boeing 777"
+          },
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "1641",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "AMS",
+            "departure_time_local": "2026-12-21T14:10:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2026-12-21T13:10:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-21T15:30:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-21T14:30:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Airbus A220-300 Passenger"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": true,
+      "ignav_id": "2f0f8af2d58546cc85d0580981976795"
+    },
+    {
+      "price": {
+        "amount": 1546.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 890,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "1340",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T08:00:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T07:00:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2026-12-13T09:25:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2026-12-13T08:25:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A220-300 Passenger"
+          },
+          {
+            "marketing_carrier_code": "KL",
+            "flight_number": "791",
+            "operating_carrier_name": "KLM",
+            "departure_airport": "AMS",
+            "departure_time_local": "2026-12-13T10:55:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2026-12-13T09:55:00Z",
+            "arrival_airport": "GRU",
+            "arrival_time_local": "2026-12-13T18:50:00",
+            "arrival_timezone": "America/Sao_Paulo",
+            "arrival_time_utc": "2026-12-13T21:50:00Z",
+            "duration_minutes": 715,
+            "aircraft": "Boeing 777"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Air France",
+        "duration_minutes": 670,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "459",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "GRU",
+            "departure_time_local": "2026-12-20T20:40:00",
+            "departure_timezone": "America/Sao_Paulo",
+            "departure_time_utc": "2026-12-20T23:40:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-21T11:50:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-21T10:50:00Z",
+            "duration_minutes": 670,
+            "aircraft": "Airbus A350"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": true,
+      "ignav_id": "651baea47f5b4f6a931c338f42e966dc"
+    },
+    {
+      "price": {
+        "amount": 1548.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 720,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "460",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T10:25:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T09:25:00Z",
+            "arrival_airport": "GRU",
+            "arrival_time_local": "2026-12-13T18:25:00",
+            "arrival_timezone": "America/Sao_Paulo",
+            "arrival_time_utc": "2026-12-13T21:25:00Z",
+            "duration_minutes": 720,
+            "aircraft": "Airbus A350"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Air France",
+        "duration_minutes": 685,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "453",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "GRU",
+            "departure_time_local": "2026-12-20T14:40:00",
+            "departure_timezone": "America/Sao_Paulo",
+            "departure_time_utc": "2026-12-20T17:40:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-21T06:05:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-21T05:05:00Z",
+            "duration_minutes": 685,
+            "aircraft": "Boeing 777"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "c98d7319d5424230a8fddf96ebcb6046"
+    },
+    {
+      "price": {
+        "amount": 1584.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Iberia",
+        "duration_minutes": 970,
+        "segments": [
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "592",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T06:50:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T05:50:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-13T09:05:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-13T08:05:00Z",
+            "duration_minutes": 135,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "271",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-13T11:50:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-13T10:50:00Z",
+            "arrival_airport": "GRU",
+            "arrival_time_local": "2026-12-13T19:00:00",
+            "arrival_timezone": "America/Sao_Paulo",
+            "arrival_time_utc": "2026-12-13T22:00:00Z",
+            "duration_minutes": 670,
+            "aircraft": "Airbus A330"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Iberia",
+        "duration_minutes": 1045,
+        "segments": [
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "272",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "GRU",
+            "departure_time_local": "2026-12-20T20:30:00",
+            "departure_timezone": "America/Sao_Paulo",
+            "departure_time_utc": "2026-12-20T23:30:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-21T10:50:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-21T09:50:00Z",
+            "duration_minutes": 620,
+            "aircraft": "Airbus A330"
+          },
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "589",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-21T15:45:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-21T14:45:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-21T17:55:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-21T16:55:00Z",
+            "duration_minutes": 130,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "40bfbddd1af247d1a8c213332800193e"
+    },
+    {
+      "price": {
+        "amount": 1604.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 890,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "1340",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T08:00:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T07:00:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2026-12-13T09:25:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2026-12-13T08:25:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A220-300 Passenger"
+          },
+          {
+            "marketing_carrier_code": "KL",
+            "flight_number": "791",
+            "operating_carrier_name": "KLM",
+            "departure_airport": "AMS",
+            "departure_time_local": "2026-12-13T10:55:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2026-12-13T09:55:00Z",
+            "arrival_airport": "GRU",
+            "arrival_time_local": "2026-12-13T18:50:00",
+            "arrival_timezone": "America/Sao_Paulo",
+            "arrival_time_utc": "2026-12-13T21:50:00Z",
+            "duration_minutes": 715,
+            "aircraft": "Boeing 777"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "KLM",
+        "duration_minutes": 871,
+        "segments": [
+          {
+            "marketing_carrier_code": "KL",
+            "flight_number": "792",
+            "operating_carrier_name": "KLM",
+            "departure_airport": "GRU",
+            "departure_time_local": "2026-12-20T20:59:00",
+            "departure_timezone": "America/Sao_Paulo",
+            "departure_time_utc": "2026-12-20T23:59:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2026-12-21T12:20:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2026-12-21T11:20:00Z",
+            "duration_minutes": 681,
+            "aircraft": "Boeing 777"
+          },
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "1641",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "AMS",
+            "departure_time_local": "2026-12-21T14:10:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2026-12-21T13:10:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-21T15:30:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-21T14:30:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Airbus A220-300 Passenger"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": true,
+      "ignav_id": "63e734493c28493eb094de931df00fe3"
+    },
+    {
+      "price": {
+        "amount": 1627.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "KLM",
+        "duration_minutes": 855,
+        "segments": [
+          {
+            "marketing_carrier_code": "KL",
+            "flight_number": "1410",
+            "operating_carrier_name": "KLM",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T18:40:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T17:40:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2026-12-13T20:00:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2026-12-13T19:00:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Embraer 195 E2"
+          },
+          {
+            "marketing_carrier_code": "KL",
+            "flight_number": "793",
+            "operating_carrier_name": "KLM",
+            "departure_airport": "AMS",
+            "departure_time_local": "2026-12-13T20:55:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2026-12-13T19:55:00Z",
+            "arrival_airport": "GRU",
+            "arrival_time_local": "2026-12-14T04:55:00",
+            "arrival_timezone": "America/Sao_Paulo",
+            "arrival_time_utc": "2026-12-14T07:55:00Z",
+            "duration_minutes": 720,
+            "aircraft": "Boeing 787"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Air France",
+        "duration_minutes": 670,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "459",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "GRU",
+            "departure_time_local": "2026-12-20T20:40:00",
+            "departure_timezone": "America/Sao_Paulo",
+            "departure_time_utc": "2026-12-20T23:40:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-21T11:50:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-21T10:50:00Z",
+            "duration_minutes": 670,
+            "aircraft": "Airbus A350"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "73b04bf3e7e042d6a6bde6c4846b61a6"
+    },
+    {
+      "price": {
+        "amount": 1633.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 720,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "454",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T23:20:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T22:20:00Z",
+            "arrival_airport": "GRU",
+            "arrival_time_local": "2026-12-14T07:20:00",
+            "arrival_timezone": "America/Sao_Paulo",
+            "arrival_time_utc": "2026-12-14T10:20:00Z",
+            "duration_minutes": 720,
+            "aircraft": "Boeing 777"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Air France",
+        "duration_minutes": 670,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "459",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "GRU",
+            "departure_time_local": "2026-12-20T20:40:00",
+            "departure_timezone": "America/Sao_Paulo",
+            "departure_time_utc": "2026-12-20T23:40:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-21T11:50:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-21T10:50:00Z",
+            "duration_minutes": 670,
+            "aircraft": "Airbus A350"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "6a2f0d489efd4227ae41597d3cded075"
+    },
+    {
+      "price": {
+        "amount": 1641.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "LATAM",
+        "duration_minutes": 715,
+        "segments": [
+          {
+            "marketing_carrier_code": "LA",
+            "flight_number": "8133",
+            "operating_carrier_name": "LATAM",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T12:05:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T11:05:00Z",
+            "arrival_airport": "GRU",
+            "arrival_time_local": "2026-12-13T20:00:00",
+            "arrival_timezone": "America/Sao_Paulo",
+            "arrival_time_utc": "2026-12-13T23:00:00Z",
+            "duration_minutes": 715,
+            "aircraft": "Boeing 787"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "LATAM",
+        "duration_minutes": 885,
+        "segments": [
+          {
+            "marketing_carrier_code": "LA",
+            "flight_number": "8114",
+            "operating_carrier_name": "LATAM",
+            "departure_airport": "GRU",
+            "departure_time_local": "2026-12-20T18:25:00",
+            "departure_timezone": "America/Sao_Paulo",
+            "departure_time_utc": "2026-12-20T21:25:00Z",
+            "arrival_airport": "BCN",
+            "arrival_time_local": "2026-12-21T09:00:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-21T08:00:00Z",
+            "duration_minutes": 635,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "8060",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "BCN",
+            "departure_time_local": "2026-12-21T11:10:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-21T10:10:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-21T13:10:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-21T12:10:00Z",
+            "duration_minutes": 120,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": true,
+      "ignav_id": "20925e2f9d294ad6868ca5e5128fd4a9"
+    },
+    {
+      "price": {
+        "amount": 1661.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "LATAM",
+        "duration_minutes": 715,
+        "segments": [
+          {
+            "marketing_carrier_code": "LA",
+            "flight_number": "8133",
+            "operating_carrier_name": "LATAM",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T12:05:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T11:05:00Z",
+            "arrival_airport": "GRU",
+            "arrival_time_local": "2026-12-13T20:00:00",
+            "arrival_timezone": "America/Sao_Paulo",
+            "arrival_time_utc": "2026-12-13T23:00:00Z",
+            "duration_minutes": 715,
+            "aircraft": "Boeing 787"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "LATAM",
+        "duration_minutes": 915,
+        "segments": [
+          {
+            "marketing_carrier_code": "LA",
+            "flight_number": "8070",
+            "operating_carrier_name": "LATAM",
+            "departure_airport": "GRU",
+            "departure_time_local": "2026-12-20T23:10:00",
+            "departure_timezone": "America/Sao_Paulo",
+            "departure_time_utc": "2026-12-21T02:10:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-21T14:55:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-21T13:55:00Z",
+            "duration_minutes": 705,
+            "aircraft": "Boeing 777"
+          },
+          {
+            "marketing_carrier_code": "VL",
+            "flight_number": "1048",
+            "operating_carrier_name": "Lufthansa City Airlines",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-21T17:10:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-21T16:10:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-21T18:25:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-21T17:25:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Airbus A320neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": true,
+      "ignav_id": "75657ccd784f4240ab89817b01df9b8a"
+    },
+    {
+      "price": {
+        "amount": 1668.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 720,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "454",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T23:20:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T22:20:00Z",
+            "arrival_airport": "GRU",
+            "arrival_time_local": "2026-12-14T07:20:00",
+            "arrival_timezone": "America/Sao_Paulo",
+            "arrival_time_utc": "2026-12-14T10:20:00Z",
+            "duration_minutes": 720,
+            "aircraft": "Boeing 777"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Gol",
+        "duration_minutes": 770,
+        "segments": [
+          {
+            "marketing_carrier_code": "G3",
+            "flight_number": "1380",
+            "operating_carrier_name": "Gol",
+            "departure_airport": "GRU",
+            "departure_time_local": "2026-12-20T21:55:00",
+            "departure_timezone": "America/Sao_Paulo",
+            "departure_time_utc": "2026-12-21T00:55:00Z",
+            "arrival_airport": "GIG",
+            "arrival_time_local": "2026-12-20T22:55:00",
+            "arrival_timezone": "America/Sao_Paulo",
+            "arrival_time_utc": "2026-12-21T01:55:00Z",
+            "duration_minutes": 60,
+            "aircraft": "Boeing 737"
+          },
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "409",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "GIG",
+            "departure_time_local": "2026-12-20T23:40:00",
+            "departure_timezone": "America/Sao_Paulo",
+            "departure_time_utc": "2026-12-21T02:40:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-21T14:45:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-21T13:45:00Z",
+            "duration_minutes": 665,
+            "aircraft": "Airbus A350"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": true,
+      "ignav_id": "aa482890299e4ae6966a3745b26c8f83"
+    },
+    {
+      "price": {
+        "amount": 1682.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 720,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "460",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T10:25:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T09:25:00Z",
+            "arrival_airport": "GRU",
+            "arrival_time_local": "2026-12-13T18:25:00",
+            "arrival_timezone": "America/Sao_Paulo",
+            "arrival_time_utc": "2026-12-13T21:25:00Z",
+            "duration_minutes": 720,
+            "aircraft": "Airbus A350"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Air France",
+        "duration_minutes": 670,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "459",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "GRU",
+            "departure_time_local": "2026-12-20T20:40:00",
+            "departure_timezone": "America/Sao_Paulo",
+            "departure_time_utc": "2026-12-20T23:40:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-21T11:50:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-21T10:50:00Z",
+            "duration_minutes": 670,
+            "aircraft": "Airbus A350"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "3aea3d3230d041cc8f0c45da18a8bb65"
+    },
+    {
+      "price": {
+        "amount": 1685.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "KLM",
+        "duration_minutes": 855,
+        "segments": [
+          {
+            "marketing_carrier_code": "KL",
+            "flight_number": "1410",
+            "operating_carrier_name": "KLM",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T18:40:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T17:40:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2026-12-13T20:00:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2026-12-13T19:00:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Embraer 195 E2"
+          },
+          {
+            "marketing_carrier_code": "KL",
+            "flight_number": "793",
+            "operating_carrier_name": "KLM",
+            "departure_airport": "AMS",
+            "departure_time_local": "2026-12-13T20:55:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2026-12-13T19:55:00Z",
+            "arrival_airport": "GRU",
+            "arrival_time_local": "2026-12-14T04:55:00",
+            "arrival_timezone": "America/Sao_Paulo",
+            "arrival_time_utc": "2026-12-14T07:55:00Z",
+            "duration_minutes": 720,
+            "aircraft": "Boeing 787"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "KLM",
+        "duration_minutes": 1196,
+        "segments": [
+          {
+            "marketing_carrier_code": "KL",
+            "flight_number": "792",
+            "operating_carrier_name": "KLM",
+            "departure_airport": "GRU",
+            "departure_time_local": "2026-12-20T20:59:00",
+            "departure_timezone": "America/Sao_Paulo",
+            "departure_time_utc": "2026-12-20T23:59:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2026-12-21T12:20:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2026-12-21T11:20:00Z",
+            "duration_minutes": 681,
+            "aircraft": "Boeing 777"
+          },
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "1141",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "AMS",
+            "departure_time_local": "2026-12-21T19:35:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2026-12-21T18:35:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-21T20:55:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-21T19:55:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Airbus A220-300 Passenger"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": true,
+      "ignav_id": "a18a02369e7c48d8be8e7e7827dd65ec"
+    },
+    {
+      "price": {
+        "amount": 1731.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Iberia",
+        "duration_minutes": 970,
+        "segments": [
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "592",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T06:50:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T05:50:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-13T09:05:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-13T08:05:00Z",
+            "duration_minutes": 135,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "271",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-13T11:50:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-13T10:50:00Z",
+            "arrival_airport": "GRU",
+            "arrival_time_local": "2026-12-13T19:00:00",
+            "arrival_timezone": "America/Sao_Paulo",
+            "arrival_time_utc": "2026-12-13T22:00:00Z",
+            "duration_minutes": 670,
+            "aircraft": "Airbus A330"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Iberia",
+        "duration_minutes": 1000,
+        "segments": [
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "268",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "GRU",
+            "departure_time_local": "2026-12-20T15:10:00",
+            "departure_timezone": "America/Sao_Paulo",
+            "departure_time_utc": "2026-12-20T18:10:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-21T05:30:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-21T04:30:00Z",
+            "duration_minutes": 620,
+            "aircraft": "Airbus A330"
+          },
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "585",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-21T09:40:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-21T08:40:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-21T11:50:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-21T10:50:00Z",
+            "duration_minutes": 130,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "f9e8bc3532f84ed2a507f069c29e2757"
+    },
+    {
+      "price": {
+        "amount": 1753.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Iberia",
+        "duration_minutes": 875,
+        "segments": [
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "590",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T18:45:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T17:45:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-13T20:55:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-13T19:55:00Z",
+            "duration_minutes": 130,
+            "aircraft": "Airbus A321"
+          },
+          {
+            "marketing_carrier_code": "LA",
+            "flight_number": "8065",
+            "operating_carrier_name": "LATAM",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-13T22:45:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-13T21:45:00Z",
+            "arrival_airport": "GRU",
+            "arrival_time_local": "2026-12-14T05:20:00",
+            "arrival_timezone": "America/Sao_Paulo",
+            "arrival_time_utc": "2026-12-14T08:20:00Z",
+            "duration_minutes": 635,
+            "aircraft": "Boeing 787"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Iberia",
+        "duration_minutes": 1045,
+        "segments": [
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "272",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "GRU",
+            "departure_time_local": "2026-12-20T20:30:00",
+            "departure_timezone": "America/Sao_Paulo",
+            "departure_time_utc": "2026-12-20T23:30:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-21T10:50:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-21T09:50:00Z",
+            "duration_minutes": 620,
+            "aircraft": "Airbus A330"
+          },
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "589",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-21T15:45:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-21T14:45:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-21T17:55:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-21T16:55:00Z",
+            "duration_minutes": 130,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": true,
+      "ignav_id": "68b5db78df2940eaadfd54453cd3d77f"
+    },
+    {
+      "price": {
+        "amount": 1771.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "LATAM",
+        "duration_minutes": 715,
+        "segments": [
+          {
+            "marketing_carrier_code": "LA",
+            "flight_number": "8133",
+            "operating_carrier_name": "LATAM",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T12:05:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T11:05:00Z",
+            "arrival_airport": "GRU",
+            "arrival_time_local": "2026-12-13T20:00:00",
+            "arrival_timezone": "America/Sao_Paulo",
+            "arrival_time_utc": "2026-12-13T23:00:00Z",
+            "duration_minutes": 715,
+            "aircraft": "Boeing 787"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "LATAM",
+        "duration_minutes": 910,
+        "segments": [
+          {
+            "marketing_carrier_code": "LA",
+            "flight_number": "8084",
+            "operating_carrier_name": "LATAM",
+            "departure_airport": "GRU",
+            "departure_time_local": "2026-12-20T23:40:00",
+            "departure_timezone": "America/Sao_Paulo",
+            "departure_time_utc": "2026-12-21T02:40:00Z",
+            "arrival_airport": "LHR",
+            "arrival_time_local": "2026-12-21T14:05:00",
+            "arrival_timezone": "Europe/London",
+            "arrival_time_utc": "2026-12-21T14:05:00Z",
+            "duration_minutes": 685,
+            "aircraft": "Boeing 777"
+          },
+          {
+            "marketing_carrier_code": "BA",
+            "flight_number": "316",
+            "operating_carrier_name": "British Airways",
+            "departure_airport": "LHR",
+            "departure_time_local": "2026-12-21T16:25:00",
+            "departure_timezone": "Europe/London",
+            "departure_time_utc": "2026-12-21T16:25:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-21T18:50:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-21T17:50:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": true,
+      "ignav_id": "1fbe639191754f20a7fa6ad3a671a4b1"
+    },
+    {
+      "price": {
+        "amount": 1774.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 720,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "460",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-13T10:25:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-13T09:25:00Z",
+            "arrival_airport": "GRU",
+            "arrival_time_local": "2026-12-13T18:25:00",
+            "arrival_timezone": "America/Sao_Paulo",
+            "arrival_time_utc": "2026-12-13T21:25:00Z",
+            "duration_minutes": 720,
+            "aircraft": "Airbus A350"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Gol",
+        "duration_minutes": 840,
+        "segments": [
+          {
+            "marketing_carrier_code": "G3",
+            "flight_number": "1358",
+            "operating_carrier_name": "Gol",
+            "departure_airport": "GRU",
+            "departure_time_local": "2026-12-20T17:45:00",
+            "departure_timezone": "America/Sao_Paulo",
+            "departure_time_utc": "2026-12-20T20:45:00Z",
+            "arrival_airport": "GIG",
+            "arrival_time_local": "2026-12-20T18:50:00",
+            "arrival_timezone": "America/Sao_Paulo",
+            "arrival_time_utc": "2026-12-20T21:50:00Z",
+            "duration_minutes": 65,
+            "aircraft": "Boeing 737"
+          },
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "485",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "GIG",
+            "departure_time_local": "2026-12-20T20:45:00",
+            "departure_timezone": "America/Sao_Paulo",
+            "departure_time_utc": "2026-12-20T23:45:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-21T11:45:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-21T10:45:00Z",
+            "duration_minutes": 660,
+            "aircraft": "Airbus A350"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": true,
+      "ignav_id": "bd81db624b184c42acf9cfbb48a433ac"
+    }
+  ],
+  "observed_at": "2026-10-29T03:34:01.257364Z"
+}

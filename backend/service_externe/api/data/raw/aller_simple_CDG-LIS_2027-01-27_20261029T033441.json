@@ -1,0 +1,423 @@
+{
+  "origin": "CDG",
+  "destination": "LIS",
+  "departure_date": "2027-01-27",
+  "itineraries": [
+    {
+      "price": {
+        "amount": 115.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Vueling",
+        "duration_minutes": 485,
+        "segments": [
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "8061",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "CDG",
+            "departure_time_local": "2027-01-27T09:50:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2027-01-27T08:50:00Z",
+            "arrival_airport": "BCN",
+            "arrival_time_local": "2027-01-27T11:45:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2027-01-27T10:45:00Z",
+            "duration_minutes": 115,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "1148",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "BCN",
+            "departure_time_local": "2027-01-27T15:50:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2027-01-27T14:50:00Z",
+            "arrival_airport": "LIS",
+            "arrival_time_local": "2027-01-27T16:55:00",
+            "arrival_timezone": "Europe/Lisbon",
+            "arrival_time_utc": "2027-01-27T16:55:00Z",
+            "duration_minutes": 125,
+            "aircraft": "Airbus A321neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "0ff732b172ce4b92b93562fd2a501ff1"
+    },
+    {
+      "price": {
+        "amount": 146.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Iberia",
+        "duration_minutes": 705,
+        "segments": [
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "586",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "CDG",
+            "departure_time_local": "2027-01-27T12:40:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2027-01-27T11:40:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2027-01-27T14:55:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2027-01-27T13:55:00Z",
+            "duration_minutes": 135,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "539",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "MAD",
+            "departure_time_local": "2027-01-27T23:00:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2027-01-27T22:00:00Z",
+            "arrival_airport": "LIS",
+            "arrival_time_local": "2027-01-27T23:25:00",
+            "arrival_timezone": "Europe/Lisbon",
+            "arrival_time_utc": "2027-01-27T23:25:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "3d2ee86505924372b668834c2a519c8e"
+    },
+    {
+      "price": {
+        "amount": 148.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 160,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "1194",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2027-01-27T15:50:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2027-01-27T14:50:00Z",
+            "arrival_airport": "LIS",
+            "arrival_time_local": "2027-01-27T17:30:00",
+            "arrival_timezone": "Europe/Lisbon",
+            "arrival_time_utc": "2027-01-27T17:30:00Z",
+            "duration_minutes": 160,
+            "aircraft": "Airbus A220-300 Passenger"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "441c1a07c23945c68dd69d48ec2d8b35"
+    },
+    {
+      "price": {
+        "amount": 163.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 280,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "1800",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2027-01-27T15:35:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2027-01-27T14:35:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2027-01-27T17:45:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2027-01-27T16:45:00Z",
+            "duration_minutes": 130,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "UX",
+            "flight_number": "1157",
+            "operating_carrier_name": "Air Europa",
+            "departure_airport": "MAD",
+            "departure_time_local": "2027-01-27T18:55:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2027-01-27T17:55:00Z",
+            "arrival_airport": "LIS",
+            "arrival_time_local": "2027-01-27T19:15:00",
+            "arrival_timezone": "Europe/Lisbon",
+            "arrival_time_utc": "2027-01-27T19:15:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": true,
+      "ignav_id": "eb7ba0d434264918b51f8316cc0116a7"
+    },
+    {
+      "price": {
+        "amount": 163.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 290,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "1000",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2027-01-27T06:55:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2027-01-27T05:55:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2027-01-27T09:10:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2027-01-27T08:10:00Z",
+            "duration_minutes": 135,
+            "aircraft": "Airbus A220-300 Passenger"
+          },
+          {
+            "marketing_carrier_code": "UX",
+            "flight_number": "1153",
+            "operating_carrier_name": "Air Europa",
+            "departure_airport": "MAD",
+            "departure_time_local": "2027-01-27T10:25:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2027-01-27T09:25:00Z",
+            "arrival_airport": "LIS",
+            "arrival_time_local": "2027-01-27T10:45:00",
+            "arrival_timezone": "Europe/Lisbon",
+            "arrival_time_utc": "2027-01-27T10:45:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": true,
+      "ignav_id": "1210fde9159b4f82a1c3ccb69ffdb0d6"
+    },
+    {
+      "price": {
+        "amount": 166.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Iberia",
+        "duration_minutes": 340,
+        "segments": [
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "590",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "CDG",
+            "departure_time_local": "2027-01-27T18:45:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2027-01-27T17:45:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2027-01-27T20:55:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2027-01-27T19:55:00Z",
+            "duration_minutes": 130,
+            "aircraft": "Airbus A321"
+          },
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "539",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "MAD",
+            "departure_time_local": "2027-01-27T23:00:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2027-01-27T22:00:00Z",
+            "arrival_airport": "LIS",
+            "arrival_time_local": "2027-01-27T23:25:00",
+            "arrival_timezone": "Europe/Lisbon",
+            "arrival_time_utc": "2027-01-27T23:25:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "fffef976af3241e080d772fa3cb673cb"
+    },
+    {
+      "price": {
+        "amount": 170.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 165,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "1024",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2027-01-27T09:40:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2027-01-27T08:40:00Z",
+            "arrival_airport": "LIS",
+            "arrival_time_local": "2027-01-27T11:25:00",
+            "arrival_timezone": "Europe/Lisbon",
+            "arrival_time_utc": "2027-01-27T11:25:00Z",
+            "duration_minutes": 165,
+            "aircraft": "Airbus A220-300 Passenger"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "9898ccf463a2495bb99fbf0c8ab11dc1"
+    },
+    {
+      "price": {
+        "amount": 187.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "British Airways",
+        "duration_minutes": 330,
+        "segments": [
+          {
+            "marketing_carrier_code": "BA",
+            "flight_number": "303",
+            "operating_carrier_name": "British Airways",
+            "departure_airport": "CDG",
+            "departure_time_local": "2027-01-27T10:20:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2027-01-27T09:20:00Z",
+            "arrival_airport": "LHR",
+            "arrival_time_local": "2027-01-27T10:45:00",
+            "arrival_timezone": "Europe/London",
+            "arrival_time_utc": "2027-01-27T10:45:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "BA",
+            "flight_number": "506",
+            "operating_carrier_name": "British Airways",
+            "departure_airport": "LHR",
+            "departure_time_local": "2027-01-27T11:50:00",
+            "departure_timezone": "Europe/London",
+            "departure_time_utc": "2027-01-27T11:50:00Z",
+            "arrival_airport": "LIS",
+            "arrival_time_local": "2027-01-27T14:50:00",
+            "arrival_timezone": "Europe/Lisbon",
+            "arrival_time_utc": "2027-01-27T14:50:00Z",
+            "duration_minutes": 180,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "f00f77970c314671af768fd62fb59309"
+    },
+    {
+      "price": {
+        "amount": 196.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 160,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "1124",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2027-01-27T20:45:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2027-01-27T19:45:00Z",
+            "arrival_airport": "LIS",
+            "arrival_time_local": "2027-01-27T22:25:00",
+            "arrival_timezone": "Europe/Lisbon",
+            "arrival_time_utc": "2027-01-27T22:25:00Z",
+            "duration_minutes": 160,
+            "aircraft": "Airbus A220-300 Passenger"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "4b491d18981946df89cc29dbed9bb842"
+    },
+    {
+      "price": {
+        "amount": 201.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Iberia",
+        "duration_minutes": 265,
+        "segments": [
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "586",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "CDG",
+            "departure_time_local": "2027-01-27T12:40:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2027-01-27T11:40:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2027-01-27T14:55:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2027-01-27T13:55:00Z",
+            "duration_minutes": 135,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "533",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "MAD",
+            "departure_time_local": "2027-01-27T15:40:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2027-01-27T14:40:00Z",
+            "arrival_airport": "LIS",
+            "arrival_time_local": "2027-01-27T16:05:00",
+            "arrival_timezone": "Europe/Lisbon",
+            "arrival_time_utc": "2027-01-27T16:05:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "requires_self_transfer": false,
+      "ignav_id": "465dc871b4cf4e3f97b6e16aa48ddfd1"
+    }
+  ],
+  "observed_at": "2026-10-29T03:34:41.183880Z"
+}
