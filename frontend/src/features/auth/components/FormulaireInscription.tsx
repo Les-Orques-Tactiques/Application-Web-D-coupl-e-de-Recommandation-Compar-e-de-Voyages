@@ -5,11 +5,11 @@ import { Bandeau } from "@/components/ui/Bandeau";
 import { Bouton } from "@/components/ui/Bouton";
 import { Champ } from "@/components/ui/Champ";
 import { ErreurApi } from "@/lib/clientApi";
-import { creerCompte } from "../api";
-import { AIDE_MOT_DE_PASSE, verifierEmail, verifierMotDePasse } from "../validation";
-import { messagePourErreur } from "../erreurs";
-import { emailEnAttente } from "../stockage";
-import type { Consentements } from "../types";
+import { creerCompte } from "../services/api";
+import { AIDE_MOT_DE_PASSE, verifierEmail, verifierMotDePasse } from "../utils/validation";
+import { messagePourErreur } from "../utils/erreurs";
+import { emailEnAttente } from "../utils/stockage";
+import type { Consentements } from "../utils/types";
 import { CasesConsentements } from "./CasesConsentements";
 
 // Les quatre champs texte du formulaire

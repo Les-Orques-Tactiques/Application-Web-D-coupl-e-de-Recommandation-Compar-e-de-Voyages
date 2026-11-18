@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 import { Bandeau } from "@/components/ui/Bandeau";
 import { Bouton } from "@/components/ui/Bouton";
 import { Champ } from "@/components/ui/Champ";
-import { demanderReinitialisation } from "../api";
-import { messagePourErreur } from "../erreurs";
-import { verifierEmail } from "../validation";
+import { demanderReinitialisation } from "../services/api";
+import { messagePourErreur } from "../utils/erreurs";
+import { verifierEmail } from "../utils/validation";
 
 /**
  * Demande d'un e-mail de réinitialisation.

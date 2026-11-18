@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useState, type ReactNode } from "react";
-import { lireMonProfil, seConnecter, seDeconnecter } from "../api";
-import type { Utilisateur } from "../types";
+import { lireMonProfil, seConnecter, seDeconnecter } from "../services/api";
+import type { Utilisateur } from "../utils/types";
 import { ContexteAuth } from "./useAuth";
 
 export function FournisseurAuth({ children }: { children: ReactNode }) {

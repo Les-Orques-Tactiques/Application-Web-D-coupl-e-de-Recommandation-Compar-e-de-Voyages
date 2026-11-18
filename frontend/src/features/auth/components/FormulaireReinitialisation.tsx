@@ -5,10 +5,10 @@ import { Bandeau } from "@/components/ui/Bandeau";
 import { Bouton } from "@/components/ui/Bouton";
 import { Champ } from "@/components/ui/Champ";
 import { ErreurApi } from "@/lib/clientApi";
-import { reinitialiserMotDePasse } from "../api";
+import { reinitialiserMotDePasse } from "../services/api";
 import { useAuth } from "../contexte/useAuth";
-import { messagePourErreur } from "../erreurs";
-import { AIDE_MOT_DE_PASSE, verifierMotDePasse } from "../validation";
+import { messagePourErreur } from "../utils/erreurs";
+import { AIDE_MOT_DE_PASSE, verifierMotDePasse } from "../utils/validation";
 
 type ErreursChamps = { motDePasse?: string; confirmation?: string };
 

@@ -1,6 +1,6 @@
 import { createContext, useContext } from "react";
-import type { seConnecter } from "../api";
-import type { Utilisateur } from "../types";
+import type { seConnecter } from "../services/api";
+import type { Utilisateur } from "../utils/types";
 
 type ValeurContexteAuth = {
   utilisateur: Utilisateur | null; // null = personne n'est connecté

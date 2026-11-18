@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 import { Bandeau } from "@/components/ui/Bandeau";
 import { Bouton, classeBouton } from "@/components/ui/Bouton";
 import { Champ } from "@/components/ui/Champ";
-import { renvoyerEmailActivation } from "../api";
-import type { StatutActivation } from "../types";
+import { renvoyerEmailActivation } from "../services/api";
+import type { StatutActivation } from "../utils/types";
 
 // États du bouton "Renvoyer l'e-mail" : repos, envoi en cours, e-mail envoyé, échec
 type EtatRenvoi = "repos" | "envoi" | "envoye" | "erreur";

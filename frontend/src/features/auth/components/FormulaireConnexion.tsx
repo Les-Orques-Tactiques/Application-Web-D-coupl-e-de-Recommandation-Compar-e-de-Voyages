@@ -6,7 +6,7 @@ import { Bouton } from "@/components/ui/Bouton";
 import { Champ } from "@/components/ui/Champ";
 import { ErreurApi } from "@/lib/clientApi";
 import { useAuth } from "../contexte/useAuth"; // ← NOUVEAU (remplace l'import de seConnecter)
-import { messagePourErreur } from "../erreurs";
+import { messagePourErreur } from "../utils/erreurs";
 
 /** Formulaire de connexion : e-mail + mot de passe, avec un bandeau d'erreur si la connexion échoue. */
 export function FormulaireConnexion() {

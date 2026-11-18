@@ -1,11 +1,11 @@
 import { Navigate, createBrowserRouter } from "react-router-dom";
 import { RouteProtegee } from "@/features/auth/components/RouteProtegee";
 import { MiseEnPagePublique } from "@/layouts/MiseEnPagePublique";
-import PageActivation from "@/pages/PageActivation";
-import PageConnexion from "@/pages/PageConnexion";
-import PageInscription from "@/pages/PageInscription";
-import PageMotDePasseOublie from "@/pages/PageMotDePasseOublie";
-import PageReinitialisation from "@/pages/PageReinitialisation";
+import PageActivation from "@/features/auth/pages/PageActivation";
+import PageConnexion from "@/features/auth/pages/PageConnexion";
+import PageInscription from "@/features/auth/pages/PageInscription";
+import PageMotDePasseOublie from "@/features/auth/pages/PageMotDePasseOublie";
+import PageReinitialisation from "@/features/auth/pages/PageReinitialisation";
 
 /**
  * Table de routage : associe une adresse (URL) à la page à afficher.

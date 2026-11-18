@@ -1,5 +1,5 @@
 import { appelerApi } from "@/lib/clientApi";
-import type { DonneesConnexion, DonneesInscription, ReponseConnexion, Utilisateur } from "./types";
+import type { DonneesConnexion, DonneesInscription, ReponseConnexion, Utilisateur } from "../utils/types";
 
 // Remarque : appelerApi fait lui-même le JSON.stringify de "corps".
 // Il faut donc toujours passer un objet, jamais une chaîne JSON.

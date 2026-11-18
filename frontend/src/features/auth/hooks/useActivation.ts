@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { ErreurApi } from "@/lib/clientApi";
-import { activerCompte } from "../api";
-import type { StatutActivation } from "../types";
+import { activerCompte } from "../services/api";
+import type { StatutActivation } from "../utils/types";
 
 /**
  * "Hook" personnalisé (une fonction dont le nom commence par "use") : il regroupe la logique

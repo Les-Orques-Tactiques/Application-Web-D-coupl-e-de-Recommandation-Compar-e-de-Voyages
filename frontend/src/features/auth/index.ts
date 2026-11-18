@@ -4,4 +4,4 @@ export { FormulaireInscription } from "./components/FormulaireInscription";
 export { FormulaireConnexion } from "./components/FormulaireConnexion";
 export { CarteActivation } from "./components/CarteActivation";
 export { useActivation } from "./hooks/useActivation";
-export { emailEnAttente } from "./stockage";
+export { emailEnAttente } from "./utils/stockage";

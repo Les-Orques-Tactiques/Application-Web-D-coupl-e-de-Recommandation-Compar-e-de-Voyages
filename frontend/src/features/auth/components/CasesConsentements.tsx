@@ -1,6 +1,6 @@
 import type { ChangeEvent } from "react";
 import { CaseACocher } from "@/components/ui/CaseACocher";
-import type { Consentements } from "../types";
+import type { Consentements } from "../utils/types";
 
 // Ce composant ne garde aucun état : il reçoit la valeur actuelle et prévient le parent
 // (via auChangement) quand elle change. Le parent reste "propriétaire" des données.
