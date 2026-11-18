@@ -122,6 +122,8 @@ CREATE INDEX IF NOT EXISTS idx_tokens_revoques_expire ON tokens_revoques (expire
 CREATE TABLE IF NOT EXISTS pays (
     code_pays   CHAR(2) PRIMARY KEY,           -- ISO 3166-1 alpha-2
     nom         VARCHAR(150) NOT NULL,
+    lien_wikipedia TEXT,
+    image_url TEXT,
     cree_le     TIMESTAMPTZ NOT NULL DEFAULT NOW()
 );
 
