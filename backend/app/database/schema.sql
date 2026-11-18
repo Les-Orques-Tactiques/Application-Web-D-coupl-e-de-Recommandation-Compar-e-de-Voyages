@@ -275,7 +275,6 @@ CREATE TABLE IF NOT EXISTS preferences_utilisateur (
     budget_max            NUMERIC(10,2) CHECK (budget_max >= 0),
     escales_max           SMALLINT CHECK (escales_max >= 0),
     compagnies_preferees  VARCHAR(120)[] NOT NULL DEFAULT '{}',
-    bagage_requis         BOOLEAN,
     latitude_depart       DOUBLE PRECISION,
     longitude_depart      DOUBLE PRECISION,
     modifie_le            TIMESTAMPTZ NOT NULL DEFAULT NOW()

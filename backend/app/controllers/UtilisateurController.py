@@ -103,14 +103,6 @@ class UtilisateurController:
             )
             return ConsentementsOut(**consentements)
 
-        @limiter.limit("10/minute")
-        def terminer_onboarding(
-            request: Request,
-            utilisateur: Utilisateur = Depends(get_current_utilisateur),
-        ):
-            self.utilisateur_service.terminer_onboarding(utilisateur.id)
-            return MessageOut(message="Onboarding terminé.")
-
         # ---- routes ----
 
         self.router.add_api_route(
@@ -145,10 +137,5 @@ class UtilisateurController:
             "/moi/consentements", modifier_consentement, methods=["PUT"],
             response_model=ConsentementsOut,
         )
-        self.router.add_api_route(
-            "/moi/onboarding", terminer_onboarding, methods=["POST"],
-            response_model=MessageOut,
-        )
-
 
 ctrl = UtilisateurController()
