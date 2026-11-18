@@ -29,6 +29,7 @@ export interface ChoixPreferences {
   aeroport: string; // "" si rien n'est saisi
   budget: number | null; // null = sans limite
   trajet: Trajet;
+  compagnies: string[]; // [] si rien n'est saisi
 }
 
 // ---------------------------------------------------------------------------
