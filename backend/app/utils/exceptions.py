@@ -65,3 +65,24 @@ class ConsentementRequisError(ValidationError):
     """Levée quand l'activation du compte est tentée sans consentement au traitement des données."""
     def __init__(self, message: str = "L'acceptation du traitement des données est obligatoire."):
         super().__init__({"consentement_donnees": [message]})
+
+# ----------------------------------------------------------------------------
+# Domaine : préférences
+# ----------------------------------------------------------------------------
+class AeroportInconnuError(ValidationError):
+    """Code IATA absent de la table aeroports (violation de la clé étrangère).
+    Sous-classe de ValidationError : le controller renvoie déjà un 400 structuré."""
+    def __init__(self, message: str = "Aéroport inconnu."):
+        super().__init__({"aeroport_habituel": [message]})
+
+
+class ConsentementLocalisationRequisError(AccesRefuseError):
+    """Enregistrement du lieu de départ sans le consentement « localisation ». (403)
+    À ne pas confondre avec ConsentementRequisError (activation du compte)."""
+    def __init__(self, message: str = "Le consentement à la localisation est nécessaire pour enregistrer votre lieu de départ."):
+        super().__init__(message)
+        
+class OnboardingDejaTermineError(ConflitError):
+    """Onboarding déjà effectué : il ne se fait qu'une fois. (409)"""
+    def __init__(self, message: str = "L'onboarding est déjà terminé."):
+        super().__init__(message)
