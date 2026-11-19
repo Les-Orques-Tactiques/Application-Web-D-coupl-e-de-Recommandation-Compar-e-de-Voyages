@@ -1,5 +1,5 @@
 import { ArrowRight } from "lucide-react";
-import type { RechercheHistorique } from "../utils/types";
+import type { RechercheHistorique } from "../services/explorationApi";
 import { formaterDate } from "../utils/formatage";
 import { Encart } from "./Encart";
 
