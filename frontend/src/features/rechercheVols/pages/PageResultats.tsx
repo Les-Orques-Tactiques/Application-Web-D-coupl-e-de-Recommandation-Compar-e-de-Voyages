@@ -1,7 +1,9 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useMemo, useState } from "react";
+import { Link, useSearchParams } from "react-router-dom";
 import { Info, Sparkles } from "lucide-react";
 import { SurTitre } from "@/components/ui/SurTitre";
+import type { CriteresRecherche } from "@/features/explorer";
+import { depuisParametres } from "@/features/explorer/utils/parametresRecherche";
 import { BarreTri } from "../components/BarreTri";
 import { CarteVol } from "../components/CarteVol";
 import { Encart } from "../components/Encart";
@@ -14,21 +16,56 @@ import { useFiltres } from "../hooks/useFiltres";
 import { useResultats } from "../hooks/useResultats";
 import { boutonSecondaire } from "../utils/styles";
 import { formaterDates } from "../utils/formats";
-import type { Avis, Vol } from "../utils/types";
+import type { Avis, Filtres, Vol } from "../utils/types";
 
 /**
  * Page de résultats (/resultats). Affichée dans MiseEnPagePrivee, qui fournit
  * l'en-tête (onglets, avatar, déconnexion) et le pied de page.
  *
+ * 🆕 Les critères arrivent par l'URL depuis la page Explorer :
+ *   /resultats?origine=LYS&destination=LIS&depart=2027-06-12&...
+ *
+ * Ce composant lit l'URL puis affiche ContenuResultats.
+ * key={...} : si l'URL change (nouvelle recherche depuis Explorer),
+ * React recrée entièrement le contenu → les hooks repartent de zéro
+ * et la nouvelle recherche est lancée automatiquement.
+ */
+export default function PageResultats() {
+    const [searchParams] = useSearchParams();
+    const cle = searchParams.toString();
+    // null si l'URL ne contient pas de recherche complète (accès direct à /resultats)
+    const criteres = useMemo(() => depuisParametres(new URLSearchParams(cle)), [cle]);
+
+    return <ContenuResultats key={cle} criteres={criteres} />;
+}
+
+/** Traduit les critères d'Explorer en filtres de départ pour la page Résultats. */
+function versFiltresInitiaux(c: CriteresRecherche | null): Partial<Filtres> | undefined {
+    if (!c) return undefined; // pas de critères → filtres par défaut
+    return {
+        budget: c.budget_max,
+        escales: !c.direct_seulement, // « direct seulement » → on masque les vols avec escale
+        cabine: c.bagage_requis,      // « bagage requis » → seulement les vols avec bagage
+    };
+}
+
+type ProprietesContenu = {
+    criteres: CriteresRecherche | null;
+};
+
+/**
  * La page ne fait qu'assembler :
  * - useResultats : saisie, appel au serveur, vols, favoris ;
  * - useFiltres   : filtres et tri appliqués aux vols ;
  * - les composants s'occupent de l'affichage.
  * Elle garde seulement l'état purement visuel (formulaire ouvert, vol sélectionné, avis).
  */
-export default function PageResultats() {
-    const recherche = useResultats();
-    const filtrage = useFiltres(recherche.vols);
+function ContenuResultats({ criteres }: ProprietesContenu) {
+    // 🆕 Les critères de l'URL sont transmis aux deux hooks
+    const recherche = useResultats(criteres);
+    // useMemo : même objet à chaque rendu (utile pour « Réinitialiser »)
+    const filtresInitiaux = useMemo(() => versFiltresInitiaux(criteres), [criteres]);
+    const filtrage = useFiltres(recherche.vols, filtresInitiaux);
 
     const [edition, setEdition] = useState(false);
     const [selection, setSelection] = useState<Vol | null>(null);
@@ -65,10 +102,21 @@ export default function PageResultats() {
                 />
             )}
 
+            {/* 🆕 Erreur visible même quand le formulaire est fermé
+         (ex. la recherche automatique venue d'Explorer a échoué) */}
+            {!edition && recherche.erreur && (
+                <p role="alert" className="mt-6 rounded-lg bg-erreur-fond px-4 py-3 text-[13px] text-erreur">
+                    {recherche.erreur}
+                </p>
+            )}
+
             <header className="mb-5 mt-6">
                 <SurTitre>Votre sélection, expliquée</SurTitre>
                 <h1 aria-live="polite" className="mt-2 text-[32px] font-normal leading-tight tracking-tight text-encre sm:text-[40px]">
-                    {nb} vol{nb > 1 ? "s" : ""}. Et de bonnes raisons.
+                    {/* 🆕 Pendant la recherche automatique, on évite d'afficher « 0 vol » */}
+                    {recherche.enCours
+                        ? "Recherche des vols en cours…"
+                        : `${nb} vol${nb > 1 ? "s" : ""}. Et de bonnes raisons.`}
                 </h1>
                 <div className="mt-2 flex flex-wrap items-center justify-between gap-2">
                     <p className="text-xs text-attenue">
@@ -115,13 +163,14 @@ export default function PageResultats() {
                                 avis={avis[vol.id]}
                                 dates={dates}
                                 depuisLaBase={recherche.depuisLaBase}
-                                onBasculerFavori={() => recherche.basculerFavori(vol.id)}
+                                // 🆕 void : basculerFavori peut maintenant être asynchrone (appel API)
+                                onBasculerFavori={() => void recherche.basculerFavori(vol.id)}
                                 onDonnerAvis={valeur => setAvis(precedents => ({ ...precedents, [vol.id]: valeur }))}
                                 onVoir={() => setSelection(vol)}
                             />
                         ))}
 
-                        {nb === 0 && (
+                        {nb === 0 && !recherche.enCours && (
                             <div role="status" className="rounded-xl border border-trait bg-white p-8 text-center">
                                 <h2 className="text-xl text-encre">Aucun vol avec ces critères.</h2>
                                 <p className="my-3 text-sm text-attenue">Augmentez votre budget ou assouplissez vos filtres.</p>
