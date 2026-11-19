@@ -92,6 +92,15 @@ def calculer_signature(itineraire):
     return hashlib.sha256("#".join(morceaux).encode()).hexdigest()
 
 
+def extraire_bagage(itineraire):
+    """True si au moins un bagage en soute est inclus (bags.checked >= 1),
+    False s'il n'y en a pas, None si l'API ne le précise pas."""
+    bags = itineraire.get("bags")
+    if not isinstance(bags, dict) or bags.get("checked") is None:
+        return None
+    return bags["checked"] >= 1
+
+
 def assurer_aeroports(cur, donnees):
     codes = {donnees["origin"]: None, donnees["destination"]: None}
     for it in donnees["itineraries"]:
@@ -139,12 +148,14 @@ def normaliser(cur, ingestion_id, donnees):
                 date_retour, aller_retour, prix, devise, statut_prix, classe, auto_transfert,
                 transporteurs_mixtes,
                 compagnie_aller, duree_aller_min, escales_aller,
-                compagnie_retour, duree_retour_min, escales_retour, observe_le)
-            VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)
+                compagnie_retour, duree_retour_min, escales_retour,
+                bagage_inclus, observe_le)
+            VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)
             ON CONFLICT (signature) DO UPDATE
                 SET prix = EXCLUDED.prix, ignav_id = EXCLUDED.ignav_id,
                     statut_prix = EXCLUDED.statut_prix, observe_le = EXCLUDED.observe_le,
-                    transporteurs_mixtes = EXCLUDED.transporteurs_mixtes
+                    transporteurs_mixtes = EXCLUDED.transporteurs_mixtes,
+                    bagage_inclus = COALESCE(EXCLUDED.bagage_inclus, vols.bagage_inclus)
             RETURNING id, (xmax = 0) AS insere""",
             (calculer_signature(it), it["ignav_id"], ingestion_id,
             donnees["origin"], donnees["destination"], donnees["departure_date"],
@@ -156,6 +167,7 @@ def normaliser(cur, ingestion_id, donnees):
             retour["carrier"] if retour else None,
             retour["duration_minutes"] if retour else None,
             len(retour["segments"]) - 1 if retour else None,
+            extraire_bagage(it),
             donnees["observed_at"]))
         vol_id, insere = cur.fetchone()
         if insere:
