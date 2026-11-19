@@ -58,3 +58,13 @@ export type ValeursFormulaire = { prenom: string; nom: string; email: string; mo
 export type ErreursFormulaire = Partial<Record<keyof ValeursFormulaire | "conditions", string>>;
 
 export type ErreursChamps = { motDePasse?: string; confirmation?: string };
+
+/** Consentements du compte (même forme que ConsentementsOut côté back). */
+export interface ConsentementsCompte {
+  politique: boolean;        // accepté à l'inscription, ne peut pas être retiré ici
+  personnalisation: boolean;
+  localisation: boolean;
+}
+
+/** Seuls ces deux consentements peuvent être modifiés (Literal de ConsentementUpdate). */
+export type ConsentementModifiable = "personnalisation" | "localisation";

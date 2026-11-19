@@ -1,5 +1,15 @@
 import { appelerApi } from "@/lib/clientApi";
-import type { DonneesConnexion, DonneesInscription, ReponseConnexion, Utilisateur } from "../utils/types";
+import type {
+  ConsentementModifiable,
+  ConsentementsCompte,
+  DonneesConnexion,
+  DonneesInscription,
+  ReponseConnexion,
+  Utilisateur,
+} from "../utils/types";
+
+// useConsentements importe ce type depuis api.ts : on le réexporte ici
+export type { ConsentementsCompte } from "../utils/types";
 
 // Remarque : appelerApi fait lui-même le JSON.stringify de "corps".
 // Il faut donc toujours passer un objet, jamais une chaîne JSON.
@@ -87,3 +97,23 @@ export function modifierProfil(donnees: Pick<Utilisateur, "prenom" | "nom">): Pr
 
 /** Déconnecte la personne : le back révoque les jetons et supprime les cookies. */
 export const seDeconnecter = () => appelerApi("/api/auth/deconnexion", { methode: "POST" });
+
+const URL_CONSENTEMENTS = "/api/utilisateurs/moi/consentements";
+
+/** Lit les consentements de la personne connectée (401 si personne n'est connecté). */
+export const lireConsentements = () => appelerApi<ConsentementsCompte>(URL_CONSENTEMENTS);
+
+/**
+ * Accorde ou retire un consentement facultatif et renvoie TOUS les consentements à jour.
+ * Le corps doit être exactement { type, accorde } (modèle ConsentementUpdate),
+ * sinon le back répond 422.
+ */
+export function modifierConsentement(
+  type: ConsentementModifiable,
+  accorde: boolean,
+): Promise<ConsentementsCompte> {
+  return appelerApi<ConsentementsCompte>(URL_CONSENTEMENTS, {
+    methode: "PUT",
+    corps: { type, accorde },
+  });
+}

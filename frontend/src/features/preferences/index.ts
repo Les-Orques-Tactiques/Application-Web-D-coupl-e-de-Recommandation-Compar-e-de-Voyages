@@ -1,4 +1,4 @@
 // Porte d'entrée de la feature préférences, sur le même principe que features/auth/index.ts
 export { FormulairePreferences } from "./components/FormulairePreferences";
-export { lirePreferences } from "./services/preferenceServices";
+export { lirePreferences, modifierPreferences } from "./services/preferenceServices";
 export type { Preferences, Trajet } from "./utils/types"; 

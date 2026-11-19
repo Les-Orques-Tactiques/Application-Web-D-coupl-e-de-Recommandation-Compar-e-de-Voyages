@@ -10,12 +10,12 @@ import PageConnexion from "@/features/auth/pages/PageConnexion";
 import PageInscription from "@/features/auth/pages/PageInscription";
 import PageMotDePasseOublie from "@/features/auth/pages/PageMotDePasseOublie";
 import PageReinitialisation from "@/features/auth/pages/PageReinitialisation";
+import PageMonCompte from "@/features/compte/pages/PageMonCompte";
 import PageExplorer from "@/features/explorer/pages/PageExplorer";
-import PageComparateur from "@/features/comparateur/pages/PageComparateur";
-import PageOnboarding from "@/features/preferences/pages/PageOnboarding";
-
 import PageResultats from "@/features/rechercheVols/pages/PageResultats";
 import PageDetailVol from "@/features/rechercheVols/pages/PageDetailVol";
+import PageComparateur from "@/features/comparateur/pages/PageComparateur";
+import PageOnboarding from "@/features/preferences/pages/PageOnboarding";
 
 /**
  * Table de routage : associe une adresse (URL) à la page à afficher.
@@ -41,7 +41,6 @@ export const routeur = createBrowserRouter([
       { path: "/reinitialisation", element: <PageReinitialisation /> },
 
       // ----- Page protégée, mais avec l'en-tête public -----
-      // /onboarding n'a pas besoin des onglets Explorer / Favoris…
       {
         element: <RouteProtegee />,
         children: [
@@ -59,9 +58,8 @@ export const routeur = createBrowserRouter([
   },
 
   // ===== Espace connecté =====
-  // L'ordre compte : la garde est À L'EXTÉRIEUR de la mise en page.
-  // Une personne non connectée est donc redirigée avant que l'en-tête privé
-  // ne s'affiche (pas d'avatar « ?? » qui clignote).
+  // La garde est À L'EXTÉRIEUR de la mise en page : une personne non connectée
+  // est redirigée avant que l'en-tête privé ne s'affiche.
   {
     element: <RouteProtegee />,
     children: [
@@ -72,10 +70,13 @@ export const routeur = createBrowserRouter([
             element: <MiseEnPagePrivee />,
             children: [
               { path: "/explorer", element: <PageExplorer /> },
+              // Résultats : les critères arrivent dans l'URL (?origine=…&destination=…)
               { path: "/resultats", element: <PageResultats /> },
-              { path: "/comparateur", element: <PageComparateur /> },
+              // Détail d'un vol : ":id" est un paramètre (lu avec useParams si besoin)
               { path: "/vol/:id", element: <PageDetailVol /> },
-              // Les futures pages privées viendront ici (ex. /profil)
+              { path: "/comparateur", element: <PageComparateur /> },
+              // 🆕 Repris de complete-front
+              { path: "/mon-compte", element: <PageMonCompte /> },
             ],
           },
         ],

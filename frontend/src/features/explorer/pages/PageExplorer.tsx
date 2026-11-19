@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { Sparkles } from "lucide-react";
 import { useAuth } from "@/features/auth";
 import { lirePreferences } from "@/features/preferences";
 import { versParametres } from "@/features/explorer/utils/parametresRecherche";
@@ -43,7 +44,7 @@ export default function PageExplorer() {
   const { utilisateur } = useAuth();
   const { onglet, changerOnglet } = useOnglet();
   // useExplorer sert pour les favoris, l'historique et les recommandations.
-  // La recherche, elle, se fait désormais sur la page Résultats.
+  // La recherche, elle, se fait sur la page Résultats.
   const explorer = useExplorer();
   const navigate = useNavigate();
 
@@ -122,8 +123,6 @@ export default function PageExplorer() {
   }
 
   // Sur l'onglet « explorer », on montre les recommandations.
-  // Comme la recherche se fait maintenant sur /resultats, il n'y a plus de cas
-  // « résultats de recherche » ici.
   const afficherRecommandations = onglet === "explorer";
 
   // Message affiché quand il n'y a aucun vol à montrer
@@ -146,9 +145,9 @@ export default function PageExplorer() {
       : []; // ex. onglet « comparateur » : rien à afficher pour l'instant
 
   /**
-   * 🆕 Ouvre la page détail (/vol/:id) avec EXACTEMENT l'état attendu par PageDetailVol.
+   * Ouvre la page détail (/vol/:id) avec EXACTEMENT l'état attendu par PageDetailVol.
    * "satisfies" fait vérifier l'objet par TypeScript : une clé oubliée
-   * (comme "saisie", cause du plantage) devient une erreur de compilation.
+   * devient une erreur de compilation au lieu d'un plantage dans le navigateur.
    */
   function voirVol(vol: Vol) {
     const etat = {
@@ -225,12 +224,31 @@ export default function PageExplorer() {
             favorisIds={explorer.favorisIds}
             favorisEnCours={explorer.favorisEnCours}
             onBasculerFavori={(vol) => void explorer.basculerFavori(vol)}
-            // 🆕 Chaque carte affiche « Voir le vol », qui ouvre la page détail
+            // Chaque carte affiche « Voir le vol », qui ouvre la page détail
             onVoir={voirVol}
             messageSiVide={messageSiVide()}
           />
         )}
       </div>
+
+      {/* 🆕 Repris de complete-front : résumé de ce qui est lié au compte.
+          Les compteurs viennent de useExplorer (plus besoin de useState dédiés). */}
+      <aside className="mt-10 flex flex-wrap items-center gap-4 rounded-xl bg-menthe p-5">
+        <Sparkles className="size-7 shrink-0 text-principal" aria-hidden="true" />
+        <div className="min-w-[200px] flex-1">
+          <h2 className="text-base font-semibold text-encre">Vos choix donnent le cap.</h2>
+          <p className="mt-1 text-[13px] text-attenue">
+            {explorer.favoris.length} vol(s) favori(s) et {explorer.historique.length} recherche(s)
+            sont associés à votre compte.
+          </p>
+        </div>
+        <Link
+          to="/mon-compte"
+          className="rounded-lg border border-principal px-4 py-2 text-[13px] font-medium text-principal hover:bg-white"
+        >
+          Gérer mon profil
+        </Link>
+      </aside>
     </section>
   );
 }
