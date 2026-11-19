@@ -1,4 +1,4 @@
-import type { VolExplorer } from "../services/explorationApi";
+import type { VolExplorer } from "../utils/types";
 import { CarteVol } from "./CarteVol";
 import { Encart } from "./Encart";
 

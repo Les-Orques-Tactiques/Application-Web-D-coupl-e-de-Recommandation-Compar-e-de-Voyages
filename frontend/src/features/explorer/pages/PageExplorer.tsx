@@ -88,16 +88,16 @@ export default function PageExplorer() {
       <BandeauExplorer prenom={utilisateur?.prenom} />
 
       <FormulaireRecherche
- criteres={criteres}
- onChange={setCriteres}
+        criteres={criteres}
+        onChange={setCriteres}
         onRechercher={() => void lancerRecherche()}
         enCours={explorer.rechercheEnCours}
       />
 
       {explorer.erreur && (
         <p role="alert" className="mt-6 rounded-lg bg-erreur-fond px-4 py-3 text-[13px] text-erreur">
-   {explorer.erreur}
- </p>
+          {explorer.erreur}
+        </p>
       )}
 
       <div className="mt-10">
@@ -106,16 +106,16 @@ export default function PageExplorer() {
 
         {onglet === "historique" ? (
           <ListeHistorique
-     historique={explorer.historique}
-     chargement={explorer.chargement}
-     onReprendre={reprendre}
-   />
+            historique={explorer.historique}
+            chargement={explorer.chargement}
+            onReprendre={reprendre}
+          />
         ) : (
-   <ListeVols
-     vols={vols}
-     favorisEnCours={explorer.favorisEnCours}
-     onBasculerFavori={vol => void explorer.basculerFavori(vol)}
-     messageSiVide={messageSiVide()}
+          <ListeVols
+            vols={vols}
+            favorisEnCours={explorer.favorisEnCours}
+            onBasculerFavori={vol => void explorer.basculerFavori(vol)}
+            messageSiVide={messageSiVide()}
           />
         )}
       </div>

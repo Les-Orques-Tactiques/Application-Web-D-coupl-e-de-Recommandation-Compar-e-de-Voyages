@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { rechercherVols } from "@/features/auth/services/explorationApi";
+import { rechercherVols } from "@/features/explorer/services/explorationApi";
 import { SAISIE_PAR_DEFAUT } from "../utils/constantes";
 import { VOLS_DEMO } from "../utils/donneesDemo";
 import { convertirVolExplorer, extraireCodeIata, messageErreur, verifierSaisie } from "../utils/recherche";

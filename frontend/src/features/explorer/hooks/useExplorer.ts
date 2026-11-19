@@ -1,13 +1,7 @@
 import { useEffect, useState } from "react";
-import {
-  definirFavori,
-  lireFavoris,
-  lireHistorique,
-  rechercherVols,
-  type RechercheHistorique,
-  type VolExplorer,
-} from "../services/explorationApi";
+import { definirFavori, lireFavoris, lireHistorique, rechercherVols } from "../services/explorationApi";
 import { messageErreur } from "../utils/formatage";
+import type { RechercheHistorique, VolExplorer } from "../utils/types";
 
 /**
  * Type des critères = type du 1er paramètre de rechercherVols.
@@ -59,7 +53,7 @@ export function useExplorer() {
       // En aller simple, on n'envoie pas de date de retour
       const resultats = await rechercherVols({
         ...criteres,
- date_retour: criteres.aller_retour ? criteres.date_retour : null,
+        date_retour: criteres.aller_retour ? criteres.date_retour : null,
       });
       setVols(resultats);
       setARecherche(true);

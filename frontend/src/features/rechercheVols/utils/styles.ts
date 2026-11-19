@@ -12,7 +12,7 @@ export const boutonPrincipal =
 // =============================================================================
 
 import { useState } from "react";
-import { rechercherVols } from "@/features/auth/services/explorationApi";
+import { rechercherVols } from "@/features/explorer/services/explorationApi";
 import { SAISIE_PAR_DEFAUT } from "./constantes";
 import { VOLS_DEMO } from "./donneesDemo";
 import { convertirVolExplorer, extraireCodeIata, messageErreur, verifierSaisie } from "./recherche";

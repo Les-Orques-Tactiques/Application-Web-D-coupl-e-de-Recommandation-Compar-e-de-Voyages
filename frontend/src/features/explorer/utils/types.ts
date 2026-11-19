@@ -1,5 +1,3 @@
-import { appelerApi } from "@/lib/clientApi";
-
 export interface RechercheVols {
   origine: string;
   destination: string;
@@ -46,22 +44,4 @@ export interface RechercheHistorique {
   nb_passagers: number;
   budget_max: number | null;
   cree_le: string;
-}
-
-export async function rechercherVols(criteres: RechercheVols): Promise<VolExplorer[]> {
-  return appelerApi<VolExplorer[]>("/api/exploration/recherches", {
-    methode: "POST",
-    corps: criteres,
-  });
-}
-
-export const lireFavoris = () => appelerApi<VolExplorer[]>("/api/exploration/favoris");
-
-export const lireHistorique = () =>
-  appelerApi<RechercheHistorique[]>("/api/exploration/historique");
-
-export async function definirFavori(volId: string, favori: boolean): Promise<void> {
-  await appelerApi<{ favori: boolean }>(`/api/exploration/favoris/${volId}`, {
-    methode: favori ? "POST" : "DELETE",
-  });
 }
