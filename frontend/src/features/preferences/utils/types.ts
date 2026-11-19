@@ -17,11 +17,15 @@
 export const ESCALES_MAX_AUTORISE = 5;
 export const MAX_COMPAGNIES = 20;
 
+export type EtatLocalisation = "aucune" | "en-cours" | "enregistree" | "refusee" | "sans-consentement" | "erreur";
+
+export const LONGUEUR_MAX_COMPAGNIE = 120;
+
 // ---------------------------------------------------------------------------
 // Côté formulaire
 // ---------------------------------------------------------------------------
 
-/** Les options proposées par ChoixTrajet. À adapter si ton ancien type en avait d'autres. */
+/** Les options proposées par ChoixTrajet.*/
 export type Trajet = "direct" | "une escale" | "indifferent";
 
 /** Ce que la personne saisit dans FormulairePreferences (converti avant l'envoi). */
@@ -68,3 +72,13 @@ export interface LieuDepart {
   latitude: number; // de -90 à 90
   longitude: number; // de -180 à 180
 }
+
+/**
+ * Le back ne connaît pas "trajet", seulement "escales_max" (0 à 5, ou null = pas de limite).
+ * Record<...> oblige à traiter CHAQUE valeur possible de trajet.
+ */
+export const ESCALES_PAR_TRAJET: Record<ChoixPreferences["trajet"], number | null> = {
+  direct: 0,
+  "une escale": 1,
+  indifferent: null,
+};

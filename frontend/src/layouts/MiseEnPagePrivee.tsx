@@ -5,11 +5,12 @@ import { BoutonDeconnexion, useAuth } from "@/features/auth";
 // Classes communes pour centrer le contenu et limiter sa largeur (identiques à la mise en page publique)
 const conteneur = "mx-auto w-full max-w-7xl px-6 lg:px-16";
 
+// chemin : la page visée · cle : le paramètre ?onglet= (null = aucun)
 const onglets = [
-    { libelle: "Explorer", cle: null },
-    { libelle: "Mes favoris", cle: "favoris" },
-    { libelle: "Historique", cle: "historique" },
-    { libelle: "Comparateur", cle: "comparateur" },
+    { libelle: "Explorer", chemin: "/explorer", cle: null },
+    { libelle: "Mes favoris", chemin: "/explorer", cle: "favoris" },
+    { libelle: "Historique", chemin: "/explorer", cle: "historique" },
+    { libelle: "Comparateur", chemin: "/comparateur", cle: null },
 ] as const;
 
 /** Navigation principale. Réutilisée deux fois : sur grand écran et sur mobile. */
@@ -20,12 +21,13 @@ function NavigationApplication({ className }: { className: string }) {
 
     return (
         <nav aria-label="Navigation de l'application" className={className}>
-            {onglets.map(({ libelle, cle }) => {
-                const actif = pathname === "/explorer" && ongletActuel === cle;
+            {onglets.map(({ libelle, chemin, cle }) => {
+                // Actif si on est sur la bonne page ET sur le bon onglet
+                const actif = pathname === chemin && ongletActuel === cle;
                 return (
                     <Link
                         key={libelle}
-                        to={cle ? `/explorer?onglet=${cle}` : "/explorer"}
+                        to={cle ? `${chemin}?onglet=${cle}` : chemin}
                         // aria-current : indique aux lecteurs d'écran quel onglet est sélectionné
                         aria-current={actif ? "page" : undefined}
                         className={`flex items-center border-b-2 whitespace-nowrap ${actif ? "border-principal text-principal" : "border-transparent text-attenue hover:text-encre"
@@ -89,7 +91,7 @@ export function MiseEnPagePrivee() {
             </main>
 
             {/* Pied de page identique à la mise en page publique.
-          Idée pour plus tard : l'extraire dans un composant <PiedDePage /> partagé. */}
+   Idée pour plus tard : l'extraire dans un composant <PiedDePage /> partagé. */}
             <footer className="border-t border-trait bg-white text-[11px] text-attenue">
                 <div className={`${conteneur} flex flex-col gap-2 py-5 md:flex-row md:items-center md:justify-between`}>
                     <p>Les Orques tactiques · SAÉ BUT3 5.Real.01 · v0.1.0</p>

@@ -50,3 +50,11 @@ export interface DonneesConnexion {
  * succes / expire / invalide : résultat de la vérification
  */
 export type StatutActivation = "en_attente" | "chargement" | "succes" | "expire" | "invalide";
+
+// Les quatre champs texte du formulaire
+export type ValeursFormulaire = { prenom: string; nom: string; email: string; motDePasse: string };
+// Un message d'erreur possible par champ (Partial = chaque entrée est facultative : seuls les
+// champs en erreur sont présents). "keyof" liste les noms des champs.
+export type ErreursFormulaire = Partial<Record<keyof ValeursFormulaire | "conditions", string>>;
+
+export type ErreursChamps = { motDePasse?: string; confirmation?: string };

@@ -9,8 +9,7 @@ import { reinitialiserMotDePasse } from "../services/api";
 import { useAuth } from "../contexte/useAuth";
 import { messagePourErreur } from "../utils/erreurs";
 import { AIDE_MOT_DE_PASSE, verifierMotDePasse } from "../utils/validation";
-
-type ErreursChamps = { motDePasse?: string; confirmation?: string };
+import { ErreursChamps } from "../utils/types";
 
 /** Affiché quand le lien est absent, invalide, expiré ou déjà utilisé. */
 function LienInvalide() {

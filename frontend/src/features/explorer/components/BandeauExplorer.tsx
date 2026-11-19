@@ -5,12 +5,12 @@ export function BandeauExplorer({ prenom }: { prenom?: string }) {
       <div className="p-8">
         <span className="inline-block rounded-full bg-citron px-2.5 py-1 text-[10px] font-bold tracking-wide text-profond">
           VOTRE HORIZON, VOTRE RYTHME
- </span>
+        </span>
         <h1 className="mt-4 text-3xl font-semibold tracking-tight lg:text-[37px] lg:leading-tight">
           Bonjour {prenom ?? "voyageur"}, où s’envole-t-on ?
         </h1>
         <p className="mt-3 text-[15px] text-white/70">
-   On garde le cap sur vos envies. À vous de choisir la destination.
+          On garde le cap sur vos envies. À vous de choisir la destination.
         </p>
       </div>
       {/* bg-[url(...)] : valeur « arbitraire » Tailwind ; l'image est dans public/images/ */}

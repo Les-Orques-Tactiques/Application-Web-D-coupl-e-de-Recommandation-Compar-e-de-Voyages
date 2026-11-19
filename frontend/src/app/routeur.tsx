@@ -1,5 +1,7 @@
 import { Navigate, createBrowserRouter } from "react-router-dom";
 import { RouteProtegee } from "@/features/auth/components/RouteProtegee";
+import { RouteOnboarding } from "@/features/auth/components/RouteOnboarding";
+import { RouteDejaOnboarde } from "@/features/auth/components/RouteDejaOnboarde";
 import { MiseEnPagePublique } from "@/layouts/MiseEnPagePublique";
 import { MiseEnPagePrivee } from "@/layouts/MiseEnPagePrivee";
 import PageAccueil from "@/features/accueil/pages/PageAccueil";
@@ -9,16 +11,14 @@ import PageInscription from "@/features/auth/pages/PageInscription";
 import PageMotDePasseOublie from "@/features/auth/pages/PageMotDePasseOublie";
 import PageReinitialisation from "@/features/auth/pages/PageReinitialisation";
 import PageExplorer from "@/features/explorer/pages/PageExplorer";
+import PageComparateur from "@/features/comparateur/pages/PageComparateur";
 import PageOnboarding from "@/features/preferences/pages/PageOnboarding";
-import { RouteOnboarding } from "@/features/auth/components/RouteOnboarding";
-import { RouteDejaOnboarde } from "@/features/auth/components/RouteDejaOnboarde";
-
 
 /**
  * Table de routage : associe une adresse (URL) à la page à afficher.
  *
  * Deux mises en page :
- * - MiseEnPagePublique : accueil, formulaires d'authentification, et /bienvenue ;
+ * - MiseEnPagePublique : accueil, formulaires d'authentification, et /onboarding ;
  * - MiseEnPagePrivee   : l'espace connecté (onglets, avatar, déconnexion).
  *
  * Un objet sans "path" ne crée pas d'adresse : il « enveloppe » ses enfants
@@ -38,14 +38,14 @@ export const routeur = createBrowserRouter([
       { path: "/reinitialisation", element: <PageReinitialisation /> },
 
       // ----- Page protégée, mais avec l'en-tête public -----
-      // /bienvenue (onboarding) n'a pas besoin des onglets Explorer / Favoris…
+      // /onboarding n'a pas besoin des onglets Explorer / Favoris…
       {
         element: <RouteProtegee />,
         children: [
           {
             element: <RouteDejaOnboarde />,
-            children: [{ path: "/onboarding", element: <PageOnboarding /> }]
-          }
+            children: [{ path: "/onboarding", element: <PageOnboarding /> }],
+          },
         ],
       },
 
@@ -69,10 +69,10 @@ export const routeur = createBrowserRouter([
             element: <MiseEnPagePrivee />,
             children: [
               { path: "/explorer", element: <PageExplorer /> },
-              // Les futures pages privées viendront ici (ex. /profil, /comparateur)
+              { path: "/comparateur", element: <PageComparateur /> },
+              // Les futures pages privées viendront ici (ex. /profil)
             ],
           },
-          // Les futures pages privées viendront ici (ex. /profil, /comparateur)
         ],
       },
     ],

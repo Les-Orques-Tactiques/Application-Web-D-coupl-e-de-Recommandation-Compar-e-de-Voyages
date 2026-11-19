@@ -46,13 +46,13 @@ export const passerOnboarding = () => enregistrerOnboarding({});
  * 403 si la personne n'a pas donné son consentement « localisation ».
  * 422 si la latitude ou la longitude sort des limites.
  */
+// ~1 km de précision : suffisant pour trouver un aéroport de départ,
+// sans stocker la position exacte de la personne.
+const arrondir = (valeur: number) => Math.round(valeur * 100) / 100;
+
 export async function definirLieuDepart(lieu: LieuDepart): Promise<Preferences> {
   return appelerApi<Preferences>(`${URL_PREFERENCES}/lieu-depart`, {
     methode: "PUT",
-    corps: { latitude: lieu.latitude, longitude: lieu.longitude },
+    corps: { latitude: arrondir(lieu.latitude), longitude: arrondir(lieu.longitude) },
   });
 }
-
-/** Efface la position de départ enregistrée (DELETE, sans corps). */
-export const supprimerLieuDepart = () =>
-  appelerApi<Preferences>(`${URL_PREFERENCES}/lieu-depart`, { methode: "DELETE" });

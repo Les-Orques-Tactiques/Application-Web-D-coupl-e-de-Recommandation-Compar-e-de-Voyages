@@ -53,7 +53,6 @@ export function FormulaireConnexion() {
         <Bandeau ton="succes">{messageSucces}</Bandeau>
       )}
       <Champ libelle="Adresse e-mail" type="email" icone={Mail} autoComplete="email" placeholder="camille.martin@example.fr" required value={email} onChange={(evenement) => setEmail(evenement.target.value)} />
-      {/* ← MODIFIÉ : ChampMotDePasse gère lui-même type="password"/"text", l'icône Lock et le bouton œil */}
       <ChampMotDePasse libelle="Mot de passe" autoComplete="current-password" required value={motDePasse} onChange={(evenement) => setMotDePasse(evenement.target.value)} />
 
       <div className="text-right">

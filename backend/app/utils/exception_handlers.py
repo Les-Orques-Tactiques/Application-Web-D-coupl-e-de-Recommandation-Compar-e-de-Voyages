@@ -7,10 +7,9 @@ from app.utils.exceptions import (
     AccesRefuseError,
     ConflitError,
     IdentifiantsInvalidesError,
+    JetonExpireError,
     RessourceIntrouvableError,
     ValidationError,
-    JetonExpireError,
-    OnboardingDejaTermineError,
 )
 
 
@@ -19,7 +18,9 @@ def enregistrer_handlers(app: FastAPI) -> None:
 
     Les handlers sont résolus par la hiérarchie de classes :
     ConsentementRequisError -> ValidationError, EmailDejaUtiliseError -> ConflitError,
-    UtilisateurIntrouvableError -> RessourceIntrouvableError.
+    OnboardingDejaTermineError -> ConflitError,
+    UtilisateurIntrouvableError, PaysIntrouvableError, AeroportIntrouvableError,
+    VolIntrouvableError, RechercheIntrouvableError -> RessourceIntrouvableError.
     """
 
     @app.exception_handler(ValidationError)

@@ -55,8 +55,8 @@ export function CarteActivation({ statut, email }: PropsCarteActivation) {
     }
   }
 
-  return (
-    <div className="mt-8 max-w-[620px] rounded-3xl border border-trait bg-white p-8 sm:p-10">
+   return (
+    <div className="mx-auto mt-8 max-w-[620px] rounded-3xl border border-trait bg-white p-8 text-left sm:p-10">
       <div className="flex items-center gap-4">
         <span className="grid size-11 place-items-center rounded-xl bg-menthe text-principal">
           <Mail aria-hidden="true" className="size-5" />
