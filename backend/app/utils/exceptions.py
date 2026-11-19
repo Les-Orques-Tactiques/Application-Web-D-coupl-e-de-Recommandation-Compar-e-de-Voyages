@@ -107,7 +107,10 @@ class VolIntrouvableError(RessourceIntrouvableError):
     def __init__(self, message: str = "Vol introuvable."):
         super().__init__(message)
 
+# ----------------------------------------------------------------------------
+# Domaine : historique
+# ----------------------------------------------------------------------------
 class RechercheIntrouvableError(RessourceIntrouvableError):
-    """Recherche inconnue ou appartenant à un autre utilisateur. (404)"""
+    """Recherche inconnue ou appartenant à un autre utilisateur (même réponse). (404)"""
     def __init__(self, message: str = "Recherche introuvable."):
         super().__init__(message)

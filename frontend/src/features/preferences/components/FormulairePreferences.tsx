@@ -1,17 +1,31 @@
 import { useState, type SubmitEvent } from "react";
 import { useNavigate } from "react-router-dom";
-import { ArrowRight, LocateFixed, Plane, PlaneTakeoff, Wallet, X } from "lucide-react";
+import { ArrowRight, LocateFixed, Plane, Wallet, X } from "lucide-react";
 import { Bandeau } from "@/components/ui/Bandeau";
 import { Bouton } from "@/components/ui/Bouton";
 import { Champ } from "@/components/ui/Champ";
 import { ErreurApi } from "@/lib/clientApi";
 import { useAuth } from "@/features/auth";
+import { ChampAeroport } from "@/features/referentiel";
 import { definirLieuDepart, enregistrerOnboarding, passerOnboarding } from "../services/preferenceServices";
-import { ESCALES_PAR_TRAJET, EtatLocalisation, LONGUEUR_MAX_COMPAGNIE, MAX_COMPAGNIES, type ChoixPreferences, type PreferencesModifiables } from "../utils/types";
+import { MAX_COMPAGNIES, type ChoixPreferences, type PreferencesModifiables } from "../utils/types";
 import { CarteBoussole } from "./CarteBoussole";
 import { ChoixTrajet } from "./ChoixTrajet";
 import { PastillesBudget } from "./PastillesBudget";
 
+type EtatLocalisation = "aucune" | "en-cours" | "enregistree" | "refusee" | "sans-consentement" | "erreur";
+
+const LONGUEUR_MAX_COMPAGNIE = 120;
+
+/**
+ * Le back ne connaît pas "trajet", seulement "escales_max" (0 à 5, ou null = pas de limite).
+ * Record<...> oblige à traiter CHAQUE valeur possible de trajet.
+ */
+const ESCALES_PAR_TRAJET: Record<ChoixPreferences["trajet"], number | null> = {
+  direct: 0,
+  "une escale": 1,
+  indifferent: null,
+};
 
 /** Convertit la saisie du formulaire en corps attendu par le back. */
 function versCorpsApi(choix: ChoixPreferences): PreferencesModifiables {
@@ -27,7 +41,7 @@ function versCorpsApi(choix: ChoixPreferences): PreferencesModifiables {
 function messagePourErreurPreferences(erreur: unknown): string {
   if (erreur instanceof ErreurApi) {
     switch (erreur.statut) {
-      case 400: return "Cet aéroport est inconnu. Vérifiez le code IATA (par exemple LYS ou CDG).";
+      case 400: return "Cet aéroport n'est plus disponible. Choisissez-en un autre dans la liste.";
       case 401: return "Votre session a expiré. Reconnectez-vous.";
       case 422: return "Une des valeurs a été refusée. Vérifiez vos choix.";
       case 429: return "Trop de tentatives. Patientez une minute avant de réessayer.";
@@ -54,10 +68,6 @@ export function FormulairePreferences() {
     setPreferences((precedentes) => ({ ...precedentes, [cle]: valeur }));
   }
 
-  function changerAeroport(texte: string) {
-    modifier("aeroport", texte.toUpperCase().replace(/[^A-Z]/g, "").slice(0, 3));
-  }
-
   function changerBudget(texte: string) {
     modifier("budget", texte === "" ? null : Math.max(0, Number(texte)));
   }
@@ -78,7 +88,7 @@ export function FormulairePreferences() {
     modifier("compagnies", preferences.compagnies.filter((c) => c !== nom));
   }
 
-  // La position est envoyée au back (PUT /lieu-depart)
+  // La position est envoyée au back (PUT /lieu-depart). L'arrondi est fait dans le service.
   function utiliserPosition() {
     if (!("geolocation" in navigator)) {
       setLocalisation("refusee");
@@ -98,7 +108,8 @@ export function FormulairePreferences() {
           setLocalisation(erreur instanceof ErreurApi && erreur.statut === 403 ? "sans-consentement" : "erreur");
         }
       },
-      () => setLocalisation("refusee"), // la personne a refusé dans le navigateur
+      () => setLocalisation("refusee"), // refus dans le navigateur, ou délai dépassé
+      { timeout: 10000 },
     );
   }
 
@@ -119,6 +130,11 @@ export function FormulairePreferences() {
       await appel();
       terminerOnboarding();
     } catch (erreur) {
+      // 409 : onboarding déjà terminé (double clic, deuxième onglet). Rien à corriger : on continue.
+      if (erreur instanceof ErreurApi && erreur.statut === 409) {
+        terminerOnboarding();
+        return;
+      }
       setMessageErreur(messagePourErreurPreferences(erreur));
     } finally {
       setEnvoiEnCours(false);
@@ -128,11 +144,6 @@ export function FormulairePreferences() {
   // Branché sur POST /onboarding
   function enregistrer(evenement: SubmitEvent<HTMLFormElement>) {
     evenement.preventDefault();
-    // Le back exige exactement 3 lettres : on prévient avant l'envoi plutôt qu'après un 422
-    if (preferences.aeroport.length > 0 && preferences.aeroport.length < 3) {
-      setMessageErreur("Le code aéroport doit contenir 3 lettres, ou rester vide.");
-      return;
-    }
     // Une compagnie tapée mais pas encore validée (sans Entrée) est incluse dans l'envoi
     const compagnies = ajouterCompagnie();
     void envoyer(() => enregistrerOnboarding(versCorpsApi({ ...preferences, compagnies })));
@@ -145,14 +156,14 @@ export function FormulairePreferences() {
           <h2 className="text-[22px] tracking-tight">D'où aimez-vous partir ?</h2>
           <span className="text-xs text-attenue">Facultatif</span>
         </div>
-        <Champ
-          className="mt-5"
-          libelle="Aéroport habituel"
-          icone={PlaneTakeoff}
-          placeholder="Code IATA, par exemple LYS"
-          value={preferences.aeroport}
-          onChange={(e) => changerAeroport(e.target.value)}
-        />
+        <div className="mt-5">
+          <ChampAeroport
+            libelle="Aéroport habituel"
+            code={preferences.aeroport}
+            onChoisir={(a) => modifier("aeroport", a.code_iata)}
+            onEffacer={() => modifier("aeroport", "")}
+          />
+        </div>
         <button
           type="button"
           onClick={utiliserPosition}

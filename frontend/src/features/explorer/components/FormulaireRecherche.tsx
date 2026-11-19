@@ -1,6 +1,7 @@
 import type { ReactNode, SubmitEvent } from "react";
-import { Calendar, Plane, Search, User, Wallet, type LucideIcon } from "lucide-react";
+import { Calendar, Search, User, Wallet, type LucideIcon } from "lucide-react";
 import { Bouton } from "@/components/ui/Bouton";
+import { ChampAeroport } from "@/features/referentiel";
 import type { CriteresRecherche } from "../hooks/useExplorer";
 
 type Props = {
@@ -41,10 +42,20 @@ export function FormulaireRecherche({ criteres, onChange, onRechercher, enCours 
         </BoutonTypeVoyage>
       </div>
 
-      {/* Départ et destination (fixes pour l'instant) */}
+      {/* Départ et destination */}
       <div className="mt-5 grid gap-5 md:grid-cols-2">
-        <Lieu titre="Au départ de" pays="France" ville="Lyon" aeroport="Lyon–Saint-Exupéry · LYS" />
-        <Lieu titre="Envie d’aller à" pays="Portugal" ville="Lisbonne" aeroport="Humberto Delgado · LIS" />
+        <ChampAeroport
+          libelle="Au départ de"
+          code={criteres.origine}
+          onChoisir={a => modifier("origine", a.code_iata)}
+          onEffacer={() => modifier("origine", "")}
+        />
+        <ChampAeroport
+          libelle="Envie d’aller à"
+          code={criteres.destination}
+          onChoisir={a => modifier("destination", a.code_iata)}
+          onEffacer={() => modifier("destination", "")}
+        />
       </div>
 
       {/* Dates, passagers, budget : 2 colonnes sur mobile, 4 sur grand écran */}
@@ -80,25 +91,16 @@ export function FormulaireRecherche({ criteres, onChange, onRechercher, enCours 
             <option value={3}>3 adultes</option>
           </select>
         </ChampRecherche>
-        <ChampRecherche libelle={`Budget maximum${criteres.aller_retour ? " A/R" : ""}`} icone={Wallet}>
+        <ChampRecherche libelle={`Budget max. par personne${criteres.aller_retour ? " (A/R)" : ""}`} icone={Wallet}>
           <input
             type="number"
             min={1}
             required
-            aria-label="Budget maximum"
+            aria-label="Budget maximum par personne"
             className={classeSaisie}
             value={criteres.budget_max}
             onChange={e => modifier("budget_max", Number(e.target.value))}
           />
-          <select
-            aria-label="Devise du budget"
-            className="bg-transparent text-[13px] text-encre outline-none"
-            value={criteres.devise}
-            onChange={e => modifier("devise", e.target.value)}
-          >
-            <option value="EUR">EUR</option>
-            <option value="USD">USD</option>
-          </select>
         </ChampRecherche>
       </div>
 
@@ -124,7 +126,7 @@ export function FormulaireRecherche({ criteres, onChange, onRechercher, enCours 
             Bagage en soute obligatoire
           </label>
         </div>
-        <Bouton type="submit" disabled={enCours}>
+        <Bouton type="submit" disabled={enCours || !criteres.origine || !criteres.destination}>
           {enCours ? "Recherche…" : "Trouver mes vols"}
           <Search aria-hidden="true" className="size-4" />
         </Bouton>
@@ -144,28 +146,6 @@ function ChampRecherche({ libelle, icone: Icone, children }: { libelle: string; 
         {children}
       </div>
     </label>
-  );
-}
-
-/** Bloc « Au départ de » / « Envie d'aller à » (lecture seule pour la démo) */
-function Lieu({ titre, pays, ville, aeroport }: { titre: string; pays: string; ville: string; aeroport: string }) {
-  return (
-    <div>
-      <h2 className="mb-2 text-[10px] font-semibold tracking-[0.15em] text-principal uppercase">{titre}</h2>
-      <div className="grid grid-cols-2 gap-3">
-        <ChampRecherche libelle="Pays">
-          <input readOnly value={pays} className={classeSaisie} />
-        </ChampRecherche>
-        <ChampRecherche libelle="Ville">
-          <input readOnly value={ville} className={classeSaisie} />
-        </ChampRecherche>
-      </div>
-      <div className="mt-3">
-        <ChampRecherche libelle="Aéroport" icone={Plane}>
-          <input readOnly value={aeroport} className={classeSaisie} />
-        </ChampRecherche>
-      </div>
-    </div>
   );
 }
 

@@ -1,41 +1,69 @@
-import { useEffect, useState } from "react";
-import { definirFavori, lireFavoris, lireHistorique, rechercherVols } from "../services/explorationApi";
+import { useEffect, useMemo, useState } from "react";
+import {
+  definirFavori,
+  lireFavoris,
+  lireHistorique,
+  rechercherVols,
+  type RechercheHistorique,
+  type RechercheVols,
+  type Vol,
+} from "../services/explorationApi";
 import { messageErreur } from "../utils/formatage";
-import type { RechercheHistorique, VolExplorer } from "../utils/types";
 
 /**
- * Type des critères = type du 1er paramètre de rechercherVols.
- * Pas besoin de le réécrire : si l'API change, ce type suit automatiquement.
+ * Critères tels que le formulaire les manipule (modèle d'UI).
+ * La traduction vers le contrat de l'API se fait à un seul endroit : versRequeteApi.
  */
-export type CriteresRecherche = Parameters<typeof rechercherVols>[0];
+export type CriteresRecherche = {
+  origine: string; // code IATA
+  destination: string;
+  aller_retour: boolean;
+  date_depart: string;
+  date_retour: string | null;
+  nb_passagers: number;
+  budget_max: number;
+  direct_seulement: boolean;
+  bagage_requis: boolean;
+};
 
-/**
- * Toutes les données de l'espace Explorer et les actions possibles.
- * Même rôle que useActivation pour PageActivation : la page n'appelle
- * jamais le serveur elle-même.
- */
+export function versRequeteApi(c: CriteresRecherche): RechercheVols {
+  return {
+    origine: c.origine,
+    destination: c.destination,
+    date_depart: c.date_depart,
+    aller_retour: c.aller_retour,
+    date_retour: c.aller_retour ? c.date_retour : null,
+    passagers: c.nb_passagers,
+    budget: c.budget_max,
+    escales_max: c.direct_seulement ? 0 : null,
+    bagage_inclus: c.bagage_requis ? true : null, // jamais false : filtrerait les vols sans bagage
+  };
+}
+
 export function useExplorer() {
-  const [vols, setVols] = useState<VolExplorer[]>([]);
-  const [favoris, setFavoris] = useState<VolExplorer[]>([]);
+  const [vols, setVols] = useState<Vol[]>([]);
+  const [favoris, setFavoris] = useState<Vol[]>([]);
   const [historique, setHistorique] = useState<RechercheHistorique[]>([]);
   const [chargement, setChargement] = useState(true);
   const [rechercheEnCours, setRechercheEnCours] = useState(false);
-  const [aRecherche, setARecherche] = useState(false); // au moins une recherche réussie ?
-  const [favorisEnCours, setFavorisEnCours] = useState<string[]>([]); // ids en cours de modification
+  const [aRecherche, setARecherche] = useState(false);
+  const [favorisEnCours, setFavorisEnCours] = useState<Set<string>>(new Set());
   const [erreur, setErreur] = useState<string | null>(null);
 
-  // Au premier affichage : on charge favoris et historique en parallèle
+  // Source de vérité unique : la liste des favoris. Les cartes lisent cet ensemble.
+  const favorisIds = useMemo(() => new Set(favoris.map(v => v.id)), [favoris]);
+
   useEffect(() => {
     // "actif" évite de modifier l'état si la page a été quittée entre-temps
     let actif = true;
-    Promise.all([lireFavoris(), lireHistorique()])
-      .then(([volsFavoris, recherches]) => {
+    // allSettled : l'échec d'un appel n'empêche pas d'afficher l'autre
+    Promise.allSettled([lireFavoris(), lireHistorique()])
+      .then(([resFavoris, resHistorique]) => {
         if (!actif) return;
-        setFavoris(volsFavoris);
-        setHistorique(recherches);
-      })
-      .catch((e: unknown) => {
-        if (actif) setErreur(`Impossible de charger vos données : ${messageErreur(e)}`);
+        if (resFavoris.status === "fulfilled") setFavoris(resFavoris.value);
+        if (resHistorique.status === "fulfilled") setHistorique(resHistorique.value);
+        const echec = [resFavoris, resHistorique].find(r => r.status === "rejected");
+        if (echec) setErreur(`Impossible de charger vos données : ${messageErreur(echec.reason)}`);
       })
       .finally(() => {
         if (actif) setChargement(false);
@@ -45,49 +73,57 @@ export function useExplorer() {
     };
   }, []);
 
+  // La recherche est déjà enregistrée côté serveur.
+  // Un échec du rafraîchissement ne doit pas faire croire que la recherche a échoué.
+  async function rafraichirHistorique() {
+    try {
+      setHistorique(await lireHistorique());
+    } catch {
+      /* l'historique sera rechargé au prochain affichage */
+    }
+  }
+
   async function rechercher(criteres: CriteresRecherche) {
     setRechercheEnCours(true);
     setErreur(null);
     setVols([]);
     try {
-      // En aller simple, on n'envoie pas de date de retour
-      const resultats = await rechercherVols({
-        ...criteres,
-        date_retour: criteres.aller_retour ? criteres.date_retour : null,
-      });
-      setVols(resultats);
+      setVols(await rechercherVols(versRequeteApi(criteres)));
       setARecherche(true);
-      // La recherche vient d'être enregistrée côté serveur : on rafraîchit l'historique
-      setHistorique(await lireHistorique());
     } catch (e: unknown) {
       setErreur(`La recherche n’a pas abouti : ${messageErreur(e)}`);
+      return;
     } finally {
       setRechercheEnCours(false);
     }
+    await rafraichirHistorique();
   }
 
-  async function basculerFavori(vol: VolExplorer) {
-    if (favorisEnCours.includes(vol.id)) return; // évite le double clic
-    const nouveauStatut = !vol.favori;
-    setFavorisEnCours(ids => [...ids, vol.id]);
+  async function basculerFavori(vol: Vol) {
+    if (favorisEnCours.has(vol.id)) return; // évite le double clic
+    const nouveauStatut = !favorisIds.has(vol.id);
+    setFavorisEnCours(ids => new Set(ids).add(vol.id));
     setErreur(null);
     try {
       await definirFavori(vol.id, nouveauStatut);
-      const volMisAJour = { ...vol, favori: nouveauStatut };
-      setVols(liste => liste.map(v => (v.id === vol.id ? volMisAJour : v)));
       setFavoris(liste =>
-        nouveauStatut ? [volMisAJour, ...liste.filter(v => v.id !== vol.id)] : liste.filter(v => v.id !== vol.id),
+        nouveauStatut ? [vol, ...liste.filter(v => v.id !== vol.id)] : liste.filter(v => v.id !== vol.id),
       );
     } catch (e: unknown) {
       setErreur(`Impossible de modifier ce favori : ${messageErreur(e)}`);
     } finally {
-      setFavorisEnCours(ids => ids.filter(id => id !== vol.id));
+      setFavorisEnCours(ids => {
+        const suivant = new Set(ids);
+        suivant.delete(vol.id);
+        return suivant;
+      });
     }
   }
 
   return {
     vols,
     favoris,
+    favorisIds,
     historique,
     chargement,
     rechercheEnCours,

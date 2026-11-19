@@ -21,7 +21,8 @@ from app.services.PaysService import PaysService
 from app.services.AeroportService import AeroportService
 from app.services.VolService import VolService
 from app.services.RechercheService import RechercheService
-
+from app.models.favori.FavoriDAO import FavoriDAO
+from app.services.FavoriService import FavoriService
 # ----------------------------------------------------------------------------
 # DAO : une instance chacun, sans état (chaque appel passe par le pool de
 # connexions), donc sans risque à partager. Le pool doit être initialisé
@@ -36,6 +37,8 @@ pays_dao = PaysDAO()
 aeroport_dao = AeroportDAO()
 vol_dao = VolDAO()
 recherche_dao = RechercheDAO()
+favori_dao = FavoriDAO()
+favori_service = FavoriService(favori_dao, utilisateur_dao)
 
 # ----------------------------------------------------------------------------
 # Services :

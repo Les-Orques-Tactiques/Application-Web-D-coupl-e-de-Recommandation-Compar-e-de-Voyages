@@ -23,3 +23,7 @@ export function formaterPrix(prix: number, devise: string): string {
 export function messageErreur(erreur: unknown): string {
   return erreur instanceof Error ? erreur.message : "Une erreur inattendue est survenue.";
 }
+
+export function formaterHeure(iso: string | null): string | null {
+  return iso && iso.length >= 16 ? iso.slice(11, 16) : null;
+}
