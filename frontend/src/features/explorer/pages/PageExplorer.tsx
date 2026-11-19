@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useAuth } from "@/features/auth";
+import { lirePreferences } from "@/features/preferences";
 import {
   BandeauExplorer,
   FormulaireRecherche,
@@ -21,7 +22,6 @@ const CRITERES_PAR_DEFAUT: CriteresRecherche = {
   aller_retour: true,
   nb_passagers: 1,
   budget_max: 220,
-  devise: "EUR",
   direct_seulement: true,
   bagage_requis: true,
 };
@@ -34,15 +34,6 @@ const TITRES = {
   comparateur: "Comparez vos prochains horizons.",
 } satisfies Record<Onglet, string>;
 
-/**
- * Espace connecté (/explorer). Affichée dans MiseEnPagePrivee, qui fournit
- * l'en-tête (onglets, avatar, déconnexion) et le pied de page.
- *
- * La page ne fait qu'assembler :
- * - useExplorer s'occupe des données (appels au serveur) ;
- * - useOnglet lit l'onglet actif dans l'adresse (/explorer?onglet=favoris) ;
- * - les composants s'occupent de l'affichage.
- */
 export default function PageExplorer() {
   const { utilisateur } = useAuth();
   const { onglet, changerOnglet } = useOnglet();
@@ -50,20 +41,55 @@ export default function PageExplorer() {
   // Les critères sont gardés ici (et pas dans le formulaire) pour que
   // « Reprendre » dans l'historique puisse les modifier.
   const [criteres, setCriteres] = useState(CRITERES_PAR_DEFAUT);
+  // Passe à true dès qu'une action de la personne a touché au formulaire
+  const modifieParUtilisateur = useRef(false);
+
+  // Toute modification manuelle du formulaire passe par ici
+  function changerCriteres(nouveaux: CriteresRecherche) {
+    modifieParUtilisateur.current = true;
+    setCriteres(nouveaux);
+  }
+
+  // Préremplit le formulaire avec les préférences enregistrées
+  useEffect(() => {
+    let actif = true;
+    lirePreferences()
+      .then((p) => {
+        // Si la personne a déjà touché au formulaire, on ne l'écrase pas
+        if (!actif || modifieParUtilisateur.current) return;
+        setCriteres((c) => ({
+          ...c,
+          origine: p.aeroport_habituel ?? c.origine,
+          budget_max: p.budget_max ?? c.budget_max,
+          direct_seulement: p.escales_max === null ? c.direct_seulement : p.escales_max === 0,
+        }));
+      })
+      .catch(() => {
+        /* sans préférences, on garde les valeurs par défaut */
+      });
+    return () => {
+      actif = false;
+    };
+  }, []);
 
   async function lancerRecherche() {
     await explorer.rechercher(criteres);
     changerOnglet("explorer");
   }
 
-  // Recharge une ancienne recherche dans le formulaire
+  // Recharge une ancienne recherche dans le formulaire.
+  // Action explicite : elle gagne sur le préremplissage, même si celui-ci arrive après.
   function reprendre(recherche: RechercheHistorique) {
+    modifieParUtilisateur.current = true;
     setCriteres({
       ...criteres,
+      origine: recherche.origine ?? criteres.origine,
+      destination: recherche.destination ?? criteres.destination,
       date_depart: recherche.date_depart ?? criteres.date_depart,
       date_retour: recherche.date_retour ?? criteres.date_retour,
       aller_retour: recherche.aller_retour,
       nb_passagers: recherche.nb_passagers,
+      budget_max: recherche.budget_max ?? criteres.budget_max,
     });
     changerOnglet("explorer");
   }
@@ -89,7 +115,7 @@ export default function PageExplorer() {
 
       <FormulaireRecherche
         criteres={criteres}
-        onChange={setCriteres}
+        onChange={changerCriteres}
         onRechercher={() => void lancerRecherche()}
         enCours={explorer.rechercheEnCours}
       />
@@ -113,8 +139,9 @@ export default function PageExplorer() {
         ) : (
           <ListeVols
             vols={vols}
+            favorisIds={explorer.favorisIds}
             favorisEnCours={explorer.favorisEnCours}
-            onBasculerFavori={vol => void explorer.basculerFavori(vol)}
+            onBasculerFavori={(vol) => void explorer.basculerFavori(vol)}
             messageSiVide={messageSiVide()}
           />
         )}
