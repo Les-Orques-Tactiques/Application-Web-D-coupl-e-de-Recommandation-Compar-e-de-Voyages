@@ -9,16 +9,9 @@ import { creerCompte } from "../services/api";
 import { AIDE_MOT_DE_PASSE, verifierEmail, verifierMotDePasse } from "../utils/validation";
 import { messagePourErreur } from "../utils/erreurs";
 import { emailEnAttente } from "../utils/stockage";
-import type { Consentements } from "../utils/types";
+import type { Consentements, ErreursFormulaire, ValeursFormulaire } from "../utils/types";
 import { CasesConsentements } from "./CasesConsentements";
 import { ChampMotDePasse } from "@/components/ui/ChampMotDePasse";
-
-// Les quatre champs texte du formulaire
-type ValeursFormulaire = { prenom: string; nom: string; email: string; motDePasse: string };
-// Un message d'erreur possible par champ (Partial = chaque entrée est facultative : seuls les
-// champs en erreur sont présents). "keyof" liste les noms des champs.
-type ErreursFormulaire = Partial<Record<keyof ValeursFormulaire | "conditions", string>>;
-
 
 /**
  * Vérifie le formulaire avant l'envoi au serveur.
