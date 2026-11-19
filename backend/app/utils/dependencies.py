@@ -5,6 +5,9 @@ Chaque DAO et Service n'est instancié qu'UNE SEULE FOIS ici, puis
 réutilisé partout ailleurs (controllers, auth.py) par simple import.
 """
 
+from app.models.recommandation.RecommandationDAO import RecommandationDAO
+from app.services.RecommandationService import RecommandationService
+
 from app.models.utilisateur.UtilisateurDAO import UtilisateurDAO
 from app.models.jeton.JetonDAO import JetonDAO
 from app.models.token_revoque.TokenRevoqueDAO import TokenRevoqueDAO
@@ -59,6 +62,12 @@ favori_service = FavoriService(favori_dao, utilisateur_dao)
 utilisateur_service = UtilisateurService(utilisateur_dao=utilisateur_dao, jeton_dao=jeton_dao)
 auth_service = AuthService(utilisateur_dao=utilisateur_dao, token_revoque_dao=token_revoque_dao)
 preference_service = PreferenceService(preference_dao=preference_dao, utilisateur_dao=utilisateur_dao)
+recommandation_dao = RecommandationDAO()
+recommandation_service = RecommandationService(
+    recommandation_dao=recommandation_dao,
+    preference_service=preference_service,
+)
+
 pays_service = PaysService(pays_dao=pays_dao)
 aeroport_service = AeroportService(aeroport_dao=aeroport_dao)
 vol_service = VolService(vol_dao=vol_dao, aeroport_service=aeroport_service)

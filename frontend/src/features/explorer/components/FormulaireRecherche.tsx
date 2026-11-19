@@ -91,7 +91,7 @@ export function FormulaireRecherche({ criteres, onChange, onRechercher, enCours 
             <option value={3}>3 adultes</option>
           </select>
         </ChampRecherche>
-        <ChampRecherche libelle={`Budget max. par personne${criteres.aller_retour ? " (A/R)" : ""}`} icone={Wallet}>
+        <ChampRecherche libelle={`Budget max. par personne${criteres.aller_retour ? " (A/R)" : ""} · USD`}>
           <input
             type="number"
             min={1}

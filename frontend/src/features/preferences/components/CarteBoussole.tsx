@@ -11,7 +11,7 @@ export function CarteBoussole({ preferences }: PropsCarteBoussole) {
 
   const lignes = [
     { titre: "Départ", valeur: aeroport || "Non renseigné" },
-    { titre: "Budget A/R", valeur: budget === null ? "Sans limite" : `Jusqu'à ${budget} €` },
+    { titre: "Budget A/R", valeur: budget === null ? "Sans limite" : `Jusqu'à ${budget} USD` },
     { titre: "Trajet", valeur: libellesTrajet[trajet] },
   ];
 
