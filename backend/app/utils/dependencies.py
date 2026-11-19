@@ -26,6 +26,8 @@ from app.services.VolService import VolService
 from app.services.RechercheService import RechercheService
 from app.models.favori.FavoriDAO import FavoriDAO
 from app.services.FavoriService import FavoriService
+from app.models.interaction.InteractionDAO import InteractionDAO
+from app.services.InteractionService import InteractionService
 # ----------------------------------------------------------------------------
 # DAO : une instance chacun, sans état (chaque appel passe par le pool de
 # connexions), donc sans risque à partager. Le pool doit être initialisé
@@ -42,6 +44,10 @@ vol_dao = VolDAO()
 recherche_dao = RechercheDAO()
 favori_dao = FavoriDAO()
 favori_service = FavoriService(favori_dao, utilisateur_dao)
+# Avis (US17) et journal des interactions (US22) : reçoit utilisateur_dao
+# pour vérifier le consentement « personnalisation » avant de journaliser.
+interaction_dao = InteractionDAO()
+interaction_service = InteractionService(interaction_dao, utilisateur_dao)
 
 # ----------------------------------------------------------------------------
 # Services :
