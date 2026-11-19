@@ -19,20 +19,20 @@ import {
  * - les composants s'occupent de l'affichage.
  */
 export default function PageComparateur() {
-  const c = useComparateur();
+  const comparateur = useComparateur();
 
   return (
     <section className="mx-auto w-full max-w-7xl space-y-6 px-6 py-8 lg:px-16">
       <EnTeteComparateur />
 
       <ParametresDemo
-        profils={c.profils}
-        profil={c.profil}
-        onChoisirProfil={c.choisirProfil}
-        k={c.k}
-        onChangerK={c.changerK}
-        rafraichissement={c.rafraichissement}
-        onComparer={c.comparer}
+        profils={comparateur.profils}
+        profil={comparateur.profil}
+        onChoisirProfil={comparateur.choisirProfil}
+        k={comparateur.k}
+        onChangerK={comparateur.changerK}
+        rafraichissement={comparateur.rafraichissement}
+        onComparer={comparateur.comparer}
       />
 
       <div aria-label="Les trois approches de recommandation" className="grid grid-cols-1 gap-5 md:grid-cols-3">
@@ -40,28 +40,28 @@ export default function PageComparateur() {
           <CarteApproche
             key={approche.id}
             approche={approche}
-            active={c.approche === approche.id}
-            onChoisir={() => c.choisirApproche(approche.id)}
+            active={comparateur.approche === approche.id}
+            onChoisir={() => comparateur.choisirApproche(approche.id)}
           />
         ))}
       </div>
 
       <CurseurAlpha
-        alpha={c.alpha}
-        sansHistorique={c.sansHistorique}
-        onChanger={c.changerAlpha}
-        premierVol={c.premierVol}
+        alpha={comparateur.alpha}
+        sansHistorique={comparateur.sansHistorique}
+        onChanger={comparateur.changerAlpha}
+        premierVol={comparateur.premierVol}
       />
 
       <div className="grid grid-cols-1 items-start gap-6 lg:grid-cols-2">
         <ClassementVols
-          vols={c.volsClasses}
-          approche={c.approche}
-          sansHistorique={c.sansHistorique}
-          decouverteB={c.decouverteB}
-          premierVol={c.premierVol}
+          vols={comparateur.volsClasses}
+          approche={comparateur.approche}
+          sansHistorique={comparateur.sansHistorique}
+          decouverteB={comparateur.decouverteB}
+          premierVol={comparateur.premierVol}
         />
-        <TableauMetriques metriques={c.profil.metriques} k={c.k} />
+        <TableauMetriques metriques={comparateur.profil.metriques} k={comparateur.k} />
       </div>
 
       <SousLeCapot />

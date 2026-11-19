@@ -1,5 +1,5 @@
 import { useState, type ChangeEvent, type SubmitEvent } from "react";
-import { ArrowRight, Lock, Mail } from "lucide-react";
+import { ArrowRight, Mail } from "lucide-react";
 import { Link, useNavigate } from "react-router-dom";
 import { Bandeau } from "@/components/ui/Bandeau";
 import { Bouton } from "@/components/ui/Bouton";
@@ -11,6 +11,7 @@ import { messagePourErreur } from "../utils/erreurs";
 import { emailEnAttente } from "../utils/stockage";
 import type { Consentements } from "../utils/types";
 import { CasesConsentements } from "./CasesConsentements";
+import { ChampMotDePasse } from "@/components/ui/ChampMotDePasse";
 
 // Les quatre champs texte du formulaire
 type ValeursFormulaire = { prenom: string; nom: string; email: string; motDePasse: string };
@@ -28,18 +29,18 @@ type ErreursFormulaire = Partial<Record<keyof ValeursFormulaire | "conditions", 
  */
 function verifierFormulaire(valeurs: ValeursFormulaire, consentements: Consentements): ErreursFormulaire {
   const erreurs: ErreursFormulaire = {};
-  
+
   if (!valeurs.prenom.trim()) erreurs.prenom = "Indiquez votre prénom.";
   if (!valeurs.nom.trim()) erreurs.nom = "Indiquez votre nom.";
-  
+
   const erreurEmail = verifierEmail(valeurs.email);
   if (erreurEmail) erreurs.email = erreurEmail;
-  
+
   const erreurMotDePasse = verifierMotDePasse(valeurs.motDePasse);
   if (erreurMotDePasse) erreurs.motDePasse = erreurMotDePasse;
   if (!consentements.conditions) erreurs.conditions = "Vous devez accepter les conditions pour créer un compte.";
   return erreurs;
- }
+}
 
 /**
  * Formulaire d'inscription complet : champs, validation, envoi au serveur, puis redirection
@@ -93,13 +94,13 @@ export function FormulaireInscription() {
       emailEnAttente.ecrire(emailNettoye); // pour retrouver l'adresse si la page est rechargée
       naviguerVers("/activation", { state: { email: emailNettoye } }); // passe l'adresse à la page suivante
     } catch (erreur) {
-        if (erreur instanceof ErreurApi && erreur.statut === 409) {
-          // Email déjà utilisé : l'erreur s'affiche sous le champ concerné
-          setErreurs({ email: "Un compte existe déjà avec cette adresse e-mail." });
-        } else {
-          // 429, 400/422, 500, réseau… : messages communs définis dans erreurs.ts
-          setErreurGenerale(messagePourErreur(erreur, "inscription"));
-        }
+      if (erreur instanceof ErreurApi && erreur.statut === 409) {
+        // Email déjà utilisé : l'erreur s'affiche sous le champ concerné
+        setErreurs({ email: "Un compte existe déjà avec cette adresse e-mail." });
+      } else {
+        // 429, 400/422, 500, réseau… : messages communs définis dans erreurs.ts
+        setErreurGenerale(messagePourErreur(erreur, "inscription"));
+      }
     } finally {
       // "finally" s'exécute toujours, succès ou échec : on réactive le bouton
       setEnvoiEnCours(false);
@@ -114,8 +115,7 @@ export function FormulaireInscription() {
         <Champ libelle="Nom" required autoComplete="family-name" placeholder="Martin" value={valeurs.nom} onChange={modifierChamp("nom")} erreur={erreurs.nom} />
       </div>
       <Champ libelle="Adresse e-mail" required type="email" icone={Mail} autoComplete="email" placeholder="camille.martin@example.fr" value={valeurs.email} onChange={modifierChamp("email")} erreur={erreurs.email} />
-      <Champ libelle="Mot de passe" required type="password" icone={Lock} autoComplete="new-password" value={valeurs.motDePasse} onChange={modifierChamp("motDePasse")} erreur={erreurs.motDePasse} aide={AIDE_MOT_DE_PASSE} />
-
+      <ChampMotDePasse libelle="Mot de passe" required autoComplete="new-password" value={valeurs.motDePasse} onChange={modifierChamp("motDePasse")} erreur={erreurs.motDePasse} aide={AIDE_MOT_DE_PASSE}/>
       <CasesConsentements valeur={consentements} auChangement={setConsentements} erreurConditions={erreurs.conditions} />
 
       {/* Le bandeau n'apparaît que si le serveur a renvoyé une erreur */}
