@@ -6,9 +6,10 @@ import { lireAeroport, rechercherAeroports, type Aeroport } from "../services/re
 const LONGUEUR_MIN_RECHERCHE = 2;
 const DELAI_SAISIE_MS = 250;
 
-export function ChampAeroport({ libelle, code, onChoisir, onEffacer }: {
+export function ChampAeroport({ libelle, code, libelleCode, onChoisir, onEffacer }: {
   libelle: string;
   code: string;
+  libelleCode?: string;   // libellé déjà connu, évite l'appel réseau
   onChoisir: (aeroport: Aeroport) => void;
   onEffacer?: () => void;
 }) {
@@ -24,44 +25,57 @@ export function ChampAeroport({ libelle, code, onChoisir, onEffacer }: {
 
   // Synchronise le texte quand le code change de l'extérieur (préremplissage, reprise d'historique)
   useEffect(() => {
-    if (code === codeAffiche.current) return;
+  if (code === "") {
+    codeAffiche.current = "";
+    setTexte("");
+    return;
+  }
+  if (libelleCode) {
     codeAffiche.current = code;
-    if (code === "") {
-      setTexte("");
-      return;
-    }
-    let vivant = true;
-    lireAeroport(code)
-      .then((a) => { if (vivant) setTexte(a.libelle); })
-      .catch(() => { if (vivant) setTexte(code); }); // repli : on montre au moins le code
-    return () => { vivant = false; };
-  }, [code]);
+    setTexte(libelleCode);
+    return;
+  }
+  if (code === codeAffiche.current) return;
+  let vivant = true;
+  lireAeroport(code)
+    .then((a) => {
+      if (!vivant) return;
+      codeAffiche.current = code;
+      setTexte(a.libelle ?? code);
+    })
+    .catch(() => {
+      if (!vivant) return;
+      codeAffiche.current = code;
+      setTexte(code);
+    });
+  return () => { vivant = false; };
+}, [code, libelleCode]);
 
-  // Recherche avec délai ; les réponses périmées sont ignorées
-  useEffect(() => {
-    const saisie = texte.trim();
-    if (!ouvert || saisie.length < LONGUEUR_MIN_RECHERCHE) {
-      setSuggestions([]);
-      setEnCours(false);
-      return;
-    }
-    let vivant = true;
-    setEnCours(true);
-    const minuteur = setTimeout(() => {
-      rechercherAeroports(saisie)
-        .then((liste) => {
-          if (!vivant) return;
-          setSuggestions(liste);
-          setActif(-1);
-        })
-        .catch(() => { if (vivant) setSuggestions([]); })
-        .finally(() => { if (vivant) setEnCours(false); });
-    }, DELAI_SAISIE_MS);
-    return () => {
-      vivant = false;
-      clearTimeout(minuteur);
-    };
-  }, [texte, ouvert]);
+// Recherche avec délai ; les réponses périmées sont ignorées
+useEffect(() => {
+  const saisie = texte.trim();
+  if (!ouvert || saisie.length < LONGUEUR_MIN_RECHERCHE) {
+    setSuggestions([]);
+    setEnCours(false);
+    return;
+  }
+  let vivant = true;
+  setEnCours(true);
+  const minuteur = setTimeout(() => {
+    rechercherAeroports(saisie)
+      .then((liste) => {
+        if (!vivant) return;
+        setSuggestions(liste);
+        setActif(-1);
+      })
+      .catch(() => { if (vivant) setSuggestions([]); })
+      .finally(() => { if (vivant) setEnCours(false); });
+  }, DELAI_SAISIE_MS);
+  return () => {
+    vivant = false;
+    clearTimeout(minuteur);
+  };
+}, [texte, ouvert]);
 
   function choisir(a: Aeroport) {
     codeAffiche.current = a.code_iata;

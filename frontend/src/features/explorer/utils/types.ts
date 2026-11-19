@@ -36,12 +36,14 @@ export interface RechercheHistorique {
   id: string;
   origine: string | null;
   destination: string | null;
-  ville_origine: string | null;
+  pays_destination: string | null;
   ville_destination: string | null;
   date_depart: string | null;
   date_retour: string | null;
   aller_retour: boolean;
   nb_passagers: number;
   budget_max: number | null;
-  cree_le: string;
+  autres_criteres: Record<string, unknown>;
+  relancable: boolean;
+  cree_le: string | null;
 }

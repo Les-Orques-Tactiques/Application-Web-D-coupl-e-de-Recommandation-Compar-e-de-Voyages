@@ -10,9 +10,8 @@ import {
   useOnglet,
   type CriteresRecherche,
   type Onglet,
-  type RechercheHistorique,
 } from "@/features/explorer";
-
+import type { RechercheHistorique } from "@/features/explorer/utils/types";
 // Valeurs du formulaire à l'ouverture de la page
 const CRITERES_PAR_DEFAUT: CriteresRecherche = {
   origine: "LYS",

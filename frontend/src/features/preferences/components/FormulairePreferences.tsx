@@ -12,7 +12,7 @@ import { MAX_COMPAGNIES, type ChoixPreferences, type PreferencesModifiables } fr
 import { CarteBoussole } from "./CarteBoussole";
 import { ChoixTrajet } from "./ChoixTrajet";
 import { PastillesBudget } from "./PastillesBudget";
-
+import { aeroportPlusProche } from "@/features/referentiel/services/referentielApi";
 type EtatLocalisation = "aucune" | "en-cours" | "enregistree" | "refusee" | "sans-consentement" | "erreur";
 
 const LONGUEUR_MAX_COMPAGNIE = 120;
@@ -26,6 +26,7 @@ const ESCALES_PAR_TRAJET: Record<ChoixPreferences["trajet"], number | null> = {
   "une escale": 1,
   indifferent: null,
 };
+
 
 /** Convertit la saisie du formulaire en corps attendu par le back. */
 function versCorpsApi(choix: ChoixPreferences): PreferencesModifiables {
@@ -63,7 +64,7 @@ export function FormulairePreferences() {
   const [localisation, setLocalisation] = useState<EtatLocalisation>("aucune");
   const [envoiEnCours, setEnvoiEnCours] = useState(false);
   const [messageErreur, setMessageErreur] = useState("");
-
+  const [libelleAeroport, setLibelleAeroport] = useState("");
   function modifier<Cle extends keyof ChoixPreferences>(cle: Cle, valeur: ChoixPreferences[Cle]) {
     setPreferences((precedentes) => ({ ...precedentes, [cle]: valeur }));
   }
@@ -89,29 +90,46 @@ export function FormulairePreferences() {
   }
 
   // La position est envoyée au back (PUT /lieu-depart). L'arrondi est fait dans le service.
-  function utiliserPosition() {
-    if (!("geolocation" in navigator)) {
-      setLocalisation("refusee");
-      return;
-    }
-    setLocalisation("en-cours");
-    navigator.geolocation.getCurrentPosition(
-      async (position) => {
-        try {
-          await definirLieuDepart({
-            latitude: position.coords.latitude,
-            longitude: position.coords.longitude,
-          });
-          setLocalisation("enregistree");
-        } catch (erreur) {
-          // 403 : la case « localisation » n'a pas été cochée à l'inscription
-          setLocalisation(erreur instanceof ErreurApi && erreur.statut === 403 ? "sans-consentement" : "erreur");
-        }
-      },
-      () => setLocalisation("refusee"), // refus dans le navigateur, ou délai dépassé
-      { timeout: 10000 },
-    );
+// Récupère la position, l'enregistre et sélectionne l'aéroport le plus proche.
+async function utiliserPosition() {
+  if (!("geolocation" in navigator)) {
+    setLocalisation("refusee");
+    return;
   }
+
+  setLocalisation("en-cours");
+
+  navigator.geolocation.getCurrentPosition(
+    async (position) => {
+      try {
+        // On arrondit les coordonnées à environ 1 km de précision.
+        // Les mêmes coordonnées sont utilisées pour les deux appels API.
+        const latitude = Math.round(position.coords.latitude * 100) / 100;
+        const longitude = Math.round(position.coords.longitude * 100) / 100;
+
+        // 1. Enregistrer la position de départ dans les préférences.
+        await definirLieuDepart({ latitude, longitude });
+
+        // 2. Rechercher l'aéroport le plus proche.
+        const aeroport = await aeroportPlusProche(latitude, longitude);
+        // console.log("aeroport", aeroport);
+        // 3. Remplir automatiquement le champ « Aéroport habituel ».
+        modifier("aeroport", aeroport.code_iata);
+        setLibelleAeroport(aeroport.libelle);
+
+        setLocalisation("enregistree");
+      } catch (erreur) {
+        if (erreur instanceof ErreurApi && erreur.statut === 403) {
+          setLocalisation("sans-consentement");
+        } else {
+          setLocalisation("erreur");
+        }
+      }
+    },
+    () => setLocalisation("refusee"),
+    { timeout: 10000 },
+  );
+}
 
   /**
    * Le back passe onboarding_termine à TRUE, mais l'utilisateur gardé dans le contexte
@@ -160,8 +178,15 @@ export function FormulairePreferences() {
           <ChampAeroport
             libelle="Aéroport habituel"
             code={preferences.aeroport}
-            onChoisir={(a) => modifier("aeroport", a.code_iata)}
-            onEffacer={() => modifier("aeroport", "")}
+            libelleCode={libelleAeroport}
+            onChoisir={(a) => {
+              modifier("aeroport", a.code_iata);
+              setLibelleAeroport(a.libelle);
+            }}
+            onEffacer={() => {
+              modifier("aeroport", "");
+              setLibelleAeroport("");
+            }}
           />
         </div>
         <button
