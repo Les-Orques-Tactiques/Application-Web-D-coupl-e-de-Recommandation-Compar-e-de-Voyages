@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import { useAuth } from "@/features/auth";
 import { lirePreferences } from "@/features/preferences";
 import { versParametres } from "@/features/explorer/utils/parametresRecherche";
+import { convertirVolExplorer } from "@/features/rechercheVols/utils/recherche";
+import type { EtatPageDetailVol } from "@/features/rechercheVols/pages/PageDetailVol";
 import {
   BandeauExplorer,
   FormulaireRecherche,
@@ -13,6 +15,7 @@ import {
   type CriteresRecherche,
   type Onglet,
   type RechercheHistorique,
+  type Vol,
 } from "@/features/explorer";
 
 // Valeurs du formulaire à l'ouverture de la page
@@ -118,12 +121,12 @@ export default function PageExplorer() {
     changerOnglet("explorer");
   }
 
-  // 🆕 (branche recommandation-a) Sur l'onglet « explorer », on montre les recommandations.
+  // Sur l'onglet « explorer », on montre les recommandations.
   // Comme la recherche se fait maintenant sur /resultats, il n'y a plus de cas
-  // « résultats de recherche » ici : le test !explorer.aRecherche devient inutile.
+  // « résultats de recherche » ici.
   const afficherRecommandations = onglet === "explorer";
 
-  // Message affiché quand il n'y a aucun vol à montrer (version fusionnée)
+  // Message affiché quand il n'y a aucun vol à montrer
   function messageSiVide(): string {
     if (onglet === "favoris") {
       return explorer.chargement ? "Chargement de vos favoris…" : "Vous n’avez pas encore de vol favori.";
@@ -136,12 +139,41 @@ export default function PageExplorer() {
     return "Lancez une recherche : les vols s’afficheront sur la page Résultats.";
   }
 
-  // Une seule déclaration de "vols" (les deux versions du conflit sont réunies)
   const vols = onglet === "favoris"
     ? explorer.favoris
     : afficherRecommandations
       ? explorer.recommandations
       : []; // ex. onglet « comparateur » : rien à afficher pour l'instant
+
+  /**
+   * 🆕 Ouvre la page détail (/vol/:id) avec EXACTEMENT l'état attendu par PageDetailVol.
+   * "satisfies" fait vérifier l'objet par TypeScript : une clé oubliée
+   * (comme "saisie", cause du plantage) devient une erreur de compilation.
+   */
+  function voirVol(vol: Vol) {
+    const etat = {
+      vol: convertirVolExplorer(vol),
+      // Sur Explorer, il n'y a pas de recherche saisie : on la reconstruit à partir du vol
+      saisie: {
+        origine: vol.origine,
+        destination: vol.destination,
+        aller: vol.date_depart ?? "",
+        retour: vol.date_retour ?? "",
+        allerRetour: vol.aller_retour,
+        passagers: 1, // les recommandations sont calculées pour 1 personne
+      },
+      budget: criteres.budget_max,
+      depuisLaBase: true,
+      nbResultats: vols.length,
+      // Le lien « Revenir » ramène sur le bon onglet
+      retour: onglet === "favoris" ? "/explorer?onglet=favoris" : "/explorer",
+      favori: explorer.favorisIds.has(vol.id),
+      // Les recommandations sont en USD : la page détail affichera la bonne devise
+      devise: vol.devise,
+    } satisfies EtatPageDetailVol;
+
+    navigate(`/vol/${vol.id}`, { state: etat });
+  }
 
   const titreResultats = afficherRecommandations ? "Votre sélection de départ" : TITRES[onglet];
 
@@ -193,6 +225,8 @@ export default function PageExplorer() {
             favorisIds={explorer.favorisIds}
             favorisEnCours={explorer.favorisEnCours}
             onBasculerFavori={(vol) => void explorer.basculerFavori(vol)}
+            // 🆕 Chaque carte affiche « Voir le vol », qui ouvre la page détail
+            onVoir={voirVol}
             messageSiVide={messageSiVide()}
           />
         )}

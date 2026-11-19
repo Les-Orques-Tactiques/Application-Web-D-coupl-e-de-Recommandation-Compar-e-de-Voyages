@@ -6,11 +6,20 @@ import {
 } from "lucide-react";
 import { SurTitre } from "@/components/ui/SurTitre";
 import { definirFavori } from "@/features/explorer/services/explorationApi";
+import { formaterPrix } from "@/features/explorer/utils/formatage";
 import {
     decouperLieu, formaterDuree, formaterJour, formaterPeriode,
     raisonsRecommandation, villeCourte, type EtatDetailVol,
 } from "../utils/detailVol";
 import type { Vol } from "../utils/types";
+
+/**
+ * 🆕 État reçu par la page : celui de PageResultats, plus une devise facultative.
+ * Explorer envoie la devise (les recommandations sont en USD) ;
+ * PageResultats ne l'envoie pas : on affiche alors des euros.
+ * On étend le type ici plutôt que de modifier detailVol.ts.
+ */
+export type EtatPageDetailVol = EtatDetailVol & { devise?: string };
 
 /**
  * Page de détail d'un vol (/vol/:id), affichée dans MiseEnPagePrivee
@@ -21,7 +30,7 @@ import type { Vol } from "../utils/types";
  */
 export default function PageDetailVol() {
     const location = useLocation();
-    const etat = location.state as EtatDetailVol | null;
+    const etat = location.state as EtatPageDetailVol | null;
 
     // Les hooks doivent être appelés AVANT tout "return" anticipé
     const [favori, setFavori] = useState(etat?.favori ?? false);
@@ -29,12 +38,15 @@ export default function PageDetailVol() {
     const [erreur, setErreur] = useState<string | null>(null);
     const [avis, setAvis] = useState<"oui" | "non" | null>(null);
 
-    if (!etat?.vol) {
+    // 🆕 Sans vol OU sans saisie (state incomplet, page rechargée…),
+    // on affiche un message au lieu de planter sur saisie.passagers
+    if (!etat?.vol || !etat.saisie) {
         return (
             <section className="mx-auto w-full max-w-3xl px-6 py-16 text-center">
                 <h1 className="text-2xl text-encre">Ce vol n’est plus affiché.</h1>
                 <p className="my-3 text-sm text-attenue">
-                    Le détail d’un vol s’ouvre depuis la page de résultats. Relancez une recherche pour le retrouver.
+                    Le détail d’un vol s’ouvre depuis la page de résultats ou depuis Explorer.
+                    Relancez une recherche pour le retrouver.
                 </p>
                 <Link to="/explorer" className="text-sm font-medium text-principal hover:underline">
                     Nouvelle recherche
@@ -44,6 +56,8 @@ export default function PageDetailVol() {
     }
 
     const { vol, saisie, budget, depuisLaBase, nbResultats, retour } = etat;
+    // 🆕 Devise : celle envoyée par Explorer, sinon l'euro (cas de PageResultats)
+    const devise = etat.devise ?? "EUR";
     const total = vol.prix * saisie.passagers;
 
     async function basculerFavori() {
@@ -156,7 +170,8 @@ export default function PageDetailVol() {
                         <span className="rounded-full bg-citron px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider text-profond">
                             {depuisLaBase ? "Vol de la base de données" : "Offre de démonstration"}
                         </span>
-                        <p className="mt-4 text-5xl font-medium tracking-tight">{total} €</p>
+                        {/* 🆕 formaterPrix : affiche la bonne devise (ex. « 122,00 $US ») au lieu d'un « € » en dur */}
+                        <p className="mt-4 text-5xl font-medium tracking-tight">{formaterPrix(total, devise)}</p>
                         <p className="mt-1 text-xs text-white/70">
                             Total pour {saisie.passagers} passager{saisie.passagers > 1 ? "s" : ""}
                         </p>
@@ -164,7 +179,7 @@ export default function PageDetailVol() {
                         <dl className="mt-5 space-y-2 text-xs">
                             <div className="flex justify-between">
                                 <dt className="text-white/70">Prix par personne</dt>
-                                <dd className="font-semibold">{vol.prix} €</dd>
+                                <dd className="font-semibold">{formaterPrix(vol.prix, devise)}</dd>
                             </div>
                             <div className="flex justify-between">
                                 <dt className="text-white/70">Bagage cabine</dt>
