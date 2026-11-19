@@ -103,34 +103,35 @@ class RecommandationDAO(RecommandationInterface):
             conditions.append("v.origine = %s")
             valeurs.append(origine)
 
-            with get_db_cursor() as cursor:
-                cursor.execute(
-                    f"""
-                    SELECT {COLONNES}
-                    {JOINTURE}
-                    WHERE {' AND '.join(conditions)}
-                    ORDER BY v.date_depart, v.prix, v.id;
-                    """,
-                    valeurs,
-                )
-                lignes = cursor.fetchall()
+        # Sans aéroport habituel on garde tous les départs
+        with get_db_cursor() as cursor:
+            cursor.execute(
+                f"""
+                SELECT {COLONNES}
+                {JOINTURE}
+                WHERE {' AND '.join(conditions)}
+                ORDER BY v.date_depart, v.prix, v.id;
+                """,
+                valeurs,
+            )
+            lignes = cursor.fetchall()
 
-            # Deux lignes avec des id différents peuvent décrire le même vol affiché
-            # (même compagnie, même trajet, mêmes horaires, mêmes dates).
-            # Le tri (date, prix) place le moins cher en premier : on garde celui-là.
-            deja_vus: set[tuple] = set()
-            vols: list[Vol] = []
-            for ligne in lignes:
-                signature = (
-                    ligne["compagnie_aller"],
-                    ligne["origine"],
-                    ligne["destination"],
-                    ligne["depart_aller_local"],
-                    ligne["arrivee_aller_locale"],
-                    ligne["date_retour"],
-                )
-                if signature in deja_vus:
-                    continue  # doublon : on l'ignore
-                deja_vus.add(signature)
-                vols.append(Vol.from_row(ligne))
-            return vols
+        # Deux lignes avec des id différents peuvent décrire le même vol affiché
+        # (même compagnie, même trajet, mêmes horaires, mêmes dates).
+        # Le tri (date, prix) place le moins cher en premier : on garde celui-là.
+        deja_vus: set[tuple] = set()
+        vols: list[Vol] = []
+        for ligne in lignes:
+            signature = (
+                ligne["compagnie_aller"],
+                ligne["origine"],
+                ligne["destination"],
+                ligne["depart_aller_local"],
+                ligne["arrivee_aller_locale"],
+                ligne["date_retour"],
+            )
+            if signature in deja_vus:
+                continue  # doublon : on l'ignore
+            deja_vus.add(signature)
+            vols.append(Vol.from_row(ligne))
+        return vols
