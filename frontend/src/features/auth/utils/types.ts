@@ -57,3 +57,4 @@ export type ValeursFormulaire = { prenom: string; nom: string; email: string; mo
 // champs en erreur sont présents). "keyof" liste les noms des champs.
 export type ErreursFormulaire = Partial<Record<keyof ValeursFormulaire | "conditions", string>>;
 
+export type ErreursChamps = { motDePasse?: string; confirmation?: string };

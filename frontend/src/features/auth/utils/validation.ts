@@ -39,3 +39,4 @@ export function verifierMotDePasse(motDePasse: string): string | undefined {
 export function verifierEmail(email: string): string | undefined {
   return /^\S+@\S+\.\S+$/.test(email.trim()) ? undefined : "Saisissez une adresse e-mail valide.";
 }
+

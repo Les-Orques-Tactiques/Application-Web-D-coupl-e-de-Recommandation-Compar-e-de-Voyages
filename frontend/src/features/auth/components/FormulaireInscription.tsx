@@ -9,9 +9,10 @@ import { creerCompte } from "../services/api";
 import { AIDE_MOT_DE_PASSE, verifierEmail, verifierMotDePasse } from "../utils/validation";
 import { messagePourErreur } from "../utils/erreurs";
 import { emailEnAttente } from "../utils/stockage";
-import type { Consentements, ErreursFormulaire, ValeursFormulaire } from "../utils/types";
 import { CasesConsentements } from "./CasesConsentements";
 import { ChampMotDePasse } from "@/components/ui/ChampMotDePasse";
+import type { Consentements, ErreursFormulaire, ValeursFormulaire } from "../utils/types";
+
 
 /**
  * Vérifie le formulaire avant l'envoi au serveur.
