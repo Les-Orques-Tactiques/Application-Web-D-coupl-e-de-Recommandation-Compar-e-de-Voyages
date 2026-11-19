@@ -19,7 +19,7 @@ export default function PageActivation() {
   const email = (emplacement.state as { email?: string } | null)?.email ?? emailEnAttente.lire();
 
   return (
-    <section className="mx-auto w-full max-w-7xl px-6 py-12 lg:px-16 lg:py-14">
+    <section className="mx-auto w-full max-w-7xl px-6 py-12 text-center lg:px-16 lg:py-14">
       <SurTitre>02 / Activer votre compte</SurTitre>
       <h1 className="mt-3 text-[40px] font-normal leading-tight tracking-tight">Vérifiez votre boîte mail.</h1>
       <p className="mt-3 text-[15px] text-attenue">
