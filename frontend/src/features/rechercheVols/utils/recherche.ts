@@ -1,6 +1,7 @@
 import { ErreurApi } from "@/lib/clientApi";
-import type { VolExplorer } from "@/features/explorer/utils/types";
+import type { Vol as VolApi } from "@/features/explorer";
 import type { SaisieRecherche, Vol } from "./types";
+import { formaterHeure } from "@/features/explorer/utils/formatage";
 
 /** "Paris CDG" → "CDG" ; null si la saisie ne finit pas par 3 lettres. */
 export function extraireCodeIata(lieu: string): string | null {
@@ -34,14 +35,15 @@ export function messageErreur(erreur: unknown): string {
 }
 
 /** Convertit un vol renvoyé par l'API au format affiché par la page. */
-export function convertirVolExplorer(vol: VolExplorer): Vol {
+export function convertirVolExplorer(vol: VolApi): Vol {
     const n = vol.escales_aller;
     return {
         id: vol.id,
         compagnie: vol.compagnie_aller,
         code: vol.compagnie_aller.slice(0, 2).toUpperCase(),
-        depart: vol.heure_depart ?? "--:--",
-        arrivee: vol.heure_arrivee ?? "--:--",
+        // Si l'heure est absente (null), on affiche "--:--" à la place
+        depart: formaterHeure(vol.depart_aller_local) ?? "--:--",
+        arrivee: formaterHeure(vol.arrivee_aller_locale) ?? "--:--",
         duree: vol.duree_aller_min,
         prix: vol.prix,
         escale: n > 0 ? `${n} escale${n > 1 ? "s" : ""}` : null,

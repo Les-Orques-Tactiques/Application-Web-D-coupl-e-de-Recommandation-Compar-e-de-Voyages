@@ -20,9 +20,22 @@ const COMPARER: Record<Exclude<Tri, "pertinence">, (a: Vol, b: Vol) => number> =
     depart: (a, b) => a.depart.localeCompare(b.depart),
 };
 
-/** Filtres + tri appliqués à une liste de vols. */
-export function useFiltres(vols: Vol[]) {
-    const [filtres, setFiltres] = useState<Filtres>(FILTRES_PAR_DEFAUT);
+/**
+ * Filtres + tri appliqués à une liste de vols.
+ *
+ * 🆕 filtresInitiaux (optionnel) : valeurs venant de la page Explorer
+ * (budget, vols directs seulement, bagage requis…). Partial = on ne fournit
+ * que les champs qu'on veut changer, les autres gardent FILTRES_PAR_DEFAUT.
+ */
+export function useFiltres(vols: Vol[], filtresInitiaux?: Partial<Filtres>) {
+    // 🆕 Calculé une seule fois au premier rendu (fonction passée à useState) :
+    // si l'objet filtresInitiaux est recréé à chaque rendu, ça ne change rien.
+    const [filtresDeDepart] = useState<Filtres>(() => ({
+        ...FILTRES_PAR_DEFAUT,
+        ...filtresInitiaux,
+    }));
+
+    const [filtres, setFiltres] = useState<Filtres>(filtresDeDepart);
     const [tri, setTri] = useState<Tri>("pertinence");
 
     // Générique : modifierFiltre("budget", 200) est accepté, modifierFiltre("budget", true) est refusé
@@ -39,8 +52,10 @@ export function useFiltres(vols: Vol[]) {
         }));
     }
 
+    // 🆕 Revient aux filtres de la recherche (ceux venus d'Explorer),
+    // et non aux valeurs par défaut fixes.
     function reinitialiser() {
-        setFiltres(FILTRES_PAR_DEFAUT);
+        setFiltres(filtresDeDepart);
     }
 
     // Liste des compagnies, sans doublon (Set)
