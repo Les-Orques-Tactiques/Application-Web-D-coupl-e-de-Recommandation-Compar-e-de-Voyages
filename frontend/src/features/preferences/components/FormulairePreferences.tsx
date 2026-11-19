@@ -7,25 +7,11 @@ import { Champ } from "@/components/ui/Champ";
 import { ErreurApi } from "@/lib/clientApi";
 import { useAuth } from "@/features/auth";
 import { definirLieuDepart, enregistrerOnboarding, passerOnboarding } from "../services/preferenceServices";
-import type { ChoixPreferences, PreferencesModifiables } from "../utils/types";
+import { ESCALES_PAR_TRAJET, EtatLocalisation, LONGUEUR_MAX_COMPAGNIE, MAX_COMPAGNIES, type ChoixPreferences, type PreferencesModifiables } from "../utils/types";
 import { CarteBoussole } from "./CarteBoussole";
 import { ChoixTrajet } from "./ChoixTrajet";
 import { PastillesBudget } from "./PastillesBudget";
 
-type EtatLocalisation = "aucune" | "en-cours" | "enregistree" | "refusee" | "sans-consentement" | "erreur";
-
-const MAX_COMPAGNIES = 20;
-const LONGUEUR_MAX_COMPAGNIE = 120;
-
-/**
- * Le back ne connaît pas "trajet", seulement "escales_max" (0 à 5, ou null = pas de limite).
- * Record<...> oblige à traiter CHAQUE valeur possible de trajet.
- */
-const ESCALES_PAR_TRAJET: Record<ChoixPreferences["trajet"], number | null> = {
-  direct: 0,
-  "une escale": 1,
-  indifferent: null,
-};
 
 /** Convertit la saisie du formulaire en corps attendu par le back. */
 function versCorpsApi(choix: ChoixPreferences): PreferencesModifiables {
