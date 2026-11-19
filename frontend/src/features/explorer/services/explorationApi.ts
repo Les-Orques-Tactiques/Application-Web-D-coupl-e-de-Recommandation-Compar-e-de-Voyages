@@ -1,22 +1,35 @@
 import { appelerApi } from "@/lib/clientApi";
 
+// --- Types (miroirs des schémas Pydantic) -------------------------------
+// UUID, date et datetime sont sérialisés en string (ISO 8601) par FastAPI.
+// Les types Aeroport et Pays vivent dans features/referentiel.
+
+// RechercheVolsIn (POST /vols/recherche)
 export interface RechercheVols {
-  origine: string;
+  origine: string;                 // code IATA, 3 lettres
   destination: string;
-  date_depart: string;
-  date_retour: string | null;
-  aller_retour: boolean;
-  nb_passagers: number;
-  budget_max: number;
-  devise: string;
-  direct_seulement: boolean;
-  bagage_requis: boolean;
+  date_depart: string;             // "YYYY-MM-DD", pas dans le passé
+  aller_retour?: boolean;          // défaut backend : true
+  date_retour?: string | null;     // requise si aller_retour
+  passagers?: number;              // 1..9
+  budget?: number | null;          // par personne
+  escales_max?: number | null;     // 0..5 (0 = direct)
+  compagnies?: string[];           // max 20
+  bagage_inclus?: boolean | null;  // true = filtre bagage
+  duree_max_min?: number | null;
+  tolerance_jours?: number;        // 0..14, défaut 7
+  tri?: "prix" | "duree" | "escales" | "pertinence";
+  limite?: number;                 // 1..100, défaut 50
+  decalage?: number;
 }
 
-export interface VolExplorer {
+// VolOut
+export interface Vol {
   id: string;
   origine: string;
   destination: string;
+  ville_origine: string | null;
+  ville_destination: string | null;
   date_depart: string;
   date_retour: string | null;
   aller_retour: boolean;
@@ -25,43 +38,67 @@ export interface VolExplorer {
   compagnie_aller: string;
   duree_aller_min: number;
   escales_aller: number;
+  compagnie_retour: string | null;
+  duree_retour_min: number | null;
+  escales_retour: number | null;
   bagage_inclus: boolean | null;
   simulee: boolean;
-  heure_depart: string | null;
-  heure_arrivee: string | null;
-  ville_origine: string | null;
-  ville_destination: string | null;
-  favori: boolean;
+  observe_le: string | null;
+  depart_aller_local: string | null;
+  arrivee_aller_locale: string | null;
 }
 
+// RechercheOut
 export interface RechercheHistorique {
   id: string;
   origine: string | null;
   destination: string | null;
-  ville_origine: string | null;
+  pays_destination: string | null;
   ville_destination: string | null;
   date_depart: string | null;
   date_retour: string | null;
   aller_retour: boolean;
   nb_passagers: number;
   budget_max: number | null;
-  cree_le: string;
+  autres_criteres: Record<string, unknown>;
+  relancable: boolean;             // false si un aéroport a été supprimé
+  cree_le: string | null;
 }
 
-export async function rechercherVols(criteres: RechercheVols): Promise<VolExplorer[]> {
-  return appelerApi<VolExplorer[]>("/api/exploration/recherches", {
-    methode: "POST",
-    corps: criteres,
+// --- Vols ---------------------------------------------------------------
+
+export const rechercherVols = (criteres: RechercheVols) =>
+  appelerApi<Vol[]>("/api/vols/recherche", { methode: "POST", corps: criteres });
+
+export const lireVol = (volId: string) => appelerApi<Vol>(`/api/vols/${volId}`);
+
+// --- Historique ---------------------------------------------------------
+
+export const lireHistorique = (limite = 20, decalage = 0) =>
+  appelerApi<RechercheHistorique[]>(
+    `/api/utilisateurs/moi/recherches?limite=${limite}&decalage=${decalage}`,
+  );
+
+export const relancerRecherche = (id: string) =>
+  appelerApi<Vol[]>(`/api/utilisateurs/moi/recherches/${id}/relancer`, { methode: "POST" });
+
+export async function supprimerRecherche(id: string): Promise<void> {
+  await appelerApi<void>(`/api/utilisateurs/moi/recherches/${id}`, { methode: "DELETE" });
+}
+
+export const viderHistorique = () =>
+  appelerApi<{ supprimees: number }>("/api/utilisateurs/moi/recherches", {
+    methode: "DELETE",
   });
-}
 
-export const lireFavoris = () => appelerApi<VolExplorer[]>("/api/exploration/favoris");
+// --- Favoris -------------------------------------------------------------
+// GET : les 50 plus récents par défaut. POST et DELETE sont idempotents (204) :
+// rejouer une requête ne produit ni erreur ni doublon.
 
-export const lireHistorique = () =>
-  appelerApi<RechercheHistorique[]>("/api/exploration/historique");
+export const lireFavoris = () => appelerApi<Vol[]>("/api/utilisateurs/moi/favoris");
 
 export async function definirFavori(volId: string, favori: boolean): Promise<void> {
-  await appelerApi<{ favori: boolean }>(`/api/exploration/favoris/${volId}`, {
+  await appelerApi<void>(`/api/utilisateurs/moi/favoris/${volId}`, {
     methode: favori ? "POST" : "DELETE",
   });
 }
