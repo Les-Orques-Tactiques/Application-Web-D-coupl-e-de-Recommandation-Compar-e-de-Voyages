@@ -18,6 +18,8 @@ class CriteresRecherche:
     origine: str
     destination: str
     date_depart: date
+    pays_destination: Optional[str] = None
+    ville_destination: Optional[str] = None
     aller_retour: bool = False
     date_retour: Optional[date] = None
     passagers: int = 1
@@ -35,7 +37,20 @@ class CriteresRecherche:
         # Normalisation des codes IATA
         object.__setattr__(self, "origine", self.origine.strip().upper())
         object.__setattr__(self, "destination", self.destination.strip().upper())
+        
+        if self.pays_destination:
+            object.__setattr__(
+                self,
+                "pays_destination",
+                self.pays_destination.strip()
+            )
 
+        if self.ville_destination:
+            object.__setattr__(
+                self,
+                "ville_destination",
+                self.ville_destination.strip()
+            )
         if self.origine == self.destination:
             raise CriteresInvalides("L'origine et la destination doivent être différentes.")
         if self.aller_retour and self.date_retour is None:
@@ -48,5 +63,5 @@ class CriteresRecherche:
             raise CriteresInvalides("Tri inconnu.")
         if not (1 <= self.limite <= 100) or self.decalage < 0:
             raise CriteresInvalides("Pagination invalide.")
-        if not (0 <= self.tolerance_jours <= 7):
-            raise CriteresInvalides("La tolérance doit être entre 0 et 7 jours.")
+        if not (0 <= self.tolerance_jours <= 14):
+            raise CriteresInvalides("La tolérance doit être entre 0 et 14 jours.")

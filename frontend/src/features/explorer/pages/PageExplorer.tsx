@@ -4,17 +4,16 @@ import { useAuth } from "@/features/auth";
 import { lirePreferences } from "@/features/preferences";
 import { versParametres } from "@/features/explorer/utils/parametresRecherche";
 import {
-    BandeauExplorer,
-    FormulaireRecherche,
-    ListeHistorique,
-    ListeVols,
-    useExplorer,
-    useOnglet,
-    type CriteresRecherche,
-    type Onglet,
-    type RechercheHistorique,
+  BandeauExplorer,
+  FormulaireRecherche,
+  ListeHistorique,
+  ListeVols,
+  useExplorer,
+  useOnglet,
+  type CriteresRecherche,
+  type Onglet,
 } from "@/features/explorer";
-
+import type { RechercheHistorique } from "@/features/explorer/utils/types";
 // Valeurs du formulaire à l'ouverture de la page
 const CRITERES_PAR_DEFAUT: CriteresRecherche = {
     origine: "LYS",

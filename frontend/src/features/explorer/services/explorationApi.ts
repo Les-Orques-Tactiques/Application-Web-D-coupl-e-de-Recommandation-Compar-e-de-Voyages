@@ -1,4 +1,7 @@
 import { appelerApi } from "@/lib/clientApi";
+import type { RechercheHistorique } from "../utils/types";
+
+export type { RechercheHistorique } from "../utils/types";
 
 // --- Types (miroirs des schémas Pydantic) -------------------------------
 // UUID, date et datetime sont sérialisés en string (ISO 8601) par FastAPI.
@@ -48,22 +51,8 @@ export interface Vol {
   arrivee_aller_locale: string | null;
 }
 
-// RechercheOut
-export interface RechercheHistorique {
-  id: string;
-  origine: string | null;
-  destination: string | null;
-  pays_destination: string | null;
-  ville_destination: string | null;
-  date_depart: string | null;
-  date_retour: string | null;
-  aller_retour: boolean;
-  nb_passagers: number;
-  budget_max: number | null;
-  autres_criteres: Record<string, unknown>;
-  relancable: boolean;             // false si un aéroport a été supprimé
-  cree_le: string | null;
-}
+
+
 
 // --- Vols ---------------------------------------------------------------
 
