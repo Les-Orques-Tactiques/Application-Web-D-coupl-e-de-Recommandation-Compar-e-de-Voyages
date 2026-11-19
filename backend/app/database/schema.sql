@@ -364,6 +364,7 @@ CREATE TABLE IF NOT EXISTS favoris (
     cree_le          TIMESTAMPTZ NOT NULL DEFAULT NOW(),
     PRIMARY KEY (utilisateur_id, vol_id)
 );
+CREATE INDEX IF NOT EXISTS idx_favoris_utilisateur ON favoris (utilisateur_id, cree_le DESC);
 
 CREATE TABLE IF NOT EXISTS avis_vol (
     utilisateur_id   UUID NOT NULL REFERENCES utilisateurs(id) ON DELETE CASCADE,
