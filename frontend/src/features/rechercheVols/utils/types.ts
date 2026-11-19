@@ -37,3 +37,4 @@ export type Filtres = {
 
 export type Tri = "pertinence" | "prix" | "duree" | "depart";
 export type Avis = "oui" | "non";
+

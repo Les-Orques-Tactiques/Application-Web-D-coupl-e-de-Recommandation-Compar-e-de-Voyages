@@ -1,5 +1,5 @@
 import { ErreurApi } from "@/lib/clientApi";
-import type { VolExplorer } from "@/features/auth/services/explorationApi";
+import type { VolExplorer } from "@/features/explorer/utils/types";
 import type { SaisieRecherche, Vol } from "./types";
 
 /** "Paris CDG" → "CDG" ; null si la saisie ne finit pas par 3 lettres. */
