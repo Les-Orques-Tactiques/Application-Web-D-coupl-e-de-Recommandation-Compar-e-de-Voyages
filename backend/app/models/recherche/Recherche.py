@@ -49,7 +49,7 @@ class Recherche:
         noms = {f.name for f in fields(cls)}
         donnees = {cle: valeur for cle, valeur in row.items() if cle in noms}
         # CHAR(n) : psycopg peut renvoyer des espaces de remplissage
-        for cle in ("origine", "destination", "pays_destination"):
+        for cle in ("origine", "destination", "pays_destination","ville_destination"):
             if isinstance(donnees.get(cle), str):
                 donnees[cle] = donnees[cle].strip()
         # NUMERIC(10,2) arrive en Decimal
@@ -70,6 +70,8 @@ class Recherche:
             "date_depart": criteres.date_depart,
             "date_retour": criteres.date_retour,
             "aller_retour": criteres.aller_retour,
+            "pays_destination": criteres.pays_destination,
+            "ville_destination": criteres.ville_destination,
             "nb_passagers": criteres.passagers,
             "budget_max": criteres.budget,
             "autres_criteres": {
@@ -96,6 +98,8 @@ class Recherche:
             date_depart=self.date_depart,
             aller_retour=self.aller_retour,
             date_retour=self.date_retour,
+            pays_destination=self.pays_destination,
+            ville_destination=self.ville_destination,
             passagers=self.nb_passagers,
             budget=self.budget_max,
             escales_max=extra.get("escales_max"),

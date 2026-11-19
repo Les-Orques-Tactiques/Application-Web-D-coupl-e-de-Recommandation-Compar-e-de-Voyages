@@ -1,6 +1,6 @@
 # app/services/VolService.py
 from uuid import UUID
-
+from dataclasses import replace
 from app.models.vol.CriteresRecherche import CriteresInvalides, CriteresRecherche
 from app.models.vol.Vol import Vol
 from app.models.vol.VolInterface import VolInterface
@@ -43,14 +43,32 @@ class VolService:
             raise VolIntrouvableError()
         return vol
 
-    @staticmethod
-    def construire_criteres(donnees: dict) -> CriteresRecherche:
+    def construire_criteres(self, donnees: dict) -> CriteresRecherche:
         """Convertit les données du client en critères validés.
-        Lève ValidationError si une règle n'est pas respectée."""
-        champs = {nom: donnees[nom] for nom in CHAMPS_RECHERCHE if nom in donnees}
+        Le pays et la ville sont récupérés depuis le référentiel des aéroports."""
+
+        champs = {
+            nom: donnees[nom]
+            for nom in CHAMPS_RECHERCHE
+            if nom in donnees
+        }
+
         if "compagnies" in champs:
             champs["compagnies"] = tuple(champs["compagnies"] or ())
+
         try:
-            return CriteresRecherche(**champs)
+            criteres = CriteresRecherche(**champs)
         except CriteresInvalides as erreur:
             raise ValidationError({"recherche": [str(erreur)]})
+
+        self.aeroport_service.verifier_codes(
+            origine=criteres.origine
+        )
+
+        destination = self.aeroport_service.lire(criteres.destination)
+
+        return replace(
+            criteres,
+            pays_destination=destination.code_pays,
+            ville_destination=destination.ville
+        )

@@ -22,6 +22,8 @@ class RechercheVolsIn(BaseModel):
     date_depart: date
     aller_retour: bool = True
     date_retour: Optional[date] = None
+    pays_destination: Optional[str] = Field(None, min_length=2, max_length=2)
+    ville_destination: Optional[str] = Field(None, max_length=100)
     passagers: int = Field(1, ge=1, le=9)
     budget: Optional[float] = Field(None, ge=0, lt=10**8)   # par personne
     escales_max: Optional[int] = Field(None, ge=0, le=5)
