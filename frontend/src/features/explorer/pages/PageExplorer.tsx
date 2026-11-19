@@ -94,21 +94,45 @@ export default function PageExplorer() {
     changerOnglet("explorer");
   }
 
-  // Message affiché quand il n'y a aucun vol à montrer
+  const afficherRecommandations = onglet === "explorer" && !explorer.aRecherche;
+
   function messageSiVide(): string {
-    if (explorer.chargement) return "Chargement de vos données…";
-    if (onglet === "favoris") return "Vous n’avez pas encore de vol favori.";
+    if (onglet === "favoris") {
+      return explorer.chargement
+        ? "Chargement de vos favoris…"
+        : "Vous n’avez pas encore de vol favori.";
+    }
+    if (afficherRecommandations) {
+      if (explorer.chargementRecommandations) {
+        return "Préparation de vos recommandations…";
+      }
+      if (explorer.erreurRecommandations) {
+        return explorer.erreurRecommandations;
+      }
+      return "Aucun aller-retour à venir en USD n’est disponible pour votre aéroport habituel dans le catalogue. Vous pouvez lancer une recherche avec un autre départ.";
+    }
     if (explorer.rechercheEnCours) return "Recherche des vols dans le catalogue…";
-    if (!explorer.aRecherche) return "Lancez une recherche pour consulter les vols enregistrés dans la base.";
-    return "Aucun vol ne correspond à ces critères.";
+    return "Aucun vol à afficher pour cette recherche.";
   }
 
-  const vols = onglet === "favoris" ? explorer.favoris : explorer.vols;
-  const sousTitre =
-    onglet === "historique"
-      ? `${explorer.historique.length} recherche(s) enregistrée(s)`
+  const vols = onglet === "favoris"
+    ? explorer.favoris
+    : afficherRecommandations
+      ? explorer.recommandations
+      : explorer.vols;
+
+  const titreResultats = afficherRecommandations
+    ? "Votre sélection de départ"
+    : TITRES[onglet];
+
+  const sousTitre = onglet === "historique"
+    ? `${explorer.historique.length} recherche(s) enregistrée(s)`
+    : afficherRecommandations
+      ? "Selon vos préférences enregistrées, si renseignées · aller-retour · USD · prix du catalogue non revérifiés en direct"
       : `${vols.length} vol(s) du catalogue · prix affichés dans la devise enregistrée`;
 
+
+  
   return (
     <section className="mx-auto w-full max-w-7xl px-6 py-8 lg:px-16">
       <BandeauExplorer prenom={utilisateur?.prenom} />
@@ -127,7 +151,7 @@ export default function PageExplorer() {
       )}
 
       <div className="mt-10">
-        <h2 className="text-2xl font-semibold tracking-tight text-encre">{TITRES[onglet]}</h2>
+        <h2 className="text-2xl font-semibold tracking-tight text-encre">{titreResultats}</h2>
         <p className="mt-1 mb-5 text-[13px] text-attenue">{sousTitre}</p>
 
         {onglet === "historique" ? (

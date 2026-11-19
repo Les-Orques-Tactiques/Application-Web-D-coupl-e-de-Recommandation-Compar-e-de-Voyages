@@ -2,6 +2,8 @@
 from abc import ABC, abstractmethod
 from typing import Optional
 from uuid import UUID
+from app.models.vol.Vol import Vol
+
 
 from app.models.recommandation.Recommandation import Recommandation
 from app.models.vol.CriteresRecherche import CriteresRecherche
@@ -27,4 +29,12 @@ class RecommandationInterface(ABC):
         recherche_id: Optional[UUID] = None,
     ) -> UUID:
         """Écrit l'exécution (executions_recommandation) et ses résultats
-        (resultats_recommandation) dans la MÊME transaction. Renvoie l'id de l'exécution."""
+        (resultats_recommandation) dans la MÊME transaction. Renvoie l'id de l'exécution.""" 
+
+    @abstractmethod
+    def lister_candidats_accueil(
+        self,
+        origine: Optional[str],
+        devise: str,
+    ) -> list[Vol]:
+        """Aller-retour encore à venir, sans destination imposée."""

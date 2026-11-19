@@ -46,6 +46,9 @@ export interface Vol {
   observe_le: string | null;
   depart_aller_local: string | null;
   arrivee_aller_locale: string | null;
+  rang?: number;
+  score?: number;
+  explication?: string | null;
 }
 
 // RechercheOut
@@ -102,3 +105,6 @@ export async function definirFavori(volId: string, favori: boolean): Promise<voi
     methode: favori ? "POST" : "DELETE",
   });
 }
+
+export const lireRecommandations = () =>
+  appelerApi<Vol[]>("/api/recommandations?limite=6");

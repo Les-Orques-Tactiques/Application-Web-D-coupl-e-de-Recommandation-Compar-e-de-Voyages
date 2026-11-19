@@ -62,7 +62,12 @@ export function CarteVol({ vol, favori, enCours, onBasculerFavori }: Props) {
 
       <p className="mt-3 flex items-start gap-2 rounded-md bg-menthe px-3 py-2.5 text-[12px] text-encre">
         <Sparkles aria-hidden="true" className="mt-0.5 size-4 shrink-0 text-principal" />
-        {vol.simulee ? "Itinéraire simulé présent dans le catalogue." : "Vol présent dans le catalogue de la base."}
+        {vol.explication ?? (
+          vol.simulee
+          ? "Itinéraire simulé présent dans le catalogue."
+          : "Vol présent dans le catalogue de la base."
+          )}
+
       </p>
 
       <p className="mt-auto pt-4 text-2xl text-encre">
