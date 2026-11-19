@@ -249,7 +249,8 @@ export default function PageResultats() {
             {menuCompteOuvert && <>
               <button type="button" aria-label="Fermer le menu du compte" className="fixed inset-0 z-30 cursor-default" onClick={() => setMenuCompteOuvert(false)} />
               <div role="menu" aria-label="Menu du compte" className="absolute right-0 top-full z-40 mt-2 w-44 rounded-lg border border-trait bg-white p-1.5 shadow-lg">
-                <button type="button" role="menuitem" className="w-full rounded-md px-3 py-2 text-left text-xs text-encre hover:bg-fond focus-visible:outline-2 focus-visible:outline-principal" onClick={() => { setMenuCompteOuvert(false); ouvrirProfil(); }}>Mon compte</button>
+                <Link to="/mon-compte" role="menuitem" className="block w-full rounded-md px-3 py-2 text-left text-xs text-encre hover:bg-fond focus-visible:outline-2 focus-visible:outline-principal" onClick={() => setMenuCompteOuvert(false)}>Mon compte</Link>
+                <button type="button" role="menuitem" className="w-full rounded-md px-3 py-2 text-left text-xs text-encre hover:bg-fond focus-visible:outline-2 focus-visible:outline-principal" onClick={() => { setMenuCompteOuvert(false); ouvrirProfil(); }}>Aperçu rapide du profil</button>
                 <button type="button" role="menuitem" disabled={deconnexionEnCours} className="w-full rounded-md px-3 py-2 text-left text-xs text-encre hover:bg-fond focus-visible:outline-2 focus-visible:outline-principal disabled:opacity-60" onClick={() => void deconnecterCompte()}>{deconnexionEnCours ? "Déconnexion…" : "Se déconnecter"}</button>
               </div>
             </>}
