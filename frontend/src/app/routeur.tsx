@@ -13,9 +13,9 @@ import PageReinitialisation from "@/features/auth/pages/PageReinitialisation";
 import PageExplorer from "@/features/explorer/pages/PageExplorer";
 import PageComparateur from "@/features/comparateur/pages/PageComparateur";
 import PageOnboarding from "@/features/preferences/pages/PageOnboarding";
-// 🆕 Page des résultats : Explorer y redirige après une recherche
-// (import par défaut, comme les autres pages de ce fichier)
+
 import PageResultats from "@/features/rechercheVols/pages/PageResultats";
+import PageDetailVol from "@/features/rechercheVols/pages/PageDetailVol";
 
 /**
  * Table de routage : associe une adresse (URL) à la page à afficher.
@@ -72,10 +72,9 @@ export const routeur = createBrowserRouter([
             element: <MiseEnPagePrivee />,
             children: [
               { path: "/explorer", element: <PageExplorer /> },
-              // 🆕 Les critères arrivent dans l'URL : /resultats?origine=LYS&destination=LIS…
-              // Route privée : la recherche en base nécessite d'être connecté.
               { path: "/resultats", element: <PageResultats /> },
               { path: "/comparateur", element: <PageComparateur /> },
+              { path: "/vol/:id", element: <PageDetailVol /> },
               // Les futures pages privées viendront ici (ex. /profil)
             ],
           },

@@ -1,8 +1,7 @@
 import { useMemo, useState } from "react";
-import { Link, useSearchParams } from "react-router-dom";
+import { Link, useSearchParams, useLocation, useNavigate } from "react-router-dom";
 import { Info, Sparkles } from "lucide-react";
 import { SurTitre } from "@/components/ui/SurTitre";
-import type { CriteresRecherche } from "@/features/explorer";
 import { depuisParametres } from "@/features/explorer/utils/parametresRecherche";
 import { BarreTri } from "../components/BarreTri";
 import { CarteVol } from "../components/CarteVol";
@@ -17,7 +16,8 @@ import { useResultats } from "../hooks/useResultats";
 import { boutonSecondaire } from "../utils/styles";
 import { formaterDates } from "../utils/formats";
 import type { Avis, Filtres, Vol } from "../utils/types";
-
+import type { CriteresRecherche } from "@/features/explorer";
+import type { EtatDetailVol } from "../utils/detailVol";
 /**
  * Page de résultats (/resultats). Affichée dans MiseEnPagePrivee, qui fournit
  * l'en-tête (onglets, avatar, déconnexion) et le pied de page.
@@ -68,11 +68,26 @@ function ContenuResultats({ criteres }: ProprietesContenu) {
     const filtrage = useFiltres(recherche.vols, filtresInitiaux);
 
     const [edition, setEdition] = useState(false);
-    const [selection, setSelection] = useState<Vol | null>(null);
     const [avis, setAvis] = useState<Record<string, Avis>>({});
 
     const dates = formaterDates(recherche.saisie);
     const nb = filtrage.volsAffiches.length;
+    const navigate = useNavigate();
+    const location = useLocation();
+
+    /** Ouvre la page détail en lui transmettant le vol et le contexte de la recherche. */
+    function voirVol(vol: Vol) {
+        const etat: EtatDetailVol = {
+            vol,
+            saisie: recherche.saisie,
+            budget: filtrage.filtres.budget,
+            favori: recherche.favoris.includes(vol.id),
+            depuisLaBase: recherche.depuisLaBase,
+            nbResultats: nb,
+            retour: location.pathname + location.search, // revient sur /resultats?... avec les mêmes critères
+        };
+        navigate(`/vol/${encodeURIComponent(vol.id)}`, { state: etat });
+    }
 
     async function rechercher() {
         const reussi = await recherche.lancerRecherche(filtrage.filtres.budget);
@@ -166,7 +181,7 @@ function ContenuResultats({ criteres }: ProprietesContenu) {
                                 // 🆕 void : basculerFavori peut maintenant être asynchrone (appel API)
                                 onBasculerFavori={() => void recherche.basculerFavori(vol.id)}
                                 onDonnerAvis={valeur => setAvis(precedents => ({ ...precedents, [vol.id]: valeur }))}
-                                onVoir={() => setSelection(vol)}
+                                onVoir={() => voirVol(vol)}
                             />
                         ))}
 
@@ -189,15 +204,6 @@ function ContenuResultats({ criteres }: ProprietesContenu) {
             </div>
 
             <EtatsAssocies avisDonne={Object.keys(avis).length > 0} onReinitialiser={filtrage.reinitialiser} />
-
-            {selection && (
-                <ModaleVol
-                    vol={selection}
-                    dates={dates}
-                    depuisLaBase={recherche.depuisLaBase}
-                    onFermer={() => setSelection(null)}
-                />
-            )}
         </section>
     );
 }
