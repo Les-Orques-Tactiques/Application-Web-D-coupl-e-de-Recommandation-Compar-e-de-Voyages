@@ -14,7 +14,7 @@ import {
 import type { Vol } from "../utils/types";
 
 /**
- * 🆕 État reçu par la page : celui de PageResultats, plus une devise facultative.
+ * État reçu par la page : celui de PageResultats, plus une devise facultative.
  * Explorer envoie la devise (les recommandations sont en USD) ;
  * PageResultats ne l'envoie pas : on affiche alors des euros.
  * On étend le type ici plutôt que de modifier detailVol.ts.
@@ -56,7 +56,7 @@ export default function PageDetailVol() {
     }
 
     const { vol, saisie, budget, depuisLaBase, nbResultats, retour } = etat;
-    // 🆕 Devise : celle envoyée par Explorer, sinon l'euro (cas de PageResultats)
+    //Devise : celle envoyée par Explorer, sinon l'euro (cas de PageResultats)
     const devise = etat.devise ?? "EUR";
     const total = vol.prix * saisie.passagers;
 
@@ -170,7 +170,7 @@ export default function PageDetailVol() {
                         <span className="rounded-full bg-citron px-2.5 py-1 text-[10px] font-semibold uppercase tracking-wider text-profond">
                             {depuisLaBase ? "Vol de la base de données" : "Offre de démonstration"}
                         </span>
-                        {/* 🆕 formaterPrix : affiche la bonne devise (ex. « 122,00 $US ») au lieu d'un « € » en dur */}
+                        {/*formaterPrix : affiche la bonne devise (ex. « 122,00 $US ») au lieu d'un « € » en dur */}
                         <p className="mt-4 text-5xl font-medium tracking-tight">{formaterPrix(total, devise)}</p>
                         <p className="mt-1 text-xs text-white/70">
                             Total pour {saisie.passagers} passager{saisie.passagers > 1 ? "s" : ""}

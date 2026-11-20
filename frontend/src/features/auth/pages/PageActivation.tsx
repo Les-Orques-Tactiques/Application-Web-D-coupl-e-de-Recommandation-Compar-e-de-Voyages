@@ -20,7 +20,7 @@ export default function PageActivation() {
 
   return (
     <section className="mx-auto w-full max-w-7xl px-6 py-12 text-center lg:px-16 lg:py-14">
-      <SurTitre>02 / Activer votre compte</SurTitre>
+      <SurTitre>Activer votre compte</SurTitre>
       <h1 className="mt-3 text-[40px] font-normal leading-tight tracking-tight">Vérifiez votre boîte mail.</h1>
       <p className="mt-3 text-[15px] text-attenue">
         Un dernier geste pour retrouver vos favoris et des vols qui vous ressemblent.
