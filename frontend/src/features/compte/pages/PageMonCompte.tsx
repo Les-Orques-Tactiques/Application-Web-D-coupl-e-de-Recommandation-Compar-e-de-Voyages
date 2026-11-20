@@ -141,7 +141,7 @@ export default function PageMonCompte() {
                         <h2 className="text-2xl font-semibold tracking-tight text-encre">Mes favoris</h2>
                         <p className="mt-1 text-[13px] text-attenue">{explorer.favoris.length} vol(s) favori(s)</p>
                     </div>
-                    <Link to="/explorer?onglet=favoris" className="text-[13px] font-medium text-principal hover:underline">
+                    <Link to="/favoris" className="text-[13px] font-medium text-principal hover:underline">
                         Tout voir →
                     </Link>
                 </div>

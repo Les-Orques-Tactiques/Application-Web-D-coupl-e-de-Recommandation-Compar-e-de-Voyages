@@ -1,4 +1,4 @@
-import { Navigate, createBrowserRouter } from "react-router-dom";
+import { Navigate, createBrowserRouter, useSearchParams } from "react-router-dom";
 import { RouteProtegee } from "@/features/auth/components/RouteProtegee";
 import { RouteOnboarding } from "@/features/auth/components/RouteOnboarding";
 import { RouteDejaOnboarde } from "@/features/auth/components/RouteDejaOnboarde";
@@ -12,10 +12,21 @@ import PageMotDePasseOublie from "@/features/auth/pages/PageMotDePasseOublie";
 import PageReinitialisation from "@/features/auth/pages/PageReinitialisation";
 import PageMonCompte from "@/features/compte/pages/PageMonCompte";
 import PageExplorer from "@/features/explorer/pages/PageExplorer";
+import PageFavoris from "@/features/favoris/pages/PageFavoris";
 import PageResultats from "@/features/rechercheVols/pages/PageResultats";
 import PageDetailVol from "@/features/rechercheVols/pages/PageDetailVol";
 import PageComparateur from "@/features/comparateur/pages/PageComparateur";
 import PageOnboarding from "@/features/preferences/pages/PageOnboarding";
+
+function PageExplorerOuFavoris() {
+  const [parametres] = useSearchParams();
+
+  if (parametres.get("onglet") === "favoris") {
+    return <Navigate to="/favoris" replace />;
+  }
+
+  return <PageExplorer />;
+}
 
 /**
  * Table de routage : associe une adresse (URL) à la page à afficher.
@@ -69,7 +80,8 @@ export const routeur = createBrowserRouter([
           {
             element: <MiseEnPagePrivee />,
             children: [
-              { path: "/explorer", element: <PageExplorer /> },
+              { path: "/explorer", element: <PageExplorerOuFavoris /> },
+              { path: "/favoris", element: <PageFavoris /> },
               // Résultats : les critères arrivent dans l'URL (?origine=…&destination=…)
               { path: "/resultats", element: <PageResultats /> },
               // Détail d'un vol : ":id" est un paramètre (lu avec useParams si besoin)

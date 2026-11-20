@@ -237,7 +237,7 @@ export default function PageResultats() {
           </Link>
           <nav aria-label="Navigation principale" className="hidden items-center gap-7 text-[11px] md:flex">
             <Link to="/resultats" aria-current="page" className="font-semibold text-principal">Explorer</Link>
-            <Link to="/explorer" className="text-attenue hover:text-principal">Mes favoris</Link>
+            <Link to="/favoris" className="text-attenue hover:text-principal">Mes favoris</Link>
             <Link to="/explorer" className="text-attenue hover:text-principal">Historique</Link>
             <Link to="/explorer" className="text-attenue hover:text-principal">Comparateur</Link>
           </nav>
