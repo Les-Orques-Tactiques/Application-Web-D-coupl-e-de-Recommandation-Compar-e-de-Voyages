@@ -1,5 +1,4 @@
 from fastapi import APIRouter, Depends, Query, Request
-from pydantic import Field
 
 from app.models.utilisateur.Utilisateur import Utilisateur
 from app.models.vol.VolSchema import VolOut

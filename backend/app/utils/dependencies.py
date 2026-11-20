@@ -73,5 +73,9 @@ recommandation_service = RecommandationService(
 pays_service = PaysService(pays_dao=pays_dao)
 aeroport_service = AeroportService(aeroport_dao=aeroport_dao)
 vol_service = VolService(vol_dao=vol_dao, aeroport_service=aeroport_service)
-recherche_service = RechercheService(recherche_dao=recherche_dao, vol_service=vol_service)
+recherche_service = RechercheService(
+    recherche_dao=recherche_dao,
+    vol_service=vol_service,
+    recommandation_service=recommandation_service,
+)
 embedding_service = EmbeddingService(vol_dao=vol_dao)

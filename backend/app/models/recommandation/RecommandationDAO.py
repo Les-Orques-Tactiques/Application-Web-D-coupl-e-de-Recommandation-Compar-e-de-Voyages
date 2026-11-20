@@ -1,4 +1,4 @@
-# app/models/recommandation/RecommandationDAO.py
+import json
 from typing import Optional
 from uuid import UUID
 from app.models.vol.Vol import Vol
@@ -26,10 +26,10 @@ class RecommandationDAO(RecommandationInterface):
             cursor.execute(
                 f"""
                 SELECT {COLONNES},
-                       1 - (v.embedding <=> %s::vector) AS score
+                       1 / (1 + (v.embedding <-> %s::vector)) AS score
                 {JOINTURE}
                 WHERE {' AND '.join(conditions)}
-                ORDER BY v.embedding <=> %s::vector, v.id
+                ORDER BY v.embedding <-> %s::vector, v.id
                 LIMIT %s OFFSET %s;
                 """,
                 parametres,
@@ -127,3 +127,9 @@ class RecommandationDAO(RecommandationInterface):
             deja_vus.add(signature)
             vols.append(Vol.from_row(ligne))
         return vols
+    
+    def moyenne_embedding(self) -> Optional[list[float]]:
+        with get_db_cursor() as cursor:
+            cursor.execute("SELECT AVG(embedding)::text AS moy FROM vols WHERE embedding IS NOT NULL;")
+            ligne = cursor.fetchone()
+            return json.loads(ligne["moy"]) if ligne and ligne["moy"] else None

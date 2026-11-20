@@ -1,6 +1,7 @@
 # app/services/RechercheService.py
 from uuid import UUID
 
+from app.services.RecommandationService import RecommandationService
 from app.models.recherche.Recherche import Recherche
 from app.models.recherche.RechercheInterface import RechercheInterface
 from app.models.vol.CriteresRecherche import CriteresRecherche
@@ -17,9 +18,15 @@ LIMITE_HISTORIQUE_MAX = 50
 
 class RechercheService:
 
-    def __init__(self, recherche_dao: RechercheInterface, vol_service: VolService):
+    def __init__(
+        self,
+        recherche_dao: RechercheInterface,
+        vol_service: VolService,
+        recommandation_service: RecommandationService,
+    ):
         self.recherche_dao = recherche_dao
         self.vol_service = vol_service
+        self.recommandation_service = recommandation_service
 
     # ------------------------------------------------------------------
     # Recherche + historique
@@ -30,7 +37,7 @@ class RechercheService:
         L'enregistrement n'a lieu qu'après une recherche valide.
         Lève ValidationError, ou UtilisateurIntrouvableError."""
         criteres = self.vol_service.construire_criteres(donnees)
-        vols = self.vol_service.rechercher_criteres(criteres)
+        vols = self._chercher(utilisateur_id, criteres)
         self._enregistrer(utilisateur_id, criteres)
         return vols
 
@@ -45,7 +52,7 @@ class RechercheService:
             criteres = recherche.vers_criteres()
         except ValueError as erreur:  # inclut CriteresInvalides
             raise ValidationError({"recherche": [str(erreur)]})
-        return self.vol_service.rechercher_criteres(criteres)
+        return self._chercher(utilisateur_id, criteres)
 
     # ------------------------------------------------------------------
     # Historique
@@ -84,3 +91,15 @@ class RechercheService:
         except ValueError:
             # Le DAO lève ValueError si la clé étrangère utilisateurs est violée.
             raise UtilisateurIntrouvableError("Utilisateur introuvable.")
+    
+    def _chercher(self, utilisateur_id: UUID, criteres: CriteresRecherche) -> list[Vol]:
+        """Tri « pertinence » : classement par similarité avec le profil.
+        Sans préférences exploitables (ou sans résultat), on se rabat sur la
+        recherche classique, qui trie par prix."""
+        if criteres.tri == "pertinence":
+            recommandations = self.recommandation_service.recommander_recherche(
+                utilisateur_id, criteres
+            )
+            if recommandations:
+                return [r.vol for r in recommandations]
+        return self.vol_service.rechercher_criteres(criteres)
