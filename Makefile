@@ -20,3 +20,6 @@ logs:
 
 down:
 	docker compose down
+
+delete_all:
+	docker compose down -v
