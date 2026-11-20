@@ -9,6 +9,9 @@ Usage :
 Chaque réponse de l'API est aussi enregistrée dans un fichier JSON (dossier data/raw,
 modifiable avec la variable DOSSIER_JSON).
 
+Seuls les vols sont conservés : les itinéraires contenant un train, un bus
+ou un autre mode non aérien sont ignorés.
+
 Variables d'environnement :
     IGNAV_API_KEY   clé API Ignav
     DATABASE_URL    ex. postgresql://user:mdp@localhost:5432/sae
@@ -18,6 +21,7 @@ Dépendances : pip install requests psycopg2-binary
 import hashlib
 import json
 import os
+import re
 import sys
 import time
 from datetime import date, datetime, timedelta
@@ -50,6 +54,18 @@ MAX_REQUETES = 800                        # plafond de requêtes API par lanceme
 # Quota : 1 000 requêtes gratuites au total. Chaque requête renvoie ~10 itinéraires.
 # Ici : 135 routes x 3 dates = 405 requêtes d'aller simple, soit ~4 000 vols.
 # -----------------------------------------------------------------------------
+
+# Mots entiers (\b) pour ne pas matcher « Airbus ».
+MODES_NON_AERIENS = re.compile(r"\b(train|bus|coach|rail|ferry|boat)\b", re.IGNORECASE)
+
+
+def contient_non_aerien(it):
+    """True si un segment est un train, un bus ou un autre mode non aérien."""
+    for sens in ("outbound", "inbound"):
+        for seg in (it.get(sens) or {}).get("segments", []):
+            if MODES_NON_AERIENS.search(seg.get("aircraft") or ""):
+                return True
+    return False
 
 
 def appeler_api(chemin, corps, tentatives=4):
@@ -109,6 +125,8 @@ def extraire_heure_depart(itineraire):
 def assurer_aeroports(cur, donnees):
     codes = {donnees["origin"]: None, donnees["destination"]: None}
     for it in donnees["itineraries"]:
+        if contient_non_aerien(it):
+            continue
         for sens in ("outbound", "inbound"):
             for seg in (it.get(sens) or {}).get("segments", []):
                 codes[seg["departure_airport"]] = seg.get("departure_timezone") or codes.get(seg["departure_airport"])
@@ -141,10 +159,12 @@ def inserer_segments(cur, vol_id, trajet, sens):
 
 
 def normaliser(cur, ingestion_id, donnees):
-    """Insère (ou met à jour le prix de) chaque itinéraire. Retourne (nouveaux, mis_a_jour)."""
+    """Insère (ou met à jour le prix de) chaque itinéraire aérien. Retourne (nouveaux, mis_a_jour)."""
     assurer_aeroports(cur, donnees)
     nouveaux = maj = 0
     for it in donnees["itineraries"]:
+        if contient_non_aerien(it):
+            continue
         aller = it["outbound"]
         retour = it.get("inbound")
         cur.execute(

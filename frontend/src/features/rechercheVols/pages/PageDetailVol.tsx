@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import {
     ArrowLeft, Check, ExternalLink, Heart, MousePointerClick, Plane, Sparkles, ThumbsDown, ThumbsUp,
@@ -11,6 +11,7 @@ import {
     raisonsRecommandation, villeCourte, type EtatDetailVol,
 } from "../utils/detailVol";
 import type { Vol } from "../utils/types";
+import { definirAvis, journaliserInteraction, lireAvis } from "../services/interactionsApi";
 
 /**
  * État reçu par la page : celui de PageResultats, plus une devise facultative.
@@ -36,6 +37,25 @@ export default function PageDetailVol() {
     const [favoriEnCours, setFavoriEnCours] = useState(false);
     const [erreur, setErreur] = useState<string | null>(null);
     const [avis, setAvis] = useState<"oui" | "non" | null>(null);
+    const [avisEnCours, setAvisEnCours] = useState(false);
+
+    // Seuls les vols venant de la base ont un vrai identifiant :
+    // les offres de démonstration ne sont ni journalisées ni notées côté serveur.
+    const volEnBase = etat?.depuisLaBase && etat.vol ? etat.vol.id : null;
+
+    // À l'ouverture de la fiche : on récupère l'avis déjà donné
+    // et on journalise une « vue » (le back ignore les vues répétées).
+    useEffect(() => {
+        if (!volEnBase) return;
+        let actif = true; // évite un setState si on quitte la page avant la réponse
+        void journaliserInteraction(volEnBase, "vue");
+        lireAvis(volEnBase)
+            .then((pertinent) => {
+                if (actif && pertinent !== null) setAvis(pertinent ? "oui" : "non");
+            })
+            .catch(() => { /* pas d'avis affiché : ce n'est pas bloquant */ });
+        return () => { actif = false; };
+    }, [volEnBase]);
 
     // 🆕 Sans vol OU sans saisie (state incomplet, page rechargée…),
     // on affiche un message au lieu de planter sur saisie.passagers
@@ -59,6 +79,21 @@ export default function PageDetailVol() {
     const devise = etat.devise ?? "EUR";
     const total = vol.prix * saisie.passagers;
 
+    // Trajet retour : null si la base n'a pas fourni les horaires du retour.
+    // Les lieux sont inversés : on part de l'arrivée de l'aller.
+    const volRetour: Vol | null =
+        vol.departRetour && vol.arriveeRetour && vol.dureeRetour != null
+            ? {
+                  ...vol,
+                  depart: vol.departRetour,
+                  arrivee: vol.arriveeRetour,
+                  duree: vol.dureeRetour,
+                  escale: vol.escaleRetour ?? null,
+                  lieuDepart: vol.lieuArrivee,
+                  lieuArrivee: vol.lieuDepart,
+              }
+            : null;
+
     async function basculerFavori() {
         setFavoriEnCours(true);
         setErreur(null);
@@ -69,6 +104,27 @@ export default function PageDetailVol() {
             setErreur("Impossible de modifier vos favoris pour le moment.");
         } finally {
             setFavoriEnCours(false);
+        }
+    }
+
+    // Recliquer sur le bouton déjà actif retire l'avis.
+    async function changerAvis(choix: "oui" | "non") {
+        const nouvelAvis = avis === choix ? null : choix;
+        if (!volEnBase) {
+            setAvis(nouvelAvis); // démonstration : affichage seulement
+            return;
+        }
+        const precedent = avis;
+        setAvis(nouvelAvis); // mise à jour optimiste, annulée en cas d'erreur
+        setAvisEnCours(true);
+        setErreur(null);
+        try {
+            await definirAvis(volEnBase, nouvelAvis === null ? null : nouvelAvis === "oui");
+        } catch {
+            setAvis(precedent);
+            setErreur("Impossible d'enregistrer votre avis pour le moment.");
+        } finally {
+            setAvisEnCours(false);
         }
     }
 
@@ -109,8 +165,7 @@ export default function PageDetailVol() {
                 <div className="space-y-5">
                     <CarteTrajet etiquette="Aller" jour={formaterJour(saisie.aller)} vol={vol} />
                     {saisie.allerRetour && saisie.retour && (
-                        // La base ne fournit pas encore les horaires du retour
-                        <CarteTrajet etiquette="Retour" jour={formaterJour(saisie.retour)} vol={null} />
+                        <CarteTrajet etiquette="Retour" jour={formaterJour(saisie.retour)} vol={volRetour} />
                     )}
 
                     <article className="rounded-xl bg-menthe p-6">
@@ -134,7 +189,8 @@ export default function PageDetailVol() {
                             <button
                                 type="button"
                                 aria-pressed={avis === "oui"}
-                                onClick={() => setAvis("oui")}
+                                disabled={avisEnCours}
+                                onClick={() => void changerAvis("oui")}
                                 className={`inline-flex items-center gap-2 rounded-lg px-4 py-2 ${avis === "oui" ? "bg-principal text-white" : "bg-white"}`}
                             >
                                 Oui, pertinent <ThumbsUp className="size-3.5" aria-hidden="true" />
@@ -142,7 +198,8 @@ export default function PageDetailVol() {
                             <button
                                 type="button"
                                 aria-pressed={avis === "non"}
-                                onClick={() => setAvis("non")}
+                                disabled={avisEnCours}
+                                onClick={() => void changerAvis("non")}
                                 className={`inline-flex items-center gap-2 rounded-lg px-4 py-2 ${avis === "non" ? "bg-principal text-white" : "text-principal"}`}
                             >
                                 Pas vraiment <ThumbsDown className="size-3.5" aria-hidden="true" />

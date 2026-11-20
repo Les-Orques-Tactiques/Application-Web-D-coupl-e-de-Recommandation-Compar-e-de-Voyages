@@ -25,7 +25,8 @@ type PropsCarteVol = {
     onVoir: () => void;
 };
 
-export function CarteVol({ vol, rang, meilleur, favori, avis, dates, allerRetour, onBasculerFavori, onDonnerAvis, onVoir }: PropsCarteVol) {    return (
+export function CarteVol({ vol, rang, meilleur, favori, avis, dates, allerRetour, onBasculerFavori, onDonnerAvis, onVoir }: PropsCarteVol) {
+    return (
         <article className={`rounded-xl border bg-white p-5 ${meilleur ? "border-principal/40" : "border-trait"}`}>
             {/* Ligne 1 : rang, compagnie, badge, favori */}
             <div className="flex items-center gap-2 text-[11px]">
@@ -47,27 +48,60 @@ export function CarteVol({ vol, rang, meilleur, favori, avis, dates, allerRetour
                 </button>
             </div>
 
-            {/* Ligne 2 : horaires, trajet, prix */}
-            <div className="mt-4 grid grid-cols-[auto_1fr_auto] items-center gap-4 sm:grid-cols-[auto_1fr_auto_115px]">
-                <div>
-                    <p className="text-2xl font-semibold tracking-tight text-encre">{vol.depart}</p>
-                    <p className="mt-1 text-[10px] text-attenue">{vol.lieuDepart}</p>
-                </div>
-                <div className="text-center">
-                    <p className="mb-2 text-[10px] text-attenue">{dureeLisible(vol.duree)}</p>
-                    <div className="relative h-px bg-trait">
-                        <span className="absolute -top-0.5 left-0 size-1 rounded-full bg-principal" />
-                        <Plane aria-hidden="true" className="absolute -top-1.5 right-0 size-3 bg-white pl-0.5 text-principal" />
+            {/* Horaires (à gauche) + prix (à droite, centré verticalement sur l'aller ET le retour) */}
+            <div className="mt-4 grid gap-4 sm:grid-cols-[minmax(0,1fr)_115px] sm:items-center">
+                {/* Colonnes communes à l'aller et au retour (subgrid) : tout reste aligné */}
+                <div className="grid grid-cols-[auto_1fr_auto] items-center gap-x-4 gap-y-3">
+                    {/* Aller */}
+                    <div className="col-span-full grid grid-cols-subgrid items-center">
+                        <div>
+                            <p className="text-2xl font-semibold tracking-tight text-encre">{vol.depart}</p>
+                            <p className="mt-1 text-[10px] text-attenue">{vol.lieuDepart}</p>
+                        </div>
+                        <div className="text-center">
+                            <p className="mb-2 text-[10px] text-attenue">{dureeLisible(vol.duree)}</p>
+                            <div className="relative h-px bg-trait">
+                                <span className="absolute -top-0.5 left-0 size-1 rounded-full bg-principal" />
+                                <Plane aria-hidden="true" className="absolute -top-1.5 right-0 size-3 bg-white pl-0.5 text-principal" />
+                            </div>
+                            <p className="mt-2 text-[9px] text-principal">{vol.escale ?? "Direct"}</p>
+                        </div>
+                        <div>
+                            <p className="text-2xl font-semibold tracking-tight text-encre">{vol.arrivee}</p>
+                            <p className="mt-1 text-[10px] text-attenue">{vol.lieuArrivee}</p>
+                        </div>
                     </div>
-                    <p className="mt-2 text-[9px] text-principal">{vol.escale ?? "Direct"}</p>
+
+                    {/* Retour (aller-retour uniquement) */}
+                    {allerRetour && vol.departRetour && (
+                        <div className="col-span-full grid grid-cols-subgrid items-center border-t border-trait pt-3">
+                            <div>
+                                <p className="text-2xl font-semibold tracking-tight text-encre">{vol.departRetour}</p>
+                                <p className="mt-1 text-[10px] text-attenue">{vol.lieuArrivee}</p>
+                            </div>
+                            <div className="text-center">
+                                <p className="mb-2 text-[10px] text-attenue">
+                                    {vol.dureeRetour != null ? dureeLisible(vol.dureeRetour) : "--"}
+                                </p>
+                                <div className="relative h-px bg-trait">
+                                    <span className="absolute -top-0.5 left-0 size-1 rounded-full bg-principal" />
+                                    <Plane aria-hidden="true" className="absolute -top-1.5 right-0 size-3 rotate-180 bg-white pl-0.5 text-principal" />
+                                </div>
+                                <p className="mt-2 text-[9px] text-principal">{vol.escaleRetour ?? "Direct"}</p>
+                            </div>
+                            <div>
+                                <p className="text-2xl font-semibold tracking-tight text-encre">{vol.arriveeRetour}</p>
+                                <p className="mt-1 text-[10px] text-attenue">{vol.lieuDepart}</p>
+                            </div>
+                        </div>
+                    )}
                 </div>
-                <div>
-                    <p className="text-2xl font-semibold tracking-tight text-encre">{vol.arrivee}</p>
-                    <p className="mt-1 text-[10px] text-attenue">{vol.lieuArrivee}</p>
-                </div>
-                <div className="col-span-3 text-right sm:col-span-1">
+
+                {/* Prix : sous les horaires sur mobile, à droite et centré sur desktop */}
+                <div className="text-right">
                     <p className="text-2xl tracking-tight text-encre">{vol.prix} €</p>
-                    <p className="text-[9px] text-attenue">{allerRetour ? "aller-retour" : "aller simple"} / pers.</p>                </div>
+                    <p className="text-[9px] text-attenue">{allerRetour ? "aller-retour" : "aller simple"} / pers.</p>
+                </div>
             </div>
 
             {/* Explication de la recommandation */}

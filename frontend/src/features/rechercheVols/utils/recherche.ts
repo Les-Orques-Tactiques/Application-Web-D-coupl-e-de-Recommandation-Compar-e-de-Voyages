@@ -34,9 +34,12 @@ export function messageErreur(erreur: unknown): string {
     return `La recherche dans la base de données a échoué : ${detail}`;
 }
 
+function libelleEscale(n: number): string | null {
+    return n > 0 ? `${n} escale${n > 1 ? "s" : ""}` : null;
+}
+
 /** Convertit un vol renvoyé par l'API au format affiché par la page. */
 export function convertirVolExplorer(vol: VolApi): Vol {
-    const n = vol.escales_aller;
     return {
         id: vol.id,
         compagnie: vol.compagnie_aller,
@@ -46,12 +49,19 @@ export function convertirVolExplorer(vol: VolApi): Vol {
         arrivee: formaterHeure(vol.arrivee_aller_locale) ?? "--:--",
         duree: vol.duree_aller_min,
         prix: vol.prix,
-        escale: n > 0 ? `${n} escale${n > 1 ? "s" : ""}` : null,
+        escale: libelleEscale(vol.escales_aller),
         message: vol.simulee
             ? "Itinéraire simulé présent dans la base de données."
             : "Vol trouvé dans la base de données.",
         lieuDepart: `${vol.origine} · ${vol.ville_origine ?? "Départ"}`,
         lieuArrivee: `${vol.destination} · ${vol.ville_destination ?? "Arrivée"}`,
         dateDepart: vol.date_depart,
+        ...(vol.aller_retour && {
+            dateRetour: vol.date_retour ?? undefined,
+            departRetour: formaterHeure(vol.depart_retour_local) ?? "--:--",
+            arriveeRetour: formaterHeure(vol.arrivee_retour_locale) ?? "--:--",
+            dureeRetour: vol.duree_retour_min ?? undefined,
+            escaleRetour: libelleEscale(vol.escales_retour ?? 0),
+        }),
     };
 }

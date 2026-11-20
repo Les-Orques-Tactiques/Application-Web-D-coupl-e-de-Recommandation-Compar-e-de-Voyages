@@ -30,3 +30,5 @@ class VolOut(BaseModel):
     observe_le: Optional[datetime] = None
     depart_aller_local: Optional[datetime] = None
     arrivee_aller_locale: Optional[datetime] = None
+    depart_retour_local: Optional[datetime] = None
+    arrivee_retour_locale: Optional[datetime] = None
