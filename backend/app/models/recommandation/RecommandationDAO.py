@@ -135,3 +135,34 @@ class RecommandationDAO(RecommandationInterface):
             cursor.execute("SELECT AVG(embedding)::text AS moy FROM vols WHERE embedding IS NOT NULL;")
             ligne = cursor.fetchone()
             return json.loads(ligne["moy"]) if ligne and ligne["moy"] else None
+
+    def profil_depuis_interactions(self, utilisateur_id: UUID) -> Optional[list[float]]:
+        with get_db_cursor() as cursor:
+            cursor.execute(
+                """
+                SELECT i.poids, v.embedding::text AS emb
+                FROM interactions i
+                JOIN vols v ON v.id = i.vol_id
+                WHERE i.utilisateur_id = %s
+                  AND i.type IN ('favori', 'avis_pertinent', 'reserver', 'avis_non_pertinent')
+                  AND v.embedding IS NOT NULL;
+                """,
+                (utilisateur_id,),
+            )
+            lignes = cursor.fetchall()
+
+        positifs = [(l["poids"], json.loads(l["emb"])) for l in lignes if l["poids"] > 0]
+        negatifs = [(-l["poids"], json.loads(l["emb"])) for l in lignes if l["poids"] < 0]
+        if not positifs:
+            return None
+
+        def moyenne_ponderee(paires):
+            total = sum(p for p, _ in paires)
+            return [sum(p * e[i] for p, e in paires) / total for i in range(4)]
+
+        profil = moyenne_ponderee(positifs)
+        if negatifs:
+            neg = moyenne_ponderee(negatifs)
+            # on s'écarte des vols refusés, en restant dans [-1, 1]
+            profil = [max(-1.0, min(1.0, p + 0.5 * (p - n))) for p, n in zip(profil, neg)]
+        return profil

@@ -42,3 +42,9 @@ class RecommandationInterface(ABC):
     @abstractmethod
     def moyenne_embedding(self) -> Optional[list[float]]:
         """Vecteur moyen des embeddings du catalogue, ou None si aucun vol n'en a."""
+    
+    @abstractmethod
+    def profil_depuis_interactions(self, utilisateur_id: UUID) -> Optional[list[float]]:
+        """Profil de l'utilisateur : moyenne pondérée des embeddings des vols
+        favoris, jugés pertinents ou réservés, éloignée des vols jugés non pertinents.
+        None s'il n'y a aucune interaction positive."""

@@ -42,3 +42,7 @@ export async function journaliserInteraction(volId: string, type: TypeInteractio
     /* journal best-effort : pas de message d'erreur à l'écran */
   }
 }
+
+/** Tous les avis de l'utilisateur (pour rallumer les pouces). */
+export const listerAvis = () =>
+  appelerApi<{ vol_id: string; pertinent: boolean }[]>("/api/utilisateurs/moi/avis");
