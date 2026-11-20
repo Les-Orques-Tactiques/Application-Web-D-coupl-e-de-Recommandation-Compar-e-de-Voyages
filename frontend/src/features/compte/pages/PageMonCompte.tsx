@@ -71,7 +71,6 @@ export default function PageMonCompte() {
             nb_passagers: recherche.nb_passagers,
             budget_max: recherche.budget_max ?? 1000, // pas de budget enregistré → budget large
             direct_seulement: false,
-            bagage_requis: false,
         };
         navigate(`/resultats?${versParametres(criteres).toString()}`);
     }
