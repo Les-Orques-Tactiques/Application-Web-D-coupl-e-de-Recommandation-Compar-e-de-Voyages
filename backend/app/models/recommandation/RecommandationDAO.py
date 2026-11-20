@@ -1,4 +1,4 @@
-# app/models/recommandation/RecommandationDAO.py
+import json
 from typing import Optional
 from uuid import UUID
 from app.models.vol.Vol import Vol
@@ -7,13 +7,7 @@ from app.database.initdb import get_db_cursor
 from app.models.recommandation.Recommandation import Recommandation
 from app.models.recommandation.RecommandationInterface import RecommandationInterface
 from app.models.vol.CriteresRecherche import CriteresRecherche
-from app.models.vol.VolDAO import COLONNES, JOINTURE, construire_filtres
-
-
-def _vers_litteral_vecteur(valeurs: list[float]) -> str:
-    """Format texte attendu par pgvector : '[0.1,0.2,0.3,0.4]'."""
-    return "[" + ",".join(f"{float(v):.6f}" for v in valeurs) + "]"
-
+from app.models.vol.VolDAO import COLONNES, JOINTURE, construire_filtres, vers_litteral_vecteur
 
 class RecommandationDAO(RecommandationInterface):
 
@@ -22,7 +16,7 @@ class RecommandationDAO(RecommandationInterface):
     ) -> list[Recommandation]:
         conditions, valeurs = construire_filtres(criteres)
         conditions.append("v.embedding IS NOT NULL")
-        vecteur = _vers_litteral_vecteur(embedding)
+        vecteur = vers_litteral_vecteur(embedding)
 
         # <=> = distance cosinus (0 = identique) ; 1 - distance = similarité.
         # Le vecteur apparaît deux fois (SELECT puis ORDER BY), donc deux fois dans les valeurs.
@@ -32,10 +26,10 @@ class RecommandationDAO(RecommandationInterface):
             cursor.execute(
                 f"""
                 SELECT {COLONNES},
-                       1 - (v.embedding <=> %s::vector) AS score
+                       1 / (1 + (v.embedding <-> %s::vector)) AS score
                 {JOINTURE}
                 WHERE {' AND '.join(conditions)}
-                ORDER BY v.embedding <=> %s::vector, v.id
+                ORDER BY v.embedding <-> %s::vector, v.id
                 LIMIT %s OFFSET %s;
                 """,
                 parametres,
@@ -103,34 +97,39 @@ class RecommandationDAO(RecommandationInterface):
             conditions.append("v.origine = %s")
             valeurs.append(origine)
 
-            with get_db_cursor() as cursor:
-                cursor.execute(
-                    f"""
-                    SELECT {COLONNES}
-                    {JOINTURE}
-                    WHERE {' AND '.join(conditions)}
-                    ORDER BY v.date_depart, v.prix, v.id;
-                    """,
-                    valeurs,
-                )
-                lignes = cursor.fetchall()
+        with get_db_cursor() as cursor:
+            cursor.execute(
+                f"""
+                SELECT {COLONNES}
+                {JOINTURE}
+                WHERE {' AND '.join(conditions)}
+                ORDER BY v.date_depart, v.prix, v.id;
+                """,
+                valeurs,
+            )
+            lignes = cursor.fetchall()
 
-            # Deux lignes avec des id différents peuvent décrire le même vol affiché
-            # (même compagnie, même trajet, mêmes horaires, mêmes dates).
-            # Le tri (date, prix) place le moins cher en premier : on garde celui-là.
-            deja_vus: set[tuple] = set()
-            vols: list[Vol] = []
-            for ligne in lignes:
-                signature = (
-                    ligne["compagnie_aller"],
-                    ligne["origine"],
-                    ligne["destination"],
-                    ligne["depart_aller_local"],
-                    ligne["arrivee_aller_locale"],
-                    ligne["date_retour"],
-                )
-                if signature in deja_vus:
-                    continue  # doublon : on l'ignore
-                deja_vus.add(signature)
-                vols.append(Vol.from_row(ligne))
-            return vols
+        # Deux lignes avec des id différents peuvent décrire le même vol affiché.
+        # Le tri (date, prix) place le moins cher en premier : on garde celui-là.
+        deja_vus: set[tuple] = set()
+        vols: list[Vol] = []
+        for ligne in lignes:
+            signature = (
+                ligne["compagnie_aller"],
+                ligne["origine"],
+                ligne["destination"],
+                ligne["depart_aller_local"],
+                ligne["arrivee_aller_locale"],
+                ligne["date_retour"],
+            )
+            if signature in deja_vus:
+                continue
+            deja_vus.add(signature)
+            vols.append(Vol.from_row(ligne))
+        return vols
+    
+    def moyenne_embedding(self) -> Optional[list[float]]:
+        with get_db_cursor() as cursor:
+            cursor.execute("SELECT AVG(embedding)::text AS moy FROM vols WHERE embedding IS NOT NULL;")
+            ligne = cursor.fetchone()
+            return json.loads(ligne["moy"]) if ligne and ligne["moy"] else None

@@ -38,3 +38,7 @@ class RecommandationInterface(ABC):
         devise: str,
     ) -> list[Vol]:
         """Aller-retour encore à venir, sans destination imposée."""
+    
+    @abstractmethod
+    def moyenne_embedding(self) -> Optional[list[float]]:
+        """Vecteur moyen des embeddings du catalogue, ou None si aucun vol n'en a."""

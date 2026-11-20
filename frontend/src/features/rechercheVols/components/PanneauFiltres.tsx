@@ -20,7 +20,7 @@ type PropsPanneauFiltres = {
     onReinitialiser: () => void;
 };
 
-/** Colonne de gauche : budget, escales, bagages, durée, compagnies. */
+/** Colonne de gauche : budget, escales, durée, compagnies. */
 export function PanneauFiltres({ filtres, vols, compagnies, onModifier, onBasculerCompagnie, onReinitialiser }: PropsPanneauFiltres) {
     const budgetMax = Math.max(220, filtres.budget);
     const nbDirects = vols.filter(v => !v.escale).length;
@@ -54,12 +54,6 @@ export function PanneauFiltres({ filtres, vols, compagnies, onModifier, onBascul
                 <legend className="mb-2 text-xs font-medium text-encre">Escales</legend>
                 <CaseFiltre libelle={`Vols directs (${nbDirects})`} coche={filtres.directs} onBasculer={() => onModifier("directs", !filtres.directs)} />
                 <CaseFiltre libelle={`Avec escale (${vols.length - nbDirects})`} coche={filtres.escales} onBasculer={() => onModifier("escales", !filtres.escales)} />
-            </fieldset>
-
-            <fieldset className="mt-5 space-y-1">
-                <legend className="mb-2 text-xs font-medium text-encre">Bagages inclus</legend>
-                <CaseFiltre libelle="Tous les tarifs" coche={!filtres.cabine} onBasculer={() => onModifier("cabine", !filtres.cabine)} />
-                <CaseFiltre libelle="Cabine uniquement" coche={filtres.cabine} onBasculer={() => onModifier("cabine", !filtres.cabine)} />
             </fieldset>
 
             <label className="mt-5 block text-xs font-medium text-encre">

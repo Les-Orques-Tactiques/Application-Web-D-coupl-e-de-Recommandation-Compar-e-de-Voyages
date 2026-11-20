@@ -14,7 +14,6 @@ export const FILTRES_PAR_DEFAUT: Filtres = {
   dureeMax: 6,
   directs: true,
   escales: true,
-  cabine: false,
   compagniesExclues: [],
 };
 

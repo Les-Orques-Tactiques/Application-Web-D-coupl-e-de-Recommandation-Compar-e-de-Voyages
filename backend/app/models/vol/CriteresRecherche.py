@@ -26,7 +26,6 @@ class CriteresRecherche:
     budget: Optional[float] = None
     escales_max: Optional[int] = None
     compagnies: tuple[str, ...] = ()
-    bagage_inclus: Optional[bool] = None
     duree_max_min: Optional[int] = None
     tolerance_jours: int = 0
     tri: str = "prix"

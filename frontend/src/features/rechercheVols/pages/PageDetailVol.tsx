@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import {
-    ArrowLeft, Backpack, Briefcase, Check, ExternalLink, Heart,
-    Luggage, MousePointerClick, Plane, Sparkles, ThumbsDown, ThumbsUp,
+    ArrowLeft, Check, ExternalLink, Heart, MousePointerClick, Plane, Sparkles, ThumbsDown, ThumbsUp,
 } from "lucide-react";
 import { SurTitre } from "@/components/ui/SurTitre";
 import { definirFavori } from "@/features/explorer/services/explorationApi";
@@ -114,18 +113,6 @@ export default function PageDetailVol() {
                         <CarteTrajet etiquette="Retour" jour={formaterJour(saisie.retour)} vol={null} />
                     )}
 
-                    <article className="rounded-xl border border-trait bg-white p-6">
-                        <h2 className="text-xl font-semibold text-encre">Vos bagages, sans ambiguïté.</h2>
-                        <div className="mt-5 grid gap-5 sm:grid-cols-3">
-                            <Bagage icone={Backpack} titre="Petit sac personnel" detail="Généralement inclus · sous le siège" />
-                            <Bagage icone={Briefcase} titre="Bagage cabine" detail={vol.cabine ? "Inclus dans ce tarif" : "Non inclus ou non renseigné"} />
-                            <Bagage icone={Luggage} titre="Bagage en soute" detail="À vérifier auprès de la compagnie" />
-                        </div>
-                        <p className="mt-5 text-[11px] text-attenue">
-                            Conditions et suppléments à vérifier sur le site de la compagnie.
-                        </p>
-                    </article>
-
                     <article className="rounded-xl bg-menthe p-6">
                         <h2 className="flex items-center gap-2 text-xl font-semibold text-encre">
                             <Sparkles className="size-5 text-principal" aria-hidden="true" />
@@ -180,10 +167,6 @@ export default function PageDetailVol() {
                             <div className="flex justify-between">
                                 <dt className="text-white/70">Prix par personne</dt>
                                 <dd className="font-semibold">{formaterPrix(vol.prix, devise)}</dd>
-                            </div>
-                            <div className="flex justify-between">
-                                <dt className="text-white/70">Bagage cabine</dt>
-                                <dd className="font-semibold">{vol.cabine ? "Inclus" : "Non renseigné"}</dd>
                             </div>
                         </dl>
 
@@ -284,16 +267,5 @@ function TrajetDetaille({ vol }: { vol: Vol }) {
                 <span>Horaires locaux</span>
             </div>
         </>
-    );
-}
-
-/** Une colonne de la section bagages. */
-function Bagage({ icone: Icone, titre, detail }: { icone: typeof Backpack; titre: string; detail: string }) {
-    return (
-        <div>
-            <Icone className="size-5 text-principal" aria-hidden="true" />
-            <p className="mt-3 text-sm font-semibold text-encre">{titre}</p>
-            <p className="mt-1 text-xs text-attenue">{detail}</p>
-        </div>
     );
 }

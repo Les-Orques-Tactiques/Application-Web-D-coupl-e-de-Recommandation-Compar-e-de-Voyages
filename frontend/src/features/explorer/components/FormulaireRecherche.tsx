@@ -116,15 +116,6 @@ export function FormulaireRecherche({ criteres, onChange, onRechercher, enCours 
             />
             Vols directs uniquement
           </label>
-          <label className="flex items-center gap-2">
-            <input
-              type="checkbox"
-              className="accent-principal"
-              checked={criteres.bagage_requis}
-              onChange={e => modifier("bagage_requis", e.target.checked)}
-            />
-            Bagage en soute obligatoire
-          </label>
         </div>
         <Bouton type="submit" disabled={enCours || !criteres.origine || !criteres.destination}>
           {enCours ? "Recherche…" : "Trouver mes vols"}

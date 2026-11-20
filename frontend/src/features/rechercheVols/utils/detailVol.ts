@@ -68,8 +68,6 @@ export function raisonsRecommandation(vol: Vol, budget: number) {
             ? { titre: "Un trajet avec escale", detail: `${vol.escale} · ${formaterDuree(vol.duree)} de trajet à l'aller.` }
             : { titre: "Du temps pour la destination", detail: `Vol direct de ${formaterDuree(vol.duree)} à l'aller.` },
     );
-    if (vol.cabine) {
-        raisons.push({ titre: "Votre bagage cabine est compris", detail: "Il est inclus dans le tarif affiché." });
-    }
+   
     return raisons;
 }

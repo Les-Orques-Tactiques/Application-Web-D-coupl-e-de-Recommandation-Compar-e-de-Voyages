@@ -3,6 +3,10 @@ import { dureeLisible } from "../utils/formats";
 import { boutonPrincipal, boutonSecondaire } from "../utils/styles";
 import type { Avis, Vol } from "../utils/types";
 
+function dateCourte(iso?: string): string | null {
+    if (!iso) return null;
+    return new Date(`${iso}T12:00:00`).toLocaleDateString("fr-FR", { day: "numeric", month: "short" });
+}
 const BOUTONS_AVIS = [
     { valeur: "oui", Icone: ThumbsUp, libelle: "Ce vol me correspond" },
     { valeur: "non", Icone: ThumbsDown, libelle: "Ce vol ne me correspond pas" },
@@ -10,29 +14,25 @@ const BOUTONS_AVIS = [
 
 type PropsCarteVol = {
     vol: Vol;
-    rang: number;    // 1, 2, 3…
-    meilleur: boolean;      // badge « Meilleur équilibre »
+    rang: number;
+    meilleur: boolean;
     favori: boolean;
     avis?: Avis;
     dates: string;
-    depuisLaBase: boolean;
+    allerRetour: boolean;
     onBasculerFavori: () => void;
     onDonnerAvis: (avis: Avis) => void;
     onVoir: () => void;
 };
 
-export function CarteVol({ vol, rang, meilleur, favori, avis, dates, depuisLaBase, onBasculerFavori, onDonnerAvis, onVoir }: PropsCarteVol) {
-    const bagage = vol.cabine
-        ? "Cabine 10 kg incluse"
-        : depuisLaBase ? "Bagage non inclus ou non renseigné" : "Petit sac inclus";
-
-    return (
+export function CarteVol({ vol, rang, meilleur, favori, avis, dates, allerRetour, onBasculerFavori, onDonnerAvis, onVoir }: PropsCarteVol) {    return (
         <article className={`rounded-xl border bg-white p-5 ${meilleur ? "border-principal/40" : "border-trait"}`}>
             {/* Ligne 1 : rang, compagnie, badge, favori */}
             <div className="flex items-center gap-2 text-[11px]">
                 <span className="mr-1 text-attenue">{String(rang).padStart(2, "0")}</span>
                 <span className="flex size-7 items-center justify-center rounded-md bg-menthe text-[10px] text-principal">{vol.code}</span>
                 <h3 className="text-encre">{vol.compagnie}</h3>
+                <span className="text-attenue">· {dateCourte(vol.dateDepart) ?? dates}</span>
                 {meilleur && (
                     <span className="rounded-full bg-citron px-2 py-1 text-[9px] font-semibold text-profond">Meilleur équilibre</span>
                 )}
@@ -67,13 +67,7 @@ export function CarteVol({ vol, rang, meilleur, favori, avis, dates, depuisLaBas
                 </div>
                 <div className="col-span-3 text-right sm:col-span-1">
                     <p className="text-2xl tracking-tight text-encre">{vol.prix} €</p>
-                    <p className="text-[9px] text-attenue">aller-retour / pers.</p>
-                </div>
-            </div>
-
-            <div className="mt-3 flex justify-between gap-3 text-[10px] text-attenue">
-                <span>{bagage}</span>
-                <span>{dates}</span>
+                    <p className="text-[9px] text-attenue">{allerRetour ? "aller-retour" : "aller simple"} / pers.</p>                </div>
             </div>
 
             {/* Explication de la recommandation */}

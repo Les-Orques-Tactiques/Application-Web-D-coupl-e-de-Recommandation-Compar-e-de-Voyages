@@ -47,11 +47,11 @@ export function convertirVolExplorer(vol: VolApi): Vol {
         duree: vol.duree_aller_min,
         prix: vol.prix,
         escale: n > 0 ? `${n} escale${n > 1 ? "s" : ""}` : null,
-        cabine: vol.bagage_inclus === true,
         message: vol.simulee
             ? "Itinéraire simulé présent dans la base de données."
             : "Vol trouvé dans la base de données.",
         lieuDepart: `${vol.origine} · ${vol.ville_origine ?? "Départ"}`,
         lieuArrivee: `${vol.destination} · ${vol.ville_destination ?? "Arrivée"}`,
+        dateDepart: vol.date_depart,
     };
 }

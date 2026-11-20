@@ -20,7 +20,7 @@ import json
 import os
 import sys
 import time
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta
 from pathlib import Path
 from app.settings import settings
 
@@ -45,7 +45,7 @@ DESTINATIONS = [
 ROUTES = [(o, d) for o in DEPARTS for d in DESTINATIONS if o != d]
 DECALAGES_JOURS = [21, 45, 90]            # départs dans 21, 45 et 90 jours
 DUREE_SEJOUR = 7                          # jours entre aller et retour (aller-retour)
-TYPES = ["aller_simple","aller_retour"]                  # ajoute "aller_retour" pour des trajets retour
+TYPES = ["aller_simple", "aller_retour"]  # types de trajets collectés
 MAX_REQUETES = 800                        # plafond de requêtes API par lancement
 # Quota : 1 000 requêtes gratuites au total. Chaque requête renvoie ~10 itinéraires.
 # Ici : 135 routes x 3 dates = 405 requêtes d'aller simple, soit ~4 000 vols.
@@ -92,13 +92,18 @@ def calculer_signature(itineraire):
     return hashlib.sha256("#".join(morceaux).encode()).hexdigest()
 
 
-def extraire_bagage(itineraire):
-    """True si au moins un bagage en soute est inclus (bags.checked >= 1),
-    False s'il n'y en a pas, None si l'API ne le précise pas."""
-    bags = itineraire.get("bags")
-    if not isinstance(bags, dict) or bags.get("checked") is None:
+def extraire_heure_depart(itineraire):
+    """Heure locale de départ du 1er segment aller (datetime.time), ou None si absente."""
+    segments = (itineraire.get("outbound") or {}).get("segments") or []
+    if not segments:
         return None
-    return bags["checked"] >= 1
+    brut = segments[0].get("departure_time_local")
+    if not brut:
+        return None
+    try:
+        return datetime.fromisoformat(brut.replace("Z", "+00:00")).time().replace(tzinfo=None)
+    except ValueError:
+        return None
 
 
 def assurer_aeroports(cur, donnees):
@@ -149,13 +154,13 @@ def normaliser(cur, ingestion_id, donnees):
                 transporteurs_mixtes,
                 compagnie_aller, duree_aller_min, escales_aller,
                 compagnie_retour, duree_retour_min, escales_retour,
-                bagage_inclus, observe_le)
+                heure_depart_aller, observe_le)
             VALUES (%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)
             ON CONFLICT (signature) DO UPDATE
                 SET prix = EXCLUDED.prix, ignav_id = EXCLUDED.ignav_id,
                     statut_prix = EXCLUDED.statut_prix, observe_le = EXCLUDED.observe_le,
                     transporteurs_mixtes = EXCLUDED.transporteurs_mixtes,
-                    bagage_inclus = COALESCE(EXCLUDED.bagage_inclus, vols.bagage_inclus)
+                    heure_depart_aller = COALESCE(EXCLUDED.heure_depart_aller, vols.heure_depart_aller)
             RETURNING id, (xmax = 0) AS insere""",
             (calculer_signature(it), it["ignav_id"], ingestion_id,
             donnees["origin"], donnees["destination"], donnees["departure_date"],
@@ -167,7 +172,7 @@ def normaliser(cur, ingestion_id, donnees):
             retour["carrier"] if retour else None,
             retour["duration_minutes"] if retour else None,
             len(retour["segments"]) - 1 if retour else None,
-            extraire_bagage(it),
+            extraire_heure_depart(it),
             donnees["observed_at"]))
         vol_id, insere = cur.fetchone()
         if insere:

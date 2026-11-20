@@ -8,7 +8,6 @@ function correspond(vol: Vol, f: Filtres): boolean {
         vol.prix <= f.budget &&
         vol.duree <= f.dureeMax * 60 &&
         !f.compagniesExclues.includes(vol.compagnie) &&
-        (!f.cabine || vol.cabine) &&
         (vol.escale ? f.escales : f.directs)
     );
 }
@@ -24,7 +23,7 @@ const COMPARER: Record<Exclude<Tri, "pertinence">, (a: Vol, b: Vol) => number> =
  * Filtres + tri appliqués à une liste de vols.
  *
  * 🆕 filtresInitiaux (optionnel) : valeurs venant de la page Explorer
- * (budget, vols directs seulement, bagage requis…). Partial = on ne fournit
+ * (budget, vols directs seulement…). Partial = on ne fournit
  * que les champs qu'on veut changer, les autres gardent FILTRES_PAR_DEFAUT.
  */
 export function useFiltres(vols: Vol[], filtresInitiaux?: Partial<Filtres>) {

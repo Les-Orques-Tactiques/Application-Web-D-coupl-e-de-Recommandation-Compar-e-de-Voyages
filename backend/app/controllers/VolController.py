@@ -33,6 +33,13 @@ class VolController:
             return [v.to_public_dict() for v in vols]
 
         @limiter.limit("60/minute")
+        def lister_compagnies(
+            request: Request,
+            utilisateur: Utilisateur = Depends(get_current_utilisateur),
+        ):
+            return self.vol_service.lister_compagnies()
+
+        @limiter.limit("60/minute")
         def lire_vol(
             request: Request,
             vol_id: UUID,
@@ -42,6 +49,9 @@ class VolController:
 
         self.router.add_api_route("/recherche", rechercher_vols, methods=["POST"],
                                   response_model=list[VolOut])
+        # AVANT "/{vol_id}" : sinon FastAPI prendrait "compagnies" pour un id
+        self.router.add_api_route("/compagnies", lister_compagnies, methods=["GET"],
+                                  response_model=list[str])
         self.router.add_api_route("/{vol_id}", lire_vol, methods=["GET"],
                                   response_model=VolOut)
 
