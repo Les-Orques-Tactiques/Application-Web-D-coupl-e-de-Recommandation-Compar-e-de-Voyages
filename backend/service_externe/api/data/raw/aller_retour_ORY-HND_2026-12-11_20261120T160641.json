@@ -1,0 +1,4246 @@
+{
+  "origin": "ORY",
+  "destination": "HND",
+  "departure_date": "2026-12-11",
+  "return_date": "2026-12-18",
+  "itineraries": [
+    {
+      "price": {
+        "amount": 5665.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "British Airways",
+        "duration_minutes": 2015,
+        "segments": [
+          {
+            "marketing_carrier_code": "BA",
+            "flight_number": "8109",
+            "operating_carrier_name": "Vueling Airlines",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T14:00:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T13:00:00Z",
+            "arrival_airport": "LHR",
+            "arrival_time_local": "2026-12-11T14:25:00",
+            "arrival_timezone": "Europe/London",
+            "arrival_time_utc": "2026-12-11T14:25:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus Industrie A321"
+          },
+          {
+            "marketing_carrier_code": "BA",
+            "flight_number": "7",
+            "operating_carrier_name": null,
+            "departure_airport": "LHR",
+            "departure_time_local": "2026-12-12T09:10:00",
+            "departure_timezone": "Europe/London",
+            "departure_time_utc": "2026-12-12T09:10:00Z",
+            "arrival_airport": "HND",
+            "arrival_time_local": "2026-12-13T07:35:00",
+            "arrival_timezone": "Asia/Tokyo",
+            "arrival_time_utc": "2026-12-12T22:35:00Z",
+            "duration_minutes": 805,
+            "aircraft": "Boeing 787"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 1715,
+        "segments": [
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "6690",
+            "operating_carrier_name": "ITA Airways",
+            "departure_airport": "HND",
+            "departure_time_local": "2026-12-18T13:20:00",
+            "departure_timezone": "Asia/Tokyo",
+            "departure_time_utc": "2026-12-18T04:20:00Z",
+            "arrival_airport": "FCO",
+            "arrival_time_local": "2026-12-18T20:25:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-18T19:25:00Z",
+            "duration_minutes": 905,
+            "aircraft": "Airbus A350"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "2130",
+            "operating_carrier_name": null,
+            "departure_airport": "FCO",
+            "departure_time_local": "2026-12-18T22:00:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-18T21:00:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-18T23:10:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-18T22:10:00Z",
+            "duration_minutes": 70,
+            "aircraft": "Airbus A220 300"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "350",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-19T08:25:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-19T07:25:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-19T09:55:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T08:55:00Z",
+            "duration_minutes": 90,
+            "aircraft": null
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "902cf9dc74094e5faba0a739bfb245f4"
+    },
+    {
+      "price": {
+        "amount": 8767.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 1585,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "357",
+            "operating_carrier_name": null,
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T07:30:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T06:30:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-11T08:55:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T07:55:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A220 300"
+          },
+          {
+            "marketing_carrier_code": "EN",
+            "flight_number": "251",
+            "operating_carrier_name": null,
+            "departure_airport": "MXP",
+            "departure_time_local": "2026-12-11T14:40:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-11T13:40:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T16:00:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T15:00:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Embraer Emb E90"
+          },
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "224",
+            "operating_carrier_name": null,
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-11T20:45:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T19:45:00Z",
+            "arrival_airport": "HND",
+            "arrival_time_local": "2026-12-12T17:55:00",
+            "arrival_timezone": "Asia/Tokyo",
+            "arrival_time_utc": "2026-12-12T08:55:00Z",
+            "duration_minutes": 790,
+            "aircraft": "Boeing 787 9"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 1760,
+        "segments": [
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "5853",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "HND",
+            "departure_time_local": "2026-12-18T12:35:00",
+            "departure_timezone": "Asia/Tokyo",
+            "departure_time_utc": "2026-12-18T03:35:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-18T19:00:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-18T18:00:00Z",
+            "duration_minutes": 865,
+            "aircraft": "Boeing 747"
+          },
+          {
+            "marketing_carrier_code": "EN",
+            "flight_number": "256",
+            "operating_carrier_name": null,
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T20:50:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T19:50:00Z",
+            "arrival_airport": "MXP",
+            "arrival_time_local": "2026-12-18T22:05:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-18T21:05:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer Emb E90"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "350",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-19T08:25:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-19T07:25:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-19T09:55:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T08:55:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A220 300"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "bags": {
+        "checked": 2
+      },
+      "has_mixed_carriers": true,
+      "ignav_id": "c60dcb6d2c224a8e9ef37770fba8b503"
+    },
+    {
+      "price": {
+        "amount": 8767.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 1585,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "357",
+            "operating_carrier_name": null,
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T07:30:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T06:30:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-11T08:55:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T07:55:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A220 300"
+          },
+          {
+            "marketing_carrier_code": "EN",
+            "flight_number": "251",
+            "operating_carrier_name": null,
+            "departure_airport": "MXP",
+            "departure_time_local": "2026-12-11T14:40:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-11T13:40:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T16:00:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T15:00:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Embraer Emb E90"
+          },
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "224",
+            "operating_carrier_name": null,
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-11T20:45:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T19:45:00Z",
+            "arrival_airport": "HND",
+            "arrival_time_local": "2026-12-12T17:55:00",
+            "arrival_timezone": "Asia/Tokyo",
+            "arrival_time_utc": "2026-12-12T08:55:00Z",
+            "duration_minutes": 790,
+            "aircraft": "Boeing 787 9"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 1760,
+        "segments": [
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "5853",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "HND",
+            "departure_time_local": "2026-12-18T12:35:00",
+            "departure_timezone": "Asia/Tokyo",
+            "departure_time_utc": "2026-12-18T03:35:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-18T19:00:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-18T18:00:00Z",
+            "duration_minutes": 865,
+            "aircraft": "Boeing 747"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "280",
+            "operating_carrier_name": null,
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T21:40:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T20:40:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-18T22:55:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-18T21:55:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Airbus"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "350",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-19T08:25:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-19T07:25:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-19T09:55:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T08:55:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A220 300"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "bags": {
+        "checked": 2
+      },
+      "has_mixed_carriers": true,
+      "ignav_id": "8f19c86b35a843f6b19ed9ab5d7f80d8"
+    },
+    {
+      "price": {
+        "amount": 8767.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 1585,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "357",
+            "operating_carrier_name": null,
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T07:30:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T06:30:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-11T08:55:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T07:55:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A220 300"
+          },
+          {
+            "marketing_carrier_code": "EN",
+            "flight_number": "251",
+            "operating_carrier_name": null,
+            "departure_airport": "MXP",
+            "departure_time_local": "2026-12-11T14:40:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-11T13:40:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T16:00:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T15:00:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Embraer Emb E90"
+          },
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "224",
+            "operating_carrier_name": null,
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-11T20:45:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T19:45:00Z",
+            "arrival_airport": "HND",
+            "arrival_time_local": "2026-12-12T17:55:00",
+            "arrival_timezone": "Asia/Tokyo",
+            "arrival_time_utc": "2026-12-12T08:55:00Z",
+            "duration_minutes": 790,
+            "aircraft": "Boeing 787 9"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 1875,
+        "segments": [
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "223",
+            "operating_carrier_name": null,
+            "departure_airport": "HND",
+            "departure_time_local": "2026-12-18T10:40:00",
+            "departure_timezone": "Asia/Tokyo",
+            "departure_time_utc": "2026-12-18T01:40:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-18T17:30:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-18T16:30:00Z",
+            "duration_minutes": 890,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "EN",
+            "flight_number": "256",
+            "operating_carrier_name": null,
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T20:50:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T19:50:00Z",
+            "arrival_airport": "MXP",
+            "arrival_time_local": "2026-12-18T22:05:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-18T21:05:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer Emb E90"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "350",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-19T08:25:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-19T07:25:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-19T09:55:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T08:55:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A220 300"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "bags": {
+        "checked": 2
+      },
+      "has_mixed_carriers": true,
+      "ignav_id": "686690e014b64cd89f4ccf1da9ef63a6"
+    },
+    {
+      "price": {
+        "amount": 8767.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 1585,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "357",
+            "operating_carrier_name": null,
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T07:30:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T06:30:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-11T08:55:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T07:55:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A220 300"
+          },
+          {
+            "marketing_carrier_code": "EN",
+            "flight_number": "251",
+            "operating_carrier_name": null,
+            "departure_airport": "MXP",
+            "departure_time_local": "2026-12-11T14:40:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-11T13:40:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T16:00:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T15:00:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Embraer Emb E90"
+          },
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "224",
+            "operating_carrier_name": null,
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-11T20:45:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T19:45:00Z",
+            "arrival_airport": "HND",
+            "arrival_time_local": "2026-12-12T17:55:00",
+            "arrival_timezone": "Asia/Tokyo",
+            "arrival_time_utc": "2026-12-12T08:55:00Z",
+            "duration_minutes": 790,
+            "aircraft": "Boeing 787 9"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 1875,
+        "segments": [
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "223",
+            "operating_carrier_name": null,
+            "departure_airport": "HND",
+            "departure_time_local": "2026-12-18T10:40:00",
+            "departure_timezone": "Asia/Tokyo",
+            "departure_time_utc": "2026-12-18T01:40:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-18T17:30:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-18T16:30:00Z",
+            "duration_minutes": 890,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "280",
+            "operating_carrier_name": null,
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T21:40:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T20:40:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-18T22:55:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-18T21:55:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Airbus"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "350",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-19T08:25:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-19T07:25:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-19T09:55:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T08:55:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A220 300"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "bags": {
+        "checked": 2
+      },
+      "has_mixed_carriers": true,
+      "ignav_id": "013115dd57944772a97eac0cab973420"
+    },
+    {
+      "price": {
+        "amount": 8767.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 1585,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "357",
+            "operating_carrier_name": null,
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T07:30:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T06:30:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-11T08:55:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T07:55:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A220 300"
+          },
+          {
+            "marketing_carrier_code": "EN",
+            "flight_number": "251",
+            "operating_carrier_name": null,
+            "departure_airport": "MXP",
+            "departure_time_local": "2026-12-11T14:40:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-11T13:40:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T16:00:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T15:00:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Embraer Emb E90"
+          },
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "224",
+            "operating_carrier_name": null,
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-11T20:45:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T19:45:00Z",
+            "arrival_airport": "HND",
+            "arrival_time_local": "2026-12-12T17:55:00",
+            "arrival_timezone": "Asia/Tokyo",
+            "arrival_time_utc": "2026-12-12T08:55:00Z",
+            "duration_minutes": 790,
+            "aircraft": "Boeing 787 9"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 3120,
+        "segments": [
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "203",
+            "operating_carrier_name": null,
+            "departure_airport": "HND",
+            "departure_time_local": "2026-12-18T22:45:00",
+            "departure_timezone": "Asia/Tokyo",
+            "departure_time_utc": "2026-12-18T13:45:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-19T05:30:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-19T04:30:00Z",
+            "duration_minutes": 885,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "EN",
+            "flight_number": "278",
+            "operating_carrier_name": null,
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-19T16:55:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-19T15:55:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-19T18:10:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-19T17:10:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer Emb E90"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "352",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-20T17:15:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-20T16:15:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-20T18:45:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-20T17:45:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320 Neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "bags": {
+        "checked": 2
+      },
+      "has_mixed_carriers": true,
+      "ignav_id": "0d7d8a52aaea46779bdccc31739e65a6"
+    },
+    {
+      "price": {
+        "amount": 8769.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 1155,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "357",
+            "operating_carrier_name": null,
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T07:30:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T06:30:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-11T08:55:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T07:55:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A220 300"
+          },
+          {
+            "marketing_carrier_code": "EN",
+            "flight_number": "271",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-11T10:40:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-11T09:40:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T11:55:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T10:55:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer 195"
+          },
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "5854",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-11T14:00:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T13:00:00Z",
+            "arrival_airport": "HND",
+            "arrival_time_local": "2026-12-12T10:45:00",
+            "arrival_timezone": "Asia/Tokyo",
+            "arrival_time_utc": "2026-12-12T01:45:00Z",
+            "duration_minutes": 765,
+            "aircraft": "Boeing 747"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 1760,
+        "segments": [
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "5853",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "HND",
+            "departure_time_local": "2026-12-18T12:35:00",
+            "departure_timezone": "Asia/Tokyo",
+            "departure_time_utc": "2026-12-18T03:35:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-18T19:00:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-18T18:00:00Z",
+            "duration_minutes": 865,
+            "aircraft": "Boeing 747"
+          },
+          {
+            "marketing_carrier_code": "EN",
+            "flight_number": "256",
+            "operating_carrier_name": null,
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T20:50:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T19:50:00Z",
+            "arrival_airport": "MXP",
+            "arrival_time_local": "2026-12-18T22:05:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-18T21:05:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer Emb E90"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "350",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-19T08:25:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-19T07:25:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-19T09:55:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T08:55:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A220 300"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "bags": {
+        "checked": 2
+      },
+      "has_mixed_carriers": true,
+      "ignav_id": "1e7e03a69bc54514a509c60ce8fd8ceb"
+    },
+    {
+      "price": {
+        "amount": 8769.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 1155,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "357",
+            "operating_carrier_name": null,
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T07:30:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T06:30:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-11T08:55:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T07:55:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A220 300"
+          },
+          {
+            "marketing_carrier_code": "EN",
+            "flight_number": "271",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-11T10:40:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-11T09:40:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T11:55:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T10:55:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer 195"
+          },
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "5854",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-11T14:00:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T13:00:00Z",
+            "arrival_airport": "HND",
+            "arrival_time_local": "2026-12-12T10:45:00",
+            "arrival_timezone": "Asia/Tokyo",
+            "arrival_time_utc": "2026-12-12T01:45:00Z",
+            "duration_minutes": 765,
+            "aircraft": "Boeing 747"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 1760,
+        "segments": [
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "5853",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "HND",
+            "departure_time_local": "2026-12-18T12:35:00",
+            "departure_timezone": "Asia/Tokyo",
+            "departure_time_utc": "2026-12-18T03:35:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-18T19:00:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-18T18:00:00Z",
+            "duration_minutes": 865,
+            "aircraft": "Boeing 747"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "280",
+            "operating_carrier_name": null,
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T21:40:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T20:40:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-18T22:55:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-18T21:55:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Airbus"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "350",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-19T08:25:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-19T07:25:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-19T09:55:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T08:55:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A220 300"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "bags": {
+        "checked": 2
+      },
+      "has_mixed_carriers": true,
+      "ignav_id": "f5628fbffa314ecf867a97d077edffc2"
+    },
+    {
+      "price": {
+        "amount": 8769.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 1155,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "357",
+            "operating_carrier_name": null,
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T07:30:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T06:30:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-11T08:55:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T07:55:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A220 300"
+          },
+          {
+            "marketing_carrier_code": "EN",
+            "flight_number": "271",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-11T10:40:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-11T09:40:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T11:55:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T10:55:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer 195"
+          },
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "5854",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-11T14:00:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T13:00:00Z",
+            "arrival_airport": "HND",
+            "arrival_time_local": "2026-12-12T10:45:00",
+            "arrival_timezone": "Asia/Tokyo",
+            "arrival_time_utc": "2026-12-12T01:45:00Z",
+            "duration_minutes": 765,
+            "aircraft": "Boeing 747"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 1875,
+        "segments": [
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "223",
+            "operating_carrier_name": null,
+            "departure_airport": "HND",
+            "departure_time_local": "2026-12-18T10:40:00",
+            "departure_timezone": "Asia/Tokyo",
+            "departure_time_utc": "2026-12-18T01:40:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-18T17:30:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-18T16:30:00Z",
+            "duration_minutes": 890,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "EN",
+            "flight_number": "256",
+            "operating_carrier_name": null,
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T20:50:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T19:50:00Z",
+            "arrival_airport": "MXP",
+            "arrival_time_local": "2026-12-18T22:05:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-18T21:05:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer Emb E90"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "350",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-19T08:25:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-19T07:25:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-19T09:55:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T08:55:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A220 300"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "bags": {
+        "checked": 2
+      },
+      "has_mixed_carriers": true,
+      "ignav_id": "528cddc28e3448358cbb053e527375dc"
+    },
+    {
+      "price": {
+        "amount": 8769.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 1155,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "357",
+            "operating_carrier_name": null,
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T07:30:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T06:30:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-11T08:55:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T07:55:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A220 300"
+          },
+          {
+            "marketing_carrier_code": "EN",
+            "flight_number": "271",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-11T10:40:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-11T09:40:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T11:55:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T10:55:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer 195"
+          },
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "5854",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-11T14:00:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T13:00:00Z",
+            "arrival_airport": "HND",
+            "arrival_time_local": "2026-12-12T10:45:00",
+            "arrival_timezone": "Asia/Tokyo",
+            "arrival_time_utc": "2026-12-12T01:45:00Z",
+            "duration_minutes": 765,
+            "aircraft": "Boeing 747"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 1875,
+        "segments": [
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "223",
+            "operating_carrier_name": null,
+            "departure_airport": "HND",
+            "departure_time_local": "2026-12-18T10:40:00",
+            "departure_timezone": "Asia/Tokyo",
+            "departure_time_utc": "2026-12-18T01:40:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-18T17:30:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-18T16:30:00Z",
+            "duration_minutes": 890,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "280",
+            "operating_carrier_name": null,
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T21:40:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T20:40:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-18T22:55:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-18T21:55:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Airbus"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "350",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-19T08:25:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-19T07:25:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-19T09:55:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T08:55:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A220 300"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "bags": {
+        "checked": 2
+      },
+      "has_mixed_carriers": true,
+      "ignav_id": "c5f1d8a9e1bf4dc0acd257a94e6c75cd"
+    },
+    {
+      "price": {
+        "amount": 8769.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 1385,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "351",
+            "operating_carrier_name": null,
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T10:50:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T09:50:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-11T12:20:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T11:20:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A220 300"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "275",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-11T14:45:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-11T13:45:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T16:00:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T15:00:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Airbus Industrie A321"
+          },
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "224",
+            "operating_carrier_name": null,
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-11T20:45:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T19:45:00Z",
+            "arrival_airport": "HND",
+            "arrival_time_local": "2026-12-12T17:55:00",
+            "arrival_timezone": "Asia/Tokyo",
+            "arrival_time_utc": "2026-12-12T08:55:00Z",
+            "duration_minutes": 790,
+            "aircraft": "Boeing 787 9"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 1760,
+        "segments": [
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "5853",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "HND",
+            "departure_time_local": "2026-12-18T12:35:00",
+            "departure_timezone": "Asia/Tokyo",
+            "departure_time_utc": "2026-12-18T03:35:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-18T19:00:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-18T18:00:00Z",
+            "duration_minutes": 865,
+            "aircraft": "Boeing 747"
+          },
+          {
+            "marketing_carrier_code": "EN",
+            "flight_number": "256",
+            "operating_carrier_name": null,
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T20:50:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T19:50:00Z",
+            "arrival_airport": "MXP",
+            "arrival_time_local": "2026-12-18T22:05:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-18T21:05:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer Emb E90"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "350",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-19T08:25:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-19T07:25:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-19T09:55:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T08:55:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A220 300"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "bags": {
+        "checked": 2
+      },
+      "has_mixed_carriers": true,
+      "ignav_id": "53f09addb32e4d7db9462e23baedd751"
+    },
+    {
+      "price": {
+        "amount": 8769.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 1385,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "351",
+            "operating_carrier_name": null,
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T10:50:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T09:50:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-11T12:20:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T11:20:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A220 300"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "275",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-11T14:45:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-11T13:45:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T16:00:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T15:00:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Airbus Industrie A321"
+          },
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "224",
+            "operating_carrier_name": null,
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-11T20:45:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T19:45:00Z",
+            "arrival_airport": "HND",
+            "arrival_time_local": "2026-12-12T17:55:00",
+            "arrival_timezone": "Asia/Tokyo",
+            "arrival_time_utc": "2026-12-12T08:55:00Z",
+            "duration_minutes": 790,
+            "aircraft": "Boeing 787 9"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 1760,
+        "segments": [
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "5853",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "HND",
+            "departure_time_local": "2026-12-18T12:35:00",
+            "departure_timezone": "Asia/Tokyo",
+            "departure_time_utc": "2026-12-18T03:35:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-18T19:00:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-18T18:00:00Z",
+            "duration_minutes": 865,
+            "aircraft": "Boeing 747"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "280",
+            "operating_carrier_name": null,
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T21:40:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T20:40:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-18T22:55:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-18T21:55:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Airbus"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "350",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-19T08:25:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-19T07:25:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-19T09:55:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T08:55:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A220 300"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "bags": {
+        "checked": 2
+      },
+      "has_mixed_carriers": true,
+      "ignav_id": "3f4886d812f942d6b4fe3cb0a672adc3"
+    },
+    {
+      "price": {
+        "amount": 8769.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 1385,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "351",
+            "operating_carrier_name": null,
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T10:50:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T09:50:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-11T12:20:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T11:20:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A220 300"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "277",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-11T17:50:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-11T16:50:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T19:05:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T18:05:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer Emb E90"
+          },
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "224",
+            "operating_carrier_name": null,
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-11T20:45:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T19:45:00Z",
+            "arrival_airport": "HND",
+            "arrival_time_local": "2026-12-12T17:55:00",
+            "arrival_timezone": "Asia/Tokyo",
+            "arrival_time_utc": "2026-12-12T08:55:00Z",
+            "duration_minutes": 790,
+            "aircraft": "Boeing 787 9"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 1760,
+        "segments": [
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "5853",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "HND",
+            "departure_time_local": "2026-12-18T12:35:00",
+            "departure_timezone": "Asia/Tokyo",
+            "departure_time_utc": "2026-12-18T03:35:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-18T19:00:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-18T18:00:00Z",
+            "duration_minutes": 865,
+            "aircraft": "Boeing 747"
+          },
+          {
+            "marketing_carrier_code": "EN",
+            "flight_number": "256",
+            "operating_carrier_name": null,
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T20:50:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T19:50:00Z",
+            "arrival_airport": "MXP",
+            "arrival_time_local": "2026-12-18T22:05:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-18T21:05:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer Emb E90"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "350",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-19T08:25:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-19T07:25:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-19T09:55:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T08:55:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A220 300"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "bags": {
+        "checked": 2
+      },
+      "has_mixed_carriers": true,
+      "ignav_id": "3962bf50457a46df85e0ab7ccaa6bcc3"
+    },
+    {
+      "price": {
+        "amount": 8769.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 1385,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "351",
+            "operating_carrier_name": null,
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T10:50:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T09:50:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-11T12:20:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T11:20:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A220 300"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "277",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-11T17:50:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-11T16:50:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T19:05:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T18:05:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer Emb E90"
+          },
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "224",
+            "operating_carrier_name": null,
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-11T20:45:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T19:45:00Z",
+            "arrival_airport": "HND",
+            "arrival_time_local": "2026-12-12T17:55:00",
+            "arrival_timezone": "Asia/Tokyo",
+            "arrival_time_utc": "2026-12-12T08:55:00Z",
+            "duration_minutes": 790,
+            "aircraft": "Boeing 787 9"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 1760,
+        "segments": [
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "5853",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "HND",
+            "departure_time_local": "2026-12-18T12:35:00",
+            "departure_timezone": "Asia/Tokyo",
+            "departure_time_utc": "2026-12-18T03:35:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-18T19:00:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-18T18:00:00Z",
+            "duration_minutes": 865,
+            "aircraft": "Boeing 747"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "280",
+            "operating_carrier_name": null,
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T21:40:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T20:40:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-18T22:55:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-18T21:55:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Airbus"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "350",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-19T08:25:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-19T07:25:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-19T09:55:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T08:55:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A220 300"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "bags": {
+        "checked": 2
+      },
+      "has_mixed_carriers": true,
+      "ignav_id": "48135525c46d4542a711e4b8c5f3687f"
+    },
+    {
+      "price": {
+        "amount": 8769.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 1385,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "351",
+            "operating_carrier_name": null,
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T10:50:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T09:50:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-11T12:20:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T11:20:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A220 300"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "275",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-11T14:45:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-11T13:45:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T16:00:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T15:00:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Airbus Industrie A321"
+          },
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "224",
+            "operating_carrier_name": null,
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-11T20:45:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T19:45:00Z",
+            "arrival_airport": "HND",
+            "arrival_time_local": "2026-12-12T17:55:00",
+            "arrival_timezone": "Asia/Tokyo",
+            "arrival_time_utc": "2026-12-12T08:55:00Z",
+            "duration_minutes": 790,
+            "aircraft": "Boeing 787 9"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 1875,
+        "segments": [
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "223",
+            "operating_carrier_name": null,
+            "departure_airport": "HND",
+            "departure_time_local": "2026-12-18T10:40:00",
+            "departure_timezone": "Asia/Tokyo",
+            "departure_time_utc": "2026-12-18T01:40:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-18T17:30:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-18T16:30:00Z",
+            "duration_minutes": 890,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "EN",
+            "flight_number": "256",
+            "operating_carrier_name": null,
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T20:50:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T19:50:00Z",
+            "arrival_airport": "MXP",
+            "arrival_time_local": "2026-12-18T22:05:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-18T21:05:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer Emb E90"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "350",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-19T08:25:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-19T07:25:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-19T09:55:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T08:55:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A220 300"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "bags": {
+        "checked": 2
+      },
+      "has_mixed_carriers": true,
+      "ignav_id": "85e04b2016d14fef84ce5fedc9ca8343"
+    },
+    {
+      "price": {
+        "amount": 8769.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 1385,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "351",
+            "operating_carrier_name": null,
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T10:50:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T09:50:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-11T12:20:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T11:20:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A220 300"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "275",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-11T14:45:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-11T13:45:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T16:00:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T15:00:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Airbus Industrie A321"
+          },
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "224",
+            "operating_carrier_name": null,
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-11T20:45:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T19:45:00Z",
+            "arrival_airport": "HND",
+            "arrival_time_local": "2026-12-12T17:55:00",
+            "arrival_timezone": "Asia/Tokyo",
+            "arrival_time_utc": "2026-12-12T08:55:00Z",
+            "duration_minutes": 790,
+            "aircraft": "Boeing 787 9"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 1875,
+        "segments": [
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "223",
+            "operating_carrier_name": null,
+            "departure_airport": "HND",
+            "departure_time_local": "2026-12-18T10:40:00",
+            "departure_timezone": "Asia/Tokyo",
+            "departure_time_utc": "2026-12-18T01:40:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-18T17:30:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-18T16:30:00Z",
+            "duration_minutes": 890,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "280",
+            "operating_carrier_name": null,
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T21:40:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T20:40:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-18T22:55:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-18T21:55:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Airbus"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "350",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-19T08:25:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-19T07:25:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-19T09:55:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T08:55:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A220 300"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "bags": {
+        "checked": 2
+      },
+      "has_mixed_carriers": true,
+      "ignav_id": "a79cdbbd37d0403a951cddb6c6f84ade"
+    },
+    {
+      "price": {
+        "amount": 8769.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 1385,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "351",
+            "operating_carrier_name": null,
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T10:50:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T09:50:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-11T12:20:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T11:20:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A220 300"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "277",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-11T17:50:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-11T16:50:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T19:05:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T18:05:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer Emb E90"
+          },
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "224",
+            "operating_carrier_name": null,
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-11T20:45:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T19:45:00Z",
+            "arrival_airport": "HND",
+            "arrival_time_local": "2026-12-12T17:55:00",
+            "arrival_timezone": "Asia/Tokyo",
+            "arrival_time_utc": "2026-12-12T08:55:00Z",
+            "duration_minutes": 790,
+            "aircraft": "Boeing 787 9"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 1875,
+        "segments": [
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "223",
+            "operating_carrier_name": null,
+            "departure_airport": "HND",
+            "departure_time_local": "2026-12-18T10:40:00",
+            "departure_timezone": "Asia/Tokyo",
+            "departure_time_utc": "2026-12-18T01:40:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-18T17:30:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-18T16:30:00Z",
+            "duration_minutes": 890,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "EN",
+            "flight_number": "256",
+            "operating_carrier_name": null,
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T20:50:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T19:50:00Z",
+            "arrival_airport": "MXP",
+            "arrival_time_local": "2026-12-18T22:05:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-18T21:05:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer Emb E90"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "350",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-19T08:25:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-19T07:25:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-19T09:55:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T08:55:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A220 300"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "bags": {
+        "checked": 2
+      },
+      "has_mixed_carriers": true,
+      "ignav_id": "652f5625128f4fd0be1e79e97150b100"
+    },
+    {
+      "price": {
+        "amount": 8769.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 1385,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "351",
+            "operating_carrier_name": null,
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T10:50:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T09:50:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-11T12:20:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T11:20:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A220 300"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "277",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-11T17:50:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-11T16:50:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T19:05:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T18:05:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer Emb E90"
+          },
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "224",
+            "operating_carrier_name": null,
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-11T20:45:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T19:45:00Z",
+            "arrival_airport": "HND",
+            "arrival_time_local": "2026-12-12T17:55:00",
+            "arrival_timezone": "Asia/Tokyo",
+            "arrival_time_utc": "2026-12-12T08:55:00Z",
+            "duration_minutes": 790,
+            "aircraft": "Boeing 787 9"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 1875,
+        "segments": [
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "223",
+            "operating_carrier_name": null,
+            "departure_airport": "HND",
+            "departure_time_local": "2026-12-18T10:40:00",
+            "departure_timezone": "Asia/Tokyo",
+            "departure_time_utc": "2026-12-18T01:40:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-18T17:30:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-18T16:30:00Z",
+            "duration_minutes": 890,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "280",
+            "operating_carrier_name": null,
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T21:40:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T20:40:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-18T22:55:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-18T21:55:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Airbus"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "350",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-19T08:25:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-19T07:25:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-19T09:55:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T08:55:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A220 300"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "bags": {
+        "checked": 2
+      },
+      "has_mixed_carriers": true,
+      "ignav_id": "c0523b1ac1c649b1ad75756d2f49dc0e"
+    },
+    {
+      "price": {
+        "amount": 8769.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 1870,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "353",
+            "operating_carrier_name": null,
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T19:35:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T18:35:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-11T21:05:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T20:05:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320 Neo"
+          },
+          {
+            "marketing_carrier_code": "EN",
+            "flight_number": "271",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-12T10:45:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-12T09:45:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-12T12:00:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-12T11:00:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer Emb E90"
+          },
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "5854",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-12T14:00:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-12T13:00:00Z",
+            "arrival_airport": "HND",
+            "arrival_time_local": "2026-12-13T10:45:00",
+            "arrival_timezone": "Asia/Tokyo",
+            "arrival_time_utc": "2026-12-13T01:45:00Z",
+            "duration_minutes": 765,
+            "aircraft": "Boeing 747 800"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 1760,
+        "segments": [
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "5853",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "HND",
+            "departure_time_local": "2026-12-18T12:35:00",
+            "departure_timezone": "Asia/Tokyo",
+            "departure_time_utc": "2026-12-18T03:35:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-18T19:00:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-18T18:00:00Z",
+            "duration_minutes": 865,
+            "aircraft": "Boeing 747"
+          },
+          {
+            "marketing_carrier_code": "EN",
+            "flight_number": "256",
+            "operating_carrier_name": null,
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T20:50:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T19:50:00Z",
+            "arrival_airport": "MXP",
+            "arrival_time_local": "2026-12-18T22:05:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-18T21:05:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer Emb E90"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "350",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-19T08:25:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-19T07:25:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-19T09:55:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T08:55:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A220 300"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "bags": {
+        "checked": 2
+      },
+      "has_mixed_carriers": true,
+      "ignav_id": "69501195ddb14a0c9b360ef0cfe6fbc0"
+    },
+    {
+      "price": {
+        "amount": 8769.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 1870,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "353",
+            "operating_carrier_name": null,
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T19:35:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T18:35:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-11T21:05:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T20:05:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320 Neo"
+          },
+          {
+            "marketing_carrier_code": "EN",
+            "flight_number": "271",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-12T10:45:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-12T09:45:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-12T12:00:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-12T11:00:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer Emb E90"
+          },
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "5854",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-12T14:00:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-12T13:00:00Z",
+            "arrival_airport": "HND",
+            "arrival_time_local": "2026-12-13T10:45:00",
+            "arrival_timezone": "Asia/Tokyo",
+            "arrival_time_utc": "2026-12-13T01:45:00Z",
+            "duration_minutes": 765,
+            "aircraft": "Boeing 747 800"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 1760,
+        "segments": [
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "5853",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "HND",
+            "departure_time_local": "2026-12-18T12:35:00",
+            "departure_timezone": "Asia/Tokyo",
+            "departure_time_utc": "2026-12-18T03:35:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-18T19:00:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-18T18:00:00Z",
+            "duration_minutes": 865,
+            "aircraft": "Boeing 747"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "280",
+            "operating_carrier_name": null,
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T21:40:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T20:40:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-18T22:55:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-18T21:55:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Airbus"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "350",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-19T08:25:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-19T07:25:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-19T09:55:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T08:55:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A220 300"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "bags": {
+        "checked": 2
+      },
+      "has_mixed_carriers": true,
+      "ignav_id": "6bd0df16f68441b5a1f24c8c3601faa0"
+    },
+    {
+      "price": {
+        "amount": 8769.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 1870,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "353",
+            "operating_carrier_name": null,
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T19:35:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T18:35:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-11T21:05:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T20:05:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320 Neo"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "281",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-12T06:25:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-12T05:25:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-12T07:40:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-12T06:40:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Airbus Industrie A321"
+          },
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "5854",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-12T14:00:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-12T13:00:00Z",
+            "arrival_airport": "HND",
+            "arrival_time_local": "2026-12-13T10:45:00",
+            "arrival_timezone": "Asia/Tokyo",
+            "arrival_time_utc": "2026-12-13T01:45:00Z",
+            "duration_minutes": 765,
+            "aircraft": "Boeing 747 800"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 1760,
+        "segments": [
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "5853",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "HND",
+            "departure_time_local": "2026-12-18T12:35:00",
+            "departure_timezone": "Asia/Tokyo",
+            "departure_time_utc": "2026-12-18T03:35:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-18T19:00:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-18T18:00:00Z",
+            "duration_minutes": 865,
+            "aircraft": "Boeing 747"
+          },
+          {
+            "marketing_carrier_code": "EN",
+            "flight_number": "256",
+            "operating_carrier_name": null,
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T20:50:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T19:50:00Z",
+            "arrival_airport": "MXP",
+            "arrival_time_local": "2026-12-18T22:05:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-18T21:05:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer Emb E90"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "350",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-19T08:25:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-19T07:25:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-19T09:55:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T08:55:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A220 300"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "bags": {
+        "checked": 2
+      },
+      "has_mixed_carriers": true,
+      "ignav_id": "e67ac7aef38b4adbb2851e9eefa86872"
+    },
+    {
+      "price": {
+        "amount": 8769.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 1870,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "353",
+            "operating_carrier_name": null,
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T19:35:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T18:35:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-11T21:05:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T20:05:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320 Neo"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "281",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-12T06:25:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-12T05:25:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-12T07:40:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-12T06:40:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Airbus Industrie A321"
+          },
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "5854",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-12T14:00:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-12T13:00:00Z",
+            "arrival_airport": "HND",
+            "arrival_time_local": "2026-12-13T10:45:00",
+            "arrival_timezone": "Asia/Tokyo",
+            "arrival_time_utc": "2026-12-13T01:45:00Z",
+            "duration_minutes": 765,
+            "aircraft": "Boeing 747 800"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 1760,
+        "segments": [
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "5853",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "HND",
+            "departure_time_local": "2026-12-18T12:35:00",
+            "departure_timezone": "Asia/Tokyo",
+            "departure_time_utc": "2026-12-18T03:35:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-18T19:00:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-18T18:00:00Z",
+            "duration_minutes": 865,
+            "aircraft": "Boeing 747"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "280",
+            "operating_carrier_name": null,
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T21:40:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T20:40:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-18T22:55:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-18T21:55:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Airbus"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "350",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-19T08:25:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-19T07:25:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-19T09:55:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T08:55:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A220 300"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "bags": {
+        "checked": 2
+      },
+      "has_mixed_carriers": true,
+      "ignav_id": "6b25eedbb0aa4858800c2bf8fc5e80f3"
+    },
+    {
+      "price": {
+        "amount": 8769.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 1870,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "353",
+            "operating_carrier_name": null,
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T19:35:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T18:35:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-11T21:05:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T20:05:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320 Neo"
+          },
+          {
+            "marketing_carrier_code": "EN",
+            "flight_number": "271",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-12T10:45:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-12T09:45:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-12T12:00:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-12T11:00:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer Emb E90"
+          },
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "5854",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-12T14:00:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-12T13:00:00Z",
+            "arrival_airport": "HND",
+            "arrival_time_local": "2026-12-13T10:45:00",
+            "arrival_timezone": "Asia/Tokyo",
+            "arrival_time_utc": "2026-12-13T01:45:00Z",
+            "duration_minutes": 765,
+            "aircraft": "Boeing 747 800"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 1875,
+        "segments": [
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "223",
+            "operating_carrier_name": null,
+            "departure_airport": "HND",
+            "departure_time_local": "2026-12-18T10:40:00",
+            "departure_timezone": "Asia/Tokyo",
+            "departure_time_utc": "2026-12-18T01:40:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-18T17:30:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-18T16:30:00Z",
+            "duration_minutes": 890,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "EN",
+            "flight_number": "256",
+            "operating_carrier_name": null,
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T20:50:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T19:50:00Z",
+            "arrival_airport": "MXP",
+            "arrival_time_local": "2026-12-18T22:05:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-18T21:05:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer Emb E90"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "350",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-19T08:25:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-19T07:25:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-19T09:55:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T08:55:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A220 300"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "bags": {
+        "checked": 2
+      },
+      "has_mixed_carriers": true,
+      "ignav_id": "8389731509894344810616f6252f9a54"
+    },
+    {
+      "price": {
+        "amount": 8769.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 1870,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "353",
+            "operating_carrier_name": null,
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T19:35:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T18:35:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-11T21:05:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T20:05:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320 Neo"
+          },
+          {
+            "marketing_carrier_code": "EN",
+            "flight_number": "271",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-12T10:45:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-12T09:45:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-12T12:00:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-12T11:00:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer Emb E90"
+          },
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "5854",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-12T14:00:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-12T13:00:00Z",
+            "arrival_airport": "HND",
+            "arrival_time_local": "2026-12-13T10:45:00",
+            "arrival_timezone": "Asia/Tokyo",
+            "arrival_time_utc": "2026-12-13T01:45:00Z",
+            "duration_minutes": 765,
+            "aircraft": "Boeing 747 800"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 1875,
+        "segments": [
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "223",
+            "operating_carrier_name": null,
+            "departure_airport": "HND",
+            "departure_time_local": "2026-12-18T10:40:00",
+            "departure_timezone": "Asia/Tokyo",
+            "departure_time_utc": "2026-12-18T01:40:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-18T17:30:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-18T16:30:00Z",
+            "duration_minutes": 890,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "280",
+            "operating_carrier_name": null,
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T21:40:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T20:40:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-18T22:55:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-18T21:55:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Airbus"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "350",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-19T08:25:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-19T07:25:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-19T09:55:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T08:55:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A220 300"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "bags": {
+        "checked": 2
+      },
+      "has_mixed_carriers": true,
+      "ignav_id": "2fd721ac57fe4e90b4316ee4b0e7f817"
+    },
+    {
+      "price": {
+        "amount": 8769.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 1870,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "353",
+            "operating_carrier_name": null,
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T19:35:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T18:35:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-11T21:05:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T20:05:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320 Neo"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "281",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-12T06:25:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-12T05:25:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-12T07:40:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-12T06:40:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Airbus Industrie A321"
+          },
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "5854",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-12T14:00:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-12T13:00:00Z",
+            "arrival_airport": "HND",
+            "arrival_time_local": "2026-12-13T10:45:00",
+            "arrival_timezone": "Asia/Tokyo",
+            "arrival_time_utc": "2026-12-13T01:45:00Z",
+            "duration_minutes": 765,
+            "aircraft": "Boeing 747 800"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 1875,
+        "segments": [
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "223",
+            "operating_carrier_name": null,
+            "departure_airport": "HND",
+            "departure_time_local": "2026-12-18T10:40:00",
+            "departure_timezone": "Asia/Tokyo",
+            "departure_time_utc": "2026-12-18T01:40:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-18T17:30:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-18T16:30:00Z",
+            "duration_minutes": 890,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "EN",
+            "flight_number": "256",
+            "operating_carrier_name": null,
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T20:50:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T19:50:00Z",
+            "arrival_airport": "MXP",
+            "arrival_time_local": "2026-12-18T22:05:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-18T21:05:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer Emb E90"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "350",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-19T08:25:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-19T07:25:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-19T09:55:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T08:55:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A220 300"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "bags": {
+        "checked": 2
+      },
+      "has_mixed_carriers": true,
+      "ignav_id": "3ff4c256e6964e99a538f7c23118c98f"
+    },
+    {
+      "price": {
+        "amount": 8769.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 1870,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "353",
+            "operating_carrier_name": null,
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T19:35:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T18:35:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-11T21:05:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T20:05:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320 Neo"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "281",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-12T06:25:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-12T05:25:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-12T07:40:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-12T06:40:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Airbus Industrie A321"
+          },
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "5854",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-12T14:00:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-12T13:00:00Z",
+            "arrival_airport": "HND",
+            "arrival_time_local": "2026-12-13T10:45:00",
+            "arrival_timezone": "Asia/Tokyo",
+            "arrival_time_utc": "2026-12-13T01:45:00Z",
+            "duration_minutes": 765,
+            "aircraft": "Boeing 747 800"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 1875,
+        "segments": [
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "223",
+            "operating_carrier_name": null,
+            "departure_airport": "HND",
+            "departure_time_local": "2026-12-18T10:40:00",
+            "departure_timezone": "Asia/Tokyo",
+            "departure_time_utc": "2026-12-18T01:40:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-18T17:30:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-18T16:30:00Z",
+            "duration_minutes": 890,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "280",
+            "operating_carrier_name": null,
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T21:40:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T20:40:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-18T22:55:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-18T21:55:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Airbus"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "350",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-19T08:25:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-19T07:25:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-19T09:55:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T08:55:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A220 300"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "bags": {
+        "checked": 2
+      },
+      "has_mixed_carriers": true,
+      "ignav_id": "88d4e19eb6c642148ba8efa6454e21e3"
+    },
+    {
+      "price": {
+        "amount": 8769.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 1155,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "357",
+            "operating_carrier_name": null,
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T07:30:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T06:30:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-11T08:55:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T07:55:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A220 300"
+          },
+          {
+            "marketing_carrier_code": "EN",
+            "flight_number": "271",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-11T10:40:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-11T09:40:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T11:55:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T10:55:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer 195"
+          },
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "5854",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-11T14:00:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T13:00:00Z",
+            "arrival_airport": "HND",
+            "arrival_time_local": "2026-12-12T10:45:00",
+            "arrival_timezone": "Asia/Tokyo",
+            "arrival_time_utc": "2026-12-12T01:45:00Z",
+            "duration_minutes": 765,
+            "aircraft": "Boeing 747"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 3120,
+        "segments": [
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "203",
+            "operating_carrier_name": null,
+            "departure_airport": "HND",
+            "departure_time_local": "2026-12-18T22:45:00",
+            "departure_timezone": "Asia/Tokyo",
+            "departure_time_utc": "2026-12-18T13:45:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-19T05:30:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-19T04:30:00Z",
+            "duration_minutes": 885,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "EN",
+            "flight_number": "278",
+            "operating_carrier_name": null,
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-19T16:55:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-19T15:55:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-19T18:10:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-19T17:10:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer Emb E90"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "352",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-20T17:15:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-20T16:15:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-20T18:45:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-20T17:45:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320 Neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "bags": {
+        "checked": 2
+      },
+      "has_mixed_carriers": true,
+      "ignav_id": "1b80a799b2334940b48883167575259d"
+    },
+    {
+      "price": {
+        "amount": 8769.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 1385,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "351",
+            "operating_carrier_name": null,
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T10:50:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T09:50:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-11T12:20:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T11:20:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A220 300"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "275",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-11T14:45:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-11T13:45:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T16:00:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T15:00:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Airbus Industrie A321"
+          },
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "224",
+            "operating_carrier_name": null,
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-11T20:45:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T19:45:00Z",
+            "arrival_airport": "HND",
+            "arrival_time_local": "2026-12-12T17:55:00",
+            "arrival_timezone": "Asia/Tokyo",
+            "arrival_time_utc": "2026-12-12T08:55:00Z",
+            "duration_minutes": 790,
+            "aircraft": "Boeing 787 9"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 3120,
+        "segments": [
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "203",
+            "operating_carrier_name": null,
+            "departure_airport": "HND",
+            "departure_time_local": "2026-12-18T22:45:00",
+            "departure_timezone": "Asia/Tokyo",
+            "departure_time_utc": "2026-12-18T13:45:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-19T05:30:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-19T04:30:00Z",
+            "duration_minutes": 885,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "EN",
+            "flight_number": "278",
+            "operating_carrier_name": null,
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-19T16:55:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-19T15:55:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-19T18:10:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-19T17:10:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer Emb E90"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "352",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-20T17:15:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-20T16:15:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-20T18:45:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-20T17:45:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320 Neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "bags": {
+        "checked": 2
+      },
+      "has_mixed_carriers": true,
+      "ignav_id": "26ffbbe9e68c4a83a04ce4aa4a0a1e70"
+    },
+    {
+      "price": {
+        "amount": 8769.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 1385,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "351",
+            "operating_carrier_name": null,
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T10:50:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T09:50:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-11T12:20:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T11:20:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A220 300"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "277",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-11T17:50:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-11T16:50:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T19:05:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T18:05:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer Emb E90"
+          },
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "224",
+            "operating_carrier_name": null,
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-11T20:45:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T19:45:00Z",
+            "arrival_airport": "HND",
+            "arrival_time_local": "2026-12-12T17:55:00",
+            "arrival_timezone": "Asia/Tokyo",
+            "arrival_time_utc": "2026-12-12T08:55:00Z",
+            "duration_minutes": 790,
+            "aircraft": "Boeing 787 9"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 3120,
+        "segments": [
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "203",
+            "operating_carrier_name": null,
+            "departure_airport": "HND",
+            "departure_time_local": "2026-12-18T22:45:00",
+            "departure_timezone": "Asia/Tokyo",
+            "departure_time_utc": "2026-12-18T13:45:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-19T05:30:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-19T04:30:00Z",
+            "duration_minutes": 885,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "EN",
+            "flight_number": "278",
+            "operating_carrier_name": null,
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-19T16:55:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-19T15:55:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-19T18:10:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-19T17:10:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer Emb E90"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "352",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-20T17:15:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-20T16:15:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-20T18:45:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-20T17:45:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320 Neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "bags": {
+        "checked": 2
+      },
+      "has_mixed_carriers": true,
+      "ignav_id": "e4cbfa7b92be41f5af8157bd207cbdac"
+    },
+    {
+      "price": {
+        "amount": 8769.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 1870,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "353",
+            "operating_carrier_name": null,
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T19:35:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T18:35:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-11T21:05:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T20:05:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320 Neo"
+          },
+          {
+            "marketing_carrier_code": "EN",
+            "flight_number": "271",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-12T10:45:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-12T09:45:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-12T12:00:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-12T11:00:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer Emb E90"
+          },
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "5854",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-12T14:00:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-12T13:00:00Z",
+            "arrival_airport": "HND",
+            "arrival_time_local": "2026-12-13T10:45:00",
+            "arrival_timezone": "Asia/Tokyo",
+            "arrival_time_utc": "2026-12-13T01:45:00Z",
+            "duration_minutes": 765,
+            "aircraft": "Boeing 747 800"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 3120,
+        "segments": [
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "203",
+            "operating_carrier_name": null,
+            "departure_airport": "HND",
+            "departure_time_local": "2026-12-18T22:45:00",
+            "departure_timezone": "Asia/Tokyo",
+            "departure_time_utc": "2026-12-18T13:45:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-19T05:30:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-19T04:30:00Z",
+            "duration_minutes": 885,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "EN",
+            "flight_number": "278",
+            "operating_carrier_name": null,
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-19T16:55:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-19T15:55:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-19T18:10:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-19T17:10:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer Emb E90"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "352",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-20T17:15:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-20T16:15:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-20T18:45:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-20T17:45:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320 Neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "bags": {
+        "checked": 2
+      },
+      "has_mixed_carriers": true,
+      "ignav_id": "84b7baf0194341c28d15af8bf981295b"
+    },
+    {
+      "price": {
+        "amount": 8769.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 1870,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "353",
+            "operating_carrier_name": null,
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T19:35:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T18:35:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-11T21:05:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T20:05:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320 Neo"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "281",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-12T06:25:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-12T05:25:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-12T07:40:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-12T06:40:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Airbus Industrie A321"
+          },
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "5854",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-12T14:00:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-12T13:00:00Z",
+            "arrival_airport": "HND",
+            "arrival_time_local": "2026-12-13T10:45:00",
+            "arrival_timezone": "Asia/Tokyo",
+            "arrival_time_utc": "2026-12-13T01:45:00Z",
+            "duration_minutes": 765,
+            "aircraft": "Boeing 747 800"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 3120,
+        "segments": [
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "203",
+            "operating_carrier_name": null,
+            "departure_airport": "HND",
+            "departure_time_local": "2026-12-18T22:45:00",
+            "departure_timezone": "Asia/Tokyo",
+            "departure_time_utc": "2026-12-18T13:45:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-19T05:30:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-19T04:30:00Z",
+            "duration_minutes": 885,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "EN",
+            "flight_number": "278",
+            "operating_carrier_name": null,
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-19T16:55:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-19T15:55:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-19T18:10:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-19T17:10:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer Emb E90"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "352",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-20T17:15:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-20T16:15:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-20T18:45:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-20T17:45:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320 Neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "bags": {
+        "checked": 2
+      },
+      "has_mixed_carriers": true,
+      "ignav_id": "26945d148bba45e48c456f9e62c03bf2"
+    },
+    {
+      "price": {
+        "amount": 8781.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 1585,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "357",
+            "operating_carrier_name": null,
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T07:30:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T06:30:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-11T08:55:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T07:55:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A220 300"
+          },
+          {
+            "marketing_carrier_code": "EN",
+            "flight_number": "251",
+            "operating_carrier_name": null,
+            "departure_airport": "MXP",
+            "departure_time_local": "2026-12-11T14:40:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-11T13:40:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T16:00:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T15:00:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Embraer Emb E90"
+          },
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "224",
+            "operating_carrier_name": null,
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-11T20:45:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T19:45:00Z",
+            "arrival_airport": "HND",
+            "arrival_time_local": "2026-12-12T17:55:00",
+            "arrival_timezone": "Asia/Tokyo",
+            "arrival_time_utc": "2026-12-12T08:55:00Z",
+            "duration_minutes": 790,
+            "aircraft": "Boeing 787 9"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 3120,
+        "segments": [
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "203",
+            "operating_carrier_name": null,
+            "departure_airport": "HND",
+            "departure_time_local": "2026-12-18T22:45:00",
+            "departure_timezone": "Asia/Tokyo",
+            "departure_time_utc": "2026-12-18T13:45:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-19T05:30:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-19T04:30:00Z",
+            "duration_minutes": 885,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "EN",
+            "flight_number": "256",
+            "operating_carrier_name": null,
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-19T20:50:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-19T19:50:00Z",
+            "arrival_airport": "MXP",
+            "arrival_time_local": "2026-12-19T22:05:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-19T21:05:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer 195"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "352",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-20T17:15:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-20T16:15:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-20T18:45:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-20T17:45:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320 Neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "bags": {
+        "checked": 2
+      },
+      "has_mixed_carriers": true,
+      "ignav_id": "6016c0ccd5284d47b0369fe886e80d16"
+    },
+    {
+      "price": {
+        "amount": 8784.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 1155,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "357",
+            "operating_carrier_name": null,
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T07:30:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T06:30:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-11T08:55:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T07:55:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A220 300"
+          },
+          {
+            "marketing_carrier_code": "EN",
+            "flight_number": "271",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-11T10:40:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-11T09:40:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T11:55:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T10:55:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer 195"
+          },
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "5854",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-11T14:00:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T13:00:00Z",
+            "arrival_airport": "HND",
+            "arrival_time_local": "2026-12-12T10:45:00",
+            "arrival_timezone": "Asia/Tokyo",
+            "arrival_time_utc": "2026-12-12T01:45:00Z",
+            "duration_minutes": 765,
+            "aircraft": "Boeing 747"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 3120,
+        "segments": [
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "203",
+            "operating_carrier_name": null,
+            "departure_airport": "HND",
+            "departure_time_local": "2026-12-18T22:45:00",
+            "departure_timezone": "Asia/Tokyo",
+            "departure_time_utc": "2026-12-18T13:45:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-19T05:30:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-19T04:30:00Z",
+            "duration_minutes": 885,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "EN",
+            "flight_number": "256",
+            "operating_carrier_name": null,
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-19T20:50:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-19T19:50:00Z",
+            "arrival_airport": "MXP",
+            "arrival_time_local": "2026-12-19T22:05:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-19T21:05:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer 195"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "352",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-20T17:15:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-20T16:15:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-20T18:45:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-20T17:45:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320 Neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "bags": {
+        "checked": 2
+      },
+      "has_mixed_carriers": true,
+      "ignav_id": "1fc63617ff0240bba293f0a0069e5e6b"
+    },
+    {
+      "price": {
+        "amount": 8784.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 1385,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "351",
+            "operating_carrier_name": null,
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T10:50:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T09:50:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-11T12:20:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T11:20:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A220 300"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "275",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-11T14:45:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-11T13:45:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T16:00:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T15:00:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Airbus Industrie A321"
+          },
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "224",
+            "operating_carrier_name": null,
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-11T20:45:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T19:45:00Z",
+            "arrival_airport": "HND",
+            "arrival_time_local": "2026-12-12T17:55:00",
+            "arrival_timezone": "Asia/Tokyo",
+            "arrival_time_utc": "2026-12-12T08:55:00Z",
+            "duration_minutes": 790,
+            "aircraft": "Boeing 787 9"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 3120,
+        "segments": [
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "203",
+            "operating_carrier_name": null,
+            "departure_airport": "HND",
+            "departure_time_local": "2026-12-18T22:45:00",
+            "departure_timezone": "Asia/Tokyo",
+            "departure_time_utc": "2026-12-18T13:45:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-19T05:30:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-19T04:30:00Z",
+            "duration_minutes": 885,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "EN",
+            "flight_number": "256",
+            "operating_carrier_name": null,
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-19T20:50:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-19T19:50:00Z",
+            "arrival_airport": "MXP",
+            "arrival_time_local": "2026-12-19T22:05:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-19T21:05:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer 195"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "352",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-20T17:15:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-20T16:15:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-20T18:45:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-20T17:45:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320 Neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "bags": {
+        "checked": 2
+      },
+      "has_mixed_carriers": true,
+      "ignav_id": "b9493dcd3e8844b38b03cafff10da5ef"
+    },
+    {
+      "price": {
+        "amount": 8784.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 1385,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "351",
+            "operating_carrier_name": null,
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T10:50:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T09:50:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-11T12:20:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T11:20:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A220 300"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "277",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-11T17:50:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-11T16:50:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T19:05:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T18:05:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer Emb E90"
+          },
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "224",
+            "operating_carrier_name": null,
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-11T20:45:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T19:45:00Z",
+            "arrival_airport": "HND",
+            "arrival_time_local": "2026-12-12T17:55:00",
+            "arrival_timezone": "Asia/Tokyo",
+            "arrival_time_utc": "2026-12-12T08:55:00Z",
+            "duration_minutes": 790,
+            "aircraft": "Boeing 787 9"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 3120,
+        "segments": [
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "203",
+            "operating_carrier_name": null,
+            "departure_airport": "HND",
+            "departure_time_local": "2026-12-18T22:45:00",
+            "departure_timezone": "Asia/Tokyo",
+            "departure_time_utc": "2026-12-18T13:45:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-19T05:30:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-19T04:30:00Z",
+            "duration_minutes": 885,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "EN",
+            "flight_number": "256",
+            "operating_carrier_name": null,
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-19T20:50:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-19T19:50:00Z",
+            "arrival_airport": "MXP",
+            "arrival_time_local": "2026-12-19T22:05:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-19T21:05:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer 195"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "352",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-20T17:15:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-20T16:15:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-20T18:45:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-20T17:45:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320 Neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "bags": {
+        "checked": 2
+      },
+      "has_mixed_carriers": true,
+      "ignav_id": "bef4a945895d4213b12af56358d76175"
+    },
+    {
+      "price": {
+        "amount": 8784.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 1870,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "353",
+            "operating_carrier_name": null,
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T19:35:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T18:35:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-11T21:05:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T20:05:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320 Neo"
+          },
+          {
+            "marketing_carrier_code": "EN",
+            "flight_number": "271",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-12T10:45:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-12T09:45:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-12T12:00:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-12T11:00:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer Emb E90"
+          },
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "5854",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-12T14:00:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-12T13:00:00Z",
+            "arrival_airport": "HND",
+            "arrival_time_local": "2026-12-13T10:45:00",
+            "arrival_timezone": "Asia/Tokyo",
+            "arrival_time_utc": "2026-12-13T01:45:00Z",
+            "duration_minutes": 765,
+            "aircraft": "Boeing 747 800"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 3120,
+        "segments": [
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "203",
+            "operating_carrier_name": null,
+            "departure_airport": "HND",
+            "departure_time_local": "2026-12-18T22:45:00",
+            "departure_timezone": "Asia/Tokyo",
+            "departure_time_utc": "2026-12-18T13:45:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-19T05:30:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-19T04:30:00Z",
+            "duration_minutes": 885,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "EN",
+            "flight_number": "256",
+            "operating_carrier_name": null,
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-19T20:50:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-19T19:50:00Z",
+            "arrival_airport": "MXP",
+            "arrival_time_local": "2026-12-19T22:05:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-19T21:05:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer 195"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "352",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-20T17:15:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-20T16:15:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-20T18:45:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-20T17:45:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320 Neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "bags": {
+        "checked": 2
+      },
+      "has_mixed_carriers": true,
+      "ignav_id": "370edf2ebbc848d9bf14ec0b4926f299"
+    },
+    {
+      "price": {
+        "amount": 8784.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 1870,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "353",
+            "operating_carrier_name": null,
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T19:35:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T18:35:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-11T21:05:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T20:05:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320 Neo"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "281",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-12T06:25:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-12T05:25:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-12T07:40:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-12T06:40:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Airbus Industrie A321"
+          },
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "5854",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-12T14:00:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-12T13:00:00Z",
+            "arrival_airport": "HND",
+            "arrival_time_local": "2026-12-13T10:45:00",
+            "arrival_timezone": "Asia/Tokyo",
+            "arrival_time_utc": "2026-12-13T01:45:00Z",
+            "duration_minutes": 765,
+            "aircraft": "Boeing 747 800"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "All Nippon Airways",
+        "duration_minutes": 3120,
+        "segments": [
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "203",
+            "operating_carrier_name": null,
+            "departure_airport": "HND",
+            "departure_time_local": "2026-12-18T22:45:00",
+            "departure_timezone": "Asia/Tokyo",
+            "departure_time_utc": "2026-12-18T13:45:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-19T05:30:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-19T04:30:00Z",
+            "duration_minutes": 885,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "EN",
+            "flight_number": "256",
+            "operating_carrier_name": null,
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-19T20:50:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-19T19:50:00Z",
+            "arrival_airport": "MXP",
+            "arrival_time_local": "2026-12-19T22:05:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-19T21:05:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer 195"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "352",
+            "operating_carrier_name": null,
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-20T17:15:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-20T16:15:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-20T18:45:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-20T17:45:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320 Neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "bags": {
+        "checked": 2
+      },
+      "has_mixed_carriers": true,
+      "ignav_id": "c17cbda3ec49478ebfac49e1b6e5b2d4"
+    }
+  ],
+  "observed_at": "2026-11-20T16:06:41.530116Z"
+}

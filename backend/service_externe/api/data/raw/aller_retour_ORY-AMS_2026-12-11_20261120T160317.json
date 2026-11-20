@@ -1,0 +1,2559 @@
+{
+  "origin": "ORY",
+  "destination": "AMS",
+  "departure_date": "2026-12-11",
+  "return_date": "2026-12-18",
+  "itineraries": [
+    {
+      "price": {
+        "amount": 441.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Iberia",
+        "duration_minutes": 460,
+        "segments": [
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "584",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T07:25:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T06:25:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-11T09:30:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-11T08:30:00Z",
+            "duration_minutes": 125,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "1345",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-11T12:20:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-11T11:20:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2026-12-11T15:05:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2026-12-11T14:05:00Z",
+            "duration_minutes": 165,
+            "aircraft": "Canadair RJ 1000"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "ITA",
+        "duration_minutes": 415,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "121",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "AMS",
+            "departure_time_local": "2026-12-18T11:50:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2026-12-18T10:50:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-18T13:30:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-18T12:30:00Z",
+            "duration_minutes": 100,
+            "aircraft": "Airbus A320neo"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "352",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-18T17:15:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-18T16:15:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-18T18:45:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T17:45:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "38594ae51c9f4270a61f19cc1e6f71a3"
+    },
+    {
+      "price": {
+        "amount": 520.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "ITA",
+        "duration_minutes": 575,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "357",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T07:30:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T06:30:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-11T08:55:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T07:55:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A220-300 Passenger"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "2045",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-11T12:00:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-11T11:00:00Z",
+            "arrival_airport": "FCO",
+            "arrival_time_local": "2026-12-11T13:10:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T12:10:00Z",
+            "duration_minutes": 70,
+            "aircraft": "Airbus A220-300 Passenger"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "110",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "FCO",
+            "departure_time_local": "2026-12-11T14:30:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-11T13:30:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2026-12-11T17:05:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2026-12-11T16:05:00Z",
+            "duration_minutes": 155,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "ITA",
+        "duration_minutes": 415,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "121",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "AMS",
+            "departure_time_local": "2026-12-18T11:50:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2026-12-18T10:50:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-18T13:30:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-18T12:30:00Z",
+            "duration_minutes": 100,
+            "aircraft": "Airbus A320neo"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "352",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-18T17:15:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-18T16:15:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-18T18:45:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T17:45:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "c973c0feea0846d39ae7146edfc02870"
+    },
+    {
+      "price": {
+        "amount": 520.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "ITA",
+        "duration_minutes": 575,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "357",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T07:30:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T06:30:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-11T08:55:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T07:55:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A220-300 Passenger"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "2045",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-11T12:00:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-11T11:00:00Z",
+            "arrival_airport": "FCO",
+            "arrival_time_local": "2026-12-11T13:10:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T12:10:00Z",
+            "duration_minutes": 70,
+            "aircraft": "Airbus A220-300 Passenger"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "110",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "FCO",
+            "departure_time_local": "2026-12-11T14:30:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-11T13:30:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2026-12-11T17:05:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2026-12-11T16:05:00Z",
+            "duration_minutes": 155,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "ITA",
+        "duration_minutes": 830,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "113",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "AMS",
+            "departure_time_local": "2026-12-18T20:05:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2026-12-18T19:05:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-18T21:45:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-18T20:45:00Z",
+            "duration_minutes": 100,
+            "aircraft": "Airbus A320neo"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "350",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-19T08:25:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-19T07:25:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-19T09:55:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T08:55:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A220-300 Passenger"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "d32bda6bb29c4de4a8f475c1be0bcccc"
+    },
+    {
+      "price": {
+        "amount": 537.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "ITA",
+        "duration_minutes": 925,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "353",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T19:35:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T18:35:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-11T21:05:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T20:05:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320neo"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "120",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-12T09:00:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-12T08:00:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2026-12-12T11:00:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2026-12-12T10:00:00Z",
+            "duration_minutes": 120,
+            "aircraft": "Airbus A220-300 Passenger"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "ITA",
+        "duration_minutes": 415,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "121",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "AMS",
+            "departure_time_local": "2026-12-18T11:50:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2026-12-18T10:50:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-18T13:30:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-18T12:30:00Z",
+            "duration_minutes": 100,
+            "aircraft": "Airbus A320neo"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "352",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-18T17:15:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-18T16:15:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-18T18:45:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T17:45:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "c05daaccfbf846eb9c9085dfed552197"
+    },
+    {
+      "price": {
+        "amount": 537.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "ITA",
+        "duration_minutes": 925,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "353",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T19:35:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T18:35:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-11T21:05:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T20:05:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320neo"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "120",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-12T09:00:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-12T08:00:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2026-12-12T11:00:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2026-12-12T10:00:00Z",
+            "duration_minutes": 120,
+            "aircraft": "Airbus A220-300 Passenger"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "ITA",
+        "duration_minutes": 830,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "113",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "AMS",
+            "departure_time_local": "2026-12-18T20:05:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2026-12-18T19:05:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-18T21:45:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-18T20:45:00Z",
+            "duration_minutes": 100,
+            "aircraft": "Airbus A320neo"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "350",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-19T08:25:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-19T07:25:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-19T09:55:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T08:55:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A220-300 Passenger"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "54b03edf2d61432f96e2a15589df7ddf"
+    },
+    {
+      "price": {
+        "amount": 641.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air Europa",
+        "duration_minutes": 985,
+        "segments": [
+          {
+            "marketing_carrier_code": "UX",
+            "flight_number": "1222",
+            "operating_carrier_name": "Air Europa",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T17:15:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T16:15:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-11T19:15:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-11T18:15:00Z",
+            "duration_minutes": 120,
+            "aircraft": "Boeing 737"
+          },
+          {
+            "marketing_carrier_code": "UX",
+            "flight_number": "1091",
+            "operating_carrier_name": "Air Europa",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-12T07:00:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-12T06:00:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2026-12-12T09:40:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2026-12-12T08:40:00Z",
+            "duration_minutes": 160,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Air Europa",
+        "duration_minutes": 445,
+        "segments": [
+          {
+            "marketing_carrier_code": "UX",
+            "flight_number": "1098",
+            "operating_carrier_name": "Air Europa",
+            "departure_airport": "AMS",
+            "departure_time_local": "2026-12-18T11:00:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2026-12-18T10:00:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-18T13:40:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-18T12:40:00Z",
+            "duration_minutes": 160,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "UX",
+            "flight_number": "1025",
+            "operating_carrier_name": "Air Europa",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-18T16:30:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-18T15:30:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-18T18:25:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T17:25:00Z",
+            "duration_minutes": 115,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "5149f2617a204d0ca915ed6da6d54df2"
+    },
+    {
+      "price": {
+        "amount": 656.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Iberia",
+        "duration_minutes": 460,
+        "segments": [
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "584",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T07:25:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T06:25:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-11T09:30:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-11T08:30:00Z",
+            "duration_minutes": 125,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "1345",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-11T12:20:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-11T11:20:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2026-12-11T15:05:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2026-12-11T14:05:00Z",
+            "duration_minutes": 165,
+            "aircraft": "Canadair RJ 1000"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Vueling",
+        "duration_minutes": 465,
+        "segments": [
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "1051",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "AMS",
+            "departure_time_local": "2026-12-18T07:00:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2026-12-18T06:00:00Z",
+            "arrival_airport": "BCN",
+            "arrival_time_local": "2026-12-18T09:20:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-18T08:20:00Z",
+            "duration_minutes": 140,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "8012",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "BCN",
+            "departure_time_local": "2026-12-18T12:55:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-18T11:55:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-18T14:45:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T13:45:00Z",
+            "duration_minutes": 110,
+            "aircraft": "Airbus A321neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "64180347cea045ddbd946ed097d4e696"
+    },
+    {
+      "price": {
+        "amount": 662.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Iberia",
+        "duration_minutes": 460,
+        "segments": [
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "584",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T07:25:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T06:25:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-11T09:30:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-11T08:30:00Z",
+            "duration_minutes": 125,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "1345",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-11T12:20:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-11T11:20:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2026-12-11T15:05:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2026-12-11T14:05:00Z",
+            "duration_minutes": 165,
+            "aircraft": "Canadair RJ 1000"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Vueling",
+        "duration_minutes": 305,
+        "segments": [
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "1051",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "AMS",
+            "departure_time_local": "2026-12-18T07:00:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2026-12-18T06:00:00Z",
+            "arrival_airport": "BCN",
+            "arrival_time_local": "2026-12-18T09:20:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-18T08:20:00Z",
+            "duration_minutes": 140,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "8010",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "BCN",
+            "departure_time_local": "2026-12-18T10:15:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-18T09:15:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-18T12:05:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T11:05:00Z",
+            "duration_minutes": 110,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "3f1cc17a07264ddabfff8a045b5f0f9d"
+    },
+    {
+      "price": {
+        "amount": 709.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Vueling",
+        "duration_minutes": 355,
+        "segments": [
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "8007",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T06:45:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T05:45:00Z",
+            "arrival_airport": "BCN",
+            "arrival_time_local": "2026-12-11T08:25:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-11T07:25:00Z",
+            "duration_minutes": 100,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "1050",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "BCN",
+            "departure_time_local": "2026-12-11T10:05:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-11T09:05:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2026-12-11T12:40:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2026-12-11T11:40:00Z",
+            "duration_minutes": 155,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Vueling",
+        "duration_minutes": 600,
+        "segments": [
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "1063",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "AMS",
+            "departure_time_local": "2026-12-18T21:40:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2026-12-18T20:40:00Z",
+            "arrival_airport": "BCN",
+            "arrival_time_local": "2026-12-18T23:59:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-18T22:59:00Z",
+            "duration_minutes": 139,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "8000",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "BCN",
+            "departure_time_local": "2026-12-19T05:50:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-19T04:50:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-19T07:40:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T06:40:00Z",
+            "duration_minutes": 110,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "62aa9c4b7dc34a789d6811799740be73"
+    },
+    {
+      "price": {
+        "amount": 717.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Vueling",
+        "duration_minutes": 355,
+        "segments": [
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "8007",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T06:45:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T05:45:00Z",
+            "arrival_airport": "BCN",
+            "arrival_time_local": "2026-12-11T08:25:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-11T07:25:00Z",
+            "duration_minutes": 100,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "1050",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "BCN",
+            "departure_time_local": "2026-12-11T10:05:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-11T09:05:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2026-12-11T12:40:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2026-12-11T11:40:00Z",
+            "duration_minutes": 155,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Vueling",
+        "duration_minutes": 465,
+        "segments": [
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "1051",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "AMS",
+            "departure_time_local": "2026-12-18T07:00:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2026-12-18T06:00:00Z",
+            "arrival_airport": "BCN",
+            "arrival_time_local": "2026-12-18T09:20:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-18T08:20:00Z",
+            "duration_minutes": 140,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "8012",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "BCN",
+            "departure_time_local": "2026-12-18T12:55:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-18T11:55:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-18T14:45:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T13:45:00Z",
+            "duration_minutes": 110,
+            "aircraft": "Airbus A321neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "9ecffa4d4bb6470fb5635310da16538b"
+    },
+    {
+      "price": {
+        "amount": 723.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Vueling",
+        "duration_minutes": 355,
+        "segments": [
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "8007",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T06:45:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T05:45:00Z",
+            "arrival_airport": "BCN",
+            "arrival_time_local": "2026-12-11T08:25:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-11T07:25:00Z",
+            "duration_minutes": 100,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "1050",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "BCN",
+            "departure_time_local": "2026-12-11T10:05:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-11T09:05:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2026-12-11T12:40:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2026-12-11T11:40:00Z",
+            "duration_minutes": 155,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Vueling",
+        "duration_minutes": 305,
+        "segments": [
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "1051",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "AMS",
+            "departure_time_local": "2026-12-18T07:00:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2026-12-18T06:00:00Z",
+            "arrival_airport": "BCN",
+            "arrival_time_local": "2026-12-18T09:20:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-18T08:20:00Z",
+            "duration_minutes": 140,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "8010",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "BCN",
+            "departure_time_local": "2026-12-18T10:15:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-18T09:15:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-18T12:05:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T11:05:00Z",
+            "duration_minutes": 110,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "a4ed20b98aed4a2eb7515b071c4e606a"
+    },
+    {
+      "price": {
+        "amount": 731.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air Europa",
+        "duration_minutes": 405,
+        "segments": [
+          {
+            "marketing_carrier_code": "UX",
+            "flight_number": "1028",
+            "operating_carrier_name": "Air Europa",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T10:55:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T09:55:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-11T12:55:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-11T11:55:00Z",
+            "duration_minutes": 120,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          },
+          {
+            "marketing_carrier_code": "UX",
+            "flight_number": "1093",
+            "operating_carrier_name": "Air Europa",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-11T15:05:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-11T14:05:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2026-12-11T17:40:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2026-12-11T16:40:00Z",
+            "duration_minutes": 155,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Air Europa",
+        "duration_minutes": 445,
+        "segments": [
+          {
+            "marketing_carrier_code": "UX",
+            "flight_number": "1098",
+            "operating_carrier_name": "Air Europa",
+            "departure_airport": "AMS",
+            "departure_time_local": "2026-12-18T11:00:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2026-12-18T10:00:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-18T13:40:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-18T12:40:00Z",
+            "duration_minutes": 160,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "UX",
+            "flight_number": "1025",
+            "operating_carrier_name": "Air Europa",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-18T16:30:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-18T15:30:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-18T18:25:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T17:25:00Z",
+            "duration_minutes": 115,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "48d99516ff89408b9c4402be37f2a93b"
+    },
+    {
+      "price": {
+        "amount": 746.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Vueling",
+        "duration_minutes": 305,
+        "segments": [
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "8023",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T13:25:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T12:25:00Z",
+            "arrival_airport": "BCN",
+            "arrival_time_local": "2026-12-11T15:05:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-11T14:05:00Z",
+            "duration_minutes": 100,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "1060",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "BCN",
+            "departure_time_local": "2026-12-11T16:00:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-11T15:00:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2026-12-11T18:30:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2026-12-11T17:30:00Z",
+            "duration_minutes": 150,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Vueling",
+        "duration_minutes": 600,
+        "segments": [
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "1063",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "AMS",
+            "departure_time_local": "2026-12-18T21:40:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2026-12-18T20:40:00Z",
+            "arrival_airport": "BCN",
+            "arrival_time_local": "2026-12-18T23:59:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-18T22:59:00Z",
+            "duration_minutes": 139,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "8000",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "BCN",
+            "departure_time_local": "2026-12-19T05:50:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-19T04:50:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-19T07:40:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T06:40:00Z",
+            "duration_minutes": 110,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "6d96be024f8e44c09c8904f6ef31ec50"
+    },
+    {
+      "price": {
+        "amount": 751.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Iberia",
+        "duration_minutes": 460,
+        "segments": [
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "584",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T07:25:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T06:25:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-11T09:30:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-11T08:30:00Z",
+            "duration_minutes": 125,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "1345",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-11T12:20:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-11T11:20:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2026-12-11T15:05:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2026-12-11T14:05:00Z",
+            "duration_minutes": 165,
+            "aircraft": "Canadair RJ 1000"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Vueling",
+        "duration_minutes": 360,
+        "segments": [
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "1059",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "AMS",
+            "departure_time_local": "2026-12-18T16:35:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2026-12-18T15:35:00Z",
+            "arrival_airport": "BCN",
+            "arrival_time_local": "2026-12-18T18:55:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-18T17:55:00Z",
+            "duration_minutes": 140,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "8030",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "BCN",
+            "departure_time_local": "2026-12-18T20:45:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-18T19:45:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-18T22:35:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T21:35:00Z",
+            "duration_minutes": 110,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "eb3c5d074f1b4c99a15bd1e0be4fd0e3"
+    },
+    {
+      "price": {
+        "amount": 754.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Vueling",
+        "duration_minutes": 305,
+        "segments": [
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "8023",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T13:25:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T12:25:00Z",
+            "arrival_airport": "BCN",
+            "arrival_time_local": "2026-12-11T15:05:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-11T14:05:00Z",
+            "duration_minutes": 100,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "1060",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "BCN",
+            "departure_time_local": "2026-12-11T16:00:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-11T15:00:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2026-12-11T18:30:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2026-12-11T17:30:00Z",
+            "duration_minutes": 150,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Vueling",
+        "duration_minutes": 465,
+        "segments": [
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "1051",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "AMS",
+            "departure_time_local": "2026-12-18T07:00:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2026-12-18T06:00:00Z",
+            "arrival_airport": "BCN",
+            "arrival_time_local": "2026-12-18T09:20:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-18T08:20:00Z",
+            "duration_minutes": 140,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "8012",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "BCN",
+            "departure_time_local": "2026-12-18T12:55:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-18T11:55:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-18T14:45:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T13:45:00Z",
+            "duration_minutes": 110,
+            "aircraft": "Airbus A321neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "19b4811f92124456a277226545321a04"
+    },
+    {
+      "price": {
+        "amount": 761.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Vueling",
+        "duration_minutes": 305,
+        "segments": [
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "8023",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T13:25:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T12:25:00Z",
+            "arrival_airport": "BCN",
+            "arrival_time_local": "2026-12-11T15:05:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-11T14:05:00Z",
+            "duration_minutes": 100,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "1060",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "BCN",
+            "departure_time_local": "2026-12-11T16:00:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-11T15:00:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2026-12-11T18:30:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2026-12-11T17:30:00Z",
+            "duration_minutes": 150,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Vueling",
+        "duration_minutes": 305,
+        "segments": [
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "1051",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "AMS",
+            "departure_time_local": "2026-12-18T07:00:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2026-12-18T06:00:00Z",
+            "arrival_airport": "BCN",
+            "arrival_time_local": "2026-12-18T09:20:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-18T08:20:00Z",
+            "duration_minutes": 140,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "8010",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "BCN",
+            "departure_time_local": "2026-12-18T10:15:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-18T09:15:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-18T12:05:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T11:05:00Z",
+            "duration_minutes": 110,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "279ec2dc9b2d4018a2cf5e61f693b2aa"
+    },
+    {
+      "price": {
+        "amount": 813.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Vueling",
+        "duration_minutes": 355,
+        "segments": [
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "8007",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T06:45:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T05:45:00Z",
+            "arrival_airport": "BCN",
+            "arrival_time_local": "2026-12-11T08:25:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-11T07:25:00Z",
+            "duration_minutes": 100,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "1050",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "BCN",
+            "departure_time_local": "2026-12-11T10:05:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-11T09:05:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2026-12-11T12:40:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2026-12-11T11:40:00Z",
+            "duration_minutes": 155,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Vueling",
+        "duration_minutes": 360,
+        "segments": [
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "1059",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "AMS",
+            "departure_time_local": "2026-12-18T16:35:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2026-12-18T15:35:00Z",
+            "arrival_airport": "BCN",
+            "arrival_time_local": "2026-12-18T18:55:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-18T17:55:00Z",
+            "duration_minutes": 140,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "8030",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "BCN",
+            "departure_time_local": "2026-12-18T20:45:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-18T19:45:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-18T22:35:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T21:35:00Z",
+            "duration_minutes": 110,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "6df6dcda1b80430b9785d9761bd858b2"
+    },
+    {
+      "price": {
+        "amount": 813.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Vueling",
+        "duration_minutes": 355,
+        "segments": [
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "8007",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T06:45:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T05:45:00Z",
+            "arrival_airport": "BCN",
+            "arrival_time_local": "2026-12-11T08:25:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-11T07:25:00Z",
+            "duration_minutes": 100,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "1050",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "BCN",
+            "departure_time_local": "2026-12-11T10:05:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-11T09:05:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2026-12-11T12:40:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2026-12-11T11:40:00Z",
+            "duration_minutes": 155,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Vueling",
+        "duration_minutes": 465,
+        "segments": [
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "1057",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "AMS",
+            "departure_time_local": "2026-12-18T13:25:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2026-12-18T12:25:00Z",
+            "arrival_airport": "BCN",
+            "arrival_time_local": "2026-12-18T15:45:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-18T14:45:00Z",
+            "duration_minutes": 140,
+            "aircraft": "Airbus A321"
+          },
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "8028",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "BCN",
+            "departure_time_local": "2026-12-18T19:20:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-18T18:20:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-18T21:10:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T20:10:00Z",
+            "duration_minutes": 110,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "abbc74baf37f42d9ba04b51c29d598ea"
+    },
+    {
+      "price": {
+        "amount": 830.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air Europa",
+        "duration_minutes": 350,
+        "segments": [
+          {
+            "marketing_carrier_code": "UX",
+            "flight_number": "1222",
+            "operating_carrier_name": "Air Europa",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T17:15:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T16:15:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-11T19:15:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-11T18:15:00Z",
+            "duration_minutes": 120,
+            "aircraft": "Boeing 737"
+          },
+          {
+            "marketing_carrier_code": "KL",
+            "flight_number": "1508",
+            "operating_carrier_name": "KLM",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-11T20:30:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-11T19:30:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2026-12-11T23:05:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2026-12-11T22:05:00Z",
+            "duration_minutes": 155,
+            "aircraft": "Airbus A321neo"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Air Europa",
+        "duration_minutes": 445,
+        "segments": [
+          {
+            "marketing_carrier_code": "UX",
+            "flight_number": "1098",
+            "operating_carrier_name": "Air Europa",
+            "departure_airport": "AMS",
+            "departure_time_local": "2026-12-18T11:00:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2026-12-18T10:00:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-18T13:40:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-18T12:40:00Z",
+            "duration_minutes": 160,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "UX",
+            "flight_number": "1025",
+            "operating_carrier_name": "Air Europa",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-18T16:30:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-18T15:30:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-18T18:25:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T17:25:00Z",
+            "duration_minutes": 115,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "997fe846f9db40b381dda45225dc6e36"
+    },
+    {
+      "price": {
+        "amount": 831.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Vueling",
+        "duration_minutes": 355,
+        "segments": [
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "8007",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T06:45:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T05:45:00Z",
+            "arrival_airport": "BCN",
+            "arrival_time_local": "2026-12-11T08:25:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-11T07:25:00Z",
+            "duration_minutes": 100,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "1050",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "BCN",
+            "departure_time_local": "2026-12-11T10:05:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-11T09:05:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2026-12-11T12:40:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2026-12-11T11:40:00Z",
+            "duration_minutes": 155,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Vueling",
+        "duration_minutes": 405,
+        "segments": [
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "1057",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "AMS",
+            "departure_time_local": "2026-12-18T13:25:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2026-12-18T12:25:00Z",
+            "arrival_airport": "BCN",
+            "arrival_time_local": "2026-12-18T15:45:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-18T14:45:00Z",
+            "duration_minutes": 140,
+            "aircraft": "Airbus A321"
+          },
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "8026",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "BCN",
+            "departure_time_local": "2026-12-18T18:20:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-18T17:20:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-18T20:10:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T19:10:00Z",
+            "duration_minutes": 110,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "9864c85e53cc44edabc09c3a6e60d947"
+    },
+    {
+      "price": {
+        "amount": 841.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air Europa",
+        "duration_minutes": 350,
+        "segments": [
+          {
+            "marketing_carrier_code": "UX",
+            "flight_number": "1222",
+            "operating_carrier_name": "Air Europa",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T17:15:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T16:15:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-11T19:15:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-11T18:15:00Z",
+            "duration_minutes": 120,
+            "aircraft": "Boeing 737"
+          },
+          {
+            "marketing_carrier_code": "KL",
+            "flight_number": "1508",
+            "operating_carrier_name": "KLM",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-11T20:30:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-11T19:30:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2026-12-11T23:05:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2026-12-11T22:05:00Z",
+            "duration_minutes": 155,
+            "aircraft": "Airbus A321neo"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "KLM",
+        "duration_minutes": 665,
+        "segments": [
+          {
+            "marketing_carrier_code": "KL",
+            "flight_number": "1501",
+            "operating_carrier_name": "KLM",
+            "departure_airport": "AMS",
+            "departure_time_local": "2026-12-18T07:20:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2026-12-18T06:20:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-18T09:55:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-18T08:55:00Z",
+            "duration_minutes": 155,
+            "aircraft": "Airbus A321neo"
+          },
+          {
+            "marketing_carrier_code": "UX",
+            "flight_number": "1025",
+            "operating_carrier_name": "Air Europa",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-18T16:30:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-18T15:30:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-18T18:25:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T17:25:00Z",
+            "duration_minutes": 115,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "24787615b2854f3fa1c8983549c57111"
+    },
+    {
+      "price": {
+        "amount": 841.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air Europa",
+        "duration_minutes": 985,
+        "segments": [
+          {
+            "marketing_carrier_code": "UX",
+            "flight_number": "1222",
+            "operating_carrier_name": "Air Europa",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T17:15:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T16:15:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-11T19:15:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-11T18:15:00Z",
+            "duration_minutes": 120,
+            "aircraft": "Boeing 737"
+          },
+          {
+            "marketing_carrier_code": "UX",
+            "flight_number": "1091",
+            "operating_carrier_name": "Air Europa",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-12T07:00:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-12T06:00:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2026-12-12T09:40:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2026-12-12T08:40:00Z",
+            "duration_minutes": 160,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "KLM",
+        "duration_minutes": 665,
+        "segments": [
+          {
+            "marketing_carrier_code": "KL",
+            "flight_number": "1501",
+            "operating_carrier_name": "KLM",
+            "departure_airport": "AMS",
+            "departure_time_local": "2026-12-18T07:20:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2026-12-18T06:20:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-18T09:55:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-18T08:55:00Z",
+            "duration_minutes": 155,
+            "aircraft": "Airbus A321neo"
+          },
+          {
+            "marketing_carrier_code": "UX",
+            "flight_number": "1025",
+            "operating_carrier_name": "Air Europa",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-18T16:30:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-18T15:30:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-18T18:25:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T17:25:00Z",
+            "duration_minutes": 115,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "871fb6dce2f74e5abcfc49a5bfb945bd"
+    },
+    {
+      "price": {
+        "amount": 850.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Vueling",
+        "duration_minutes": 305,
+        "segments": [
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "8023",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T13:25:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T12:25:00Z",
+            "arrival_airport": "BCN",
+            "arrival_time_local": "2026-12-11T15:05:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-11T14:05:00Z",
+            "duration_minutes": 100,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "1060",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "BCN",
+            "departure_time_local": "2026-12-11T16:00:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-11T15:00:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2026-12-11T18:30:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2026-12-11T17:30:00Z",
+            "duration_minutes": 150,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Vueling",
+        "duration_minutes": 360,
+        "segments": [
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "1059",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "AMS",
+            "departure_time_local": "2026-12-18T16:35:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2026-12-18T15:35:00Z",
+            "arrival_airport": "BCN",
+            "arrival_time_local": "2026-12-18T18:55:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-18T17:55:00Z",
+            "duration_minutes": 140,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "8030",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "BCN",
+            "departure_time_local": "2026-12-18T20:45:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-18T19:45:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-18T22:35:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T21:35:00Z",
+            "duration_minutes": 110,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "70316370cc2c4b5f94a12ed5e1a1b5f2"
+    },
+    {
+      "price": {
+        "amount": 850.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Vueling",
+        "duration_minutes": 305,
+        "segments": [
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "8023",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T13:25:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T12:25:00Z",
+            "arrival_airport": "BCN",
+            "arrival_time_local": "2026-12-11T15:05:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-11T14:05:00Z",
+            "duration_minutes": 100,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "1060",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "BCN",
+            "departure_time_local": "2026-12-11T16:00:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-11T15:00:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2026-12-11T18:30:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2026-12-11T17:30:00Z",
+            "duration_minutes": 150,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Vueling",
+        "duration_minutes": 465,
+        "segments": [
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "1057",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "AMS",
+            "departure_time_local": "2026-12-18T13:25:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2026-12-18T12:25:00Z",
+            "arrival_airport": "BCN",
+            "arrival_time_local": "2026-12-18T15:45:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-18T14:45:00Z",
+            "duration_minutes": 140,
+            "aircraft": "Airbus A321"
+          },
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "8028",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "BCN",
+            "departure_time_local": "2026-12-18T19:20:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-18T18:20:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-18T21:10:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T20:10:00Z",
+            "duration_minutes": 110,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "f533a90275fe49e28f84c4613c4f75c5"
+    },
+    {
+      "price": {
+        "amount": 858.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air Europa",
+        "duration_minutes": 350,
+        "segments": [
+          {
+            "marketing_carrier_code": "UX",
+            "flight_number": "1222",
+            "operating_carrier_name": "Air Europa",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T17:15:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T16:15:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-11T19:15:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-11T18:15:00Z",
+            "duration_minutes": 120,
+            "aircraft": "Boeing 737"
+          },
+          {
+            "marketing_carrier_code": "KL",
+            "flight_number": "1508",
+            "operating_carrier_name": "KLM",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-11T20:30:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-11T19:30:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2026-12-11T23:05:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2026-12-11T22:05:00Z",
+            "duration_minutes": 155,
+            "aircraft": "Airbus A321neo"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "KLM",
+        "duration_minutes": 540,
+        "segments": [
+          {
+            "marketing_carrier_code": "KL",
+            "flight_number": "1501",
+            "operating_carrier_name": "KLM",
+            "departure_airport": "AMS",
+            "departure_time_local": "2026-12-18T07:20:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2026-12-18T06:20:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-18T09:55:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-18T08:55:00Z",
+            "duration_minutes": 155,
+            "aircraft": "Airbus A321neo"
+          },
+          {
+            "marketing_carrier_code": "UX",
+            "flight_number": "1029",
+            "operating_carrier_name": "Air Europa",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-18T14:25:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-18T13:25:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-18T16:20:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T15:20:00Z",
+            "duration_minutes": 115,
+            "aircraft": "Boeing 737"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "e0bfbd5b0f8e46669a5ba06cca2ee29f"
+    },
+    {
+      "price": {
+        "amount": 867.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Vueling",
+        "duration_minutes": 305,
+        "segments": [
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "8023",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T13:25:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T12:25:00Z",
+            "arrival_airport": "BCN",
+            "arrival_time_local": "2026-12-11T15:05:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-11T14:05:00Z",
+            "duration_minutes": 100,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "1060",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "BCN",
+            "departure_time_local": "2026-12-11T16:00:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-11T15:00:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2026-12-11T18:30:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2026-12-11T17:30:00Z",
+            "duration_minutes": 150,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Vueling",
+        "duration_minutes": 405,
+        "segments": [
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "1057",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "AMS",
+            "departure_time_local": "2026-12-18T13:25:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2026-12-18T12:25:00Z",
+            "arrival_airport": "BCN",
+            "arrival_time_local": "2026-12-18T15:45:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-18T14:45:00Z",
+            "duration_minutes": 140,
+            "aircraft": "Airbus A321"
+          },
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "8026",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "BCN",
+            "departure_time_local": "2026-12-18T18:20:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-18T17:20:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-18T20:10:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T19:10:00Z",
+            "duration_minutes": 110,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "3c2cfa001d444b748c443d38431d5b25"
+    },
+    {
+      "price": {
+        "amount": 931.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air Europa",
+        "duration_minutes": 405,
+        "segments": [
+          {
+            "marketing_carrier_code": "UX",
+            "flight_number": "1028",
+            "operating_carrier_name": "Air Europa",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T10:55:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T09:55:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-11T12:55:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-11T11:55:00Z",
+            "duration_minutes": 120,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          },
+          {
+            "marketing_carrier_code": "UX",
+            "flight_number": "1093",
+            "operating_carrier_name": "Air Europa",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-11T15:05:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-11T14:05:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2026-12-11T17:40:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2026-12-11T16:40:00Z",
+            "duration_minutes": 155,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "KLM",
+        "duration_minutes": 665,
+        "segments": [
+          {
+            "marketing_carrier_code": "KL",
+            "flight_number": "1501",
+            "operating_carrier_name": "KLM",
+            "departure_airport": "AMS",
+            "departure_time_local": "2026-12-18T07:20:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2026-12-18T06:20:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-18T09:55:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-18T08:55:00Z",
+            "duration_minutes": 155,
+            "aircraft": "Airbus A321neo"
+          },
+          {
+            "marketing_carrier_code": "UX",
+            "flight_number": "1025",
+            "operating_carrier_name": "Air Europa",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-18T16:30:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-18T15:30:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-18T18:25:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T17:25:00Z",
+            "duration_minutes": 115,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "e7c39188a89d46a2bfbfd2a1a1c1eadb"
+    },
+    {
+      "price": {
+        "amount": 948.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air Europa",
+        "duration_minutes": 405,
+        "segments": [
+          {
+            "marketing_carrier_code": "UX",
+            "flight_number": "1028",
+            "operating_carrier_name": "Air Europa",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T10:55:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T09:55:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-11T12:55:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-11T11:55:00Z",
+            "duration_minutes": 120,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          },
+          {
+            "marketing_carrier_code": "UX",
+            "flight_number": "1093",
+            "operating_carrier_name": "Air Europa",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-11T15:05:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-11T14:05:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2026-12-11T17:40:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2026-12-11T16:40:00Z",
+            "duration_minutes": 155,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "KLM",
+        "duration_minutes": 540,
+        "segments": [
+          {
+            "marketing_carrier_code": "KL",
+            "flight_number": "1501",
+            "operating_carrier_name": "KLM",
+            "departure_airport": "AMS",
+            "departure_time_local": "2026-12-18T07:20:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2026-12-18T06:20:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-18T09:55:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-18T08:55:00Z",
+            "duration_minutes": 155,
+            "aircraft": "Airbus A321neo"
+          },
+          {
+            "marketing_carrier_code": "UX",
+            "flight_number": "1029",
+            "operating_carrier_name": "Air Europa",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-18T14:25:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-18T13:25:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-18T16:20:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T15:20:00Z",
+            "duration_minutes": 115,
+            "aircraft": "Boeing 737"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "d481980a9a194180a61cf1abd7a63611"
+    },
+    {
+      "price": {
+        "amount": 5134.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "LOT",
+        "duration_minutes": 780,
+        "segments": [
+          {
+            "marketing_carrier_code": "LO",
+            "flight_number": "2152",
+            "operating_carrier_name": "LOT",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T20:40:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T19:40:00Z",
+            "arrival_airport": "KRK",
+            "arrival_time_local": "2026-12-11T22:50:00",
+            "arrival_timezone": "Europe/Warsaw",
+            "arrival_time_utc": "2026-12-11T21:50:00Z",
+            "duration_minutes": 130,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          },
+          {
+            "marketing_carrier_code": "LO",
+            "flight_number": "3910",
+            "operating_carrier_name": "LOT",
+            "departure_airport": "KRK",
+            "departure_time_local": "2026-12-12T05:35:00",
+            "departure_timezone": "Europe/Warsaw",
+            "departure_time_utc": "2026-12-12T04:35:00Z",
+            "arrival_airport": "WAW",
+            "arrival_time_local": "2026-12-12T06:35:00",
+            "arrival_timezone": "Europe/Warsaw",
+            "arrival_time_utc": "2026-12-12T05:35:00Z",
+            "duration_minutes": 60,
+            "aircraft": "Embraer 195 E2"
+          },
+          {
+            "marketing_carrier_code": "LO",
+            "flight_number": "265",
+            "operating_carrier_name": "LOT",
+            "departure_airport": "WAW",
+            "departure_time_local": "2026-12-12T07:25:00",
+            "departure_timezone": "Europe/Warsaw",
+            "departure_time_utc": "2026-12-12T06:25:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2026-12-12T09:40:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2026-12-12T08:40:00Z",
+            "duration_minutes": 135,
+            "aircraft": "Embraer 175"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "LOT",
+        "duration_minutes": 550,
+        "segments": [
+          {
+            "marketing_carrier_code": "LO",
+            "flight_number": "266",
+            "operating_carrier_name": "LOT",
+            "departure_airport": "AMS",
+            "departure_time_local": "2026-12-18T10:30:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2026-12-18T09:30:00Z",
+            "arrival_airport": "WAW",
+            "arrival_time_local": "2026-12-18T12:25:00",
+            "arrival_timezone": "Europe/Warsaw",
+            "arrival_time_utc": "2026-12-18T11:25:00Z",
+            "duration_minutes": 115,
+            "aircraft": "Embraer 175"
+          },
+          {
+            "marketing_carrier_code": "LO",
+            "flight_number": "3905",
+            "operating_carrier_name": "LOT",
+            "departure_airport": "WAW",
+            "departure_time_local": "2026-12-18T13:25:00",
+            "departure_timezone": "Europe/Warsaw",
+            "departure_time_utc": "2026-12-18T12:25:00Z",
+            "arrival_airport": "KRK",
+            "arrival_time_local": "2026-12-18T14:20:00",
+            "arrival_timezone": "Europe/Warsaw",
+            "arrival_time_utc": "2026-12-18T13:20:00Z",
+            "duration_minutes": 55,
+            "aircraft": "Embraer 195 E2"
+          },
+          {
+            "marketing_carrier_code": "LO",
+            "flight_number": "2151",
+            "operating_carrier_name": "LOT",
+            "departure_airport": "KRK",
+            "departure_time_local": "2026-12-18T17:15:00",
+            "departure_timezone": "Europe/Warsaw",
+            "departure_time_utc": "2026-12-18T16:15:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-18T19:40:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T18:40:00Z",
+            "duration_minutes": 145,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "6ab4f8bf741e43ef9eeb3b8e161625f0"
+    },
+    {
+      "price": {
+        "amount": 5134.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "LOT",
+        "duration_minutes": 780,
+        "segments": [
+          {
+            "marketing_carrier_code": "LO",
+            "flight_number": "2152",
+            "operating_carrier_name": "LOT",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T20:40:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T19:40:00Z",
+            "arrival_airport": "KRK",
+            "arrival_time_local": "2026-12-11T22:50:00",
+            "arrival_timezone": "Europe/Warsaw",
+            "arrival_time_utc": "2026-12-11T21:50:00Z",
+            "duration_minutes": 130,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          },
+          {
+            "marketing_carrier_code": "LO",
+            "flight_number": "3910",
+            "operating_carrier_name": "LOT",
+            "departure_airport": "KRK",
+            "departure_time_local": "2026-12-12T05:35:00",
+            "departure_timezone": "Europe/Warsaw",
+            "departure_time_utc": "2026-12-12T04:35:00Z",
+            "arrival_airport": "WAW",
+            "arrival_time_local": "2026-12-12T06:35:00",
+            "arrival_timezone": "Europe/Warsaw",
+            "arrival_time_utc": "2026-12-12T05:35:00Z",
+            "duration_minutes": 60,
+            "aircraft": "Embraer 195 E2"
+          },
+          {
+            "marketing_carrier_code": "LO",
+            "flight_number": "265",
+            "operating_carrier_name": "LOT",
+            "departure_airport": "WAW",
+            "departure_time_local": "2026-12-12T07:25:00",
+            "departure_timezone": "Europe/Warsaw",
+            "departure_time_utc": "2026-12-12T06:25:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2026-12-12T09:40:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2026-12-12T08:40:00Z",
+            "duration_minutes": 135,
+            "aircraft": "Embraer 175"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "LOT",
+        "duration_minutes": 550,
+        "segments": [
+          {
+            "marketing_carrier_code": "LO",
+            "flight_number": "266",
+            "operating_carrier_name": "LOT",
+            "departure_airport": "AMS",
+            "departure_time_local": "2026-12-18T10:30:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2026-12-18T09:30:00Z",
+            "arrival_airport": "WAW",
+            "arrival_time_local": "2026-12-18T12:25:00",
+            "arrival_timezone": "Europe/Warsaw",
+            "arrival_time_utc": "2026-12-18T11:25:00Z",
+            "duration_minutes": 115,
+            "aircraft": "Embraer 175"
+          },
+          {
+            "marketing_carrier_code": "LO",
+            "flight_number": "3919",
+            "operating_carrier_name": "LOT",
+            "departure_airport": "WAW",
+            "departure_time_local": "2026-12-18T15:15:00",
+            "departure_timezone": "Europe/Warsaw",
+            "departure_time_utc": "2026-12-18T14:15:00Z",
+            "arrival_airport": "KRK",
+            "arrival_time_local": "2026-12-18T16:15:00",
+            "arrival_timezone": "Europe/Warsaw",
+            "arrival_time_utc": "2026-12-18T15:15:00Z",
+            "duration_minutes": 60,
+            "aircraft": "Embraer 190"
+          },
+          {
+            "marketing_carrier_code": "LO",
+            "flight_number": "2151",
+            "operating_carrier_name": "LOT",
+            "departure_airport": "KRK",
+            "departure_time_local": "2026-12-18T17:15:00",
+            "departure_timezone": "Europe/Warsaw",
+            "departure_time_utc": "2026-12-18T16:15:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-18T19:40:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T18:40:00Z",
+            "duration_minutes": 145,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "906cedbd0ac34b02bb32757ed10a9094"
+    }
+  ],
+  "observed_at": "2026-11-20T16:03:17.695607Z"
+}

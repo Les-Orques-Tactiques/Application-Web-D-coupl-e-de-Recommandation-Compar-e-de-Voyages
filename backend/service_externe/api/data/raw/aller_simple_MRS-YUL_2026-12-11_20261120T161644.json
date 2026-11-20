@@ -1,0 +1,361 @@
+{
+  "origin": "MRS",
+  "destination": "YUL",
+  "departure_date": "2026-12-11",
+  "itineraries": [
+    {
+      "price": {
+        "amount": 543.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air Transat",
+        "duration_minutes": 515,
+        "segments": [
+          {
+            "marketing_carrier_code": "TS",
+            "flight_number": "435",
+            "operating_carrier_name": "Air Transat",
+            "departure_airport": "MRS",
+            "departure_time_local": "2026-12-11T10:45:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T09:45:00Z",
+            "arrival_airport": "YUL",
+            "arrival_time_local": "2026-12-11T13:20:00",
+            "arrival_timezone": "America/Toronto",
+            "arrival_time_utc": "2026-12-11T18:20:00Z",
+            "duration_minutes": 515,
+            "aircraft": "Airbus A321neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "86ca3b2253bc4010b92b6fe461c7b779"
+    },
+    {
+      "price": {
+        "amount": 877.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Tunisair",
+        "duration_minutes": 1600,
+        "segments": [
+          {
+            "marketing_carrier_code": "TU",
+            "flight_number": "903",
+            "operating_carrier_name": "Tunisair",
+            "departure_airport": "MRS",
+            "departure_time_local": "2026-12-11T15:35:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T14:35:00Z",
+            "arrival_airport": "TUN",
+            "arrival_time_local": "2026-12-11T17:10:00",
+            "arrival_timezone": "Africa/Tunis",
+            "arrival_time_utc": "2026-12-11T16:10:00Z",
+            "duration_minutes": 95,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "TU",
+            "flight_number": "202",
+            "operating_carrier_name": "Tunisair",
+            "departure_airport": "TUN",
+            "departure_time_local": "2026-12-12T09:20:00",
+            "departure_timezone": "Africa/Tunis",
+            "departure_time_utc": "2026-12-12T08:20:00Z",
+            "arrival_airport": "YUL",
+            "arrival_time_local": "2026-12-12T12:15:00",
+            "arrival_timezone": "America/Toronto",
+            "arrival_time_utc": "2026-12-12T17:15:00Z",
+            "duration_minutes": 535,
+            "aircraft": "Airbus A330"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "a1790e346f764bb194943992c816c5cc"
+    },
+    {
+      "price": {
+        "amount": 959.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "British Airways",
+        "duration_minutes": 850,
+        "segments": [
+          {
+            "marketing_carrier_code": "BA",
+            "flight_number": "365",
+            "operating_carrier_name": "British Airways",
+            "departure_airport": "MRS",
+            "departure_time_local": "2026-12-11T11:05:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T10:05:00Z",
+            "arrival_airport": "LHR",
+            "arrival_time_local": "2026-12-11T12:10:00",
+            "arrival_timezone": "Europe/London",
+            "arrival_time_utc": "2026-12-11T12:10:00Z",
+            "duration_minutes": 125,
+            "aircraft": "Airbus A319"
+          },
+          {
+            "marketing_carrier_code": "BA",
+            "flight_number": "95",
+            "operating_carrier_name": "British Airways",
+            "departure_airport": "LHR",
+            "departure_time_local": "2026-12-11T16:45:00",
+            "departure_timezone": "Europe/London",
+            "departure_time_utc": "2026-12-11T16:45:00Z",
+            "arrival_airport": "YUL",
+            "arrival_time_local": "2026-12-11T19:15:00",
+            "arrival_timezone": "America/Toronto",
+            "arrival_time_utc": "2026-12-12T00:15:00Z",
+            "duration_minutes": 450,
+            "aircraft": "Boeing 787"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "d18b89ae08c64dcbbab8c8b5c47d294b"
+    },
+    {
+      "price": {
+        "amount": 1412.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "KLM",
+        "duration_minutes": 655,
+        "segments": [
+          {
+            "marketing_carrier_code": "KL",
+            "flight_number": "1466",
+            "operating_carrier_name": "KLM",
+            "departure_airport": "MRS",
+            "departure_time_local": "2026-12-11T12:20:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T11:20:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2026-12-11T14:20:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2026-12-11T13:20:00Z",
+            "duration_minutes": 120,
+            "aircraft": "Boeing 737"
+          },
+          {
+            "marketing_carrier_code": "KL",
+            "flight_number": "671",
+            "operating_carrier_name": "KLM",
+            "departure_airport": "AMS",
+            "departure_time_local": "2026-12-11T15:20:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2026-12-11T14:20:00Z",
+            "arrival_airport": "YUL",
+            "arrival_time_local": "2026-12-11T17:15:00",
+            "arrival_timezone": "America/Toronto",
+            "arrival_time_utc": "2026-12-11T22:15:00Z",
+            "duration_minutes": 475,
+            "aircraft": "Airbus A330"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "42b3273b32f841c3ac0e79dc6b4adf84"
+    },
+    {
+      "price": {
+        "amount": 1418.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 645,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "7347",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "MRS",
+            "departure_time_local": "2026-12-11T07:30:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T06:30:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-11T09:00:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-11T08:00:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "342",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-11T10:30:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T09:30:00Z",
+            "arrival_airport": "YUL",
+            "arrival_time_local": "2026-12-11T12:15:00",
+            "arrival_timezone": "America/Toronto",
+            "arrival_time_utc": "2026-12-11T17:15:00Z",
+            "duration_minutes": 465,
+            "aircraft": "Boeing 787"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "bc478e9f88ff41b5adfb9565bd9c6250"
+    },
+    {
+      "price": {
+        "amount": 1652.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Brussels Airlines",
+        "duration_minutes": 655,
+        "segments": [
+          {
+            "marketing_carrier_code": "SN",
+            "flight_number": "3604",
+            "operating_carrier_name": "Brussels Airlines",
+            "departure_airport": "MRS",
+            "departure_time_local": "2026-12-11T06:45:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T05:45:00Z",
+            "arrival_airport": "BRU",
+            "arrival_time_local": "2026-12-11T08:30:00",
+            "arrival_timezone": "Europe/Brussels",
+            "arrival_time_utc": "2026-12-11T07:30:00Z",
+            "duration_minutes": 105,
+            "aircraft": "Airbus A319"
+          },
+          {
+            "marketing_carrier_code": "AC",
+            "flight_number": "833",
+            "operating_carrier_name": "Air Canada",
+            "departure_airport": "BRU",
+            "departure_time_local": "2026-12-11T10:00:00",
+            "departure_timezone": "Europe/Brussels",
+            "departure_time_utc": "2026-12-11T09:00:00Z",
+            "arrival_airport": "YUL",
+            "arrival_time_local": "2026-12-11T11:40:00",
+            "arrival_timezone": "America/Toronto",
+            "arrival_time_utc": "2026-12-11T16:40:00Z",
+            "duration_minutes": 460,
+            "aircraft": "Boeing 777"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "60794b1fe0c640ab9b159a15d92d74a2"
+    },
+    {
+      "price": {
+        "amount": 1658.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Lufthansa City Airlines",
+        "duration_minutes": 665,
+        "segments": [
+          {
+            "marketing_carrier_code": "VL",
+            "flight_number": "1091",
+            "operating_carrier_name": "Lufthansa City Airlines",
+            "departure_airport": "MRS",
+            "departure_time_local": "2026-12-11T06:55:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T05:55:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T08:35:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T07:35:00Z",
+            "duration_minutes": 100,
+            "aircraft": "Airbus A320neo"
+          },
+          {
+            "marketing_carrier_code": "AC",
+            "flight_number": "845",
+            "operating_carrier_name": "Air Canada",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-11T09:45:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T08:45:00Z",
+            "arrival_airport": "YUL",
+            "arrival_time_local": "2026-12-11T12:00:00",
+            "arrival_timezone": "America/Toronto",
+            "arrival_time_utc": "2026-12-11T17:00:00Z",
+            "duration_minutes": 495,
+            "aircraft": "Airbus A330"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "6788674c5edd47cb928c5450000da254"
+    },
+    {
+      "price": {
+        "amount": 1816.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Tap Air Portugal",
+        "duration_minutes": 895,
+        "segments": [
+          {
+            "marketing_carrier_code": "TP",
+            "flight_number": "401",
+            "operating_carrier_name": "Tap Air Portugal",
+            "departure_airport": "MRS",
+            "departure_time_local": "2026-12-11T11:00:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T10:00:00Z",
+            "arrival_airport": "LIS",
+            "arrival_time_local": "2026-12-11T12:30:00",
+            "arrival_timezone": "Europe/Lisbon",
+            "arrival_time_utc": "2026-12-11T12:30:00Z",
+            "duration_minutes": 150,
+            "aircraft": "Embraer 190"
+          },
+          {
+            "marketing_carrier_code": "TP",
+            "flight_number": "253",
+            "operating_carrier_name": "Tap Air Portugal",
+            "departure_airport": "LIS",
+            "departure_time_local": "2026-12-11T17:00:00",
+            "departure_timezone": "Europe/Lisbon",
+            "departure_time_utc": "2026-12-11T17:00:00Z",
+            "arrival_airport": "YUL",
+            "arrival_time_local": "2026-12-11T19:55:00",
+            "arrival_timezone": "America/Toronto",
+            "arrival_time_utc": "2026-12-12T00:55:00Z",
+            "duration_minutes": 475,
+            "aircraft": "Airbus A321neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "04cee291d2394ebabae8fe84d473398d"
+    }
+  ],
+  "observed_at": "2026-11-20T16:16:44.934107Z"
+}

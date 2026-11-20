@@ -1,0 +1,1068 @@
+{
+  "origin": "NCE",
+  "destination": "HND",
+  "departure_date": "2026-12-11",
+  "return_date": "2026-12-18",
+  "itineraries": [
+    {
+      "price": {
+        "amount": 1095.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "ITA",
+        "duration_minutes": 1920,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "355",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "NCE",
+            "departure_time_local": "2026-12-11T19:20:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T18:20:00Z",
+            "arrival_airport": "FCO",
+            "arrival_time_local": "2026-12-11T20:35:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T19:35:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Airbus A320neo"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "792",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "FCO",
+            "departure_time_local": "2026-12-12T15:05:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-12T14:05:00Z",
+            "arrival_airport": "HND",
+            "arrival_time_local": "2026-12-13T11:20:00",
+            "arrival_timezone": "Asia/Tokyo",
+            "arrival_time_utc": "2026-12-13T02:20:00Z",
+            "duration_minutes": 735,
+            "aircraft": "Airbus A350"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "ITA",
+        "duration_minutes": 1750,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "793",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "HND",
+            "departure_time_local": "2026-12-18T13:20:00",
+            "departure_timezone": "Asia/Tokyo",
+            "departure_time_utc": "2026-12-18T04:20:00Z",
+            "arrival_airport": "FCO",
+            "arrival_time_local": "2026-12-18T20:25:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-18T19:25:00Z",
+            "duration_minutes": 905,
+            "aircraft": "Airbus A350"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "348",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "FCO",
+            "departure_time_local": "2026-12-19T09:15:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-19T08:15:00Z",
+            "arrival_airport": "NCE",
+            "arrival_time_local": "2026-12-19T10:30:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T09:30:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Airbus A220-300 Passenger"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "b33b80b6360c4c9686c018d7ab2a9a82"
+    },
+    {
+      "price": {
+        "amount": 1219.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Lufthansa",
+        "duration_minutes": 995,
+        "segments": [
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "1059",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "NCE",
+            "departure_time_local": "2026-12-11T10:10:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T09:10:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T11:45:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T10:45:00Z",
+            "duration_minutes": 95,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "716",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-11T14:00:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T13:00:00Z",
+            "arrival_airport": "HND",
+            "arrival_time_local": "2026-12-12T10:45:00",
+            "arrival_timezone": "Asia/Tokyo",
+            "arrival_time_utc": "2026-12-12T01:45:00Z",
+            "duration_minutes": 765,
+            "aircraft": "Boeing 747"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "ANA",
+        "duration_minutes": 1425,
+        "segments": [
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "93",
+            "operating_carrier_name": "ANA",
+            "departure_airport": "HND",
+            "departure_time_local": "2026-12-18T07:35:00",
+            "departure_timezone": "Asia/Tokyo",
+            "departure_time_utc": "2026-12-17T22:35:00Z",
+            "arrival_airport": "KIX",
+            "arrival_time_local": "2026-12-18T09:00:00",
+            "arrival_timezone": "Asia/Tokyo",
+            "arrival_time_utc": "2026-12-18T00:00:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Boeing 737"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "743",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "KIX",
+            "departure_time_local": "2026-12-18T09:55:00",
+            "departure_timezone": "Asia/Tokyo",
+            "departure_time_utc": "2026-12-18T00:55:00Z",
+            "arrival_airport": "MUC",
+            "arrival_time_local": "2026-12-18T16:20:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-18T15:20:00Z",
+            "duration_minutes": 865,
+            "aircraft": "Airbus A350"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "2274",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "MUC",
+            "departure_time_local": "2026-12-18T21:50:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T20:50:00Z",
+            "arrival_airport": "NCE",
+            "arrival_time_local": "2026-12-18T23:20:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T22:20:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A319"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "b980a711023f4944b1f4c36b80516e6a"
+    },
+    {
+      "price": {
+        "amount": 1219.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Lufthansa",
+        "duration_minutes": 1185,
+        "segments": [
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "1069",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "NCE",
+            "departure_time_local": "2026-12-11T07:00:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T06:00:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T08:35:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T07:35:00Z",
+            "duration_minutes": 95,
+            "aircraft": "Airbus A321"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "716",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-11T14:00:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T13:00:00Z",
+            "arrival_airport": "HND",
+            "arrival_time_local": "2026-12-12T10:45:00",
+            "arrival_timezone": "Asia/Tokyo",
+            "arrival_time_utc": "2026-12-12T01:45:00Z",
+            "duration_minutes": 765,
+            "aircraft": "Boeing 747"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "ANA",
+        "duration_minutes": 1425,
+        "segments": [
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "93",
+            "operating_carrier_name": "ANA",
+            "departure_airport": "HND",
+            "departure_time_local": "2026-12-18T07:35:00",
+            "departure_timezone": "Asia/Tokyo",
+            "departure_time_utc": "2026-12-17T22:35:00Z",
+            "arrival_airport": "KIX",
+            "arrival_time_local": "2026-12-18T09:00:00",
+            "arrival_timezone": "Asia/Tokyo",
+            "arrival_time_utc": "2026-12-18T00:00:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Boeing 737"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "743",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "KIX",
+            "departure_time_local": "2026-12-18T09:55:00",
+            "departure_timezone": "Asia/Tokyo",
+            "departure_time_utc": "2026-12-18T00:55:00Z",
+            "arrival_airport": "MUC",
+            "arrival_time_local": "2026-12-18T16:20:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-18T15:20:00Z",
+            "duration_minutes": 865,
+            "aircraft": "Airbus A350"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "2274",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "MUC",
+            "departure_time_local": "2026-12-18T21:50:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T20:50:00Z",
+            "arrival_airport": "NCE",
+            "arrival_time_local": "2026-12-18T23:20:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T22:20:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A319"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "710e3976b51746c8b00f31ad4909209c"
+    },
+    {
+      "price": {
+        "amount": 1232.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Lufthansa",
+        "duration_minutes": 1720,
+        "segments": [
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "2273",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "NCE",
+            "departure_time_local": "2026-12-11T18:15:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T17:15:00Z",
+            "arrival_airport": "MUC",
+            "arrival_time_local": "2026-12-11T19:35:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T18:35:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "218",
+            "operating_carrier_name": "ANA",
+            "departure_airport": "MUC",
+            "departure_time_local": "2026-12-12T10:25:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-12T09:25:00Z",
+            "arrival_airport": "HND",
+            "arrival_time_local": "2026-12-13T06:55:00",
+            "arrival_timezone": "Asia/Tokyo",
+            "arrival_time_utc": "2026-12-12T21:55:00Z",
+            "duration_minutes": 750,
+            "aircraft": "Boeing 787"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Lufthansa",
+        "duration_minutes": 1235,
+        "segments": [
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "715",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "HND",
+            "departure_time_local": "2026-12-18T10:45:00",
+            "departure_timezone": "Asia/Tokyo",
+            "departure_time_utc": "2026-12-18T01:45:00Z",
+            "arrival_airport": "MUC",
+            "arrival_time_local": "2026-12-18T17:10:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-18T16:10:00Z",
+            "duration_minutes": 865,
+            "aircraft": "Airbus A350"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "2274",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "MUC",
+            "departure_time_local": "2026-12-18T21:50:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T20:50:00Z",
+            "arrival_airport": "NCE",
+            "arrival_time_local": "2026-12-18T23:20:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T22:20:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A319"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "edeb8bb7070c43fdae37df42f9332559"
+    },
+    {
+      "price": {
+        "amount": 1240.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Lufthansa",
+        "duration_minutes": 995,
+        "segments": [
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "1059",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "NCE",
+            "departure_time_local": "2026-12-11T10:10:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T09:10:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T11:45:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T10:45:00Z",
+            "duration_minutes": 95,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "716",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-11T14:00:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T13:00:00Z",
+            "arrival_airport": "HND",
+            "arrival_time_local": "2026-12-12T10:45:00",
+            "arrival_timezone": "Asia/Tokyo",
+            "arrival_time_utc": "2026-12-12T01:45:00Z",
+            "duration_minutes": 765,
+            "aircraft": "Boeing 747"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Lufthansa",
+        "duration_minutes": 1235,
+        "segments": [
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "715",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "HND",
+            "departure_time_local": "2026-12-18T10:45:00",
+            "departure_timezone": "Asia/Tokyo",
+            "departure_time_utc": "2026-12-18T01:45:00Z",
+            "arrival_airport": "MUC",
+            "arrival_time_local": "2026-12-18T17:10:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-18T16:10:00Z",
+            "duration_minutes": 865,
+            "aircraft": "Airbus A350"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "2274",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "MUC",
+            "departure_time_local": "2026-12-18T21:50:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T20:50:00Z",
+            "arrival_airport": "NCE",
+            "arrival_time_local": "2026-12-18T23:20:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T22:20:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A319"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "a8d5476a0dd6418f97b1fdf64a5c9b92"
+    },
+    {
+      "price": {
+        "amount": 1240.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Lufthansa",
+        "duration_minutes": 995,
+        "segments": [
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "1059",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "NCE",
+            "departure_time_local": "2026-12-11T10:10:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T09:10:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T11:45:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T10:45:00Z",
+            "duration_minutes": 95,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "716",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-11T14:00:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T13:00:00Z",
+            "arrival_airport": "HND",
+            "arrival_time_local": "2026-12-12T10:45:00",
+            "arrival_timezone": "Asia/Tokyo",
+            "arrival_time_utc": "2026-12-12T01:45:00Z",
+            "duration_minutes": 765,
+            "aircraft": "Boeing 747"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "ANA",
+        "duration_minutes": 1275,
+        "segments": [
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "217",
+            "operating_carrier_name": "ANA",
+            "departure_airport": "HND",
+            "departure_time_local": "2026-12-18T23:30:00",
+            "departure_timezone": "Asia/Tokyo",
+            "departure_time_utc": "2026-12-18T14:30:00Z",
+            "arrival_airport": "MUC",
+            "arrival_time_local": "2026-12-19T06:20:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-19T05:20:00Z",
+            "duration_minutes": 890,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "2270",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "MUC",
+            "departure_time_local": "2026-12-19T11:15:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-19T10:15:00Z",
+            "arrival_airport": "NCE",
+            "arrival_time_local": "2026-12-19T12:45:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T11:45:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "a3f195c749024590af3f9441bdfa8ce0"
+    },
+    {
+      "price": {
+        "amount": 1240.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Lufthansa",
+        "duration_minutes": 1185,
+        "segments": [
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "1069",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "NCE",
+            "departure_time_local": "2026-12-11T07:00:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T06:00:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T08:35:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T07:35:00Z",
+            "duration_minutes": 95,
+            "aircraft": "Airbus A321"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "716",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-11T14:00:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T13:00:00Z",
+            "arrival_airport": "HND",
+            "arrival_time_local": "2026-12-12T10:45:00",
+            "arrival_timezone": "Asia/Tokyo",
+            "arrival_time_utc": "2026-12-12T01:45:00Z",
+            "duration_minutes": 765,
+            "aircraft": "Boeing 747"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Lufthansa",
+        "duration_minutes": 1235,
+        "segments": [
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "715",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "HND",
+            "departure_time_local": "2026-12-18T10:45:00",
+            "departure_timezone": "Asia/Tokyo",
+            "departure_time_utc": "2026-12-18T01:45:00Z",
+            "arrival_airport": "MUC",
+            "arrival_time_local": "2026-12-18T17:10:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-18T16:10:00Z",
+            "duration_minutes": 865,
+            "aircraft": "Airbus A350"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "2274",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "MUC",
+            "departure_time_local": "2026-12-18T21:50:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T20:50:00Z",
+            "arrival_airport": "NCE",
+            "arrival_time_local": "2026-12-18T23:20:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T22:20:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A319"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "9e8b8001e24e463b8a8c05ad4faa1871"
+    },
+    {
+      "price": {
+        "amount": 1240.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Lufthansa",
+        "duration_minutes": 1185,
+        "segments": [
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "1069",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "NCE",
+            "departure_time_local": "2026-12-11T07:00:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T06:00:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T08:35:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T07:35:00Z",
+            "duration_minutes": 95,
+            "aircraft": "Airbus A321"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "716",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-11T14:00:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T13:00:00Z",
+            "arrival_airport": "HND",
+            "arrival_time_local": "2026-12-12T10:45:00",
+            "arrival_timezone": "Asia/Tokyo",
+            "arrival_time_utc": "2026-12-12T01:45:00Z",
+            "duration_minutes": 765,
+            "aircraft": "Boeing 747"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "ANA",
+        "duration_minutes": 1275,
+        "segments": [
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "217",
+            "operating_carrier_name": "ANA",
+            "departure_airport": "HND",
+            "departure_time_local": "2026-12-18T23:30:00",
+            "departure_timezone": "Asia/Tokyo",
+            "departure_time_utc": "2026-12-18T14:30:00Z",
+            "arrival_airport": "MUC",
+            "arrival_time_local": "2026-12-19T06:20:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-19T05:20:00Z",
+            "duration_minutes": 890,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "2270",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "MUC",
+            "departure_time_local": "2026-12-19T11:15:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-19T10:15:00Z",
+            "arrival_airport": "NCE",
+            "arrival_time_local": "2026-12-19T12:45:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T11:45:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "2fd4f622d68048e29487fb10861aec55"
+    },
+    {
+      "price": {
+        "amount": 1257.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Lufthansa",
+        "duration_minutes": 995,
+        "segments": [
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "1059",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "NCE",
+            "departure_time_local": "2026-12-11T10:10:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T09:10:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T11:45:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T10:45:00Z",
+            "duration_minutes": 95,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "716",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-11T14:00:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T13:00:00Z",
+            "arrival_airport": "HND",
+            "arrival_time_local": "2026-12-12T10:45:00",
+            "arrival_timezone": "Asia/Tokyo",
+            "arrival_time_utc": "2026-12-12T01:45:00Z",
+            "duration_minutes": 765,
+            "aircraft": "Boeing 747"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Lufthansa",
+        "duration_minutes": 1125,
+        "segments": [
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "717",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "HND",
+            "departure_time_local": "2026-12-18T12:35:00",
+            "departure_timezone": "Asia/Tokyo",
+            "departure_time_utc": "2026-12-18T03:35:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-18T19:00:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-18T18:00:00Z",
+            "duration_minutes": 865,
+            "aircraft": "Boeing 747"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "124",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T20:15:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T19:15:00Z",
+            "arrival_airport": "MUC",
+            "arrival_time_local": "2026-12-18T21:10:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-18T20:10:00Z",
+            "duration_minutes": 55,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "2274",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "MUC",
+            "departure_time_local": "2026-12-18T21:50:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T20:50:00Z",
+            "arrival_airport": "NCE",
+            "arrival_time_local": "2026-12-18T23:20:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T22:20:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A319"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "08dba435ce3c45a39e7ec7eaaa4d2b0a"
+    },
+    {
+      "price": {
+        "amount": 1265.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Lufthansa",
+        "duration_minutes": 1720,
+        "segments": [
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "2273",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "NCE",
+            "departure_time_local": "2026-12-11T18:15:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T17:15:00Z",
+            "arrival_airport": "MUC",
+            "arrival_time_local": "2026-12-11T19:35:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T18:35:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "218",
+            "operating_carrier_name": "ANA",
+            "departure_airport": "MUC",
+            "departure_time_local": "2026-12-12T10:25:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-12T09:25:00Z",
+            "arrival_airport": "HND",
+            "arrival_time_local": "2026-12-13T06:55:00",
+            "arrival_timezone": "Asia/Tokyo",
+            "arrival_time_utc": "2026-12-12T21:55:00Z",
+            "duration_minutes": 750,
+            "aircraft": "Boeing 787"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "ANA",
+        "duration_minutes": 1275,
+        "segments": [
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "217",
+            "operating_carrier_name": "ANA",
+            "departure_airport": "HND",
+            "departure_time_local": "2026-12-18T23:30:00",
+            "departure_timezone": "Asia/Tokyo",
+            "departure_time_utc": "2026-12-18T14:30:00Z",
+            "arrival_airport": "MUC",
+            "arrival_time_local": "2026-12-19T06:20:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-19T05:20:00Z",
+            "duration_minutes": 890,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "2270",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "MUC",
+            "departure_time_local": "2026-12-19T11:15:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-19T10:15:00Z",
+            "arrival_airport": "NCE",
+            "arrival_time_local": "2026-12-19T12:45:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T11:45:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "5626d37558c74c0495203b49dd0b62a4"
+    },
+    {
+      "price": {
+        "amount": 1290.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Lufthansa",
+        "duration_minutes": 1185,
+        "segments": [
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "1069",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "NCE",
+            "departure_time_local": "2026-12-11T07:00:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T06:00:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T08:35:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T07:35:00Z",
+            "duration_minutes": 95,
+            "aircraft": "Airbus A321"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "716",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-11T14:00:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T13:00:00Z",
+            "arrival_airport": "HND",
+            "arrival_time_local": "2026-12-12T10:45:00",
+            "arrival_timezone": "Asia/Tokyo",
+            "arrival_time_utc": "2026-12-12T01:45:00Z",
+            "duration_minutes": 765,
+            "aircraft": "Boeing 747"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Lufthansa",
+        "duration_minutes": 1125,
+        "segments": [
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "717",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "HND",
+            "departure_time_local": "2026-12-18T12:35:00",
+            "departure_timezone": "Asia/Tokyo",
+            "departure_time_utc": "2026-12-18T03:35:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-18T19:00:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-18T18:00:00Z",
+            "duration_minutes": 865,
+            "aircraft": "Boeing 747"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "124",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T20:15:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T19:15:00Z",
+            "arrival_airport": "MUC",
+            "arrival_time_local": "2026-12-18T21:10:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-18T20:10:00Z",
+            "duration_minutes": 55,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "2274",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "MUC",
+            "departure_time_local": "2026-12-18T21:50:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T20:50:00Z",
+            "arrival_airport": "NCE",
+            "arrival_time_local": "2026-12-18T23:20:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T22:20:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A319"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "cd0be84ccc7f41b8ae6addeed6349bc1"
+    },
+    {
+      "price": {
+        "amount": 1311.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Lufthansa",
+        "duration_minutes": 1720,
+        "segments": [
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "2273",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "NCE",
+            "departure_time_local": "2026-12-11T18:15:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T17:15:00Z",
+            "arrival_airport": "MUC",
+            "arrival_time_local": "2026-12-11T19:35:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T18:35:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "NH",
+            "flight_number": "218",
+            "operating_carrier_name": "ANA",
+            "departure_airport": "MUC",
+            "departure_time_local": "2026-12-12T10:25:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-12T09:25:00Z",
+            "arrival_airport": "HND",
+            "arrival_time_local": "2026-12-13T06:55:00",
+            "arrival_timezone": "Asia/Tokyo",
+            "arrival_time_utc": "2026-12-12T21:55:00Z",
+            "duration_minutes": 750,
+            "aircraft": "Boeing 787"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Lufthansa",
+        "duration_minutes": 1125,
+        "segments": [
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "717",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "HND",
+            "departure_time_local": "2026-12-18T12:35:00",
+            "departure_timezone": "Asia/Tokyo",
+            "departure_time_utc": "2026-12-18T03:35:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-18T19:00:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-18T18:00:00Z",
+            "duration_minutes": 865,
+            "aircraft": "Boeing 747"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "124",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T20:15:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T19:15:00Z",
+            "arrival_airport": "MUC",
+            "arrival_time_local": "2026-12-18T21:10:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-18T20:10:00Z",
+            "duration_minutes": 55,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "2274",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "MUC",
+            "departure_time_local": "2026-12-18T21:50:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T20:50:00Z",
+            "arrival_airport": "NCE",
+            "arrival_time_local": "2026-12-18T23:20:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T22:20:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A319"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "660538285b4c473c9deff277cc2a1f54"
+    }
+  ],
+  "observed_at": "2026-11-20T16:11:13.808245Z"
+}

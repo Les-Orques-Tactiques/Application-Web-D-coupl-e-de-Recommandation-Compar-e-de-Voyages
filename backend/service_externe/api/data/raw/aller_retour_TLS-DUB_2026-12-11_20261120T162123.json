@@ -1,0 +1,1239 @@
+{
+  "origin": "TLS",
+  "destination": "DUB",
+  "departure_date": "2026-12-11",
+  "return_date": "2026-12-18",
+  "itineraries": [
+    {
+      "price": {
+        "amount": 378.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "British Airways",
+        "duration_minutes": 775,
+        "segments": [
+          {
+            "marketing_carrier_code": "BA",
+            "flight_number": "375",
+            "operating_carrier_name": "British Airways",
+            "departure_airport": "TLS",
+            "departure_time_local": "2026-12-11T19:55:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T18:55:00Z",
+            "arrival_airport": "LHR",
+            "arrival_time_local": "2026-12-11T20:45:00",
+            "arrival_timezone": "Europe/London",
+            "arrival_time_utc": "2026-12-11T20:45:00Z",
+            "duration_minutes": 110,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "BA",
+            "flight_number": "824",
+            "operating_carrier_name": "British Airways",
+            "departure_airport": "LHR",
+            "departure_time_local": "2026-12-12T06:30:00",
+            "departure_timezone": "Europe/London",
+            "departure_time_utc": "2026-12-12T06:30:00Z",
+            "arrival_airport": "DUB",
+            "arrival_time_local": "2026-12-12T07:50:00",
+            "arrival_timezone": "Europe/Dublin",
+            "arrival_time_utc": "2026-12-12T07:50:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "British Airways",
+        "duration_minutes": 555,
+        "segments": [
+          {
+            "marketing_carrier_code": "BA",
+            "flight_number": "825",
+            "operating_carrier_name": "British Airways",
+            "departure_airport": "DUB",
+            "departure_time_local": "2026-12-18T08:50:00",
+            "departure_timezone": "Europe/Dublin",
+            "departure_time_utc": "2026-12-18T08:50:00Z",
+            "arrival_airport": "LHR",
+            "arrival_time_local": "2026-12-18T10:20:00",
+            "arrival_timezone": "Europe/London",
+            "arrival_time_utc": "2026-12-18T10:20:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "BA",
+            "flight_number": "374",
+            "operating_carrier_name": "British Airways",
+            "departure_airport": "LHR",
+            "departure_time_local": "2026-12-18T16:10:00",
+            "departure_timezone": "Europe/London",
+            "departure_time_utc": "2026-12-18T16:10:00Z",
+            "arrival_airport": "TLS",
+            "arrival_time_local": "2026-12-18T19:05:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T18:05:00Z",
+            "duration_minutes": 115,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "9e4d4a81b5764e4f8c7b891504738233"
+    },
+    {
+      "price": {
+        "amount": 393.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 820,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "7417",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "TLS",
+            "departure_time_local": "2026-12-11T20:45:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T19:45:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-11T22:10:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-11T21:10:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A321"
+          },
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "1716",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-12T08:35:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-12T07:35:00Z",
+            "arrival_airport": "DUB",
+            "arrival_time_local": "2026-12-12T09:25:00",
+            "arrival_timezone": "Europe/Dublin",
+            "arrival_time_utc": "2026-12-12T09:25:00Z",
+            "duration_minutes": 110,
+            "aircraft": "Airbus A318"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Air France",
+        "duration_minutes": 980,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "1117",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "DUB",
+            "departure_time_local": "2026-12-18T15:25:00",
+            "departure_timezone": "Europe/Dublin",
+            "departure_time_utc": "2026-12-18T15:25:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-18T18:10:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T17:10:00Z",
+            "duration_minutes": 105,
+            "aircraft": "Airbus A220-300 Passenger"
+          },
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "7400",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-19T07:20:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-19T06:20:00Z",
+            "arrival_airport": "TLS",
+            "arrival_time_local": "2026-12-19T08:45:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T07:45:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "7c8204bddc99421cbed9b5cb18fab863"
+    },
+    {
+      "price": {
+        "amount": 424.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "British Airways",
+        "duration_minutes": 325,
+        "segments": [
+          {
+            "marketing_carrier_code": "BA",
+            "flight_number": "371",
+            "operating_carrier_name": "British Airways",
+            "departure_airport": "TLS",
+            "departure_time_local": "2026-12-11T09:35:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T08:35:00Z",
+            "arrival_airport": "LHR",
+            "arrival_time_local": "2026-12-11T10:40:00",
+            "arrival_timezone": "Europe/London",
+            "arrival_time_utc": "2026-12-11T10:40:00Z",
+            "duration_minutes": 125,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "BA",
+            "flight_number": "826",
+            "operating_carrier_name": "British Airways",
+            "departure_airport": "LHR",
+            "departure_time_local": "2026-12-11T12:30:00",
+            "departure_timezone": "Europe/London",
+            "departure_time_utc": "2026-12-11T12:30:00Z",
+            "arrival_airport": "DUB",
+            "arrival_time_local": "2026-12-11T14:00:00",
+            "arrival_timezone": "Europe/Dublin",
+            "arrival_time_utc": "2026-12-11T14:00:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "British Airways",
+        "duration_minutes": 555,
+        "segments": [
+          {
+            "marketing_carrier_code": "BA",
+            "flight_number": "825",
+            "operating_carrier_name": "British Airways",
+            "departure_airport": "DUB",
+            "departure_time_local": "2026-12-18T08:50:00",
+            "departure_timezone": "Europe/Dublin",
+            "departure_time_utc": "2026-12-18T08:50:00Z",
+            "arrival_airport": "LHR",
+            "arrival_time_local": "2026-12-18T10:20:00",
+            "arrival_timezone": "Europe/London",
+            "arrival_time_utc": "2026-12-18T10:20:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "BA",
+            "flight_number": "374",
+            "operating_carrier_name": "British Airways",
+            "departure_airport": "LHR",
+            "departure_time_local": "2026-12-18T16:10:00",
+            "departure_timezone": "Europe/London",
+            "departure_time_utc": "2026-12-18T16:10:00Z",
+            "arrival_airport": "TLS",
+            "arrival_time_local": "2026-12-18T19:05:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T18:05:00Z",
+            "duration_minutes": 115,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "b3120b788c5d473abd32103246eed8c7"
+    },
+    {
+      "price": {
+        "amount": 470.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "British Airways",
+        "duration_minutes": 775,
+        "segments": [
+          {
+            "marketing_carrier_code": "BA",
+            "flight_number": "375",
+            "operating_carrier_name": "British Airways",
+            "departure_airport": "TLS",
+            "departure_time_local": "2026-12-11T19:55:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T18:55:00Z",
+            "arrival_airport": "LHR",
+            "arrival_time_local": "2026-12-11T20:45:00",
+            "arrival_timezone": "Europe/London",
+            "arrival_time_utc": "2026-12-11T20:45:00Z",
+            "duration_minutes": 110,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "BA",
+            "flight_number": "824",
+            "operating_carrier_name": "British Airways",
+            "departure_airport": "LHR",
+            "departure_time_local": "2026-12-12T06:30:00",
+            "departure_timezone": "Europe/London",
+            "departure_time_utc": "2026-12-12T06:30:00Z",
+            "arrival_airport": "DUB",
+            "arrival_time_local": "2026-12-12T07:50:00",
+            "arrival_timezone": "Europe/Dublin",
+            "arrival_time_utc": "2026-12-12T07:50:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "British Airways",
+        "duration_minutes": 365,
+        "segments": [
+          {
+            "marketing_carrier_code": "BA",
+            "flight_number": "825",
+            "operating_carrier_name": "British Airways",
+            "departure_airport": "DUB",
+            "departure_time_local": "2026-12-18T08:50:00",
+            "departure_timezone": "Europe/Dublin",
+            "departure_time_utc": "2026-12-18T08:50:00Z",
+            "arrival_airport": "LHR",
+            "arrival_time_local": "2026-12-18T10:20:00",
+            "arrival_timezone": "Europe/London",
+            "arrival_time_utc": "2026-12-18T10:20:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "BA",
+            "flight_number": "372",
+            "operating_carrier_name": "British Airways",
+            "departure_airport": "LHR",
+            "departure_time_local": "2026-12-18T13:05:00",
+            "departure_timezone": "Europe/London",
+            "departure_time_utc": "2026-12-18T13:05:00Z",
+            "arrival_airport": "TLS",
+            "arrival_time_local": "2026-12-18T15:55:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T14:55:00Z",
+            "duration_minutes": 110,
+            "aircraft": "Airbus A319"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "2bd4d10646e641b789c1d67a744135b3"
+    },
+    {
+      "price": {
+        "amount": 470.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "British Airways",
+        "duration_minutes": 775,
+        "segments": [
+          {
+            "marketing_carrier_code": "BA",
+            "flight_number": "375",
+            "operating_carrier_name": "British Airways",
+            "departure_airport": "TLS",
+            "departure_time_local": "2026-12-11T19:55:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T18:55:00Z",
+            "arrival_airport": "LHR",
+            "arrival_time_local": "2026-12-11T20:45:00",
+            "arrival_timezone": "Europe/London",
+            "arrival_time_utc": "2026-12-11T20:45:00Z",
+            "duration_minutes": 110,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "BA",
+            "flight_number": "824",
+            "operating_carrier_name": "British Airways",
+            "departure_airport": "LHR",
+            "departure_time_local": "2026-12-12T06:30:00",
+            "departure_timezone": "Europe/London",
+            "departure_time_utc": "2026-12-12T06:30:00Z",
+            "arrival_airport": "DUB",
+            "arrival_time_local": "2026-12-12T07:50:00",
+            "arrival_timezone": "Europe/Dublin",
+            "arrival_time_utc": "2026-12-12T07:50:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "British Airways",
+        "duration_minutes": 435,
+        "segments": [
+          {
+            "marketing_carrier_code": "BA",
+            "flight_number": "829",
+            "operating_carrier_name": "British Airways",
+            "departure_airport": "DUB",
+            "departure_time_local": "2026-12-18T10:50:00",
+            "departure_timezone": "Europe/Dublin",
+            "departure_time_utc": "2026-12-18T10:50:00Z",
+            "arrival_airport": "LHR",
+            "arrival_time_local": "2026-12-18T12:20:00",
+            "arrival_timezone": "Europe/London",
+            "arrival_time_utc": "2026-12-18T12:20:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320neo"
+          },
+          {
+            "marketing_carrier_code": "BA",
+            "flight_number": "374",
+            "operating_carrier_name": "British Airways",
+            "departure_airport": "LHR",
+            "departure_time_local": "2026-12-18T16:10:00",
+            "departure_timezone": "Europe/London",
+            "departure_time_utc": "2026-12-18T16:10:00Z",
+            "arrival_airport": "TLS",
+            "arrival_time_local": "2026-12-18T19:05:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T18:05:00Z",
+            "duration_minutes": 115,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "18fd8d2a630d4f30a8c487fa42afd762"
+    },
+    {
+      "price": {
+        "amount": 476.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 820,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "7417",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "TLS",
+            "departure_time_local": "2026-12-11T20:45:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T19:45:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-11T22:10:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-11T21:10:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A321"
+          },
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "1716",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-12T08:35:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-12T07:35:00Z",
+            "arrival_airport": "DUB",
+            "arrival_time_local": "2026-12-12T09:25:00",
+            "arrival_timezone": "Europe/Dublin",
+            "arrival_time_utc": "2026-12-12T09:25:00Z",
+            "duration_minutes": 110,
+            "aircraft": "Airbus A318"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Air France",
+        "duration_minutes": 355,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "1717",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "DUB",
+            "departure_time_local": "2026-12-18T09:55:00",
+            "departure_timezone": "Europe/Dublin",
+            "departure_time_utc": "2026-12-18T09:55:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-18T12:45:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T11:45:00Z",
+            "duration_minutes": 110,
+            "aircraft": "Airbus A220-300 Passenger"
+          },
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "7412",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-18T15:20:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-18T14:20:00Z",
+            "arrival_airport": "TLS",
+            "arrival_time_local": "2026-12-18T16:50:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T15:50:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "923246a2f5a049c0970f05cd22d659ab"
+    },
+    {
+      "price": {
+        "amount": 476.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 820,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "7417",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "TLS",
+            "departure_time_local": "2026-12-11T20:45:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T19:45:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-11T22:10:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-11T21:10:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A321"
+          },
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "1716",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-12T08:35:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-12T07:35:00Z",
+            "arrival_airport": "DUB",
+            "arrival_time_local": "2026-12-12T09:25:00",
+            "arrival_timezone": "Europe/Dublin",
+            "arrival_time_utc": "2026-12-12T09:25:00Z",
+            "duration_minutes": 110,
+            "aircraft": "Airbus A318"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Air France",
+        "duration_minutes": 385,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "1117",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "DUB",
+            "departure_time_local": "2026-12-18T15:25:00",
+            "departure_timezone": "Europe/Dublin",
+            "departure_time_utc": "2026-12-18T15:25:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-18T18:10:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T17:10:00Z",
+            "duration_minutes": 105,
+            "aircraft": "Airbus A220-300 Passenger"
+          },
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "7420",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-18T21:30:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-18T20:30:00Z",
+            "arrival_airport": "TLS",
+            "arrival_time_local": "2026-12-18T22:50:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T21:50:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Airbus A321"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "8ee25060cb1740719ab608e1df1e8914"
+    },
+    {
+      "price": {
+        "amount": 478.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "British Airways",
+        "duration_minutes": 775,
+        "segments": [
+          {
+            "marketing_carrier_code": "BA",
+            "flight_number": "375",
+            "operating_carrier_name": "British Airways",
+            "departure_airport": "TLS",
+            "departure_time_local": "2026-12-11T19:55:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T18:55:00Z",
+            "arrival_airport": "LHR",
+            "arrival_time_local": "2026-12-11T20:45:00",
+            "arrival_timezone": "Europe/London",
+            "arrival_time_utc": "2026-12-11T20:45:00Z",
+            "duration_minutes": 110,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "BA",
+            "flight_number": "824",
+            "operating_carrier_name": "British Airways",
+            "departure_airport": "LHR",
+            "departure_time_local": "2026-12-12T06:30:00",
+            "departure_timezone": "Europe/London",
+            "departure_time_utc": "2026-12-12T06:30:00Z",
+            "arrival_airport": "DUB",
+            "arrival_time_local": "2026-12-12T07:50:00",
+            "arrival_timezone": "Europe/Dublin",
+            "arrival_time_utc": "2026-12-12T07:50:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Aer Lingus",
+        "duration_minutes": 305,
+        "segments": [
+          {
+            "marketing_carrier_code": "EI",
+            "flight_number": "166",
+            "operating_carrier_name": "Aer Lingus",
+            "departure_airport": "DUB",
+            "departure_time_local": "2026-12-18T13:00:00",
+            "departure_timezone": "Europe/Dublin",
+            "departure_time_utc": "2026-12-18T13:00:00Z",
+            "arrival_airport": "LHR",
+            "arrival_time_local": "2026-12-18T14:25:00",
+            "arrival_timezone": "Europe/London",
+            "arrival_time_utc": "2026-12-18T14:25:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A321"
+          },
+          {
+            "marketing_carrier_code": "BA",
+            "flight_number": "374",
+            "operating_carrier_name": "British Airways",
+            "departure_airport": "LHR",
+            "departure_time_local": "2026-12-18T16:10:00",
+            "departure_timezone": "Europe/London",
+            "departure_time_utc": "2026-12-18T16:10:00Z",
+            "arrival_airport": "TLS",
+            "arrival_time_local": "2026-12-18T19:05:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T18:05:00Z",
+            "duration_minutes": 115,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "77cb7a2041ce4622bd595a9f8be17738"
+    },
+    {
+      "price": {
+        "amount": 478.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 820,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "7417",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "TLS",
+            "departure_time_local": "2026-12-11T20:45:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T19:45:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-11T22:10:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-11T21:10:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A321"
+          },
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "1716",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-12T08:35:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-12T07:35:00Z",
+            "arrival_airport": "DUB",
+            "arrival_time_local": "2026-12-12T09:25:00",
+            "arrival_timezone": "Europe/Dublin",
+            "arrival_time_utc": "2026-12-12T09:25:00Z",
+            "duration_minutes": 110,
+            "aircraft": "Airbus A318"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "KLM",
+        "duration_minutes": 405,
+        "segments": [
+          {
+            "marketing_carrier_code": "KL",
+            "flight_number": "1136",
+            "operating_carrier_name": "KLM",
+            "departure_airport": "DUB",
+            "departure_time_local": "2026-12-18T08:50:00",
+            "departure_timezone": "Europe/Dublin",
+            "departure_time_utc": "2026-12-18T08:50:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2026-12-18T11:25:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2026-12-18T10:25:00Z",
+            "duration_minutes": 95,
+            "aircraft": "Boeing 737"
+          },
+          {
+            "marketing_carrier_code": "KL",
+            "flight_number": "1453",
+            "operating_carrier_name": "KLM",
+            "departure_airport": "AMS",
+            "departure_time_local": "2026-12-18T14:45:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2026-12-18T13:45:00Z",
+            "arrival_airport": "TLS",
+            "arrival_time_local": "2026-12-18T16:35:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T15:35:00Z",
+            "duration_minutes": 110,
+            "aircraft": "Embraer 195 E2"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "ddab792508b7480da75607d0c2f876d5"
+    },
+    {
+      "price": {
+        "amount": 501.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 820,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "7417",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "TLS",
+            "departure_time_local": "2026-12-11T20:45:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T19:45:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-11T22:10:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-11T21:10:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A321"
+          },
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "1716",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-12T08:35:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-12T07:35:00Z",
+            "arrival_airport": "DUB",
+            "arrival_time_local": "2026-12-12T09:25:00",
+            "arrival_timezone": "Europe/Dublin",
+            "arrival_time_utc": "2026-12-12T09:25:00Z",
+            "duration_minutes": 110,
+            "aircraft": "Airbus A318"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Air France",
+        "duration_minutes": 285,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "1717",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "DUB",
+            "departure_time_local": "2026-12-18T09:55:00",
+            "departure_timezone": "Europe/Dublin",
+            "departure_time_utc": "2026-12-18T09:55:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-18T12:45:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T11:45:00Z",
+            "duration_minutes": 110,
+            "aircraft": "Airbus A220-300 Passenger"
+          },
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "7410",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-18T14:15:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-18T13:15:00Z",
+            "arrival_airport": "TLS",
+            "arrival_time_local": "2026-12-18T15:40:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T14:40:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A220-300 Passenger"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "e426cb1ffc5441ce955c76dd2b7a3bcb"
+    },
+    {
+      "price": {
+        "amount": 515.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "British Airways",
+        "duration_minutes": 325,
+        "segments": [
+          {
+            "marketing_carrier_code": "BA",
+            "flight_number": "371",
+            "operating_carrier_name": "British Airways",
+            "departure_airport": "TLS",
+            "departure_time_local": "2026-12-11T09:35:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T08:35:00Z",
+            "arrival_airport": "LHR",
+            "arrival_time_local": "2026-12-11T10:40:00",
+            "arrival_timezone": "Europe/London",
+            "arrival_time_utc": "2026-12-11T10:40:00Z",
+            "duration_minutes": 125,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "BA",
+            "flight_number": "826",
+            "operating_carrier_name": "British Airways",
+            "departure_airport": "LHR",
+            "departure_time_local": "2026-12-11T12:30:00",
+            "departure_timezone": "Europe/London",
+            "departure_time_utc": "2026-12-11T12:30:00Z",
+            "arrival_airport": "DUB",
+            "arrival_time_local": "2026-12-11T14:00:00",
+            "arrival_timezone": "Europe/Dublin",
+            "arrival_time_utc": "2026-12-11T14:00:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "British Airways",
+        "duration_minutes": 365,
+        "segments": [
+          {
+            "marketing_carrier_code": "BA",
+            "flight_number": "825",
+            "operating_carrier_name": "British Airways",
+            "departure_airport": "DUB",
+            "departure_time_local": "2026-12-18T08:50:00",
+            "departure_timezone": "Europe/Dublin",
+            "departure_time_utc": "2026-12-18T08:50:00Z",
+            "arrival_airport": "LHR",
+            "arrival_time_local": "2026-12-18T10:20:00",
+            "arrival_timezone": "Europe/London",
+            "arrival_time_utc": "2026-12-18T10:20:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "BA",
+            "flight_number": "372",
+            "operating_carrier_name": "British Airways",
+            "departure_airport": "LHR",
+            "departure_time_local": "2026-12-18T13:05:00",
+            "departure_timezone": "Europe/London",
+            "departure_time_utc": "2026-12-18T13:05:00Z",
+            "arrival_airport": "TLS",
+            "arrival_time_local": "2026-12-18T15:55:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T14:55:00Z",
+            "duration_minutes": 110,
+            "aircraft": "Airbus A319"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "101f77a9e2ed457aaf1f49006e695034"
+    },
+    {
+      "price": {
+        "amount": 515.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "British Airways",
+        "duration_minutes": 325,
+        "segments": [
+          {
+            "marketing_carrier_code": "BA",
+            "flight_number": "371",
+            "operating_carrier_name": "British Airways",
+            "departure_airport": "TLS",
+            "departure_time_local": "2026-12-11T09:35:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T08:35:00Z",
+            "arrival_airport": "LHR",
+            "arrival_time_local": "2026-12-11T10:40:00",
+            "arrival_timezone": "Europe/London",
+            "arrival_time_utc": "2026-12-11T10:40:00Z",
+            "duration_minutes": 125,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "BA",
+            "flight_number": "826",
+            "operating_carrier_name": "British Airways",
+            "departure_airport": "LHR",
+            "departure_time_local": "2026-12-11T12:30:00",
+            "departure_timezone": "Europe/London",
+            "departure_time_utc": "2026-12-11T12:30:00Z",
+            "arrival_airport": "DUB",
+            "arrival_time_local": "2026-12-11T14:00:00",
+            "arrival_timezone": "Europe/Dublin",
+            "arrival_time_utc": "2026-12-11T14:00:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "British Airways",
+        "duration_minutes": 435,
+        "segments": [
+          {
+            "marketing_carrier_code": "BA",
+            "flight_number": "829",
+            "operating_carrier_name": "British Airways",
+            "departure_airport": "DUB",
+            "departure_time_local": "2026-12-18T10:50:00",
+            "departure_timezone": "Europe/Dublin",
+            "departure_time_utc": "2026-12-18T10:50:00Z",
+            "arrival_airport": "LHR",
+            "arrival_time_local": "2026-12-18T12:20:00",
+            "arrival_timezone": "Europe/London",
+            "arrival_time_utc": "2026-12-18T12:20:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320neo"
+          },
+          {
+            "marketing_carrier_code": "BA",
+            "flight_number": "374",
+            "operating_carrier_name": "British Airways",
+            "departure_airport": "LHR",
+            "departure_time_local": "2026-12-18T16:10:00",
+            "departure_timezone": "Europe/London",
+            "departure_time_utc": "2026-12-18T16:10:00Z",
+            "arrival_airport": "TLS",
+            "arrival_time_local": "2026-12-18T19:05:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T18:05:00Z",
+            "duration_minutes": 115,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "ef5cbb817acd43a8beecbfc8b1d90a58"
+    },
+    {
+      "price": {
+        "amount": 531.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "British Airways",
+        "duration_minutes": 325,
+        "segments": [
+          {
+            "marketing_carrier_code": "BA",
+            "flight_number": "371",
+            "operating_carrier_name": "British Airways",
+            "departure_airport": "TLS",
+            "departure_time_local": "2026-12-11T09:35:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T08:35:00Z",
+            "arrival_airport": "LHR",
+            "arrival_time_local": "2026-12-11T10:40:00",
+            "arrival_timezone": "Europe/London",
+            "arrival_time_utc": "2026-12-11T10:40:00Z",
+            "duration_minutes": 125,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "BA",
+            "flight_number": "826",
+            "operating_carrier_name": "British Airways",
+            "departure_airport": "LHR",
+            "departure_time_local": "2026-12-11T12:30:00",
+            "departure_timezone": "Europe/London",
+            "departure_time_utc": "2026-12-11T12:30:00Z",
+            "arrival_airport": "DUB",
+            "arrival_time_local": "2026-12-11T14:00:00",
+            "arrival_timezone": "Europe/Dublin",
+            "arrival_time_utc": "2026-12-11T14:00:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Aer Lingus",
+        "duration_minutes": 305,
+        "segments": [
+          {
+            "marketing_carrier_code": "EI",
+            "flight_number": "166",
+            "operating_carrier_name": "Aer Lingus",
+            "departure_airport": "DUB",
+            "departure_time_local": "2026-12-18T13:00:00",
+            "departure_timezone": "Europe/Dublin",
+            "departure_time_utc": "2026-12-18T13:00:00Z",
+            "arrival_airport": "LHR",
+            "arrival_time_local": "2026-12-18T14:25:00",
+            "arrival_timezone": "Europe/London",
+            "arrival_time_utc": "2026-12-18T14:25:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A321"
+          },
+          {
+            "marketing_carrier_code": "BA",
+            "flight_number": "374",
+            "operating_carrier_name": "British Airways",
+            "departure_airport": "LHR",
+            "departure_time_local": "2026-12-18T16:10:00",
+            "departure_timezone": "Europe/London",
+            "departure_time_utc": "2026-12-18T16:10:00Z",
+            "arrival_airport": "TLS",
+            "arrival_time_local": "2026-12-18T19:05:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T18:05:00Z",
+            "duration_minutes": 115,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "e43dd01e1fd24ef4a55a06089e7d493d"
+    },
+    {
+      "price": {
+        "amount": 546.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 820,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "7417",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "TLS",
+            "departure_time_local": "2026-12-11T20:45:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T19:45:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-11T22:10:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-11T21:10:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A321"
+          },
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "1716",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-12T08:35:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-12T07:35:00Z",
+            "arrival_airport": "DUB",
+            "arrival_time_local": "2026-12-12T09:25:00",
+            "arrival_timezone": "Europe/Dublin",
+            "arrival_time_utc": "2026-12-12T09:25:00Z",
+            "duration_minutes": 110,
+            "aircraft": "Airbus A318"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "KLM",
+        "duration_minutes": 260,
+        "segments": [
+          {
+            "marketing_carrier_code": "KL",
+            "flight_number": "1142",
+            "operating_carrier_name": "KLM",
+            "departure_airport": "DUB",
+            "departure_time_local": "2026-12-18T17:15:00",
+            "departure_timezone": "Europe/Dublin",
+            "departure_time_utc": "2026-12-18T17:15:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2026-12-18T19:55:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2026-12-18T18:55:00Z",
+            "duration_minutes": 100,
+            "aircraft": "Boeing 737"
+          },
+          {
+            "marketing_carrier_code": "KL",
+            "flight_number": "1455",
+            "operating_carrier_name": "KLM",
+            "departure_airport": "AMS",
+            "departure_time_local": "2026-12-18T20:45:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2026-12-18T19:45:00Z",
+            "arrival_airport": "TLS",
+            "arrival_time_local": "2026-12-18T22:35:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T21:35:00Z",
+            "duration_minutes": 110,
+            "aircraft": "Boeing 737"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "6252e37e8a9e412a9b19cd4afb204ebf"
+    },
+    {
+      "price": {
+        "amount": 546.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 820,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "7417",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "TLS",
+            "departure_time_local": "2026-12-11T20:45:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T19:45:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-11T22:10:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-11T21:10:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A321"
+          },
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "1716",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-12T08:35:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-12T07:35:00Z",
+            "arrival_airport": "DUB",
+            "arrival_time_local": "2026-12-12T09:25:00",
+            "arrival_timezone": "Europe/Dublin",
+            "arrival_time_utc": "2026-12-12T09:25:00Z",
+            "duration_minutes": 110,
+            "aircraft": "Airbus A318"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Air France",
+        "duration_minutes": 305,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "1117",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "DUB",
+            "departure_time_local": "2026-12-18T15:25:00",
+            "departure_timezone": "Europe/Dublin",
+            "departure_time_utc": "2026-12-18T15:25:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-18T18:10:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T17:10:00Z",
+            "duration_minutes": 105,
+            "aircraft": "Airbus A220-300 Passenger"
+          },
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "7418",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-18T20:05:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-18T19:05:00Z",
+            "arrival_airport": "TLS",
+            "arrival_time_local": "2026-12-18T21:30:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T20:30:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "dcaec76dadd74513afe55f4bb08d9f74"
+    }
+  ],
+  "observed_at": "2026-11-20T16:21:23.582720Z"
+}

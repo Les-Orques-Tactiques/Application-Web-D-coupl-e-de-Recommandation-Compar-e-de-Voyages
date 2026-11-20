@@ -1,0 +1,955 @@
+{
+  "origin": "TLS",
+  "destination": "LHR",
+  "departure_date": "2026-12-11",
+  "return_date": "2026-12-18",
+  "itineraries": [
+    {
+      "price": {
+        "amount": 299.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "British Airways",
+        "duration_minutes": 115,
+        "segments": [
+          {
+            "marketing_carrier_code": "BA",
+            "flight_number": "373",
+            "operating_carrier_name": "British Airways",
+            "departure_airport": "TLS",
+            "departure_time_local": "2026-12-11T16:45:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T15:45:00Z",
+            "arrival_airport": "LHR",
+            "arrival_time_local": "2026-12-11T17:40:00",
+            "arrival_timezone": "Europe/London",
+            "arrival_time_utc": "2026-12-11T17:40:00Z",
+            "duration_minutes": 115,
+            "aircraft": "Airbus A319"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "British Airways",
+        "duration_minutes": 105,
+        "segments": [
+          {
+            "marketing_carrier_code": "BA",
+            "flight_number": "370",
+            "operating_carrier_name": "British Airways",
+            "departure_airport": "LHR",
+            "departure_time_local": "2026-12-18T06:00:00",
+            "departure_timezone": "Europe/London",
+            "departure_time_utc": "2026-12-18T06:00:00Z",
+            "arrival_airport": "TLS",
+            "arrival_time_local": "2026-12-18T08:45:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T07:45:00Z",
+            "duration_minutes": 105,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "ad2e9fc150174d89816d69d1d85814b3"
+    },
+    {
+      "price": {
+        "amount": 373.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "British Airways",
+        "duration_minutes": 115,
+        "segments": [
+          {
+            "marketing_carrier_code": "BA",
+            "flight_number": "373",
+            "operating_carrier_name": "British Airways",
+            "departure_airport": "TLS",
+            "departure_time_local": "2026-12-11T16:45:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T15:45:00Z",
+            "arrival_airport": "LHR",
+            "arrival_time_local": "2026-12-11T17:40:00",
+            "arrival_timezone": "Europe/London",
+            "arrival_time_utc": "2026-12-11T17:40:00Z",
+            "duration_minutes": 115,
+            "aircraft": "Airbus A319"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "British Airways",
+        "duration_minutes": 115,
+        "segments": [
+          {
+            "marketing_carrier_code": "BA",
+            "flight_number": "374",
+            "operating_carrier_name": "British Airways",
+            "departure_airport": "LHR",
+            "departure_time_local": "2026-12-18T16:10:00",
+            "departure_timezone": "Europe/London",
+            "departure_time_utc": "2026-12-18T16:10:00Z",
+            "arrival_airport": "TLS",
+            "arrival_time_local": "2026-12-18T19:05:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T18:05:00Z",
+            "duration_minutes": 115,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "3c4ed7674eb24daf9ce28092de9da341"
+    },
+    {
+      "price": {
+        "amount": 467.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Brussels Airlines",
+        "duration_minutes": 605,
+        "segments": [
+          {
+            "marketing_carrier_code": "SN",
+            "flight_number": "3668",
+            "operating_carrier_name": "Brussels Airlines",
+            "departure_airport": "TLS",
+            "departure_time_local": "2026-12-11T12:15:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T11:15:00Z",
+            "arrival_airport": "BRU",
+            "arrival_time_local": "2026-12-11T14:00:00",
+            "arrival_timezone": "Europe/Brussels",
+            "arrival_time_utc": "2026-12-11T13:00:00Z",
+            "duration_minutes": 105,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "SN",
+            "flight_number": "2103",
+            "operating_carrier_name": "Brussels Airlines",
+            "departure_airport": "BRU",
+            "departure_time_local": "2026-12-11T21:10:00",
+            "departure_timezone": "Europe/Brussels",
+            "departure_time_utc": "2026-12-11T20:10:00Z",
+            "arrival_airport": "LHR",
+            "arrival_time_local": "2026-12-11T21:20:00",
+            "arrival_timezone": "Europe/London",
+            "arrival_time_utc": "2026-12-11T21:20:00Z",
+            "duration_minutes": 70,
+            "aircraft": "Airbus A320neo"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Lufthansa City Airlines",
+        "duration_minutes": 675,
+        "segments": [
+          {
+            "marketing_carrier_code": "VL",
+            "flight_number": "2483",
+            "operating_carrier_name": "Lufthansa City Airlines",
+            "departure_airport": "LHR",
+            "departure_time_local": "2026-12-18T20:15:00",
+            "departure_timezone": "Europe/London",
+            "departure_time_utc": "2026-12-18T20:15:00Z",
+            "arrival_airport": "MUC",
+            "arrival_time_local": "2026-12-18T23:05:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-18T22:05:00Z",
+            "duration_minutes": 110,
+            "aircraft": "Airbus A320neo"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "2216",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "MUC",
+            "departure_time_local": "2026-12-19T06:40:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-19T05:40:00Z",
+            "arrival_airport": "TLS",
+            "arrival_time_local": "2026-12-19T08:30:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T07:30:00Z",
+            "duration_minutes": 110,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "555f81d90f614539a5a75321ffaddd37"
+    },
+    {
+      "price": {
+        "amount": 468.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Lufthansa",
+        "duration_minutes": 320,
+        "segments": [
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "2221",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "TLS",
+            "departure_time_local": "2026-12-11T18:35:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T17:35:00Z",
+            "arrival_airport": "MUC",
+            "arrival_time_local": "2026-12-11T20:15:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T19:15:00Z",
+            "duration_minutes": 100,
+            "aircraft": "Airbus A321neo"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "2486",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "MUC",
+            "departure_time_local": "2026-12-11T21:55:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T20:55:00Z",
+            "arrival_airport": "LHR",
+            "arrival_time_local": "2026-12-11T22:55:00",
+            "arrival_timezone": "Europe/London",
+            "arrival_time_utc": "2026-12-11T22:55:00Z",
+            "duration_minutes": 120,
+            "aircraft": "Airbus A320neo"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Lufthansa City Airlines",
+        "duration_minutes": 675,
+        "segments": [
+          {
+            "marketing_carrier_code": "VL",
+            "flight_number": "2483",
+            "operating_carrier_name": "Lufthansa City Airlines",
+            "departure_airport": "LHR",
+            "departure_time_local": "2026-12-18T20:15:00",
+            "departure_timezone": "Europe/London",
+            "departure_time_utc": "2026-12-18T20:15:00Z",
+            "arrival_airport": "MUC",
+            "arrival_time_local": "2026-12-18T23:05:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-18T22:05:00Z",
+            "duration_minutes": 110,
+            "aircraft": "Airbus A320neo"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "2216",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "MUC",
+            "departure_time_local": "2026-12-19T06:40:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-19T05:40:00Z",
+            "arrival_airport": "TLS",
+            "arrival_time_local": "2026-12-19T08:30:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T07:30:00Z",
+            "duration_minutes": 110,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "304d635962164bb198f0633218106ff4"
+    },
+    {
+      "price": {
+        "amount": 549.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Lufthansa",
+        "duration_minutes": 320,
+        "segments": [
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "2221",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "TLS",
+            "departure_time_local": "2026-12-11T18:35:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T17:35:00Z",
+            "arrival_airport": "MUC",
+            "arrival_time_local": "2026-12-11T20:15:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T19:15:00Z",
+            "duration_minutes": 100,
+            "aircraft": "Airbus A321neo"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "2486",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "MUC",
+            "departure_time_local": "2026-12-11T21:55:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T20:55:00Z",
+            "arrival_airport": "LHR",
+            "arrival_time_local": "2026-12-11T22:55:00",
+            "arrival_timezone": "Europe/London",
+            "arrival_time_utc": "2026-12-11T22:55:00Z",
+            "duration_minutes": 120,
+            "aircraft": "Airbus A320neo"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Lufthansa",
+        "duration_minutes": 315,
+        "segments": [
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "2485",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "LHR",
+            "departure_time_local": "2026-12-18T06:35:00",
+            "departure_timezone": "Europe/London",
+            "departure_time_utc": "2026-12-18T06:35:00Z",
+            "arrival_airport": "MUC",
+            "arrival_time_local": "2026-12-18T09:25:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-18T08:25:00Z",
+            "duration_minutes": 110,
+            "aircraft": "Airbus A320neo"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "2218",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "MUC",
+            "departure_time_local": "2026-12-18T11:00:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T10:00:00Z",
+            "arrival_airport": "TLS",
+            "arrival_time_local": "2026-12-18T12:50:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T11:50:00Z",
+            "duration_minutes": 110,
+            "aircraft": "Airbus A320neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "8b64389422a9477eb95847b873f5ed9a"
+    },
+    {
+      "price": {
+        "amount": 549.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Brussels Airlines",
+        "duration_minutes": 605,
+        "segments": [
+          {
+            "marketing_carrier_code": "SN",
+            "flight_number": "3668",
+            "operating_carrier_name": "Brussels Airlines",
+            "departure_airport": "TLS",
+            "departure_time_local": "2026-12-11T12:15:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T11:15:00Z",
+            "arrival_airport": "BRU",
+            "arrival_time_local": "2026-12-11T14:00:00",
+            "arrival_timezone": "Europe/Brussels",
+            "arrival_time_utc": "2026-12-11T13:00:00Z",
+            "duration_minutes": 105,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "SN",
+            "flight_number": "2103",
+            "operating_carrier_name": "Brussels Airlines",
+            "departure_airport": "BRU",
+            "departure_time_local": "2026-12-11T21:10:00",
+            "departure_timezone": "Europe/Brussels",
+            "departure_time_utc": "2026-12-11T20:10:00Z",
+            "arrival_airport": "LHR",
+            "arrival_time_local": "2026-12-11T21:20:00",
+            "arrival_timezone": "Europe/London",
+            "arrival_time_utc": "2026-12-11T21:20:00Z",
+            "duration_minutes": 70,
+            "aircraft": "Airbus A320neo"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Brussels Airlines",
+        "duration_minutes": 240,
+        "segments": [
+          {
+            "marketing_carrier_code": "SN",
+            "flight_number": "2096",
+            "operating_carrier_name": "Brussels Airlines",
+            "departure_airport": "LHR",
+            "departure_time_local": "2026-12-18T17:50:00",
+            "departure_timezone": "Europe/London",
+            "departure_time_utc": "2026-12-18T17:50:00Z",
+            "arrival_airport": "BRU",
+            "arrival_time_local": "2026-12-18T20:10:00",
+            "arrival_timezone": "Europe/Brussels",
+            "arrival_time_utc": "2026-12-18T19:10:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Airbus A320neo"
+          },
+          {
+            "marketing_carrier_code": "SN",
+            "flight_number": "3675",
+            "operating_carrier_name": "Brussels Airlines",
+            "departure_airport": "BRU",
+            "departure_time_local": "2026-12-18T21:10:00",
+            "departure_timezone": "Europe/Brussels",
+            "departure_time_utc": "2026-12-18T20:10:00Z",
+            "arrival_airport": "TLS",
+            "arrival_time_local": "2026-12-18T22:50:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T21:50:00Z",
+            "duration_minutes": 100,
+            "aircraft": "Airbus A320neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "534ba79e98264a6d8e4e2b3833fe5999"
+    },
+    {
+      "price": {
+        "amount": 555.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "British Airways",
+        "duration_minutes": 115,
+        "segments": [
+          {
+            "marketing_carrier_code": "BA",
+            "flight_number": "373",
+            "operating_carrier_name": "British Airways",
+            "departure_airport": "TLS",
+            "departure_time_local": "2026-12-11T16:45:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T15:45:00Z",
+            "arrival_airport": "LHR",
+            "arrival_time_local": "2026-12-11T17:40:00",
+            "arrival_timezone": "Europe/London",
+            "arrival_time_utc": "2026-12-11T17:40:00Z",
+            "duration_minutes": 115,
+            "aircraft": "Airbus A319"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "British Airways",
+        "duration_minutes": 110,
+        "segments": [
+          {
+            "marketing_carrier_code": "BA",
+            "flight_number": "372",
+            "operating_carrier_name": "British Airways",
+            "departure_airport": "LHR",
+            "departure_time_local": "2026-12-18T13:05:00",
+            "departure_timezone": "Europe/London",
+            "departure_time_utc": "2026-12-18T13:05:00Z",
+            "arrival_airport": "TLS",
+            "arrival_time_local": "2026-12-18T15:55:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T14:55:00Z",
+            "duration_minutes": 110,
+            "aircraft": "Airbus A319"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "5720c54b75c941089a9b1107b8f16c82"
+    },
+    {
+      "price": {
+        "amount": 628.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Lufthansa",
+        "duration_minutes": 320,
+        "segments": [
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "2221",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "TLS",
+            "departure_time_local": "2026-12-11T18:35:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T17:35:00Z",
+            "arrival_airport": "MUC",
+            "arrival_time_local": "2026-12-11T20:15:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T19:15:00Z",
+            "duration_minutes": 100,
+            "aircraft": "Airbus A321neo"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "2486",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "MUC",
+            "departure_time_local": "2026-12-11T21:55:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T20:55:00Z",
+            "arrival_airport": "LHR",
+            "arrival_time_local": "2026-12-11T22:55:00",
+            "arrival_timezone": "Europe/London",
+            "arrival_time_utc": "2026-12-11T22:55:00Z",
+            "duration_minutes": 120,
+            "aircraft": "Airbus A320neo"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Lufthansa City Airlines",
+        "duration_minutes": 485,
+        "segments": [
+          {
+            "marketing_carrier_code": "VL",
+            "flight_number": "2471",
+            "operating_carrier_name": "Lufthansa City Airlines",
+            "departure_airport": "LHR",
+            "departure_time_local": "2026-12-18T08:45:00",
+            "departure_timezone": "Europe/London",
+            "departure_time_utc": "2026-12-18T08:45:00Z",
+            "arrival_airport": "MUC",
+            "arrival_time_local": "2026-12-18T11:35:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-18T10:35:00Z",
+            "duration_minutes": 110,
+            "aircraft": "Airbus A320neo"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "2220",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "MUC",
+            "departure_time_local": "2026-12-18T16:00:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T15:00:00Z",
+            "arrival_airport": "TLS",
+            "arrival_time_local": "2026-12-18T17:50:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T16:50:00Z",
+            "duration_minutes": 110,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "0c1b061209604a2eaa59cd1a721df033"
+    },
+    {
+      "price": {
+        "amount": 628.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Brussels Airlines",
+        "duration_minutes": 605,
+        "segments": [
+          {
+            "marketing_carrier_code": "SN",
+            "flight_number": "3668",
+            "operating_carrier_name": "Brussels Airlines",
+            "departure_airport": "TLS",
+            "departure_time_local": "2026-12-11T12:15:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T11:15:00Z",
+            "arrival_airport": "BRU",
+            "arrival_time_local": "2026-12-11T14:00:00",
+            "arrival_timezone": "Europe/Brussels",
+            "arrival_time_utc": "2026-12-11T13:00:00Z",
+            "duration_minutes": 105,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "SN",
+            "flight_number": "2103",
+            "operating_carrier_name": "Brussels Airlines",
+            "departure_airport": "BRU",
+            "departure_time_local": "2026-12-11T21:10:00",
+            "departure_timezone": "Europe/Brussels",
+            "departure_time_utc": "2026-12-11T20:10:00Z",
+            "arrival_airport": "LHR",
+            "arrival_time_local": "2026-12-11T21:20:00",
+            "arrival_timezone": "Europe/London",
+            "arrival_time_utc": "2026-12-11T21:20:00Z",
+            "duration_minutes": 70,
+            "aircraft": "Airbus A320neo"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Brussels Airlines",
+        "duration_minutes": 215,
+        "segments": [
+          {
+            "marketing_carrier_code": "SN",
+            "flight_number": "2104",
+            "operating_carrier_name": "Brussels Airlines",
+            "departure_airport": "LHR",
+            "departure_time_local": "2026-12-18T06:50:00",
+            "departure_timezone": "Europe/London",
+            "departure_time_utc": "2026-12-18T06:50:00Z",
+            "arrival_airport": "BRU",
+            "arrival_time_local": "2026-12-18T08:50:00",
+            "arrival_timezone": "Europe/Brussels",
+            "arrival_time_utc": "2026-12-18T07:50:00Z",
+            "duration_minutes": 60,
+            "aircraft": "Airbus A320neo"
+          },
+          {
+            "marketing_carrier_code": "SN",
+            "flight_number": "3667",
+            "operating_carrier_name": "Brussels Airlines",
+            "departure_airport": "BRU",
+            "departure_time_local": "2026-12-18T09:45:00",
+            "departure_timezone": "Europe/Brussels",
+            "departure_time_utc": "2026-12-18T08:45:00Z",
+            "arrival_airport": "TLS",
+            "arrival_time_local": "2026-12-18T11:25:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T10:25:00Z",
+            "duration_minutes": 100,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "9fb66cde1380429280bbcf730b82adfd"
+    },
+    {
+      "price": {
+        "amount": 679.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Brussels Airlines",
+        "duration_minutes": 605,
+        "segments": [
+          {
+            "marketing_carrier_code": "SN",
+            "flight_number": "3668",
+            "operating_carrier_name": "Brussels Airlines",
+            "departure_airport": "TLS",
+            "departure_time_local": "2026-12-11T12:15:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T11:15:00Z",
+            "arrival_airport": "BRU",
+            "arrival_time_local": "2026-12-11T14:00:00",
+            "arrival_timezone": "Europe/Brussels",
+            "arrival_time_utc": "2026-12-11T13:00:00Z",
+            "duration_minutes": 105,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "SN",
+            "flight_number": "2103",
+            "operating_carrier_name": "Brussels Airlines",
+            "departure_airport": "BRU",
+            "departure_time_local": "2026-12-11T21:10:00",
+            "departure_timezone": "Europe/Brussels",
+            "departure_time_utc": "2026-12-11T20:10:00Z",
+            "arrival_airport": "LHR",
+            "arrival_time_local": "2026-12-11T21:20:00",
+            "arrival_timezone": "Europe/London",
+            "arrival_time_utc": "2026-12-11T21:20:00Z",
+            "duration_minutes": 70,
+            "aircraft": "Airbus A320neo"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Lufthansa",
+        "duration_minutes": 315,
+        "segments": [
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "2485",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "LHR",
+            "departure_time_local": "2026-12-18T06:35:00",
+            "departure_timezone": "Europe/London",
+            "departure_time_utc": "2026-12-18T06:35:00Z",
+            "arrival_airport": "MUC",
+            "arrival_time_local": "2026-12-18T09:25:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-18T08:25:00Z",
+            "duration_minutes": 110,
+            "aircraft": "Airbus A320neo"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "2218",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "MUC",
+            "departure_time_local": "2026-12-18T11:00:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T10:00:00Z",
+            "arrival_airport": "TLS",
+            "arrival_time_local": "2026-12-18T12:50:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T11:50:00Z",
+            "duration_minutes": 110,
+            "aircraft": "Airbus A320neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "3bf54a7b6d814c94adb4a2f7182d35d5"
+    },
+    {
+      "price": {
+        "amount": 680.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Lufthansa",
+        "duration_minutes": 320,
+        "segments": [
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "2221",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "TLS",
+            "departure_time_local": "2026-12-11T18:35:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T17:35:00Z",
+            "arrival_airport": "MUC",
+            "arrival_time_local": "2026-12-11T20:15:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T19:15:00Z",
+            "duration_minutes": 100,
+            "aircraft": "Airbus A321neo"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "2486",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "MUC",
+            "departure_time_local": "2026-12-11T21:55:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T20:55:00Z",
+            "arrival_airport": "LHR",
+            "arrival_time_local": "2026-12-11T22:55:00",
+            "arrival_timezone": "Europe/London",
+            "arrival_time_utc": "2026-12-11T22:55:00Z",
+            "duration_minutes": 120,
+            "aircraft": "Airbus A320neo"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Brussels Airlines",
+        "duration_minutes": 240,
+        "segments": [
+          {
+            "marketing_carrier_code": "SN",
+            "flight_number": "2096",
+            "operating_carrier_name": "Brussels Airlines",
+            "departure_airport": "LHR",
+            "departure_time_local": "2026-12-18T17:50:00",
+            "departure_timezone": "Europe/London",
+            "departure_time_utc": "2026-12-18T17:50:00Z",
+            "arrival_airport": "BRU",
+            "arrival_time_local": "2026-12-18T20:10:00",
+            "arrival_timezone": "Europe/Brussels",
+            "arrival_time_utc": "2026-12-18T19:10:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Airbus A320neo"
+          },
+          {
+            "marketing_carrier_code": "SN",
+            "flight_number": "3675",
+            "operating_carrier_name": "Brussels Airlines",
+            "departure_airport": "BRU",
+            "departure_time_local": "2026-12-18T21:10:00",
+            "departure_timezone": "Europe/Brussels",
+            "departure_time_utc": "2026-12-18T20:10:00Z",
+            "arrival_airport": "TLS",
+            "arrival_time_local": "2026-12-18T22:50:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T21:50:00Z",
+            "duration_minutes": 100,
+            "aircraft": "Airbus A320neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "fdaaf679875f457eab548243c80e28f2"
+    },
+    {
+      "price": {
+        "amount": 909.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "British Airways",
+        "duration_minutes": 115,
+        "segments": [
+          {
+            "marketing_carrier_code": "BA",
+            "flight_number": "373",
+            "operating_carrier_name": "British Airways",
+            "departure_airport": "TLS",
+            "departure_time_local": "2026-12-11T16:45:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T15:45:00Z",
+            "arrival_airport": "LHR",
+            "arrival_time_local": "2026-12-11T17:40:00",
+            "arrival_timezone": "Europe/London",
+            "arrival_time_utc": "2026-12-11T17:40:00Z",
+            "duration_minutes": 115,
+            "aircraft": "Airbus A319"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Iberia",
+        "duration_minutes": 715,
+        "segments": [
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "726",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "LHR",
+            "departure_time_local": "2026-12-18T19:40:00",
+            "departure_timezone": "Europe/London",
+            "departure_time_utc": "2026-12-18T19:40:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-18T23:10:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-18T22:10:00Z",
+            "duration_minutes": 150,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "1189",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-19T07:10:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-19T06:10:00Z",
+            "arrival_airport": "TLS",
+            "arrival_time_local": "2026-12-19T08:35:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T07:35:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Canadair RJ 1000"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "95e64ee6b35b4ed4a340492b92042bb3"
+    },
+    {
+      "price": {
+        "amount": 986.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "British Airways",
+        "duration_minutes": 115,
+        "segments": [
+          {
+            "marketing_carrier_code": "BA",
+            "flight_number": "373",
+            "operating_carrier_name": "British Airways",
+            "departure_airport": "TLS",
+            "departure_time_local": "2026-12-11T16:45:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T15:45:00Z",
+            "arrival_airport": "LHR",
+            "arrival_time_local": "2026-12-11T17:40:00",
+            "arrival_timezone": "Europe/London",
+            "arrival_time_utc": "2026-12-11T17:40:00Z",
+            "duration_minutes": 115,
+            "aircraft": "Airbus A319"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Iberia",
+        "duration_minutes": 410,
+        "segments": [
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "712",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "LHR",
+            "departure_time_local": "2026-12-18T09:15:00",
+            "departure_timezone": "Europe/London",
+            "departure_time_utc": "2026-12-18T09:15:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-18T12:50:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-18T11:50:00Z",
+            "duration_minutes": 155,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "1193",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-18T15:40:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-18T14:40:00Z",
+            "arrival_airport": "TLS",
+            "arrival_time_local": "2026-12-18T17:05:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T16:05:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Canadair RJ 1000"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "751bbb1cef4f437e8129764a988fa832"
+    }
+  ],
+  "observed_at": "2026-11-20T16:19:33.912829Z"
+}

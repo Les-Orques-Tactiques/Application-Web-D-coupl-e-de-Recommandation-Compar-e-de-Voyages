@@ -1,0 +1,590 @@
+{
+  "origin": "ORY",
+  "destination": "JFK",
+  "departure_date": "2026-12-11",
+  "itineraries": [
+    {
+      "price": {
+        "amount": 350.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air Europa",
+        "duration_minutes": 775,
+        "segments": [
+          {
+            "marketing_carrier_code": "UX",
+            "flight_number": "1028",
+            "operating_carrier_name": "Air Europa",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T10:55:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T09:55:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-11T12:55:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-11T11:55:00Z",
+            "duration_minutes": 120,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          },
+          {
+            "marketing_carrier_code": "UX",
+            "flight_number": "91",
+            "operating_carrier_name": "Air Europa",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-11T15:35:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-11T14:35:00Z",
+            "arrival_airport": "JFK",
+            "arrival_time_local": "2026-12-11T17:50:00",
+            "arrival_timezone": "America/New_York",
+            "arrival_time_utc": "2026-12-11T22:50:00Z",
+            "duration_minutes": 495,
+            "aircraft": "Boeing 787"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "b2c3aac269e44eb6bf3a3b2e7984342c"
+    },
+    {
+      "price": {
+        "amount": 393.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Vueling",
+        "duration_minutes": 1805,
+        "segments": [
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "8029",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T21:55:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T20:55:00Z",
+            "arrival_airport": "BCN",
+            "arrival_time_local": "2026-12-11T23:35:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-11T22:35:00Z",
+            "duration_minutes": 100,
+            "aircraft": ""
+          },
+          {
+            "marketing_carrier_code": "LL",
+            "flight_number": "2627",
+            "operating_carrier_name": "LEVEL",
+            "departure_airport": "BCN",
+            "departure_time_local": "2026-12-12T18:45:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-12T17:45:00Z",
+            "arrival_airport": "JFK",
+            "arrival_time_local": "2026-12-12T22:00:00",
+            "arrival_timezone": "America/New_York",
+            "arrival_time_utc": "2026-12-13T03:00:00Z",
+            "duration_minutes": 555,
+            "aircraft": ""
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "53d50f644d584f548063ff74e0ea7b25"
+    },
+    {
+      "price": {
+        "amount": 427.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air Europa",
+        "duration_minutes": 1705,
+        "segments": [
+          {
+            "marketing_carrier_code": "UX",
+            "flight_number": "1026",
+            "operating_carrier_name": "Air Europa",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T19:25:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T18:25:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-11T21:25:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-11T20:25:00Z",
+            "duration_minutes": 120,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          },
+          {
+            "marketing_carrier_code": "UX",
+            "flight_number": "91",
+            "operating_carrier_name": "Air Europa",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-12T15:35:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-12T14:35:00Z",
+            "arrival_airport": "JFK",
+            "arrival_time_local": "2026-12-12T17:50:00",
+            "arrival_timezone": "America/New_York",
+            "arrival_time_utc": "2026-12-12T22:50:00Z",
+            "duration_minutes": 495,
+            "aircraft": "Boeing 787"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "ba9d0004aa9e4b4fb07c85ba9762592d"
+    },
+    {
+      "price": {
+        "amount": 480.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Tap Air Portugal",
+        "duration_minutes": 810,
+        "segments": [
+          {
+            "marketing_carrier_code": "TP",
+            "flight_number": "433",
+            "operating_carrier_name": "Tap Air Portugal",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T12:35:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T11:35:00Z",
+            "arrival_airport": "LIS",
+            "arrival_time_local": "2026-12-11T14:15:00",
+            "arrival_timezone": "Europe/Lisbon",
+            "arrival_time_utc": "2026-12-11T14:15:00Z",
+            "duration_minutes": 160,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "TP",
+            "flight_number": "209",
+            "operating_carrier_name": "Tap Air Portugal",
+            "departure_airport": "LIS",
+            "departure_time_local": "2026-12-11T16:35:00",
+            "departure_timezone": "Europe/Lisbon",
+            "departure_time_utc": "2026-12-11T16:35:00Z",
+            "arrival_airport": "JFK",
+            "arrival_time_local": "2026-12-11T20:05:00",
+            "arrival_timezone": "America/New_York",
+            "arrival_time_utc": "2026-12-12T01:05:00Z",
+            "duration_minutes": 510,
+            "aircraft": "Airbus A321neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "be3b9e05e1a441ebbd8ee10d94edfbe8"
+    },
+    {
+      "price": {
+        "amount": 487.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Tap Air Portugal",
+        "duration_minutes": 1770,
+        "segments": [
+          {
+            "marketing_carrier_code": "TP",
+            "flight_number": "439",
+            "operating_carrier_name": "Tap Air Portugal",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T20:35:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T19:35:00Z",
+            "arrival_airport": "LIS",
+            "arrival_time_local": "2026-12-11T22:10:00",
+            "arrival_timezone": "Europe/Lisbon",
+            "arrival_time_utc": "2026-12-11T22:10:00Z",
+            "duration_minutes": 155,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "TP",
+            "flight_number": "209",
+            "operating_carrier_name": "Tap Air Portugal",
+            "departure_airport": "LIS",
+            "departure_time_local": "2026-12-12T16:35:00",
+            "departure_timezone": "Europe/Lisbon",
+            "departure_time_utc": "2026-12-12T16:35:00Z",
+            "arrival_airport": "JFK",
+            "arrival_time_local": "2026-12-12T20:05:00",
+            "arrival_timezone": "America/New_York",
+            "arrival_time_utc": "2026-12-13T01:05:00Z",
+            "duration_minutes": 510,
+            "aircraft": "Airbus A321neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "49d5a38dfe0d46d9be4f3c746f3217c0"
+    },
+    {
+      "price": {
+        "amount": 684.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Tap Air Portugal",
+        "duration_minutes": 1760,
+        "segments": [
+          {
+            "marketing_carrier_code": "TP",
+            "flight_number": "439",
+            "operating_carrier_name": "Tap Air Portugal",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T20:35:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T19:35:00Z",
+            "arrival_airport": "LIS",
+            "arrival_time_local": "2026-12-11T22:10:00",
+            "arrival_timezone": "Europe/Lisbon",
+            "arrival_time_utc": "2026-12-11T22:10:00Z",
+            "duration_minutes": 155,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "S4",
+            "flight_number": "121",
+            "operating_carrier_name": "Azores Airlines",
+            "departure_airport": "LIS",
+            "departure_time_local": "2026-12-12T06:00:00",
+            "departure_timezone": "Europe/Lisbon",
+            "departure_time_utc": "2026-12-12T06:00:00Z",
+            "arrival_airport": "PDL",
+            "arrival_time_local": "2026-12-12T07:30:00",
+            "arrival_timezone": "Atlantic/Azores",
+            "arrival_time_utc": "2026-12-12T08:30:00Z",
+            "duration_minutes": 150,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "S4",
+            "flight_number": "247",
+            "operating_carrier_name": "Azores Airlines",
+            "departure_airport": "PDL",
+            "departure_time_local": "2026-12-12T17:20:00",
+            "departure_timezone": "Atlantic/Azores",
+            "departure_time_utc": "2026-12-12T18:20:00Z",
+            "arrival_airport": "JFK",
+            "arrival_time_local": "2026-12-12T19:55:00",
+            "arrival_timezone": "America/New_York",
+            "arrival_time_utc": "2026-12-13T00:55:00Z",
+            "duration_minutes": 395,
+            "aircraft": "Airbus A321neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "e917e1b4d6744fb697f218b1acc86c5f"
+    },
+    {
+      "price": {
+        "amount": 684.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Tap Air Portugal",
+        "duration_minutes": 1760,
+        "segments": [
+          {
+            "marketing_carrier_code": "TP",
+            "flight_number": "439",
+            "operating_carrier_name": "Tap Air Portugal",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T20:35:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T19:35:00Z",
+            "arrival_airport": "LIS",
+            "arrival_time_local": "2026-12-11T22:10:00",
+            "arrival_timezone": "Europe/Lisbon",
+            "arrival_time_utc": "2026-12-11T22:10:00Z",
+            "duration_minutes": 155,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "S4",
+            "flight_number": "125",
+            "operating_carrier_name": "Azores Airlines",
+            "departure_airport": "LIS",
+            "departure_time_local": "2026-12-12T14:05:00",
+            "departure_timezone": "Europe/Lisbon",
+            "departure_time_utc": "2026-12-12T14:05:00Z",
+            "arrival_airport": "PDL",
+            "arrival_time_local": "2026-12-12T15:35:00",
+            "arrival_timezone": "Atlantic/Azores",
+            "arrival_time_utc": "2026-12-12T16:35:00Z",
+            "duration_minutes": 150,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "S4",
+            "flight_number": "247",
+            "operating_carrier_name": "Azores Airlines",
+            "departure_airport": "PDL",
+            "departure_time_local": "2026-12-12T17:20:00",
+            "departure_timezone": "Atlantic/Azores",
+            "departure_time_utc": "2026-12-12T18:20:00Z",
+            "arrival_airport": "JFK",
+            "arrival_time_local": "2026-12-12T19:55:00",
+            "arrival_timezone": "America/New_York",
+            "arrival_time_utc": "2026-12-13T00:55:00Z",
+            "duration_minutes": 395,
+            "aircraft": "Airbus A321neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "bb2ae880688f4aa8889211e8411ede84"
+    },
+    {
+      "price": {
+        "amount": 737.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Royal Air Maroc",
+        "duration_minutes": 955,
+        "segments": [
+          {
+            "marketing_carrier_code": "AT",
+            "flight_number": "777",
+            "operating_carrier_name": "Royal Air Maroc",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T08:00:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T07:00:00Z",
+            "arrival_airport": "CMN",
+            "arrival_time_local": "2026-12-11T10:05:00",
+            "arrival_timezone": "Africa/Casablanca",
+            "arrival_time_utc": "2026-12-11T10:05:00Z",
+            "duration_minutes": 185,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          },
+          {
+            "marketing_carrier_code": "AT",
+            "flight_number": "200",
+            "operating_carrier_name": "Royal Air Maroc",
+            "departure_airport": "CMN",
+            "departure_time_local": "2026-12-11T14:50:00",
+            "departure_timezone": "Africa/Casablanca",
+            "departure_time_utc": "2026-12-11T14:50:00Z",
+            "arrival_airport": "JFK",
+            "arrival_time_local": "2026-12-11T17:55:00",
+            "arrival_timezone": "America/New_York",
+            "arrival_time_utc": "2026-12-11T22:55:00Z",
+            "duration_minutes": 485,
+            "aircraft": "Boeing 787"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "cd7c78ac2ff84d92b6fb06983f4744b6"
+    },
+    {
+      "price": {
+        "amount": 737.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Royal Air Maroc",
+        "duration_minutes": 1065,
+        "segments": [
+          {
+            "marketing_carrier_code": "AT",
+            "flight_number": "751",
+            "operating_carrier_name": "Royal Air Maroc",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T20:30:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T19:30:00Z",
+            "arrival_airport": "CMN",
+            "arrival_time_local": "2026-12-11T22:35:00",
+            "arrival_timezone": "Africa/Casablanca",
+            "arrival_time_utc": "2026-12-11T22:35:00Z",
+            "duration_minutes": 185,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          },
+          {
+            "marketing_carrier_code": "AT",
+            "flight_number": "202",
+            "operating_carrier_name": "Royal Air Maroc",
+            "departure_airport": "CMN",
+            "departure_time_local": "2026-12-12T05:00:00",
+            "departure_timezone": "Africa/Casablanca",
+            "departure_time_utc": "2026-12-12T05:00:00Z",
+            "arrival_airport": "JFK",
+            "arrival_time_local": "2026-12-12T08:15:00",
+            "arrival_timezone": "America/New_York",
+            "arrival_time_utc": "2026-12-12T13:15:00Z",
+            "duration_minutes": 495,
+            "aircraft": "Boeing 787"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "9cf6d16dca7445e4ba7b475012076900"
+    },
+    {
+      "price": {
+        "amount": 992.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Vueling",
+        "duration_minutes": 710,
+        "segments": [
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "8059",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T14:00:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T13:00:00Z",
+            "arrival_airport": "LHR",
+            "arrival_time_local": "2026-12-11T14:25:00",
+            "arrival_timezone": "Europe/London",
+            "arrival_time_utc": "2026-12-11T14:25:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "BA",
+            "flight_number": "113",
+            "operating_carrier_name": "British Airways",
+            "departure_airport": "LHR",
+            "departure_time_local": "2026-12-11T16:40:00",
+            "departure_timezone": "Europe/London",
+            "departure_time_utc": "2026-12-11T16:40:00Z",
+            "arrival_airport": "JFK",
+            "arrival_time_local": "2026-12-11T19:50:00",
+            "arrival_timezone": "America/New_York",
+            "arrival_time_utc": "2026-12-12T00:50:00Z",
+            "duration_minutes": 490,
+            "aircraft": "Boeing 787-10"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "a78c3bbff5ed4cffb57fd8ca3f76f5ff"
+    },
+    {
+      "price": {
+        "amount": 1005.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Iberia",
+        "duration_minutes": 745,
+        "segments": [
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "572",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T12:50:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T11:50:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-11T14:55:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-11T13:55:00Z",
+            "duration_minutes": 125,
+            "aircraft": "Airbus A321"
+          },
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "325",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-11T16:00:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-11T15:00:00Z",
+            "arrival_airport": "JFK",
+            "arrival_time_local": "2026-12-11T19:15:00",
+            "arrival_timezone": "America/New_York",
+            "arrival_time_utc": "2026-12-12T00:15:00Z",
+            "duration_minutes": 555,
+            "aircraft": "Airbus A321neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "390913dae6e8474e9223ca9f7a4353e1"
+    },
+    {
+      "price": {
+        "amount": 1005.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Iberia",
+        "duration_minutes": 850,
+        "segments": [
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "584",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T07:25:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T06:25:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-11T09:30:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-11T08:30:00Z",
+            "duration_minutes": 125,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "211",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-11T12:20:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-11T11:20:00Z",
+            "arrival_airport": "JFK",
+            "arrival_time_local": "2026-12-11T15:35:00",
+            "arrival_timezone": "America/New_York",
+            "arrival_time_utc": "2026-12-11T20:35:00Z",
+            "duration_minutes": 555,
+            "aircraft": "Airbus A321neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "0334071d47d34dd4b44f0af7f799ecdf"
+    }
+  ],
+  "observed_at": "2026-11-20T16:04:36.142627Z"
+}

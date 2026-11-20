@@ -1,0 +1,337 @@
+{
+  "origin": "MRS",
+  "destination": "BKK",
+  "departure_date": "2026-12-11",
+  "return_date": "2026-12-18",
+  "itineraries": [
+    {
+      "price": {
+        "amount": 1157.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Turkish Airlines",
+        "duration_minutes": 1740,
+        "segments": [
+          {
+            "marketing_carrier_code": "TK",
+            "flight_number": "1368",
+            "operating_carrier_name": "Turkish Airlines",
+            "departure_airport": "MRS",
+            "departure_time_local": "2026-12-11T18:20:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T17:20:00Z",
+            "arrival_airport": "IST",
+            "arrival_time_local": "2026-12-11T23:35:00",
+            "arrival_timezone": "Europe/Istanbul",
+            "arrival_time_utc": "2026-12-11T20:35:00Z",
+            "duration_minutes": 195,
+            "aircraft": "Airbus A321 (Sharklets)"
+          },
+          {
+            "marketing_carrier_code": "TG",
+            "flight_number": "901",
+            "operating_carrier_name": "THAI",
+            "departure_airport": "IST",
+            "departure_time_local": "2026-12-12T16:30:00",
+            "departure_timezone": "Europe/Istanbul",
+            "departure_time_utc": "2026-12-12T13:30:00Z",
+            "arrival_airport": "BKK",
+            "arrival_time_local": "2026-12-13T05:20:00",
+            "arrival_timezone": "Asia/Bangkok",
+            "arrival_time_utc": "2026-12-12T22:20:00Z",
+            "duration_minutes": 530,
+            "aircraft": "Airbus A350"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Turkish Airlines",
+        "duration_minutes": 1805,
+        "segments": [
+          {
+            "marketing_carrier_code": "TK",
+            "flight_number": "65",
+            "operating_carrier_name": "Turkish Airlines",
+            "departure_airport": "BKK",
+            "departure_time_local": "2026-12-18T10:20:00",
+            "departure_timezone": "Asia/Bangkok",
+            "departure_time_utc": "2026-12-18T03:20:00Z",
+            "arrival_airport": "IST",
+            "arrival_time_local": "2026-12-18T16:45:00",
+            "arrival_timezone": "Europe/Istanbul",
+            "arrival_time_utc": "2026-12-18T13:45:00Z",
+            "duration_minutes": 625,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "TK",
+            "flight_number": "1365",
+            "operating_carrier_name": "Turkish Airlines",
+            "departure_airport": "IST",
+            "departure_time_local": "2026-12-19T08:55:00",
+            "departure_timezone": "Europe/Istanbul",
+            "departure_time_utc": "2026-12-19T05:55:00Z",
+            "arrival_airport": "MRS",
+            "arrival_time_local": "2026-12-19T10:25:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T09:25:00Z",
+            "duration_minutes": 210,
+            "aircraft": "Airbus A321 (Sharklets)"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "5d6e7225d564492ab5ed218b8ea4cd1d"
+    },
+    {
+      "price": {
+        "amount": 1324.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Turkish Airlines",
+        "duration_minutes": 1740,
+        "segments": [
+          {
+            "marketing_carrier_code": "TK",
+            "flight_number": "1368",
+            "operating_carrier_name": "Turkish Airlines",
+            "departure_airport": "MRS",
+            "departure_time_local": "2026-12-11T18:20:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T17:20:00Z",
+            "arrival_airport": "IST",
+            "arrival_time_local": "2026-12-11T23:35:00",
+            "arrival_timezone": "Europe/Istanbul",
+            "arrival_time_utc": "2026-12-11T20:35:00Z",
+            "duration_minutes": 195,
+            "aircraft": "Airbus A321 (Sharklets)"
+          },
+          {
+            "marketing_carrier_code": "TG",
+            "flight_number": "901",
+            "operating_carrier_name": "THAI",
+            "departure_airport": "IST",
+            "departure_time_local": "2026-12-12T16:30:00",
+            "departure_timezone": "Europe/Istanbul",
+            "departure_time_utc": "2026-12-12T13:30:00Z",
+            "arrival_airport": "BKK",
+            "arrival_time_local": "2026-12-13T05:20:00",
+            "arrival_timezone": "Asia/Bangkok",
+            "arrival_time_utc": "2026-12-12T22:20:00Z",
+            "duration_minutes": 530,
+            "aircraft": "Airbus A350"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "THAI",
+        "duration_minutes": 1410,
+        "segments": [
+          {
+            "marketing_carrier_code": "TG",
+            "flight_number": "900",
+            "operating_carrier_name": "THAI",
+            "departure_airport": "BKK",
+            "departure_time_local": "2026-12-18T23:45:00",
+            "departure_timezone": "Asia/Bangkok",
+            "departure_time_utc": "2026-12-18T16:45:00Z",
+            "arrival_airport": "IST",
+            "arrival_time_local": "2026-12-19T06:05:00",
+            "arrival_timezone": "Europe/Istanbul",
+            "arrival_time_utc": "2026-12-19T03:05:00Z",
+            "duration_minutes": 620,
+            "aircraft": "Airbus A350"
+          },
+          {
+            "marketing_carrier_code": "TK",
+            "flight_number": "1367",
+            "operating_carrier_name": "Turkish Airlines",
+            "departure_airport": "IST",
+            "departure_time_local": "2026-12-19T15:50:00",
+            "departure_timezone": "Europe/Istanbul",
+            "departure_time_utc": "2026-12-19T12:50:00Z",
+            "arrival_airport": "MRS",
+            "arrival_time_local": "2026-12-19T17:15:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T16:15:00Z",
+            "duration_minutes": 205,
+            "aircraft": "Airbus A321 (Sharklets)"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "2495a615d6514bc8b630447b2e316b3e"
+    },
+    {
+      "price": {
+        "amount": 2007.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Turkish Airlines",
+        "duration_minutes": 1740,
+        "segments": [
+          {
+            "marketing_carrier_code": "TK",
+            "flight_number": "1368",
+            "operating_carrier_name": "Turkish Airlines",
+            "departure_airport": "MRS",
+            "departure_time_local": "2026-12-11T18:20:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T17:20:00Z",
+            "arrival_airport": "IST",
+            "arrival_time_local": "2026-12-11T23:35:00",
+            "arrival_timezone": "Europe/Istanbul",
+            "arrival_time_utc": "2026-12-11T20:35:00Z",
+            "duration_minutes": 195,
+            "aircraft": "Airbus A321 (Sharklets)"
+          },
+          {
+            "marketing_carrier_code": "TG",
+            "flight_number": "901",
+            "operating_carrier_name": "THAI",
+            "departure_airport": "IST",
+            "departure_time_local": "2026-12-12T16:30:00",
+            "departure_timezone": "Europe/Istanbul",
+            "departure_time_utc": "2026-12-12T13:30:00Z",
+            "arrival_airport": "BKK",
+            "arrival_time_local": "2026-12-13T05:20:00",
+            "arrival_timezone": "Asia/Bangkok",
+            "arrival_time_utc": "2026-12-12T22:20:00Z",
+            "duration_minutes": 530,
+            "aircraft": "Airbus A350"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "THAI",
+        "duration_minutes": 1000,
+        "segments": [
+          {
+            "marketing_carrier_code": "TG",
+            "flight_number": "900",
+            "operating_carrier_name": "THAI",
+            "departure_airport": "BKK",
+            "departure_time_local": "2026-12-18T23:45:00",
+            "departure_timezone": "Asia/Bangkok",
+            "departure_time_utc": "2026-12-18T16:45:00Z",
+            "arrival_airport": "IST",
+            "arrival_time_local": "2026-12-19T06:05:00",
+            "arrival_timezone": "Europe/Istanbul",
+            "arrival_time_utc": "2026-12-19T03:05:00Z",
+            "duration_minutes": 620,
+            "aircraft": "Airbus A350"
+          },
+          {
+            "marketing_carrier_code": "TK",
+            "flight_number": "1365",
+            "operating_carrier_name": "Turkish Airlines",
+            "departure_airport": "IST",
+            "departure_time_local": "2026-12-19T08:55:00",
+            "departure_timezone": "Europe/Istanbul",
+            "departure_time_utc": "2026-12-19T05:55:00Z",
+            "arrival_airport": "MRS",
+            "arrival_time_local": "2026-12-19T10:25:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T09:25:00Z",
+            "duration_minutes": 210,
+            "aircraft": "Airbus A321 (Sharklets)"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "c2ac71ff090d43828fa46fad766e7f3d"
+    },
+    {
+      "price": {
+        "amount": 2888.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Turkish Airlines",
+        "duration_minutes": 1740,
+        "segments": [
+          {
+            "marketing_carrier_code": "TK",
+            "flight_number": "1368",
+            "operating_carrier_name": "Turkish Airlines",
+            "departure_airport": "MRS",
+            "departure_time_local": "2026-12-11T18:20:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T17:20:00Z",
+            "arrival_airport": "IST",
+            "arrival_time_local": "2026-12-11T23:35:00",
+            "arrival_timezone": "Europe/Istanbul",
+            "arrival_time_utc": "2026-12-11T20:35:00Z",
+            "duration_minutes": 195,
+            "aircraft": "Airbus A321 (Sharklets)"
+          },
+          {
+            "marketing_carrier_code": "TG",
+            "flight_number": "901",
+            "operating_carrier_name": "THAI",
+            "departure_airport": "IST",
+            "departure_time_local": "2026-12-12T16:30:00",
+            "departure_timezone": "Europe/Istanbul",
+            "departure_time_utc": "2026-12-12T13:30:00Z",
+            "arrival_airport": "BKK",
+            "arrival_time_local": "2026-12-13T05:20:00",
+            "arrival_timezone": "Asia/Bangkok",
+            "arrival_time_utc": "2026-12-12T22:20:00Z",
+            "duration_minutes": 530,
+            "aircraft": "Airbus A350"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "THAI",
+        "duration_minutes": 1005,
+        "segments": [
+          {
+            "marketing_carrier_code": "TG",
+            "flight_number": "934",
+            "operating_carrier_name": "THAI",
+            "departure_airport": "BKK",
+            "departure_time_local": "2026-12-18T00:30:00",
+            "departure_timezone": "Asia/Bangkok",
+            "departure_time_utc": "2026-12-17T17:30:00Z",
+            "arrival_airport": "BRU",
+            "arrival_time_local": "2026-12-18T07:05:00",
+            "arrival_timezone": "Europe/Brussels",
+            "arrival_time_utc": "2026-12-18T06:05:00Z",
+            "duration_minutes": 755,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "SN",
+            "flight_number": "3597",
+            "operating_carrier_name": "Brussels Airlines",
+            "departure_airport": "BRU",
+            "departure_time_local": "2026-12-18T09:35:00",
+            "departure_timezone": "Europe/Brussels",
+            "departure_time_utc": "2026-12-18T08:35:00Z",
+            "arrival_airport": "MRS",
+            "arrival_time_local": "2026-12-18T11:15:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T10:15:00Z",
+            "duration_minutes": 100,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "f6a8da51775a449c8f7764dda3b0ec55"
+    }
+  ],
+  "observed_at": "2026-11-20T16:19:06.857006Z"
+}
