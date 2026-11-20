@@ -10,8 +10,7 @@ up:
 donnees:
 	docker compose exec backend python -m service_externe.api.collecte_ignav_2 importer
 	docker compose exec backend python -m service_externe.api.charger_referentiel
-	docker compose exec backend python -m service_externe.api.embedding.calculer_embeddings
-
+	docker compose exec backend python -m service_externe.embedding.calculer_embeddings
 # Tout d'un coup : build + démarrage + import
 init: build up donnees
 
