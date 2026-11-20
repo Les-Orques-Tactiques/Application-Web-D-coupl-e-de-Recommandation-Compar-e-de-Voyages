@@ -15,13 +15,13 @@ type PropsCarteVol = {
     favori: boolean;
     avis?: Avis;
     dates: string;
+    allerRetour: boolean;
     onBasculerFavori: () => void;
     onDonnerAvis: (avis: Avis) => void;
     onVoir: () => void;
 };
 
-export function CarteVol({ vol, rang, meilleur, favori, avis, dates, onBasculerFavori, onDonnerAvis, onVoir }: PropsCarteVol) {
-    return (
+export function CarteVol({ vol, rang, meilleur, favori, avis, dates, allerRetour, onBasculerFavori, onDonnerAvis, onVoir }: PropsCarteVol) {    return (
         <article className={`rounded-xl border bg-white p-5 ${meilleur ? "border-principal/40" : "border-trait"}`}>
             {/* Ligne 1 : rang, compagnie, badge, favori */}
             <div className="flex items-center gap-2 text-[11px]">
@@ -62,8 +62,7 @@ export function CarteVol({ vol, rang, meilleur, favori, avis, dates, onBasculerF
                 </div>
                 <div className="col-span-3 text-right sm:col-span-1">
                     <p className="text-2xl tracking-tight text-encre">{vol.prix} €</p>
-                    <p className="text-[9px] text-attenue">aller-retour / pers.</p>
-                </div>
+                    <p className="text-[9px] text-attenue">{allerRetour ? "aller-retour" : "aller simple"} / pers.</p>                </div>
             </div>
 
             {/* Explication de la recommandation */}

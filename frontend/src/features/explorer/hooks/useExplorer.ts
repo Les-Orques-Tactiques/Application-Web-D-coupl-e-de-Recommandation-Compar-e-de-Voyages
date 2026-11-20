@@ -36,6 +36,8 @@ export function versRequeteApi(c: CriteresRecherche): RechercheVols {
     passagers: c.nb_passagers,
     budget: c.budget_max,
     escales_max: c.direct_seulement ? 0 : null,
+    tri: "pertinence",
+    tolerance_jours: 14,
   };
 }
 

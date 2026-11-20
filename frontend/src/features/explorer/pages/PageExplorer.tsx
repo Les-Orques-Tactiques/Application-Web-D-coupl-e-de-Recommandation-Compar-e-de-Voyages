@@ -18,17 +18,28 @@ import {
   type Vol,
 } from "@/features/explorer";
 
+// Date au format YYYY-MM-DD, décalée de n jours à partir d'aujourd'hui (heure locale)
+function dateDans(jours: number): string {
+  const d = new Date();
+  d.setDate(d.getDate() + jours);
+  const mois = String(d.getMonth() + 1).padStart(2, "0");
+  const jour = String(d.getDate()).padStart(2, "0");
+  return `${d.getFullYear()}-${mois}-${jour}`;
+}
+
 // Valeurs du formulaire à l'ouverture de la page
-const CRITERES_PAR_DEFAUT: CriteresRecherche = {
-    origine: "LYS",
-    destination: "LIS",
-    date_depart: "2027-06-12",
-    date_retour: "2027-06-19",
+function criteresParDefaut(): CriteresRecherche {
+  return {
+    origine: "",              // rempli par aeroport_habituel
+    destination: "",
+    date_depart: dateDans(30),
+    date_retour: dateDans(37),
     aller_retour: true,
     nb_passagers: 1,
-    budget_max: 220,
-    direct_seulement: true,
-};
+    budget_max: 500,          // repli si aucun budget en préférences
+    direct_seulement: false,  // remplacé par escales_max si renseigné
+  };
+}
 
 // "satisfies" : TypeScript vérifie qu'il y a bien un titre pour CHAQUE onglet.
 const TITRES = {
@@ -48,8 +59,7 @@ export default function PageExplorer() {
 
   // Les critères sont gardés ici (et pas dans le formulaire) pour que
   // « Reprendre » dans l'historique puisse les modifier.
-  const [criteres, setCriteres] = useState(CRITERES_PAR_DEFAUT);
-  // Message affiché si le formulaire est incomplet
+  const [criteres, setCriteres] = useState(criteresParDefaut);  // Message affiché si le formulaire est incomplet
   const [erreurSaisie, setErreurSaisie] = useState<string | null>(null);
   // Passe à true dès qu'une action de la personne a touché au formulaire
   const modifieParUtilisateur = useRef(false);

@@ -176,6 +176,7 @@ function ContenuResultats({ criteres }: ProprietesContenu) {
                                 favori={recherche.favoris.includes(vol.id)}
                                 avis={avis[vol.id]}
                                 dates={dates}
+                                allerRetour={recherche.saisie.allerRetour}   // <- ajout
                                 // 🆕 void : basculerFavori peut maintenant être asynchrone (appel API)
                                 onBasculerFavori={() => void recherche.basculerFavori(vol.id)}
                                 onDonnerAvis={valeur => setAvis(precedents => ({ ...precedents, [vol.id]: valeur }))}
