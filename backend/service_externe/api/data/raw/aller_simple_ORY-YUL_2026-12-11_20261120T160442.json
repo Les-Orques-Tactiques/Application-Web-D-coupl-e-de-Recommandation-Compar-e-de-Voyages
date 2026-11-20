@@ -1,0 +1,436 @@
+{
+  "origin": "ORY",
+  "destination": "YUL",
+  "departure_date": "2026-12-11",
+  "itineraries": [
+    {
+      "price": {
+        "amount": 307.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "French bee",
+        "duration_minutes": 465,
+        "segments": [
+          {
+            "marketing_carrier_code": "BF",
+            "flight_number": "760",
+            "operating_carrier_name": "French bee",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T17:55:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T16:55:00Z",
+            "arrival_airport": "YUL",
+            "arrival_time_local": "2026-12-11T19:40:00",
+            "arrival_timezone": "America/Toronto",
+            "arrival_time_utc": "2026-12-12T00:40:00Z",
+            "duration_minutes": 465,
+            "aircraft": "Airbus A350"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "e4900c5a1cf94cf8b2c3dc99750a8d89"
+    },
+    {
+      "price": {
+        "amount": 570.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Tap Air Portugal",
+        "duration_minutes": 1885,
+        "segments": [
+          {
+            "marketing_carrier_code": "TP",
+            "flight_number": "455",
+            "operating_carrier_name": "Tap Air Portugal",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T18:20:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T17:20:00Z",
+            "arrival_airport": "OPO",
+            "arrival_time_local": "2026-12-11T19:35:00",
+            "arrival_timezone": "Europe/Lisbon",
+            "arrival_time_utc": "2026-12-11T19:35:00Z",
+            "duration_minutes": 135,
+            "aircraft": "Airbus A320neo"
+          },
+          {
+            "marketing_carrier_code": "S4",
+            "flight_number": "171",
+            "operating_carrier_name": "Azores Airlines",
+            "departure_airport": "OPO",
+            "departure_time_local": "2026-12-12T12:40:00",
+            "departure_timezone": "Europe/Lisbon",
+            "departure_time_utc": "2026-12-12T12:40:00Z",
+            "arrival_airport": "PDL",
+            "arrival_time_local": "2026-12-12T14:10:00",
+            "arrival_timezone": "Atlantic/Azores",
+            "arrival_time_utc": "2026-12-12T15:10:00Z",
+            "duration_minutes": 150,
+            "aircraft": "Airbus A321neo"
+          },
+          {
+            "marketing_carrier_code": "S4",
+            "flight_number": "327",
+            "operating_carrier_name": "Azores Airlines",
+            "departure_airport": "PDL",
+            "departure_time_local": "2026-12-12T17:40:00",
+            "departure_timezone": "Atlantic/Azores",
+            "departure_time_utc": "2026-12-12T18:40:00Z",
+            "arrival_airport": "YUL",
+            "arrival_time_local": "2026-12-12T19:45:00",
+            "arrival_timezone": "America/Toronto",
+            "arrival_time_utc": "2026-12-13T00:45:00Z",
+            "duration_minutes": 365,
+            "aircraft": "Airbus A321neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "a47c9056d4ad4d2d97a5eb353e13c5f8"
+    },
+    {
+      "price": {
+        "amount": 570.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Tap Air Portugal",
+        "duration_minutes": 1885,
+        "segments": [
+          {
+            "marketing_carrier_code": "TP",
+            "flight_number": "455",
+            "operating_carrier_name": "Tap Air Portugal",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T18:20:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T17:20:00Z",
+            "arrival_airport": "OPO",
+            "arrival_time_local": "2026-12-11T19:35:00",
+            "arrival_timezone": "Europe/Lisbon",
+            "arrival_time_utc": "2026-12-11T19:35:00Z",
+            "duration_minutes": 135,
+            "aircraft": "Airbus A320neo"
+          },
+          {
+            "marketing_carrier_code": "S4",
+            "flight_number": "175",
+            "operating_carrier_name": "Azores Airlines",
+            "departure_airport": "OPO",
+            "departure_time_local": "2026-12-11T21:55:00",
+            "departure_timezone": "Europe/Lisbon",
+            "departure_time_utc": "2026-12-11T21:55:00Z",
+            "arrival_airport": "PDL",
+            "arrival_time_local": "2026-12-11T23:25:00",
+            "arrival_timezone": "Atlantic/Azores",
+            "arrival_time_utc": "2026-12-12T00:25:00Z",
+            "duration_minutes": 150,
+            "aircraft": "Airbus A321neo"
+          },
+          {
+            "marketing_carrier_code": "S4",
+            "flight_number": "327",
+            "operating_carrier_name": "Azores Airlines",
+            "departure_airport": "PDL",
+            "departure_time_local": "2026-12-12T17:40:00",
+            "departure_timezone": "Atlantic/Azores",
+            "departure_time_utc": "2026-12-12T18:40:00Z",
+            "arrival_airport": "YUL",
+            "arrival_time_local": "2026-12-12T19:45:00",
+            "arrival_timezone": "America/Toronto",
+            "arrival_time_utc": "2026-12-13T00:45:00Z",
+            "duration_minutes": 365,
+            "aircraft": "Airbus A321neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "8f92c3f2bbba431bb763773b80ed1d60"
+    },
+    {
+      "price": {
+        "amount": 588.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Tap Air Portugal",
+        "duration_minutes": 1750,
+        "segments": [
+          {
+            "marketing_carrier_code": "TP",
+            "flight_number": "439",
+            "operating_carrier_name": "Tap Air Portugal",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T20:35:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T19:35:00Z",
+            "arrival_airport": "LIS",
+            "arrival_time_local": "2026-12-11T22:10:00",
+            "arrival_timezone": "Europe/Lisbon",
+            "arrival_time_utc": "2026-12-11T22:10:00Z",
+            "duration_minutes": 155,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "S4",
+            "flight_number": "121",
+            "operating_carrier_name": "Azores Airlines",
+            "departure_airport": "LIS",
+            "departure_time_local": "2026-12-12T06:00:00",
+            "departure_timezone": "Europe/Lisbon",
+            "departure_time_utc": "2026-12-12T06:00:00Z",
+            "arrival_airport": "PDL",
+            "arrival_time_local": "2026-12-12T07:30:00",
+            "arrival_timezone": "Atlantic/Azores",
+            "arrival_time_utc": "2026-12-12T08:30:00Z",
+            "duration_minutes": 150,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "S4",
+            "flight_number": "327",
+            "operating_carrier_name": "Azores Airlines",
+            "departure_airport": "PDL",
+            "departure_time_local": "2026-12-12T17:40:00",
+            "departure_timezone": "Atlantic/Azores",
+            "departure_time_utc": "2026-12-12T18:40:00Z",
+            "arrival_airport": "YUL",
+            "arrival_time_local": "2026-12-12T19:45:00",
+            "arrival_timezone": "America/Toronto",
+            "arrival_time_utc": "2026-12-13T00:45:00Z",
+            "duration_minutes": 365,
+            "aircraft": "Airbus A321neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "ad292545111746c0ac727b27ac46bffa"
+    },
+    {
+      "price": {
+        "amount": 588.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Tap Air Portugal",
+        "duration_minutes": 1750,
+        "segments": [
+          {
+            "marketing_carrier_code": "TP",
+            "flight_number": "439",
+            "operating_carrier_name": "Tap Air Portugal",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T20:35:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T19:35:00Z",
+            "arrival_airport": "LIS",
+            "arrival_time_local": "2026-12-11T22:10:00",
+            "arrival_timezone": "Europe/Lisbon",
+            "arrival_time_utc": "2026-12-11T22:10:00Z",
+            "duration_minutes": 155,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "S4",
+            "flight_number": "125",
+            "operating_carrier_name": "Azores Airlines",
+            "departure_airport": "LIS",
+            "departure_time_local": "2026-12-12T14:05:00",
+            "departure_timezone": "Europe/Lisbon",
+            "departure_time_utc": "2026-12-12T14:05:00Z",
+            "arrival_airport": "PDL",
+            "arrival_time_local": "2026-12-12T15:35:00",
+            "arrival_timezone": "Atlantic/Azores",
+            "arrival_time_utc": "2026-12-12T16:35:00Z",
+            "duration_minutes": 150,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "S4",
+            "flight_number": "327",
+            "operating_carrier_name": "Azores Airlines",
+            "departure_airport": "PDL",
+            "departure_time_local": "2026-12-12T17:40:00",
+            "departure_timezone": "Atlantic/Azores",
+            "departure_time_utc": "2026-12-12T18:40:00Z",
+            "arrival_airport": "YUL",
+            "arrival_time_local": "2026-12-12T19:45:00",
+            "arrival_timezone": "America/Toronto",
+            "arrival_time_utc": "2026-12-13T00:45:00Z",
+            "duration_minutes": 365,
+            "aircraft": "Airbus A321neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "8223bf3f537440d397cc197e468011a0"
+    },
+    {
+      "price": {
+        "amount": 623.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Tap Air Portugal",
+        "duration_minutes": 1765,
+        "segments": [
+          {
+            "marketing_carrier_code": "TP",
+            "flight_number": "439",
+            "operating_carrier_name": "Tap Air Portugal",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T20:35:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T19:35:00Z",
+            "arrival_airport": "LIS",
+            "arrival_time_local": "2026-12-11T22:10:00",
+            "arrival_timezone": "Europe/Lisbon",
+            "arrival_time_utc": "2026-12-11T22:10:00Z",
+            "duration_minutes": 155,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "TP",
+            "flight_number": "217",
+            "operating_carrier_name": "Tap Air Portugal",
+            "departure_airport": "LIS",
+            "departure_time_local": "2026-12-12T11:55:00",
+            "departure_timezone": "Europe/Lisbon",
+            "departure_time_utc": "2026-12-12T11:55:00Z",
+            "arrival_airport": "BOS",
+            "arrival_time_local": "2026-12-12T14:55:00",
+            "arrival_timezone": "America/New_York",
+            "arrival_time_utc": "2026-12-12T19:55:00Z",
+            "duration_minutes": 480,
+            "aircraft": "Airbus A321neo"
+          },
+          {
+            "marketing_carrier_code": "AC",
+            "flight_number": "8611",
+            "operating_carrier_name": "Air Canada",
+            "departure_airport": "BOS",
+            "departure_time_local": "2026-12-12T18:35:00",
+            "departure_timezone": "America/New_York",
+            "departure_time_utc": "2026-12-12T23:35:00Z",
+            "arrival_airport": "YUL",
+            "arrival_time_local": "2026-12-12T20:00:00",
+            "arrival_timezone": "America/Toronto",
+            "arrival_time_utc": "2026-12-13T01:00:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Embraer 175"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "9baf85bfa715470981a6dd43a6d96514"
+    },
+    {
+      "price": {
+        "amount": 895.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Tunisair",
+        "duration_minutes": 1315,
+        "segments": [
+          {
+            "marketing_carrier_code": "TU",
+            "flight_number": "725",
+            "operating_carrier_name": "Tunisair",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T20:20:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T19:20:00Z",
+            "arrival_airport": "TUN",
+            "arrival_time_local": "2026-12-11T22:45:00",
+            "arrival_timezone": "Africa/Tunis",
+            "arrival_time_utc": "2026-12-11T21:45:00Z",
+            "duration_minutes": 145,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "TU",
+            "flight_number": "202",
+            "operating_carrier_name": "Tunisair",
+            "departure_airport": "TUN",
+            "departure_time_local": "2026-12-12T09:20:00",
+            "departure_timezone": "Africa/Tunis",
+            "departure_time_utc": "2026-12-12T08:20:00Z",
+            "arrival_airport": "YUL",
+            "arrival_time_local": "2026-12-12T12:15:00",
+            "arrival_timezone": "America/Toronto",
+            "arrival_time_utc": "2026-12-12T17:15:00Z",
+            "duration_minutes": 535,
+            "aircraft": "Airbus A330"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "f63211e17b12418685a2f94fff024ee1"
+    },
+    {
+      "price": {
+        "amount": 950.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Vueling",
+        "duration_minutes": 675,
+        "segments": [
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "8059",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T14:00:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T13:00:00Z",
+            "arrival_airport": "LHR",
+            "arrival_time_local": "2026-12-11T14:25:00",
+            "arrival_timezone": "Europe/London",
+            "arrival_time_utc": "2026-12-11T14:25:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "BA",
+            "flight_number": "95",
+            "operating_carrier_name": "British Airways",
+            "departure_airport": "LHR",
+            "departure_time_local": "2026-12-11T16:45:00",
+            "departure_timezone": "Europe/London",
+            "departure_time_utc": "2026-12-11T16:45:00Z",
+            "arrival_airport": "YUL",
+            "arrival_time_local": "2026-12-11T19:15:00",
+            "arrival_timezone": "America/Toronto",
+            "arrival_time_utc": "2026-12-12T00:15:00Z",
+            "duration_minutes": 450,
+            "aircraft": "Boeing 787"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "b3d71dc4b7914113b681312507ab6ac7"
+    }
+  ],
+  "observed_at": "2026-11-20T16:04:42.796917Z"
+}

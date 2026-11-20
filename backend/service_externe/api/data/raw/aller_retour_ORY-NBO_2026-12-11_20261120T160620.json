@@ -1,0 +1,1517 @@
+{
+  "origin": "ORY",
+  "destination": "NBO",
+  "departure_date": "2026-12-11",
+  "return_date": "2026-12-18",
+  "itineraries": [
+    {
+      "price": {
+        "amount": 1157.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Iberia",
+        "duration_minutes": 1700,
+        "segments": [
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "584",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T07:25:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T06:25:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-11T09:30:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-11T08:30:00Z",
+            "duration_minutes": 125,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "150",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-11T15:20:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-11T14:20:00Z",
+            "arrival_airport": "DOH",
+            "arrival_time_local": "2026-12-11T23:45:00",
+            "arrival_timezone": "Asia/Qatar",
+            "arrival_time_utc": "2026-12-11T20:45:00Z",
+            "duration_minutes": 385,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "1345",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "DOH",
+            "departure_time_local": "2026-12-12T08:40:00",
+            "departure_timezone": "Asia/Qatar",
+            "departure_time_utc": "2026-12-12T05:40:00Z",
+            "arrival_airport": "NBO",
+            "arrival_time_local": "2026-12-12T13:45:00",
+            "arrival_timezone": "Africa/Nairobi",
+            "arrival_time_utc": "2026-12-12T10:45:00Z",
+            "duration_minutes": 305,
+            "aircraft": "Boeing 787"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Qatar Airways",
+        "duration_minutes": 1600,
+        "segments": [
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "1346",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "NBO",
+            "departure_time_local": "2026-12-18T08:45:00",
+            "departure_timezone": "Africa/Nairobi",
+            "departure_time_utc": "2026-12-18T05:45:00Z",
+            "arrival_airport": "DOH",
+            "arrival_time_local": "2026-12-18T13:45:00",
+            "arrival_timezone": "Asia/Qatar",
+            "arrival_time_utc": "2026-12-18T10:45:00Z",
+            "duration_minutes": 300,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "151",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "DOH",
+            "departure_time_local": "2026-12-18T15:15:00",
+            "departure_timezone": "Asia/Qatar",
+            "departure_time_utc": "2026-12-18T12:15:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-18T20:45:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-18T19:45:00Z",
+            "duration_minutes": 450,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "569",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-19T07:20:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-19T06:20:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-19T09:25:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T08:25:00Z",
+            "duration_minutes": 125,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "fd0e973d5fab499fa657f9fc0d41efa9"
+    },
+    {
+      "price": {
+        "amount": 1188.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Iberia",
+        "duration_minutes": 1310,
+        "segments": [
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "584",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T07:25:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T06:25:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-11T09:30:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-11T08:30:00Z",
+            "duration_minutes": 125,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "150",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-11T15:20:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-11T14:20:00Z",
+            "arrival_airport": "DOH",
+            "arrival_time_local": "2026-12-11T23:45:00",
+            "arrival_timezone": "Asia/Qatar",
+            "arrival_time_utc": "2026-12-11T20:45:00Z",
+            "duration_minutes": 385,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "1335",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "DOH",
+            "departure_time_local": "2026-12-12T02:10:00",
+            "departure_timezone": "Asia/Qatar",
+            "departure_time_utc": "2026-12-11T23:10:00Z",
+            "arrival_airport": "NBO",
+            "arrival_time_local": "2026-12-12T07:15:00",
+            "arrival_timezone": "Africa/Nairobi",
+            "arrival_time_utc": "2026-12-12T04:15:00Z",
+            "duration_minutes": 305,
+            "aircraft": "Boeing 787"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Qatar Airways",
+        "duration_minutes": 1600,
+        "segments": [
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "1346",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "NBO",
+            "departure_time_local": "2026-12-18T08:45:00",
+            "departure_timezone": "Africa/Nairobi",
+            "departure_time_utc": "2026-12-18T05:45:00Z",
+            "arrival_airport": "DOH",
+            "arrival_time_local": "2026-12-18T13:45:00",
+            "arrival_timezone": "Asia/Qatar",
+            "arrival_time_utc": "2026-12-18T10:45:00Z",
+            "duration_minutes": 300,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "151",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "DOH",
+            "departure_time_local": "2026-12-18T15:15:00",
+            "departure_timezone": "Asia/Qatar",
+            "departure_time_utc": "2026-12-18T12:15:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-18T20:45:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-18T19:45:00Z",
+            "duration_minutes": 450,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "569",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-19T07:20:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-19T06:20:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-19T09:25:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T08:25:00Z",
+            "duration_minutes": 125,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "31473efe751f42c9a083d0868f884045"
+    },
+    {
+      "price": {
+        "amount": 1219.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Iberia",
+        "duration_minutes": 1700,
+        "segments": [
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "584",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T07:25:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T06:25:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-11T09:30:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-11T08:30:00Z",
+            "duration_minutes": 125,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "150",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-11T15:20:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-11T14:20:00Z",
+            "arrival_airport": "DOH",
+            "arrival_time_local": "2026-12-11T23:45:00",
+            "arrival_timezone": "Asia/Qatar",
+            "arrival_time_utc": "2026-12-11T20:45:00Z",
+            "duration_minutes": 385,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "1345",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "DOH",
+            "departure_time_local": "2026-12-12T08:40:00",
+            "departure_timezone": "Asia/Qatar",
+            "departure_time_utc": "2026-12-12T05:40:00Z",
+            "arrival_airport": "NBO",
+            "arrival_time_local": "2026-12-12T13:45:00",
+            "arrival_timezone": "Africa/Nairobi",
+            "arrival_time_utc": "2026-12-12T10:45:00Z",
+            "duration_minutes": 305,
+            "aircraft": "Boeing 787"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Qatar Airways",
+        "duration_minutes": 1260,
+        "segments": [
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "1336",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "NBO",
+            "departure_time_local": "2026-12-18T17:00:00",
+            "departure_timezone": "Africa/Nairobi",
+            "departure_time_utc": "2026-12-18T14:00:00Z",
+            "arrival_airport": "DOH",
+            "arrival_time_local": "2026-12-18T22:00:00",
+            "arrival_timezone": "Asia/Qatar",
+            "arrival_time_utc": "2026-12-18T19:00:00Z",
+            "duration_minutes": 300,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "147",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "DOH",
+            "departure_time_local": "2026-12-19T01:15:00",
+            "departure_timezone": "Asia/Qatar",
+            "departure_time_utc": "2026-12-18T22:15:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-19T06:45:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-19T05:45:00Z",
+            "duration_minutes": 450,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "571",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-19T09:55:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-19T08:55:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-19T12:00:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T11:00:00Z",
+            "duration_minutes": 125,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "39f369145dc9472da43d2bd2006b3a73"
+    },
+    {
+      "price": {
+        "amount": 1271.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Iberia",
+        "duration_minutes": 1310,
+        "segments": [
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "584",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T07:25:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T06:25:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-11T09:30:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-11T08:30:00Z",
+            "duration_minutes": 125,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "150",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-11T15:20:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-11T14:20:00Z",
+            "arrival_airport": "DOH",
+            "arrival_time_local": "2026-12-11T23:45:00",
+            "arrival_timezone": "Asia/Qatar",
+            "arrival_time_utc": "2026-12-11T20:45:00Z",
+            "duration_minutes": 385,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "1335",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "DOH",
+            "departure_time_local": "2026-12-12T02:10:00",
+            "departure_timezone": "Asia/Qatar",
+            "departure_time_utc": "2026-12-11T23:10:00Z",
+            "arrival_airport": "NBO",
+            "arrival_time_local": "2026-12-12T07:15:00",
+            "arrival_timezone": "Africa/Nairobi",
+            "arrival_time_utc": "2026-12-12T04:15:00Z",
+            "duration_minutes": 305,
+            "aircraft": "Boeing 787"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Qatar Airways",
+        "duration_minutes": 1260,
+        "segments": [
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "1336",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "NBO",
+            "departure_time_local": "2026-12-18T17:00:00",
+            "departure_timezone": "Africa/Nairobi",
+            "departure_time_utc": "2026-12-18T14:00:00Z",
+            "arrival_airport": "DOH",
+            "arrival_time_local": "2026-12-18T22:00:00",
+            "arrival_timezone": "Asia/Qatar",
+            "arrival_time_utc": "2026-12-18T19:00:00Z",
+            "duration_minutes": 300,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "147",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "DOH",
+            "departure_time_local": "2026-12-19T01:15:00",
+            "departure_timezone": "Asia/Qatar",
+            "departure_time_utc": "2026-12-18T22:15:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-19T06:45:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-19T05:45:00Z",
+            "duration_minutes": 450,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "571",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-19T09:55:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-19T08:55:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-19T12:00:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T11:00:00Z",
+            "duration_minutes": 125,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "4a0123cfec5644299a39bf82d151d114"
+    },
+    {
+      "price": {
+        "amount": 1271.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Iberia",
+        "duration_minutes": 1310,
+        "segments": [
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "584",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T07:25:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T06:25:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-11T09:30:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-11T08:30:00Z",
+            "duration_minutes": 125,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "150",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-11T15:20:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-11T14:20:00Z",
+            "arrival_airport": "DOH",
+            "arrival_time_local": "2026-12-11T23:45:00",
+            "arrival_timezone": "Asia/Qatar",
+            "arrival_time_utc": "2026-12-11T20:45:00Z",
+            "duration_minutes": 385,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "1335",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "DOH",
+            "departure_time_local": "2026-12-12T02:10:00",
+            "departure_timezone": "Asia/Qatar",
+            "departure_time_utc": "2026-12-11T23:10:00Z",
+            "arrival_airport": "NBO",
+            "arrival_time_local": "2026-12-12T07:15:00",
+            "arrival_timezone": "Africa/Nairobi",
+            "arrival_time_utc": "2026-12-12T04:15:00Z",
+            "duration_minutes": 305,
+            "aircraft": "Boeing 787"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Qatar Airways",
+        "duration_minutes": 1850,
+        "segments": [
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "1346",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "NBO",
+            "departure_time_local": "2026-12-18T08:45:00",
+            "departure_timezone": "Africa/Nairobi",
+            "departure_time_utc": "2026-12-18T05:45:00Z",
+            "arrival_airport": "DOH",
+            "arrival_time_local": "2026-12-18T13:45:00",
+            "arrival_timezone": "Asia/Qatar",
+            "arrival_time_utc": "2026-12-18T10:45:00Z",
+            "duration_minutes": 300,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "147",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "DOH",
+            "departure_time_local": "2026-12-19T01:15:00",
+            "departure_timezone": "Asia/Qatar",
+            "departure_time_utc": "2026-12-18T22:15:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-19T06:45:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-19T05:45:00Z",
+            "duration_minutes": 450,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "573",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-19T11:30:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-19T10:30:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-19T13:35:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T12:35:00Z",
+            "duration_minutes": 125,
+            "aircraft": "Airbus A321"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "3306fe724bf54d448568cde2ce3f1bdf"
+    },
+    {
+      "price": {
+        "amount": 1271.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Iberia",
+        "duration_minutes": 1700,
+        "segments": [
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "584",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T07:25:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T06:25:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-11T09:30:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-11T08:30:00Z",
+            "duration_minutes": 125,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "150",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-11T15:20:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-11T14:20:00Z",
+            "arrival_airport": "DOH",
+            "arrival_time_local": "2026-12-11T23:45:00",
+            "arrival_timezone": "Asia/Qatar",
+            "arrival_time_utc": "2026-12-11T20:45:00Z",
+            "duration_minutes": 385,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "1345",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "DOH",
+            "departure_time_local": "2026-12-12T08:40:00",
+            "departure_timezone": "Asia/Qatar",
+            "departure_time_utc": "2026-12-12T05:40:00Z",
+            "arrival_airport": "NBO",
+            "arrival_time_local": "2026-12-12T13:45:00",
+            "arrival_timezone": "Africa/Nairobi",
+            "arrival_time_utc": "2026-12-12T10:45:00Z",
+            "duration_minutes": 305,
+            "aircraft": "Boeing 787"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "British Airways",
+        "duration_minutes": 2650,
+        "segments": [
+          {
+            "marketing_carrier_code": "BA",
+            "flight_number": "64",
+            "operating_carrier_name": "British Airways",
+            "departure_airport": "NBO",
+            "departure_time_local": "2026-12-18T23:50:00",
+            "departure_timezone": "Africa/Nairobi",
+            "departure_time_utc": "2026-12-18T20:50:00Z",
+            "arrival_airport": "LHR",
+            "arrival_time_local": "2026-12-19T06:15:00",
+            "arrival_timezone": "Europe/London",
+            "arrival_time_utc": "2026-12-19T06:15:00Z",
+            "duration_minutes": 565,
+            "aircraft": "Airbus A350"
+          },
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "8058",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "LHR",
+            "departure_time_local": "2026-12-20T15:30:00",
+            "departure_timezone": "Europe/London",
+            "departure_time_utc": "2026-12-20T15:30:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-20T18:00:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-20T17:00:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "57e2dddcc826472d9072387fc80a68c7"
+    },
+    {
+      "price": {
+        "amount": 1294.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Iberia",
+        "duration_minutes": 1700,
+        "segments": [
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "584",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T07:25:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T06:25:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-11T09:30:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-11T08:30:00Z",
+            "duration_minutes": 125,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "150",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-11T15:20:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-11T14:20:00Z",
+            "arrival_airport": "DOH",
+            "arrival_time_local": "2026-12-11T23:45:00",
+            "arrival_timezone": "Asia/Qatar",
+            "arrival_time_utc": "2026-12-11T20:45:00Z",
+            "duration_minutes": 385,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "1345",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "DOH",
+            "departure_time_local": "2026-12-12T08:40:00",
+            "departure_timezone": "Asia/Qatar",
+            "departure_time_utc": "2026-12-12T05:40:00Z",
+            "arrival_airport": "NBO",
+            "arrival_time_local": "2026-12-12T13:45:00",
+            "arrival_timezone": "Africa/Nairobi",
+            "arrival_time_utc": "2026-12-12T10:45:00Z",
+            "duration_minutes": 305,
+            "aircraft": "Boeing 787"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "British Airways",
+        "duration_minutes": 1195,
+        "segments": [
+          {
+            "marketing_carrier_code": "BA",
+            "flight_number": "64",
+            "operating_carrier_name": "British Airways",
+            "departure_airport": "NBO",
+            "departure_time_local": "2026-12-18T23:50:00",
+            "departure_timezone": "Africa/Nairobi",
+            "departure_time_utc": "2026-12-18T20:50:00Z",
+            "arrival_airport": "LHR",
+            "arrival_time_local": "2026-12-19T06:15:00",
+            "arrival_timezone": "Europe/London",
+            "arrival_time_utc": "2026-12-19T06:15:00Z",
+            "duration_minutes": 565,
+            "aircraft": "Airbus A350"
+          },
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "8058",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "LHR",
+            "departure_time_local": "2026-12-19T15:15:00",
+            "departure_timezone": "Europe/London",
+            "departure_time_utc": "2026-12-19T15:15:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-19T17:45:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T16:45:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "f1eaced08a0a43af91e671e4752a0dd4"
+    },
+    {
+      "price": {
+        "amount": 1332.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Iberia",
+        "duration_minutes": 1700,
+        "segments": [
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "584",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T07:25:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T06:25:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-11T09:30:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-11T08:30:00Z",
+            "duration_minutes": 125,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "150",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-11T15:20:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-11T14:20:00Z",
+            "arrival_airport": "DOH",
+            "arrival_time_local": "2026-12-11T23:45:00",
+            "arrival_timezone": "Asia/Qatar",
+            "arrival_time_utc": "2026-12-11T20:45:00Z",
+            "duration_minutes": 385,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "1345",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "DOH",
+            "departure_time_local": "2026-12-12T08:40:00",
+            "departure_timezone": "Asia/Qatar",
+            "departure_time_utc": "2026-12-12T05:40:00Z",
+            "arrival_airport": "NBO",
+            "arrival_time_local": "2026-12-12T13:45:00",
+            "arrival_timezone": "Africa/Nairobi",
+            "arrival_time_utc": "2026-12-12T10:45:00Z",
+            "duration_minutes": 305,
+            "aircraft": "Boeing 787"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Qatar Airways",
+        "duration_minutes": 1115,
+        "segments": [
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "1342",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "NBO",
+            "departure_time_local": "2026-12-18T01:35:00",
+            "departure_timezone": "Africa/Nairobi",
+            "departure_time_utc": "2026-12-17T22:35:00Z",
+            "arrival_airport": "DOH",
+            "arrival_time_local": "2026-12-18T06:35:00",
+            "arrival_timezone": "Asia/Qatar",
+            "arrival_time_utc": "2026-12-18T03:35:00Z",
+            "duration_minutes": 300,
+            "aircraft": "Boeing 777"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "149",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "DOH",
+            "departure_time_local": "2026-12-18T08:20:00",
+            "departure_timezone": "Asia/Qatar",
+            "departure_time_utc": "2026-12-18T05:20:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-18T13:50:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-18T12:50:00Z",
+            "duration_minutes": 450,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "579",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-18T16:05:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-18T15:05:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-18T18:10:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T17:10:00Z",
+            "duration_minutes": 125,
+            "aircraft": "Airbus A321"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "df0fa2a339044986912dceb93d71675f"
+    },
+    {
+      "price": {
+        "amount": 1347.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Iberia",
+        "duration_minutes": 1310,
+        "segments": [
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "584",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T07:25:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T06:25:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-11T09:30:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-11T08:30:00Z",
+            "duration_minutes": 125,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "150",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-11T15:20:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-11T14:20:00Z",
+            "arrival_airport": "DOH",
+            "arrival_time_local": "2026-12-11T23:45:00",
+            "arrival_timezone": "Asia/Qatar",
+            "arrival_time_utc": "2026-12-11T20:45:00Z",
+            "duration_minutes": 385,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "1335",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "DOH",
+            "departure_time_local": "2026-12-12T02:10:00",
+            "departure_timezone": "Asia/Qatar",
+            "departure_time_utc": "2026-12-11T23:10:00Z",
+            "arrival_airport": "NBO",
+            "arrival_time_local": "2026-12-12T07:15:00",
+            "arrival_timezone": "Africa/Nairobi",
+            "arrival_time_utc": "2026-12-12T04:15:00Z",
+            "duration_minutes": 305,
+            "aircraft": "Boeing 787"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "British Airways",
+        "duration_minutes": 1195,
+        "segments": [
+          {
+            "marketing_carrier_code": "BA",
+            "flight_number": "64",
+            "operating_carrier_name": "British Airways",
+            "departure_airport": "NBO",
+            "departure_time_local": "2026-12-18T23:50:00",
+            "departure_timezone": "Africa/Nairobi",
+            "departure_time_utc": "2026-12-18T20:50:00Z",
+            "arrival_airport": "LHR",
+            "arrival_time_local": "2026-12-19T06:15:00",
+            "arrival_timezone": "Europe/London",
+            "arrival_time_utc": "2026-12-19T06:15:00Z",
+            "duration_minutes": 565,
+            "aircraft": "Airbus A350"
+          },
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "8058",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "LHR",
+            "departure_time_local": "2026-12-19T15:15:00",
+            "departure_timezone": "Europe/London",
+            "departure_time_utc": "2026-12-19T15:15:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-19T17:45:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T16:45:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "d0cf880bb50f4450a3924e61de753179"
+    },
+    {
+      "price": {
+        "amount": 1384.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Iberia",
+        "duration_minutes": 1310,
+        "segments": [
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "584",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T07:25:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T06:25:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-11T09:30:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-11T08:30:00Z",
+            "duration_minutes": 125,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "150",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-11T15:20:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-11T14:20:00Z",
+            "arrival_airport": "DOH",
+            "arrival_time_local": "2026-12-11T23:45:00",
+            "arrival_timezone": "Asia/Qatar",
+            "arrival_time_utc": "2026-12-11T20:45:00Z",
+            "duration_minutes": 385,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "1335",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "DOH",
+            "departure_time_local": "2026-12-12T02:10:00",
+            "departure_timezone": "Asia/Qatar",
+            "departure_time_utc": "2026-12-11T23:10:00Z",
+            "arrival_airport": "NBO",
+            "arrival_time_local": "2026-12-12T07:15:00",
+            "arrival_timezone": "Africa/Nairobi",
+            "arrival_time_utc": "2026-12-12T04:15:00Z",
+            "duration_minutes": 305,
+            "aircraft": "Boeing 787"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Qatar Airways",
+        "duration_minutes": 1115,
+        "segments": [
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "1342",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "NBO",
+            "departure_time_local": "2026-12-18T01:35:00",
+            "departure_timezone": "Africa/Nairobi",
+            "departure_time_utc": "2026-12-17T22:35:00Z",
+            "arrival_airport": "DOH",
+            "arrival_time_local": "2026-12-18T06:35:00",
+            "arrival_timezone": "Asia/Qatar",
+            "arrival_time_utc": "2026-12-18T03:35:00Z",
+            "duration_minutes": 300,
+            "aircraft": "Boeing 777"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "149",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "DOH",
+            "departure_time_local": "2026-12-18T08:20:00",
+            "departure_timezone": "Asia/Qatar",
+            "departure_time_utc": "2026-12-18T05:20:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-18T13:50:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-18T12:50:00Z",
+            "duration_minutes": 450,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "579",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-18T16:05:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-18T15:05:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-18T18:10:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T17:10:00Z",
+            "duration_minutes": 125,
+            "aircraft": "Airbus A321"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "3d63a2a6e78941a4877dbc307ebe14bf"
+    },
+    {
+      "price": {
+        "amount": 1527.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Iberia",
+        "duration_minutes": 1375,
+        "segments": [
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "572",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T12:50:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T11:50:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-11T14:55:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-11T13:55:00Z",
+            "duration_minutes": 125,
+            "aircraft": "Airbus A321"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "152",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-11T22:15:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-11T21:15:00Z",
+            "arrival_airport": "DOH",
+            "arrival_time_local": "2026-12-12T06:40:00",
+            "arrival_timezone": "Asia/Qatar",
+            "arrival_time_utc": "2026-12-12T03:40:00Z",
+            "duration_minutes": 385,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "1345",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "DOH",
+            "departure_time_local": "2026-12-12T08:40:00",
+            "departure_timezone": "Asia/Qatar",
+            "departure_time_utc": "2026-12-12T05:40:00Z",
+            "arrival_airport": "NBO",
+            "arrival_time_local": "2026-12-12T13:45:00",
+            "arrival_timezone": "Africa/Nairobi",
+            "arrival_time_utc": "2026-12-12T10:45:00Z",
+            "duration_minutes": 305,
+            "aircraft": "Boeing 787"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Qatar Airways",
+        "duration_minutes": 1600,
+        "segments": [
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "1346",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "NBO",
+            "departure_time_local": "2026-12-18T08:45:00",
+            "departure_timezone": "Africa/Nairobi",
+            "departure_time_utc": "2026-12-18T05:45:00Z",
+            "arrival_airport": "DOH",
+            "arrival_time_local": "2026-12-18T13:45:00",
+            "arrival_timezone": "Asia/Qatar",
+            "arrival_time_utc": "2026-12-18T10:45:00Z",
+            "duration_minutes": 300,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "151",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "DOH",
+            "departure_time_local": "2026-12-18T15:15:00",
+            "departure_timezone": "Asia/Qatar",
+            "departure_time_utc": "2026-12-18T12:15:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-18T20:45:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-18T19:45:00Z",
+            "duration_minutes": 450,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "569",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-19T07:20:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-19T06:20:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-19T09:25:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T08:25:00Z",
+            "duration_minutes": 125,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "ca71be08fc614ca191a83c3b3ca62278"
+    },
+    {
+      "price": {
+        "amount": 1610.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Iberia",
+        "duration_minutes": 1375,
+        "segments": [
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "572",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T12:50:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T11:50:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-11T14:55:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-11T13:55:00Z",
+            "duration_minutes": 125,
+            "aircraft": "Airbus A321"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "152",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-11T22:15:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-11T21:15:00Z",
+            "arrival_airport": "DOH",
+            "arrival_time_local": "2026-12-12T06:40:00",
+            "arrival_timezone": "Asia/Qatar",
+            "arrival_time_utc": "2026-12-12T03:40:00Z",
+            "duration_minutes": 385,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "1345",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "DOH",
+            "departure_time_local": "2026-12-12T08:40:00",
+            "departure_timezone": "Asia/Qatar",
+            "departure_time_utc": "2026-12-12T05:40:00Z",
+            "arrival_airport": "NBO",
+            "arrival_time_local": "2026-12-12T13:45:00",
+            "arrival_timezone": "Africa/Nairobi",
+            "arrival_time_utc": "2026-12-12T10:45:00Z",
+            "duration_minutes": 305,
+            "aircraft": "Boeing 787"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Qatar Airways",
+        "duration_minutes": 1260,
+        "segments": [
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "1336",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "NBO",
+            "departure_time_local": "2026-12-18T17:00:00",
+            "departure_timezone": "Africa/Nairobi",
+            "departure_time_utc": "2026-12-18T14:00:00Z",
+            "arrival_airport": "DOH",
+            "arrival_time_local": "2026-12-18T22:00:00",
+            "arrival_timezone": "Asia/Qatar",
+            "arrival_time_utc": "2026-12-18T19:00:00Z",
+            "duration_minutes": 300,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "147",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "DOH",
+            "departure_time_local": "2026-12-19T01:15:00",
+            "departure_timezone": "Asia/Qatar",
+            "departure_time_utc": "2026-12-18T22:15:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-19T06:45:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-19T05:45:00Z",
+            "duration_minutes": 450,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "571",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-19T09:55:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-19T08:55:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-19T12:00:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T11:00:00Z",
+            "duration_minutes": 125,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "2700d813e6384132bb5bffb3898a2b73"
+    },
+    {
+      "price": {
+        "amount": 1685.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Iberia",
+        "duration_minutes": 1375,
+        "segments": [
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "572",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T12:50:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T11:50:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-11T14:55:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-11T13:55:00Z",
+            "duration_minutes": 125,
+            "aircraft": "Airbus A321"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "152",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-11T22:15:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-11T21:15:00Z",
+            "arrival_airport": "DOH",
+            "arrival_time_local": "2026-12-12T06:40:00",
+            "arrival_timezone": "Asia/Qatar",
+            "arrival_time_utc": "2026-12-12T03:40:00Z",
+            "duration_minutes": 385,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "1345",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "DOH",
+            "departure_time_local": "2026-12-12T08:40:00",
+            "departure_timezone": "Asia/Qatar",
+            "departure_time_utc": "2026-12-12T05:40:00Z",
+            "arrival_airport": "NBO",
+            "arrival_time_local": "2026-12-12T13:45:00",
+            "arrival_timezone": "Africa/Nairobi",
+            "arrival_time_utc": "2026-12-12T10:45:00Z",
+            "duration_minutes": 305,
+            "aircraft": "Boeing 787"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "British Airways",
+        "duration_minutes": 1195,
+        "segments": [
+          {
+            "marketing_carrier_code": "BA",
+            "flight_number": "64",
+            "operating_carrier_name": "British Airways",
+            "departure_airport": "NBO",
+            "departure_time_local": "2026-12-18T23:50:00",
+            "departure_timezone": "Africa/Nairobi",
+            "departure_time_utc": "2026-12-18T20:50:00Z",
+            "arrival_airport": "LHR",
+            "arrival_time_local": "2026-12-19T06:15:00",
+            "arrival_timezone": "Europe/London",
+            "arrival_time_utc": "2026-12-19T06:15:00Z",
+            "duration_minutes": 565,
+            "aircraft": "Airbus A350"
+          },
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "8058",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "LHR",
+            "departure_time_local": "2026-12-19T15:15:00",
+            "departure_timezone": "Europe/London",
+            "departure_time_utc": "2026-12-19T15:15:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-19T17:45:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T16:45:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "3ff2080a17b04fafac7eab382f6a61bc"
+    },
+    {
+      "price": {
+        "amount": 1724.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Iberia",
+        "duration_minutes": 1375,
+        "segments": [
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "572",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T12:50:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T11:50:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-11T14:55:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-11T13:55:00Z",
+            "duration_minutes": 125,
+            "aircraft": "Airbus A321"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "152",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-11T22:15:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-11T21:15:00Z",
+            "arrival_airport": "DOH",
+            "arrival_time_local": "2026-12-12T06:40:00",
+            "arrival_timezone": "Asia/Qatar",
+            "arrival_time_utc": "2026-12-12T03:40:00Z",
+            "duration_minutes": 385,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "1345",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "DOH",
+            "departure_time_local": "2026-12-12T08:40:00",
+            "departure_timezone": "Asia/Qatar",
+            "departure_time_utc": "2026-12-12T05:40:00Z",
+            "arrival_airport": "NBO",
+            "arrival_time_local": "2026-12-12T13:45:00",
+            "arrival_timezone": "Africa/Nairobi",
+            "arrival_time_utc": "2026-12-12T10:45:00Z",
+            "duration_minutes": 305,
+            "aircraft": "Boeing 787"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Qatar Airways",
+        "duration_minutes": 1115,
+        "segments": [
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "1342",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "NBO",
+            "departure_time_local": "2026-12-18T01:35:00",
+            "departure_timezone": "Africa/Nairobi",
+            "departure_time_utc": "2026-12-17T22:35:00Z",
+            "arrival_airport": "DOH",
+            "arrival_time_local": "2026-12-18T06:35:00",
+            "arrival_timezone": "Asia/Qatar",
+            "arrival_time_utc": "2026-12-18T03:35:00Z",
+            "duration_minutes": 300,
+            "aircraft": "Boeing 777"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "149",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "DOH",
+            "departure_time_local": "2026-12-18T08:20:00",
+            "departure_timezone": "Asia/Qatar",
+            "departure_time_utc": "2026-12-18T05:20:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-18T13:50:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-18T12:50:00Z",
+            "duration_minutes": 450,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "579",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-18T16:05:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-18T15:05:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-18T18:10:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T17:10:00Z",
+            "duration_minutes": 125,
+            "aircraft": "Airbus A321"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "05344057e96049e8afc98bcef5de42c4"
+    }
+  ],
+  "observed_at": "2026-11-20T16:06:20.844508Z"
+}

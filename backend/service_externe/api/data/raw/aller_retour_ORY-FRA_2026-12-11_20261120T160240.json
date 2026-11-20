@@ -1,0 +1,2611 @@
+{
+  "origin": "ORY",
+  "destination": "FRA",
+  "departure_date": "2026-12-11",
+  "return_date": "2026-12-18",
+  "itineraries": [
+    {
+      "price": {
+        "amount": 356.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "ITA",
+        "duration_minutes": 510,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "357",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T07:30:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T06:30:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-11T08:55:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T07:55:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A220-300 Passenger"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "275",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-11T14:45:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-11T13:45:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T16:00:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T15:00:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Airbus A319"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Lufthansa",
+        "duration_minutes": 440,
+        "segments": [
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "272",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T11:25:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T10:25:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-18T12:40:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-18T11:40:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer 190"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "352",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-18T17:15:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-18T16:15:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-18T18:45:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T17:45:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "7543aa10908d4d798f11164bed459c66"
+    },
+    {
+      "price": {
+        "amount": 356.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "ITA",
+        "duration_minutes": 510,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "357",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T07:30:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T06:30:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-11T08:55:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T07:55:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A220-300 Passenger"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "275",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-11T14:45:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-11T13:45:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T16:00:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T15:00:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Airbus A319"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Air Dolomiti",
+        "duration_minutes": 600,
+        "segments": [
+          {
+            "marketing_carrier_code": "EN",
+            "flight_number": "270",
+            "operating_carrier_name": "Air Dolomiti",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T08:45:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T07:45:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-18T10:00:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-18T09:00:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer 195"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "352",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-18T17:15:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-18T16:15:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-18T18:45:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T17:45:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "26119b5ca4424e7f8054cda40e79b655"
+    },
+    {
+      "price": {
+        "amount": 356.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "ITA",
+        "duration_minutes": 510,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "357",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T07:30:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T06:30:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-11T08:55:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T07:55:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A220-300 Passenger"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "275",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-11T14:45:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-11T13:45:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T16:00:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T15:00:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Airbus A319"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Lufthansa",
+        "duration_minutes": 735,
+        "segments": [
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "280",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T21:40:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T20:40:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-18T22:55:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-18T21:55:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Airbus A319"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "350",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-19T08:25:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-19T07:25:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-19T09:55:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T08:55:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A220-300 Passenger"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "52b1a89e98ea4540930d9e533b75c5d6"
+    },
+    {
+      "price": {
+        "amount": 373.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "ITA",
+        "duration_minutes": 265,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "357",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T07:30:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T06:30:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-11T08:55:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T07:55:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A220-300 Passenger"
+          },
+          {
+            "marketing_carrier_code": "EN",
+            "flight_number": "271",
+            "operating_carrier_name": "Air Dolomiti",
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-11T10:40:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-11T09:40:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T11:55:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T10:55:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer 195"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Lufthansa",
+        "duration_minutes": 440,
+        "segments": [
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "272",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T11:25:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T10:25:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-18T12:40:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-18T11:40:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer 190"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "352",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-18T17:15:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-18T16:15:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-18T18:45:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T17:45:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "5253eb12e2564ecebf47e2f2e964ddef"
+    },
+    {
+      "price": {
+        "amount": 373.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "ITA",
+        "duration_minutes": 265,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "357",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T07:30:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T06:30:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-11T08:55:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T07:55:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A220-300 Passenger"
+          },
+          {
+            "marketing_carrier_code": "EN",
+            "flight_number": "271",
+            "operating_carrier_name": "Air Dolomiti",
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-11T10:40:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-11T09:40:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T11:55:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T10:55:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer 195"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Air Dolomiti",
+        "duration_minutes": 600,
+        "segments": [
+          {
+            "marketing_carrier_code": "EN",
+            "flight_number": "270",
+            "operating_carrier_name": "Air Dolomiti",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T08:45:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T07:45:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-18T10:00:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-18T09:00:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer 195"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "352",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-18T17:15:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-18T16:15:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-18T18:45:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T17:45:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "129e9eb8ec024cacbcaec9e50c11843f"
+    },
+    {
+      "price": {
+        "amount": 373.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "ITA",
+        "duration_minutes": 265,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "357",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T07:30:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T06:30:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-11T08:55:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T07:55:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A220-300 Passenger"
+          },
+          {
+            "marketing_carrier_code": "EN",
+            "flight_number": "271",
+            "operating_carrier_name": "Air Dolomiti",
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-11T10:40:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-11T09:40:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T11:55:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T10:55:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer 195"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Lufthansa",
+        "duration_minutes": 735,
+        "segments": [
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "280",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T21:40:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T20:40:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-18T22:55:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-18T21:55:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Airbus A319"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "350",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-19T08:25:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-19T07:25:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-19T09:55:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T08:55:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A220-300 Passenger"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "1c9fc8633b3d4c0c9428f0bcc458013d"
+    },
+    {
+      "price": {
+        "amount": 373.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "ITA",
+        "duration_minutes": 985,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "353",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T19:35:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T18:35:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-11T21:05:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T20:05:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320neo"
+          },
+          {
+            "marketing_carrier_code": "EN",
+            "flight_number": "271",
+            "operating_carrier_name": "Air Dolomiti",
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-12T10:45:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-12T09:45:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-12T12:00:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-12T11:00:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer 190"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Lufthansa",
+        "duration_minutes": 440,
+        "segments": [
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "272",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T11:25:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T10:25:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-18T12:40:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-18T11:40:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer 190"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "352",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-18T17:15:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-18T16:15:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-18T18:45:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T17:45:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "f5f9db07e0dd45fab28e3daa0628bbaf"
+    },
+    {
+      "price": {
+        "amount": 373.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "ITA",
+        "duration_minutes": 985,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "353",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T19:35:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T18:35:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-11T21:05:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T20:05:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320neo"
+          },
+          {
+            "marketing_carrier_code": "EN",
+            "flight_number": "271",
+            "operating_carrier_name": "Air Dolomiti",
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-12T10:45:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-12T09:45:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-12T12:00:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-12T11:00:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer 190"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Air Dolomiti",
+        "duration_minutes": 600,
+        "segments": [
+          {
+            "marketing_carrier_code": "EN",
+            "flight_number": "270",
+            "operating_carrier_name": "Air Dolomiti",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T08:45:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T07:45:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-18T10:00:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-18T09:00:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer 195"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "352",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-18T17:15:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-18T16:15:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-18T18:45:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T17:45:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "ad44a037372548d49dc149944ec9f97b"
+    },
+    {
+      "price": {
+        "amount": 373.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "ITA",
+        "duration_minutes": 985,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "353",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T19:35:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T18:35:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-11T21:05:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T20:05:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320neo"
+          },
+          {
+            "marketing_carrier_code": "EN",
+            "flight_number": "271",
+            "operating_carrier_name": "Air Dolomiti",
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-12T10:45:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-12T09:45:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-12T12:00:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-12T11:00:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer 190"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Lufthansa",
+        "duration_minutes": 735,
+        "segments": [
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "280",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T21:40:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T20:40:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-18T22:55:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-18T21:55:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Airbus A319"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "350",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-19T08:25:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-19T07:25:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-19T09:55:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T08:55:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A220-300 Passenger"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "bb0a98307468428d9fa410b40a488d52"
+    },
+    {
+      "price": {
+        "amount": 415.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "ITA",
+        "duration_minutes": 510,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "357",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T07:30:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T06:30:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-11T08:55:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T07:55:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A220-300 Passenger"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "275",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-11T14:45:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-11T13:45:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T16:00:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T15:00:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Airbus A319"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "ITA",
+        "duration_minutes": 435,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "403",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T11:30:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T10:30:00Z",
+            "arrival_airport": "FCO",
+            "arrival_time_local": "2026-12-18T13:30:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-18T12:30:00Z",
+            "duration_minutes": 120,
+            "aircraft": "Airbus A220-300 Passenger"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "2038",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "FCO",
+            "departure_time_local": "2026-12-18T14:30:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-18T13:30:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-18T15:40:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-18T14:40:00Z",
+            "duration_minutes": 70,
+            "aircraft": "Airbus A220-300 Passenger"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "352",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-18T17:15:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-18T16:15:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-18T18:45:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T17:45:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "b42d4dca225f420ab1a9c22aee0692b8"
+    },
+    {
+      "price": {
+        "amount": 431.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "ITA",
+        "duration_minutes": 265,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "357",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T07:30:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T06:30:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-11T08:55:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T07:55:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A220-300 Passenger"
+          },
+          {
+            "marketing_carrier_code": "EN",
+            "flight_number": "271",
+            "operating_carrier_name": "Air Dolomiti",
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-11T10:40:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-11T09:40:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T11:55:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T10:55:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer 195"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "ITA",
+        "duration_minutes": 435,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "403",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T11:30:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T10:30:00Z",
+            "arrival_airport": "FCO",
+            "arrival_time_local": "2026-12-18T13:30:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-18T12:30:00Z",
+            "duration_minutes": 120,
+            "aircraft": "Airbus A220-300 Passenger"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "2038",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "FCO",
+            "departure_time_local": "2026-12-18T14:30:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-18T13:30:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-18T15:40:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-18T14:40:00Z",
+            "duration_minutes": 70,
+            "aircraft": "Airbus A220-300 Passenger"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "352",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-18T17:15:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-18T16:15:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-18T18:45:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T17:45:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "1478817a18e340418bc476451a143f03"
+    },
+    {
+      "price": {
+        "amount": 431.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "ITA",
+        "duration_minutes": 985,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "353",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T19:35:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T18:35:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-11T21:05:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T20:05:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320neo"
+          },
+          {
+            "marketing_carrier_code": "EN",
+            "flight_number": "271",
+            "operating_carrier_name": "Air Dolomiti",
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-12T10:45:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-12T09:45:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-12T12:00:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-12T11:00:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer 190"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "ITA",
+        "duration_minutes": 435,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "403",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T11:30:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T10:30:00Z",
+            "arrival_airport": "FCO",
+            "arrival_time_local": "2026-12-18T13:30:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-18T12:30:00Z",
+            "duration_minutes": 120,
+            "aircraft": "Airbus A220-300 Passenger"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "2038",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "FCO",
+            "departure_time_local": "2026-12-18T14:30:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-18T13:30:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-18T15:40:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-18T14:40:00Z",
+            "duration_minutes": 70,
+            "aircraft": "Airbus A220-300 Passenger"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "352",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-18T17:15:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-18T16:15:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-18T18:45:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T17:45:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "361c0021d7c54e4c869d7700cf658aab"
+    },
+    {
+      "price": {
+        "amount": 466.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "ITA",
+        "duration_minutes": 560,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "351",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T10:50:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T09:50:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-11T12:20:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T11:20:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A220-300 Passenger"
+          },
+          {
+            "marketing_carrier_code": "EN",
+            "flight_number": "279",
+            "operating_carrier_name": "Air Dolomiti",
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-11T18:55:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-11T17:55:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T20:10:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T19:10:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer 195"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Lufthansa",
+        "duration_minutes": 440,
+        "segments": [
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "272",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T11:25:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T10:25:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-18T12:40:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-18T11:40:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer 190"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "352",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-18T17:15:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-18T16:15:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-18T18:45:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T17:45:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "6b83888b3ef44dad93e1e52bbd6f3e81"
+    },
+    {
+      "price": {
+        "amount": 466.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "ITA",
+        "duration_minutes": 560,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "351",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T10:50:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T09:50:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-11T12:20:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T11:20:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A220-300 Passenger"
+          },
+          {
+            "marketing_carrier_code": "EN",
+            "flight_number": "279",
+            "operating_carrier_name": "Air Dolomiti",
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-11T18:55:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-11T17:55:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T20:10:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T19:10:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer 195"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Air Dolomiti",
+        "duration_minutes": 600,
+        "segments": [
+          {
+            "marketing_carrier_code": "EN",
+            "flight_number": "270",
+            "operating_carrier_name": "Air Dolomiti",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T08:45:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T07:45:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-18T10:00:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-18T09:00:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer 195"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "352",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-18T17:15:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-18T16:15:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-18T18:45:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T17:45:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "e22becfe577d41339d8d5b076e528e81"
+    },
+    {
+      "price": {
+        "amount": 466.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "ITA",
+        "duration_minutes": 560,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "351",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T10:50:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T09:50:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-11T12:20:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T11:20:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A220-300 Passenger"
+          },
+          {
+            "marketing_carrier_code": "EN",
+            "flight_number": "279",
+            "operating_carrier_name": "Air Dolomiti",
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-11T18:55:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-11T17:55:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T20:10:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T19:10:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer 195"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Lufthansa",
+        "duration_minutes": 735,
+        "segments": [
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "280",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T21:40:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T20:40:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-18T22:55:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-18T21:55:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Airbus A319"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "350",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-19T08:25:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-19T07:25:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-19T09:55:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T08:55:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A220-300 Passenger"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "29fc520015c847aea432f5cffeb3584e"
+    },
+    {
+      "price": {
+        "amount": 525.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "ITA",
+        "duration_minutes": 560,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "351",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T10:50:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T09:50:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-11T12:20:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T11:20:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A220-300 Passenger"
+          },
+          {
+            "marketing_carrier_code": "EN",
+            "flight_number": "279",
+            "operating_carrier_name": "Air Dolomiti",
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-11T18:55:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-11T17:55:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T20:10:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T19:10:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer 195"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "ITA",
+        "duration_minutes": 435,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "403",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T11:30:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T10:30:00Z",
+            "arrival_airport": "FCO",
+            "arrival_time_local": "2026-12-18T13:30:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-18T12:30:00Z",
+            "duration_minutes": 120,
+            "aircraft": "Airbus A220-300 Passenger"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "2038",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "FCO",
+            "departure_time_local": "2026-12-18T14:30:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-18T13:30:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-18T15:40:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-18T14:40:00Z",
+            "duration_minutes": 70,
+            "aircraft": "Airbus A220-300 Passenger"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "352",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-18T17:15:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-18T16:15:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-18T18:45:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T17:45:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "fcf67fb185184f1fa050f9ad5a91fb62"
+    },
+    {
+      "price": {
+        "amount": 530.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "ITA",
+        "duration_minutes": 510,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "357",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T07:30:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T06:30:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-11T08:55:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T07:55:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A220-300 Passenger"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "275",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-11T14:45:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-11T13:45:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T16:00:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T15:00:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Airbus A319"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Lufthansa",
+        "duration_minutes": 355,
+        "segments": [
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "274",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T12:50:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T11:50:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-18T14:05:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-18T13:05:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Airbus A319"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "352",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-18T17:15:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-18T16:15:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-18T18:45:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T17:45:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "924a485677444fd5833783e9a7901837"
+    },
+    {
+      "price": {
+        "amount": 546.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "ITA",
+        "duration_minutes": 265,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "357",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T07:30:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T06:30:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-11T08:55:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T07:55:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A220-300 Passenger"
+          },
+          {
+            "marketing_carrier_code": "EN",
+            "flight_number": "271",
+            "operating_carrier_name": "Air Dolomiti",
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-11T10:40:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-11T09:40:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T11:55:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T10:55:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer 195"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Lufthansa",
+        "duration_minutes": 355,
+        "segments": [
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "274",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T12:50:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T11:50:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-18T14:05:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-18T13:05:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Airbus A319"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "352",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-18T17:15:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-18T16:15:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-18T18:45:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T17:45:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "7800f2b6109c40978c88d76ec9bc9491"
+    },
+    {
+      "price": {
+        "amount": 546.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "ITA",
+        "duration_minutes": 985,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "353",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T19:35:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T18:35:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-11T21:05:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T20:05:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320neo"
+          },
+          {
+            "marketing_carrier_code": "EN",
+            "flight_number": "271",
+            "operating_carrier_name": "Air Dolomiti",
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-12T10:45:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-12T09:45:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-12T12:00:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-12T11:00:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer 190"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Lufthansa",
+        "duration_minutes": 355,
+        "segments": [
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "274",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T12:50:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T11:50:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-18T14:05:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-18T13:05:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Airbus A319"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "352",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-18T17:15:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-18T16:15:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-18T18:45:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T17:45:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "62e60213e3734d91834ceab216376d33"
+    },
+    {
+      "price": {
+        "amount": 610.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air Europa",
+        "duration_minutes": 990,
+        "segments": [
+          {
+            "marketing_carrier_code": "UX",
+            "flight_number": "1222",
+            "operating_carrier_name": "Air Europa",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T17:15:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T16:15:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-11T19:15:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-11T18:15:00Z",
+            "duration_minutes": 120,
+            "aircraft": "Boeing 737"
+          },
+          {
+            "marketing_carrier_code": "UX",
+            "flight_number": "1503",
+            "operating_carrier_name": "Air Europa",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-12T07:00:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-12T06:00:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-12T09:45:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-12T08:45:00Z",
+            "duration_minutes": 165,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Air Europa",
+        "duration_minutes": 460,
+        "segments": [
+          {
+            "marketing_carrier_code": "UX",
+            "flight_number": "1502",
+            "operating_carrier_name": "Air Europa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T10:45:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T09:45:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-18T13:35:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-18T12:35:00Z",
+            "duration_minutes": 170,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          },
+          {
+            "marketing_carrier_code": "UX",
+            "flight_number": "1025",
+            "operating_carrier_name": "Air Europa",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-18T16:30:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-18T15:30:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-18T18:25:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T17:25:00Z",
+            "duration_minutes": 115,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "5b29ab2f51af4d30a3b0fb5f1e1a6a59"
+    },
+    {
+      "price": {
+        "amount": 639.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "ITA",
+        "duration_minutes": 560,
+        "segments": [
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "351",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T10:50:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T09:50:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-11T12:20:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-11T11:20:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A220-300 Passenger"
+          },
+          {
+            "marketing_carrier_code": "EN",
+            "flight_number": "279",
+            "operating_carrier_name": "Air Dolomiti",
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-11T18:55:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-11T17:55:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T20:10:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T19:10:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Embraer 195"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Lufthansa",
+        "duration_minutes": 355,
+        "segments": [
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "274",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T12:50:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T11:50:00Z",
+            "arrival_airport": "LIN",
+            "arrival_time_local": "2026-12-18T14:05:00",
+            "arrival_timezone": "Europe/Rome",
+            "arrival_time_utc": "2026-12-18T13:05:00Z",
+            "duration_minutes": 75,
+            "aircraft": "Airbus A319"
+          },
+          {
+            "marketing_carrier_code": "AZ",
+            "flight_number": "352",
+            "operating_carrier_name": "ITA",
+            "departure_airport": "LIN",
+            "departure_time_local": "2026-12-18T17:15:00",
+            "departure_timezone": "Europe/Rome",
+            "departure_time_utc": "2026-12-18T16:15:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-18T18:45:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T17:45:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "a703d4b9344847508b3a489a4e6f00d2"
+    },
+    {
+      "price": {
+        "amount": 676.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air Europa",
+        "duration_minutes": 420,
+        "segments": [
+          {
+            "marketing_carrier_code": "UX",
+            "flight_number": "1028",
+            "operating_carrier_name": "Air Europa",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T10:55:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T09:55:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-11T12:55:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-11T11:55:00Z",
+            "duration_minutes": 120,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          },
+          {
+            "marketing_carrier_code": "UX",
+            "flight_number": "1509",
+            "operating_carrier_name": "Air Europa",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-11T15:10:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-11T14:10:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T17:55:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T16:55:00Z",
+            "duration_minutes": 165,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Air Europa",
+        "duration_minutes": 460,
+        "segments": [
+          {
+            "marketing_carrier_code": "UX",
+            "flight_number": "1502",
+            "operating_carrier_name": "Air Europa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T10:45:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T09:45:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-18T13:35:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-18T12:35:00Z",
+            "duration_minutes": 170,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          },
+          {
+            "marketing_carrier_code": "UX",
+            "flight_number": "1025",
+            "operating_carrier_name": "Air Europa",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-18T16:30:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-18T15:30:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-18T18:25:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T17:25:00Z",
+            "duration_minutes": 115,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "feff1cbe973841b380ff5354b48ad2c1"
+    },
+    {
+      "price": {
+        "amount": 1019.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Tunisair",
+        "duration_minutes": 850,
+        "segments": [
+          {
+            "marketing_carrier_code": "TU",
+            "flight_number": "725",
+            "operating_carrier_name": "Tunisair",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T20:20:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T19:20:00Z",
+            "arrival_airport": "TUN",
+            "arrival_time_local": "2026-12-11T22:45:00",
+            "arrival_timezone": "Africa/Tunis",
+            "arrival_time_utc": "2026-12-11T21:45:00Z",
+            "duration_minutes": 145,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "TU",
+            "flight_number": "744",
+            "operating_carrier_name": "Tunisair",
+            "departure_airport": "TUN",
+            "departure_time_local": "2026-12-12T07:55:00",
+            "departure_timezone": "Africa/Tunis",
+            "departure_time_utc": "2026-12-12T06:55:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-12T10:30:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-12T09:30:00Z",
+            "duration_minutes": 155,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Tunisair",
+        "duration_minutes": 525,
+        "segments": [
+          {
+            "marketing_carrier_code": "TU",
+            "flight_number": "745",
+            "operating_carrier_name": "Tunisair",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T11:30:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T10:30:00Z",
+            "arrival_airport": "TUN",
+            "arrival_time_local": "2026-12-18T13:55:00",
+            "arrival_timezone": "Africa/Tunis",
+            "arrival_time_utc": "2026-12-18T12:55:00Z",
+            "duration_minutes": 145,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "TU",
+            "flight_number": "724",
+            "operating_carrier_name": "Tunisair",
+            "departure_airport": "TUN",
+            "departure_time_local": "2026-12-18T17:50:00",
+            "departure_timezone": "Africa/Tunis",
+            "departure_time_utc": "2026-12-18T16:50:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-18T20:15:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T19:15:00Z",
+            "duration_minutes": 145,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "3aba1da086724c06b0971eac7394b52b"
+    },
+    {
+      "price": {
+        "amount": 1345.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Iberia",
+        "duration_minutes": 910,
+        "segments": [
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "584",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T07:25:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T06:25:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-11T09:30:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-11T08:30:00Z",
+            "duration_minutes": 125,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "1331",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-11T19:50:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-11T18:50:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T22:35:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T21:35:00Z",
+            "duration_minutes": 165,
+            "aircraft": "Canadair RJ 1000"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Iberia",
+        "duration_minutes": 360,
+        "segments": [
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "1328",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T12:10:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T11:10:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-18T15:00:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-18T14:00:00Z",
+            "duration_minutes": 170,
+            "aircraft": "Canadair RJ 1000"
+          },
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "579",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-18T16:05:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-18T15:05:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-18T18:10:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T17:10:00Z",
+            "duration_minutes": 125,
+            "aircraft": "Airbus A321"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "b49b9b2ed4b5477fbfddb4da4d8f8ef5"
+    },
+    {
+      "price": {
+        "amount": 1598.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Iberia",
+        "duration_minutes": 910,
+        "segments": [
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "584",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T07:25:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T06:25:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-11T09:30:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-11T08:30:00Z",
+            "duration_minutes": 125,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "1331",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-11T19:50:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-11T18:50:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T22:35:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T21:35:00Z",
+            "duration_minutes": 165,
+            "aircraft": "Canadair RJ 1000"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Iberia",
+        "duration_minutes": 425,
+        "segments": [
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "1332",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T06:30:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T05:30:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-18T09:20:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-18T08:20:00Z",
+            "duration_minutes": 170,
+            "aircraft": "Canadair RJ 1000"
+          },
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "573",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-18T11:30:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-18T10:30:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-18T13:35:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T12:35:00Z",
+            "duration_minutes": 125,
+            "aircraft": "Airbus A321"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "c8af7b60082b4d3b8d3b3fa560f94eb7"
+    },
+    {
+      "price": {
+        "amount": 1963.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Vueling",
+        "duration_minutes": 495,
+        "segments": [
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "8059",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T14:00:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T13:00:00Z",
+            "arrival_airport": "LHR",
+            "arrival_time_local": "2026-12-11T14:25:00",
+            "arrival_timezone": "Europe/London",
+            "arrival_time_utc": "2026-12-11T14:25:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "BA",
+            "flight_number": "910",
+            "operating_carrier_name": "British Airways",
+            "departure_airport": "LHR",
+            "departure_time_local": "2026-12-11T19:35:00",
+            "departure_timezone": "Europe/London",
+            "departure_time_utc": "2026-12-11T19:35:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T22:15:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T21:15:00Z",
+            "duration_minutes": 100,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Iberia",
+        "duration_minutes": 425,
+        "segments": [
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "1332",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T06:30:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T05:30:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-18T09:20:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-18T08:20:00Z",
+            "duration_minutes": 170,
+            "aircraft": "Canadair RJ 1000"
+          },
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "573",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-18T11:30:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-18T10:30:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-18T13:35:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T12:35:00Z",
+            "duration_minutes": 125,
+            "aircraft": "Airbus A321"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "f0379c0a0c7f4d0b90e28d29536c1054"
+    },
+    {
+      "price": {
+        "amount": 1963.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Vueling",
+        "duration_minutes": 495,
+        "segments": [
+          {
+            "marketing_carrier_code": "VY",
+            "flight_number": "8059",
+            "operating_carrier_name": "Vueling",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T14:00:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T13:00:00Z",
+            "arrival_airport": "LHR",
+            "arrival_time_local": "2026-12-11T14:25:00",
+            "arrival_timezone": "Europe/London",
+            "arrival_time_utc": "2026-12-11T14:25:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "BA",
+            "flight_number": "910",
+            "operating_carrier_name": "British Airways",
+            "departure_airport": "LHR",
+            "departure_time_local": "2026-12-11T19:35:00",
+            "departure_timezone": "Europe/London",
+            "departure_time_utc": "2026-12-11T19:35:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T22:15:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T21:15:00Z",
+            "duration_minutes": 100,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Iberia",
+        "duration_minutes": 985,
+        "segments": [
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "1334",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T19:35:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T18:35:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-18T22:25:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-18T21:25:00Z",
+            "duration_minutes": 170,
+            "aircraft": "Canadair RJ 1000"
+          },
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "571",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-19T09:55:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-19T08:55:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-19T12:00:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T11:00:00Z",
+            "duration_minutes": 125,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "7502277abb784a3eb686d8c8797b4a92"
+    },
+    {
+      "price": {
+        "amount": 2573.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Iberia",
+        "duration_minutes": 910,
+        "segments": [
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "584",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T07:25:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T06:25:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-11T09:30:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-11T08:30:00Z",
+            "duration_minutes": 125,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "1331",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-11T19:50:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-11T18:50:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T22:35:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T21:35:00Z",
+            "duration_minutes": 165,
+            "aircraft": "Canadair RJ 1000"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Iberia",
+        "duration_minutes": 985,
+        "segments": [
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "1334",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T19:35:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T18:35:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-18T22:25:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-18T21:25:00Z",
+            "duration_minutes": 170,
+            "aircraft": "Canadair RJ 1000"
+          },
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "571",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-19T09:55:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-19T08:55:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-19T12:00:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T11:00:00Z",
+            "duration_minutes": 125,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "15f545a6529942dea8fb3e3b3b9cc5f1"
+    },
+    {
+      "price": {
+        "amount": 2618.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Tunisair",
+        "duration_minutes": 850,
+        "segments": [
+          {
+            "marketing_carrier_code": "TU",
+            "flight_number": "725",
+            "operating_carrier_name": "Tunisair",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T20:20:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T19:20:00Z",
+            "arrival_airport": "TUN",
+            "arrival_time_local": "2026-12-11T22:45:00",
+            "arrival_timezone": "Africa/Tunis",
+            "arrival_time_utc": "2026-12-11T21:45:00Z",
+            "duration_minutes": 145,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "TU",
+            "flight_number": "744",
+            "operating_carrier_name": "Tunisair",
+            "departure_airport": "TUN",
+            "departure_time_local": "2026-12-12T07:55:00",
+            "departure_timezone": "Africa/Tunis",
+            "departure_time_utc": "2026-12-12T06:55:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-12T10:30:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-12T09:30:00Z",
+            "duration_minutes": 155,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Lufthansa",
+        "duration_minutes": 625,
+        "segments": [
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "1322",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T09:50:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T08:50:00Z",
+            "arrival_airport": "TUN",
+            "arrival_time_local": "2026-12-18T12:10:00",
+            "arrival_timezone": "Africa/Tunis",
+            "arrival_time_utc": "2026-12-18T11:10:00Z",
+            "duration_minutes": 140,
+            "aircraft": "Airbus A320neo"
+          },
+          {
+            "marketing_carrier_code": "TU",
+            "flight_number": "724",
+            "operating_carrier_name": "Tunisair",
+            "departure_airport": "TUN",
+            "departure_time_local": "2026-12-18T17:50:00",
+            "departure_timezone": "Africa/Tunis",
+            "departure_time_utc": "2026-12-18T16:50:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-18T20:15:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T19:15:00Z",
+            "duration_minutes": 145,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "359a5633193d47edbc765e42690b1444"
+    },
+    {
+      "price": {
+        "amount": 2631.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Tunisair",
+        "duration_minutes": 850,
+        "segments": [
+          {
+            "marketing_carrier_code": "TU",
+            "flight_number": "725",
+            "operating_carrier_name": "Tunisair",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T20:20:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T19:20:00Z",
+            "arrival_airport": "TUN",
+            "arrival_time_local": "2026-12-11T22:45:00",
+            "arrival_timezone": "Africa/Tunis",
+            "arrival_time_utc": "2026-12-11T21:45:00Z",
+            "duration_minutes": 145,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "TU",
+            "flight_number": "744",
+            "operating_carrier_name": "Tunisair",
+            "departure_airport": "TUN",
+            "departure_time_local": "2026-12-12T07:55:00",
+            "departure_timezone": "Africa/Tunis",
+            "departure_time_utc": "2026-12-12T06:55:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-12T10:30:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-12T09:30:00Z",
+            "duration_minutes": 155,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Lufthansa",
+        "duration_minutes": 750,
+        "segments": [
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "1326",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T21:50:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T20:50:00Z",
+            "arrival_airport": "TUN",
+            "arrival_time_local": "2026-12-19T00:10:00",
+            "arrival_timezone": "Africa/Tunis",
+            "arrival_time_utc": "2026-12-18T23:10:00Z",
+            "duration_minutes": 140,
+            "aircraft": "Airbus A320neo"
+          },
+          {
+            "marketing_carrier_code": "TU",
+            "flight_number": "718",
+            "operating_carrier_name": "Tunisair",
+            "departure_airport": "TUN",
+            "departure_time_local": "2026-12-19T07:50:00",
+            "departure_timezone": "Africa/Tunis",
+            "departure_time_utc": "2026-12-19T06:50:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-19T10:20:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T09:20:00Z",
+            "duration_minutes": 150,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "5b1f0474019d483daf7eaad1185c5cd0"
+    },
+    {
+      "price": {
+        "amount": 2915.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air Europa",
+        "duration_minutes": 420,
+        "segments": [
+          {
+            "marketing_carrier_code": "UX",
+            "flight_number": "1028",
+            "operating_carrier_name": "Air Europa",
+            "departure_airport": "ORY",
+            "departure_time_local": "2026-12-11T10:55:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T09:55:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-11T12:55:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-11T11:55:00Z",
+            "duration_minutes": 120,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          },
+          {
+            "marketing_carrier_code": "UX",
+            "flight_number": "1509",
+            "operating_carrier_name": "Air Europa",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-11T15:10:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-11T14:10:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T17:55:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T16:55:00Z",
+            "duration_minutes": 165,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Air Europa",
+        "duration_minutes": 900,
+        "segments": [
+          {
+            "marketing_carrier_code": "UX",
+            "flight_number": "1506",
+            "operating_carrier_name": "Air Europa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T18:55:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T17:55:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-18T21:45:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-18T20:45:00Z",
+            "duration_minutes": 170,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          },
+          {
+            "marketing_carrier_code": "UX",
+            "flight_number": "1027",
+            "operating_carrier_name": "Air Europa",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-19T08:00:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-19T07:00:00Z",
+            "arrival_airport": "ORY",
+            "arrival_time_local": "2026-12-19T09:55:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T08:55:00Z",
+            "duration_minutes": 115,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "4d7976c35267471baddfe1e95e9d7f3b"
+    }
+  ],
+  "observed_at": "2026-11-20T16:02:40.256945Z"
+}

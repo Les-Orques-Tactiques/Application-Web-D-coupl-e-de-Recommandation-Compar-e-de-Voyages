@@ -1,0 +1,455 @@
+{
+  "origin": "CDG",
+  "destination": "IST",
+  "departure_date": "2026-12-11",
+  "itineraries": [
+    {
+      "price": {
+        "amount": 162.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "LOT",
+        "duration_minutes": 1195,
+        "segments": [
+          {
+            "marketing_carrier_code": "LO",
+            "flight_number": "336",
+            "operating_carrier_name": "LOT",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-11T19:40:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T18:40:00Z",
+            "arrival_airport": "WAW",
+            "arrival_time_local": "2026-12-11T22:00:00",
+            "arrival_timezone": "Europe/Warsaw",
+            "arrival_time_utc": "2026-12-11T21:00:00Z",
+            "duration_minutes": 140,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          },
+          {
+            "marketing_carrier_code": "LO",
+            "flight_number": "135",
+            "operating_carrier_name": "LOT",
+            "departure_airport": "WAW",
+            "departure_time_local": "2026-12-12T12:50:00",
+            "departure_timezone": "Europe/Warsaw",
+            "departure_time_utc": "2026-12-12T11:50:00Z",
+            "arrival_airport": "IST",
+            "arrival_time_local": "2026-12-12T17:35:00",
+            "arrival_timezone": "Europe/Istanbul",
+            "arrival_time_utc": "2026-12-12T14:35:00Z",
+            "duration_minutes": 165,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "3509ca7c2d6e48e2b0b056fcf674b9b5"
+    },
+    {
+      "price": {
+        "amount": 171.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air Serbia",
+        "duration_minutes": 370,
+        "segments": [
+          {
+            "marketing_carrier_code": "JU",
+            "flight_number": "243",
+            "operating_carrier_name": "Air Serbia",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-11T20:30:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T19:30:00Z",
+            "arrival_airport": "BEG",
+            "arrival_time_local": "2026-12-11T22:55:00",
+            "arrival_timezone": "Europe/Belgrade",
+            "arrival_time_utc": "2026-12-11T21:55:00Z",
+            "duration_minutes": 145,
+            "aircraft": "Airbus A319"
+          },
+          {
+            "marketing_carrier_code": "JU",
+            "flight_number": "426",
+            "operating_carrier_name": "Air Serbia",
+            "departure_airport": "BEG",
+            "departure_time_local": "2026-12-12T00:50:00",
+            "departure_timezone": "Europe/Belgrade",
+            "departure_time_utc": "2026-12-11T23:50:00Z",
+            "arrival_airport": "IST",
+            "arrival_time_local": "2026-12-12T04:40:00",
+            "arrival_timezone": "Europe/Istanbul",
+            "arrival_time_utc": "2026-12-12T01:40:00Z",
+            "duration_minutes": 110,
+            "aircraft": "Embraer 190"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "e19d3b0b15c04fb5ad2685d8ac2edc84"
+    },
+    {
+      "price": {
+        "amount": 182.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "SKY express",
+        "duration_minutes": 535,
+        "segments": [
+          {
+            "marketing_carrier_code": "GQ",
+            "flight_number": "905",
+            "operating_carrier_name": "SKY express",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-11T22:35:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T21:35:00Z",
+            "arrival_airport": "ATH",
+            "arrival_time_local": "2026-12-12T02:45:00",
+            "arrival_timezone": "Europe/Athens",
+            "arrival_time_utc": "2026-12-12T00:45:00Z",
+            "duration_minutes": 190,
+            "aircraft": "Airbus A320neo"
+          },
+          {
+            "marketing_carrier_code": "GQ",
+            "flight_number": "670",
+            "operating_carrier_name": "SKY express",
+            "departure_airport": "ATH",
+            "departure_time_local": "2026-12-12T07:00:00",
+            "departure_timezone": "Europe/Athens",
+            "departure_time_utc": "2026-12-12T05:00:00Z",
+            "arrival_airport": "IST",
+            "arrival_time_local": "2026-12-12T09:30:00",
+            "arrival_timezone": "Europe/Istanbul",
+            "arrival_time_utc": "2026-12-12T06:30:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "903518cbfaa549cc8e785ba7bd38189a"
+    },
+    {
+      "price": {
+        "amount": 189.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 210,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "1390",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-11T12:25:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T11:25:00Z",
+            "arrival_airport": "IST",
+            "arrival_time_local": "2026-12-11T17:55:00",
+            "arrival_timezone": "Europe/Istanbul",
+            "arrival_time_utc": "2026-12-11T14:55:00Z",
+            "duration_minutes": 210,
+            "aircraft": "Airbus A220-300 Passenger"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "715e054a026a4100aed13dcaaf0b489b"
+    },
+    {
+      "price": {
+        "amount": 196.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Turkish Airlines",
+        "duration_minutes": 210,
+        "segments": [
+          {
+            "marketing_carrier_code": "TK",
+            "flight_number": "1822",
+            "operating_carrier_name": "Turkish Airlines",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-11T11:15:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T10:15:00Z",
+            "arrival_airport": "IST",
+            "arrival_time_local": "2026-12-11T16:45:00",
+            "arrival_timezone": "Europe/Istanbul",
+            "arrival_time_utc": "2026-12-11T13:45:00Z",
+            "duration_minutes": 210,
+            "aircraft": "Boeing 777"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "7dd1f9dce55e4188b23f03bf6c064dac"
+    },
+    {
+      "price": {
+        "amount": 196.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Turkish Airlines",
+        "duration_minutes": 215,
+        "segments": [
+          {
+            "marketing_carrier_code": "TK",
+            "flight_number": "1826",
+            "operating_carrier_name": "Turkish Airlines",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-11T15:35:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T14:35:00Z",
+            "arrival_airport": "IST",
+            "arrival_time_local": "2026-12-11T21:10:00",
+            "arrival_timezone": "Europe/Istanbul",
+            "arrival_time_utc": "2026-12-11T18:10:00Z",
+            "duration_minutes": 215,
+            "aircraft": "Boeing 737"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "c82bf863018948ad97bfda02cd0553a0"
+    },
+    {
+      "price": {
+        "amount": 196.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Turkish Airlines",
+        "duration_minutes": 220,
+        "segments": [
+          {
+            "marketing_carrier_code": "TK",
+            "flight_number": "1824",
+            "operating_carrier_name": "Turkish Airlines",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-11T13:45:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T12:45:00Z",
+            "arrival_airport": "IST",
+            "arrival_time_local": "2026-12-11T19:25:00",
+            "arrival_timezone": "Europe/Istanbul",
+            "arrival_time_utc": "2026-12-11T16:25:00Z",
+            "duration_minutes": 220,
+            "aircraft": "Airbus A330"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "ab064b3a7ca14993805e09e2de024edc"
+    },
+    {
+      "price": {
+        "amount": 216.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Turkish Airlines",
+        "duration_minutes": 215,
+        "segments": [
+          {
+            "marketing_carrier_code": "TK",
+            "flight_number": "1834",
+            "operating_carrier_name": "Turkish Airlines",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-11T17:40:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T16:40:00Z",
+            "arrival_airport": "IST",
+            "arrival_time_local": "2026-12-11T23:15:00",
+            "arrival_timezone": "Europe/Istanbul",
+            "arrival_time_utc": "2026-12-11T20:15:00Z",
+            "duration_minutes": 215,
+            "aircraft": "Airbus A321neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "b204700fed614a80a5da6874679b7505"
+    },
+    {
+      "price": {
+        "amount": 216.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Turkish Airlines",
+        "duration_minutes": 215,
+        "segments": [
+          {
+            "marketing_carrier_code": "TK",
+            "flight_number": "1828",
+            "operating_carrier_name": "Turkish Airlines",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-11T18:55:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T17:55:00Z",
+            "arrival_airport": "IST",
+            "arrival_time_local": "2026-12-12T00:30:00",
+            "arrival_timezone": "Europe/Istanbul",
+            "arrival_time_utc": "2026-12-11T21:30:00Z",
+            "duration_minutes": 215,
+            "aircraft": "Airbus A330"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "d0d2401600e3485390ae36d76b6aca59"
+    },
+    {
+      "price": {
+        "amount": 233.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Turkish Airlines",
+        "duration_minutes": 225,
+        "segments": [
+          {
+            "marketing_carrier_code": "TK",
+            "flight_number": "1830",
+            "operating_carrier_name": "Turkish Airlines",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-11T06:45:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T05:45:00Z",
+            "arrival_airport": "IST",
+            "arrival_time_local": "2026-12-11T12:30:00",
+            "arrival_timezone": "Europe/Istanbul",
+            "arrival_time_utc": "2026-12-11T09:30:00Z",
+            "duration_minutes": 225,
+            "aircraft": "Airbus A321neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "6bf8660c87004b6e8fa4fa8bb64a264c"
+    },
+    {
+      "price": {
+        "amount": 320.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "KLM",
+        "duration_minutes": 350,
+        "segments": [
+          {
+            "marketing_carrier_code": "KL",
+            "flight_number": "1402",
+            "operating_carrier_name": "KLM",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-11T09:05:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T08:05:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2026-12-11T10:30:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2026-12-11T09:30:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Embraer 195 E2"
+          },
+          {
+            "marketing_carrier_code": "KL",
+            "flight_number": "1959",
+            "operating_carrier_name": "KLM",
+            "departure_airport": "AMS",
+            "departure_time_local": "2026-12-11T11:35:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2026-12-11T10:35:00Z",
+            "arrival_airport": "IST",
+            "arrival_time_local": "2026-12-11T16:55:00",
+            "arrival_timezone": "Europe/Istanbul",
+            "arrival_time_utc": "2026-12-11T13:55:00Z",
+            "duration_minutes": 200,
+            "aircraft": "Boeing 737"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "8123c9d794d84cb99a92afb4dbf38faa"
+    },
+    {
+      "price": {
+        "amount": 786.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 350,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "1888",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-11T10:15:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T09:15:00Z",
+            "arrival_airport": "OTP",
+            "arrival_time_local": "2026-12-11T14:10:00",
+            "arrival_timezone": "Europe/Bucharest",
+            "arrival_time_utc": "2026-12-11T12:10:00Z",
+            "duration_minutes": 175,
+            "aircraft": "Airbus A220-300 Passenger"
+          },
+          {
+            "marketing_carrier_code": "TK",
+            "flight_number": "1040",
+            "operating_carrier_name": "Turkish Airlines",
+            "departure_airport": "OTP",
+            "departure_time_local": "2026-12-11T15:35:00",
+            "departure_timezone": "Europe/Bucharest",
+            "departure_time_utc": "2026-12-11T13:35:00Z",
+            "arrival_airport": "IST",
+            "arrival_time_local": "2026-12-11T18:05:00",
+            "arrival_timezone": "Europe/Istanbul",
+            "arrival_time_utc": "2026-12-11T15:05:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A330"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "1aaca6f1c2a341a3831e7c959bb04dbb"
+    }
+  ],
+  "observed_at": "2026-11-20T15:59:10.424045Z"
+}

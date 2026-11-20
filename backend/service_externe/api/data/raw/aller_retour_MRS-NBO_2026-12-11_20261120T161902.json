@@ -1,0 +1,2076 @@
+{
+  "origin": "MRS",
+  "destination": "NBO",
+  "departure_date": "2026-12-11",
+  "return_date": "2026-12-18",
+  "itineraries": [
+    {
+      "price": {
+        "amount": 1065.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air Algerie",
+        "duration_minutes": 1515,
+        "segments": [
+          {
+            "marketing_carrier_code": "AH",
+            "flight_number": "1023",
+            "operating_carrier_name": "Air Algerie",
+            "departure_airport": "MRS",
+            "departure_time_local": "2026-12-11T10:30:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T09:30:00Z",
+            "arrival_airport": "ALG",
+            "arrival_time_local": "2026-12-11T12:10:00",
+            "arrival_timezone": "Africa/Algiers",
+            "arrival_time_utc": "2026-12-11T11:10:00Z",
+            "duration_minutes": 100,
+            "aircraft": "Boeing 737"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "1380",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "ALG",
+            "departure_time_local": "2026-12-11T15:45:00",
+            "departure_timezone": "Africa/Algiers",
+            "departure_time_utc": "2026-12-11T14:45:00Z",
+            "arrival_airport": "DOH",
+            "arrival_time_local": "2026-12-11T23:45:00",
+            "arrival_timezone": "Asia/Qatar",
+            "arrival_time_utc": "2026-12-11T20:45:00Z",
+            "duration_minutes": 360,
+            "aircraft": "Airbus A350"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "1345",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "DOH",
+            "departure_time_local": "2026-12-12T08:40:00",
+            "departure_timezone": "Asia/Qatar",
+            "departure_time_utc": "2026-12-12T05:40:00Z",
+            "arrival_airport": "NBO",
+            "arrival_time_local": "2026-12-12T13:45:00",
+            "arrival_timezone": "Africa/Nairobi",
+            "arrival_time_utc": "2026-12-12T10:45:00Z",
+            "duration_minutes": 305,
+            "aircraft": "Boeing 787"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "British Airways",
+        "duration_minutes": 820,
+        "segments": [
+          {
+            "marketing_carrier_code": "BA",
+            "flight_number": "64",
+            "operating_carrier_name": "British Airways",
+            "departure_airport": "NBO",
+            "departure_time_local": "2026-12-18T23:50:00",
+            "departure_timezone": "Africa/Nairobi",
+            "departure_time_utc": "2026-12-18T20:50:00Z",
+            "arrival_airport": "LHR",
+            "arrival_time_local": "2026-12-19T06:15:00",
+            "arrival_timezone": "Europe/London",
+            "arrival_time_utc": "2026-12-19T06:15:00Z",
+            "duration_minutes": 565,
+            "aircraft": "Airbus A350"
+          },
+          {
+            "marketing_carrier_code": "BA",
+            "flight_number": "364",
+            "operating_carrier_name": "British Airways",
+            "departure_airport": "LHR",
+            "departure_time_local": "2026-12-19T08:30:00",
+            "departure_timezone": "Europe/London",
+            "departure_time_utc": "2026-12-19T08:30:00Z",
+            "arrival_airport": "MRS",
+            "arrival_time_local": "2026-12-19T11:30:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T10:30:00Z",
+            "duration_minutes": 120,
+            "aircraft": "Airbus A319"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "c13cdd4500c4445bb201b31aee7f7ebb"
+    },
+    {
+      "price": {
+        "amount": 1140.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Lufthansa",
+        "duration_minutes": 1650,
+        "segments": [
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "2265",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "MRS",
+            "departure_time_local": "2026-12-11T18:35:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T17:35:00Z",
+            "arrival_airport": "MUC",
+            "arrival_time_local": "2026-12-11T20:10:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T19:10:00Z",
+            "duration_minutes": 95,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "60",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "MUC",
+            "departure_time_local": "2026-12-12T08:40:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-12T07:40:00Z",
+            "arrival_airport": "DOH",
+            "arrival_time_local": "2026-12-12T16:15:00",
+            "arrival_timezone": "Asia/Qatar",
+            "arrival_time_utc": "2026-12-12T13:15:00Z",
+            "duration_minutes": 335,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "1341",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "DOH",
+            "departure_time_local": "2026-12-12T19:00:00",
+            "departure_timezone": "Asia/Qatar",
+            "departure_time_utc": "2026-12-12T16:00:00Z",
+            "arrival_airport": "NBO",
+            "arrival_time_local": "2026-12-13T00:05:00",
+            "arrival_timezone": "Africa/Nairobi",
+            "arrival_time_utc": "2026-12-12T21:05:00Z",
+            "duration_minutes": 305,
+            "aircraft": "Boeing 777"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "British Airways",
+        "duration_minutes": 820,
+        "segments": [
+          {
+            "marketing_carrier_code": "BA",
+            "flight_number": "64",
+            "operating_carrier_name": "British Airways",
+            "departure_airport": "NBO",
+            "departure_time_local": "2026-12-18T23:50:00",
+            "departure_timezone": "Africa/Nairobi",
+            "departure_time_utc": "2026-12-18T20:50:00Z",
+            "arrival_airport": "LHR",
+            "arrival_time_local": "2026-12-19T06:15:00",
+            "arrival_timezone": "Europe/London",
+            "arrival_time_utc": "2026-12-19T06:15:00Z",
+            "duration_minutes": 565,
+            "aircraft": "Airbus A350"
+          },
+          {
+            "marketing_carrier_code": "BA",
+            "flight_number": "364",
+            "operating_carrier_name": "British Airways",
+            "departure_airport": "LHR",
+            "departure_time_local": "2026-12-19T08:30:00",
+            "departure_timezone": "Europe/London",
+            "departure_time_utc": "2026-12-19T08:30:00Z",
+            "arrival_airport": "MRS",
+            "arrival_time_local": "2026-12-19T11:30:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T10:30:00Z",
+            "duration_minutes": 120,
+            "aircraft": "Airbus A319"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "ef884c6053e342938efb308d4704656e"
+    },
+    {
+      "price": {
+        "amount": 1188.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air Algerie",
+        "duration_minutes": 1125,
+        "segments": [
+          {
+            "marketing_carrier_code": "AH",
+            "flight_number": "1023",
+            "operating_carrier_name": "Air Algerie",
+            "departure_airport": "MRS",
+            "departure_time_local": "2026-12-11T10:30:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T09:30:00Z",
+            "arrival_airport": "ALG",
+            "arrival_time_local": "2026-12-11T12:10:00",
+            "arrival_timezone": "Africa/Algiers",
+            "arrival_time_utc": "2026-12-11T11:10:00Z",
+            "duration_minutes": 100,
+            "aircraft": "Boeing 737"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "1380",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "ALG",
+            "departure_time_local": "2026-12-11T15:45:00",
+            "departure_timezone": "Africa/Algiers",
+            "departure_time_utc": "2026-12-11T14:45:00Z",
+            "arrival_airport": "DOH",
+            "arrival_time_local": "2026-12-11T23:45:00",
+            "arrival_timezone": "Asia/Qatar",
+            "arrival_time_utc": "2026-12-11T20:45:00Z",
+            "duration_minutes": 360,
+            "aircraft": "Airbus A350"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "1335",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "DOH",
+            "departure_time_local": "2026-12-12T02:10:00",
+            "departure_timezone": "Asia/Qatar",
+            "departure_time_utc": "2026-12-11T23:10:00Z",
+            "arrival_airport": "NBO",
+            "arrival_time_local": "2026-12-12T07:15:00",
+            "arrival_timezone": "Africa/Nairobi",
+            "arrival_time_utc": "2026-12-12T04:15:00Z",
+            "duration_minutes": 305,
+            "aircraft": "Boeing 787"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "British Airways",
+        "duration_minutes": 820,
+        "segments": [
+          {
+            "marketing_carrier_code": "BA",
+            "flight_number": "64",
+            "operating_carrier_name": "British Airways",
+            "departure_airport": "NBO",
+            "departure_time_local": "2026-12-18T23:50:00",
+            "departure_timezone": "Africa/Nairobi",
+            "departure_time_utc": "2026-12-18T20:50:00Z",
+            "arrival_airport": "LHR",
+            "arrival_time_local": "2026-12-19T06:15:00",
+            "arrival_timezone": "Europe/London",
+            "arrival_time_utc": "2026-12-19T06:15:00Z",
+            "duration_minutes": 565,
+            "aircraft": "Airbus A350"
+          },
+          {
+            "marketing_carrier_code": "BA",
+            "flight_number": "364",
+            "operating_carrier_name": "British Airways",
+            "departure_airport": "LHR",
+            "departure_time_local": "2026-12-19T08:30:00",
+            "departure_timezone": "Europe/London",
+            "departure_time_utc": "2026-12-19T08:30:00Z",
+            "arrival_airport": "MRS",
+            "arrival_time_local": "2026-12-19T11:30:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T10:30:00Z",
+            "duration_minutes": 120,
+            "aircraft": "Airbus A319"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "49c0458a6d8549938b355646bdc34c09"
+    },
+    {
+      "price": {
+        "amount": 1282.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air Algerie",
+        "duration_minutes": 1515,
+        "segments": [
+          {
+            "marketing_carrier_code": "AH",
+            "flight_number": "1023",
+            "operating_carrier_name": "Air Algerie",
+            "departure_airport": "MRS",
+            "departure_time_local": "2026-12-11T10:30:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T09:30:00Z",
+            "arrival_airport": "ALG",
+            "arrival_time_local": "2026-12-11T12:10:00",
+            "arrival_timezone": "Africa/Algiers",
+            "arrival_time_utc": "2026-12-11T11:10:00Z",
+            "duration_minutes": 100,
+            "aircraft": "Boeing 737"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "1380",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "ALG",
+            "departure_time_local": "2026-12-11T15:45:00",
+            "departure_timezone": "Africa/Algiers",
+            "departure_time_utc": "2026-12-11T14:45:00Z",
+            "arrival_airport": "DOH",
+            "arrival_time_local": "2026-12-11T23:45:00",
+            "arrival_timezone": "Asia/Qatar",
+            "arrival_time_utc": "2026-12-11T20:45:00Z",
+            "duration_minutes": 360,
+            "aircraft": "Airbus A350"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "1345",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "DOH",
+            "departure_time_local": "2026-12-12T08:40:00",
+            "departure_timezone": "Asia/Qatar",
+            "departure_time_utc": "2026-12-12T05:40:00Z",
+            "arrival_airport": "NBO",
+            "arrival_time_local": "2026-12-12T13:45:00",
+            "arrival_timezone": "Africa/Nairobi",
+            "arrival_time_utc": "2026-12-12T10:45:00Z",
+            "duration_minutes": 305,
+            "aircraft": "Boeing 787"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Qatar Airways",
+        "duration_minutes": 1180,
+        "segments": [
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "1342",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "NBO",
+            "departure_time_local": "2026-12-18T01:35:00",
+            "departure_timezone": "Africa/Nairobi",
+            "departure_time_utc": "2026-12-17T22:35:00Z",
+            "arrival_airport": "DOH",
+            "arrival_time_local": "2026-12-18T06:35:00",
+            "arrival_timezone": "Asia/Qatar",
+            "arrival_time_utc": "2026-12-18T03:35:00Z",
+            "duration_minutes": 300,
+            "aircraft": "Boeing 777"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "1379",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "DOH",
+            "departure_time_local": "2026-12-18T08:10:00",
+            "departure_timezone": "Asia/Qatar",
+            "departure_time_utc": "2026-12-18T05:10:00Z",
+            "arrival_airport": "ALG",
+            "arrival_time_local": "2026-12-18T13:25:00",
+            "arrival_timezone": "Africa/Algiers",
+            "arrival_time_utc": "2026-12-18T12:25:00Z",
+            "duration_minutes": 435,
+            "aircraft": "Airbus A350"
+          },
+          {
+            "marketing_carrier_code": "AH",
+            "flight_number": "1024",
+            "operating_carrier_name": "Air Algerie",
+            "departure_airport": "ALG",
+            "departure_time_local": "2026-12-18T17:45:00",
+            "departure_timezone": "Africa/Algiers",
+            "departure_time_utc": "2026-12-18T16:45:00Z",
+            "arrival_airport": "MRS",
+            "arrival_time_local": "2026-12-18T19:15:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T18:15:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Boeing 737"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "81e5b9384eb3479ab55b75fb4d884e0a"
+    },
+    {
+      "price": {
+        "amount": 1293.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air Algerie",
+        "duration_minutes": 1515,
+        "segments": [
+          {
+            "marketing_carrier_code": "AH",
+            "flight_number": "1023",
+            "operating_carrier_name": "Air Algerie",
+            "departure_airport": "MRS",
+            "departure_time_local": "2026-12-11T10:30:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T09:30:00Z",
+            "arrival_airport": "ALG",
+            "arrival_time_local": "2026-12-11T12:10:00",
+            "arrival_timezone": "Africa/Algiers",
+            "arrival_time_utc": "2026-12-11T11:10:00Z",
+            "duration_minutes": 100,
+            "aircraft": "Boeing 737"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "1380",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "ALG",
+            "departure_time_local": "2026-12-11T15:45:00",
+            "departure_timezone": "Africa/Algiers",
+            "departure_time_utc": "2026-12-11T14:45:00Z",
+            "arrival_airport": "DOH",
+            "arrival_time_local": "2026-12-11T23:45:00",
+            "arrival_timezone": "Asia/Qatar",
+            "arrival_time_utc": "2026-12-11T20:45:00Z",
+            "duration_minutes": 360,
+            "aircraft": "Airbus A350"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "1345",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "DOH",
+            "departure_time_local": "2026-12-12T08:40:00",
+            "departure_timezone": "Asia/Qatar",
+            "departure_time_utc": "2026-12-12T05:40:00Z",
+            "arrival_airport": "NBO",
+            "arrival_time_local": "2026-12-12T13:45:00",
+            "arrival_timezone": "Africa/Nairobi",
+            "arrival_time_utc": "2026-12-12T10:45:00Z",
+            "duration_minutes": 305,
+            "aircraft": "Boeing 787"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Qatar Airways",
+        "duration_minutes": 1140,
+        "segments": [
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "1336",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "NBO",
+            "departure_time_local": "2026-12-18T17:00:00",
+            "departure_timezone": "Africa/Nairobi",
+            "departure_time_utc": "2026-12-18T14:00:00Z",
+            "arrival_airport": "DOH",
+            "arrival_time_local": "2026-12-18T22:00:00",
+            "arrival_timezone": "Asia/Qatar",
+            "arrival_time_utc": "2026-12-18T19:00:00Z",
+            "duration_minutes": 300,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "69",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "DOH",
+            "departure_time_local": "2026-12-19T02:30:00",
+            "departure_timezone": "Asia/Qatar",
+            "departure_time_utc": "2026-12-18T23:30:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-19T06:50:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-19T05:50:00Z",
+            "duration_minutes": 380,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "VL",
+            "flight_number": "1086",
+            "operating_carrier_name": "Lufthansa City Airlines",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-19T08:25:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-19T07:25:00Z",
+            "arrival_airport": "MRS",
+            "arrival_time_local": "2026-12-19T10:00:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T09:00:00Z",
+            "duration_minutes": 95,
+            "aircraft": "Airbus A320neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "bcf9e87b379a4fc7b159eedd40c3f279"
+    },
+    {
+      "price": {
+        "amount": 1357.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Lufthansa",
+        "duration_minutes": 1650,
+        "segments": [
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "2265",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "MRS",
+            "departure_time_local": "2026-12-11T18:35:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T17:35:00Z",
+            "arrival_airport": "MUC",
+            "arrival_time_local": "2026-12-11T20:10:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T19:10:00Z",
+            "duration_minutes": 95,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "60",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "MUC",
+            "departure_time_local": "2026-12-12T08:40:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-12T07:40:00Z",
+            "arrival_airport": "DOH",
+            "arrival_time_local": "2026-12-12T16:15:00",
+            "arrival_timezone": "Asia/Qatar",
+            "arrival_time_utc": "2026-12-12T13:15:00Z",
+            "duration_minutes": 335,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "1341",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "DOH",
+            "departure_time_local": "2026-12-12T19:00:00",
+            "departure_timezone": "Asia/Qatar",
+            "departure_time_utc": "2026-12-12T16:00:00Z",
+            "arrival_airport": "NBO",
+            "arrival_time_local": "2026-12-13T00:05:00",
+            "arrival_timezone": "Africa/Nairobi",
+            "arrival_time_utc": "2026-12-12T21:05:00Z",
+            "duration_minutes": 305,
+            "aircraft": "Boeing 777"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Qatar Airways",
+        "duration_minutes": 1180,
+        "segments": [
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "1342",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "NBO",
+            "departure_time_local": "2026-12-18T01:35:00",
+            "departure_timezone": "Africa/Nairobi",
+            "departure_time_utc": "2026-12-17T22:35:00Z",
+            "arrival_airport": "DOH",
+            "arrival_time_local": "2026-12-18T06:35:00",
+            "arrival_timezone": "Asia/Qatar",
+            "arrival_time_utc": "2026-12-18T03:35:00Z",
+            "duration_minutes": 300,
+            "aircraft": "Boeing 777"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "1379",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "DOH",
+            "departure_time_local": "2026-12-18T08:10:00",
+            "departure_timezone": "Asia/Qatar",
+            "departure_time_utc": "2026-12-18T05:10:00Z",
+            "arrival_airport": "ALG",
+            "arrival_time_local": "2026-12-18T13:25:00",
+            "arrival_timezone": "Africa/Algiers",
+            "arrival_time_utc": "2026-12-18T12:25:00Z",
+            "duration_minutes": 435,
+            "aircraft": "Airbus A350"
+          },
+          {
+            "marketing_carrier_code": "AH",
+            "flight_number": "1024",
+            "operating_carrier_name": "Air Algerie",
+            "departure_airport": "ALG",
+            "departure_time_local": "2026-12-18T17:45:00",
+            "departure_timezone": "Africa/Algiers",
+            "departure_time_utc": "2026-12-18T16:45:00Z",
+            "arrival_airport": "MRS",
+            "arrival_time_local": "2026-12-18T19:15:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T18:15:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Boeing 737"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "6c2a1be68e0441a7b3c55cbcf1eb5ffd"
+    },
+    {
+      "price": {
+        "amount": 1368.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Lufthansa",
+        "duration_minutes": 1650,
+        "segments": [
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "2265",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "MRS",
+            "departure_time_local": "2026-12-11T18:35:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T17:35:00Z",
+            "arrival_airport": "MUC",
+            "arrival_time_local": "2026-12-11T20:10:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T19:10:00Z",
+            "duration_minutes": 95,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "60",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "MUC",
+            "departure_time_local": "2026-12-12T08:40:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-12T07:40:00Z",
+            "arrival_airport": "DOH",
+            "arrival_time_local": "2026-12-12T16:15:00",
+            "arrival_timezone": "Asia/Qatar",
+            "arrival_time_utc": "2026-12-12T13:15:00Z",
+            "duration_minutes": 335,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "1341",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "DOH",
+            "departure_time_local": "2026-12-12T19:00:00",
+            "departure_timezone": "Asia/Qatar",
+            "departure_time_utc": "2026-12-12T16:00:00Z",
+            "arrival_airport": "NBO",
+            "arrival_time_local": "2026-12-13T00:05:00",
+            "arrival_timezone": "Africa/Nairobi",
+            "arrival_time_utc": "2026-12-12T21:05:00Z",
+            "duration_minutes": 305,
+            "aircraft": "Boeing 777"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Qatar Airways",
+        "duration_minutes": 1140,
+        "segments": [
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "1336",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "NBO",
+            "departure_time_local": "2026-12-18T17:00:00",
+            "departure_timezone": "Africa/Nairobi",
+            "departure_time_utc": "2026-12-18T14:00:00Z",
+            "arrival_airport": "DOH",
+            "arrival_time_local": "2026-12-18T22:00:00",
+            "arrival_timezone": "Asia/Qatar",
+            "arrival_time_utc": "2026-12-18T19:00:00Z",
+            "duration_minutes": 300,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "69",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "DOH",
+            "departure_time_local": "2026-12-19T02:30:00",
+            "departure_timezone": "Asia/Qatar",
+            "departure_time_utc": "2026-12-18T23:30:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-19T06:50:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-19T05:50:00Z",
+            "duration_minutes": 380,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "VL",
+            "flight_number": "1086",
+            "operating_carrier_name": "Lufthansa City Airlines",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-19T08:25:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-19T07:25:00Z",
+            "arrival_airport": "MRS",
+            "arrival_time_local": "2026-12-19T10:00:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T09:00:00Z",
+            "duration_minutes": 95,
+            "aircraft": "Airbus A320neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "39ebaf2239cf45bd826ebf6b34f0f621"
+    },
+    {
+      "price": {
+        "amount": 1395.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air Algerie",
+        "duration_minutes": 1125,
+        "segments": [
+          {
+            "marketing_carrier_code": "AH",
+            "flight_number": "1023",
+            "operating_carrier_name": "Air Algerie",
+            "departure_airport": "MRS",
+            "departure_time_local": "2026-12-11T10:30:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T09:30:00Z",
+            "arrival_airport": "ALG",
+            "arrival_time_local": "2026-12-11T12:10:00",
+            "arrival_timezone": "Africa/Algiers",
+            "arrival_time_utc": "2026-12-11T11:10:00Z",
+            "duration_minutes": 100,
+            "aircraft": "Boeing 737"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "1380",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "ALG",
+            "departure_time_local": "2026-12-11T15:45:00",
+            "departure_timezone": "Africa/Algiers",
+            "departure_time_utc": "2026-12-11T14:45:00Z",
+            "arrival_airport": "DOH",
+            "arrival_time_local": "2026-12-11T23:45:00",
+            "arrival_timezone": "Asia/Qatar",
+            "arrival_time_utc": "2026-12-11T20:45:00Z",
+            "duration_minutes": 360,
+            "aircraft": "Airbus A350"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "1335",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "DOH",
+            "departure_time_local": "2026-12-12T02:10:00",
+            "departure_timezone": "Asia/Qatar",
+            "departure_time_utc": "2026-12-11T23:10:00Z",
+            "arrival_airport": "NBO",
+            "arrival_time_local": "2026-12-12T07:15:00",
+            "arrival_timezone": "Africa/Nairobi",
+            "arrival_time_utc": "2026-12-12T04:15:00Z",
+            "duration_minutes": 305,
+            "aircraft": "Boeing 787"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Qatar Airways",
+        "duration_minutes": 1180,
+        "segments": [
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "1342",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "NBO",
+            "departure_time_local": "2026-12-18T01:35:00",
+            "departure_timezone": "Africa/Nairobi",
+            "departure_time_utc": "2026-12-17T22:35:00Z",
+            "arrival_airport": "DOH",
+            "arrival_time_local": "2026-12-18T06:35:00",
+            "arrival_timezone": "Asia/Qatar",
+            "arrival_time_utc": "2026-12-18T03:35:00Z",
+            "duration_minutes": 300,
+            "aircraft": "Boeing 777"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "1379",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "DOH",
+            "departure_time_local": "2026-12-18T08:10:00",
+            "departure_timezone": "Asia/Qatar",
+            "departure_time_utc": "2026-12-18T05:10:00Z",
+            "arrival_airport": "ALG",
+            "arrival_time_local": "2026-12-18T13:25:00",
+            "arrival_timezone": "Africa/Algiers",
+            "arrival_time_utc": "2026-12-18T12:25:00Z",
+            "duration_minutes": 435,
+            "aircraft": "Airbus A350"
+          },
+          {
+            "marketing_carrier_code": "AH",
+            "flight_number": "1024",
+            "operating_carrier_name": "Air Algerie",
+            "departure_airport": "ALG",
+            "departure_time_local": "2026-12-18T17:45:00",
+            "departure_timezone": "Africa/Algiers",
+            "departure_time_utc": "2026-12-18T16:45:00Z",
+            "arrival_airport": "MRS",
+            "arrival_time_local": "2026-12-18T19:15:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T18:15:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Boeing 737"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "a5c75b3309574640ae4520dc06da9825"
+    },
+    {
+      "price": {
+        "amount": 1406.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air Algerie",
+        "duration_minutes": 1125,
+        "segments": [
+          {
+            "marketing_carrier_code": "AH",
+            "flight_number": "1023",
+            "operating_carrier_name": "Air Algerie",
+            "departure_airport": "MRS",
+            "departure_time_local": "2026-12-11T10:30:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T09:30:00Z",
+            "arrival_airport": "ALG",
+            "arrival_time_local": "2026-12-11T12:10:00",
+            "arrival_timezone": "Africa/Algiers",
+            "arrival_time_utc": "2026-12-11T11:10:00Z",
+            "duration_minutes": 100,
+            "aircraft": "Boeing 737"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "1380",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "ALG",
+            "departure_time_local": "2026-12-11T15:45:00",
+            "departure_timezone": "Africa/Algiers",
+            "departure_time_utc": "2026-12-11T14:45:00Z",
+            "arrival_airport": "DOH",
+            "arrival_time_local": "2026-12-11T23:45:00",
+            "arrival_timezone": "Asia/Qatar",
+            "arrival_time_utc": "2026-12-11T20:45:00Z",
+            "duration_minutes": 360,
+            "aircraft": "Airbus A350"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "1335",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "DOH",
+            "departure_time_local": "2026-12-12T02:10:00",
+            "departure_timezone": "Asia/Qatar",
+            "departure_time_utc": "2026-12-11T23:10:00Z",
+            "arrival_airport": "NBO",
+            "arrival_time_local": "2026-12-12T07:15:00",
+            "arrival_timezone": "Africa/Nairobi",
+            "arrival_time_utc": "2026-12-12T04:15:00Z",
+            "duration_minutes": 305,
+            "aircraft": "Boeing 787"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Qatar Airways",
+        "duration_minutes": 1140,
+        "segments": [
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "1336",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "NBO",
+            "departure_time_local": "2026-12-18T17:00:00",
+            "departure_timezone": "Africa/Nairobi",
+            "departure_time_utc": "2026-12-18T14:00:00Z",
+            "arrival_airport": "DOH",
+            "arrival_time_local": "2026-12-18T22:00:00",
+            "arrival_timezone": "Asia/Qatar",
+            "arrival_time_utc": "2026-12-18T19:00:00Z",
+            "duration_minutes": 300,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "QR",
+            "flight_number": "69",
+            "operating_carrier_name": "Qatar Airways",
+            "departure_airport": "DOH",
+            "departure_time_local": "2026-12-19T02:30:00",
+            "departure_timezone": "Asia/Qatar",
+            "departure_time_utc": "2026-12-18T23:30:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-19T06:50:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-19T05:50:00Z",
+            "duration_minutes": 380,
+            "aircraft": "Boeing 787"
+          },
+          {
+            "marketing_carrier_code": "VL",
+            "flight_number": "1086",
+            "operating_carrier_name": "Lufthansa City Airlines",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-19T08:25:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-19T07:25:00Z",
+            "arrival_airport": "MRS",
+            "arrival_time_local": "2026-12-19T10:00:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T09:00:00Z",
+            "duration_minutes": 95,
+            "aircraft": "Airbus A320neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "f4fddd20a6c64cbdb72cc7f91e421d4c"
+    },
+    {
+      "price": {
+        "amount": 1635.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Lufthansa City Airlines",
+        "duration_minutes": 795,
+        "segments": [
+          {
+            "marketing_carrier_code": "VL",
+            "flight_number": "1091",
+            "operating_carrier_name": "Lufthansa City Airlines",
+            "departure_airport": "MRS",
+            "departure_time_local": "2026-12-11T06:55:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T05:55:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T08:35:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T07:35:00Z",
+            "duration_minutes": 100,
+            "aircraft": "Airbus A320neo"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "590",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-11T11:40:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T10:40:00Z",
+            "arrival_airport": "NBO",
+            "arrival_time_local": "2026-12-11T22:10:00",
+            "arrival_timezone": "Africa/Nairobi",
+            "arrival_time_utc": "2026-12-11T19:10:00Z",
+            "duration_minutes": 510,
+            "aircraft": "Airbus A340"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Lufthansa",
+        "duration_minutes": 725,
+        "segments": [
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "591",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "NBO",
+            "departure_time_local": "2026-12-18T23:55:00",
+            "departure_timezone": "Africa/Nairobi",
+            "departure_time_utc": "2026-12-18T20:55:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-19T07:05:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-19T06:05:00Z",
+            "duration_minutes": 550,
+            "aircraft": "Airbus A340"
+          },
+          {
+            "marketing_carrier_code": "VL",
+            "flight_number": "1086",
+            "operating_carrier_name": "Lufthansa City Airlines",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-19T08:25:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-19T07:25:00Z",
+            "arrival_airport": "MRS",
+            "arrival_time_local": "2026-12-19T10:00:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T09:00:00Z",
+            "duration_minutes": 95,
+            "aircraft": "Airbus A320neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "ca91a038cdcf42bdab05b878cdb6560f"
+    },
+    {
+      "price": {
+        "amount": 1682.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Brussels Airlines",
+        "duration_minutes": 805,
+        "segments": [
+          {
+            "marketing_carrier_code": "SN",
+            "flight_number": "3604",
+            "operating_carrier_name": "Brussels Airlines",
+            "departure_airport": "MRS",
+            "departure_time_local": "2026-12-11T06:45:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T05:45:00Z",
+            "arrival_airport": "BRU",
+            "arrival_time_local": "2026-12-11T08:30:00",
+            "arrival_timezone": "Europe/Brussels",
+            "arrival_time_utc": "2026-12-11T07:30:00Z",
+            "duration_minutes": 105,
+            "aircraft": "Airbus A319"
+          },
+          {
+            "marketing_carrier_code": "SN",
+            "flight_number": "2609",
+            "operating_carrier_name": "Brussels Airlines",
+            "departure_airport": "BRU",
+            "departure_time_local": "2026-12-11T09:30:00",
+            "departure_timezone": "Europe/Brussels",
+            "departure_time_utc": "2026-12-11T08:30:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T10:40:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T09:40:00Z",
+            "duration_minutes": 70,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "590",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-11T11:40:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T10:40:00Z",
+            "arrival_airport": "NBO",
+            "arrival_time_local": "2026-12-11T22:10:00",
+            "arrival_timezone": "Africa/Nairobi",
+            "arrival_time_utc": "2026-12-11T19:10:00Z",
+            "duration_minutes": 510,
+            "aircraft": "Airbus A340"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Lufthansa",
+        "duration_minutes": 725,
+        "segments": [
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "591",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "NBO",
+            "departure_time_local": "2026-12-18T23:55:00",
+            "departure_timezone": "Africa/Nairobi",
+            "departure_time_utc": "2026-12-18T20:55:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-19T07:05:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-19T06:05:00Z",
+            "duration_minutes": 550,
+            "aircraft": "Airbus A340"
+          },
+          {
+            "marketing_carrier_code": "VL",
+            "flight_number": "1086",
+            "operating_carrier_name": "Lufthansa City Airlines",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-19T08:25:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-19T07:25:00Z",
+            "arrival_airport": "MRS",
+            "arrival_time_local": "2026-12-19T10:00:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T09:00:00Z",
+            "duration_minutes": 95,
+            "aircraft": "Airbus A320neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "5cea53f9e9094cf19df7c123e43f8966"
+    },
+    {
+      "price": {
+        "amount": 1686.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 725,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "7347",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "MRS",
+            "departure_time_local": "2026-12-11T07:30:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T06:30:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-11T09:00:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-11T08:00:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "782",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-11T11:00:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T10:00:00Z",
+            "arrival_airport": "NBO",
+            "arrival_time_local": "2026-12-11T21:35:00",
+            "arrival_timezone": "Africa/Nairobi",
+            "arrival_time_utc": "2026-12-11T18:35:00Z",
+            "duration_minutes": 515,
+            "aircraft": "Boeing 777"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Air France",
+        "duration_minutes": 750,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "783",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "NBO",
+            "departure_time_local": "2026-12-18T23:55:00",
+            "departure_timezone": "Africa/Nairobi",
+            "departure_time_utc": "2026-12-18T20:55:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-19T07:00:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T06:00:00Z",
+            "duration_minutes": 545,
+            "aircraft": "Boeing 777"
+          },
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "7334",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-19T08:55:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-19T07:55:00Z",
+            "arrival_airport": "MRS",
+            "arrival_time_local": "2026-12-19T10:25:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T09:25:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "f548805d5eab4e52a28f005b9649c073"
+    },
+    {
+      "price": {
+        "amount": 1686.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 725,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "7347",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "MRS",
+            "departure_time_local": "2026-12-11T07:30:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T06:30:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-11T09:00:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-11T08:00:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "782",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-11T11:00:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T10:00:00Z",
+            "arrival_airport": "NBO",
+            "arrival_time_local": "2026-12-11T21:35:00",
+            "arrival_timezone": "Africa/Nairobi",
+            "arrival_time_utc": "2026-12-11T18:35:00Z",
+            "duration_minutes": 515,
+            "aircraft": "Boeing 777"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "KLM",
+        "duration_minutes": 1496,
+        "segments": [
+          {
+            "marketing_carrier_code": "KL",
+            "flight_number": "566",
+            "operating_carrier_name": "KLM",
+            "departure_airport": "NBO",
+            "departure_time_local": "2026-12-18T23:59:00",
+            "departure_timezone": "Africa/Nairobi",
+            "departure_time_utc": "2026-12-18T20:59:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2026-12-19T07:10:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2026-12-19T06:10:00Z",
+            "duration_minutes": 551,
+            "aircraft": "Boeing 787-10"
+          },
+          {
+            "marketing_carrier_code": "KL",
+            "flight_number": "1471",
+            "operating_carrier_name": "KLM",
+            "departure_airport": "AMS",
+            "departure_time_local": "2026-12-19T20:55:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2026-12-19T19:55:00Z",
+            "arrival_airport": "MRS",
+            "arrival_time_local": "2026-12-19T22:55:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T21:55:00Z",
+            "duration_minutes": 120,
+            "aircraft": "Embraer 195 E2"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "7a904cb30a034ae08cb364467a1c8fea"
+    },
+    {
+      "price": {
+        "amount": 1755.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Lufthansa City Airlines",
+        "duration_minutes": 795,
+        "segments": [
+          {
+            "marketing_carrier_code": "VL",
+            "flight_number": "1091",
+            "operating_carrier_name": "Lufthansa City Airlines",
+            "departure_airport": "MRS",
+            "departure_time_local": "2026-12-11T06:55:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T05:55:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T08:35:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T07:35:00Z",
+            "duration_minutes": 100,
+            "aircraft": "Airbus A320neo"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "590",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-11T11:40:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T10:40:00Z",
+            "arrival_airport": "NBO",
+            "arrival_time_local": "2026-12-11T22:10:00",
+            "arrival_timezone": "Africa/Nairobi",
+            "arrival_time_utc": "2026-12-11T19:10:00Z",
+            "duration_minutes": 510,
+            "aircraft": "Airbus A340"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "EgyptAir",
+        "duration_minutes": 1235,
+        "segments": [
+          {
+            "marketing_carrier_code": "MS",
+            "flight_number": "850",
+            "operating_carrier_name": "EgyptAir",
+            "departure_airport": "NBO",
+            "departure_time_local": "2026-12-18T04:20:00",
+            "departure_timezone": "Africa/Nairobi",
+            "departure_time_utc": "2026-12-18T01:20:00Z",
+            "arrival_airport": "CAI",
+            "arrival_time_local": "2026-12-18T08:35:00",
+            "arrival_timezone": "Africa/Cairo",
+            "arrival_time_utc": "2026-12-18T06:35:00Z",
+            "duration_minutes": 315,
+            "aircraft": "Boeing 737"
+          },
+          {
+            "marketing_carrier_code": "MS",
+            "flight_number": "725",
+            "operating_carrier_name": "EgyptAir",
+            "departure_airport": "CAI",
+            "departure_time_local": "2026-12-18T10:35:00",
+            "departure_timezone": "Africa/Cairo",
+            "departure_time_utc": "2026-12-18T08:35:00Z",
+            "arrival_airport": "BRU",
+            "arrival_time_local": "2026-12-18T14:20:00",
+            "arrival_timezone": "Europe/Brussels",
+            "arrival_time_utc": "2026-12-18T13:20:00Z",
+            "duration_minutes": 285,
+            "aircraft": "Boeing 737MAX 8 Passenger"
+          },
+          {
+            "marketing_carrier_code": "SN",
+            "flight_number": "3603",
+            "operating_carrier_name": "Brussels Airlines",
+            "departure_airport": "BRU",
+            "departure_time_local": "2026-12-18T21:10:00",
+            "departure_timezone": "Europe/Brussels",
+            "departure_time_utc": "2026-12-18T20:10:00Z",
+            "arrival_airport": "MRS",
+            "arrival_time_local": "2026-12-18T22:55:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T21:55:00Z",
+            "duration_minutes": 105,
+            "aircraft": "Airbus A319"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "8287e9c89d8041fd87ebbd2b25aaddc3"
+    },
+    {
+      "price": {
+        "amount": 1765.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 725,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "7347",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "MRS",
+            "departure_time_local": "2026-12-11T07:30:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T06:30:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-11T09:00:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-11T08:00:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "782",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-11T11:00:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T10:00:00Z",
+            "arrival_airport": "NBO",
+            "arrival_time_local": "2026-12-11T21:35:00",
+            "arrival_timezone": "Africa/Nairobi",
+            "arrival_time_utc": "2026-12-11T18:35:00Z",
+            "duration_minutes": 515,
+            "aircraft": "Boeing 777"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Air France",
+        "duration_minutes": 690,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "783",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "NBO",
+            "departure_time_local": "2026-12-18T23:55:00",
+            "departure_timezone": "Africa/Nairobi",
+            "departure_time_utc": "2026-12-18T20:55:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-19T07:00:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T06:00:00Z",
+            "duration_minutes": 545,
+            "aircraft": "Boeing 777"
+          },
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "7332",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-19T08:00:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-19T07:00:00Z",
+            "arrival_airport": "MRS",
+            "arrival_time_local": "2026-12-19T09:25:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T08:25:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A220-300 Passenger"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "9365776180434eba8847d597e1b1a72f"
+    },
+    {
+      "price": {
+        "amount": 1765.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 725,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "7347",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "MRS",
+            "departure_time_local": "2026-12-11T07:30:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T06:30:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-11T09:00:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-11T08:00:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "782",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-11T11:00:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T10:00:00Z",
+            "arrival_airport": "NBO",
+            "arrival_time_local": "2026-12-11T21:35:00",
+            "arrival_timezone": "Africa/Nairobi",
+            "arrival_time_utc": "2026-12-11T18:35:00Z",
+            "duration_minutes": 515,
+            "aircraft": "Boeing 777"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "KLM",
+        "duration_minutes": 816,
+        "segments": [
+          {
+            "marketing_carrier_code": "KL",
+            "flight_number": "566",
+            "operating_carrier_name": "KLM",
+            "departure_airport": "NBO",
+            "departure_time_local": "2026-12-18T23:59:00",
+            "departure_timezone": "Africa/Nairobi",
+            "departure_time_utc": "2026-12-18T20:59:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2026-12-19T07:10:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2026-12-19T06:10:00Z",
+            "duration_minutes": 551,
+            "aircraft": "Boeing 787-10"
+          },
+          {
+            "marketing_carrier_code": "KL",
+            "flight_number": "1465",
+            "operating_carrier_name": "KLM",
+            "departure_airport": "AMS",
+            "departure_time_local": "2026-12-19T09:40:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2026-12-19T08:40:00Z",
+            "arrival_airport": "MRS",
+            "arrival_time_local": "2026-12-19T11:35:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-19T10:35:00Z",
+            "duration_minutes": 115,
+            "aircraft": "Embraer 195 E2"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "f39f165b03d848c19f4f28faea0448e8"
+    },
+    {
+      "price": {
+        "amount": 1815.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Lufthansa City Airlines",
+        "duration_minutes": 795,
+        "segments": [
+          {
+            "marketing_carrier_code": "VL",
+            "flight_number": "1091",
+            "operating_carrier_name": "Lufthansa City Airlines",
+            "departure_airport": "MRS",
+            "departure_time_local": "2026-12-11T06:55:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T05:55:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T08:35:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T07:35:00Z",
+            "duration_minutes": 100,
+            "aircraft": "Airbus A320neo"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "590",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-11T11:40:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T10:40:00Z",
+            "arrival_airport": "NBO",
+            "arrival_time_local": "2026-12-11T22:10:00",
+            "arrival_timezone": "Africa/Nairobi",
+            "arrival_time_utc": "2026-12-11T19:10:00Z",
+            "duration_minutes": 510,
+            "aircraft": "Airbus A340"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Kenya Airways",
+        "duration_minutes": 900,
+        "segments": [
+          {
+            "marketing_carrier_code": "KQ",
+            "flight_number": "604",
+            "operating_carrier_name": "Kenya Airways",
+            "departure_airport": "NBO",
+            "departure_time_local": "2026-12-18T10:20:00",
+            "departure_timezone": "Africa/Nairobi",
+            "departure_time_utc": "2026-12-18T07:20:00Z",
+            "arrival_airport": "MBA",
+            "arrival_time_local": "2026-12-18T11:20:00",
+            "arrival_timezone": "Africa/Nairobi",
+            "arrival_time_utc": "2026-12-18T08:20:00Z",
+            "duration_minutes": 60,
+            "aircraft": "Embraer 190"
+          },
+          {
+            "marketing_carrier_code": "4Y",
+            "flight_number": "135",
+            "operating_carrier_name": "Discover Airlines",
+            "departure_airport": "MBA",
+            "departure_time_local": "2026-12-18T12:30:00",
+            "departure_timezone": "Africa/Nairobi",
+            "departure_time_utc": "2026-12-18T09:30:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-18T19:45:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-18T18:45:00Z",
+            "duration_minutes": 555,
+            "aircraft": "Airbus A330"
+          },
+          {
+            "marketing_carrier_code": "VL",
+            "flight_number": "1090",
+            "operating_carrier_name": "Lufthansa City Airlines",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T21:45:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T20:45:00Z",
+            "arrival_airport": "MRS",
+            "arrival_time_local": "2026-12-18T23:20:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T22:20:00Z",
+            "duration_minutes": 95,
+            "aircraft": "Airbus A320neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "f3ffe1a98c904a3ebffdf4d32bcb4d92"
+    },
+    {
+      "price": {
+        "amount": 1817.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Lufthansa City Airlines",
+        "duration_minutes": 795,
+        "segments": [
+          {
+            "marketing_carrier_code": "VL",
+            "flight_number": "1091",
+            "operating_carrier_name": "Lufthansa City Airlines",
+            "departure_airport": "MRS",
+            "departure_time_local": "2026-12-11T06:55:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T05:55:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T08:35:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T07:35:00Z",
+            "duration_minutes": 100,
+            "aircraft": "Airbus A320neo"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "590",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-11T11:40:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T10:40:00Z",
+            "arrival_airport": "NBO",
+            "arrival_time_local": "2026-12-11T22:10:00",
+            "arrival_timezone": "Africa/Nairobi",
+            "arrival_time_utc": "2026-12-11T19:10:00Z",
+            "duration_minutes": 510,
+            "aircraft": "Airbus A340"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "EgyptAir",
+        "duration_minutes": 930,
+        "segments": [
+          {
+            "marketing_carrier_code": "MS",
+            "flight_number": "850",
+            "operating_carrier_name": "EgyptAir",
+            "departure_airport": "NBO",
+            "departure_time_local": "2026-12-18T04:20:00",
+            "departure_timezone": "Africa/Nairobi",
+            "departure_time_utc": "2026-12-18T01:20:00Z",
+            "arrival_airport": "CAI",
+            "arrival_time_local": "2026-12-18T08:35:00",
+            "arrival_timezone": "Africa/Cairo",
+            "arrival_time_utc": "2026-12-18T06:35:00Z",
+            "duration_minutes": 315,
+            "aircraft": "Boeing 737"
+          },
+          {
+            "marketing_carrier_code": "MS",
+            "flight_number": "787",
+            "operating_carrier_name": "EgyptAir",
+            "departure_airport": "CAI",
+            "departure_time_local": "2026-12-18T09:50:00",
+            "departure_timezone": "Africa/Cairo",
+            "departure_time_utc": "2026-12-18T07:50:00Z",
+            "arrival_airport": "MUC",
+            "arrival_time_local": "2026-12-18T12:55:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-18T11:55:00Z",
+            "duration_minutes": 245,
+            "aircraft": "Airbus A321"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "2264",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "MUC",
+            "departure_time_local": "2026-12-18T16:10:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T15:10:00Z",
+            "arrival_airport": "MRS",
+            "arrival_time_local": "2026-12-18T17:50:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T16:50:00Z",
+            "duration_minutes": 100,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "4fa6d949589a43858fa22470c41a57f4"
+    },
+    {
+      "price": {
+        "amount": 1841.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Brussels Airlines",
+        "duration_minutes": 805,
+        "segments": [
+          {
+            "marketing_carrier_code": "SN",
+            "flight_number": "3604",
+            "operating_carrier_name": "Brussels Airlines",
+            "departure_airport": "MRS",
+            "departure_time_local": "2026-12-11T06:45:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T05:45:00Z",
+            "arrival_airport": "BRU",
+            "arrival_time_local": "2026-12-11T08:30:00",
+            "arrival_timezone": "Europe/Brussels",
+            "arrival_time_utc": "2026-12-11T07:30:00Z",
+            "duration_minutes": 105,
+            "aircraft": "Airbus A319"
+          },
+          {
+            "marketing_carrier_code": "SN",
+            "flight_number": "2609",
+            "operating_carrier_name": "Brussels Airlines",
+            "departure_airport": "BRU",
+            "departure_time_local": "2026-12-11T09:30:00",
+            "departure_timezone": "Europe/Brussels",
+            "departure_time_utc": "2026-12-11T08:30:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T10:40:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T09:40:00Z",
+            "duration_minutes": 70,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "590",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-11T11:40:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T10:40:00Z",
+            "arrival_airport": "NBO",
+            "arrival_time_local": "2026-12-11T22:10:00",
+            "arrival_timezone": "Africa/Nairobi",
+            "arrival_time_utc": "2026-12-11T19:10:00Z",
+            "duration_minutes": 510,
+            "aircraft": "Airbus A340"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Kenya Airways",
+        "duration_minutes": 900,
+        "segments": [
+          {
+            "marketing_carrier_code": "KQ",
+            "flight_number": "604",
+            "operating_carrier_name": "Kenya Airways",
+            "departure_airport": "NBO",
+            "departure_time_local": "2026-12-18T10:20:00",
+            "departure_timezone": "Africa/Nairobi",
+            "departure_time_utc": "2026-12-18T07:20:00Z",
+            "arrival_airport": "MBA",
+            "arrival_time_local": "2026-12-18T11:20:00",
+            "arrival_timezone": "Africa/Nairobi",
+            "arrival_time_utc": "2026-12-18T08:20:00Z",
+            "duration_minutes": 60,
+            "aircraft": "Embraer 190"
+          },
+          {
+            "marketing_carrier_code": "4Y",
+            "flight_number": "135",
+            "operating_carrier_name": "Discover Airlines",
+            "departure_airport": "MBA",
+            "departure_time_local": "2026-12-18T12:30:00",
+            "departure_timezone": "Africa/Nairobi",
+            "departure_time_utc": "2026-12-18T09:30:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-18T19:45:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-18T18:45:00Z",
+            "duration_minutes": 555,
+            "aircraft": "Airbus A330"
+          },
+          {
+            "marketing_carrier_code": "VL",
+            "flight_number": "1090",
+            "operating_carrier_name": "Lufthansa City Airlines",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T21:45:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T20:45:00Z",
+            "arrival_airport": "MRS",
+            "arrival_time_local": "2026-12-18T23:20:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T22:20:00Z",
+            "duration_minutes": 95,
+            "aircraft": "Airbus A320neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "9e3f74514adc4e4a97034e48390b2a28"
+    },
+    {
+      "price": {
+        "amount": 1842.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Brussels Airlines",
+        "duration_minutes": 805,
+        "segments": [
+          {
+            "marketing_carrier_code": "SN",
+            "flight_number": "3604",
+            "operating_carrier_name": "Brussels Airlines",
+            "departure_airport": "MRS",
+            "departure_time_local": "2026-12-11T06:45:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T05:45:00Z",
+            "arrival_airport": "BRU",
+            "arrival_time_local": "2026-12-11T08:30:00",
+            "arrival_timezone": "Europe/Brussels",
+            "arrival_time_utc": "2026-12-11T07:30:00Z",
+            "duration_minutes": 105,
+            "aircraft": "Airbus A319"
+          },
+          {
+            "marketing_carrier_code": "SN",
+            "flight_number": "2609",
+            "operating_carrier_name": "Brussels Airlines",
+            "departure_airport": "BRU",
+            "departure_time_local": "2026-12-11T09:30:00",
+            "departure_timezone": "Europe/Brussels",
+            "departure_time_utc": "2026-12-11T08:30:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T10:40:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T09:40:00Z",
+            "duration_minutes": 70,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "590",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-11T11:40:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T10:40:00Z",
+            "arrival_airport": "NBO",
+            "arrival_time_local": "2026-12-11T22:10:00",
+            "arrival_timezone": "Africa/Nairobi",
+            "arrival_time_utc": "2026-12-11T19:10:00Z",
+            "duration_minutes": 510,
+            "aircraft": "Airbus A340"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "EgyptAir",
+        "duration_minutes": 930,
+        "segments": [
+          {
+            "marketing_carrier_code": "MS",
+            "flight_number": "850",
+            "operating_carrier_name": "EgyptAir",
+            "departure_airport": "NBO",
+            "departure_time_local": "2026-12-18T04:20:00",
+            "departure_timezone": "Africa/Nairobi",
+            "departure_time_utc": "2026-12-18T01:20:00Z",
+            "arrival_airport": "CAI",
+            "arrival_time_local": "2026-12-18T08:35:00",
+            "arrival_timezone": "Africa/Cairo",
+            "arrival_time_utc": "2026-12-18T06:35:00Z",
+            "duration_minutes": 315,
+            "aircraft": "Boeing 737"
+          },
+          {
+            "marketing_carrier_code": "MS",
+            "flight_number": "787",
+            "operating_carrier_name": "EgyptAir",
+            "departure_airport": "CAI",
+            "departure_time_local": "2026-12-18T09:50:00",
+            "departure_timezone": "Africa/Cairo",
+            "departure_time_utc": "2026-12-18T07:50:00Z",
+            "arrival_airport": "MUC",
+            "arrival_time_local": "2026-12-18T12:55:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-18T11:55:00Z",
+            "duration_minutes": 245,
+            "aircraft": "Airbus A321"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "2264",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "MUC",
+            "departure_time_local": "2026-12-18T16:10:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T15:10:00Z",
+            "arrival_airport": "MRS",
+            "arrival_time_local": "2026-12-18T17:50:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T16:50:00Z",
+            "duration_minutes": 100,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "d233d61fbd764b1bbc3ca38d92d67eb2"
+    },
+    {
+      "price": {
+        "amount": 3234.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Turkish Airlines",
+        "duration_minutes": 815,
+        "segments": [
+          {
+            "marketing_carrier_code": "TK",
+            "flight_number": "1366",
+            "operating_carrier_name": "Turkish Airlines",
+            "departure_airport": "MRS",
+            "departure_time_local": "2026-12-11T11:30:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T10:30:00Z",
+            "arrival_airport": "IST",
+            "arrival_time_local": "2026-12-11T16:45:00",
+            "arrival_timezone": "Europe/Istanbul",
+            "arrival_time_utc": "2026-12-11T13:45:00Z",
+            "duration_minutes": 195,
+            "aircraft": "Boeing 737"
+          },
+          {
+            "marketing_carrier_code": "TK",
+            "flight_number": "607",
+            "operating_carrier_name": "Turkish Airlines",
+            "departure_airport": "IST",
+            "departure_time_local": "2026-12-11T20:30:00",
+            "departure_timezone": "Europe/Istanbul",
+            "departure_time_utc": "2026-12-11T17:30:00Z",
+            "arrival_airport": "NBO",
+            "arrival_time_local": "2026-12-12T03:05:00",
+            "arrival_timezone": "Africa/Nairobi",
+            "arrival_time_utc": "2026-12-12T00:05:00Z",
+            "duration_minutes": 395,
+            "aircraft": "Airbus A330"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Turkish Airlines",
+        "duration_minutes": 865,
+        "segments": [
+          {
+            "marketing_carrier_code": "TK",
+            "flight_number": "608",
+            "operating_carrier_name": "Turkish Airlines",
+            "departure_airport": "NBO",
+            "departure_time_local": "2026-12-18T04:50:00",
+            "departure_timezone": "Africa/Nairobi",
+            "departure_time_utc": "2026-12-18T01:50:00Z",
+            "arrival_airport": "IST",
+            "arrival_time_local": "2026-12-18T11:45:00",
+            "arrival_timezone": "Europe/Istanbul",
+            "arrival_time_utc": "2026-12-18T08:45:00Z",
+            "duration_minutes": 415,
+            "aircraft": "Airbus A330"
+          },
+          {
+            "marketing_carrier_code": "TK",
+            "flight_number": "1367",
+            "operating_carrier_name": "Turkish Airlines",
+            "departure_airport": "IST",
+            "departure_time_local": "2026-12-18T15:50:00",
+            "departure_timezone": "Europe/Istanbul",
+            "departure_time_utc": "2026-12-18T12:50:00Z",
+            "arrival_airport": "MRS",
+            "arrival_time_local": "2026-12-18T17:15:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T16:15:00Z",
+            "duration_minutes": 205,
+            "aircraft": "Airbus A321 (Sharklets)"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "3078686500c444028f4ff44547c0114c"
+    }
+  ],
+  "observed_at": "2026-11-20T16:19:02.603282Z"
+}

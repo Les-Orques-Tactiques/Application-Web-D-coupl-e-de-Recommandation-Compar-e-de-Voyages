@@ -35,7 +35,7 @@ DATABASE_URL = settings.dsn
 DOSSIER_JSON = Path(settings.dossier_json or "data/raw")
 
 # --- À adapter ---------------------------------------------------------------
-DEPARTS = ["CDG"]
+DEPARTS = ["CDG", "ORY", "NCE", "LYS", "MRS", "TLS", "BOD", "LIL", "NTE", "MPL", "BES"]
 DESTINATIONS = [
     "LHR", "FRA", "MAD", "FCO", "BCN", "AMS", "LIS", "BRU", "ZRH", "VIE", "CPH", "ATH",
     "IST", "DUB", "JFK", "YUL", "DXB", "CMN", "ALG", "TUN", "DSS", "ABJ", "DLA", "NBO",

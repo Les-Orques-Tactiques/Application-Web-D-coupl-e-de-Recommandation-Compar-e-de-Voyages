@@ -1,0 +1,2051 @@
+{
+  "origin": "LYS",
+  "destination": "VIE",
+  "departure_date": "2026-12-11",
+  "return_date": "2026-12-18",
+  "itineraries": [
+    {
+      "price": {
+        "amount": 304.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Discover Airlines",
+        "duration_minutes": 235,
+        "segments": [
+          {
+            "marketing_carrier_code": "4Y",
+            "flight_number": "613",
+            "operating_carrier_name": "Discover Airlines",
+            "departure_airport": "LYS",
+            "departure_time_local": "2026-12-11T19:05:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T18:05:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T20:40:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T19:40:00Z",
+            "duration_minutes": 95,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "220",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-11T21:40:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T20:40:00Z",
+            "arrival_airport": "VIE",
+            "arrival_time_local": "2026-12-11T23:00:00",
+            "arrival_timezone": "Europe/Vienna",
+            "arrival_time_utc": "2026-12-11T22:00:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Austrian",
+        "duration_minutes": 110,
+        "segments": [
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "353",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "VIE",
+            "departure_time_local": "2026-12-18T10:15:00",
+            "departure_timezone": "Europe/Vienna",
+            "departure_time_utc": "2026-12-18T09:15:00Z",
+            "arrival_airport": "LYS",
+            "arrival_time_local": "2026-12-18T12:05:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T11:05:00Z",
+            "duration_minutes": 110,
+            "aircraft": "Embraer 195"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "5befb19a3f064c539db2da5d6fbe3a62"
+    },
+    {
+      "price": {
+        "amount": 306.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Brussels Airlines",
+        "duration_minutes": 280,
+        "segments": [
+          {
+            "marketing_carrier_code": "SN",
+            "flight_number": "3588",
+            "operating_carrier_name": "Brussels Airlines",
+            "departure_airport": "LYS",
+            "departure_time_local": "2026-12-11T11:55:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T10:55:00Z",
+            "arrival_airport": "BRU",
+            "arrival_time_local": "2026-12-11T13:20:00",
+            "arrival_timezone": "Europe/Brussels",
+            "arrival_time_utc": "2026-12-11T12:20:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A319"
+          },
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "294",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "BRU",
+            "departure_time_local": "2026-12-11T14:50:00",
+            "departure_timezone": "Europe/Brussels",
+            "departure_time_utc": "2026-12-11T13:50:00Z",
+            "arrival_airport": "VIE",
+            "arrival_time_local": "2026-12-11T16:35:00",
+            "arrival_timezone": "Europe/Vienna",
+            "arrival_time_utc": "2026-12-11T15:35:00Z",
+            "duration_minutes": 105,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Austrian",
+        "duration_minutes": 305,
+        "segments": [
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "297",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "VIE",
+            "departure_time_local": "2026-12-18T17:25:00",
+            "departure_timezone": "Europe/Vienna",
+            "departure_time_utc": "2026-12-18T16:25:00Z",
+            "arrival_airport": "BRU",
+            "arrival_time_local": "2026-12-18T19:10:00",
+            "arrival_timezone": "Europe/Brussels",
+            "arrival_time_utc": "2026-12-18T18:10:00Z",
+            "duration_minutes": 105,
+            "aircraft": "Airbus A320neo"
+          },
+          {
+            "marketing_carrier_code": "SN",
+            "flight_number": "3593",
+            "operating_carrier_name": "Brussels Airlines",
+            "departure_airport": "BRU",
+            "departure_time_local": "2026-12-18T21:05:00",
+            "departure_timezone": "Europe/Brussels",
+            "departure_time_utc": "2026-12-18T20:05:00Z",
+            "arrival_airport": "LYS",
+            "arrival_time_local": "2026-12-18T22:30:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T21:30:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "319847b063894be9b36bbda6b190c7e4"
+    },
+    {
+      "price": {
+        "amount": 306.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Brussels Airlines",
+        "duration_minutes": 280,
+        "segments": [
+          {
+            "marketing_carrier_code": "SN",
+            "flight_number": "3588",
+            "operating_carrier_name": "Brussels Airlines",
+            "departure_airport": "LYS",
+            "departure_time_local": "2026-12-11T11:55:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T10:55:00Z",
+            "arrival_airport": "BRU",
+            "arrival_time_local": "2026-12-11T13:20:00",
+            "arrival_timezone": "Europe/Brussels",
+            "arrival_time_utc": "2026-12-11T12:20:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A319"
+          },
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "294",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "BRU",
+            "departure_time_local": "2026-12-11T14:50:00",
+            "departure_timezone": "Europe/Brussels",
+            "departure_time_utc": "2026-12-11T13:50:00Z",
+            "arrival_airport": "VIE",
+            "arrival_time_local": "2026-12-11T16:35:00",
+            "arrival_timezone": "Europe/Vienna",
+            "arrival_time_utc": "2026-12-11T15:35:00Z",
+            "duration_minutes": 105,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Brussels Airlines",
+        "duration_minutes": 805,
+        "segments": [
+          {
+            "marketing_carrier_code": "SN",
+            "flight_number": "2902",
+            "operating_carrier_name": "Brussels Airlines",
+            "departure_airport": "VIE",
+            "departure_time_local": "2026-12-18T09:05:00",
+            "departure_timezone": "Europe/Vienna",
+            "departure_time_utc": "2026-12-18T08:05:00Z",
+            "arrival_airport": "BRU",
+            "arrival_time_local": "2026-12-18T10:50:00",
+            "arrival_timezone": "Europe/Brussels",
+            "arrival_time_utc": "2026-12-18T09:50:00Z",
+            "duration_minutes": 105,
+            "aircraft": "Airbus A320neo"
+          },
+          {
+            "marketing_carrier_code": "SN",
+            "flight_number": "3593",
+            "operating_carrier_name": "Brussels Airlines",
+            "departure_airport": "BRU",
+            "departure_time_local": "2026-12-18T21:05:00",
+            "departure_timezone": "Europe/Brussels",
+            "departure_time_utc": "2026-12-18T20:05:00Z",
+            "arrival_airport": "LYS",
+            "arrival_time_local": "2026-12-18T22:30:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T21:30:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "d3330687cef74e73bb5258ea4703498c"
+    },
+    {
+      "price": {
+        "amount": 308.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Discover Airlines",
+        "duration_minutes": 240,
+        "segments": [
+          {
+            "marketing_carrier_code": "4Y",
+            "flight_number": "625",
+            "operating_carrier_name": "Discover Airlines",
+            "departure_airport": "LYS",
+            "departure_time_local": "2026-12-11T18:40:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T17:40:00Z",
+            "arrival_airport": "MUC",
+            "arrival_time_local": "2026-12-11T20:00:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T19:00:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "190",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "MUC",
+            "departure_time_local": "2026-12-11T21:35:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T20:35:00Z",
+            "arrival_airport": "VIE",
+            "arrival_time_local": "2026-12-11T22:40:00",
+            "arrival_timezone": "Europe/Vienna",
+            "arrival_time_utc": "2026-12-11T21:40:00Z",
+            "duration_minutes": 65,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Austrian",
+        "duration_minutes": 220,
+        "segments": [
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "219",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "VIE",
+            "departure_time_local": "2026-12-18T19:20:00",
+            "departure_timezone": "Europe/Vienna",
+            "departure_time_utc": "2026-12-18T18:20:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-18T20:50:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-18T19:50:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "4Y",
+            "flight_number": "614",
+            "operating_carrier_name": "Discover Airlines",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T21:40:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T20:40:00Z",
+            "arrival_airport": "LYS",
+            "arrival_time_local": "2026-12-18T23:00:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T22:00:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "640696afdb8e4e3995fa3da936113bba"
+    },
+    {
+      "price": {
+        "amount": 308.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Discover Airlines",
+        "duration_minutes": 240,
+        "segments": [
+          {
+            "marketing_carrier_code": "4Y",
+            "flight_number": "625",
+            "operating_carrier_name": "Discover Airlines",
+            "departure_airport": "LYS",
+            "departure_time_local": "2026-12-11T18:40:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T17:40:00Z",
+            "arrival_airport": "MUC",
+            "arrival_time_local": "2026-12-11T20:00:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T19:00:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "190",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "MUC",
+            "departure_time_local": "2026-12-11T21:35:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T20:35:00Z",
+            "arrival_airport": "VIE",
+            "arrival_time_local": "2026-12-11T22:40:00",
+            "arrival_timezone": "Europe/Vienna",
+            "arrival_time_utc": "2026-12-11T21:40:00Z",
+            "duration_minutes": 65,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Austrian",
+        "duration_minutes": 230,
+        "segments": [
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "199",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "VIE",
+            "departure_time_local": "2026-12-18T06:00:00",
+            "departure_timezone": "Europe/Vienna",
+            "departure_time_utc": "2026-12-18T05:00:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-18T07:30:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-18T06:30:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "4Y",
+            "flight_number": "616",
+            "operating_carrier_name": "Discover Airlines",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T08:30:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T07:30:00Z",
+            "arrival_airport": "LYS",
+            "arrival_time_local": "2026-12-18T09:50:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T08:50:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "6c75e51f773041bab8c8974ef7071967"
+    },
+    {
+      "price": {
+        "amount": 308.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Discover Airlines",
+        "duration_minutes": 240,
+        "segments": [
+          {
+            "marketing_carrier_code": "4Y",
+            "flight_number": "625",
+            "operating_carrier_name": "Discover Airlines",
+            "departure_airport": "LYS",
+            "departure_time_local": "2026-12-11T18:40:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T17:40:00Z",
+            "arrival_airport": "MUC",
+            "arrival_time_local": "2026-12-11T20:00:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T19:00:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "190",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "MUC",
+            "departure_time_local": "2026-12-11T21:35:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T20:35:00Z",
+            "arrival_airport": "VIE",
+            "arrival_time_local": "2026-12-11T22:40:00",
+            "arrival_timezone": "Europe/Vienna",
+            "arrival_time_utc": "2026-12-11T21:40:00Z",
+            "duration_minutes": 65,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Austrian",
+        "duration_minutes": 265,
+        "segments": [
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "211",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "VIE",
+            "departure_time_local": "2026-12-18T13:55:00",
+            "departure_timezone": "Europe/Vienna",
+            "departure_time_utc": "2026-12-18T12:55:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-18T15:25:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-18T14:25:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "4Y",
+            "flight_number": "612",
+            "operating_carrier_name": "Discover Airlines",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T17:00:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T16:00:00Z",
+            "arrival_airport": "LYS",
+            "arrival_time_local": "2026-12-18T18:20:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T17:20:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "5e52419001404fffab6cdf60f175ecbd"
+    },
+    {
+      "price": {
+        "amount": 308.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Discover Airlines",
+        "duration_minutes": 240,
+        "segments": [
+          {
+            "marketing_carrier_code": "4Y",
+            "flight_number": "625",
+            "operating_carrier_name": "Discover Airlines",
+            "departure_airport": "LYS",
+            "departure_time_local": "2026-12-11T18:40:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T17:40:00Z",
+            "arrival_airport": "MUC",
+            "arrival_time_local": "2026-12-11T20:00:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T19:00:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "190",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "MUC",
+            "departure_time_local": "2026-12-11T21:35:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T20:35:00Z",
+            "arrival_airport": "VIE",
+            "arrival_time_local": "2026-12-11T22:40:00",
+            "arrival_timezone": "Europe/Vienna",
+            "arrival_time_utc": "2026-12-11T21:40:00Z",
+            "duration_minutes": 65,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Austrian",
+        "duration_minutes": 305,
+        "segments": [
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "205",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "VIE",
+            "departure_time_local": "2026-12-18T09:00:00",
+            "departure_timezone": "Europe/Vienna",
+            "departure_time_utc": "2026-12-18T08:00:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-18T10:30:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-18T09:30:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "4Y",
+            "flight_number": "618",
+            "operating_carrier_name": "Discover Airlines",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T12:45:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T11:45:00Z",
+            "arrival_airport": "LYS",
+            "arrival_time_local": "2026-12-18T14:05:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T13:05:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "d554edd50f37481cbda6c91e027a7dec"
+    },
+    {
+      "price": {
+        "amount": 317.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Discover Airlines",
+        "duration_minutes": 235,
+        "segments": [
+          {
+            "marketing_carrier_code": "4Y",
+            "flight_number": "613",
+            "operating_carrier_name": "Discover Airlines",
+            "departure_airport": "LYS",
+            "departure_time_local": "2026-12-11T19:05:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T18:05:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T20:40:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T19:40:00Z",
+            "duration_minutes": 95,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "220",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-11T21:40:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T20:40:00Z",
+            "arrival_airport": "VIE",
+            "arrival_time_local": "2026-12-11T23:00:00",
+            "arrival_timezone": "Europe/Vienna",
+            "arrival_time_utc": "2026-12-11T22:00:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Austrian",
+        "duration_minutes": 220,
+        "segments": [
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "219",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "VIE",
+            "departure_time_local": "2026-12-18T19:20:00",
+            "departure_timezone": "Europe/Vienna",
+            "departure_time_utc": "2026-12-18T18:20:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-18T20:50:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-18T19:50:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "4Y",
+            "flight_number": "614",
+            "operating_carrier_name": "Discover Airlines",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T21:40:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T20:40:00Z",
+            "arrival_airport": "LYS",
+            "arrival_time_local": "2026-12-18T23:00:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T22:00:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "df3f281a730b4d19b94ff108e7979c39"
+    },
+    {
+      "price": {
+        "amount": 317.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Discover Airlines",
+        "duration_minutes": 235,
+        "segments": [
+          {
+            "marketing_carrier_code": "4Y",
+            "flight_number": "613",
+            "operating_carrier_name": "Discover Airlines",
+            "departure_airport": "LYS",
+            "departure_time_local": "2026-12-11T19:05:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T18:05:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T20:40:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T19:40:00Z",
+            "duration_minutes": 95,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "220",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-11T21:40:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T20:40:00Z",
+            "arrival_airport": "VIE",
+            "arrival_time_local": "2026-12-11T23:00:00",
+            "arrival_timezone": "Europe/Vienna",
+            "arrival_time_utc": "2026-12-11T22:00:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Austrian",
+        "duration_minutes": 265,
+        "segments": [
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "211",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "VIE",
+            "departure_time_local": "2026-12-18T13:55:00",
+            "departure_timezone": "Europe/Vienna",
+            "departure_time_utc": "2026-12-18T12:55:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-18T15:25:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-18T14:25:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "4Y",
+            "flight_number": "612",
+            "operating_carrier_name": "Discover Airlines",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T17:00:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T16:00:00Z",
+            "arrival_airport": "LYS",
+            "arrival_time_local": "2026-12-18T18:20:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T17:20:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "89164ece57cc498ba9f7984705d01c2a"
+    },
+    {
+      "price": {
+        "amount": 321.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Discover Airlines",
+        "duration_minutes": 240,
+        "segments": [
+          {
+            "marketing_carrier_code": "4Y",
+            "flight_number": "625",
+            "operating_carrier_name": "Discover Airlines",
+            "departure_airport": "LYS",
+            "departure_time_local": "2026-12-11T18:40:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T17:40:00Z",
+            "arrival_airport": "MUC",
+            "arrival_time_local": "2026-12-11T20:00:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T19:00:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "190",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "MUC",
+            "departure_time_local": "2026-12-11T21:35:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T20:35:00Z",
+            "arrival_airport": "VIE",
+            "arrival_time_local": "2026-12-11T22:40:00",
+            "arrival_timezone": "Europe/Vienna",
+            "arrival_time_utc": "2026-12-11T21:40:00Z",
+            "duration_minutes": 65,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Austrian",
+        "duration_minutes": 110,
+        "segments": [
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "353",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "VIE",
+            "departure_time_local": "2026-12-18T10:15:00",
+            "departure_timezone": "Europe/Vienna",
+            "departure_time_utc": "2026-12-18T09:15:00Z",
+            "arrival_airport": "LYS",
+            "arrival_time_local": "2026-12-18T12:05:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T11:05:00Z",
+            "duration_minutes": 110,
+            "aircraft": "Embraer 195"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "b907fed2b62b4061964b7323b794f596"
+    },
+    {
+      "price": {
+        "amount": 328.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Discover Airlines",
+        "duration_minutes": 240,
+        "segments": [
+          {
+            "marketing_carrier_code": "4Y",
+            "flight_number": "625",
+            "operating_carrier_name": "Discover Airlines",
+            "departure_airport": "LYS",
+            "departure_time_local": "2026-12-11T18:40:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T17:40:00Z",
+            "arrival_airport": "MUC",
+            "arrival_time_local": "2026-12-11T20:00:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T19:00:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "190",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "MUC",
+            "departure_time_local": "2026-12-11T21:35:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T20:35:00Z",
+            "arrival_airport": "VIE",
+            "arrival_time_local": "2026-12-11T22:40:00",
+            "arrival_timezone": "Europe/Vienna",
+            "arrival_time_utc": "2026-12-11T21:40:00Z",
+            "duration_minutes": 65,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Austrian",
+        "duration_minutes": 215,
+        "segments": [
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "207",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "VIE",
+            "departure_time_local": "2026-12-18T10:30:00",
+            "departure_timezone": "Europe/Vienna",
+            "departure_time_utc": "2026-12-18T09:30:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-18T12:00:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-18T11:00:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320neo"
+          },
+          {
+            "marketing_carrier_code": "4Y",
+            "flight_number": "618",
+            "operating_carrier_name": "Discover Airlines",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T12:45:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T11:45:00Z",
+            "arrival_airport": "LYS",
+            "arrival_time_local": "2026-12-18T14:05:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T13:05:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "ea0698d6a89143aaa5d0353224153bad"
+    },
+    {
+      "price": {
+        "amount": 336.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Discover Airlines",
+        "duration_minutes": 235,
+        "segments": [
+          {
+            "marketing_carrier_code": "4Y",
+            "flight_number": "613",
+            "operating_carrier_name": "Discover Airlines",
+            "departure_airport": "LYS",
+            "departure_time_local": "2026-12-11T19:05:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T18:05:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T20:40:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T19:40:00Z",
+            "duration_minutes": 95,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "220",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-11T21:40:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T20:40:00Z",
+            "arrival_airport": "VIE",
+            "arrival_time_local": "2026-12-11T23:00:00",
+            "arrival_timezone": "Europe/Vienna",
+            "arrival_time_utc": "2026-12-11T22:00:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Austrian",
+        "duration_minutes": 215,
+        "segments": [
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "207",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "VIE",
+            "departure_time_local": "2026-12-18T10:30:00",
+            "departure_timezone": "Europe/Vienna",
+            "departure_time_utc": "2026-12-18T09:30:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-18T12:00:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-18T11:00:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320neo"
+          },
+          {
+            "marketing_carrier_code": "4Y",
+            "flight_number": "618",
+            "operating_carrier_name": "Discover Airlines",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T12:45:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T11:45:00Z",
+            "arrival_airport": "LYS",
+            "arrival_time_local": "2026-12-18T14:05:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T13:05:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "290a03eaacd8454981e3002d5e1af97a"
+    },
+    {
+      "price": {
+        "amount": 336.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Discover Airlines",
+        "duration_minutes": 375,
+        "segments": [
+          {
+            "marketing_carrier_code": "4Y",
+            "flight_number": "619",
+            "operating_carrier_name": "Discover Airlines",
+            "departure_airport": "LYS",
+            "departure_time_local": "2026-12-11T14:50:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T13:50:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T16:15:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T15:15:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "216",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-11T19:40:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T18:40:00Z",
+            "arrival_airport": "VIE",
+            "arrival_time_local": "2026-12-11T21:05:00",
+            "arrival_timezone": "Europe/Vienna",
+            "arrival_time_utc": "2026-12-11T20:05:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Austrian",
+        "duration_minutes": 110,
+        "segments": [
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "353",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "VIE",
+            "departure_time_local": "2026-12-18T10:15:00",
+            "departure_timezone": "Europe/Vienna",
+            "departure_time_utc": "2026-12-18T09:15:00Z",
+            "arrival_airport": "LYS",
+            "arrival_time_local": "2026-12-18T12:05:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T11:05:00Z",
+            "duration_minutes": 110,
+            "aircraft": "Embraer 195"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "34d07e02df644037a23cef2b4b281c95"
+    },
+    {
+      "price": {
+        "amount": 338.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Brussels Airlines",
+        "duration_minutes": 280,
+        "segments": [
+          {
+            "marketing_carrier_code": "SN",
+            "flight_number": "3588",
+            "operating_carrier_name": "Brussels Airlines",
+            "departure_airport": "LYS",
+            "departure_time_local": "2026-12-11T11:55:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T10:55:00Z",
+            "arrival_airport": "BRU",
+            "arrival_time_local": "2026-12-11T13:20:00",
+            "arrival_timezone": "Europe/Brussels",
+            "arrival_time_utc": "2026-12-11T12:20:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A319"
+          },
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "294",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "BRU",
+            "departure_time_local": "2026-12-11T14:50:00",
+            "departure_timezone": "Europe/Brussels",
+            "departure_time_utc": "2026-12-11T13:50:00Z",
+            "arrival_airport": "VIE",
+            "arrival_time_local": "2026-12-11T16:35:00",
+            "arrival_timezone": "Europe/Vienna",
+            "arrival_time_utc": "2026-12-11T15:35:00Z",
+            "duration_minutes": 105,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Austrian",
+        "duration_minutes": 225,
+        "segments": [
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "291",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "VIE",
+            "departure_time_local": "2026-12-18T07:20:00",
+            "departure_timezone": "Europe/Vienna",
+            "departure_time_utc": "2026-12-18T06:20:00Z",
+            "arrival_airport": "BRU",
+            "arrival_time_local": "2026-12-18T09:05:00",
+            "arrival_timezone": "Europe/Brussels",
+            "arrival_time_utc": "2026-12-18T08:05:00Z",
+            "duration_minutes": 105,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "SN",
+            "flight_number": "3587",
+            "operating_carrier_name": "Brussels Airlines",
+            "departure_airport": "BRU",
+            "departure_time_local": "2026-12-18T09:45:00",
+            "departure_timezone": "Europe/Brussels",
+            "departure_time_utc": "2026-12-18T08:45:00Z",
+            "arrival_airport": "LYS",
+            "arrival_time_local": "2026-12-18T11:05:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T10:05:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "1e679844325140b389bbc5baf1186430"
+    },
+    {
+      "price": {
+        "amount": 338.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Brussels Airlines",
+        "duration_minutes": 280,
+        "segments": [
+          {
+            "marketing_carrier_code": "SN",
+            "flight_number": "3588",
+            "operating_carrier_name": "Brussels Airlines",
+            "departure_airport": "LYS",
+            "departure_time_local": "2026-12-11T11:55:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T10:55:00Z",
+            "arrival_airport": "BRU",
+            "arrival_time_local": "2026-12-11T13:20:00",
+            "arrival_timezone": "Europe/Brussels",
+            "arrival_time_utc": "2026-12-11T12:20:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A319"
+          },
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "294",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "BRU",
+            "departure_time_local": "2026-12-11T14:50:00",
+            "departure_timezone": "Europe/Brussels",
+            "departure_time_utc": "2026-12-11T13:50:00Z",
+            "arrival_airport": "VIE",
+            "arrival_time_local": "2026-12-11T16:35:00",
+            "arrival_timezone": "Europe/Vienna",
+            "arrival_time_utc": "2026-12-11T15:35:00Z",
+            "duration_minutes": 105,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Brussels Airlines",
+        "duration_minutes": 245,
+        "segments": [
+          {
+            "marketing_carrier_code": "SN",
+            "flight_number": "2906",
+            "operating_carrier_name": "Brussels Airlines",
+            "departure_airport": "VIE",
+            "departure_time_local": "2026-12-18T18:25:00",
+            "departure_timezone": "Europe/Vienna",
+            "departure_time_utc": "2026-12-18T17:25:00Z",
+            "arrival_airport": "BRU",
+            "arrival_time_local": "2026-12-18T20:10:00",
+            "arrival_timezone": "Europe/Brussels",
+            "arrival_time_utc": "2026-12-18T19:10:00Z",
+            "duration_minutes": 105,
+            "aircraft": "Airbus A319"
+          },
+          {
+            "marketing_carrier_code": "SN",
+            "flight_number": "3593",
+            "operating_carrier_name": "Brussels Airlines",
+            "departure_airport": "BRU",
+            "departure_time_local": "2026-12-18T21:05:00",
+            "departure_timezone": "Europe/Brussels",
+            "departure_time_utc": "2026-12-18T20:05:00Z",
+            "arrival_airport": "LYS",
+            "arrival_time_local": "2026-12-18T22:30:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T21:30:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "ef05e0dc30f64fb4977e5a087d184f35"
+    },
+    {
+      "price": {
+        "amount": 365.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Discover Airlines",
+        "duration_minutes": 215,
+        "segments": [
+          {
+            "marketing_carrier_code": "4Y",
+            "flight_number": "623",
+            "operating_carrier_name": "Discover Airlines",
+            "departure_airport": "LYS",
+            "departure_time_local": "2026-12-11T13:00:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T12:00:00Z",
+            "arrival_airport": "MUC",
+            "arrival_time_local": "2026-12-11T14:20:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T13:20:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "186",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "MUC",
+            "departure_time_local": "2026-12-11T15:30:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T14:30:00Z",
+            "arrival_airport": "VIE",
+            "arrival_time_local": "2026-12-11T16:35:00",
+            "arrival_timezone": "Europe/Vienna",
+            "arrival_time_utc": "2026-12-11T15:35:00Z",
+            "duration_minutes": 65,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Austrian",
+        "duration_minutes": 110,
+        "segments": [
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "353",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "VIE",
+            "departure_time_local": "2026-12-18T10:15:00",
+            "departure_timezone": "Europe/Vienna",
+            "departure_time_utc": "2026-12-18T09:15:00Z",
+            "arrival_airport": "LYS",
+            "arrival_time_local": "2026-12-18T12:05:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T11:05:00Z",
+            "duration_minutes": 110,
+            "aircraft": "Embraer 195"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "2eb6f48ca39c45b6b985dc7510f4e026"
+    },
+    {
+      "price": {
+        "amount": 367.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Discover Airlines",
+        "duration_minutes": 375,
+        "segments": [
+          {
+            "marketing_carrier_code": "4Y",
+            "flight_number": "619",
+            "operating_carrier_name": "Discover Airlines",
+            "departure_airport": "LYS",
+            "departure_time_local": "2026-12-11T14:50:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T13:50:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T16:15:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T15:15:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "216",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-11T19:40:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T18:40:00Z",
+            "arrival_airport": "VIE",
+            "arrival_time_local": "2026-12-11T21:05:00",
+            "arrival_timezone": "Europe/Vienna",
+            "arrival_time_utc": "2026-12-11T20:05:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Austrian",
+        "duration_minutes": 265,
+        "segments": [
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "211",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "VIE",
+            "departure_time_local": "2026-12-18T13:55:00",
+            "departure_timezone": "Europe/Vienna",
+            "departure_time_utc": "2026-12-18T12:55:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-18T15:25:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-18T14:25:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "4Y",
+            "flight_number": "612",
+            "operating_carrier_name": "Discover Airlines",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T17:00:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T16:00:00Z",
+            "arrival_airport": "LYS",
+            "arrival_time_local": "2026-12-18T18:20:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T17:20:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "2b86ff9431684693a5cc31cc1bb08a5a"
+    },
+    {
+      "price": {
+        "amount": 368.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Discover Airlines",
+        "duration_minutes": 375,
+        "segments": [
+          {
+            "marketing_carrier_code": "4Y",
+            "flight_number": "619",
+            "operating_carrier_name": "Discover Airlines",
+            "departure_airport": "LYS",
+            "departure_time_local": "2026-12-11T14:50:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T13:50:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T16:15:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T15:15:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "216",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-11T19:40:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T18:40:00Z",
+            "arrival_airport": "VIE",
+            "arrival_time_local": "2026-12-11T21:05:00",
+            "arrival_timezone": "Europe/Vienna",
+            "arrival_time_utc": "2026-12-11T20:05:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Austrian",
+        "duration_minutes": 215,
+        "segments": [
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "207",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "VIE",
+            "departure_time_local": "2026-12-18T10:30:00",
+            "departure_timezone": "Europe/Vienna",
+            "departure_time_utc": "2026-12-18T09:30:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-18T12:00:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-18T11:00:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320neo"
+          },
+          {
+            "marketing_carrier_code": "4Y",
+            "flight_number": "618",
+            "operating_carrier_name": "Discover Airlines",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T12:45:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T11:45:00Z",
+            "arrival_airport": "LYS",
+            "arrival_time_local": "2026-12-18T14:05:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T13:05:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "6fc9c1ca9cbe434aacfd4b067bae7ded"
+    },
+    {
+      "price": {
+        "amount": 377.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Discover Airlines",
+        "duration_minutes": 215,
+        "segments": [
+          {
+            "marketing_carrier_code": "4Y",
+            "flight_number": "623",
+            "operating_carrier_name": "Discover Airlines",
+            "departure_airport": "LYS",
+            "departure_time_local": "2026-12-11T13:00:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T12:00:00Z",
+            "arrival_airport": "MUC",
+            "arrival_time_local": "2026-12-11T14:20:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T13:20:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "186",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "MUC",
+            "departure_time_local": "2026-12-11T15:30:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T14:30:00Z",
+            "arrival_airport": "VIE",
+            "arrival_time_local": "2026-12-11T16:35:00",
+            "arrival_timezone": "Europe/Vienna",
+            "arrival_time_utc": "2026-12-11T15:35:00Z",
+            "duration_minutes": 65,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Austrian",
+        "duration_minutes": 230,
+        "segments": [
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "199",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "VIE",
+            "departure_time_local": "2026-12-18T06:00:00",
+            "departure_timezone": "Europe/Vienna",
+            "departure_time_utc": "2026-12-18T05:00:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-18T07:30:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-18T06:30:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "4Y",
+            "flight_number": "616",
+            "operating_carrier_name": "Discover Airlines",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T08:30:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T07:30:00Z",
+            "arrival_airport": "LYS",
+            "arrival_time_local": "2026-12-18T09:50:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T08:50:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "a6e4f96ce1d0480aa2bddc80c03012f5"
+    },
+    {
+      "price": {
+        "amount": 396.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Discover Airlines",
+        "duration_minutes": 215,
+        "segments": [
+          {
+            "marketing_carrier_code": "4Y",
+            "flight_number": "623",
+            "operating_carrier_name": "Discover Airlines",
+            "departure_airport": "LYS",
+            "departure_time_local": "2026-12-11T13:00:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T12:00:00Z",
+            "arrival_airport": "MUC",
+            "arrival_time_local": "2026-12-11T14:20:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T13:20:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "186",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "MUC",
+            "departure_time_local": "2026-12-11T15:30:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T14:30:00Z",
+            "arrival_airport": "VIE",
+            "arrival_time_local": "2026-12-11T16:35:00",
+            "arrival_timezone": "Europe/Vienna",
+            "arrival_time_utc": "2026-12-11T15:35:00Z",
+            "duration_minutes": 65,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Austrian",
+        "duration_minutes": 265,
+        "segments": [
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "211",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "VIE",
+            "departure_time_local": "2026-12-18T13:55:00",
+            "departure_timezone": "Europe/Vienna",
+            "departure_time_utc": "2026-12-18T12:55:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-18T15:25:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-18T14:25:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "4Y",
+            "flight_number": "612",
+            "operating_carrier_name": "Discover Airlines",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T17:00:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T16:00:00Z",
+            "arrival_airport": "LYS",
+            "arrival_time_local": "2026-12-18T18:20:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T17:20:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "5f85a0ad690347529a0a868c1fad9571"
+    },
+    {
+      "price": {
+        "amount": 397.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Discover Airlines",
+        "duration_minutes": 215,
+        "segments": [
+          {
+            "marketing_carrier_code": "4Y",
+            "flight_number": "623",
+            "operating_carrier_name": "Discover Airlines",
+            "departure_airport": "LYS",
+            "departure_time_local": "2026-12-11T13:00:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T12:00:00Z",
+            "arrival_airport": "MUC",
+            "arrival_time_local": "2026-12-11T14:20:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T13:20:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "186",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "MUC",
+            "departure_time_local": "2026-12-11T15:30:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T14:30:00Z",
+            "arrival_airport": "VIE",
+            "arrival_time_local": "2026-12-11T16:35:00",
+            "arrival_timezone": "Europe/Vienna",
+            "arrival_time_utc": "2026-12-11T15:35:00Z",
+            "duration_minutes": 65,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Austrian",
+        "duration_minutes": 215,
+        "segments": [
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "207",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "VIE",
+            "departure_time_local": "2026-12-18T10:30:00",
+            "departure_timezone": "Europe/Vienna",
+            "departure_time_utc": "2026-12-18T09:30:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-18T12:00:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-18T11:00:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320neo"
+          },
+          {
+            "marketing_carrier_code": "4Y",
+            "flight_number": "618",
+            "operating_carrier_name": "Discover Airlines",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T12:45:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T11:45:00Z",
+            "arrival_airport": "LYS",
+            "arrival_time_local": "2026-12-18T14:05:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T13:05:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "0b3efdb180e74abca6c5d43f75cb3bb9"
+    },
+    {
+      "price": {
+        "amount": 414.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Discover Airlines",
+        "duration_minutes": 220,
+        "segments": [
+          {
+            "marketing_carrier_code": "4Y",
+            "flight_number": "617",
+            "operating_carrier_name": "Discover Airlines",
+            "departure_airport": "LYS",
+            "departure_time_local": "2026-12-11T10:35:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T09:35:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T12:00:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T11:00:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "208",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-11T12:50:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T11:50:00Z",
+            "arrival_airport": "VIE",
+            "arrival_time_local": "2026-12-11T14:15:00",
+            "arrival_timezone": "Europe/Vienna",
+            "arrival_time_utc": "2026-12-11T13:15:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Austrian",
+        "duration_minutes": 110,
+        "segments": [
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "353",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "VIE",
+            "departure_time_local": "2026-12-18T10:15:00",
+            "departure_timezone": "Europe/Vienna",
+            "departure_time_utc": "2026-12-18T09:15:00Z",
+            "arrival_airport": "LYS",
+            "arrival_time_local": "2026-12-18T12:05:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T11:05:00Z",
+            "duration_minutes": 110,
+            "aircraft": "Embraer 195"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "8a5c8999d6ba4f05bf63ce99e2d5a0bd"
+    },
+    {
+      "price": {
+        "amount": 419.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Discover Airlines",
+        "duration_minutes": 220,
+        "segments": [
+          {
+            "marketing_carrier_code": "4Y",
+            "flight_number": "617",
+            "operating_carrier_name": "Discover Airlines",
+            "departure_airport": "LYS",
+            "departure_time_local": "2026-12-11T10:35:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T09:35:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T12:00:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T11:00:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "208",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-11T12:50:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T11:50:00Z",
+            "arrival_airport": "VIE",
+            "arrival_time_local": "2026-12-11T14:15:00",
+            "arrival_timezone": "Europe/Vienna",
+            "arrival_time_utc": "2026-12-11T13:15:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Austrian",
+        "duration_minutes": 220,
+        "segments": [
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "219",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "VIE",
+            "departure_time_local": "2026-12-18T19:20:00",
+            "departure_timezone": "Europe/Vienna",
+            "departure_time_utc": "2026-12-18T18:20:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-18T20:50:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-18T19:50:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "4Y",
+            "flight_number": "614",
+            "operating_carrier_name": "Discover Airlines",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T21:40:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T20:40:00Z",
+            "arrival_airport": "LYS",
+            "arrival_time_local": "2026-12-18T23:00:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T22:00:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "23f5d412073541e38f74b4fa3de4c322"
+    },
+    {
+      "price": {
+        "amount": 436.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Discover Airlines",
+        "duration_minutes": 220,
+        "segments": [
+          {
+            "marketing_carrier_code": "4Y",
+            "flight_number": "617",
+            "operating_carrier_name": "Discover Airlines",
+            "departure_airport": "LYS",
+            "departure_time_local": "2026-12-11T10:35:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T09:35:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T12:00:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T11:00:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "208",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-11T12:50:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T11:50:00Z",
+            "arrival_airport": "VIE",
+            "arrival_time_local": "2026-12-11T14:15:00",
+            "arrival_timezone": "Europe/Vienna",
+            "arrival_time_utc": "2026-12-11T13:15:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Austrian",
+        "duration_minutes": 265,
+        "segments": [
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "211",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "VIE",
+            "departure_time_local": "2026-12-18T13:55:00",
+            "departure_timezone": "Europe/Vienna",
+            "departure_time_utc": "2026-12-18T12:55:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-18T15:25:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-18T14:25:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "4Y",
+            "flight_number": "612",
+            "operating_carrier_name": "Discover Airlines",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T17:00:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T16:00:00Z",
+            "arrival_airport": "LYS",
+            "arrival_time_local": "2026-12-18T18:20:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T17:20:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "d2065d7d417a478b982fd5e3efd045f9"
+    },
+    {
+      "price": {
+        "amount": 438.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Discover Airlines",
+        "duration_minutes": 220,
+        "segments": [
+          {
+            "marketing_carrier_code": "4Y",
+            "flight_number": "617",
+            "operating_carrier_name": "Discover Airlines",
+            "departure_airport": "LYS",
+            "departure_time_local": "2026-12-11T10:35:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T09:35:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-11T12:00:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T11:00:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "208",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-11T12:50:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T11:50:00Z",
+            "arrival_airport": "VIE",
+            "arrival_time_local": "2026-12-11T14:15:00",
+            "arrival_timezone": "Europe/Vienna",
+            "arrival_time_utc": "2026-12-11T13:15:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Austrian",
+        "duration_minutes": 215,
+        "segments": [
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "207",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "VIE",
+            "departure_time_local": "2026-12-18T10:30:00",
+            "departure_timezone": "Europe/Vienna",
+            "departure_time_utc": "2026-12-18T09:30:00Z",
+            "arrival_airport": "FRA",
+            "arrival_time_local": "2026-12-18T12:00:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-18T11:00:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320neo"
+          },
+          {
+            "marketing_carrier_code": "4Y",
+            "flight_number": "618",
+            "operating_carrier_name": "Discover Airlines",
+            "departure_airport": "FRA",
+            "departure_time_local": "2026-12-18T12:45:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-18T11:45:00Z",
+            "arrival_airport": "LYS",
+            "arrival_time_local": "2026-12-18T14:05:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T13:05:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "983eeb406ec64fafab29cbbddd886402"
+    },
+    {
+      "price": {
+        "amount": 474.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Brussels Airlines",
+        "duration_minutes": 280,
+        "segments": [
+          {
+            "marketing_carrier_code": "SN",
+            "flight_number": "3588",
+            "operating_carrier_name": "Brussels Airlines",
+            "departure_airport": "LYS",
+            "departure_time_local": "2026-12-11T11:55:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T10:55:00Z",
+            "arrival_airport": "BRU",
+            "arrival_time_local": "2026-12-11T13:20:00",
+            "arrival_timezone": "Europe/Brussels",
+            "arrival_time_utc": "2026-12-11T12:20:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A319"
+          },
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "294",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "BRU",
+            "departure_time_local": "2026-12-11T14:50:00",
+            "departure_timezone": "Europe/Brussels",
+            "departure_time_utc": "2026-12-11T13:50:00Z",
+            "arrival_airport": "VIE",
+            "arrival_time_local": "2026-12-11T16:35:00",
+            "arrival_timezone": "Europe/Vienna",
+            "arrival_time_utc": "2026-12-11T15:35:00Z",
+            "duration_minutes": 105,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "inbound": {
+        "carrier": "Austrian",
+        "duration_minutes": 110,
+        "segments": [
+          {
+            "marketing_carrier_code": "OS",
+            "flight_number": "353",
+            "operating_carrier_name": "Austrian",
+            "departure_airport": "VIE",
+            "departure_time_local": "2026-12-18T10:15:00",
+            "departure_timezone": "Europe/Vienna",
+            "departure_time_utc": "2026-12-18T09:15:00Z",
+            "arrival_airport": "LYS",
+            "arrival_time_local": "2026-12-18T12:05:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-18T11:05:00Z",
+            "duration_minutes": 110,
+            "aircraft": "Embraer 195"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "e0e0102d76ad43e0a894cf33ea54b86b"
+    }
+  ],
+  "observed_at": "2026-11-20T16:12:47.232985Z"
+}

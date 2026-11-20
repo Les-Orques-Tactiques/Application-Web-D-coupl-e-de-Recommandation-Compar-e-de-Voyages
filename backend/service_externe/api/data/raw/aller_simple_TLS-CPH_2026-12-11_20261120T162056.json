@@ -1,0 +1,698 @@
+{
+  "origin": "TLS",
+  "destination": "CPH",
+  "departure_date": "2026-12-11",
+  "itineraries": [
+    {
+      "price": {
+        "amount": 178.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "KLM",
+        "duration_minutes": 635,
+        "segments": [
+          {
+            "marketing_carrier_code": "KL",
+            "flight_number": "1448",
+            "operating_carrier_name": "KLM",
+            "departure_airport": "TLS",
+            "departure_time_local": "2026-12-11T06:05:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T05:05:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2026-12-11T08:00:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2026-12-11T07:00:00Z",
+            "duration_minutes": 115,
+            "aircraft": "Boeing 737"
+          },
+          {
+            "marketing_carrier_code": "KL",
+            "flight_number": "1273",
+            "operating_carrier_name": "KLM",
+            "departure_airport": "AMS",
+            "departure_time_local": "2026-12-11T15:20:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2026-12-11T14:20:00Z",
+            "arrival_airport": "CPH",
+            "arrival_time_local": "2026-12-11T16:40:00",
+            "arrival_timezone": "Europe/Copenhagen",
+            "arrival_time_utc": "2026-12-11T15:40:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Boeing 737"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "4b66786b4abd49e080564e332823daec"
+    },
+    {
+      "price": {
+        "amount": 205.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Brussels Airlines",
+        "duration_minutes": 315,
+        "segments": [
+          {
+            "marketing_carrier_code": "SN",
+            "flight_number": "3668",
+            "operating_carrier_name": "Brussels Airlines",
+            "departure_airport": "TLS",
+            "departure_time_local": "2026-12-11T12:15:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T11:15:00Z",
+            "arrival_airport": "BRU",
+            "arrival_time_local": "2026-12-11T14:00:00",
+            "arrival_timezone": "Europe/Brussels",
+            "arrival_time_utc": "2026-12-11T13:00:00Z",
+            "duration_minutes": 105,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "SN",
+            "flight_number": "2259",
+            "operating_carrier_name": "Brussels Airlines",
+            "departure_airport": "BRU",
+            "departure_time_local": "2026-12-11T16:00:00",
+            "departure_timezone": "Europe/Brussels",
+            "departure_time_utc": "2026-12-11T15:00:00Z",
+            "arrival_airport": "CPH",
+            "arrival_time_local": "2026-12-11T17:30:00",
+            "arrival_timezone": "Europe/Copenhagen",
+            "arrival_time_utc": "2026-12-11T16:30:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A320"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "2daa5921b6484b098a1562e710d6b429"
+    },
+    {
+      "price": {
+        "amount": 219.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Lufthansa",
+        "duration_minutes": 275,
+        "segments": [
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "2221",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "TLS",
+            "departure_time_local": "2026-12-11T18:35:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T17:35:00Z",
+            "arrival_airport": "MUC",
+            "arrival_time_local": "2026-12-11T20:15:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T19:15:00Z",
+            "duration_minutes": 100,
+            "aircraft": "Airbus A321neo"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "2446",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "MUC",
+            "departure_time_local": "2026-12-11T21:35:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T20:35:00Z",
+            "arrival_airport": "CPH",
+            "arrival_time_local": "2026-12-11T23:10:00",
+            "arrival_timezone": "Europe/Copenhagen",
+            "arrival_time_utc": "2026-12-11T22:10:00Z",
+            "duration_minutes": 95,
+            "aircraft": "Airbus A319"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "2f810d6cecaa4b3b9691a1b8e43172d6"
+    },
+    {
+      "price": {
+        "amount": 234.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 385,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "7411",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "TLS",
+            "departure_time_local": "2026-12-11T16:35:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T15:35:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-11T18:10:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-11T17:10:00Z",
+            "duration_minutes": 95,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "1350",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-11T21:00:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T20:00:00Z",
+            "arrival_airport": "CPH",
+            "arrival_time_local": "2026-12-11T23:00:00",
+            "arrival_timezone": "Europe/Copenhagen",
+            "arrival_time_utc": "2026-12-11T22:00:00Z",
+            "duration_minutes": 120,
+            "aircraft": "Airbus A220-300 Passenger"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "ea3d042b8c9c49a4921f91ec73d218b1"
+    },
+    {
+      "price": {
+        "amount": 240.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Tap Air Portugal",
+        "duration_minutes": 730,
+        "segments": [
+          {
+            "marketing_carrier_code": "TP",
+            "flight_number": "491",
+            "operating_carrier_name": "Tap Air Portugal",
+            "departure_airport": "TLS",
+            "departure_time_local": "2026-12-11T11:40:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T10:40:00Z",
+            "arrival_airport": "LIS",
+            "arrival_time_local": "2026-12-11T12:45:00",
+            "arrival_timezone": "Europe/Lisbon",
+            "arrival_time_utc": "2026-12-11T12:45:00Z",
+            "duration_minutes": 125,
+            "aircraft": "Embraer 190"
+          },
+          {
+            "marketing_carrier_code": "TP",
+            "flight_number": "756",
+            "operating_carrier_name": "Tap Air Portugal",
+            "departure_airport": "LIS",
+            "departure_time_local": "2026-12-11T19:00:00",
+            "departure_timezone": "Europe/Lisbon",
+            "departure_time_utc": "2026-12-11T19:00:00Z",
+            "arrival_airport": "CPH",
+            "arrival_time_local": "2026-12-11T23:50:00",
+            "arrival_timezone": "Europe/Copenhagen",
+            "arrival_time_utc": "2026-12-11T22:50:00Z",
+            "duration_minutes": 230,
+            "aircraft": "Airbus A320neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "367a54190a9a49a0a417235239bd9931"
+    },
+    {
+      "price": {
+        "amount": 245.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "KLM",
+        "duration_minutes": 325,
+        "segments": [
+          {
+            "marketing_carrier_code": "KL",
+            "flight_number": "1454",
+            "operating_carrier_name": "KLM",
+            "departure_airport": "TLS",
+            "departure_time_local": "2026-12-11T17:15:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T16:15:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2026-12-11T19:15:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2026-12-11T18:15:00Z",
+            "duration_minutes": 120,
+            "aircraft": "Embraer 195 E2"
+          },
+          {
+            "marketing_carrier_code": "KL",
+            "flight_number": "1279",
+            "operating_carrier_name": "KLM",
+            "departure_airport": "AMS",
+            "departure_time_local": "2026-12-11T21:15:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2026-12-11T20:15:00Z",
+            "arrival_airport": "CPH",
+            "arrival_time_local": "2026-12-11T22:40:00",
+            "arrival_timezone": "Europe/Copenhagen",
+            "arrival_time_utc": "2026-12-11T21:40:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Boeing 737"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "9df787d71f964e5eb2f8b2b9f4162b2b"
+    },
+    {
+      "price": {
+        "amount": 251.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 315,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "7413",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "TLS",
+            "departure_time_local": "2026-12-11T17:45:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T16:45:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-11T19:10:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-11T18:10:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "1350",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-11T21:00:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T20:00:00Z",
+            "arrival_airport": "CPH",
+            "arrival_time_local": "2026-12-11T23:00:00",
+            "arrival_timezone": "Europe/Copenhagen",
+            "arrival_time_utc": "2026-12-11T22:00:00Z",
+            "duration_minutes": 120,
+            "aircraft": "Airbus A220-300 Passenger"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "113dbf8664e8489e994525175a73dac6"
+    },
+    {
+      "price": {
+        "amount": 270.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "KLM",
+        "duration_minutes": 305,
+        "segments": [
+          {
+            "marketing_carrier_code": "KL",
+            "flight_number": "1448",
+            "operating_carrier_name": "KLM",
+            "departure_airport": "TLS",
+            "departure_time_local": "2026-12-11T06:05:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T05:05:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2026-12-11T08:00:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2026-12-11T07:00:00Z",
+            "duration_minutes": 115,
+            "aircraft": "Boeing 737"
+          },
+          {
+            "marketing_carrier_code": "KL",
+            "flight_number": "1269",
+            "operating_carrier_name": "KLM",
+            "departure_airport": "AMS",
+            "departure_time_local": "2026-12-11T09:50:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2026-12-11T08:50:00Z",
+            "arrival_airport": "CPH",
+            "arrival_time_local": "2026-12-11T11:10:00",
+            "arrival_timezone": "Europe/Copenhagen",
+            "arrival_time_utc": "2026-12-11T10:10:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Boeing 737"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "9ef1375a2e4040c8a8107ddb50531981"
+    },
+    {
+      "price": {
+        "amount": 305.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 330,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "7405",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "TLS",
+            "departure_time_local": "2026-12-11T11:30:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T10:30:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-11T13:05:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-11T12:05:00Z",
+            "duration_minutes": 95,
+            "aircraft": "Airbus A320"
+          },
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "1050",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-11T15:00:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T14:00:00Z",
+            "arrival_airport": "CPH",
+            "arrival_time_local": "2026-12-11T17:00:00",
+            "arrival_timezone": "Europe/Copenhagen",
+            "arrival_time_utc": "2026-12-11T16:00:00Z",
+            "duration_minutes": 120,
+            "aircraft": "Airbus A220-300 Passenger"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "31dd7b56a0e7497786e1eb3d11544dfe"
+    },
+    {
+      "price": {
+        "amount": 328.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "KLM",
+        "duration_minutes": 350,
+        "segments": [
+          {
+            "marketing_carrier_code": "KL",
+            "flight_number": "1452",
+            "operating_carrier_name": "KLM",
+            "departure_airport": "TLS",
+            "departure_time_local": "2026-12-11T12:25:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T11:25:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2026-12-11T14:25:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2026-12-11T13:25:00Z",
+            "duration_minutes": 120,
+            "aircraft": "Embraer 195 E2"
+          },
+          {
+            "marketing_carrier_code": "KL",
+            "flight_number": "1275",
+            "operating_carrier_name": "KLM",
+            "departure_airport": "AMS",
+            "departure_time_local": "2026-12-11T16:50:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2026-12-11T15:50:00Z",
+            "arrival_airport": "CPH",
+            "arrival_time_local": "2026-12-11T18:15:00",
+            "arrival_timezone": "Europe/Copenhagen",
+            "arrival_time_utc": "2026-12-11T17:15:00Z",
+            "duration_minutes": 85,
+            "aircraft": "Airbus A321neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "b9acc45f58064c9d88877df2942e0013"
+    },
+    {
+      "price": {
+        "amount": 346.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "KLM",
+        "duration_minutes": 255,
+        "segments": [
+          {
+            "marketing_carrier_code": "KL",
+            "flight_number": "1452",
+            "operating_carrier_name": "KLM",
+            "departure_airport": "TLS",
+            "departure_time_local": "2026-12-11T12:25:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T11:25:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2026-12-11T14:25:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2026-12-11T13:25:00Z",
+            "duration_minutes": 120,
+            "aircraft": "Embraer 195 E2"
+          },
+          {
+            "marketing_carrier_code": "KL",
+            "flight_number": "1273",
+            "operating_carrier_name": "KLM",
+            "departure_airport": "AMS",
+            "departure_time_local": "2026-12-11T15:20:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2026-12-11T14:20:00Z",
+            "arrival_airport": "CPH",
+            "arrival_time_local": "2026-12-11T16:40:00",
+            "arrival_timezone": "Europe/Copenhagen",
+            "arrival_time_utc": "2026-12-11T15:40:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Boeing 737"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "4ed3e915a2d04d29a417901d525c17a0"
+    },
+    {
+      "price": {
+        "amount": 387.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Brussels Airlines",
+        "duration_minutes": 265,
+        "segments": [
+          {
+            "marketing_carrier_code": "SN",
+            "flight_number": "3676",
+            "operating_carrier_name": "Brussels Airlines",
+            "departure_airport": "TLS",
+            "departure_time_local": "2026-12-11T07:00:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T06:00:00Z",
+            "arrival_airport": "BRU",
+            "arrival_time_local": "2026-12-11T08:45:00",
+            "arrival_timezone": "Europe/Brussels",
+            "arrival_time_utc": "2026-12-11T07:45:00Z",
+            "duration_minutes": 105,
+            "aircraft": "Airbus A319"
+          },
+          {
+            "marketing_carrier_code": "SN",
+            "flight_number": "2257",
+            "operating_carrier_name": "Brussels Airlines",
+            "departure_airport": "BRU",
+            "departure_time_local": "2026-12-11T09:50:00",
+            "departure_timezone": "Europe/Brussels",
+            "departure_time_utc": "2026-12-11T08:50:00Z",
+            "arrival_airport": "CPH",
+            "arrival_time_local": "2026-12-11T11:25:00",
+            "arrival_timezone": "Europe/Copenhagen",
+            "arrival_time_utc": "2026-12-11T10:25:00Z",
+            "duration_minutes": 95,
+            "aircraft": "Airbus A320neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "5e89c04148f14a13a19719c0b149857d"
+    },
+    {
+      "price": {
+        "amount": 404.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "KLM",
+        "duration_minutes": 270,
+        "segments": [
+          {
+            "marketing_carrier_code": "KL",
+            "flight_number": "1454",
+            "operating_carrier_name": "KLM",
+            "departure_airport": "TLS",
+            "departure_time_local": "2026-12-11T17:15:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T16:15:00Z",
+            "arrival_airport": "AMS",
+            "arrival_time_local": "2026-12-11T19:15:00",
+            "arrival_timezone": "Europe/Amsterdam",
+            "arrival_time_utc": "2026-12-11T18:15:00Z",
+            "duration_minutes": 120,
+            "aircraft": "Embraer 195 E2"
+          },
+          {
+            "marketing_carrier_code": "SK",
+            "flight_number": "554",
+            "operating_carrier_name": "Scandinavian Airlines",
+            "departure_airport": "AMS",
+            "departure_time_local": "2026-12-11T20:25:00",
+            "departure_timezone": "Europe/Amsterdam",
+            "departure_time_utc": "2026-12-11T19:25:00Z",
+            "arrival_airport": "CPH",
+            "arrival_time_local": "2026-12-11T21:45:00",
+            "arrival_timezone": "Europe/Copenhagen",
+            "arrival_time_utc": "2026-12-11T20:45:00Z",
+            "duration_minutes": 80,
+            "aircraft": "Airbus A320neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": true,
+      "ignav_id": "023ecdd5364944eaaaa35034adbc17cd"
+    },
+    {
+      "price": {
+        "amount": 425.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 250,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "7403",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "TLS",
+            "departure_time_local": "2026-12-11T10:30:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T09:30:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-11T12:00:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-11T11:00:00Z",
+            "duration_minutes": 90,
+            "aircraft": "Airbus A220-300 Passenger"
+          },
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "1850",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-11T12:45:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T11:45:00Z",
+            "arrival_airport": "CPH",
+            "arrival_time_local": "2026-12-11T14:40:00",
+            "arrival_timezone": "Europe/Copenhagen",
+            "arrival_time_utc": "2026-12-11T13:40:00Z",
+            "duration_minutes": 115,
+            "aircraft": "Airbus A318"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "ac1ab35f6e2844dcb64f8cd2eb05718a"
+    },
+    {
+      "price": {
+        "amount": 480.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Lufthansa",
+        "duration_minutes": 245,
+        "segments": [
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "2219",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "TLS",
+            "departure_time_local": "2026-12-11T13:30:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T12:30:00Z",
+            "arrival_airport": "MUC",
+            "arrival_time_local": "2026-12-11T15:10:00",
+            "arrival_timezone": "Europe/Berlin",
+            "arrival_time_utc": "2026-12-11T14:10:00Z",
+            "duration_minutes": 100,
+            "aircraft": "Airbus A319"
+          },
+          {
+            "marketing_carrier_code": "LH",
+            "flight_number": "2442",
+            "operating_carrier_name": "Lufthansa",
+            "departure_airport": "MUC",
+            "departure_time_local": "2026-12-11T16:00:00",
+            "departure_timezone": "Europe/Berlin",
+            "departure_time_utc": "2026-12-11T15:00:00Z",
+            "arrival_airport": "CPH",
+            "arrival_time_local": "2026-12-11T17:35:00",
+            "arrival_timezone": "Europe/Copenhagen",
+            "arrival_time_utc": "2026-12-11T16:35:00Z",
+            "duration_minutes": 95,
+            "aircraft": "Airbus A320neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "a950bf229f384255825b44fca36e5859"
+    }
+  ],
+  "observed_at": "2026-11-20T16:20:56.593160Z"
+}

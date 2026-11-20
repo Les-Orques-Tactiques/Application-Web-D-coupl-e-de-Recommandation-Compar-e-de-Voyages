@@ -1,0 +1,422 @@
+{
+  "origin": "MRS",
+  "destination": "DSS",
+  "departure_date": "2026-12-11",
+  "itineraries": [
+    {
+      "price": {
+        "amount": 642.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air Algerie",
+        "duration_minutes": 535,
+        "segments": [
+          {
+            "marketing_carrier_code": "AH",
+            "flight_number": "1021",
+            "operating_carrier_name": "Air Algerie",
+            "departure_airport": "MRS",
+            "departure_time_local": "2026-12-11T16:10:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T15:10:00Z",
+            "arrival_airport": "ALG",
+            "arrival_time_local": "2026-12-11T17:50:00",
+            "arrival_timezone": "Africa/Algiers",
+            "arrival_time_utc": "2026-12-11T16:50:00Z",
+            "duration_minutes": 100,
+            "aircraft": "Boeing 737"
+          },
+          {
+            "marketing_carrier_code": "AH",
+            "flight_number": "5010",
+            "operating_carrier_name": "Air Algerie",
+            "departure_airport": "ALG",
+            "departure_time_local": "2026-12-11T20:10:00",
+            "departure_timezone": "Africa/Algiers",
+            "departure_time_utc": "2026-12-11T19:10:00Z",
+            "arrival_airport": "DSS",
+            "arrival_time_local": "2026-12-12T00:05:00",
+            "arrival_timezone": "Africa/Dakar",
+            "arrival_time_utc": "2026-12-12T00:05:00Z",
+            "duration_minutes": 295,
+            "aircraft": "Boeing 737"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "10a6d8f454614b0db81666edc4cb33b9"
+    },
+    {
+      "price": {
+        "amount": 646.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Iberia",
+        "duration_minutes": 995,
+        "segments": [
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "1174",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "MRS",
+            "departure_time_local": "2026-12-11T06:15:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T05:15:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-11T08:05:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-11T07:05:00Z",
+            "duration_minutes": 110,
+            "aircraft": "Canadair RJ 1000"
+          },
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "921",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-11T18:00:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-11T17:00:00Z",
+            "arrival_airport": "DSS",
+            "arrival_time_local": "2026-12-11T21:50:00",
+            "arrival_timezone": "Africa/Dakar",
+            "arrival_time_utc": "2026-12-11T21:50:00Z",
+            "duration_minutes": 290,
+            "aircraft": "Airbus A321"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "d7e30ae1e9254c5e97c7343b53645a3d"
+    },
+    {
+      "price": {
+        "amount": 679.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Royal Air Maroc",
+        "duration_minutes": 445,
+        "segments": [
+          {
+            "marketing_carrier_code": "AT",
+            "flight_number": "733",
+            "operating_carrier_name": "Royal Air Maroc",
+            "departure_airport": "MRS",
+            "departure_time_local": "2026-12-11T18:40:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T17:40:00Z",
+            "arrival_airport": "CMN",
+            "arrival_time_local": "2026-12-11T20:15:00",
+            "arrival_timezone": "Africa/Casablanca",
+            "arrival_time_utc": "2026-12-11T20:15:00Z",
+            "duration_minutes": 155,
+            "aircraft": "Boeing 737"
+          },
+          {
+            "marketing_carrier_code": "AT",
+            "flight_number": "501",
+            "operating_carrier_name": "Royal Air Maroc",
+            "departure_airport": "CMN",
+            "departure_time_local": "2026-12-11T21:45:00",
+            "departure_timezone": "Africa/Casablanca",
+            "departure_time_utc": "2026-12-11T21:45:00Z",
+            "arrival_airport": "DSS",
+            "arrival_time_local": "2026-12-12T01:05:00",
+            "arrival_timezone": "Africa/Dakar",
+            "arrival_time_utc": "2026-12-12T01:05:00Z",
+            "duration_minutes": 200,
+            "aircraft": "Boeing 787"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "5de0c0c804584d9fb1d4c37192a06985"
+    },
+    {
+      "price": {
+        "amount": 733.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Brussels Airlines",
+        "duration_minutes": 730,
+        "segments": [
+          {
+            "marketing_carrier_code": "SN",
+            "flight_number": "3604",
+            "operating_carrier_name": "Brussels Airlines",
+            "departure_airport": "MRS",
+            "departure_time_local": "2026-12-11T06:45:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T05:45:00Z",
+            "arrival_airport": "BRU",
+            "arrival_time_local": "2026-12-11T08:30:00",
+            "arrival_timezone": "Europe/Brussels",
+            "arrival_time_utc": "2026-12-11T07:30:00Z",
+            "duration_minutes": 105,
+            "aircraft": "Airbus A319"
+          },
+          {
+            "marketing_carrier_code": "SN",
+            "flight_number": "201",
+            "operating_carrier_name": "Brussels Airlines",
+            "departure_airport": "BRU",
+            "departure_time_local": "2026-12-11T12:35:00",
+            "departure_timezone": "Europe/Brussels",
+            "departure_time_utc": "2026-12-11T11:35:00Z",
+            "arrival_airport": "DSS",
+            "arrival_time_local": "2026-12-11T17:55:00",
+            "arrival_timezone": "Africa/Dakar",
+            "arrival_time_utc": "2026-12-11T17:55:00Z",
+            "duration_minutes": 380,
+            "aircraft": "Airbus A330"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "ebd33877f9394031a1ad53140471f5f7"
+    },
+    {
+      "price": {
+        "amount": 783.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Tap Air Portugal",
+        "duration_minutes": 1860,
+        "segments": [
+          {
+            "marketing_carrier_code": "TP",
+            "flight_number": "403",
+            "operating_carrier_name": "Tap Air Portugal",
+            "departure_airport": "MRS",
+            "departure_time_local": "2026-12-11T19:00:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T18:00:00Z",
+            "arrival_airport": "LIS",
+            "arrival_time_local": "2026-12-11T20:30:00",
+            "arrival_timezone": "Europe/Lisbon",
+            "arrival_time_utc": "2026-12-11T20:30:00Z",
+            "duration_minutes": 150,
+            "aircraft": "Embraer 190"
+          },
+          {
+            "marketing_carrier_code": "TP",
+            "flight_number": "1483",
+            "operating_carrier_name": "Tap Air Portugal",
+            "departure_airport": "LIS",
+            "departure_time_local": "2026-12-12T20:45:00",
+            "departure_timezone": "Europe/Lisbon",
+            "departure_time_utc": "2026-12-12T20:45:00Z",
+            "arrival_airport": "DSS",
+            "arrival_time_local": "2026-12-13T01:00:00",
+            "arrival_timezone": "Africa/Dakar",
+            "arrival_time_utc": "2026-12-13T01:00:00Z",
+            "duration_minutes": 255,
+            "aircraft": "Airbus A321neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "677ba3c04321447f9b31d822655c816d"
+    },
+    {
+      "price": {
+        "amount": 789.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Tap Air Portugal",
+        "duration_minutes": 900,
+        "segments": [
+          {
+            "marketing_carrier_code": "TP",
+            "flight_number": "401",
+            "operating_carrier_name": "Tap Air Portugal",
+            "departure_airport": "MRS",
+            "departure_time_local": "2026-12-11T11:00:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T10:00:00Z",
+            "arrival_airport": "LIS",
+            "arrival_time_local": "2026-12-11T12:30:00",
+            "arrival_timezone": "Europe/Lisbon",
+            "arrival_time_utc": "2026-12-11T12:30:00Z",
+            "duration_minutes": 150,
+            "aircraft": "Embraer 190"
+          },
+          {
+            "marketing_carrier_code": "TP",
+            "flight_number": "1483",
+            "operating_carrier_name": "Tap Air Portugal",
+            "departure_airport": "LIS",
+            "departure_time_local": "2026-12-11T20:45:00",
+            "departure_timezone": "Europe/Lisbon",
+            "departure_time_utc": "2026-12-11T20:45:00Z",
+            "arrival_airport": "DSS",
+            "arrival_time_local": "2026-12-12T01:00:00",
+            "arrival_timezone": "Africa/Dakar",
+            "arrival_time_utc": "2026-12-12T01:00:00Z",
+            "duration_minutes": 255,
+            "aircraft": "Airbus A321neo"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "842e8f50b42f4a11832e8896dcef5db8"
+    },
+    {
+      "price": {
+        "amount": 814.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Iberia",
+        "duration_minutes": 605,
+        "segments": [
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "1170",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "MRS",
+            "departure_time_local": "2026-12-11T12:45:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T11:45:00Z",
+            "arrival_airport": "MAD",
+            "arrival_time_local": "2026-12-11T14:35:00",
+            "arrival_timezone": "Europe/Madrid",
+            "arrival_time_utc": "2026-12-11T13:35:00Z",
+            "duration_minutes": 110,
+            "aircraft": "Canadair RJ 1000"
+          },
+          {
+            "marketing_carrier_code": "IB",
+            "flight_number": "921",
+            "operating_carrier_name": "Iberia",
+            "departure_airport": "MAD",
+            "departure_time_local": "2026-12-11T18:00:00",
+            "departure_timezone": "Europe/Madrid",
+            "departure_time_utc": "2026-12-11T17:00:00Z",
+            "arrival_airport": "DSS",
+            "arrival_time_local": "2026-12-11T21:50:00",
+            "arrival_timezone": "Africa/Dakar",
+            "arrival_time_utc": "2026-12-11T21:50:00Z",
+            "duration_minutes": 290,
+            "aircraft": "Airbus A321"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "3fd40a9b26724688a9490622ecf9871f"
+    },
+    {
+      "price": {
+        "amount": 1007.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Air France",
+        "duration_minutes": 585,
+        "segments": [
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "7335",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "MRS",
+            "departure_time_local": "2026-12-11T12:30:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T11:30:00Z",
+            "arrival_airport": "CDG",
+            "arrival_time_local": "2026-12-11T14:10:00",
+            "arrival_timezone": "Europe/Paris",
+            "arrival_time_utc": "2026-12-11T13:10:00Z",
+            "duration_minutes": 100,
+            "aircraft": "Airbus A220-300 Passenger"
+          },
+          {
+            "marketing_carrier_code": "AF",
+            "flight_number": "718",
+            "operating_carrier_name": "Air France",
+            "departure_airport": "CDG",
+            "departure_time_local": "2026-12-11T16:30:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T15:30:00Z",
+            "arrival_airport": "DSS",
+            "arrival_time_local": "2026-12-11T21:15:00",
+            "arrival_timezone": "Africa/Dakar",
+            "arrival_time_utc": "2026-12-11T21:15:00Z",
+            "duration_minutes": 345,
+            "aircraft": "Airbus A350"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "9cbe36c9720149b3b65261c46fe4e7e0"
+    },
+    {
+      "price": {
+        "amount": 1147.0,
+        "currency": "USD",
+        "status": "verified"
+      },
+      "outbound": {
+        "carrier": "Turkish Airlines",
+        "duration_minutes": 780,
+        "segments": [
+          {
+            "marketing_carrier_code": "TK",
+            "flight_number": "1368",
+            "operating_carrier_name": "Turkish Airlines",
+            "departure_airport": "MRS",
+            "departure_time_local": "2026-12-11T18:20:00",
+            "departure_timezone": "Europe/Paris",
+            "departure_time_utc": "2026-12-11T17:20:00Z",
+            "arrival_airport": "IST",
+            "arrival_time_local": "2026-12-11T23:35:00",
+            "arrival_timezone": "Europe/Istanbul",
+            "arrival_time_utc": "2026-12-11T20:35:00Z",
+            "duration_minutes": 195,
+            "aircraft": "Airbus A321 (Sharklets)"
+          },
+          {
+            "marketing_carrier_code": "TK",
+            "flight_number": "501",
+            "operating_carrier_name": "Turkish Airlines",
+            "departure_airport": "IST",
+            "departure_time_local": "2026-12-12T01:30:00",
+            "departure_timezone": "Europe/Istanbul",
+            "departure_time_utc": "2026-12-11T22:30:00Z",
+            "arrival_airport": "DSS",
+            "arrival_time_local": "2026-12-12T06:20:00",
+            "arrival_timezone": "Africa/Dakar",
+            "arrival_time_utc": "2026-12-12T06:20:00Z",
+            "duration_minutes": 470,
+            "aircraft": "Airbus A330"
+          }
+        ]
+      },
+      "cabin_class": "economy",
+      "has_mixed_carriers": false,
+      "ignav_id": "b3265c11cf164df98a4c063aa4f09c3e"
+    }
+  ],
+  "observed_at": "2026-11-20T16:18:20.809603Z"
+}
