@@ -7,10 +7,12 @@ type Props = {
   favorisIds: Set<string>;
   favorisEnCours: Set<string>;
   onBasculerFavori: (vol: Vol) => void;
+  /** Facultatif : si fourni, chaque carte affiche un bouton « Voir le vol ». */
+  onVoir?: (vol: Vol) => void;
   messageSiVide: string;
 };
 
-export function ListeVols({ vols, favorisIds, favorisEnCours, onBasculerFavori, messageSiVide }: Props) {
+export function ListeVols({ vols, favorisIds, favorisEnCours, onBasculerFavori, onVoir, messageSiVide }: Props) {
   if (vols.length === 0) return <Encart>{messageSiVide}</Encart>;
 
   return (
@@ -22,6 +24,8 @@ export function ListeVols({ vols, favorisIds, favorisEnCours, onBasculerFavori, 
           favori={favorisIds.has(vol.id)}
           enCours={favorisEnCours.has(vol.id)}
           onBasculerFavori={onBasculerFavori}
+          // ListeVols ne fait que transmettre : c'est la carte qui affiche le bouton
+          onVoir={onVoir}
         />
       ))}
     </div>

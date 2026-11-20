@@ -21,7 +21,8 @@ export function PastillesBudget({ valeur, onChange }: PropsPastillesBudget) {
               choisi ? "bg-profond text-white" : "bg-menthe text-encre hover:bg-trait"
             }`}
           >
-            {montant === null ? "Sans limite" : `${montant} €`}
+            {montant === null ? "Sans limite" : `${montant} USD`}
+
           </button>
         );
       })}

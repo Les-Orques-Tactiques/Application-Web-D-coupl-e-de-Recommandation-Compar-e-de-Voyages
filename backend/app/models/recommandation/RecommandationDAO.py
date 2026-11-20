@@ -1,6 +1,7 @@
 # app/models/recommandation/RecommandationDAO.py
 from typing import Optional
 from uuid import UUID
+from app.models.vol.Vol import Vol
 
 from app.database.initdb import get_db_cursor
 from app.models.recommandation.Recommandation import Recommandation
@@ -82,3 +83,54 @@ class RecommandationDAO(RecommandationInterface):
                     ],
                 )
             return execution_id
+
+    def lister_candidats_accueil(
+        self,
+        origine: Optional[str],
+        devise: str,
+    ) -> list[Vol]:
+        conditions = [
+            "v.aller_retour IS TRUE",
+            "v.date_depart >= CURRENT_DATE",
+            "v.devise = %s",
+            "EXISTS (SELECT 1 FROM segments_vol s "
+            "WHERE s.vol_id = v.id AND s.sens = 'aller' "
+            "AND s.ordre = 1 AND s.depart_utc > NOW())",
+        ]
+        valeurs = [devise]
+
+        if origine:
+            conditions.append("v.origine = %s")
+            valeurs.append(origine)
+
+            with get_db_cursor() as cursor:
+                cursor.execute(
+                    f"""
+                    SELECT {COLONNES}
+                    {JOINTURE}
+                    WHERE {' AND '.join(conditions)}
+                    ORDER BY v.date_depart, v.prix, v.id;
+                    """,
+                    valeurs,
+                )
+                lignes = cursor.fetchall()
+
+            # Deux lignes avec des id différents peuvent décrire le même vol affiché
+            # (même compagnie, même trajet, mêmes horaires, mêmes dates).
+            # Le tri (date, prix) place le moins cher en premier : on garde celui-là.
+            deja_vus: set[tuple] = set()
+            vols: list[Vol] = []
+            for ligne in lignes:
+                signature = (
+                    ligne["compagnie_aller"],
+                    ligne["origine"],
+                    ligne["destination"],
+                    ligne["depart_aller_local"],
+                    ligne["arrivee_aller_locale"],
+                    ligne["date_retour"],
+                )
+                if signature in deja_vus:
+                    continue  # doublon : on l'ignore
+                deja_vus.add(signature)
+                vols.append(Vol.from_row(ligne))
+            return vols

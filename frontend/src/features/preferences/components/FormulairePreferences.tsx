@@ -214,7 +214,7 @@ async function utiliserPosition() {
         <h2 className="mt-10 text-[22px] tracking-tight">Votre budget de référence</h2>
         <Champ
           className="mt-5"
-          libelle="Maximum par personne · aller-retour"
+          libelle="Maximum par personne · aller-retour · USD"
           icone={Wallet}
           type="number"
           min={0}

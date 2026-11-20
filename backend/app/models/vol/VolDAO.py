@@ -54,6 +54,11 @@ def construire_filtres(criteres: CriteresRecherche) -> tuple[list[str], list]:
         criteres.date_depart + marge,
     ]
 
+    # Première version : tous les budgets et résultats utilisent USD.
+    conditions.append("v.devise = %s")
+    valeurs.append("USD")
+
+
     if criteres.aller_retour and criteres.date_retour is not None:
         conditions.append("v.date_retour BETWEEN %s AND %s")
         valeurs += [criteres.date_retour - marge, criteres.date_retour + marge]

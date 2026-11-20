@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from "react";
 import {
+  lireRecommandations,
   definirFavori,
   lireFavoris,
   lireHistorique,
@@ -43,10 +44,16 @@ export function useExplorer() {
   const [favoris, setFavoris] = useState<Vol[]>([]);
   const [historique, setHistorique] = useState<RechercheHistorique[]>([]);
   const [chargement, setChargement] = useState(true);
+  
   const [rechercheEnCours, setRechercheEnCours] = useState(false);
   const [aRecherche, setARecherche] = useState(false);
   const [favorisEnCours, setFavorisEnCours] = useState<Set<string>>(new Set());
   const [erreur, setErreur] = useState<string | null>(null);
+  const [recommandations, setRecommandations] = useState<Vol[]>([]);
+  const [chargementRecommandations, setChargementRecommandations] = useState(true);
+  const [erreurRecommandations, setErreurRecommandations] = useState<string | null>(null);
+
+
 
   // Source de vérité unique : la liste des favoris. Les cartes lisent cet ensemble.
   const favorisIds = useMemo(() => new Set(favoris.map(v => v.id)), [favoris]);
@@ -81,7 +88,30 @@ export function useExplorer() {
     }
   }
 
+  useEffect(() => {
+    let actif = true;
+
+    lireRecommandations()
+      .then((liste) => {
+        if (actif) setRecommandations(liste);
+      })
+      .catch((e: unknown) => {
+        if (actif) {
+          setErreurRecommandations(
+            `Impossible de charger les recommandations : ${messageErreur(e)}`,
+          );
+        }
+      })
+      .finally(() => {
+        if (actif) setChargementRecommandations(false);
+      });
+
+    return () => { actif = false; };
+  }, []);
+
+
   async function rechercher(criteres: CriteresRecherche) {
+    setARecherche(true)
     setRechercheEnCours(true);
     setErreur(null);
     setVols([]);
@@ -130,5 +160,8 @@ export function useExplorer() {
     erreur,
     rechercher,
     basculerFavori,
+    recommandations,
+    chargementRecommandations,
+    erreurRecommandations,
   };
 }
