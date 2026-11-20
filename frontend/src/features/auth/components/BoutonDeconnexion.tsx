@@ -18,8 +18,8 @@ export function BoutonDeconnexion({ taille = "moyenne" }: Props) {
 
   async function cliquer() {
     setEnCours(true);
-    await deconnecter(); // ne lève jamais d'erreur (voir le catch du fournisseur)
-    naviguerVers("/connexion", { replace: true });
+    naviguerVers("/", { replace: true }); // page publique, avant de vider l'utilisateur
+    await deconnecter();
   }
 
   return (
