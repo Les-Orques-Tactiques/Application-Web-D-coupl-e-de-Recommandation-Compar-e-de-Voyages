@@ -3,6 +3,10 @@ import { dureeLisible } from "../utils/formats";
 import { boutonPrincipal, boutonSecondaire } from "../utils/styles";
 import type { Avis, Vol } from "../utils/types";
 
+function dateCourte(iso?: string): string | null {
+    if (!iso) return null;
+    return new Date(`${iso}T12:00:00`).toLocaleDateString("fr-FR", { day: "numeric", month: "short" });
+}
 const BOUTONS_AVIS = [
     { valeur: "oui", Icone: ThumbsUp, libelle: "Ce vol me correspond" },
     { valeur: "non", Icone: ThumbsDown, libelle: "Ce vol ne me correspond pas" },
@@ -28,6 +32,7 @@ export function CarteVol({ vol, rang, meilleur, favori, avis, dates, allerRetour
                 <span className="mr-1 text-attenue">{String(rang).padStart(2, "0")}</span>
                 <span className="flex size-7 items-center justify-center rounded-md bg-menthe text-[10px] text-principal">{vol.code}</span>
                 <h3 className="text-encre">{vol.compagnie}</h3>
+                <span className="text-attenue">· {dateCourte(vol.dateDepart) ?? dates}</span>
                 {meilleur && (
                     <span className="rounded-full bg-citron px-2 py-1 text-[9px] font-semibold text-profond">Meilleur équilibre</span>
                 )}

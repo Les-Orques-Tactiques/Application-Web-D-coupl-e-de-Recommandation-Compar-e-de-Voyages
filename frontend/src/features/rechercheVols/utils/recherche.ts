@@ -52,5 +52,6 @@ export function convertirVolExplorer(vol: VolApi): Vol {
             : "Vol trouvé dans la base de données.",
         lieuDepart: `${vol.origine} · ${vol.ville_origine ?? "Départ"}`,
         lieuArrivee: `${vol.destination} · ${vol.ville_destination ?? "Arrivée"}`,
+        dateDepart: vol.date_depart,
     };
 }

@@ -11,6 +11,7 @@ export type Vol = {
   message: string;       // explication de la recommandation
   lieuDepart: string;    // "LYS · Lyon"
   lieuArrivee: string;
+  dateDepart?: string;     // "2027-06-12"
 };
 
 /** Ce que la personne tape dans le résumé et le formulaire de modification. */
