@@ -18,7 +18,7 @@ class RecommandationDAO(RecommandationInterface):
         conditions.append("v.embedding IS NOT NULL")
         vecteur = vers_litteral_vecteur(embedding)
 
-        # <=> = distance cosinus (0 = identique) ; 1 - distance = similarité.
+        # <-> = distance euclidienne (L2, 0 = identique) ; 1 / (1 + distance) = similarité dans ]0, 1].
         # Le vecteur apparaît deux fois (SELECT puis ORDER BY), donc deux fois dans les valeurs.
         parametres = [vecteur, *valeurs, vecteur, criteres.limite, criteres.decalage]
 
@@ -93,6 +93,7 @@ class RecommandationDAO(RecommandationInterface):
         ]
         valeurs = [devise]
 
+        # Sans aéroport habituel on garde tous les départs
         if origine:
             conditions.append("v.origine = %s")
             valeurs.append(origine)
@@ -109,7 +110,8 @@ class RecommandationDAO(RecommandationInterface):
             )
             lignes = cursor.fetchall()
 
-        # Deux lignes avec des id différents peuvent décrire le même vol affiché.
+        # Deux lignes avec des id différents peuvent décrire le même vol affiché
+        # (même compagnie, même trajet, mêmes horaires, mêmes dates).
         # Le tri (date, prix) place le moins cher en premier : on garde celui-là.
         deja_vus: set[tuple] = set()
         vols: list[Vol] = []
@@ -123,11 +125,11 @@ class RecommandationDAO(RecommandationInterface):
                 ligne["date_retour"],
             )
             if signature in deja_vus:
-                continue
+                continue  # doublon : on l'ignore
             deja_vus.add(signature)
             vols.append(Vol.from_row(ligne))
         return vols
-    
+
     def moyenne_embedding(self) -> Optional[list[float]]:
         with get_db_cursor() as cursor:
             cursor.execute("SELECT AVG(embedding)::text AS moy FROM vols WHERE embedding IS NOT NULL;")
