@@ -36,6 +36,8 @@ class Vol:
     ville_destination: Optional[str] = None
     depart_aller_local: Optional[datetime] = None
     arrivee_aller_locale: Optional[datetime] = None
+    depart_retour_local: Optional[datetime] = None
+    arrivee_retour_locale: Optional[datetime] = None
 
     @classmethod
     def from_row(cls, row: dict) -> "Vol":
@@ -70,4 +72,6 @@ class Vol:
             "observe_le": iso(self.observe_le),
             "depart_aller_local": iso(self.depart_aller_local),
             "arrivee_aller_locale": iso(self.arrivee_aller_locale),
+            "depart_retour_local": iso(self.depart_retour_local),
+            "arrivee_retour_locale": iso(self.arrivee_retour_locale),
         }

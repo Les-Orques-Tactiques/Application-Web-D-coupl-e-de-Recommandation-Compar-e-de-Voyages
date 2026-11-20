@@ -442,14 +442,18 @@ CREATE OR REPLACE VIEW v_vols_resume AS
 SELECT
     v.id, v.origine, v.destination, v.date_depart, v.date_retour, v.aller_retour,
     v.prix, v.devise, v.compagnie_aller, v.duree_aller_min, v.escales_aller,
-    v.compagnie_retour, v.duree_retour_min, v.escales_retour,v.heure_depart_aller, v.simulee, v.observe_le, v.ignav_id,
+    v.compagnie_retour, v.duree_retour_min, v.escales_retour, v.heure_depart_aller, v.simulee, v.observe_le, v.ignav_id,
     v.auto_transfert, v.transporteurs_mixtes,
     a.ville      AS ville_destination,
     a.image_url  AS image_destination,
     (SELECT MIN(s.depart_local) FROM segments_vol s
         WHERE s.vol_id = v.id AND s.sens = 'aller')   AS depart_aller_local,
     (SELECT MAX(s.arrivee_locale) FROM segments_vol s
-        WHERE s.vol_id = v.id AND s.sens = 'aller')   AS arrivee_aller_locale
+        WHERE s.vol_id = v.id AND s.sens = 'aller')   AS arrivee_aller_locale,
+    (SELECT MIN(s.depart_local) FROM segments_vol s
+        WHERE s.vol_id = v.id AND s.sens = 'retour')  AS depart_retour_local,
+    (SELECT MAX(s.arrivee_locale) FROM segments_vol s
+        WHERE s.vol_id = v.id AND s.sens = 'retour')  AS arrivee_retour_locale
 FROM vols v
 JOIN aeroports a ON a.code_iata = v.destination;
 

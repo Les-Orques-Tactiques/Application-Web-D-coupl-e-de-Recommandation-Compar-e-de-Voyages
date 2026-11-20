@@ -59,6 +59,21 @@ export default function PageDetailVol() {
     const devise = etat.devise ?? "EUR";
     const total = vol.prix * saisie.passagers;
 
+    // Trajet retour : null si la base n'a pas fourni les horaires du retour.
+    // Les lieux sont inversés : on part de l'arrivée de l'aller.
+    const volRetour: Vol | null =
+        vol.departRetour && vol.arriveeRetour && vol.dureeRetour != null
+            ? {
+                  ...vol,
+                  depart: vol.departRetour,
+                  arrivee: vol.arriveeRetour,
+                  duree: vol.dureeRetour,
+                  escale: vol.escaleRetour ?? null,
+                  lieuDepart: vol.lieuArrivee,
+                  lieuArrivee: vol.lieuDepart,
+              }
+            : null;
+
     async function basculerFavori() {
         setFavoriEnCours(true);
         setErreur(null);
@@ -109,8 +124,7 @@ export default function PageDetailVol() {
                 <div className="space-y-5">
                     <CarteTrajet etiquette="Aller" jour={formaterJour(saisie.aller)} vol={vol} />
                     {saisie.allerRetour && saisie.retour && (
-                        // La base ne fournit pas encore les horaires du retour
-                        <CarteTrajet etiquette="Retour" jour={formaterJour(saisie.retour)} vol={null} />
+                        <CarteTrajet etiquette="Retour" jour={formaterJour(saisie.retour)} vol={volRetour} />
                     )}
 
                     <article className="rounded-xl bg-menthe p-6">

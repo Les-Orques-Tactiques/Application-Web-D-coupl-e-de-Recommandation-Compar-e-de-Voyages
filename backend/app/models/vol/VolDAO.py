@@ -17,7 +17,11 @@ COLONNES = """
     (SELECT MIN(s.depart_local) FROM segments_vol s
         WHERE s.vol_id = v.id AND s.sens = 'aller')    AS depart_aller_local,
     (SELECT MAX(s.arrivee_locale) FROM segments_vol s
-        WHERE s.vol_id = v.id AND s.sens = 'aller')    AS arrivee_aller_locale
+        WHERE s.vol_id = v.id AND s.sens = 'aller')    AS arrivee_aller_locale,
+    (SELECT MIN(s.depart_local) FROM segments_vol s
+        WHERE s.vol_id = v.id AND s.sens = 'retour')   AS depart_retour_local,
+    (SELECT MAX(s.arrivee_locale) FROM segments_vol s
+        WHERE s.vol_id = v.id AND s.sens = 'retour')   AS arrivee_retour_locale
 """
 JOINTURE = """
     FROM vols v

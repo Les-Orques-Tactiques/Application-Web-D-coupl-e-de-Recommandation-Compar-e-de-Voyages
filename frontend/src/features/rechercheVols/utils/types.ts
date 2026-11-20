@@ -12,6 +12,11 @@ export type Vol = {
   lieuDepart: string;    // "LYS · Lyon"
   lieuArrivee: string;
   dateDepart?: string;     // "2027-06-12"
+  dateRetour?: string;      // "2027-06-19"
+  departRetour?: string;    // "18:20"
+  arriveeRetour?: string;   // "21:05"
+  dureeRetour?: number;     // en minutes
+  escaleRetour?: string | null; // null = direct
 };
 
 /** Ce que la personne tape dans le résumé et le formulaire de modification. */
