@@ -57,9 +57,9 @@ export default function PageMonCompte() {
 
     // « Reprendre » relance directement la recherche sur la page Résultats
     function reprendre(recherche: RechercheHistorique) {
-        // Recherche incomplète : on renvoie vers l'historique d'Explorer
+        // Recherche incomplète : on renvoie vers la page Historique
         if (!recherche.origine || !recherche.destination || !recherche.date_depart) {
-            navigate("/explorer?onglet=historique");
+            navigate("/historique");
             return;
         }
         const criteres: CriteresRecherche = {
@@ -164,7 +164,7 @@ export default function PageMonCompte() {
                             {explorer.historique.length} recherche(s) associée(s) à votre compte
                         </p>
                     </div>
-                    <Link to="/explorer?onglet=historique" className="text-[13px] font-medium text-principal hover:underline">
+                    <Link to="/historique" className="text-[13px] font-medium text-principal hover:underline">
                         Tout voir →
                     </Link>
                 </div>
