@@ -8,7 +8,6 @@ export interface RechercheVols {
   budget_max: number;
   devise: string;
   direct_seulement: boolean;
-  bagage_requis: boolean;
 }
 
 export interface VolExplorer {
@@ -23,7 +22,6 @@ export interface VolExplorer {
   compagnie_aller: string;
   duree_aller_min: number;
   escales_aller: number;
-  bagage_inclus: boolean | null;
   simulee: boolean;
   heure_depart: string | null;
   heure_arrivee: string | null;

@@ -18,7 +18,7 @@ export const APPROCHES: InfoApproche[] = [
         surTitre: "Approche A",
         titre: "Le contenu",
         description:
-            "Embeddings des caractéristiques prix, durée, escales et bagages. Similarité cosinus via pgvector entre le profil et les vols.",
+            "Embeddings des caractéristiques prix, durée, escales et heure de départ. Similarité cosinus via pgvector entre le profil et les vols.",
         avantage: "Utilisable dès la première connexion, avec vos critères explicites.",
         limite: "Peu de sérendipité : reste proche de vos préférences connues.",
     },

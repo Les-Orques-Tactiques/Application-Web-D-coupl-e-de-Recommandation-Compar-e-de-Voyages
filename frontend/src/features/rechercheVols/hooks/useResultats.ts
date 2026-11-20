@@ -73,7 +73,6 @@ export function useResultats(criteresInitiaux?: CriteresRecherche | null) {
                     nb_passagers: saisie.passagers,
                     budget_max: budget,
                     direct_seulement: false, // les filtres d'escales s'appliquent ensuite côté page
-                    bagage_requis: false, // idem pour le bagage
                 }),
             );
             setVols(trouves.map(convertirVolExplorer));

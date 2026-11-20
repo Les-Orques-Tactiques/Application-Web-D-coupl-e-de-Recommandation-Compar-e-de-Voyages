@@ -11,8 +11,6 @@ type Props = {
 
 export function CarteVol({ vol, favori, enCours, onBasculerFavori }: Props) {
   const escales = vol.escales_aller === 0 ? "Direct" : `${vol.escales_aller} escale(s)`;
-  const bagage =
-    vol.bagage_inclus === null ? "Bagage non renseigné" : vol.bagage_inclus ? "Bagage en soute inclus" : "Bagage non inclus";
   const dates = formaterDate(vol.date_depart) + (vol.date_retour ? ` – ${formaterDate(vol.date_retour)}` : "");
 
   return (
@@ -55,8 +53,7 @@ export function CarteVol({ vol, favori, enCours, onBasculerFavori }: Props) {
         />
       </div>
 
-      <div className="mt-4 flex justify-between gap-2 text-[11px] text-attenue">
-        <span>{bagage}</span>
+      <div className="mt-4 text-[11px] text-attenue">
         <span>{dates}</span>
       </div>
 

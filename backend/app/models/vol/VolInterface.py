@@ -14,7 +14,7 @@ class VolInterface(ABC):
         """Vols correspondant aux critères de recherche (US9, US12). Filtre sur la route,
         le type de trajet, la date de départ (± tolerance_jours, jamais dans le passé),
         la date de retour pour un aller-retour, le budget PAR PERSONNE (prix <= budget),
-        les escales, la durée, le bagage et les compagnies.
+        les escales, la durée et les compagnies.
         `tri` est choisi dans une liste blanche (prix, duree, escales, pertinence) : jamais
         injecté tel quel dans le SQL. Toutes les valeurs passent en paramètres (%s).
         Renvoie [] si rien ne correspond."""
@@ -33,3 +33,7 @@ class VolInterface(ABC):
     def ecrire_embeddings(self, embeddings: dict[UUID, list[float]]) -> int:
         """Écrit plusieurs embeddings dans une seule transaction. Renvoie le nombre
         de vols mis à jour."""
+    
+    @abstractmethod
+    def lister_compagnies(self) -> list[str]:
+        """Noms des compagnies présentes dans les vols (aller et retour), sans doublon, triés."""

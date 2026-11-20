@@ -1,5 +1,5 @@
 # app/models/vol/VolSchema.py
-from datetime import date, datetime
+from datetime import date, datetime, time
 from typing import Optional
 from uuid import UUID
 
@@ -25,7 +25,7 @@ class VolOut(BaseModel):
     compagnie_retour: Optional[str] = None
     duree_retour_min: Optional[int] = None
     escales_retour: Optional[int] = None
-    bagage_inclus: Optional[bool] = None
+    heure_depart_aller: Optional[time] = None
     simulee: bool
     observe_le: Optional[datetime] = None
     depart_aller_local: Optional[datetime] = None

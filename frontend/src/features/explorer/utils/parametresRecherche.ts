@@ -16,7 +16,6 @@ export function versParametres(c: CriteresRecherche): URLSearchParams {
   // La seule présence de "retour" signifie « aller-retour »
   if (c.aller_retour && c.date_retour) p.set("retour", c.date_retour);
   if (c.direct_seulement) p.set("direct", "1");
-  if (c.bagage_requis) p.set("bagage", "1");
   return p;
 }
 
@@ -38,6 +37,5 @@ export function depuisParametres(p: URLSearchParams): CriteresRecherche | null {
     nb_passagers: Number(p.get("passagers")) || PASSAGERS_PAR_DEFAUT,
     budget_max: Number(p.get("budget")) || BUDGET_PAR_DEFAUT,
     direct_seulement: p.get("direct") === "1",
-    bagage_requis: p.get("bagage") === "1",
   };
 }

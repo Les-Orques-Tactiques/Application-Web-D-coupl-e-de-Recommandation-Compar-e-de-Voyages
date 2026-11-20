@@ -68,7 +68,7 @@ export function ClassementVols({ vols, approche, sansHistorique, decouverteB, pr
                         <p className="mt-0.5 text-attenue">
                             B classe {decouverteB.compagnie} en tête ({formaterDecimal(decouverteB.scoreB)}) grâce aux
                             profils proches. L’hybride conserve {premierVol.compagnie} en premier, en accord avec vos
-                            préférences de durée et de cabine.
+                            préférences de durée et de'horaire.
                         </p>
                     </div>
                 </div>

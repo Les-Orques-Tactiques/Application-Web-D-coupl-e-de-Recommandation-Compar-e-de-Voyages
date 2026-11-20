@@ -10,22 +10,17 @@ const BOUTONS_AVIS = [
 
 type PropsCarteVol = {
     vol: Vol;
-    rang: number;    // 1, 2, 3…
-    meilleur: boolean;      // badge « Meilleur équilibre »
+    rang: number;
+    meilleur: boolean;
     favori: boolean;
     avis?: Avis;
     dates: string;
-    depuisLaBase: boolean;
     onBasculerFavori: () => void;
     onDonnerAvis: (avis: Avis) => void;
     onVoir: () => void;
 };
 
-export function CarteVol({ vol, rang, meilleur, favori, avis, dates, depuisLaBase, onBasculerFavori, onDonnerAvis, onVoir }: PropsCarteVol) {
-    const bagage = vol.cabine
-        ? "Cabine 10 kg incluse"
-        : depuisLaBase ? "Bagage non inclus ou non renseigné" : "Petit sac inclus";
-
+export function CarteVol({ vol, rang, meilleur, favori, avis, dates, onBasculerFavori, onDonnerAvis, onVoir }: PropsCarteVol) {
     return (
         <article className={`rounded-xl border bg-white p-5 ${meilleur ? "border-principal/40" : "border-trait"}`}>
             {/* Ligne 1 : rang, compagnie, badge, favori */}
@@ -69,11 +64,6 @@ export function CarteVol({ vol, rang, meilleur, favori, avis, dates, depuisLaBas
                     <p className="text-2xl tracking-tight text-encre">{vol.prix} €</p>
                     <p className="text-[9px] text-attenue">aller-retour / pers.</p>
                 </div>
-            </div>
-
-            <div className="mt-3 flex justify-between gap-3 text-[10px] text-attenue">
-                <span>{bagage}</span>
-                <span>{dates}</span>
             </div>
 
             {/* Explication de la recommandation */}

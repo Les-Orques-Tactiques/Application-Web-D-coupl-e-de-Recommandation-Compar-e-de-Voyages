@@ -45,7 +45,6 @@ function versFiltresInitiaux(c: CriteresRecherche | null): Partial<Filtres> | un
     return {
         budget: c.budget_max,
         escales: !c.direct_seulement, // « direct seulement » → on masque les vols avec escale
-        cabine: c.bagage_requis,      // « bagage requis » → seulement les vols avec bagage
     };
 }
 
@@ -162,7 +161,6 @@ function ContenuResultats({ criteres }: ProprietesContenu) {
                                 favori={recherche.favoris.includes(vol.id)}
                                 avis={avis[vol.id]}
                                 dates={dates}
-                                depuisLaBase={recherche.depuisLaBase}
                                 // 🆕 void : basculerFavori peut maintenant être asynchrone (appel API)
                                 onBasculerFavori={() => void recherche.basculerFavori(vol.id)}
                                 onDonnerAvis={valeur => setAvis(precedents => ({ ...precedents, [vol.id]: valeur }))}

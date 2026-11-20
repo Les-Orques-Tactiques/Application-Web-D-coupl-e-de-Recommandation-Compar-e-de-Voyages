@@ -18,7 +18,6 @@ export interface RechercheVols {
   budget?: number | null;          // par personne
   escales_max?: number | null;     // 0..5 (0 = direct)
   compagnies?: string[];           // max 20
-  bagage_inclus?: boolean | null;  // true = filtre bagage
   duree_max_min?: number | null;
   tolerance_jours?: number;        // 0..14, défaut 7
   tri?: "prix" | "duree" | "escales" | "pertinence";
@@ -44,15 +43,12 @@ export interface Vol {
   compagnie_retour: string | null;
   duree_retour_min: number | null;
   escales_retour: number | null;
-  bagage_inclus: boolean | null;
+  heure_depart_aller: string | null;  // "HH:MM:SS", heure locale du 1er segment aller
   simulee: boolean;
   observe_le: string | null;
   depart_aller_local: string | null;
   arrivee_aller_locale: string | null;
 }
-
-
-
 
 // --- Vols ---------------------------------------------------------------
 
@@ -91,3 +87,5 @@ export async function definirFavori(volId: string, favori: boolean): Promise<voi
     methode: favori ? "POST" : "DELETE",
   });
 }
+
+export const listerCompagnies = () => appelerApi<string[]>("/api/vols/compagnies");

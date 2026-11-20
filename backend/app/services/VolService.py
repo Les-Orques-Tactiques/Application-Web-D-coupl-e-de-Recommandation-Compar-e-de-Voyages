@@ -10,7 +10,7 @@ from app.utils.exceptions import ValidationError, VolIntrouvableError
 # Seuls ces champs peuvent venir du client ; toute autre clé est ignorée.
 CHAMPS_RECHERCHE = (
     "origine", "destination", "date_depart", "aller_retour", "date_retour",
-    "passagers", "budget", "escales_max", "compagnies", "bagage_inclus",
+    "passagers", "budget", "escales_max", "compagnies",
     "duree_max_min", "tolerance_jours", "tri", "limite", "decalage",
 )
 
@@ -35,6 +35,10 @@ class VolService:
             origine=criteres.origine, destination=criteres.destination
         )
         return self.vol_dao.rechercher(criteres)
+    
+    def lister_compagnies(self) -> list[str]:
+        """Compagnies proposées dans le formulaire de préférences."""
+        return self.vol_dao.lister_compagnies()
 
     def lire(self, vol_id: UUID) -> Vol:
         """Fiche d'un vol (US20). Lève VolIntrouvableError (404) si inconnu."""

@@ -24,7 +24,6 @@ const CRITERES_PAR_DEFAUT: CriteresRecherche = {
     nb_passagers: 1,
     budget_max: 220,
     direct_seulement: true,
-    bagage_requis: true,
 };
 
 // "satisfies" : TypeScript vérifie qu'il y a bien un titre pour CHAQUE onglet.

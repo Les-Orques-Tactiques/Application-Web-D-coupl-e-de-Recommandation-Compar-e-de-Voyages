@@ -8,7 +8,6 @@ export type Vol = {
   duree: number;         // en minutes
   prix: number;
   escale: string | null; // null = vol direct
-  cabine: boolean;       // bagage cabine inclus ?
   message: string;       // explication de la recommandation
   lieuDepart: string;    // "LYS · Lyon"
   lieuArrivee: string;
@@ -29,7 +28,6 @@ export type Filtres = {
   dureeMax: number;       // en heures
   directs: boolean;
   escales: boolean;
-  cabine: boolean;
   // On garde les compagnies DÉCOCHÉES : après une nouvelle recherche,
   // les nouvelles compagnies sont donc cochées automatiquement.
   compagniesExclues: string[];

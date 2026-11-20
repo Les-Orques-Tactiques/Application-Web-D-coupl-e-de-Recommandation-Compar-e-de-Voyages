@@ -2,7 +2,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass, fields
-from datetime import date, datetime
+from datetime import date, datetime, time
 from typing import Optional
 from uuid import UUID
 
@@ -29,7 +29,7 @@ class Vol:
     compagnie_retour: Optional[str] = None
     duree_retour_min: Optional[int] = None
     escales_retour: Optional[int] = None
-    bagage_inclus: Optional[bool] = None
+    heure_depart_aller: Optional[time] = None
     simulee: bool = False
     observe_le: Optional[datetime] = None
     ville_origine: Optional[str] = None
@@ -65,7 +65,7 @@ class Vol:
             "compagnie_retour": self.compagnie_retour,
             "duree_retour_min": self.duree_retour_min,
             "escales_retour": self.escales_retour,
-            "bagage_inclus": self.bagage_inclus,
+            "heure_depart_aller": iso(self.heure_depart_aller),
             "simulee": self.simulee,
             "observe_le": iso(self.observe_le),
             "depart_aller_local": iso(self.depart_aller_local),

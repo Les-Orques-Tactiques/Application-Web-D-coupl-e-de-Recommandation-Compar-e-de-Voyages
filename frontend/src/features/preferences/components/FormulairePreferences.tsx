@@ -1,4 +1,4 @@
-import { useState, type SubmitEvent } from "react";
+import {useEffect, useState, type SubmitEvent } from "react";
 import { useNavigate } from "react-router-dom";
 import { ArrowRight, LocateFixed, Plane, Wallet, X } from "lucide-react";
 import { Bandeau } from "@/components/ui/Bandeau";
@@ -13,6 +13,7 @@ import { CarteBoussole } from "./CarteBoussole";
 import { ChoixTrajet } from "./ChoixTrajet";
 import { PastillesBudget } from "./PastillesBudget";
 import { aeroportPlusProche } from "@/features/referentiel/services/referentielApi";
+import { listerCompagnies } from "@/features/explorer/services/explorationApi";
 type EtatLocalisation = "aucune" | "en-cours" | "enregistree" | "refusee" | "sans-consentement" | "erreur";
 
 const LONGUEUR_MAX_COMPAGNIE = 120;
@@ -65,6 +66,17 @@ export function FormulairePreferences() {
   const [envoiEnCours, setEnvoiEnCours] = useState(false);
   const [messageErreur, setMessageErreur] = useState("");
   const [libelleAeroport, setLibelleAeroport] = useState("");
+
+  const [compagniesDisponibles, setCompagniesDisponibles] = useState<string[]>([]);
+
+  useEffect(() => {
+    let actif = true;
+    listerCompagnies()
+      .then((liste) => { if (actif) setCompagniesDisponibles(liste); })
+      .catch(() => { /* sans liste, la saisie libre reste possible */ });
+    return () => { actif = false; };
+  }, []);
+
   function modifier<Cle extends keyof ChoixPreferences>(cle: Cle, valeur: ChoixPreferences[Cle]) {
     setPreferences((precedentes) => ({ ...precedentes, [cle]: valeur }));
   }
@@ -217,17 +229,22 @@ async function utiliserPosition() {
           className="mt-5"
           libelle="Ajouter une compagnie"
           icone={Plane}
-          placeholder="Par exemple Air France, puis Entrée"
+          list="liste-compagnies"
+          placeholder="Choisissez ou tapez une compagnie"
           value={saisieCompagnie}
           onChange={(e) => setSaisieCompagnie(e.target.value)}
           onKeyDown={(e) => {
-            // Sans preventDefault, Entrée soumettrait tout le formulaire
             if (e.key === "Enter" || e.key === ",") {
               e.preventDefault();
               ajouterCompagnie();
             }
           }}
         />
+        <datalist id="liste-compagnies">
+          {compagniesDisponibles
+            .filter((c) => !preferences.compagnies.includes(c))
+            .map((c) => <option key={c} value={c} />)}
+        </datalist>
         {preferences.compagnies.length > 0 && (
           <ul className="mt-3 flex flex-wrap gap-2">
             {preferences.compagnies.map((nom) => (

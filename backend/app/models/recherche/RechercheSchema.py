@@ -28,7 +28,6 @@ class RechercheVolsIn(BaseModel):
     budget: Optional[float] = Field(None, ge=0, lt=10**8)   # par personne
     escales_max: Optional[int] = Field(None, ge=0, le=5)
     compagnies: list[str] = Field(default_factory=list, max_length=20)
-    bagage_inclus: Optional[bool] = None
     duree_max_min: Optional[int] = Field(None, ge=1, le=7 * 24 * 60)
     tolerance_jours: int = Field(7, ge=0, le=14)
     tri: Literal["prix", "duree", "escales", "pertinence"] = "prix"
