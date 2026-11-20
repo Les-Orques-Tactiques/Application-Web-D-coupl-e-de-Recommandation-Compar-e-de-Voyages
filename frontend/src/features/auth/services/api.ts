@@ -117,3 +117,20 @@ export function modifierConsentement(
     corps: { type, accorde },
   });
 }
+
+/**
+ * Change le mot de passe de la personne connectée.
+ * Le back réémet les cookies de la session courante et invalide les autres sessions.
+ * Réponses : 401 = ancien mot de passe faux, 422 = nouveau mot de passe refusé,
+ * 429 = trop de tentatives (5/minute).
+ */
+export async function changerMotDePasse(ancien: string, nouveau: string): Promise<Utilisateur> {
+  const reponse = await appelerApi<ReponseConnexion>("/api/auth/changer-mot-de-passe", {
+    methode: "POST",
+    corps: {
+      ancien_mot_de_passe: ancien,
+      nouveau_mot_de_passe: nouveau,
+    },
+  });
+  return reponse.utilisateur;
+}

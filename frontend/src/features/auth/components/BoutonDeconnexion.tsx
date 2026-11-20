@@ -16,11 +16,11 @@ export function BoutonDeconnexion({ taille = "moyenne" }: Props) {
   const naviguerVers = useNavigate();
   const [enCours, setEnCours] = useState(false);
 
-  async function cliquer() {
-    setEnCours(true);
-    await deconnecter(); // ne lève jamais d'erreur (voir le catch du fournisseur)
-    naviguerVers("/connexion", { replace: true });
-  }
+async function cliquer() {
+  setEnCours(true);
+  naviguerVers("/", { replace: true }); // page publique, avant de vider l'utilisateur
+  await deconnecter();
+}
 
   return (
     //On transmet la taille au Bouton
