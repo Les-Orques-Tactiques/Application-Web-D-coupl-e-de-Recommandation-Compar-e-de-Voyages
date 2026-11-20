@@ -2,7 +2,7 @@ from app.models.vol.Vol import Vol
 from app.models.vol.VolInterface import VolInterface
 
 # Bornes de normalisation : au-delà, la valeur est plafonnée.
-PRIX_MAX = 2000.0
+PRIX_MAX = 1000.0
 DUREE_MAX_MIN = 1440.0   # 24 h
 ESCALES_MAX = 3
 

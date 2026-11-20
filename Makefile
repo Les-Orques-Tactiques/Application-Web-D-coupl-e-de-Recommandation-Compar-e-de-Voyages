@@ -14,6 +14,9 @@ donnees:
 # Tout d'un coup : build + démarrage + import
 init: build up donnees
 
+db:
+	docker compose exec db psql -U sae_user -d sae
+
 logs:
 	docker compose logs -f backend
 

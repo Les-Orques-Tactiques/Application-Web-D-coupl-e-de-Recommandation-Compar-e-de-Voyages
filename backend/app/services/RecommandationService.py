@@ -89,26 +89,31 @@ class RecommandationService:
     def recommander_recherche(
         self, utilisateur_id: UUID, criteres: CriteresRecherche
     ) -> list[Recommandation]:
-        """Vols filtrés par les critères, classés par similarité avec le profil.
-        Renvoie [] sans préférences exploitables : l'appelant se rabat sur le prix."""
+        """Vols filtrés par les critères, classés par proximité avec le profil.
+        Profil = interactions (favoris, avis) si elles existent, sinon préférences.
+        Renvoie [] sans profil exploitable : l'appelant se rabat sur le prix."""
         preferences = self.preference_service.lire(utilisateur_id)
-        moyenne = self.recommandation_dao.moyenne_embedding()
-        if moyenne is None:
-            return []
-        profil = profil_depuis_preferences(
-            float(preferences.budget_max) if preferences.budget_max is not None else None,
-            preferences.escales_max,
-            moyenne,
-        )
+
+        profil = self.recommandation_dao.profil_depuis_interactions(utilisateur_id)
         if profil is None:
-            return []
-        # Le budget des préférences sert aussi de plafond si la recherche n'en a pas
+            moyenne = self.recommandation_dao.moyenne_embedding()
+            if moyenne is None:
+                return []
+            profil = profil_depuis_preferences(
+                float(preferences.budget_max) if preferences.budget_max is not None else None,
+                preferences.escales_max,
+                moyenne,
+            )
+            if profil is None:
+                return []
+
+        # Les plafonds des préférences restent des filtres dans les deux cas
         if criteres.budget is None and preferences.budget_max is not None:
             criteres = replace(criteres, budget=float(preferences.budget_max))
         if criteres.escales_max is None and preferences.escales_max is not None:
             criteres = replace(criteres, escales_max=preferences.escales_max)
-        return self.recommandation_dao.classer_par_similarite(criteres, profil)
 
+        return self.recommandation_dao.classer_par_similarite(criteres, profil)
     @staticmethod
     def _evaluer(vol: Vol, preferences: Preference) -> tuple[float, str]:
         total = 0.0

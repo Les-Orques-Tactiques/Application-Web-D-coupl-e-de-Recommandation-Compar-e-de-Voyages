@@ -96,3 +96,11 @@ class InteractionDAO(InteractionInterface):
                 return cursor.rowcount == 1
         except ForeignKeyViolation:
             raise VolIntrouvableError() from None
+    
+    def lister_avis(self, utilisateur_id: UUID) -> dict[UUID, bool]:
+        with get_db_cursor() as cursor:
+            cursor.execute(
+                "SELECT vol_id, pertinent FROM avis_vol WHERE utilisateur_id = %s;",
+                (utilisateur_id,),
+            )
+            return {ligne["vol_id"]: ligne["pertinent"] for ligne in cursor.fetchall()}

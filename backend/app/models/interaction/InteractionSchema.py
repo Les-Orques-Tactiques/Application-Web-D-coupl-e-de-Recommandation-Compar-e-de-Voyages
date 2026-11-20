@@ -11,7 +11,6 @@ from pydantic import BaseModel, ConfigDict
 class AvisIn(BaseModel):
     """Corps de PUT /utilisateurs/moi/avis/{vol_id}."""
     model_config = ConfigDict(extra="forbid")
-
     pertinent: bool
 
 
@@ -30,3 +29,8 @@ class InteractionIn(BaseModel):
 
     vol_id: UUID
     type: Literal["vue", "reserver"]
+
+class AvisVolOut(BaseModel):
+    """Un avis déjà donné : sert à rallumer les pouces au rechargement."""
+    vol_id: UUID
+    pertinent: bool

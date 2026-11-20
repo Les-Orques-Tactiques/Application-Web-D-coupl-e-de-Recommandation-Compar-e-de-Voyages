@@ -37,3 +37,7 @@ class InteractionInterface(ABC):
         la même interaction existe déjà dans ce délai (anti-doublon pour les vues).
         Renvoie True si une ligne a été ajoutée.
         Lève VolIntrouvableError si le vol n'existe pas."""
+   
+    @abstractmethod
+    def lister_avis(self, utilisateur_id: UUID) -> dict[UUID, bool]:
+        """Tous les avis de l'utilisateur : {vol_id: pertinent}."""

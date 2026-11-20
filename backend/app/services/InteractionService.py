@@ -45,3 +45,6 @@ class InteractionService:
             return False
         delai = DELAI_ENTRE_DEUX_VUES_MIN if type_interaction == "vue" else 0
         return self.interaction_dao.journaliser(utilisateur_id, vol_id, type_interaction, delai)
+    
+    def lister_avis(self, utilisateur_id: UUID) -> dict[UUID, bool]:
+        return self.interaction_dao.lister_avis(utilisateur_id)

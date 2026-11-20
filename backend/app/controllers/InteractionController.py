@@ -2,7 +2,7 @@ from uuid import UUID
 
 from fastapi import APIRouter, Depends, Request, Response
 
-from app.models.interaction.InteractionSchema import AvisIn, AvisOut, InteractionIn
+from app.models.interaction.InteractionSchema import AvisIn, AvisOut, AvisVolOut, InteractionIn
 from app.models.utilisateur.Utilisateur import Utilisateur
 from app.utils.auth import get_current_utilisateur
 from app.utils.dependencies import interaction_service
@@ -35,7 +35,15 @@ class InteractionController:
             utilisateur: Utilisateur = Depends(get_current_utilisateur),
         ):
             return AvisOut(pertinent=self.interaction_service.lire_avis(utilisateur.id, vol_id))
-
+        
+        @limiter.limit("60/minute")
+        def lister_avis(
+            request: Request,
+            utilisateur: Utilisateur = Depends(get_current_utilisateur),
+        ):
+            avis = self.interaction_service.lister_avis(utilisateur.id)
+            return [AvisVolOut(vol_id=v, pertinent=p) for v, p in avis.items()]
+       
         @limiter.limit("60/minute")
         def donner_avis(
             request: Request,
@@ -74,6 +82,8 @@ class InteractionController:
                                   status_code=204)
         self.router.add_api_route("/interactions", enregistrer_interaction, methods=["POST"],
                                   status_code=204)
+        self.router.add_api_route("/avis", lister_avis, methods=["GET"],
+                                  response_model=list[AvisVolOut])
 
 
 ctrl = InteractionController()

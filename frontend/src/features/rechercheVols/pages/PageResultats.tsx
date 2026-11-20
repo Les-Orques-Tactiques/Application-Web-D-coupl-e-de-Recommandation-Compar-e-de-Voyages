@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { Link, useSearchParams, useLocation, useNavigate } from "react-router-dom";
 import { Info, Sparkles } from "lucide-react";
 import { SurTitre } from "@/components/ui/SurTitre";
@@ -14,7 +14,7 @@ import { ResumeRecherche } from "../components/ResumeRecherche";
 import { useFiltres } from "../hooks/useFiltres";
 import { useResultats } from "../hooks/useResultats";
 // 🆕 Avis (US17) et journal des interactions (US22) — adapter le chemin si besoin
-import { definirAvis, journaliserInteraction } from "../services/interactionsApi";
+import { definirAvis, journaliserInteraction, listerAvis } from "../services/interactionsApi";
 import { boutonSecondaire } from "../utils/styles";
 import { formaterDates } from "../utils/formats";
 import type { Avis, Filtres, Vol } from "../utils/types";
@@ -75,6 +75,22 @@ function ContenuResultats({ criteres }: ProprietesContenu) {
 
     const [edition, setEdition] = useState(false);
     const [avis, setAvis] = useState<Record<string, Avis>>({});
+
+    // Recharge les avis déjà donnés : sans ça, les pouces s'éteignent au rechargement
+    useEffect(() => {
+        if (!recherche.depuisLaBase) return;
+        let actif = true;
+        listerAvis()
+            .then(liste => {
+                if (!actif) return;
+                const depuisServeur: Record<string, Avis> = {};
+                for (const a of liste) depuisServeur[a.vol_id] = a.pertinent ? "oui" : "non";
+                // les clics faits pendant le chargement l'emportent
+                setAvis(local => ({ ...depuisServeur, ...local }));
+            })
+            .catch(() => { /* sans avis chargés, les pouces restent éteints */ });
+        return () => { actif = false; };
+    }, [recherche.depuisLaBase]);
 
     const dates = formaterDates(recherche.saisie);
     const nb = filtrage.volsAffiches.length;
