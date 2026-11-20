@@ -7,7 +7,7 @@ export function BarreTri({ tri, onChanger }: { tri: Tri; onChanger: (tri: Tri) =
     return (
         <>
             <div className="mb-3 flex flex-wrap items-center justify-between gap-3 text-[11px]">
-                <span className="rounded bg-menthe px-2 py-1 font-medium text-profond">Hybride · A + 0,5B</span>
+                <span className="rounded bg-menthe px-2 py-1 font-medium text-profond">Approche A · profil</span>
                 <label className="flex items-center gap-2 text-attenue">
                     Trier par
                     <select
@@ -21,8 +21,8 @@ export function BarreTri({ tri, onChanger }: { tri: Tri; onChanger: (tri: Tri) =
             </div>
 
             <div className="mb-4 flex flex-wrap gap-x-5 gap-y-2 text-[10px] text-attenue">
-                <span>Autres tris :</span>
-                {TRIS.filter(t => t !== "pertinence").map(t => (
+                <span>Tris rapides :</span>
+                {TRIS.map(t => (
                     <button
                         key={t}
                         type="button"
