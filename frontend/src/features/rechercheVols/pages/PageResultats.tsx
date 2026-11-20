@@ -139,7 +139,7 @@ function ContenuResultats({ criteres }: ProprietesContenu) {
                             ? "Résultats de la base de données · Prix par personne."
                             : "Exemples de démonstration · Prix A/R par personne, taxes incluses."}
                     </p>
-                    <Link to="/explorer?onglet=historique" className="text-[10px] font-medium text-principal hover:underline">
+                    <Link to="/historique" className="text-[10px] font-medium text-principal hover:underline">
                         Voir mon historique <span aria-hidden="true">↗</span>
                     </Link>
                 </div>

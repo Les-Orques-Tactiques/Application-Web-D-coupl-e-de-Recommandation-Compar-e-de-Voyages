@@ -57,9 +57,9 @@ export default function PageMonCompte() {
 
     // « Reprendre » relance directement la recherche sur la page Résultats
     function reprendre(recherche: RechercheHistorique) {
-        // Recherche incomplète : on renvoie vers l'historique d'Explorer
+        // Recherche incomplète : on renvoie vers la page Historique
         if (!recherche.origine || !recherche.destination || !recherche.date_depart) {
-            navigate("/explorer?onglet=historique");
+            navigate("/historique");
             return;
         }
         const criteres: CriteresRecherche = {
