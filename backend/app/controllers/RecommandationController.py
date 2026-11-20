@@ -1,19 +1,11 @@
 from fastapi import APIRouter, Depends, Query, Request
-from pydantic import Field
 
 from app.models.utilisateur.Utilisateur import Utilisateur
 from app.models.vol.VolSchema import VolOut
 from app.utils.auth import get_current_utilisateur
 from app.utils.dependencies import recommandation_service
 from app.utils.limiter import limiter
-
-
-class RecommandationOut(VolOut):
-    rang: int = Field(ge=1)
-    score: float = Field(ge=0, le=1)
-    explication: str | None = None
-
-
+from app.models.recommandation.RecommandationSchema import RecommandationOut
 class RecommandationController:
     def __init__(self):
         self.router = APIRouter(

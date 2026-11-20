@@ -12,7 +12,7 @@ COLONNES = """
     v.id, v.origine, v.destination, v.date_depart, v.date_retour, v.aller_retour,
     v.prix, v.devise, v.compagnie_aller, v.duree_aller_min, v.escales_aller,
     v.compagnie_retour, v.duree_retour_min, v.escales_retour,
-    v.bagage_inclus, v.simulee, v.observe_le,
+    v.heure_depart_aller, v.simulee, v.observe_le,
     ao.ville AS ville_origine, ad.ville AS ville_destination,
     (SELECT MIN(s.depart_local) FROM segments_vol s
         WHERE s.vol_id = v.id AND s.sens = 'aller')    AS depart_aller_local,
@@ -75,10 +75,6 @@ def construire_filtres(criteres: CriteresRecherche) -> tuple[list[str], list]:
     if criteres.duree_max_min is not None:
         conditions.append("v.duree_aller_min <= %s")
         valeurs.append(criteres.duree_max_min)
-
-    # Seulement « bagage inclus » est un filtre ; False/None = pas de contrainte
-    if criteres.bagage_inclus:
-        conditions.append("v.bagage_inclus IS TRUE")
 
     if criteres.compagnies:
         conditions.append("LOWER(v.compagnie_aller) = ANY(%s)")
@@ -148,3 +144,17 @@ class VolDAO(VolInterface):
                 [(vers_litteral_vecteur(v), vol_id) for vol_id, v in embeddings.items()],
             )
             return len(embeddings)
+        
+    def lister_compagnies(self) -> list[str]:
+        with get_db_cursor() as cursor:
+            cursor.execute(
+                """
+                SELECT compagnie FROM (
+                    SELECT compagnie_aller AS compagnie FROM vols
+                    UNION
+                    SELECT compagnie_retour FROM vols WHERE compagnie_retour IS NOT NULL
+                ) c
+                ORDER BY compagnie;
+                """
+            )
+            return [row["compagnie"] for row in cursor.fetchall()]

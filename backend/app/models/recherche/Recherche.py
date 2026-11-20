@@ -19,7 +19,7 @@ class Recherche:
     est supprimé du référentiel (ON DELETE SET NULL) : la recherche n'est alors plus
     relançable (voir peut_etre_relancee).
     Les critères sans colonne dédiée sont dans autres_criteres (JSONB) :
-    escales_max, compagnies, bagage_inclus, duree_max_min, tolerance_jours, tri.
+    escales_max, compagnies, duree_max_min, tolerance_jours, tri.
     """
 
     id: UUID
@@ -77,7 +77,6 @@ class Recherche:
             "autres_criteres": {
                 "escales_max": criteres.escales_max,
                 "compagnies": list(criteres.compagnies),
-                "bagage_inclus": criteres.bagage_inclus,
                 "duree_max_min": criteres.duree_max_min,
                 "tolerance_jours": criteres.tolerance_jours,
                 "tri": criteres.tri,
@@ -104,7 +103,6 @@ class Recherche:
             budget=self.budget_max,
             escales_max=extra.get("escales_max"),
             compagnies=tuple(extra.get("compagnies") or ()),
-            bagage_inclus=extra.get("bagage_inclus"),
             duree_max_min=extra.get("duree_max_min"),
             tolerance_jours=extra.get("tolerance_jours", 0),
             tri=extra.get("tri", "prix"),

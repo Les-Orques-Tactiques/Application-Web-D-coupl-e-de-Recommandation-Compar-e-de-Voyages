@@ -45,7 +45,6 @@ function versFiltresInitiaux(c: CriteresRecherche | null): Partial<Filtres> | un
     return {
         budget: c.budget_max,
         escales: !c.direct_seulement, // « direct seulement » → on masque les vols avec escale
-        cabine: c.bagage_requis,      // « bagage requis » → seulement les vols avec bagage
     };
 }
 
@@ -79,12 +78,13 @@ function ContenuResultats({ criteres }: ProprietesContenu) {
     function voirVol(vol: Vol) {
         const etat: EtatDetailVol = {
             vol,
-            saisie: recherche.saisie,
+            // La fiche doit afficher la date du vol cliqué, pas celle saisie (tolérance ±14 jours)
+            saisie: { ...recherche.saisie, aller: vol.dateDepart ?? recherche.saisie.aller },
             budget: filtrage.filtres.budget,
             favori: recherche.favoris.includes(vol.id),
             depuisLaBase: recherche.depuisLaBase,
             nbResultats: nb,
-            retour: location.pathname + location.search, // revient sur /resultats?... avec les mêmes critères
+            retour: location.pathname + location.search,
         };
         navigate(`/vol/${encodeURIComponent(vol.id)}`, { state: etat });
     }
@@ -177,7 +177,7 @@ function ContenuResultats({ criteres }: ProprietesContenu) {
                                 favori={recherche.favoris.includes(vol.id)}
                                 avis={avis[vol.id]}
                                 dates={dates}
-                                depuisLaBase={recherche.depuisLaBase}
+                                allerRetour={recherche.saisie.allerRetour}   // <- ajout
                                 // 🆕 void : basculerFavori peut maintenant être asynchrone (appel API)
                                 onBasculerFavori={() => void recherche.basculerFavori(vol.id)}
                                 onDonnerAvis={valeur => setAvis(precedents => ({ ...precedents, [vol.id]: valeur }))}

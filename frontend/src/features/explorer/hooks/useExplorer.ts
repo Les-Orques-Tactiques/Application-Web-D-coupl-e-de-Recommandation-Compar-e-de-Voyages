@@ -24,7 +24,6 @@ export type CriteresRecherche = {
   nb_passagers: number;
   budget_max: number;
   direct_seulement: boolean;
-  bagage_requis: boolean;
 };
 
 export function versRequeteApi(c: CriteresRecherche): RechercheVols {
@@ -37,7 +36,8 @@ export function versRequeteApi(c: CriteresRecherche): RechercheVols {
     passagers: c.nb_passagers,
     budget: c.budget_max,
     escales_max: c.direct_seulement ? 0 : null,
-    bagage_inclus: c.bagage_requis ? true : null, // jamais false : filtrerait les vols sans bagage
+    tri: "pertinence",
+    tolerance_jours: 14,
   };
 }
 

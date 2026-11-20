@@ -203,12 +203,12 @@ CREATE TABLE IF NOT EXISTS vols (
     duree_retour_min    INTEGER CHECK (duree_retour_min > 0),
     escales_retour      SMALLINT CHECK (escales_retour >= 0),
 
-    bagage_inclus       BOOLEAN,                      -- TRUE si au moins un bagage en soute est inclus (bags.checked >= 1) ; NULL si inconnu
+    heure_depart_aller  TIME,                         -- heure locale de départ du 1er segment aller    
     simulee             BOOLEAN NOT NULL DEFAULT FALSE,-- vol généré hors catalogue (US35)
     observe_le          TIMESTAMPTZ NOT NULL,          -- date de relevé du prix 
     liens_reservation   JSONB,                         -- réponse d'Ignav, remplie au clic « Réserver »
     liens_obtenus_le    TIMESTAMPTZ,
-    embedding           vector(4),                     -- approche A : prix, durée, escales, compagnie, bagage
+    embedding           vector(4),                     -- approche A : prix, durée, escales, heure départ (normalisée)
 
     cree_le             TIMESTAMPTZ NOT NULL DEFAULT NOW(),
     modifie_le          TIMESTAMPTZ NOT NULL DEFAULT NOW(),
@@ -324,7 +324,7 @@ CREATE TABLE IF NOT EXISTS recherches (
     aller_retour      BOOLEAN NOT NULL DEFAULT FALSE,
     nb_passagers      SMALLINT NOT NULL DEFAULT 1 CHECK (nb_passagers BETWEEN 1 AND 9),
     budget_max        NUMERIC(10,2) CHECK (budget_max >= 0),
-    autres_criteres   JSONB NOT NULL DEFAULT '{}'::jsonb,   -- escales, compagnies, bagage...
+    autres_criteres   JSONB NOT NULL DEFAULT '{}'::jsonb,   -- escales, compagnies...    
     cree_le           TIMESTAMPTZ NOT NULL DEFAULT NOW(),
     CONSTRAINT ck_recherche_dates CHECK (date_retour IS NULL OR date_retour >= date_depart)
 );
@@ -442,8 +442,7 @@ CREATE OR REPLACE VIEW v_vols_resume AS
 SELECT
     v.id, v.origine, v.destination, v.date_depart, v.date_retour, v.aller_retour,
     v.prix, v.devise, v.compagnie_aller, v.duree_aller_min, v.escales_aller,
-    v.compagnie_retour, v.duree_retour_min, v.escales_retour,
-    v.bagage_inclus, v.simulee, v.observe_le, v.ignav_id,
+    v.compagnie_retour, v.duree_retour_min, v.escales_retour,v.heure_depart_aller, v.simulee, v.observe_le, v.ignav_id,
     v.auto_transfert, v.transporteurs_mixtes,
     a.ville      AS ville_destination,
     a.image_url  AS image_destination,
