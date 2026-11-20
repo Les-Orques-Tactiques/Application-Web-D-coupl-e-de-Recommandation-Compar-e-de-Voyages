@@ -13,6 +13,8 @@ import { PanneauFiltres } from "../components/PanneauFiltres";
 import { ResumeRecherche } from "../components/ResumeRecherche";
 import { useFiltres } from "../hooks/useFiltres";
 import { useResultats } from "../hooks/useResultats";
+// 🆕 Avis (US17) et journal des interactions (US22) — adapter le chemin si besoin
+import { definirAvis, journaliserInteraction } from "../services/interactionsApi";
 import { boutonSecondaire } from "../utils/styles";
 import { formaterDates } from "../utils/formats";
 import type { Avis, Filtres, Vol } from "../utils/types";
@@ -48,6 +50,11 @@ function versFiltresInitiaux(c: CriteresRecherche | null): Partial<Filtres> | un
     };
 }
 
+/** Convertit l'avis de l'interface (« oui » / « non ») vers le format de l'API (true / false). */
+function avisVersBooleen(a: Avis): boolean {
+    return a === "oui";
+}
+
 type ProprietesContenu = {
     criteres: CriteresRecherche | null;
 };
@@ -76,6 +83,10 @@ function ContenuResultats({ criteres }: ProprietesContenu) {
 
     /** Ouvre la page détail en lui transmettant le vol et le contexte de la recherche. */
     function voirVol(vol: Vol) {
+        // 🆕 US22 : journalise la vue (best-effort, on n'attend pas la réponse).
+        // Les vols de démonstration n'existent pas en base → seulement les vrais vols.
+        if (recherche.depuisLaBase) void journaliserInteraction(vol.id, "vue");
+
         const etat: EtatDetailVol = {
             vol,
             // La fiche doit afficher la date du vol cliqué, pas celle saisie (tolérance ±14 jours)
@@ -87,6 +98,34 @@ function ContenuResultats({ criteres }: ProprietesContenu) {
             retour: location.pathname + location.search,
         };
         navigate(`/vol/${encodeURIComponent(vol.id)}`, { state: etat });
+    }
+
+    /** Remplace (ou retire, si undefined) l'avis d'un vol dans l'état local. */
+    function changerAvisLocal(volId: string, valeur: Avis | undefined) {
+        setAvis(p => {
+            const copie = { ...p };
+            if (valeur === undefined) delete copie[volId];
+            else copie[volId] = valeur;
+            return copie;
+        });
+    }
+
+    /**
+     * 🆕 US17 : affiche l'avis tout de suite (mise à jour optimiste),
+     * l'envoie au serveur, et remet l'ancien avis si l'appel échoue.
+     * Re-cliquer sur l'avis déjà donné le retire (bascule).
+     */
+    async function donnerAvis(volId: string, valeur: Avis) {
+        const precedent = avis[volId];
+        const retrait = precedent === valeur; // même bouton cliqué deux fois → on retire l'avis
+        changerAvisLocal(volId, retrait ? undefined : valeur);
+        if (!recherche.depuisLaBase) return; // démo : avis seulement local
+
+        try {
+            await definirAvis(volId, retrait ? null : avisVersBooleen(valeur));
+        } catch {
+            changerAvisLocal(volId, precedent); // échec → on remet l'ancien avis
+        }
     }
 
     async function rechercher() {
@@ -177,10 +216,11 @@ function ContenuResultats({ criteres }: ProprietesContenu) {
                                 favori={recherche.favoris.includes(vol.id)}
                                 avis={avis[vol.id]}
                                 dates={dates}
-                                allerRetour={recherche.saisie.allerRetour}   // <- ajout
+                                allerRetour={recherche.saisie.allerRetour}
                                 // 🆕 void : basculerFavori peut maintenant être asynchrone (appel API)
                                 onBasculerFavori={() => void recherche.basculerFavori(vol.id)}
-                                onDonnerAvis={valeur => setAvis(precedents => ({ ...precedents, [vol.id]: valeur }))}
+                                // 🆕 US17 : l'avis est envoyé au serveur
+                                onDonnerAvis={valeur => void donnerAvis(vol.id, valeur)}
                                 onVoir={() => voirVol(vol)}
                             />
                         ))}
