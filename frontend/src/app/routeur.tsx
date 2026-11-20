@@ -12,6 +12,7 @@ import PageMotDePasseOublie from "@/features/auth/pages/PageMotDePasseOublie";
 import PageReinitialisation from "@/features/auth/pages/PageReinitialisation";
 import PageMonCompte from "@/features/compte/pages/PageMonCompte";
 import PageExplorer from "@/features/explorer/pages/PageExplorer";
+import PageHistorique from "@/features/historique/pages/PageHistorique";
 import PageResultats from "@/features/rechercheVols/pages/PageResultats";
 import PageDetailVol from "@/features/rechercheVols/pages/PageDetailVol";
 import PageComparateur from "@/features/comparateur/pages/PageComparateur";
@@ -70,6 +71,7 @@ export const routeur = createBrowserRouter([
             element: <MiseEnPagePrivee />,
             children: [
               { path: "/explorer", element: <PageExplorer /> },
+              { path: "/historique", element: <PageHistorique /> },
               // Résultats : les critères arrivent dans l'URL (?origine=…&destination=…)
               { path: "/resultats", element: <PageResultats /> },
               // Détail d'un vol : ":id" est un paramètre (lu avec useParams si besoin)

@@ -164,7 +164,7 @@ export default function PageMonCompte() {
                             {explorer.historique.length} recherche(s) associée(s) à votre compte
                         </p>
                     </div>
-                    <Link to="/explorer?onglet=historique" className="text-[13px] font-medium text-principal hover:underline">
+                    <Link to="/historique" className="text-[13px] font-medium text-principal hover:underline">
                         Tout voir →
                     </Link>
                 </div>
