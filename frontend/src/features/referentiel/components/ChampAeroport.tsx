@@ -6,12 +6,14 @@ import { lireAeroport, rechercherAeroports, type Aeroport } from "../services/re
 const LONGUEUR_MIN_RECHERCHE = 2;
 const DELAI_SAISIE_MS = 250;
 
-export function ChampAeroport({ libelle, code, libelleCode, onChoisir, onEffacer }: {
+export function ChampAeroport({ libelle, code, libelleCode, onChoisir, onEffacer, effacerSurSaisie = false }: {
   libelle: string;
   code: string;
   libelleCode?: string;   // libellé déjà connu, évite l'appel réseau
   onChoisir: (aeroport: Aeroport) => void;
   onEffacer?: () => void;
+  /** Si vrai, toute modification du texte efface le code tant qu'aucune suggestion n'est choisie */
+  effacerSurSaisie?: boolean;
 }) {
   const idListe = useId();
   const [texte, setTexte] = useState("");
@@ -25,57 +27,60 @@ export function ChampAeroport({ libelle, code, libelleCode, onChoisir, onEffacer
 
   // Synchronise le texte quand le code change de l'extérieur (préremplissage, reprise d'historique)
   useEffect(() => {
-  if (code === "") {
-    codeAffiche.current = "";
-    setTexte("");
-    return;
-  }
-  if (libelleCode) {
-    codeAffiche.current = code;
-    setTexte(libelleCode);
-    return;
-  }
-  if (code === codeAffiche.current) return;
-  let vivant = true;
-  lireAeroport(code)
-    .then((a) => {
-      if (!vivant) return;
+    if (code === "") {
+      // Avec effacerSurSaisie, le code passe à "" pendant la frappe : on ne touche pas au texte
+      if (!effacerSurSaisie) {
+        codeAffiche.current = "";
+        setTexte("");
+      }
+      return;
+    }
+    if (libelleCode) {
       codeAffiche.current = code;
-      setTexte(a.libelle ?? code);
-    })
-    .catch(() => {
-      if (!vivant) return;
-      codeAffiche.current = code;
-      setTexte(code);
-    });
-  return () => { vivant = false; };
-}, [code, libelleCode]);
-
-// Recherche avec délai ; les réponses périmées sont ignorées
-useEffect(() => {
-  const saisie = texte.trim();
-  if (!ouvert || saisie.length < LONGUEUR_MIN_RECHERCHE) {
-    setSuggestions([]);
-    setEnCours(false);
-    return;
-  }
-  let vivant = true;
-  setEnCours(true);
-  const minuteur = setTimeout(() => {
-    rechercherAeroports(saisie)
-      .then((liste) => {
+      setTexte(libelleCode);
+      return;
+    }
+    if (code === codeAffiche.current) return;
+    let vivant = true;
+    lireAeroport(code)
+      .then((a) => {
         if (!vivant) return;
-        setSuggestions(liste);
-        setActif(-1);
+        codeAffiche.current = code;
+        setTexte(a.libelle ?? code);
       })
-      .catch(() => { if (vivant) setSuggestions([]); })
-      .finally(() => { if (vivant) setEnCours(false); });
-  }, DELAI_SAISIE_MS);
-  return () => {
-    vivant = false;
-    clearTimeout(minuteur);
-  };
-}, [texte, ouvert]);
+      .catch(() => {
+        if (!vivant) return;
+        codeAffiche.current = code;
+        setTexte(code);
+      });
+    return () => { vivant = false; };
+  }, [code, libelleCode, effacerSurSaisie]);
+
+  // Recherche avec délai ; les réponses périmées sont ignorées
+  useEffect(() => {
+    const saisie = texte.trim();
+    if (!ouvert || saisie.length < LONGUEUR_MIN_RECHERCHE) {
+      setSuggestions([]);
+      setEnCours(false);
+      return;
+    }
+    let vivant = true;
+    setEnCours(true);
+    const minuteur = setTimeout(() => {
+      rechercherAeroports(saisie)
+        .then((liste) => {
+          if (!vivant) return;
+          setSuggestions(liste);
+          setActif(-1);
+        })
+        .catch(() => { if (vivant) setSuggestions([]); })
+        .finally(() => { if (vivant) setEnCours(false); });
+    }, DELAI_SAISIE_MS);
+    return () => {
+      vivant = false;
+      clearTimeout(minuteur);
+    };
+  }, [texte, ouvert]);
 
   function choisir(a: Aeroport) {
     codeAffiche.current = a.code_iata;
@@ -119,7 +124,7 @@ useEffect(() => {
         onChange={(e) => {
           setTexte(e.target.value);
           setOuvert(true);
-          if (e.target.value === "") {
+          if (e.target.value === "" || effacerSurSaisie) {
             codeAffiche.current = "";
             onEffacer?.();
           }

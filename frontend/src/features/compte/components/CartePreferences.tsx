@@ -7,9 +7,7 @@ import {
     type PreferencesModifiables,
 } from "@/features/preferences";
 import { messageErreur } from "../utils/messageErreur";
-
-// Le code aéroport IATA = exactement 3 lettres (ex. CDG, ORY, JFK).
-const FORMAT_AEROPORT = /^[A-Z]{3}$/;
+import { ChampAeroport } from "@/features/referentiel/components/ChampAeroport";
 
 export function CartePreferences() {
     // Préférences telles que renvoyées par le back (objet complet, lecture seule
@@ -60,18 +58,12 @@ export function CartePreferences() {
         setErreur(null);
         setMessageStatut(null);
 
-        // Vide => null (= pas d'aéroport habituel). Sinon on normalise en majuscules.
-        const aeroport = preferences.aeroport_habituel?.trim().toUpperCase() || null;
-        if (aeroport !== null && !FORMAT_AEROPORT.test(aeroport)) {
-            setErreur("Le code aéroport doit faire exactement 3 lettres (ex. CDG).");
-            return;
-        }
-
         // IMPORTANT : on n'envoie QUE les champs modifiables.
         // Le back est en extra="forbid" : utilisateur_id, latitude_depart,
         // longitude_depart, a_un_lieu_depart et modifie_le provoqueraient une 422.
         const donnees: PreferencesModifiables = {
-            aeroport_habituel: aeroport,
+            // Le code vient d'une suggestion choisie, donc toujours valide (ou null)
+            aeroport_habituel: preferences.aeroport_habituel,
             budget_max: preferences.budget_max,
             escales_max: preferences.escales_max,
         };
@@ -105,17 +97,13 @@ export function CartePreferences() {
             {!chargement && preferences && (
                 <form onSubmit={enregistrer} className="space-y-4" noValidate>
                     {/* Aéroport habituel */}
-                    <label className="block">
-                        <span className="text-sm font-medium text-encre">Aéroport habituel (code IATA)</span>
-                        <input
-                            type="text"
-                            maxLength={3}
-                            placeholder="CDG"
-                            value={preferences.aeroport_habituel ?? ""}
-                            onChange={(e) => modifierChamp("aeroport_habituel", e.target.value.toUpperCase())}
-                            className="mt-1 w-full rounded-lg border border-trait bg-fond px-3 py-2 uppercase text-encre focus:border-principal focus:outline-none"
-                        />
-                    </label>
+                    <ChampAeroport
+                        libelle="Aéroport habituel"
+                        code={preferences.aeroport_habituel ?? ""}
+                        effacerSurSaisie
+                        onChoisir={(a) => modifierChamp("aeroport_habituel", a.code_iata)}
+                        onEffacer={() => modifierChamp("aeroport_habituel", null)}
+                    />
 
                     {/* Budget maximum */}
                     <label className="block">
