@@ -45,7 +45,6 @@ function criteresParDefaut(): CriteresRecherche {
 // "satisfies" : TypeScript vérifie qu'il y a bien un titre pour CHAQUE onglet.
 const TITRES = {
   explorer: "Où souhaitez-vous partir ?",
-  favoris: "Vos envies prennent leur envol.",
   historique: "Vos dernières recherches.",
   comparateur: "Comparez vos prochains horizons.",
 } satisfies Record<Onglet, string>;
@@ -136,9 +135,6 @@ export default function PageExplorer() {
 
   // Message affiché quand il n'y a aucun vol à montrer
   function messageSiVide(): string {
-    if (onglet === "favoris") {
-      return explorer.chargement ? "Chargement de vos favoris…" : "Vous n’avez pas encore de vol favori.";
-    }
     if (afficherRecommandations) {
       if (explorer.chargementRecommandations) return "Préparation de vos recommandations…";
       if (explorer.erreurRecommandations) return explorer.erreurRecommandations;
@@ -147,11 +143,7 @@ export default function PageExplorer() {
     return "Lancez une recherche : les vols s’afficheront sur la page Résultats.";
   }
 
-  const vols = onglet === "favoris"
-    ? explorer.favoris
-    : afficherRecommandations
-      ? explorer.recommandations
-      : []; // ex. onglet « comparateur » : rien à afficher pour l'instant
+  const vols = afficherRecommandations ? explorer.recommandations : [];
 
   /**
    * Ouvre la page détail (/vol/:id) avec EXACTEMENT l'état attendu par PageDetailVol.
@@ -173,8 +165,7 @@ export default function PageExplorer() {
       budget: criteres.budget_max,
       depuisLaBase: true,
       nbResultats: vols.length,
-      // Le lien « Revenir » ramène sur le bon onglet
-      retour: onglet === "favoris" ? "/explorer?onglet=favoris" : "/explorer",
+      retour: "/explorer",
       favori: explorer.favorisIds.has(vol.id),
       // Les recommandations sont en USD : la page détail affichera la bonne devise
       devise: vol.devise,
@@ -188,8 +179,6 @@ export default function PageExplorer() {
   let sousTitre: string;
   if (onglet === "historique") {
     sousTitre = `${explorer.historique.length} recherche(s) enregistrée(s)`;
-  } else if (onglet === "favoris") {
-    sousTitre = `${vols.length} vol(s) favori(s) · prix affichés dans la devise enregistrée`;
   } else if (afficherRecommandations) {
     sousTitre = "Selon vos préférences enregistrées, si renseignées · aller-retour · USD · prix du catalogue non revérifiés en direct";
   } else {

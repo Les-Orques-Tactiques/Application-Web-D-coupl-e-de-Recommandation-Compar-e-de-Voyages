@@ -1,11 +1,11 @@
 import { useSearchParams } from "react-router-dom";
 
-// Doit correspondre aux liens ?onglet=… de MiseEnPagePrivee
-const ONGLETS = ["explorer", "favoris", "historique", "comparateur"] as const;
+// Les favoris ont leur propre route ; ces onglets restent dans Explorer.
+const ONGLETS = ["explorer", "historique", "comparateur"] as const;
 export type Onglet = (typeof ONGLETS)[number];
 
 /**
- * Onglet actif lu dans l'adresse : /explorer?onglet=favoris → "favoris".
+ * Onglet actif lu dans l'adresse, par exemple /explorer?onglet=historique.
  * Sans paramètre (ou avec une valeur inconnue) → "explorer".
  * Avantage : un F5 ou le bouton Retour gardent le bon onglet.
  */
