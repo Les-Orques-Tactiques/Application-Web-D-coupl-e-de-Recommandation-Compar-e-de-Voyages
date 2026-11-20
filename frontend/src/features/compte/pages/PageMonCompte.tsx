@@ -57,9 +57,9 @@ export default function PageMonCompte() {
 
     // « Reprendre » relance directement la recherche sur la page Résultats
     function reprendre(recherche: RechercheHistorique) {
-        // Recherche incomplète : on renvoie vers l'historique d'Explorer
+        // Recherche incomplète : on renvoie vers la page Historique
         if (!recherche.origine || !recherche.destination || !recherche.date_depart) {
-            navigate("/explorer?onglet=historique");
+            navigate("/historique");
             return;
         }
         const criteres: CriteresRecherche = {
@@ -71,7 +71,6 @@ export default function PageMonCompte() {
             nb_passagers: recherche.nb_passagers,
             budget_max: recherche.budget_max ?? 1000, // pas de budget enregistré → budget large
             direct_seulement: false,
-            bagage_requis: false,
         };
         navigate(`/resultats?${versParametres(criteres).toString()}`);
     }
@@ -141,7 +140,7 @@ export default function PageMonCompte() {
                         <h2 className="text-2xl font-semibold tracking-tight text-encre">Mes favoris</h2>
                         <p className="mt-1 text-[13px] text-attenue">{explorer.favoris.length} vol(s) favori(s)</p>
                     </div>
-                    <Link to="/explorer?onglet=favoris" className="text-[13px] font-medium text-principal hover:underline">
+                    <Link to="/favoris" className="text-[13px] font-medium text-principal hover:underline">
                         Tout voir →
                     </Link>
                 </div>
@@ -164,7 +163,7 @@ export default function PageMonCompte() {
                             {explorer.historique.length} recherche(s) associée(s) à votre compte
                         </p>
                     </div>
-                    <Link to="/explorer?onglet=historique" className="text-[13px] font-medium text-principal hover:underline">
+                    <Link to="/historique" className="text-[13px] font-medium text-principal hover:underline">
                         Tout voir →
                     </Link>
                 </div>

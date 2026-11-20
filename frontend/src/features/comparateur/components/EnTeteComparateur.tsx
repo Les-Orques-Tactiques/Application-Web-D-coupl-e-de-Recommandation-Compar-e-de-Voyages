@@ -1,24 +1,30 @@
-import { FlaskConical } from "lucide-react";
+import { FlaskConical, Plane } from "lucide-react";
 
-/** Titre de la page + avertissement « données de démonstration » */
+/** Bandeau sombre en haut de la page + avertissement « données de démonstration » */
 export function EnTeteComparateur() {
     return (
         <header className="space-y-5">
-            <div className="space-y-2">
-                <p className="text-xs font-bold uppercase tracking-[0.12em] text-principal">
-                    Le laboratoire Orca
-                </p>
-                <div className="flex flex-wrap items-center justify-between gap-3">
-                    <h1 className="text-3xl font-semibold tracking-tight text-encre sm:text-4xl">
-                        Trois approches. Un même horizon.
-                    </h1>
-                    <span className="rounded-full bg-citron px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-profond">
+            <div className="relative isolate overflow-hidden rounded-3xl bg-profond px-6 py-7 text-white md:px-10 md:py-9">
+                <Plane
+                    aria-hidden="true"
+                    className="pointer-events-none absolute -right-4 top-1/2 size-48 -translate-y-1/2 rotate-12 text-white/[0.06]"
+                />
+                <div className="relative flex flex-col justify-between gap-6 sm:flex-row sm:items-end">
+                    <div>
+                        <p className="text-[10px] font-semibold tracking-[0.18em] text-citron">
+                            LE LABORATOIRE ORCA
+                        </p>
+                        <h1 className="mt-2 text-3xl font-semibold tracking-tight md:text-4xl">
+                            Trois approches. Un même horizon.
+                        </h1>
+                        <p className="mt-2 max-w-md text-sm text-white/70">
+                            Comparez ce qui change dans le classement, et comprenez les compromis.
+                        </p>
+                    </div>
+                    <span className="w-fit rounded-full bg-citron px-3 py-1 text-[11px] font-bold uppercase tracking-wider text-profond">
                         Données de démonstration
                     </span>
                 </div>
-                <p className="text-[13px] text-attenue">
-                    Comparez ce qui change dans le classement, et comprenez les compromis.
-                </p>
             </div>
 
             {/* Tu peux remplacer ce bloc par ton composant <Bandeau ton=… titre=…> */}

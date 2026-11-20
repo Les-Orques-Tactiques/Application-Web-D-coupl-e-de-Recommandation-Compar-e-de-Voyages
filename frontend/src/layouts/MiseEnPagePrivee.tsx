@@ -8,8 +8,8 @@ const conteneur = "mx-auto w-full max-w-7xl px-6 lg:px-16";
 // chemin : la page visée · cle : le paramètre ?onglet= (null = aucun)
 const onglets = [
     { libelle: "Explorer", chemin: "/explorer", cle: null },
-    { libelle: "Mes favoris", chemin: "/explorer", cle: "favoris" },
-    { libelle: "Historique", chemin: "/explorer", cle: "historique" },
+    { libelle: "Historique", chemin: "/historique", cle: null },
+    { libelle: "Mes favoris", chemin: "/favoris", cle: null },
     { libelle: "Comparateur", chemin: "/comparateur", cle: null },
 ] as const;
 
