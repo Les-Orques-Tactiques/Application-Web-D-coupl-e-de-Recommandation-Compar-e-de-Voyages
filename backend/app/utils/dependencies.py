@@ -26,6 +26,8 @@ from app.services.VolService import VolService
 from app.services.RechercheService import RechercheService
 from app.models.favori.FavoriDAO import FavoriDAO
 from app.services.FavoriService import FavoriService
+from app.services.EmbeddingService import EmbeddingService
+
 # ----------------------------------------------------------------------------
 # DAO : une instance chacun, sans état (chaque appel passe par le pool de
 # connexions), donc sans risque à partager. Le pool doit être initialisé
@@ -72,3 +74,4 @@ pays_service = PaysService(pays_dao=pays_dao)
 aeroport_service = AeroportService(aeroport_dao=aeroport_dao)
 vol_service = VolService(vol_dao=vol_dao, aeroport_service=aeroport_service)
 recherche_service = RechercheService(recherche_dao=recherche_dao, vol_service=vol_service)
+embedding_service = EmbeddingService(vol_dao=vol_dao)
