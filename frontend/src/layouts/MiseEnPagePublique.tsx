@@ -5,9 +5,7 @@ import { Logo } from "@/components/ui/Logo";
 import { BoutonDeconnexion, useAuth } from "@/features/auth"; // NOUVEAU
 
 // Classes communes pour centrer le contenu et limiter sa largeur (en-tête, page et pied de page)
-const conteneur = "mx-auto w-full max-w-7xl px-6 lg:px-16";
-
-/**
+import { conteneur } from "@/components/ui/Conteneur";/**
  * NOUVEAU : partie droite de l'en-tête. Quatre cas possibles :
  * 1. session en cours de vérification → rien (évite un clignotement)
  * 2. personne connectée               → « Bonjour X » + bouton de déconnexion

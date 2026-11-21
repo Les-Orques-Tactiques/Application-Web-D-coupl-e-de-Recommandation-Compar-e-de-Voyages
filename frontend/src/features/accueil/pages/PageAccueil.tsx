@@ -14,6 +14,7 @@ import { Link, Navigate, useLocation } from "react-router-dom";
 import { classeBouton } from "@/components/ui/Bouton";
 import { SurTitre } from "@/components/ui/SurTitre";
 import { useAuth } from "@/features/auth/";
+import { conteneur } from "@/components/ui/Conteneur"; // NOUVEAU : classe commune pour centrer le contenu et limiter sa largeur
 
 /**
  * Page d'accueil publique (/), affichée avant toute connexion.
@@ -24,9 +25,8 @@ import { useAuth } from "@/features/auth/";
  *   sections de cette page, grâce à leurs attributs "id".
  * - Une personne déjà connectée est envoyée directement vers son espace.
  */
-
-// Mêmes classes que le conteneur de MiseEnPagePublique : contenu centré, largeur limitée
-const conteneur = "mx-auto w-full max-w-7xl px-6 lg:px-16";
+// À supprimer :
+// const conteneur = "mx-auto w-full max-w-7xl px-6 lg:px-16";
 
 // Bouton secondaire (contour) : Bouton ne propose que le style plein, on le complète ici
 const classeBoutonSecondaire =

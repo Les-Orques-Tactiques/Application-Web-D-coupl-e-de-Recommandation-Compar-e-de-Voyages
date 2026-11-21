@@ -1,9 +1,8 @@
 import { Link, Outlet, useLocation, useSearchParams } from "react-router-dom";
 import { Logo } from "@/components/ui/Logo";
 import { BoutonDeconnexion, useAuth } from "@/features/auth";
-
+import { conteneur } from "@/components/ui/Conteneur"; // NOUVEAU : classe commune pour centrer le contenu et limiter sa largeur
 // Classes communes pour centrer le contenu et limiter sa largeur (identiques à la mise en page publique)
-const conteneur = "mx-auto w-full max-w-7xl px-6 lg:px-16";
 
 // chemin : la page visée · cle : le paramètre ?onglet= (null = aucun)
 const onglets = [

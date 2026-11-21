@@ -1,6 +1,5 @@
 import { SurTitre } from "@/components/ui/SurTitre";
 import { FormulaireConnexion } from "@/features/auth";
-
 /**
  * Page de connexion (/connexion) : titre d'accueil et carte blanche centrée contenant
  * le formulaire. La logique de connexion est dans FormulaireConnexion.
