@@ -1,13 +1,22 @@
 import { useEffect, useState, type FormEvent } from "react";
-import { Loader2, Save, SlidersHorizontal } from "lucide-react";
+import { Loader2, SlidersHorizontal } from "lucide-react";
 import {
     lirePreferences,
     modifierPreferences,
     type Preferences,
     type PreferencesModifiables,
 } from "@/features/preferences";
-import { messageErreur } from "../utils/messageErreur";
 import { ChampAeroport } from "@/features/referentiel/components/ChampAeroport";
+import { messageErreur } from "../utils/messageErreur";
+
+// Le code aéroport IATA = exactement 3 lettres (ex. CDG, ORY, JFK).
+// Le code vient toujours de la liste de ChampAeroport, mais on garde ce garde-fou.
+const FORMAT_AEROPORT = /^[A-Z]{3}$/;
+
+// Classes communes aux champs « budget » et « escales » (fond blanc, comme CarteProfil)
+const CLASSES_LIBELLE = "text-[13px] font-medium text-encre";
+const CLASSES_CHAMP =
+    "mt-1.5 w-full rounded-lg border border-trait bg-white px-3 py-2.5 text-[13px] text-encre focus:border-principal focus:outline-none";
 
 export function CartePreferences() {
     // Préférences telles que renvoyées par le back (objet complet, lecture seule
@@ -16,7 +25,7 @@ export function CartePreferences() {
     const [chargement, setChargement] = useState(true);
     const [enregistrement, setEnregistrement] = useState(false);
 
-    // Deux états séparés : succès (vert) et erreur (rouge).
+    // Deux états séparés : succès et erreur.
     const [messageStatut, setMessageStatut] = useState<string | null>(null);
     const [erreur, setErreur] = useState<string | null>(null);
 
@@ -58,6 +67,13 @@ export function CartePreferences() {
         setErreur(null);
         setMessageStatut(null);
 
+        // Vide => null (= pas d'aéroport habituel). Sinon on normalise en majuscules.
+        const aeroport = preferences.aeroport_habituel?.trim().toUpperCase() || null;
+        if (aeroport !== null && !FORMAT_AEROPORT.test(aeroport)) {
+            setErreur("Choisissez un aéroport dans la liste.");
+            return;
+        }
+
         // IMPORTANT : on n'envoie QUE les champs modifiables.
         // Le back est en extra="forbid" : utilisateur_id, latitude_depart,
         // longitude_depart, a_un_lieu_depart et modifie_le provoqueraient une 422.
@@ -81,86 +97,87 @@ export function CartePreferences() {
 
     // --- Rendu ------------------------------------------------------------------
     return (
-        <section className="rounded-2xl border border-trait bg-white p-6 shadow-sm">
-            <header className="mb-4 flex items-center gap-2">
-                <SlidersHorizontal className="h-5 w-5 text-principal" aria-hidden />
-                <h2 className="text-lg font-semibold text-encre">Mes préférences de voyage</h2>
-            </header>
+        // id="preferences" : cible de la pastille « Préférences » de PageMonCompte
+        <section id="preferences" className="rounded-2xl border border-trait bg-white p-5">
+            <h2 className="mb-4 text-[15px] font-semibold text-encre">Mes préférences</h2>
 
             {chargement && (
-                <p className="flex items-center gap-2 text-sm text-attenue">
-                    <Loader2 className="h-4 w-4 animate-spin" aria-hidden />
+                <p className="flex items-center gap-2 text-[13px] text-attenue">
+                    <Loader2 className="size-4 animate-spin" aria-hidden="true" />
                     Chargement…
                 </p>
             )}
 
             {!chargement && preferences && (
                 <form onSubmit={enregistrer} className="space-y-4" noValidate>
-                    {/* Aéroport habituel */}
+                    {/* Aéroport habituel : liste déroulante partagée avec Explorer.
+   Le champ affiche « Lyon (LYS), France », mais on ne garde que le code IATA. */}
                     <ChampAeroport
                         libelle="Aéroport habituel"
                         code={preferences.aeroport_habituel ?? ""}
-                        effacerSurSaisie
-                        onChoisir={(a) => modifierChamp("aeroport_habituel", a.code_iata)}
+                        onChoisir={(aeroport) => modifierChamp("aeroport_habituel", aeroport.code_iata)}
                         onEffacer={() => modifierChamp("aeroport_habituel", null)}
                     />
 
-                    {/* Budget maximum */}
-                    <label className="block">
-                        <span className="text-sm font-medium text-encre">Budget maximum (USD)</span>
-                        <input
-                            type="number"
-                            min={0}
-                            step={10}
-                            value={preferences.budget_max ?? ""}
-                            onChange={(e) =>
-                                modifierChamp("budget_max", e.target.value === "" ? null : Number(e.target.value))
-                            }
-                            className="mt-1 w-full rounded-lg border border-trait bg-fond px-3 py-2 text-encre focus:border-principal focus:outline-none"
-                        />
-                    </label>
+                    {/* Budget et escales côte à côte (empilés sur petit écran) */}
+                    <div className="grid gap-4 sm:grid-cols-2">
+                        <label className="block">
+                            <span className={CLASSES_LIBELLE}>Budget A/R / pers. (USD)</span>
+                            <input
+                                type="number"
+                                min={0}
+                                step={10}
+                                value={preferences.budget_max ?? ""}
+                                onChange={(e) =>
+                                    modifierChamp("budget_max", e.target.value === "" ? null : Number(e.target.value))
+                                }
+                                className={CLASSES_CHAMP}
+                            />
+                        </label>
 
-                    {/* Escales maximum */}
-                    <label className="block">
-                        <span className="text-sm font-medium text-encre">Nombre d'escales maximum</span>
-                        <select
-                            value={preferences.escales_max ?? ""}
-                            onChange={(e) =>
-                                modifierChamp("escales_max", e.target.value === "" ? null : Number(e.target.value))
-                            }
-                            className="mt-1 w-full rounded-lg border border-trait bg-fond px-3 py-2 text-encre focus:border-principal focus:outline-none"
-                        >
-                            <option value="">Peu importe</option>
-                            <option value="0">Vol direct uniquement</option>
-                            <option value="1">1 escale max</option>
-                            <option value="2">2 escales max</option>
-                        </select>
-                    </label>
+                        <label className="block">
+                            <span className={CLASSES_LIBELLE}>Escales</span>
+                            <select
+                                value={preferences.escales_max ?? ""}
+                                onChange={(e) =>
+                                    modifierChamp("escales_max", e.target.value === "" ? null : Number(e.target.value))
+                                }
+                                className={CLASSES_CHAMP}
+                            >
+                                <option value="">Peu importe</option>
+                                <option value="0">Vol direct uniquement</option>
+                                <option value="1">1 escale maximum</option>
+                                <option value="2">2 escales maximum</option>
+                            </select>
+                        </label>
+                    </div>
 
-                    {/* Messages : succès en vert, erreur en rouge */}
-                    {messageStatut && (
-                        <p role="status" className="text-sm text-menthe">
-                            {messageStatut}
-                        </p>
-                    )}
-
+                    {/* Bouton en contour, sur toute la largeur */}
                     <button
                         type="submit"
                         disabled={enregistrement}
-                        className="inline-flex items-center gap-2 rounded-lg bg-principal px-4 py-2 font-medium text-white hover:bg-principal-fonce disabled:opacity-60"
+                        className="flex w-full items-center justify-center gap-2 rounded-lg border border-principal bg-white px-4 py-2.5 text-[13px] font-medium text-principal hover:bg-principal hover:text-white disabled:opacity-60"
                     >
                         {enregistrement ? (
-                            <Loader2 className="h-4 w-4 animate-spin" aria-hidden />
+                            <Loader2 className="size-4 animate-spin" aria-hidden="true" />
                         ) : (
-                            <Save className="h-4 w-4" aria-hidden />
+                            <SlidersHorizontal className="size-4" aria-hidden="true" />
                         )}
-                        Enregistrer
+                        Enregistrer les préférences
                     </button>
+
+                    {/* Succès : couleur principale (menthe est illisible sur fond blanc) */}
+                    {messageStatut && (
+                        <p role="status" className="text-[13px] text-principal">
+                            {messageStatut}
+                        </p>
+                    )}
                 </form>
             )}
 
+            {/* Erreur : en rouge, annoncée aux lecteurs d'écran */}
             {erreur && (
-                <p role="alert" className="mt-4 rounded-lg bg-erreur-fond px-3 py-2 text-sm text-erreur">
+                <p role="alert" className="mt-4 rounded-lg bg-erreur-fond px-3 py-2 text-[13px] text-erreur">
                     {erreur}
                 </p>
             )}
